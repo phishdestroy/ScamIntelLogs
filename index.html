@@ -60,7 +60,7 @@
             padding: 10px;
             margin: 5px 0;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
         }
         .team {
             background-color: #e0f7fa;
@@ -83,6 +83,7 @@
         .folder.channel, .folder.chanel { background-color: #4caf50; }
         .folder.designs { background-color: #1e90ff; }
         .folder.successful_thefts { background-color: #ab47bc; }
+        .folder.scammer_list { background-color: #f06292; } /* New color for scammer_list */
         .folder:hover {
             filter: brightness(1.1);
             transform: scale(1.02);
@@ -188,7 +189,8 @@
                     { name: "scam_offers", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/scam_offers/messages.html" },
                     { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/channel/messages.html" },
                     { name: "designs", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/designs/messages.html" },
-                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/successful_thefts/messages.html" }
+                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/successful_thefts/messages.html" },
+                    { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" }
                 ]
             },
             {
@@ -218,7 +220,8 @@
                 folders: [
                     { name: "chanel", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/chanel/messages.html" },
                     { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/chat/messages.html" },
-                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/successful_thefts/messages.html" }
+                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/successful_thefts/messages.html" },
+                    { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/WasabiSquad/scammers_login.txt" }
                 ]
             }
         ];
@@ -265,15 +268,15 @@
         }
 
         function showFolderDescription(teamName, folderName, folderLink, folderDiv) {
-            const existingDescription = folderDiv.querySelectorAll(".description, .link");
-            if (existingDescription.length > 0) {
-                existingDescription.forEach(item => item.remove());
-                return;
-            }
+            mainContent.innerHTML = ""; // Clear previous content
 
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
-            descriptionDiv.textContent = `This is the ${folderName} of the scam team ${teamName}, it may contain details of their thefts, personal data, and victim data.`;
+            if (folderName === "scammer_list") {
+                descriptionDiv.textContent = `This is the scammer list of the scam team ${teamName}. It contains a text file (scammers_login.txt) with known scammer logins and identifiers.`;
+            } else {
+                descriptionDiv.textContent = `This is the ${folderName} of the scam team ${teamName}, it may contain details of their thefts, personal data, and victim data.`;
+            }
             mainContent.appendChild(descriptionDiv);
 
             const linkDiv = document.createElement("div");
