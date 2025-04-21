@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScamTeamList: Explore Scammer Archives</title>
+    <title>ScamIntelLogs: Explore Scammer Archives</title>
     <link rel="icon" type="image/png" href="https://www.phishdestroy.io/favicon-32x32.png">
     <style>
         body {
@@ -74,7 +74,7 @@
     </style>
 </head>
 <body>
-    <h1>ScamTeamList: Explore Scammer Archives</h1>
+    <h1>ScamIntelLogs: Explore Scammer Archives</h1>
 
     <div class="info-box">
         <p><strong>🔍 About:</strong> This page contains archived Telegram chat dumps of scammer activities.</p>
@@ -82,7 +82,7 @@
         <p><strong>📢 Report Scammers:</strong> Use our Telegram bot to report scam activities: <a href="https://t.me/PhishDestroy_bot" target="_blank">PhishDestroy Bot</a>.</p>
         <p><strong>🐦 Follow Us:</strong> Stay updated on Twitter: <a href="https://x.com/Phish_Destroy" target="_blank">@Phish_Destroy</a>.</p>
         <p><strong>🌐 Visit Us:</strong> Learn more about our project at <a href="https://www.phishdestroy.io/" target="_blank">phishdestroy.io</a>.</p>
-        <p><strong>🤝 Contribute:</strong> Have more scam data? Visit the <a href="https://github.com/phishdestroy/ScamTeamList" target="_blank">GitHub repository</a> to add it.</p>
+        <p><strong>🤝 Contribute:</strong> Have more scam data? Visit the <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank">GitHub repository</a> to add it.</p>
     </div>
 
     <div class="sidebar" id="file-tree">
@@ -169,7 +169,19 @@
                 fileDiv.textContent = file;
                 fileDiv.onclick = (e) => {
                     e.stopPropagation();
-                    window.open(`${team}/${folderName}/${file}`, "_blank");
+                    const url = `${team}/${folderName}/${file}`;
+                    // Проверяем, существует ли файл
+                    fetch(url, { method: 'HEAD' })
+                        .then(response => {
+                            if (response.ok) {
+                                window.open(url, "_blank");
+                            } else {
+                                alert(`File ${file} not found. Please check if it exists in ${team}/${folderName}/`);
+                            }
+                        })
+                        .catch(() => {
+                            alert(`Error accessing ${file}. Please check if it exists in ${team}/${folderName}/`);
+                        });
                 };
                 folderDiv.appendChild(fileDiv);
             });
