@@ -122,13 +122,65 @@
 
     <script>
         const fileTree = document.getElementById("file-tree");
-        const teams = ["RublevkaTeam"];
-        const folders = [
-            { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/chat/messages.html" },
-            { name: "scam_offers", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/scam_offers/messages.html" },
-            { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/channel/messages.html" },
-            { name: "designs", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/designs/messages.html" },
-            { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/successful_thefts/messages.html" }
+        const teams = [
+            {
+                name: "RublevkaTeam",
+                image: "https://i.ibb.co/xtc39h99/image.png",
+                description: `
+                    <p><strong>🧾 Dump of Telegram users affiliated with the RublevkaTeam scam group</strong> — one of the largest and most active Russian-speaking drainer operations.</p>
+                    <p>The group targets primarily CIS users via phishing campaigns in TON and Solana ecosystems. Despite being Russian-speaking, they actively scam fellow Russians — and the community seems largely fine with that.</p>
+                    <p><strong>🌐 Website:</strong> <a href="https://rublevkateam.today" target="_blank">https://rublevkateam.today</a></p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/8594315/" target="_blank">https://lolz.live/threads/8594315/</a> (verified deposit > 2M RUB)</p>
+                    <p><strong>📍 Hosting:</strong> AEZA ASN AS210644</p>
+                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/RublevkaTeam_bot" target="_blank">@RublevkaTeam_bot</a> (ID: 5811945099)</p>
+                    <p><strong>🛠 Admins:</strong> @sinactive, @nft4x, @BalaclavaRTD</p>
+                    <p><strong>⚠️ Reported by multiple users as a scam/fraud group</strong></p>
+                    <p><strong>🇷🇺 “The country must know its heroes.”</strong></p>
+                    <p><strong>🧨 Don’t believe the myth that Russian scammers avoid scamming Russians</strong> — RublevkaTeam actively builds Russian-language phishing sites and targets CIS victims without hesitation.</p>
+                    <p><strong>Resources:</strong></p>
+                    <ul>
+                        <li><a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
+                        <li><a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" target="_blank">Known Scammer Logins (TXT)</a></li>
+                    </ul>
+                `,
+                folders: [
+                    { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/chat/messages.html" },
+                    { name: "scam_offers", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/scam_offers/messages.html" },
+                    { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/channel/messages.html" },
+                    { name: "designs", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/designs/messages.html" },
+                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/successful_thefts/messages.html" }
+                ]
+            },
+            {
+                name: "Wasabi Squad",
+                image: "https://i.ibb.co/bMShgdkp/image.png", // Placeholder image; replace with actual image URL if available
+                description: `
+                    <p><strong>📁 Wasabi Squad Telegram Dump</strong> — a dataset of Telegram accounts tied to deceptive financial schemes involving fake trading platforms and casino sites.</p>
+                    <p><strong>🎯 Primary Activities:</strong></p>
+                    <ul>
+                        <li>💱 Fake cryptocurrency exchanges</li>
+                        <li>🎰 Scam gambling platforms</li>
+                        <li>🤖 Telegram bot schemes and fraudulent investment offers</li>
+                    </ul>
+                    <p><strong>🧩 Infrastructure:</strong></p>
+                    <p><strong>🌐 Website:</strong> <a href="https://www.wasabihub.one/" target="_blank">https://www.wasabihub.one/</a></p>
+                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/WasabiSquad_Bot" target="_blank">@WasabiSquad_Bot</a> (Telegram ID: 7380099926)</p>
+                    <p><strong>💬 Forum thread:</strong> <a href="https://lolz.live/threads/7933252/" target="_blank">https://lolz.live/threads/7933252/</a></p>
+                    <p><strong>📌 Note:</strong></p>
+                    <p>Some young Russian scammers may have assumed they were beyond reach. However, recent Russian law enforcement practices permit the seizure of cryptocurrencies, regardless of the victims' location.</p>
+                    <p><strong>🧨 This dump aims to aid in identifying and prosecuting those involved.</strong></p>
+                    <p><strong>🧠 “The community must know its scammers.”</strong></p>
+                    <p><strong>Resources:</strong></p>
+                    <ul>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1wSp-xfyVoZyrPbXZwPOQUKMCaocny9e9yEdJwocAdW8/edit?usp=sharing" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
+                    </ul>
+                `,
+                folders: [
+                    { name: "chanel", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/chanel/messages.html" },
+                    { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/chat/messages.html" },
+                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/successful_thefts/messages.html" }
+                ]
+            }
         ];
 
         function renderFileTree() {
@@ -136,7 +188,7 @@
             teams.forEach(team => {
                 const teamDiv = document.createElement("div");
                 teamDiv.className = "team";
-                teamDiv.textContent = team;
+                teamDiv.textContent = team.name;
                 teamDiv.onclick = () => toggleTeamInfo(team, teamDiv);
                 fileTree.appendChild(teamDiv);
             });
@@ -153,41 +205,27 @@
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
             descriptionDiv.innerHTML = `
-                <img src="https://i.ibb.co/xtc39h99/image.png" alt="RublevkaTeam">
+                <img src="${team.image}" alt="${team.name}">
                 <div class="content">
-                    <p><strong>🧾 Dump of Telegram users affiliated with the RublevkaTeam scam group</strong> — one of the largest and most active Russian-speaking drainer operations.</p>
-                    <p>The group targets primarily CIS users via phishing campaigns in TON and Solana ecosystems. Despite being Russian-speaking, they actively scam fellow Russians — and the community seems largely fine with that.</p>
-                    <p><strong>🌐 Website:</strong> <a href="https://rublevkateam.today" target="_blank">https://rublevkateam.today</a></p>
-                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/8594315/" target="_blank">https://lolz.live/threads/8594315/</a> (verified deposit > 2M RUB)</p>
-                    <p><strong>📍 Hosting:</strong> AEZA ASN AS210644</p>
-                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/RublevkaTeam_bot" target="_blank">@RublevkaTeam_bot</a> (ID: 5811945099)</p>
-                    <p><strong>🛠 Admins:</strong> @sinactive, @nft4x, @BalaclavaRTD</p>
-                    <p><strong>⚠️ Reported by multiple users as a scam/fraud group</strong></p>
-                    <p><strong>🇷🇺 “The country must know its heroes.”</strong></p>
-                    <p><strong>🧨 Don’t believe the myth that Russian scammers avoid scamming Russians</strong> — RublevkaTeam actively builds Russian-language phishing sites and targets CIS victims without hesitation.</p>
-                    <p><strong>Resources:</strong></p>
-                    <ul>
-                        <li><a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
-                        <li><a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" target="_blank">Known Scammer Logins (TXT)</a></li>
-                    </ul>
+                    ${team.description}
                 </div>
             `;
             teamDiv.appendChild(descriptionDiv);
 
             // Add folders
-            folders.forEach(folder => {
+            team.folders.forEach(folder => {
                 const folderDiv = document.createElement("div");
                 folderDiv.className = "folder";
                 folderDiv.textContent = folder.name;
                 folderDiv.onclick = (e) => {
                     e.stopPropagation();
-                    showFolderDescription(team, folder.name, folder.link, folderDiv);
+                    showFolderDescription(team.name, folder.name, folder.link, folderDiv);
                 };
                 teamDiv.appendChild(folderDiv);
             });
         }
 
-        function showFolderDescription(team, folderName, folderLink, folderDiv) {
+        function showFolderDescription(teamName, folderName, folderLink, folderDiv) {
             const existingDescription = folderDiv.querySelectorAll(".description, .link");
             if (existingDescription.length > 0) {
                 existingDescription.forEach(item => item.remove());
@@ -196,7 +234,7 @@
 
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
-            descriptionDiv.textContent = `This is the ${folderName} of the scam team ${team}, it may contain details of their thefts, personal data, and victim data.`;
+            descriptionDiv.textContent = `This is the ${folderName} of the scam team ${teamName}, it may contain details of their thefts, personal data, and victim data.`;
             folderDiv.appendChild(descriptionDiv);
 
             const linkDiv = document.createElement("div");
