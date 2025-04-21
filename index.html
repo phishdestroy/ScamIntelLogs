@@ -83,7 +83,8 @@
         .folder.channel, .folder.chanel { background-color: #4caf50; }
         .folder.designs { background-color: #1e90ff; }
         .folder.successful_thefts { background-color: #ab47bc; }
-        .folder.scammer_list { background-color: #f06292; } /* New color for scammer_list */
+        .folder.scammer_list { background-color: #f06292; }
+        .folder.payments { background-color: #ffca28; } /* New color for payments */
         .folder:hover {
             filter: brightness(1.1);
             transform: scale(1.02);
@@ -223,6 +224,35 @@
                     { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/successful_thefts/messages.html" },
                     { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/WasabiSquad/scammers_login.txt" }
                 ]
+            },
+            {
+                name: "Mercury Team",
+                image: "https://i.ibb.co/KxLHnp59/image.png",
+                description: `
+                    <p><strong>📁 Mercury Team Telegram Dump</strong> — a dataset of Telegram accounts tied to scam activity involving fake crypto exchanges and gambling platforms.</p>
+                    <p><strong>🔮 Main Offers:</strong></p>
+                    <ul>
+                        <li>💸 Fake "exclusive exchange" — <a href="https://t.me/MercuryTeam_bot" target="_blank">@MercuryTeam_bot</a> (ID: 6631580796)</li>
+                        <li>🎰 Scam casino — <a href="https://t.me/MercuryCasi_bot" target="_blank">@MercuryCasi_bot</a> (ID: 6431207710)</li>
+                        <li>🤖 Mentor-driven recruitment through phishing branches</li>
+                    </ul>
+                    <p><strong>🌐 Infrastructure:</strong></p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/6129774/" target="_blank">https://lolz.live/threads/6129774/</a></p>
+                    <p><strong>❗️ Note:</strong></p>
+                    <p>Mercury Team disguises scam operations as affiliate opportunities. Victims are recruited via bots, assigned to "branches," and used to spread phishing sites.</p>
+                    <p><strong>🧠 “Financial freedom through fraud is still fraud.”</strong></p>
+                    <p><strong>Resources:</strong></p>
+                    <ul>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1Swxss0rtQUW_LGyymDW8HLMyHEk2Ef3ht3sd29selSQ/edit?usp=sharing" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
+                    </ul>
+                `,
+                folders: [
+                    { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/channel/messages.html" },
+                    { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/chat/messages.html" },
+                    { name: "payments", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/payments/messages.html" },
+                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/successful_thefts/messages.html" },
+                    { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/MercuryTeam/scammers_login.txt" }
+                ]
             }
         ];
 
@@ -232,18 +262,26 @@
                 const teamDiv = document.createElement("div");
                 teamDiv.className = "team";
                 teamDiv.textContent = team.name;
-                teamDiv.onclick = () => toggleTeamInfo(team, teamDiv);
+                teamDiv.onclick = (e) => {
+                    e.stopPropagation();
+                    toggleTeamInfo(team, teamDiv);
+                };
                 fileTree.appendChild(teamDiv);
             });
         }
 
         function toggleTeamInfo(team, teamDiv) {
+            // Collapse all other teams
             const allTeams = fileTree.querySelectorAll(".team");
             allTeams.forEach(t => {
-                const content = t.querySelectorAll(".description, .folder, .link");
-                content.forEach(item => item.remove());
+                if (t !== teamDiv) {
+                    const content = t.querySelectorAll(".folder");
+                    content.forEach(item => item.remove());
+                }
             });
 
+            // Clear the main content and show the team description
+            mainContent.innerHTML = "";
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
             descriptionDiv.innerHTML = `
@@ -252,30 +290,38 @@
                     ${team.description}
                 </div>
             `;
-            mainContent.innerHTML = "";
             mainContent.appendChild(descriptionDiv);
 
+            // Remove existing folders if they exist (to toggle)
+            const existingFolders = teamDiv.querySelectorAll(".folder");
+            if (existingFolders.length > 0) {
+                existingFolders.forEach(folder => folder.remove());
+                return;
+            }
+
+            // Add folder buttons
             team.folders.forEach(folder => {
                 const folderDiv = document.createElement("div");
                 folderDiv.className = `folder ${folder.name}`;
                 folderDiv.textContent = folder.name;
                 folderDiv.onclick = (e) => {
                     e.stopPropagation();
-                    showFolderDescription(team.name, folder.name, folder.link, folderDiv);
+                    showFolderDescription(team.name, folder.name, folder.link);
                 };
                 teamDiv.appendChild(folderDiv);
             });
         }
 
-        function showFolderDescription(teamName, folderName, folderLink, folderDiv) {
-            mainContent.innerHTML = ""; // Clear previous content
+        function showFolderDescription(teamName, folderName, folderLink) {
+            // Clear the main content and show only the folder description
+            mainContent.innerHTML = "";
 
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
             if (folderName === "scammer_list") {
                 descriptionDiv.textContent = `This is the scammer list of the scam team ${teamName}. It contains a text file (scammers_login.txt) with known scammer logins and identifiers.`;
             } else {
-                descriptionDiv.textContent = `This is the ${folderName} of the scam team ${teamName}, it may contain details of their thefts, personal data, and victim data.`;
+                descriptionDiv.textContent = `This is the ${folderName} of the scam team ${teamName}. It may contain details of their thefts, personal data, and victim data.`;
             }
             mainContent.appendChild(descriptionDiv);
 
