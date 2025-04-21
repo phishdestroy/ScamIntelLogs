@@ -1,0 +1,4563 @@
+{
+ "name": "The Project INFO",
+ "type": "private_channel",
+ "id": 1691270582,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2022-05-13T22:17:36",
+   "date_unixtime": "1652469456",
+   "actor": "The Project INFO",
+   "actor_id": "channel1691270582",
+   "action": "create_channel",
+   "title": "The Project INFO",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 3,
+   "type": "message",
+   "date": "2022-05-13T22:21:30",
+   "date_unixtime": "1652469690",
+   "edited": "2024-02-19T19:38:20",
+   "edited_unixtime": "1708360700",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "photo": "photos/photo_1@13-05-2022_22-21-30.jpg",
+   "photo_file_size": 94449,
+   "width": 1280,
+   "height": 471,
+   "text": [
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Детальная информация о действиях ваших юзеров"
+    },
+    {
+     "type": "bold",
+     "text": "😓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Настройка личных доменов до мелочей"
+    },
+    {
+     "type": "bold",
+     "text": "📈"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Промокоды"
+    },
+    {
+     "type": "bold",
+     "text": "⛔️"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Автовыплаты "
+    },
+    {
+     "type": "bold",
+     "text": "🤑"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Дрейнер"
+    },
+    {
+     "type": "bold",
+     "text": "📞"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Корректировка цен"
+    },
+    {
+     "type": "bold",
+     "text": "📈"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Стейкинг"
+    },
+    {
+     "type": "bold",
+     "text": "🔓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Режим реального времени"
+    },
+    {
+     "type": "bold",
+     "text": "⏱"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "spoiler",
+     "text": "(Подробную информацию о функционале нашей панели вы сможете увидеть в разделе "
+    },
+    {
+     "type": "text_link",
+     "text": "FAQ",
+     "href": "https://telegra.ph/Tyk-05-13"
+    },
+    {
+     "type": "spoiler",
+     "text": " на сайте)\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Детальная информация о действиях ваших юзеров"
+    },
+    {
+     "type": "bold",
+     "text": "😓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Настройка личных доменов до мелочей"
+    },
+    {
+     "type": "bold",
+     "text": "📈"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Промокоды"
+    },
+    {
+     "type": "bold",
+     "text": "⛔️"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Автовыплаты "
+    },
+    {
+     "type": "bold",
+     "text": "🤑"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Дрейнер"
+    },
+    {
+     "type": "bold",
+     "text": "📞"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Корректировка цен"
+    },
+    {
+     "type": "bold",
+     "text": "📈"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Стейкинг"
+    },
+    {
+     "type": "bold",
+     "text": "🔓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Режим реального времени"
+    },
+    {
+     "type": "bold",
+     "text": "⏱"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "spoiler",
+     "text": "(Подробную информацию о функционале нашей панели вы сможете увидеть в разделе "
+    },
+    {
+     "type": "text_link",
+     "text": "FAQ",
+     "href": "https://telegra.ph/Tyk-05-13"
+    },
+    {
+     "type": "spoiler",
+     "text": " на сайте)\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "message",
+   "date": "2022-05-13T22:21:30",
+   "date_unixtime": "1652469690",
+   "edited": "2024-04-16T18:56:10",
+   "edited_unixtime": "1713282970",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "photo": "photos/photo_2@13-05-2022_22-21-30.jpg",
+   "photo_file_size": 95364,
+   "width": 1280,
+   "height": 471,
+   "text": [
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Вы работаете через удобную многофункциональную панель"
+    },
+    {
+     "type": "bold",
+     "text": "😓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Выплаты от 70 до 90% с профитов"
+    },
+    {
+     "type": "bold",
+     "text": "🤑"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Вам предоставляется общий домен для работы, рекомендуем личный!"
+    },
+    {
+     "type": "bold",
+     "text": "🛍"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Выплаты от 30$"
+    },
+    {
+     "type": "bold",
+     "text": "👍"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Seed phrases (макс. процент выплат 70) "
+    },
+    {
+     "type": "bold",
+     "text": "⛔️"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Drainer (макс. процент 70) "
+    },
+    {
+     "type": "bold",
+     "text": "📞"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🤑",
+     "document_id": "stickers/AnimatedSticker (1).tgs"
+    },
+    " ЛЕСЕНКА ПОВЫШЕНИЯ ПРОЦЕНТА \n70% - вход\n75% - 10k$\n80% - 60k$ \n85% - 140k$ \n90% - 240k$\n",
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Вы работаете через удобную многофункциональную панель"
+    },
+    {
+     "type": "bold",
+     "text": "😓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Выплаты от 70 до 90% с профитов"
+    },
+    {
+     "type": "bold",
+     "text": "🤑"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Вам предоставляется общий домен для работы, рекомендуем личный!"
+    },
+    {
+     "type": "bold",
+     "text": "🛍"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Выплаты от 30$"
+    },
+    {
+     "type": "bold",
+     "text": "👍"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Seed phrases (макс. процент выплат 70) "
+    },
+    {
+     "type": "bold",
+     "text": "⛔️"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "❤"
+    },
+    {
+     "type": "bold",
+     "text": " Drainer (макс. процент 70) "
+    },
+    {
+     "type": "bold",
+     "text": "📞"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🤑",
+     "document_id": "stickers/AnimatedSticker (1).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " ЛЕСЕНКА ПОВЫШЕНИЯ ПРОЦЕНТА \n70% - вход\n75% - 10k$\n80% - 60k$ \n85% - 140k$ \n90% - 240k$\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "message",
+   "date": "2022-05-13T22:21:30",
+   "date_unixtime": "1652469690",
+   "edited": "2025-02-03T19:52:12",
+   "edited_unixtime": "1738601532",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "photo": "photos/photo_3@13-05-2022_22-21-30.jpg",
+   "photo_file_size": 94632,
+   "width": 1280,
+   "height": 471,
+   "text": [
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "ЗАПРЕЩЕНО"
+    },
+    ":\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Работа по СНГ!"
+    },
+    {
+     "type": "bold",
+     "text": "🔓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Вход на биржу без ВПН! "
+    },
+    {
+     "type": "bold",
+     "text": "🏖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Обсуждение политики"
+    },
+    {
+     "type": "bold",
+     "text": "😡"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Гифки"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "с порно элементами"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "😡"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Оскорбления и переход на личности"
+    },
+    {
+     "type": "bold",
+     "text": "😡"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Любые сообщения, содержащие рекламу своих услуг"
+    },
+    {
+     "type": "bold",
+     "text": "🛍"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Спам/флуд сообщениями"
+    },
+    {
+     "type": "bold",
+     "text": "😓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Упоминание религиозной или национальной принадлежности"
+    },
+    {
+     "type": "bold",
+     "text": "✌️"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "ЗАПРЕЩЕНО"
+    },
+    {
+     "type": "plain",
+     "text": ":\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Работа по СНГ!"
+    },
+    {
+     "type": "bold",
+     "text": "🔓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Вход на биржу без ВПН! "
+    },
+    {
+     "type": "bold",
+     "text": "🏖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Обсуждение политики"
+    },
+    {
+     "type": "bold",
+     "text": "😡"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Гифки"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "с порно элементами"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "😡"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Оскорбления и переход на личности"
+    },
+    {
+     "type": "bold",
+     "text": "😡"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Любые сообщения, содержащие рекламу своих услуг"
+    },
+    {
+     "type": "bold",
+     "text": "🛍"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Спам/флуд сообщениями"
+    },
+    {
+     "type": "bold",
+     "text": "😓"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Упоминание религиозной или национальной принадлежности"
+    },
+    {
+     "type": "bold",
+     "text": "✌️"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "type": "message",
+   "date": "2022-05-13T22:21:30",
+   "date_unixtime": "1652469690",
+   "edited": "2025-02-03T19:53:19",
+   "edited_unixtime": "1738601599",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "photo": "photos/photo_4@13-05-2022_22-21-30.jpg",
+   "photo_file_size": 94402,
+   "width": 1280,
+   "height": 471,
+   "text": [
+    {
+     "type": "bold",
+     "text": "➖➖➖➖➖➖➖➖➖➖➖➖➖\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " Team Leaders - ",
+    {
+     "type": "mention",
+     "text": "@TheProjectTL"
+    },
+    " ",
+    {
+     "type": "custom_emoji",
+     "text": "😎",
+     "document_id": "stickers/AnimatedSticker (2).tgs"
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " Support - ",
+    {
+     "type": "mention",
+     "text": "@ChaseGG77"
+    },
+    ", ",
+    {
+     "type": "mention",
+     "text": "@mokrensky"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🎧",
+     "document_id": "stickers/AnimatedSticker (3).tgs"
+    },
+    " \n\n",
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "text_link",
+     "text": " Домен для получения админки  💻\n\n",
+     "href": "http://exproproject.com/"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Новостной канал",
+     "href": "https://t.me/+ai15N_8iy402MmYy"
+    },
+    " и ",
+    {
+     "type": "text_link",
+     "text": "мануалы",
+     "href": "https://teletype.in/@rickmansontl/WxbQMFFLdl1"
+    },
+    " ",
+    {
+     "type": "custom_emoji",
+     "text": "😀",
+     "document_id": "stickers/AnimatedSticker (4).tgs"
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Покупка и подвязка личного домена",
+     "href": "https://telegra.ph/Manual-po-podvyazke-domena-na-Regwaycom-12-13-2"
+    },
+    " ",
+    {
+     "type": "custom_emoji",
+     "text": "😀",
+     "document_id": "stickers/AnimatedSticker (5).tgs"
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Чат",
+     "href": "https://t.me/+vZh0HODJwUQ0Y2Uy"
+    },
+    " ",
+    {
+     "type": "custom_emoji",
+     "text": "😀",
+     "document_id": "stickers/AnimatedSticker (6).tgs"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "➖➖➖➖➖➖➖➖➖➖➖➖➖"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "➖➖➖➖➖➖➖➖➖➖➖➖➖\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " Team Leaders - "
+    },
+    {
+     "type": "mention",
+     "text": "@TheProjectTL"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "custom_emoji",
+     "text": "😎",
+     "document_id": "stickers/AnimatedSticker (2).tgs"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " Support - "
+    },
+    {
+     "type": "mention",
+     "text": "@ChaseGG77"
+    },
+    {
+     "type": "plain",
+     "text": ", "
+    },
+    {
+     "type": "mention",
+     "text": "@mokrensky"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🎧",
+     "document_id": "stickers/AnimatedSticker (3).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " \n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "text_link",
+     "text": " Домен для получения админки  💻\n\n",
+     "href": "http://exproproject.com/"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Новостной канал",
+     "href": "https://t.me/+ai15N_8iy402MmYy"
+    },
+    {
+     "type": "plain",
+     "text": " и "
+    },
+    {
+     "type": "text_link",
+     "text": "мануалы",
+     "href": "https://teletype.in/@rickmansontl/WxbQMFFLdl1"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "custom_emoji",
+     "text": "😀",
+     "document_id": "stickers/AnimatedSticker (4).tgs"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Покупка и подвязка личного домена",
+     "href": "https://telegra.ph/Manual-po-podvyazke-domena-na-Regwaycom-12-13-2"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "custom_emoji",
+     "text": "😀",
+     "document_id": "stickers/AnimatedSticker (5).tgs"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Чат",
+     "href": "https://t.me/+vZh0HODJwUQ0Y2Uy"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "custom_emoji",
+     "text": "😀",
+     "document_id": "stickers/AnimatedSticker (6).tgs"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖➖➖➖➖➖➖➖➖➖➖➖➖"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "type": "message",
+   "date": "2022-05-13T22:21:30",
+   "date_unixtime": "1652469690",
+   "edited": "2024-07-08T13:48:06",
+   "edited_unixtime": "1720435686",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "photo": "photos/photo_5@13-05-2022_22-21-30.jpg",
+   "photo_file_size": 94921,
+   "width": 1280,
+   "height": 471,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "❗️",
+     "document_id": "stickers/AnimatedSticker (7).tgs"
+    },
+    " Как получить админ панель? \n",
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "1️⃣",
+     "document_id": "stickers/AnimatedSticker (8).tgs"
+    },
+    " Зарегистрируйся на общем домене биржи ",
+    {
+     "type": "link",
+     "text": "http://exproproject.com"
+    },
+    " (ВХОД ПОД ВПН)\n",
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "2️⃣",
+     "document_id": "stickers/AnimatedSticker (9).tgs"
+    },
+    " Переходи в бота ",
+    {
+     "type": "mention",
+     "text": "@Insane2021_bot"
+    },
+    " и следуй его инструкциям\n",
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "3️⃣",
+     "document_id": "stickers/AnimatedSticker (10).tgs"
+    },
+    " В админке читай раздел FAQ, сохраняй кошельки для авто выплат! \n",
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🤑",
+     "document_id": "stickers/AnimatedSticker (11).tgs"
+    },
+    " P.S: Ознакомься с информацией в каналах INFO/NEWS"
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "❗️",
+     "document_id": "stickers/AnimatedSticker (7).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " Как получить админ панель? \n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "1️⃣",
+     "document_id": "stickers/AnimatedSticker (8).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " Зарегистрируйся на общем домене биржи "
+    },
+    {
+     "type": "link",
+     "text": "http://exproproject.com"
+    },
+    {
+     "type": "plain",
+     "text": " (ВХОД ПОД ВПН)\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "2️⃣",
+     "document_id": "stickers/AnimatedSticker (9).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " Переходи в бота "
+    },
+    {
+     "type": "mention",
+     "text": "@Insane2021_bot"
+    },
+    {
+     "type": "plain",
+     "text": " и следуй его инструкциям\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "3️⃣",
+     "document_id": "stickers/AnimatedSticker (10).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " В админке читай раздел FAQ, сохраняй кошельки для авто выплат! \n"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🤑",
+     "document_id": "stickers/AnimatedSticker (11).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " P.S: Ознакомься с информацией в каналах INFO/NEWS"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "message",
+   "date": "2022-05-13T22:21:30",
+   "date_unixtime": "1652469690",
+   "edited": "2023-07-13T17:34:15",
+   "edited_unixtime": "1689258855",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "photo": "photos/photo_6@13-05-2022_22-21-30.jpg",
+   "photo_file_size": 94607,
+   "width": 1280,
+   "height": 471,
+   "text": [
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Функционал 📈\n\n",
+     "href": "https://t.me/c/1691270582/3"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Условия ✍️\n\n",
+     "href": "https://t.me/c/1691270582/4"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Правила 🔓\n\n",
+     "href": "https://t.me/c/1691270582/5"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Ссылки 🛩\n\n",
+     "href": "https://t.me/c/1691270582/6"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Функционал 📈\n\n",
+     "href": "https://t.me/c/1691270582/3"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Условия ✍️\n\n",
+     "href": "https://t.me/c/1691270582/4"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Правила 🔓\n\n",
+     "href": "https://t.me/c/1691270582/5"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "❤",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Ссылки 🛩\n\n",
+     "href": "https://t.me/c/1691270582/6"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "bold",
+     "text": "➖"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "type": "message",
+   "date": "2023-07-13T17:38:59",
+   "date_unixtime": "1689259139",
+   "edited": "2024-06-01T16:43:41",
+   "edited_unixtime": "1717249421",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "photo": "photos/photo_7@13-07-2023_17-38-59.jpg",
+   "photo_file_size": 95645,
+   "width": 1280,
+   "height": 471,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "💸",
+     "document_id": "stickers/AnimatedSticker (12).tgs"
+    },
+    "Премиум дизайны от The Project!\n\n",
+    {
+     "type": "bold",
+     "text": "🟦 3-й синий дизайн \n\n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/7yNHQyMuQ-CO73uO7hfMHQ.png"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/uyzSlJucQ12IhTp4ofaDOQ.png"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/lYjAJKnLSuCR5yCg3AWi7A.png"
+    },
+    "  \n",
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/ljSRRsqHSh258qih35HJwA.png"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "🟩 4-й зеленый дизайн \n\n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/TTgShpVQS9W9KEZgs4rFiQ.png"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/YibnjJByR3Kq8EiCAJCBbQ.png"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/BruglZtHQxu1NDUvh4m37A.png"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/UQYjxAPCQhOwBeap6MdvuQ.png"
+    },
+    "\n\n⬛",
+    {
+     "type": "bold",
+     "text": " 5-й тёмный дизайн \n\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/5rdO-mKEcPO3"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/QVxIufoJdv_b"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/nTK_Ysv-pe4t"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/SUOX7HHva0II"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/dNZbU5PC3moH"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/uZCPrY4EXI7I"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/fTOfs2WO5spI"
+    },
+    "\n\n📛 ",
+    {
+     "type": "bold",
+     "text": "6-й NEW HOT DESIGN "
+    },
+    "\n\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/0gXKJDkbTmKX"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/ZVMzPuUamL2P"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/mPoFusLdNCpy"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/wZlWePYIeytC"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/VIJbgfihN97J"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/xO6mBUXFv15q"
+    },
+    "\n\n🟨 ",
+    {
+     "type": "bold",
+     "text": "7-й жёлтый дизайн"
+    },
+    "\n\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/v8b1Zw5DlP8u"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/U9goDPizpX6Y"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/STvQvRK9NjL-"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/-28bVOh1HAso"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/rqdxdASRVZLK"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/ZuuU-YvnWIPJ"
+    },
+    "\n",
+    {
+     "type": "link",
+     "text": "https://prnt.sc/nKtUnInxuG9T"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "💸",
+     "document_id": "stickers/AnimatedSticker (12).tgs"
+    },
+    {
+     "type": "plain",
+     "text": "Премиум дизайны от The Project!\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "🟦 3-й синий дизайн \n\n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/7yNHQyMuQ-CO73uO7hfMHQ.png"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/uyzSlJucQ12IhTp4ofaDOQ.png"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/lYjAJKnLSuCR5yCg3AWi7A.png"
+    },
+    {
+     "type": "plain",
+     "text": "  \n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/ljSRRsqHSh258qih35HJwA.png"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "🟩 4-й зеленый дизайн \n\n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/TTgShpVQS9W9KEZgs4rFiQ.png"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/YibnjJByR3Kq8EiCAJCBbQ.png"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/BruglZtHQxu1NDUvh4m37A.png"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://img001.prntscr.com/file/img001/UQYjxAPCQhOwBeap6MdvuQ.png"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n⬛"
+    },
+    {
+     "type": "bold",
+     "text": " 5-й тёмный дизайн \n\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/5rdO-mKEcPO3"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/QVxIufoJdv_b"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/nTK_Ysv-pe4t"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/SUOX7HHva0II"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/dNZbU5PC3moH"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/uZCPrY4EXI7I"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/fTOfs2WO5spI"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n📛 "
+    },
+    {
+     "type": "bold",
+     "text": "6-й NEW HOT DESIGN "
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/0gXKJDkbTmKX"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/ZVMzPuUamL2P"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/mPoFusLdNCpy"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/wZlWePYIeytC"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/VIJbgfihN97J"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/xO6mBUXFv15q"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n🟨 "
+    },
+    {
+     "type": "bold",
+     "text": "7-й жёлтый дизайн"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/v8b1Zw5DlP8u"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/U9goDPizpX6Y"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/STvQvRK9NjL-"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/-28bVOh1HAso"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/rqdxdASRVZLK"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/ZuuU-YvnWIPJ"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "link",
+     "text": "https://prnt.sc/nKtUnInxuG9T"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "type": "message",
+   "date": "2023-11-11T01:43:22",
+   "date_unixtime": "1699656202",
+   "edited": "2025-02-03T19:48:23",
+   "edited_unixtime": "1738601303",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "text": [
+    "🛍",
+    {
+     "type": "bold",
+     "text": "ДАРИМ ПРОЦЕНТЫ!"
+    },
+    "🛍\n\n\n",
+    {
+     "type": "code",
+     "text": "Оставь отзыв, и получи +5% к текущей выплате "
+    },
+    "💲\n\n",
+    {
+     "type": "bold",
+     "text": "🔗"
+    },
+    {
+     "type": "link",
+     "text": "https://lolz.live/threads/3880398/"
+    },
+    "\n\n\n✏️Чтобы получить бонус, отпишите ",
+    {
+     "type": "mention",
+     "text": "@TheProjectTL"
+    },
+    " со скринами для подтверждения. \n\n📸",
+    {
+     "type": "bold",
+     "text": "Обязательно прикрепите доказательства ваших слов.\n"
+    },
+    "В противном случае, ваш отзыв будет удален. Оформляйте отзывы правильно. \n",
+    {
+     "type": "bold",
+     "text": "Инструкция – "
+    },
+    {
+     "type": "link",
+     "text": "https://lolz.live/threads/4244056/"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    "✔️",
+    {
+     "type": "code",
+     "text": "Требования: \n-Скрин диалога с RickManson или The Project \n-Скрин где видно тег RickManson или The Project \n-Скрин выплаты \n-Ссылка на хеш выплаты под хайд для команды форума"
+    },
+    "\n\nP.S: Можно оставлять отзывы за старые выплаты, но они будут оплачиваться в размере 10$"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🛍"
+    },
+    {
+     "type": "bold",
+     "text": "ДАРИМ ПРОЦЕНТЫ!"
+    },
+    {
+     "type": "plain",
+     "text": "🛍\n\n\n"
+    },
+    {
+     "type": "code",
+     "text": "Оставь отзыв, и получи +5% к текущей выплате "
+    },
+    {
+     "type": "plain",
+     "text": "💲\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "🔗"
+    },
+    {
+     "type": "link",
+     "text": "https://lolz.live/threads/3880398/"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n\n✏️Чтобы получить бонус, отпишите "
+    },
+    {
+     "type": "mention",
+     "text": "@TheProjectTL"
+    },
+    {
+     "type": "plain",
+     "text": " со скринами для подтверждения. \n\n📸"
+    },
+    {
+     "type": "bold",
+     "text": "Обязательно прикрепите доказательства ваших слов.\n"
+    },
+    {
+     "type": "plain",
+     "text": "В противном случае, ваш отзыв будет удален. Оформляйте отзывы правильно. \n"
+    },
+    {
+     "type": "bold",
+     "text": "Инструкция – "
+    },
+    {
+     "type": "link",
+     "text": "https://lolz.live/threads/4244056/"
+    },
+    {
+     "type": "bold",
+     "text": "\n\n"
+    },
+    {
+     "type": "plain",
+     "text": "✔️"
+    },
+    {
+     "type": "code",
+     "text": "Требования: \n-Скрин диалога с RickManson или The Project \n-Скрин где видно тег RickManson или The Project \n-Скрин выплаты \n-Ссылка на хеш выплаты под хайд для команды форума"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nP.S: Можно оставлять отзывы за старые выплаты, но они будут оплачиваться в размере 10$"
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "type": "message",
+   "date": "2024-03-01T05:47:55",
+   "date_unixtime": "1709261275",
+   "edited": "2024-03-06T16:04:45",
+   "edited_unixtime": "1709730285",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "⚠️",
+     "document_id": "stickers/AnimatedSticker (13).tgs"
+    },
+    " Всем привет! По сложившимся обстоятельствам, аккаунты: \n",
+    {
+     "type": "mention",
+     "text": "@cryptoloversuper"
+    },
+    "\n",
+    {
+     "type": "mention",
+     "text": "@theprojectinfinity2021"
+    },
+    "\n",
+    {
+     "type": "mention",
+     "text": "@theprojectsup"
+    },
+    "\nБОЛЬШЕ НЕАКТУАЛЬНЫ И НЕ БУДУТ ИСПОЛЬЗОВАТЬСЯ ДЛЯ РАБОТЫ!!!\n\nНовый контакт NZT и Project (Аренда панелек):\n",
+    {
+     "type": "mention",
+     "text": "@TheProjectTL"
+    },
+    "\n\nНовый контакт Рика (Tiktok / Reels): \n",
+    {
+     "type": "mention",
+     "text": "@RickMansonTL"
+    },
+    "\n\nЖелаем вам хорошего настроения и удачного ворка!!! TheProject Team."
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "⚠️",
+     "document_id": "stickers/AnimatedSticker (13).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " Всем привет! По сложившимся обстоятельствам, аккаунты: \n"
+    },
+    {
+     "type": "mention",
+     "text": "@cryptoloversuper"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "mention",
+     "text": "@theprojectinfinity2021"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "mention",
+     "text": "@theprojectsup"
+    },
+    {
+     "type": "plain",
+     "text": "\nБОЛЬШЕ НЕАКТУАЛЬНЫ И НЕ БУДУТ ИСПОЛЬЗОВАТЬСЯ ДЛЯ РАБОТЫ!!!\n\nНовый контакт NZT и Project (Аренда панелек):\n"
+    },
+    {
+     "type": "mention",
+     "text": "@TheProjectTL"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nНовый контакт Рика (Tiktok / Reels): \n"
+    },
+    {
+     "type": "mention",
+     "text": "@RickMansonTL"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nЖелаем вам хорошего настроения и удачного ворка!!! TheProject Team."
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "type": "message",
+   "date": "2024-03-17T13:58:27",
+   "date_unixtime": "1710673107",
+   "edited": "2024-07-19T14:34:28",
+   "edited_unixtime": "1721388868",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🔝",
+     "document_id": "stickers/AnimatedSticker (14).tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "НОВАЯ ЛЕСЕНКА ПОВЫШЕНИЯ ПРОЦЕНТА! ТОЛЬКО ЛУЧШИЕ УСЛОВИЯ!"
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "⚠️",
+     "document_id": "stickers/AnimatedSticker (13).tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "АРЕНДА ПАНЕЛЕК"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "САППОРТ ЗАКРЫВАЕТЕ САМИ\nРАССХОДНИКИ ЗА ВАШ СЧЁТ:"
+    },
+    "\n\n70% - вход\n75% - 10k$\n80% - 60k$ \n85% - 140k$ \n90% - 240k$\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "‼️",
+     "document_id": "stickers/AnimatedSticker (15).tgs"
+    },
+    " ",
+    {
+     "type": "italic",
+     "text": "Можно подключить обработку саппорта за 10% от \nдепозита, на новых дизайнах процент не снижается"
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "⚠️",
+     "document_id": "stickers/AnimatedSticker (13).tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "TIKTOK / REELS КОМАНДА"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "ДЛЯ ОБЫЧНЫХ ВОРКЕРОВ"
+    },
+    ":\n\n65% - вход\n70% - 15k$\n75% - 100k$\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "‼️",
+     "document_id": "stickers/AnimatedSticker (15).tgs"
+    },
+    " ",
+    {
+     "type": "italic",
+     "text": "Входит круглосуточное закрытие вашего саппорта"
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "⚠️",
+     "document_id": "stickers/AnimatedSticker (13).tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "НАСТАВНИКИ \nВ ТТ / REELS КОМАНДЕ:"
+    },
+    "\n\n70% - вход\n75% - 150k$\n80% - 250k$\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "🛍",
+     "document_id": "stickers/AnimatedSticker (16).tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "СИСТЕМА ЛОЯЛЬНОСТИ"
+    },
+    "\n\nВы работали в других командах? У вас есть опыт и оборот? Мы ",
+    {
+     "type": "bold",
+     "text": "обязательно учтем"
+    },
+    " его при выдаче процента в нашей команде.\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "➡️",
+     "document_id": "stickers/sticker.webp"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "ТИКТОК / REELS КОМАНДА И"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "АРЕНДА ПАНЕЛЕК - "
+    },
+    {
+     "type": "mention",
+     "text": "@TheProject_inbot"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "КОНТАКТЫ ДЛЯ ПОВЫШЕНИЯ"
+    },
+    " % -  ",
+    {
+     "type": "mention",
+     "text": "@ChaseGG77"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🔝",
+     "document_id": "stickers/AnimatedSticker (14).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "НОВАЯ ЛЕСЕНКА ПОВЫШЕНИЯ ПРОЦЕНТА! ТОЛЬКО ЛУЧШИЕ УСЛОВИЯ!"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "⚠️",
+     "document_id": "stickers/AnimatedSticker (13).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "АРЕНДА ПАНЕЛЕК"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "САППОРТ ЗАКРЫВАЕТЕ САМИ\nРАССХОДНИКИ ЗА ВАШ СЧЁТ:"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n70% - вход\n75% - 10k$\n80% - 60k$ \n85% - 140k$ \n90% - 240k$\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "‼️",
+     "document_id": "stickers/AnimatedSticker (15).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "italic",
+     "text": "Можно подключить обработку саппорта за 10% от \nдепозита, на новых дизайнах процент не снижается"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "⚠️",
+     "document_id": "stickers/AnimatedSticker (13).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "TIKTOK / REELS КОМАНДА"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "ДЛЯ ОБЫЧНЫХ ВОРКЕРОВ"
+    },
+    {
+     "type": "plain",
+     "text": ":\n\n65% - вход\n70% - 15k$\n75% - 100k$\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "‼️",
+     "document_id": "stickers/AnimatedSticker (15).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "italic",
+     "text": "Входит круглосуточное закрытие вашего саппорта"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "⚠️",
+     "document_id": "stickers/AnimatedSticker (13).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "НАСТАВНИКИ \nВ ТТ / REELS КОМАНДЕ:"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n70% - вход\n75% - 150k$\n80% - 250k$\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🛍",
+     "document_id": "stickers/AnimatedSticker (16).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "СИСТЕМА ЛОЯЛЬНОСТИ"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nВы работали в других командах? У вас есть опыт и оборот? Мы "
+    },
+    {
+     "type": "bold",
+     "text": "обязательно учтем"
+    },
+    {
+     "type": "plain",
+     "text": " его при выдаче процента в нашей команде.\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➡️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "ТИКТОК / REELS КОМАНДА И"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "АРЕНДА ПАНЕЛЕК - "
+    },
+    {
+     "type": "mention",
+     "text": "@TheProject_inbot"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "КОНТАКТЫ ДЛЯ ПОВЫШЕНИЯ"
+    },
+    {
+     "type": "plain",
+     "text": " % -  "
+    },
+    {
+     "type": "mention",
+     "text": "@ChaseGG77"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "type": "message",
+   "date": "2024-05-28T21:49:54",
+   "date_unixtime": "1716922194",
+   "edited": "2025-02-03T19:54:00",
+   "edited_unixtime": "1738601640",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "text": [
+    {
+     "type": "text_link",
+     "text": "➖➖➖➖➖➖➖➖➖➖➖➖➖",
+     "href": "https://t.me/+aedBzR14tus4ZGZi"
+    },
+    "\n\n➖ ✉️ ",
+    {
+     "type": "bold",
+     "text": "КОНТАКТЫ\n\n"
+    },
+    "➖ ",
+    {
+     "type": "bold",
+     "text": "TheProject"
+    },
+    " - ",
+    {
+     "type": "mention",
+     "text": "@TheProjectTL"
+    },
+    " - ",
+    {
+     "type": "bold",
+     "text": "TS\n🔹"
+    },
+    "По важным вопросам.\n🔸Принятие ключевых финансовых решений.\n\n➖",
+    {
+     "type": "bold",
+     "text": "PEKE "
+    },
+    "- ",
+    {
+     "type": "mention",
+     "text": "@pekeadm"
+    },
+    " - ",
+    {
+     "type": "bold",
+     "text": "Project"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Manager\n🔹"
+    },
+    "Установление партнерских отношений.\n🔸Предложения по обновам и фиксам проекта.\n",
+    {
+     "type": "bold",
+     "text": "🔹"
+    },
+    "Решение проблем и спорных ситуаций.\n🔸Координация команды.\n\n➖ ",
+    {
+     "type": "bold",
+     "text": "Helios"
+    },
+    " - ",
+    {
+     "type": "mention",
+     "text": "@ChaseGG77"
+    },
+    " - ",
+    {
+     "type": "bold",
+     "text": "Panel Supervisor"
+    },
+    " \n",
+    {
+     "type": "bold",
+     "text": "🔹"
+    },
+    "Повышение процента %",
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    "🔸Помощь по работе с личной панелью\n🔹Модератор чата\n\n➖ ",
+    {
+     "type": "bold",
+     "text": "Baby"
+    },
+    " - ",
+    {
+     "type": "mention",
+     "text": "@mokrensky"
+    },
+    " - ",
+    {
+     "type": "bold",
+     "text": "Support"
+    },
+    "\n🔸Модератор чата\n\n\n",
+    {
+     "type": "bold",
+     "text": "➖БОТ ДЛЯ ПОЛУЧЕНИЯ АДМИН ПАНЕЛИ"
+    },
+    " - ",
+    {
+     "type": "mention",
+     "text": "@Insane2021_bot"
+    },
+    "\n🔸Выдача админ панели\n🔹Подключение 2ФА\n🔸Уведомления о действиях привязанных за вами пользователей\n🔹Ответ на сообщения в саппорт\n\n➖ ",
+    {
+     "type": "text_link",
+     "text": "🔗 ОБЩИЙ ЧАТ",
+     "href": "https://t.me/+vZh0HODJwUQ0Y2Uy"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "text_link",
+     "text": "➖➖➖➖➖➖➖➖➖➖➖➖➖",
+     "href": "https://t.me/+aedBzR14tus4ZGZi"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n➖ ✉️ "
+    },
+    {
+     "type": "bold",
+     "text": "КОНТАКТЫ\n\n"
+    },
+    {
+     "type": "plain",
+     "text": "➖ "
+    },
+    {
+     "type": "bold",
+     "text": "TheProject"
+    },
+    {
+     "type": "plain",
+     "text": " - "
+    },
+    {
+     "type": "mention",
+     "text": "@TheProjectTL"
+    },
+    {
+     "type": "plain",
+     "text": " - "
+    },
+    {
+     "type": "bold",
+     "text": "TS\n🔹"
+    },
+    {
+     "type": "plain",
+     "text": "По важным вопросам.\n🔸Принятие ключевых финансовых решений.\n\n➖"
+    },
+    {
+     "type": "bold",
+     "text": "PEKE "
+    },
+    {
+     "type": "plain",
+     "text": "- "
+    },
+    {
+     "type": "mention",
+     "text": "@pekeadm"
+    },
+    {
+     "type": "plain",
+     "text": " - "
+    },
+    {
+     "type": "bold",
+     "text": "Project"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Manager\n🔹"
+    },
+    {
+     "type": "plain",
+     "text": "Установление партнерских отношений.\n🔸Предложения по обновам и фиксам проекта.\n"
+    },
+    {
+     "type": "bold",
+     "text": "🔹"
+    },
+    {
+     "type": "plain",
+     "text": "Решение проблем и спорных ситуаций.\n🔸Координация команды.\n\n➖ "
+    },
+    {
+     "type": "bold",
+     "text": "Helios"
+    },
+    {
+     "type": "plain",
+     "text": " - "
+    },
+    {
+     "type": "mention",
+     "text": "@ChaseGG77"
+    },
+    {
+     "type": "plain",
+     "text": " - "
+    },
+    {
+     "type": "bold",
+     "text": "Panel Supervisor"
+    },
+    {
+     "type": "plain",
+     "text": " \n"
+    },
+    {
+     "type": "bold",
+     "text": "🔹"
+    },
+    {
+     "type": "plain",
+     "text": "Повышение процента %"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "plain",
+     "text": "🔸Помощь по работе с личной панелью\n🔹Модератор чата\n\n➖ "
+    },
+    {
+     "type": "bold",
+     "text": "Baby"
+    },
+    {
+     "type": "plain",
+     "text": " - "
+    },
+    {
+     "type": "mention",
+     "text": "@mokrensky"
+    },
+    {
+     "type": "plain",
+     "text": " - "
+    },
+    {
+     "type": "bold",
+     "text": "Support"
+    },
+    {
+     "type": "plain",
+     "text": "\n🔸Модератор чата\n\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➖БОТ ДЛЯ ПОЛУЧЕНИЯ АДМИН ПАНЕЛИ"
+    },
+    {
+     "type": "plain",
+     "text": " - "
+    },
+    {
+     "type": "mention",
+     "text": "@Insane2021_bot"
+    },
+    {
+     "type": "plain",
+     "text": "\n🔸Выдача админ панели\n🔹Подключение 2ФА\n🔸Уведомления о действиях привязанных за вами пользователей\n🔹Ответ на сообщения в саппорт\n\n➖ "
+    },
+    {
+     "type": "text_link",
+     "text": "🔗 ОБЩИЙ ЧАТ",
+     "href": "https://t.me/+vZh0HODJwUQ0Y2Uy"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "type": "message",
+   "date": "2024-07-11T14:20:03",
+   "date_unixtime": "1720696803",
+   "edited": "2024-07-13T21:47:56",
+   "edited_unixtime": "1720896476",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "photo": "photos/photo_8@11-07-2024_14-20-03.jpg",
+   "photo_file_size": 97665,
+   "width": 1280,
+   "height": 737,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "☄️",
+     "document_id": "stickers/AnimatedSticker (17).tgs"
+    },
+    "  ",
+    {
+     "type": "bold",
+     "text": "Впервые у нас? Хотите детально ознакомиться с нашей командой? \n"
+    },
+    "\nС радостью сообщаем, мы подготовили для вас книгу проекта с ответами на все интересующие вопросы! Будет полезно как для новичков, так и опытным воркерам! \nВсё это доступно по ",
+    {
+     "type": "text_link",
+     "text": "ссылке",
+     "href": "http://book.theproject.biz/"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "☄️",
+     "document_id": "stickers/AnimatedSticker (17).tgs"
+    },
+    {
+     "type": "plain",
+     "text": "  "
+    },
+    {
+     "type": "bold",
+     "text": "Впервые у нас? Хотите детально ознакомиться с нашей командой? \n"
+    },
+    {
+     "type": "plain",
+     "text": "\nС радостью сообщаем, мы подготовили для вас книгу проекта с ответами на все интересующие вопросы! Будет полезно как для новичков, так и опытным воркерам! \nВсё это доступно по "
+    },
+    {
+     "type": "text_link",
+     "text": "ссылке",
+     "href": "http://book.theproject.biz/"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "type": "service",
+   "date": "2024-07-11T14:24:01",
+   "date_unixtime": "1720697041",
+   "actor": "The Project INFO",
+   "actor_id": "channel1691270582",
+   "action": "pin_message",
+   "message_id": 23,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 25,
+   "type": "message",
+   "date": "2025-03-10T11:41:34",
+   "date_unixtime": "1741596094",
+   "from": "The Project INFO",
+   "from_id": "channel1691270582",
+   "text": [
+    {
+     "type": "bold",
+     "text": "🤟"
+    },
+    {
+     "type": "bold",
+     "text": " А вот и новые обновления"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Автоматический промо-линк"
+    },
+    " – Теперь возле промокода автоматически отображается реферальная ссылка.\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Ответ саппорту через бота"
+    },
+    " – Реализована возможность быстрого ответа саппорту без необходимости вручную вводить команду.\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "🟢",
+     "document_id": "stickers/AnimatedSticker (18).tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Страница пользователя:"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Основная информация"
+    },
+    " – Перенесены настройки редактирования почты и пароля в верификацию. Добавлены ползунки для блокировки саппорта, конверсий и стейкинга.\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Баланс"
+    },
+    " – Создана новая вкладка, содержащая информацию о кошельках и балансе всех монет.\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Ошибки"
+    },
+    " – Создана вкладка с возможностью просмотра текущих ошибок, ошибки стейкинга, свапа, блокировки трейдинга и т.д. Также добавлена возможность отправки уведомлений в реальном времени.\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Автоматический фейк-вывод"
+    },
+    " – Добавлен ползунок \"Fake Withdraw\" в профиль пользователя и как функция для умного депозита. Если включен, то при попытке вывода средств пользователь получает заданную ошибку вывода, сумма списывается с баланса, а транзакция получает статус Pending.\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "🟢",
+     "document_id": "stickers/AnimatedSticker (18).tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Страница настроек:"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Основные"
+    },
+    " – Переименованы в \"Оповещения\".\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Удалена"
+    },
+    " \"Ошибка вывода при привязке\", так как настройка вынесена на доменный уровень.\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Оповещения"
+    },
+    " – Переименованы в \"Оповещения в Telegram канал/группу\".\n",
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Telegram Bots"
+    },
+    " – Переименованы в \"Добавить своего бота в Telegram канал/группу\"."
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🤟"
+    },
+    {
+     "type": "bold",
+     "text": " А вот и новые обновления"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Автоматический промо-линк"
+    },
+    {
+     "type": "plain",
+     "text": " – Теперь возле промокода автоматически отображается реферальная ссылка.\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Ответ саппорту через бота"
+    },
+    {
+     "type": "plain",
+     "text": " – Реализована возможность быстрого ответа саппорту без необходимости вручную вводить команду.\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🟢",
+     "document_id": "stickers/AnimatedSticker (18).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Страница пользователя:"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Основная информация"
+    },
+    {
+     "type": "plain",
+     "text": " – Перенесены настройки редактирования почты и пароля в верификацию. Добавлены ползунки для блокировки саппорта, конверсий и стейкинга.\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Баланс"
+    },
+    {
+     "type": "plain",
+     "text": " – Создана новая вкладка, содержащая информацию о кошельках и балансе всех монет.\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Ошибки"
+    },
+    {
+     "type": "plain",
+     "text": " – Создана вкладка с возможностью просмотра текущих ошибок, ошибки стейкинга, свапа, блокировки трейдинга и т.д. Также добавлена возможность отправки уведомлений в реальном времени.\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Автоматический фейк-вывод"
+    },
+    {
+     "type": "plain",
+     "text": " – Добавлен ползунок \"Fake Withdraw\" в профиль пользователя и как функция для умного депозита. Если включен, то при попытке вывода средств пользователь получает заданную ошибку вывода, сумма списывается с баланса, а транзакция получает статус Pending.\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🟢",
+     "document_id": "stickers/AnimatedSticker (18).tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Страница настроек:"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Основные"
+    },
+    {
+     "type": "plain",
+     "text": " – Переименованы в \"Оповещения\".\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Удалена"
+    },
+    {
+     "type": "plain",
+     "text": " \"Ошибка вывода при привязке\", так как настройка вынесена на доменный уровень.\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Оповещения"
+    },
+    {
+     "type": "plain",
+     "text": " – Переименованы в \"Оповещения в Telegram канал/группу\".\n"
+    },
+    {
+     "type": "bold",
+     "text": "➡️"
+    },
+    {
+     "type": "bold",
+     "text": " Telegram Bots"
+    },
+    {
+     "type": "plain",
+     "text": " – Переименованы в \"Добавить своего бота в Telegram канал/группу\"."
+    }
+   ]
+  }
+ ]
+}
