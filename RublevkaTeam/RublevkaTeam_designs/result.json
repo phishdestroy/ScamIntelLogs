@@ -1,0 +1,1972 @@
+{
+ "name": "[RublevkaTeam] Дизайны НЕ",
+ "type": "private_channel",
+ "id": 2219007780,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2024-06-04T15:04:43",
+   "date_unixtime": "1717538683",
+   "actor": "[RublevkaTeam] Дизайны НЕ",
+   "actor_id": "channel2219007780",
+   "action": "create_channel",
+   "title": "Дизайны",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 13,
+   "type": "message",
+   "date": "2024-06-04T15:35:57",
+   "date_unixtime": "1717540557",
+   "edited": "2025-01-05T11:49:12",
+   "edited_unixtime": "1736106552",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_1@04-06-2024_15-35-57.jpg",
+   "photo_file_size": 25857,
+   "width": 640,
+   "height": 360,
+   "text": [
+    "BLUM COIN\n",
+    {
+     "type": "text_link",
+     "text": "1 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/BbZ97xxW/photo-47-05-01-2025-22-47-13.jpg"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "2 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/6p8wNLFt/photo-48-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "BLUM COIN\n"
+    },
+    {
+     "type": "text_link",
+     "text": "1 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/BbZ97xxW/photo-47-05-01-2025-22-47-13.jpg"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "2 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/6p8wNLFt/photo-48-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "type": "message",
+   "date": "2024-06-04T15:35:57",
+   "date_unixtime": "1717540557",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_2@04-06-2024_15-35-57.jpg",
+   "photo_file_size": 25516,
+   "width": 640,
+   "height": 360,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 15,
+   "type": "message",
+   "date": "2024-06-04T15:36:03",
+   "date_unixtime": "1717540563",
+   "edited": "2025-01-05T11:51:02",
+   "edited_unixtime": "1736106662",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_3@04-06-2024_15-36-03.jpg",
+   "photo_file_size": 37277,
+   "width": 640,
+   "height": 360,
+   "text": [
+    "TON COIN\n",
+    {
+     "type": "text_link",
+     "text": "1 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/BZRBgqsp/photo-49-05-01-2025-22-47-13-thumb.jpg"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "2 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/02mdXLys/photo-50-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "TON COIN\n"
+    },
+    {
+     "type": "text_link",
+     "text": "1 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/BZRBgqsp/photo-49-05-01-2025-22-47-13-thumb.jpg"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "2 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/02mdXLys/photo-50-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "type": "message",
+   "date": "2024-06-04T15:36:04",
+   "date_unixtime": "1717540564",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_4@04-06-2024_15-36-04.jpg",
+   "photo_file_size": 31017,
+   "width": 640,
+   "height": 360,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 17,
+   "type": "message",
+   "date": "2024-06-04T15:36:10",
+   "date_unixtime": "1717540570",
+   "edited": "2025-01-05T11:51:51",
+   "edited_unixtime": "1736106711",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_5@04-06-2024_15-36-10.jpg",
+   "photo_file_size": 32035,
+   "width": 640,
+   "height": 360,
+   "text": [
+    "NOT COIN\n",
+    {
+     "type": "text_link",
+     "text": "1 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/pTJMB05Y/photo-51-05-01-2025-22-47-13.jpg"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "2 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/NfJYVPJd/photo-52-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "NOT COIN\n"
+    },
+    {
+     "type": "text_link",
+     "text": "1 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/pTJMB05Y/photo-51-05-01-2025-22-47-13.jpg"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "2 LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/NfJYVPJd/photo-52-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "type": "message",
+   "date": "2024-06-04T15:36:10",
+   "date_unixtime": "1717540570",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_6@04-06-2024_15-36-10.jpg",
+   "photo_file_size": 32117,
+   "width": 640,
+   "height": 360,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 21,
+   "type": "message",
+   "date": "2024-06-12T15:18:49",
+   "date_unixtime": "1718230729",
+   "edited": "2025-01-05T11:52:18",
+   "edited_unixtime": "1736106738",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_7@12-06-2024_15-18-49.jpg",
+   "photo_file_size": 106408,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Blum Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/mgK4Z1GM/photo-53-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Blum Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/mgK4Z1GM/photo-53-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "type": "message",
+   "date": "2024-06-12T15:19:29",
+   "date_unixtime": "1718230769",
+   "edited": "2025-01-05T11:52:47",
+   "edited_unixtime": "1736106767",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_8@12-06-2024_15-19-29.jpg",
+   "photo_file_size": 133822,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Hamster Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/RVV4gzR3/photo-54-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Hamster Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/RVV4gzR3/photo-54-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "type": "message",
+   "date": "2024-06-12T15:19:55",
+   "date_unixtime": "1718230795",
+   "edited": "2025-01-05T11:53:03",
+   "edited_unixtime": "1736106783",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_9@12-06-2024_15-19-55.jpg",
+   "photo_file_size": 98763,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Not Coin Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/rsgcqh8F/photo-55-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Not Coin Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/rsgcqh8F/photo-55-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "type": "message",
+   "date": "2024-06-12T15:20:17",
+   "date_unixtime": "1718230817",
+   "edited": "2025-01-05T11:53:19",
+   "edited_unixtime": "1736106799",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_10@12-06-2024_15-20-17.jpg",
+   "photo_file_size": 99873,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Ton Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/T2cTjPrM/photo-56-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ton Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/T2cTjPrM/photo-56-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "type": "message",
+   "date": "2024-06-29T16:43:26",
+   "date_unixtime": "1719704606",
+   "edited": "2025-01-05T11:53:47",
+   "edited_unixtime": "1736106827",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_11@29-06-2024_16-43-26.jpg",
+   "photo_file_size": 78927,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Hamster Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/D07nkV3M/photo-57-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Hamster Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/D07nkV3M/photo-57-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "type": "message",
+   "date": "2024-06-29T16:43:48",
+   "date_unixtime": "1719704628",
+   "edited": "2025-01-05T11:54:07",
+   "edited_unixtime": "1736106847",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_12@29-06-2024_16-43-48.jpg",
+   "photo_file_size": 69771,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Ton Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/PxWTRX9D/photo-58-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ton Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/PxWTRX9D/photo-58-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "type": "message",
+   "date": "2024-06-29T16:44:10",
+   "date_unixtime": "1719704650",
+   "edited": "2025-01-05T11:54:24",
+   "edited_unixtime": "1736106864",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_13@29-06-2024_16-44-10.jpg",
+   "photo_file_size": 60924,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Blum Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/63JBc2jw/photo-59-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Blum Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/63JBc2jw/photo-59-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "type": "message",
+   "date": "2024-06-29T16:45:52",
+   "date_unixtime": "1719704752",
+   "edited": "2025-01-05T11:54:41",
+   "edited_unixtime": "1736106881",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_14@29-06-2024_16-45-52.jpg",
+   "photo_file_size": 69551,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Notcoin Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/tgVXFtz2/photo-60-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Notcoin Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/tgVXFtz2/photo-60-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "type": "message",
+   "date": "2024-07-07T07:27:54",
+   "date_unixtime": "1720362474",
+   "edited": "2025-01-05T11:55:03",
+   "edited_unixtime": "1736106903",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_15@07-07-2024_07-27-54.jpg",
+   "photo_file_size": 100258,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Catizen airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/D0RJPyXX/photo-61-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Catizen airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/D0RJPyXX/photo-61-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "type": "message",
+   "date": "2024-07-10T11:47:59",
+   "date_unixtime": "1720637279",
+   "edited": "2025-01-05T11:55:20",
+   "edited_unixtime": "1736106920",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_16@10-07-2024_11-47-59.jpg",
+   "photo_file_size": 41059,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Blum airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/KvJvbYzr/photo-62-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Blum airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/KvJvbYzr/photo-62-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "type": "message",
+   "date": "2024-07-10T11:48:09",
+   "date_unixtime": "1720637289",
+   "edited": "2025-01-05T11:55:37",
+   "edited_unixtime": "1736106937",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_17@10-07-2024_11-48-09.jpg",
+   "photo_file_size": 36902,
+   "width": 905,
+   "height": 720,
+   "text": [
+    "Notcoin withdraw\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/05Gytn14/photo-63-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Notcoin withdraw\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/05Gytn14/photo-63-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "type": "message",
+   "date": "2024-07-23T04:03:47",
+   "date_unixtime": "1721732627",
+   "edited": "2025-01-05T11:56:00",
+   "edited_unixtime": "1736106960",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_18@23-07-2024_04-03-47.jpg",
+   "photo_file_size": 87626,
+   "width": 960,
+   "height": 720,
+   "text": [
+    "Catizen airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/0yj5yqKg/photo-64-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Catizen airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/0yj5yqKg/photo-64-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "type": "message",
+   "date": "2024-07-23T04:04:00",
+   "date_unixtime": "1721732640",
+   "edited": "2025-01-05T11:56:13",
+   "edited_unixtime": "1736106973",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_19@23-07-2024_04-04-00.jpg",
+   "photo_file_size": 81631,
+   "width": 960,
+   "height": 720,
+   "text": [
+    "Tapswap airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/sgYQ5zDM/photo-65-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Tapswap airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/sgYQ5zDM/photo-65-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "type": "message",
+   "date": "2024-07-23T04:04:11",
+   "date_unixtime": "1721732651",
+   "edited": "2025-01-05T11:56:28",
+   "edited_unixtime": "1736106988",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_20@23-07-2024_04-04-11.jpg",
+   "photo_file_size": 84657,
+   "width": 960,
+   "height": 720,
+   "text": [
+    "Ton airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/0jC5bkCv/photo-66-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ton airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/0jC5bkCv/photo-66-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "type": "message",
+   "date": "2024-08-12T09:36:46",
+   "date_unixtime": "1723480606",
+   "edited": "2025-01-05T11:56:44",
+   "edited_unixtime": "1736107004",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_21@12-08-2024_09-36-46.jpg",
+   "photo_file_size": 63825,
+   "width": 960,
+   "height": 720,
+   "text": [
+    "Airdrop event\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/1XS5mnwM/photo-67-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Airdrop event\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/1XS5mnwM/photo-67-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "type": "message",
+   "date": "2024-08-12T09:37:23",
+   "date_unixtime": "1723480643",
+   "edited": "2025-01-05T11:57:00",
+   "edited_unixtime": "1736107020",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_22@12-08-2024_09-37-23.jpg",
+   "photo_file_size": 89914,
+   "width": 960,
+   "height": 720,
+   "text": [
+    "Ton airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/yNw8GrNM/photo-68-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ton airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/yNw8GrNM/photo-68-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "type": "message",
+   "date": "2024-08-12T09:37:45",
+   "date_unixtime": "1723480665",
+   "edited": "2025-01-05T11:57:49",
+   "edited_unixtime": "1736107069",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_23@12-08-2024_09-37-45.jpg",
+   "photo_file_size": 89568,
+   "width": 960,
+   "height": 720,
+   "text": [
+    "Notcoin airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/qR5zpMQ5/photo-69-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Notcoin airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/qR5zpMQ5/photo-69-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "type": "message",
+   "date": "2024-08-12T09:38:05",
+   "date_unixtime": "1723480685",
+   "edited": "2025-01-05T11:58:16",
+   "edited_unixtime": "1736107096",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_24@12-08-2024_09-38-05.jpg",
+   "photo_file_size": 99258,
+   "width": 960,
+   "height": 720,
+   "text": [
+    "Tonroll\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/PxY5nzpP/photo-70-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Tonroll\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/PxY5nzpP/photo-70-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "type": "message",
+   "date": "2024-09-23T01:33:59",
+   "date_unixtime": "1727080439",
+   "edited": "2025-01-05T11:58:35",
+   "edited_unixtime": "1736107115",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_25@23-09-2024_01-33-59.jpg",
+   "photo_file_size": 140961,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    "Catizen Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/mgpDYrW2/photo-71-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Catizen Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/mgpDYrW2/photo-71-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "type": "message",
+   "date": "2024-09-23T01:34:58",
+   "date_unixtime": "1727080498",
+   "edited": "2025-01-05T11:58:49",
+   "edited_unixtime": "1736107129",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_26@23-09-2024_01-34-58.jpg",
+   "photo_file_size": 370305,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    "Hamster Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/QddCKTPy/photo-72-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Hamster Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/QddCKTPy/photo-72-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "type": "message",
+   "date": "2024-09-23T01:35:42",
+   "date_unixtime": "1727080542",
+   "edited": "2025-01-05T11:59:17",
+   "edited_unixtime": "1736107157",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_27@23-09-2024_01-35-42.jpg",
+   "photo_file_size": 302057,
+   "width": 1244,
+   "height": 1244,
+   "text": [
+    "Notcoin Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/hPrhGrCm/photo-73-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Notcoin Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/hPrhGrCm/photo-73-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "type": "message",
+   "date": "2024-09-23T01:35:52",
+   "date_unixtime": "1727080552",
+   "edited": "2025-01-05T11:59:37",
+   "edited_unixtime": "1736107177",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_28@23-09-2024_01-35-52.jpg",
+   "photo_file_size": 139302,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    "Dogs Airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/DyF8FDcF/photo-74-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Dogs Airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/DyF8FDcF/photo-74-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "type": "message",
+   "date": "2024-10-20T03:57:20",
+   "date_unixtime": "1729421840",
+   "edited": "2025-01-05T12:00:40",
+   "edited_unixtime": "1736107240",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_29@20-10-2024_03-57-20.jpg",
+   "photo_file_size": 97285,
+   "width": 1080,
+   "height": 1080,
+   "text": [
+    "Cats airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/k5NQM8th/photo-75-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Cats airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/k5NQM8th/photo-75-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "type": "message",
+   "date": "2024-10-20T03:57:35",
+   "date_unixtime": "1729421855",
+   "edited": "2025-01-05T12:00:59",
+   "edited_unixtime": "1736107259",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_30@20-10-2024_03-57-35.jpg",
+   "photo_file_size": 119043,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    "Dogs airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/B6qxj6TZ/photo-76-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Dogs airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/B6qxj6TZ/photo-76-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "type": "message",
+   "date": "2024-10-20T03:58:26",
+   "date_unixtime": "1729421906",
+   "edited": "2025-01-05T12:01:12",
+   "edited_unixtime": "1736107272",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_31@20-10-2024_03-58-26.jpg",
+   "photo_file_size": 117931,
+   "width": 1080,
+   "height": 1080,
+   "text": [
+    "X empire airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/0Qwb2135/photo-77-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "X empire airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/0Qwb2135/photo-77-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "type": "message",
+   "date": "2024-10-20T04:00:05",
+   "date_unixtime": "1729422005",
+   "edited": "2025-01-05T12:01:25",
+   "edited_unixtime": "1736107285",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_32@20-10-2024_04-00-05.jpg",
+   "photo_file_size": 72128,
+   "width": 960,
+   "height": 960,
+   "text": [
+    "Resistance dog airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/yxxcTbpw/photo-78-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Resistance dog airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/yxxcTbpw/photo-78-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "type": "message",
+   "date": "2024-11-01T13:07:04",
+   "date_unixtime": "1730491624",
+   "edited": "2025-01-05T12:01:40",
+   "edited_unixtime": "1736107300",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_33@01-11-2024_13-07-04.jpg",
+   "photo_file_size": 101174,
+   "width": 1000,
+   "height": 1000,
+   "text": [
+    "X empire airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/tJcPvNL7/photo-79-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "X empire airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/tJcPvNL7/photo-79-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 49,
+   "type": "message",
+   "date": "2024-11-01T13:07:39",
+   "date_unixtime": "1730491659",
+   "edited": "2025-01-05T12:01:52",
+   "edited_unixtime": "1736107312",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_34@01-11-2024_13-07-39.jpg",
+   "photo_file_size": 84760,
+   "width": 1000,
+   "height": 1000,
+   "text": [
+    "Dogs airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/c1kQJdrZ/photo-80-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Dogs airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/c1kQJdrZ/photo-80-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 50,
+   "type": "message",
+   "date": "2024-11-01T13:07:46",
+   "date_unixtime": "1730491666",
+   "edited": "2025-01-05T12:02:09",
+   "edited_unixtime": "1736107329",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_35@01-11-2024_13-07-46.jpg",
+   "photo_file_size": 73824,
+   "width": 1000,
+   "height": 1000,
+   "text": [
+    "Cats airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/vZYg7j1X/photo-81-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Cats airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/vZYg7j1X/photo-81-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "type": "message",
+   "date": "2024-11-08T11:48:42",
+   "date_unixtime": "1731095322",
+   "edited": "2025-01-05T12:02:23",
+   "edited_unixtime": "1736107343",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_36@08-11-2024_11-48-42.jpg",
+   "photo_file_size": 123913,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    "Tomarket airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/SNwCWV6v/photo-82-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Tomarket airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/SNwCWV6v/photo-82-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "type": "message",
+   "date": "2024-11-08T11:49:19",
+   "date_unixtime": "1731095359",
+   "edited": "2025-01-05T12:02:38",
+   "edited_unixtime": "1736107358",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_37@08-11-2024_11-49-19.jpg",
+   "photo_file_size": 154950,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    "Tomarket airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/kXdtGDq0/photo-83-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Tomarket airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/kXdtGDq0/photo-83-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "type": "message",
+   "date": "2024-11-13T08:27:10",
+   "date_unixtime": "1731515230",
+   "edited": "2025-01-05T12:02:52",
+   "edited_unixtime": "1736107372",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_38@13-11-2024_08-27-10.jpg",
+   "photo_file_size": 62620,
+   "width": 800,
+   "height": 800,
+   "text": [
+    "Paws airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/MTCfypRj/photo-84-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Paws airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/MTCfypRj/photo-84-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 54,
+   "type": "message",
+   "date": "2024-11-13T08:27:46",
+   "date_unixtime": "1731515266",
+   "edited": "2025-01-05T12:03:05",
+   "edited_unixtime": "1736107385",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_39@13-11-2024_08-27-46.jpg",
+   "photo_file_size": 43258,
+   "width": 584,
+   "height": 574,
+   "text": [
+    "Pornhub x ton collaboration\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/44c9Xpkv/photo-85-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Pornhub x ton collaboration\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/44c9Xpkv/photo-85-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 55,
+   "type": "message",
+   "date": "2024-11-13T10:23:27",
+   "date_unixtime": "1731522207",
+   "edited": "2025-01-05T12:03:24",
+   "edited_unixtime": "1736107404",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_40@13-11-2024_10-23-27.jpg",
+   "photo_file_size": 92941,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    "MAGA airdrop\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/MZ59mkHr/photo-86-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "MAGA airdrop\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/MZ59mkHr/photo-86-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 56,
+   "type": "message",
+   "date": "2024-11-30T08:57:36",
+   "date_unixtime": "1732985856",
+   "edited": "2025-01-05T12:03:39",
+   "edited_unixtime": "1736107419",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_41@30-11-2024_08-57-36.jpg",
+   "photo_file_size": 96351,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Major airdrop"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/L60vGzzt/photo-87-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Major airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/L60vGzzt/photo-87-05-01-2025-22-47-13-thumb.jpg"
+    }
+   ]
+  },
+  {
+   "id": 57,
+   "type": "message",
+   "date": "2024-11-30T09:00:09",
+   "date_unixtime": "1732986009",
+   "edited": "2025-01-05T12:03:56",
+   "edited_unixtime": "1736107436",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_42@30-11-2024_09-00-09.jpg",
+   "photo_file_size": 72828,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Major airdrop 2"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/26bBbZqD/photo-88-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Major airdrop 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/26bBbZqD/photo-88-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 58,
+   "type": "message",
+   "date": "2024-11-30T09:04:44",
+   "date_unixtime": "1732986284",
+   "edited": "2025-01-05T12:04:09",
+   "edited_unixtime": "1736107449",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_43@30-11-2024_09-04-44.jpg",
+   "photo_file_size": 155109,
+   "width": 1000,
+   "height": 1000,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Major airdrop 3"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/htsmHgFH/photo-89-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Major airdrop 3"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/htsmHgFH/photo-89-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "type": "message",
+   "date": "2024-11-30T09:05:08",
+   "date_unixtime": "1732986308",
+   "edited": "2025-01-05T12:04:21",
+   "edited_unixtime": "1736107461",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_44@30-11-2024_09-05-08.jpg",
+   "photo_file_size": 86612,
+   "width": 1280,
+   "height": 960,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Paws airdrop"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/BvvF3y4t/photo-90-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Paws airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/BvvF3y4t/photo-90-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 61,
+   "type": "message",
+   "date": "2024-11-30T09:06:41",
+   "date_unixtime": "1732986401",
+   "edited": "2025-01-05T12:04:33",
+   "edited_unixtime": "1736107473",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_45@30-11-2024_09-06-41.jpg",
+   "photo_file_size": 189338,
+   "width": 800,
+   "height": 800,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Blum airdrop"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/YCMgn0P6/photo-91-05-01-2025-22-47-13.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Blum airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/YCMgn0P6/photo-91-05-01-2025-22-47-13.jpg"
+    }
+   ]
+  },
+  {
+   "id": 62,
+   "type": "message",
+   "date": "2024-11-30T09:06:54",
+   "date_unixtime": "1732986414",
+   "edited": "2025-01-05T12:04:45",
+   "edited_unixtime": "1736107485",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_46@30-11-2024_09-06-54.jpg",
+   "photo_file_size": 58458,
+   "width": 905,
+   "height": 720,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Notcoin airdrop"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/QNKpVR5T/photo-92-05-01-2025-22-47-14.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Notcoin airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/QNKpVR5T/photo-92-05-01-2025-22-47-14.jpg"
+    }
+   ]
+  },
+  {
+   "id": 63,
+   "type": "message",
+   "date": "2024-11-30T09:07:06",
+   "date_unixtime": "1732986426",
+   "edited": "2025-01-05T12:05:03",
+   "edited_unixtime": "1736107503",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_47@30-11-2024_09-07-06.jpg",
+   "photo_file_size": 52876,
+   "width": 800,
+   "height": 800,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Blum airdrop"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/bNX1n3HF/photo-93-05-01-2025-22-47-14.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Blum airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/bNX1n3HF/photo-93-05-01-2025-22-47-14.jpg"
+    }
+   ]
+  },
+  {
+   "id": 64,
+   "type": "message",
+   "date": "2024-12-16T10:11:45",
+   "date_unixtime": "1734372705",
+   "edited": "2025-01-05T12:05:21",
+   "edited_unixtime": "1736107521",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_48@16-12-2024_10-11-45.jpg",
+   "photo_file_size": 247895,
+   "width": 1280,
+   "height": 1280,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Notpixel airdrop"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/PrmYQYSf/photo-94-05-01-2025-22-47-14.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Notpixel airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/PrmYQYSf/photo-94-05-01-2025-22-47-14.jpg"
+    }
+   ]
+  },
+  {
+   "id": 65,
+   "type": "message",
+   "date": "2024-12-24T03:31:04",
+   "date_unixtime": "1735039864",
+   "edited": "2025-01-05T12:05:39",
+   "edited_unixtime": "1736107539",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_49@24-12-2024_03-31-04.jpg",
+   "photo_file_size": 136381,
+   "width": 1081,
+   "height": 1080,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Notpixel spin"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/Y0FgVWk3/photo-95-05-01-2025-22-47-14.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Notpixel spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/Y0FgVWk3/photo-95-05-01-2025-22-47-14.jpg"
+    }
+   ]
+  },
+  {
+   "id": 66,
+   "type": "message",
+   "date": "2024-12-24T03:31:33",
+   "date_unixtime": "1735039893",
+   "edited": "2025-01-05T12:05:52",
+   "edited_unixtime": "1736107552",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_50@24-12-2024_03-31-33.jpg",
+   "photo_file_size": 105956,
+   "width": 1280,
+   "height": 960,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Notpixel spin"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/zB6K0jmv/photo-96-05-01-2025-22-47-14.jpg"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Notpixel spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNOLOAD",
+     "href": "https://i.postimg.cc/zB6K0jmv/photo-96-05-01-2025-22-47-14.jpg"
+    }
+   ]
+  },
+  {
+   "id": 69,
+   "type": "message",
+   "date": "2025-01-05T12:19:33",
+   "date_unixtime": "1736108373",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_51@05-01-2025_12-19-33.jpg",
+   "photo_file_size": 259424,
+   "width": 1024,
+   "height": 1024,
+   "text": [
+    {
+     "type": "bold",
+     "text": "New Year's NotPixel Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/cKBsrYRw"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "New Year's NotPixel Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/cKBsrYRw"
+    }
+   ]
+  },
+  {
+   "id": 70,
+   "type": "message",
+   "date": "2025-01-05T12:22:36",
+   "date_unixtime": "1736108556",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_52@05-01-2025_12-22-36.jpg",
+   "photo_file_size": 141703,
+   "width": 1024,
+   "height": 1024,
+   "text": [
+    {
+     "type": "bold",
+     "text": "New Year's Major Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/R3BSSGHv"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "New Year's Major Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/R3BSSGHv"
+    }
+   ]
+  },
+  {
+   "id": 71,
+   "type": "message",
+   "date": "2025-01-06T11:08:50",
+   "date_unixtime": "1736190530",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_53@06-01-2025_11-08-50.jpg",
+   "photo_file_size": 169721,
+   "width": 1024,
+   "height": 1024,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Paws New Year's Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/K32xS2Rx"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Paws New Year's Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/K32xS2Rx"
+    }
+   ]
+  },
+  {
+   "id": 72,
+   "type": "message",
+   "date": "2025-03-02T11:01:27",
+   "date_unixtime": "1740942087",
+   "edited": "2025-03-02T11:01:56",
+   "edited_unixtime": "1740942116",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_54@02-03-2025_11-01-27.jpg",
+   "photo_file_size": 111434,
+   "width": 1000,
+   "height": 1000,
+   "text": [
+    {
+     "type": "bold",
+     "text": "FPI Bank airdop"
+    },
+    "\n\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/bs8FNbGj"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "FPI Bank airdop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/bs8FNbGj"
+    }
+   ]
+  },
+  {
+   "id": 73,
+   "type": "message",
+   "date": "2025-03-02T11:03:29",
+   "date_unixtime": "1740942209",
+   "edited": "2025-03-02T11:04:20",
+   "edited_unixtime": "1740942260",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_55@02-03-2025_11-03-29.jpg",
+   "photo_file_size": 129836,
+   "width": 1000,
+   "height": 1000,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Memhash aidrop "
+    },
+    "\n\n",
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/tZ3w2z12"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Memhash aidrop "
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO DOWNLOAD",
+     "href": "https://postimg.cc/tZ3w2z12"
+    }
+   ]
+  },
+  {
+   "id": 74,
+   "type": "message",
+   "date": "2025-03-02T11:05:26",
+   "date_unixtime": "1740942326",
+   "edited": "2025-03-02T11:06:04",
+   "edited_unixtime": "1740942364",
+   "from": "[RublevkaTeam] Дизайны НЕ",
+   "from_id": "channel2219007780",
+   "photo": "photos/photo_56@02-03-2025_11-05-26.jpg",
+   "photo_file_size": 165596,
+   "width": 1000,
+   "height": 1000,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Memhash aidrop \n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO AIRDROP",
+     "href": "https://postimg.cc/bZZ5KPDG"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Memhash aidrop \n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LINK TO AIRDROP",
+     "href": "https://postimg.cc/bZZ5KPDG"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,8946 @@
+{
+ "name": "[RublevkaTeam] Офферы НЕ",
+ "type": "private_channel",
+ "id": 2168674399,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2024-06-03T05:06:57",
+   "date_unixtime": "1717416417",
+   "actor": "[RublevkaTeam] Офферы НЕ",
+   "actor_id": "channel2168674399",
+   "action": "create_channel",
+   "title": "[RublevkaTeam] Офферы",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 3,
+   "type": "service",
+   "date": "2024-06-03T05:18:41",
+   "date_unixtime": "1717417121",
+   "actor": "[RublevkaTeam] Офферы НЕ",
+   "actor_id": "channel2168674399",
+   "action": "edit_group_photo",
+   "photo": "photos/photo_1@03-06-2024_05-18-41.jpg",
+   "photo_file_size": 102549,
+   "width": 640,
+   "height": 640,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 4,
+   "type": "message",
+   "date": "2024-06-03T10:03:42",
+   "date_unixtime": "1717434222",
+   "edited": "2025-04-17T04:43:27",
+   "edited_unixtime": "1744890207",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_2@03-06-2024_10-03-42.jpg",
+   "photo_file_size": 26803,
+   "width": 1280,
+   "height": 617,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Hamsters AirDrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Hamsters AirDrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "message",
+   "date": "2024-06-03T10:05:51",
+   "date_unixtime": "1717434351",
+   "edited": "2025-04-17T04:43:21",
+   "edited_unixtime": "1744890201",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_3@03-06-2024_10-05-51.jpg",
+   "photo_file_size": 21157,
+   "width": 1280,
+   "height": 616,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Blum AirDrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Blum AirDrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "type": "message",
+   "date": "2024-06-03T10:07:34",
+   "date_unixtime": "1717434454",
+   "edited": "2025-04-17T04:43:15",
+   "edited_unixtime": "1744890195",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_4@03-06-2024_10-07-34.jpg",
+   "photo_file_size": 28804,
+   "width": 1280,
+   "height": 749,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotCoin AirDrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotCoin AirDrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "type": "message",
+   "date": "2024-06-03T10:08:34",
+   "date_unixtime": "1717434514",
+   "edited": "2025-04-17T04:43:10",
+   "edited_unixtime": "1744890190",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_5@03-06-2024_10-08-34.jpg",
+   "photo_file_size": 58346,
+   "width": 1280,
+   "height": 749,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Safe Transaction"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Safe Transaction"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "type": "message",
+   "date": "2024-06-03T10:10:13",
+   "date_unixtime": "1717434613",
+   "edited": "2025-04-17T04:43:05",
+   "edited_unixtime": "1744890185",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_6@03-06-2024_10-10-13.jpg",
+   "photo_file_size": 67458,
+   "width": 1280,
+   "height": 757,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " StonFI TON Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " StonFI TON Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "type": "message",
+   "date": "2024-06-12T06:22:13",
+   "date_unixtime": "1718198533",
+   "edited": "2025-04-17T04:42:55",
+   "edited_unixtime": "1744890175",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_7@12-06-2024_06-22-13.jpg",
+   "photo_file_size": 58325,
+   "width": 1280,
+   "height": 717,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Default Design"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Default Design"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "type": "message",
+   "date": "2024-06-12T06:23:34",
+   "date_unixtime": "1718198614",
+   "edited": "2025-04-17T04:42:48",
+   "edited_unixtime": "1744890168",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_8@12-06-2024_06-23-34.jpg",
+   "photo_file_size": 41241,
+   "width": 1280,
+   "height": 652,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotCoin AirDrop"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "2"
+    },
+    "\n*Фикс кнопки\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotCoin AirDrop"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "2"
+    },
+    {
+     "type": "plain",
+     "text": "\n*Фикс кнопки\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "type": "message",
+   "date": "2024-06-13T19:44:31",
+   "date_unixtime": "1718333071",
+   "edited": "2025-04-17T04:42:42",
+   "edited_unixtime": "1744890162",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_9@13-06-2024_19-44-31.jpg",
+   "photo_file_size": 52197,
+   "width": 1280,
+   "height": 720,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotCoin AirDrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotCoin AirDrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "type": "message",
+   "date": "2024-06-13T19:55:28",
+   "date_unixtime": "1718333728",
+   "edited": "2025-04-17T04:42:35",
+   "edited_unixtime": "1744890155",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_10@13-06-2024_19-55-28.jpg",
+   "photo_file_size": 55542,
+   "width": 444,
+   "height": 901,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "MyTonWallet Giveaway"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "MyTonWallet Giveaway"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "type": "message",
+   "date": "2024-06-13T20:08:20",
+   "date_unixtime": "1718334500",
+   "edited": "2025-04-17T04:42:27",
+   "edited_unixtime": "1744890147",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_11@13-06-2024_20-08-20.jpg",
+   "photo_file_size": 74943,
+   "width": 1280,
+   "height": 707,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Blum Airdrop 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Blum Airdrop 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "type": "message",
+   "date": "2024-06-13T20:33:37",
+   "date_unixtime": "1718336017",
+   "edited": "2025-04-17T04:42:22",
+   "edited_unixtime": "1744890142",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_12@13-06-2024_20-33-37.jpg",
+   "photo_file_size": 56792,
+   "width": 636,
+   "height": 1279,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Hamster Kombat Exchange"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Hamster Kombat Exchange"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "type": "message",
+   "date": "2024-06-13T20:41:17",
+   "date_unixtime": "1718336477",
+   "edited": "2025-04-17T04:42:14",
+   "edited_unixtime": "1744890134",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_13@13-06-2024_20-41-17.jpg",
+   "photo_file_size": 55700,
+   "width": 1280,
+   "height": 798,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotCoin Giveaway"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotCoin Giveaway"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "type": "message",
+   "date": "2024-06-13T20:49:38",
+   "date_unixtime": "1718336978",
+   "edited": "2025-04-17T04:42:06",
+   "edited_unixtime": "1744890126",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_14@13-06-2024_20-49-38.jpg",
+   "photo_file_size": 67428,
+   "width": 1280,
+   "height": 615,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Hamster Kombat"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Staking"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Hamster Kombat"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Staking"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "type": "message",
+   "date": "2024-06-26T10:04:21",
+   "date_unixtime": "1719421461",
+   "edited": "2025-04-17T04:41:56",
+   "edited_unixtime": "1744890116",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_15@26-06-2024_10-04-21.jpg",
+   "photo_file_size": 31039,
+   "width": 394,
+   "height": 942,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Hamster Kombat"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Exchange"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Hamster Kombat"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Exchange"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "type": "message",
+   "date": "2024-06-29T13:53:16",
+   "date_unixtime": "1719694396",
+   "edited": "2025-04-17T04:41:50",
+   "edited_unixtime": "1744890110",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_16@29-06-2024_13-53-16.jpg",
+   "photo_file_size": 51738,
+   "width": 1280,
+   "height": 625,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "TON AIRDROP"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "TON AIRDROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "type": "message",
+   "date": "2024-07-03T04:18:49",
+   "date_unixtime": "1720005529",
+   "edited": "2025-04-17T04:41:44",
+   "edited_unixtime": "1744890104",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_17@03-07-2024_04-18-49.jpg",
+   "photo_file_size": 80139,
+   "width": 1280,
+   "height": 635,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Catizen Second Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Catizen Second Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "type": "message",
+   "date": "2024-07-04T08:54:25",
+   "date_unixtime": "1720108465",
+   "edited": "2025-04-17T04:41:38",
+   "edited_unixtime": "1744890098",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_18@04-07-2024_08-54-25.jpg",
+   "photo_file_size": 64965,
+   "width": 1280,
+   "height": 635,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NFT"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NFT"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "type": "message",
+   "date": "2024-07-10T11:36:40",
+   "date_unixtime": "1720636600",
+   "edited": "2025-04-17T04:41:31",
+   "edited_unixtime": "1744890091",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_19@10-07-2024_11-36-40.jpg",
+   "photo_file_size": 42642,
+   "width": 1280,
+   "height": 579,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Tapswap"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Tapswap"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "type": "message",
+   "date": "2024-07-10T11:38:00",
+   "date_unixtime": "1720636680",
+   "edited": "2025-04-17T04:41:20",
+   "edited_unixtime": "1744890080",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_20@10-07-2024_11-38-00.jpg",
+   "photo_file_size": 30245,
+   "width": 1280,
+   "height": 574,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Notcoin Withdraw"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Notcoin Withdraw"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "type": "message",
+   "date": "2024-07-10T11:39:15",
+   "date_unixtime": "1720636755",
+   "edited": "2025-04-17T04:41:14",
+   "edited_unixtime": "1744890074",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_21@10-07-2024_11-39-15.jpg",
+   "photo_file_size": 40059,
+   "width": 1280,
+   "height": 572,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Blum airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Blum airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "type": "message",
+   "date": "2024-07-18T11:22:49",
+   "date_unixtime": "1721326969",
+   "edited": "2025-04-17T04:41:06",
+   "edited_unixtime": "1744890066",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_22@18-07-2024_11-22-49.jpg",
+   "photo_file_size": 48641,
+   "width": 1280,
+   "height": 730,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Dogs airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Dogs airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "type": "message",
+   "date": "2024-07-18T15:22:08",
+   "date_unixtime": "1721341328",
+   "edited": "2025-04-17T04:41:00",
+   "edited_unixtime": "1744890060",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_23@18-07-2024_15-22-08.jpg",
+   "photo_file_size": 31019,
+   "width": 1280,
+   "height": 745,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    "  ",
+    {
+     "type": "bold",
+     "text": "Dedust io"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": "  "
+    },
+    {
+     "type": "bold",
+     "text": "Dedust io"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "type": "message",
+   "date": "2024-07-21T10:12:31",
+   "date_unixtime": "1721581951",
+   "edited": "2025-04-17T04:40:54",
+   "edited_unixtime": "1744890054",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_24@21-07-2024_10-12-31.jpg",
+   "photo_file_size": 54925,
+   "width": 1280,
+   "height": 721,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    "  ",
+    {
+     "type": "bold",
+     "text": "Рулетка"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": "  "
+    },
+    {
+     "type": "bold",
+     "text": "Рулетка"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "type": "message",
+   "date": "2024-07-21T10:52:59",
+   "date_unixtime": "1721584379",
+   "edited": "2025-04-17T04:40:48",
+   "edited_unixtime": "1744890048",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_25@21-07-2024_10-52-59.jpg",
+   "photo_file_size": 43650,
+   "width": 905,
+   "height": 720,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    "  ",
+    {
+     "type": "bold",
+     "text": "Рулетки"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": "  "
+    },
+    {
+     "type": "bold",
+     "text": "Рулетки"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "type": "message",
+   "date": "2024-07-21T10:52:59",
+   "date_unixtime": "1721584379",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_26@21-07-2024_10-52-59.jpg",
+   "photo_file_size": 41996,
+   "width": 905,
+   "height": 720,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 49,
+   "type": "message",
+   "date": "2024-07-21T10:52:59",
+   "date_unixtime": "1721584379",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_27@21-07-2024_10-52-59.jpg",
+   "photo_file_size": 66938,
+   "width": 1280,
+   "height": 614,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 50,
+   "type": "message",
+   "date": "2024-07-21T13:25:01",
+   "date_unixtime": "1721593501",
+   "edited": "2025-04-17T04:40:41",
+   "edited_unixtime": "1744890041",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_28@21-07-2024_13-25-01.jpg",
+   "photo_file_size": 33178,
+   "width": 1280,
+   "height": 748,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    "  ",
+    {
+     "type": "bold",
+     "text": "EVVA"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": "  "
+    },
+    {
+     "type": "bold",
+     "text": "EVVA"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "type": "message",
+   "date": "2024-07-21T14:53:48",
+   "date_unixtime": "1721598828",
+   "edited": "2025-04-17T04:40:35",
+   "edited_unixtime": "1744890035",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_29@21-07-2024_14-53-48.jpg",
+   "photo_file_size": 116190,
+   "width": 1280,
+   "height": 689,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Tonlucky"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Tonlucky"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "type": "message",
+   "date": "2024-07-21T14:54:52",
+   "date_unixtime": "1721598892",
+   "edited": "2025-04-17T04:40:27",
+   "edited_unixtime": "1744890027",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_30@21-07-2024_14-54-52.jpg",
+   "photo_file_size": 57248,
+   "width": 1280,
+   "height": 537,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Ton Giveaway"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Ton Giveaway"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "type": "message",
+   "date": "2024-07-21T14:56:23",
+   "date_unixtime": "1721598983",
+   "edited": "2025-04-17T04:40:21",
+   "edited_unixtime": "1744890021",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_31@21-07-2024_14-56-23.jpg",
+   "photo_file_size": 63506,
+   "width": 1280,
+   "height": 582,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "TonHunt"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "TonHunt"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 54,
+   "type": "message",
+   "date": "2024-07-25T09:35:22",
+   "date_unixtime": "1721925322",
+   "edited": "2025-04-17T04:40:15",
+   "edited_unixtime": "1744890015",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_32@25-07-2024_09-35-22.jpg",
+   "photo_file_size": 51623,
+   "width": 1280,
+   "height": 632,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Рулетка"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Рулетка"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 55,
+   "type": "message",
+   "date": "2024-07-31T08:38:06",
+   "date_unixtime": "1722440286",
+   "edited": "2025-04-17T04:40:07",
+   "edited_unixtime": "1744890007",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_33@31-07-2024_08-38-06.jpg",
+   "photo_file_size": 21359,
+   "width": 1280,
+   "height": 660,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NFT Collection"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NFT Collection"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 56,
+   "type": "message",
+   "date": "2024-08-06T11:30:39",
+   "date_unixtime": "1722969039",
+   "edited": "2025-04-17T04:40:01",
+   "edited_unixtime": "1744890001",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_34@06-08-2024_11-30-39.jpg",
+   "photo_file_size": 87331,
+   "width": 1239,
+   "height": 680,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "LockBox Ton"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "LockBox Ton"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 57,
+   "type": "message",
+   "date": "2024-08-06T14:19:53",
+   "date_unixtime": "1722979193",
+   "edited": "2025-04-17T04:39:54",
+   "edited_unixtime": "1744889994",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_35@06-08-2024_14-19-53.jpg",
+   "photo_file_size": 26334,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Resistance dog"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Resistance dog"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 58,
+   "type": "message",
+   "date": "2024-08-06T16:55:47",
+   "date_unixtime": "1722988547",
+   "edited": "2025-04-17T04:39:49",
+   "edited_unixtime": "1744889989",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_36@06-08-2024_16-55-47.jpg",
+   "photo_file_size": 44941,
+   "width": 1280,
+   "height": 720,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Notcoin NFT"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Notcoin NFT"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "type": "message",
+   "date": "2024-08-08T08:19:28",
+   "date_unixtime": "1723130368",
+   "edited": "2025-04-17T04:39:41",
+   "edited_unixtime": "1744889981",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_37@08-08-2024_08-19-28.jpg",
+   "photo_file_size": 25856,
+   "width": 391,
+   "height": 851,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Gram airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Gram airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 60,
+   "type": "message",
+   "date": "2024-08-08T08:21:02",
+   "date_unixtime": "1723130462",
+   "edited": "2025-04-17T04:39:36",
+   "edited_unixtime": "1744889976",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_38@08-08-2024_08-21-02.jpg",
+   "photo_file_size": 38101,
+   "width": 1280,
+   "height": 627,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Notcoin Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Notcoin Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 61,
+   "type": "message",
+   "date": "2024-08-08T11:23:53",
+   "date_unixtime": "1723141433",
+   "edited": "2025-04-17T04:39:31",
+   "edited_unixtime": "1744889971",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_39@08-08-2024_11-23-53.jpg",
+   "photo_file_size": 21657,
+   "width": 1280,
+   "height": 727,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Кликер"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Кликер"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 62,
+   "type": "message",
+   "date": "2024-08-09T06:03:12",
+   "date_unixtime": "1723208592",
+   "edited": "2025-04-17T04:39:24",
+   "edited_unixtime": "1744889964",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_40@09-08-2024_06-03-12.jpg",
+   "photo_file_size": 42458,
+   "width": 734,
+   "height": 1247,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Notcoin Daily"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Notcoin Daily"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 63,
+   "type": "message",
+   "date": "2024-08-14T12:41:41",
+   "date_unixtime": "1723664501",
+   "edited": "2025-04-17T04:39:19",
+   "edited_unixtime": "1744889959",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_41@14-08-2024_12-41-41.jpg",
+   "photo_file_size": 43926,
+   "width": 1280,
+   "height": 612,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "StonFI Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "StonFI Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 64,
+   "type": "message",
+   "date": "2024-08-15T06:14:42",
+   "date_unixtime": "1723727682",
+   "edited": "2025-04-17T04:39:12",
+   "edited_unixtime": "1744889952",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_42@15-08-2024_06-14-42.jpg",
+   "photo_file_size": 24752,
+   "width": 1280,
+   "height": 661,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Dogs Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Dogs Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 65,
+   "type": "message",
+   "date": "2024-08-25T07:12:31",
+   "date_unixtime": "1724595151",
+   "edited": "2025-04-17T04:39:06",
+   "edited_unixtime": "1744889946",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_43@25-08-2024_07-12-31.jpg",
+   "photo_file_size": 45025,
+   "width": 1280,
+   "height": 637,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Dogs Airdrop 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Dogs Airdrop 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 66,
+   "type": "message",
+   "date": "2024-08-25T07:12:55",
+   "date_unixtime": "1724595175",
+   "edited": "2025-04-17T04:39:00",
+   "edited_unixtime": "1744889940",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_44@25-08-2024_07-12-55.jpg",
+   "photo_file_size": 44719,
+   "width": 1280,
+   "height": 635,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "link",
+     "text": "STON.fi"
+    },
+    {
+     "type": "bold",
+     "text": " Airdrop 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "link",
+     "text": "STON.fi"
+    },
+    {
+     "type": "bold",
+     "text": " Airdrop 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 67,
+   "type": "message",
+   "date": "2024-08-25T07:13:13",
+   "date_unixtime": "1724595193",
+   "edited": "2025-04-17T04:38:54",
+   "edited_unixtime": "1744889934",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_45@25-08-2024_07-13-13.jpg",
+   "photo_file_size": 44926,
+   "width": 962,
+   "height": 632,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Gram Mining Pool"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Gram Mining Pool"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 68,
+   "type": "message",
+   "date": "2024-08-25T07:13:35",
+   "date_unixtime": "1724595215",
+   "edited": "2025-04-17T04:38:46",
+   "edited_unixtime": "1744889926",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_46@25-08-2024_07-13-35.jpg",
+   "photo_file_size": 42909,
+   "width": 1280,
+   "height": 631,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Bemo Ton Liquid Staking"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Bemo Ton Liquid Staking"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 69,
+   "type": "message",
+   "date": "2024-08-25T07:14:11",
+   "date_unixtime": "1724595251",
+   "edited": "2025-04-17T04:38:41",
+   "edited_unixtime": "1744889921",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_47@25-08-2024_07-14-11.jpg",
+   "photo_file_size": 59436,
+   "width": 1280,
+   "height": 630,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "USDT Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "USDT Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 70,
+   "type": "message",
+   "date": "2024-08-25T07:14:31",
+   "date_unixtime": "1724595271",
+   "edited": "2025-04-17T04:38:36",
+   "edited_unixtime": "1744889916",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_48@25-08-2024_07-14-31.jpg",
+   "photo_file_size": 83601,
+   "width": 1280,
+   "height": 628,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "TONUP"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "TONUP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 71,
+   "type": "message",
+   "date": "2024-08-25T07:15:03",
+   "date_unixtime": "1724595303",
+   "edited": "2025-04-17T04:38:29",
+   "edited_unixtime": "1744889909",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_49@25-08-2024_07-15-03.jpg",
+   "photo_file_size": 45010,
+   "width": 1280,
+   "height": 634,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " TonStake"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " TonStake"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 73,
+   "type": "message",
+   "date": "2024-08-28T16:16:44",
+   "date_unixtime": "1724887004",
+   "edited": "2025-04-17T04:38:23",
+   "edited_unixtime": "1744889903",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_50@28-08-2024_16-16-44.jpg",
+   "photo_file_size": 45891,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Dogs exchange"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Dogs exchange"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 74,
+   "type": "message",
+   "date": "2024-08-29T15:54:03",
+   "date_unixtime": "1724972043",
+   "edited": "2025-04-17T04:38:18",
+   "edited_unixtime": "1744889898",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_51@29-08-2024_15-54-03.jpg",
+   "photo_file_size": 29519,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Dogs"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Dogs"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 75,
+   "type": "message",
+   "date": "2024-09-08T13:45:06",
+   "date_unixtime": "1725828306",
+   "edited": "2025-04-17T04:38:10",
+   "edited_unixtime": "1744889890",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_52@08-09-2024_13-45-06.jpg",
+   "photo_file_size": 57794,
+   "width": 719,
+   "height": 1280,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Miniapp Hamster Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Miniapp Hamster Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 76,
+   "type": "message",
+   "date": "2024-09-10T12:44:48",
+   "date_unixtime": "1725997488",
+   "edited": "2025-04-17T04:38:04",
+   "edited_unixtime": "1744889884",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_53@10-09-2024_12-44-48.jpg",
+   "photo_file_size": 20074,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Voucher Exchange"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Voucher Exchange"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 77,
+   "type": "message",
+   "date": "2024-09-10T12:45:06",
+   "date_unixtime": "1725997506",
+   "edited": "2025-04-17T04:37:59",
+   "edited_unixtime": "1744889879",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_54@10-09-2024_12-45-06.jpg",
+   "photo_file_size": 35345,
+   "width": 1280,
+   "height": 989,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Game Runny"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Game Runny"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 78,
+   "type": "message",
+   "date": "2024-09-10T12:45:18",
+   "date_unixtime": "1725997518",
+   "edited": "2025-04-17T04:37:53",
+   "edited_unixtime": "1744889873",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_55@10-09-2024_12-45-18.jpg",
+   "photo_file_size": 99412,
+   "width": 1280,
+   "height": 468,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Game Ring"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Game Ring"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 79,
+   "type": "message",
+   "date": "2024-09-10T13:23:14",
+   "date_unixtime": "1725999794",
+   "edited": "2025-04-17T04:37:44",
+   "edited_unixtime": "1744889864",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_56@10-09-2024_13-23-14.jpg",
+   "photo_file_size": 53133,
+   "width": 740,
+   "height": 1280,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " TonHub App"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " TonHub App"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 80,
+   "type": "message",
+   "date": "2024-09-10T13:23:19",
+   "date_unixtime": "1725999799",
+   "edited": "2025-04-17T04:37:34",
+   "edited_unixtime": "1744889854",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_57@10-09-2024_13-23-19.jpg",
+   "photo_file_size": 24459,
+   "width": 1023,
+   "height": 514,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Bird Hunter"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Bird Hunter"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 81,
+   "type": "message",
+   "date": "2024-09-10T13:23:20",
+   "date_unixtime": "1725999800",
+   "edited": "2025-04-17T04:37:25",
+   "edited_unixtime": "1744889845",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_58@10-09-2024_13-23-20.jpg",
+   "photo_file_size": 41047,
+   "width": 703,
+   "height": 1280,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Game Clicker"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Game Clicker"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 82,
+   "type": "message",
+   "date": "2024-09-10T13:23:23",
+   "date_unixtime": "1725999803",
+   "edited": "2025-04-17T04:37:15",
+   "edited_unixtime": "1744889835",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_59@10-09-2024_13-23-23.jpg",
+   "photo_file_size": 67529,
+   "width": 1280,
+   "height": 937,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " TON CopyTrading"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " TON CopyTrading"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 83,
+   "type": "message",
+   "date": "2024-09-10T13:23:25",
+   "date_unixtime": "1725999805",
+   "edited": "2025-04-17T04:37:09",
+   "edited_unixtime": "1744889829",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_60@10-09-2024_13-23-25.jpg",
+   "photo_file_size": 32179,
+   "width": 701,
+   "height": 1280,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Game Tonics"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Game Tonics"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 84,
+   "type": "message",
+   "date": "2024-09-17T02:39:07",
+   "date_unixtime": "1726565947",
+   "edited": "2025-04-17T04:37:02",
+   "edited_unixtime": "1744889822",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_61@17-09-2024_02-39-07.jpg",
+   "photo_file_size": 60751,
+   "width": 675,
+   "height": 1280,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Catizen airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Catizen airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 85,
+   "type": "message",
+   "date": "2024-09-17T02:39:55",
+   "date_unixtime": "1726565995",
+   "edited": "2025-04-17T04:36:55",
+   "edited_unixtime": "1744889815",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_62@17-09-2024_02-39-55.jpg",
+   "photo_file_size": 42233,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Catizen miniapp"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Catizen miniapp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 86,
+   "type": "message",
+   "date": "2024-09-20T05:33:03",
+   "date_unixtime": "1726835583",
+   "edited": "2025-04-17T04:36:49",
+   "edited_unixtime": "1744889809",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_63@20-09-2024_05-33-03.jpg",
+   "photo_file_size": 43889,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "DOGS SPIN"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "DOGS SPIN"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 87,
+   "type": "message",
+   "date": "2024-09-26T04:44:16",
+   "date_unixtime": "1727351056",
+   "edited": "2025-04-17T04:36:41",
+   "edited_unixtime": "1744889801",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_64@26-09-2024_04-44-16.jpg",
+   "photo_file_size": 39673,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Toncoin refund"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Toncoin refund"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 88,
+   "type": "message",
+   "date": "2024-09-28T05:01:13",
+   "date_unixtime": "1727524873",
+   "edited": "2025-04-17T04:36:36",
+   "edited_unixtime": "1744889796",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_65@28-09-2024_05-01-13.jpg",
+   "photo_file_size": 54675,
+   "width": 1280,
+   "height": 687,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Hamster Exchange"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Hamster Exchange"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 89,
+   "type": "message",
+   "date": "2024-09-28T13:17:17",
+   "date_unixtime": "1727554637",
+   "edited": "2025-04-17T04:36:30",
+   "edited_unixtime": "1744889790",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_66@28-09-2024_13-17-17.jpg",
+   "photo_file_size": 41482,
+   "width": 494,
+   "height": 799,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " X-Empire Miniapp"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " X-Empire Miniapp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 90,
+   "type": "message",
+   "date": "2024-10-09T17:35:05",
+   "date_unixtime": "1728520505",
+   "edited": "2025-04-17T04:36:22",
+   "edited_unixtime": "1744889782",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_67@09-10-2024_17-35-05.jpg",
+   "photo_file_size": 50096,
+   "width": 748,
+   "height": 1280,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Cats Miniapp"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Cats Miniapp"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 91,
+   "type": "message",
+   "date": "2024-10-09T17:35:28",
+   "date_unixtime": "1728520528",
+   "edited": "2025-04-17T04:36:17",
+   "edited_unixtime": "1744889777",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_68@09-10-2024_17-35-28.jpg",
+   "photo_file_size": 39796,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Cats Airdrop\n"
+    },
+    "Private -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Cats Airdrop\n"
+    },
+    {
+     "type": "plain",
+     "text": "Private -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 92,
+   "type": "message",
+   "date": "2024-10-10T11:55:39",
+   "date_unixtime": "1728586539",
+   "edited": "2025-04-17T04:36:11",
+   "edited_unixtime": "1744889771",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_69@10-10-2024_11-55-39.jpg",
+   "photo_file_size": 59641,
+   "width": 1280,
+   "height": 660,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Cats Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Cats Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 93,
+   "type": "message",
+   "date": "2024-10-10T11:59:06",
+   "date_unixtime": "1728586746",
+   "edited": "2025-04-17T04:36:05",
+   "edited_unixtime": "1744889765",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_70@10-10-2024_11-59-06.jpg",
+   "photo_file_size": 61407,
+   "width": 1280,
+   "height": 666,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " X-Empire Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " X-Empire Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 94,
+   "type": "message",
+   "date": "2024-10-19T12:49:57",
+   "date_unixtime": "1729367397",
+   "edited": "2025-04-17T04:35:57",
+   "edited_unixtime": "1744889757",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_71@19-10-2024_12-49-57.jpg",
+   "photo_file_size": 43928,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Major reward"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Major reward"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 95,
+   "type": "message",
+   "date": "2024-10-27T14:16:59",
+   "date_unixtime": "1730063819",
+   "edited": "2025-04-17T04:35:49",
+   "edited_unixtime": "1744889749",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_72@27-10-2024_14-16-59.jpg",
+   "photo_file_size": 108205,
+   "width": 1170,
+   "height": 968,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Whale spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Whale spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 96,
+   "type": "message",
+   "date": "2024-10-28T12:49:42",
+   "date_unixtime": "1730144982",
+   "edited": "2025-04-17T04:35:40",
+   "edited_unixtime": "1744889740",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_73@28-10-2024_12-49-42.jpg",
+   "photo_file_size": 32370,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Fragment"
+    },
+    "\n\nПараметры в ссылке:\nusername - ник / номер\nprice - цена в тонах\n\nhttps://ВАШДОМЕН/?username=durov&price=999\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Fragment"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nПараметры в ссылке:\nusername - ник / номер\nprice - цена в тонах\n\nhttps://ВАШДОМЕН/?username=durov&price=999\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 97,
+   "type": "message",
+   "date": "2024-10-28T18:18:05",
+   "date_unixtime": "1730164685",
+   "edited": "2025-04-17T04:35:35",
+   "edited_unixtime": "1744889735",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_74@28-10-2024_18-18-05.jpg",
+   "photo_file_size": 62947,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Catizen 2\n"
+    },
+    "Private -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Catizen 2\n"
+    },
+    {
+     "type": "plain",
+     "text": "Private -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 98,
+   "type": "message",
+   "date": "2024-10-28T18:18:57",
+   "date_unixtime": "1730164737",
+   "edited": "2025-04-17T04:35:28",
+   "edited_unixtime": "1744889728",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_75@28-10-2024_18-18-57.jpg",
+   "photo_file_size": 42054,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Cats Spin 2"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Cats Spin 2"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 99,
+   "type": "message",
+   "date": "2024-10-28T18:20:47",
+   "date_unixtime": "1730164847",
+   "edited": "2025-04-17T04:35:22",
+   "edited_unixtime": "1744889722",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_76@28-10-2024_18-20-47.jpg",
+   "photo_file_size": 37486,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Hamster Spin"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Hamster Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 100,
+   "type": "message",
+   "date": "2024-10-28T18:22:21",
+   "date_unixtime": "1730164941",
+   "edited": "2025-04-17T04:35:16",
+   "edited_unixtime": "1744889716",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_77@28-10-2024_18-22-21.jpg",
+   "photo_file_size": 28799,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Hamster Combat App"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Hamster Combat App"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 101,
+   "type": "message",
+   "date": "2024-10-28T18:23:07",
+   "date_unixtime": "1730164987",
+   "edited": "2025-04-17T04:35:10",
+   "edited_unixtime": "1744889710",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_78@28-10-2024_18-23-07.jpg",
+   "photo_file_size": 44481,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "USDT Spin"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "USDT Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 102,
+   "type": "message",
+   "date": "2024-10-28T18:23:53",
+   "date_unixtime": "1730165033",
+   "edited": "2025-04-17T04:35:04",
+   "edited_unixtime": "1744889704",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_79@28-10-2024_18-23-53.jpg",
+   "photo_file_size": 47158,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Notcoin Rocket Roulette"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Notcoin Rocket Roulette"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 103,
+   "type": "message",
+   "date": "2024-11-02T06:27:49",
+   "date_unixtime": "1730554069",
+   "edited": "2025-04-17T04:34:58",
+   "edited_unixtime": "1744889698",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_80@02-11-2024_06-27-49.jpg",
+   "photo_file_size": 44563,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " AML Check"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " AML Check"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 104,
+   "type": "message",
+   "date": "2024-11-02T10:41:50",
+   "date_unixtime": "1730569310",
+   "edited": "2025-04-17T04:34:52",
+   "edited_unixtime": "1744889692",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_81@02-11-2024_10-41-50.jpg",
+   "photo_file_size": 63082,
+   "width": 739,
+   "height": 1280,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " Paws airdrop\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " Paws airdrop\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 105,
+   "type": "message",
+   "date": "2024-11-05T06:51:33",
+   "date_unixtime": "1730818293",
+   "edited": "2025-04-17T04:34:46",
+   "edited_unixtime": "1744889686",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_82@05-11-2024_06-51-33.jpg",
+   "photo_file_size": 26628,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Web3 Quest World"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Web3 Quest World"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 106,
+   "type": "message",
+   "date": "2024-11-05T06:52:39",
+   "date_unixtime": "1730818359",
+   "edited": "2025-04-17T04:34:40",
+   "edited_unixtime": "1744889680",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_83@05-11-2024_06-52-39.jpg",
+   "photo_file_size": 27581,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " PlayApp"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " PlayApp"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 107,
+   "type": "message",
+   "date": "2024-11-05T06:53:28",
+   "date_unixtime": "1730818408",
+   "edited": "2025-04-17T04:34:34",
+   "edited_unixtime": "1744889674",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_84@05-11-2024_06-53-28.jpg",
+   "photo_file_size": 44565,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Ton Incinerator"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Ton Incinerator"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 108,
+   "type": "message",
+   "date": "2024-11-07T08:31:12",
+   "date_unixtime": "1730997072",
+   "edited": "2025-04-17T04:34:28",
+   "edited_unixtime": "1744889668",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_85@07-11-2024_08-31-12.jpg",
+   "photo_file_size": 52047,
+   "width": 630,
+   "height": 1280,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Paws community"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Paws community"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 109,
+   "type": "message",
+   "date": "2024-11-08T09:48:11",
+   "date_unixtime": "1731088091",
+   "edited": "2025-04-17T04:34:22",
+   "edited_unixtime": "1744889662",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_86@08-11-2024_09-48-11.jpg",
+   "photo_file_size": 64656,
+   "width": 1280,
+   "height": 641,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Paws Spin"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Paws Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 110,
+   "type": "message",
+   "date": "2024-11-09T13:10:40",
+   "date_unixtime": "1731186640",
+   "edited": "2025-04-17T04:34:16",
+   "edited_unixtime": "1744889656",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_87@09-11-2024_13-10-40.jpg",
+   "photo_file_size": 58960,
+   "width": 1024,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " OnlyFans"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " OnlyFans"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 111,
+   "type": "message",
+   "date": "2024-11-12T07:55:28",
+   "date_unixtime": "1731426928",
+   "edited": "2025-04-17T04:34:10",
+   "edited_unixtime": "1744889650",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_88@12-11-2024_07-55-28.jpg",
+   "photo_file_size": 78707,
+   "width": 1280,
+   "height": 574,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Ton PornHub"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Ton PornHub"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 112,
+   "type": "message",
+   "date": "2024-11-12T08:48:56",
+   "date_unixtime": "1731430136",
+   "edited": "2025-04-17T04:34:04",
+   "edited_unixtime": "1744889644",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_89@12-11-2024_08-48-56.jpg",
+   "photo_file_size": 49277,
+   "width": 1280,
+   "height": 531,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " XEmpire Daily"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " XEmpire Daily"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 113,
+   "type": "message",
+   "date": "2024-11-12T09:11:35",
+   "date_unixtime": "1731431495",
+   "edited": "2025-04-17T04:33:58",
+   "edited_unixtime": "1744889638",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_90@12-11-2024_09-11-35.jpg",
+   "photo_file_size": 85777,
+   "width": 935,
+   "height": 1131,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Tomarket"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Tomarket"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 114,
+   "type": "message",
+   "date": "2024-11-12T09:13:44",
+   "date_unixtime": "1731431624",
+   "edited": "2025-04-17T04:33:52",
+   "edited_unixtime": "1744889632",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_91@12-11-2024_09-13-44.jpg",
+   "photo_file_size": 59047,
+   "width": 1280,
+   "height": 642,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Tomarket 2"
+    },
+    "\nPrivate -> Public\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Tomarket 2"
+    },
+    {
+     "type": "plain",
+     "text": "\nPrivate -> Public\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 115,
+   "type": "message",
+   "date": "2024-11-12T09:21:39",
+   "date_unixtime": "1731432099",
+   "edited": "2025-04-17T04:33:45",
+   "edited_unixtime": "1744889625",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_92@12-11-2024_09-21-39.jpg",
+   "photo_file_size": 36799,
+   "width": 1280,
+   "height": 530,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " PAWS Airdrop 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " PAWS Airdrop 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 116,
+   "type": "message",
+   "date": "2024-11-16T07:54:53",
+   "date_unixtime": "1731772493",
+   "edited": "2025-04-17T04:33:39",
+   "edited_unixtime": "1744889619",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_93@16-11-2024_07-54-53.jpg",
+   "photo_file_size": 46399,
+   "width": 1280,
+   "height": 604,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Blum Spin 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Blum Spin 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 117,
+   "type": "message",
+   "date": "2024-11-17T08:00:24",
+   "date_unixtime": "1731859224",
+   "edited": "2025-04-17T04:33:33",
+   "edited_unixtime": "1744889613",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_94@17-11-2024_08-00-24.jpg",
+   "photo_file_size": 81676,
+   "width": 1280,
+   "height": 602,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " MemeFI Staking"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " MemeFI Staking"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 118,
+   "type": "message",
+   "date": "2024-11-17T08:17:30",
+   "date_unixtime": "1731860250",
+   "edited": "2025-04-17T04:33:27",
+   "edited_unixtime": "1744889607",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_95@17-11-2024_08-17-30.jpg",
+   "photo_file_size": 76409,
+   "width": 1280,
+   "height": 606,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " MemeFI Airdrop"
+    },
+    " 2\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " MemeFI Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": " 2\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 119,
+   "type": "message",
+   "date": "2024-11-17T08:35:21",
+   "date_unixtime": "1731861321",
+   "edited": "2025-04-17T04:33:20",
+   "edited_unixtime": "1744889600",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_96@17-11-2024_08-35-21.jpg",
+   "photo_file_size": 61992,
+   "width": 1280,
+   "height": 612,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "MemeFI Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "MemeFI Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 120,
+   "type": "message",
+   "date": "2024-11-17T08:52:18",
+   "date_unixtime": "1731862338",
+   "edited": "2025-04-17T04:33:14",
+   "edited_unixtime": "1744889594",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_97@17-11-2024_08-52-18.jpg",
+   "photo_file_size": 58126,
+   "width": 1280,
+   "height": 612,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " MemeFi Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " MemeFi Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 121,
+   "type": "message",
+   "date": "2024-11-18T12:07:27",
+   "date_unixtime": "1731960447",
+   "edited": "2025-04-17T04:33:08",
+   "edited_unixtime": "1744889588",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_98@18-11-2024_12-07-27.jpg",
+   "photo_file_size": 79742,
+   "width": 1141,
+   "height": 758,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Major spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Major spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 122,
+   "type": "message",
+   "date": "2024-11-18T15:50:11",
+   "date_unixtime": "1731973811",
+   "edited": "2025-04-17T04:33:02",
+   "edited_unixtime": "1744889582",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_99@18-11-2024_15-50-11.jpg",
+   "photo_file_size": 46027,
+   "width": 1280,
+   "height": 605,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "tsTON Staking App"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "tsTON Staking App"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 123,
+   "type": "message",
+   "date": "2024-11-18T16:13:39",
+   "date_unixtime": "1731975219",
+   "edited": "2025-04-17T04:32:56",
+   "edited_unixtime": "1744889576",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_100@18-11-2024_16-13-39.jpg",
+   "photo_file_size": 71984,
+   "width": 1280,
+   "height": 608,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "MemeFi Game Miniapp"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "MemeFi Game Miniapp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 124,
+   "type": "message",
+   "date": "2024-11-20T09:42:36",
+   "date_unixtime": "1732124556",
+   "edited": "2025-04-17T04:32:50",
+   "edited_unixtime": "1744889570",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_101@20-11-2024_09-42-36.jpg",
+   "photo_file_size": 51251,
+   "width": 1280,
+   "height": 614,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Major Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Major Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 125,
+   "type": "message",
+   "date": "2024-11-21T08:47:01",
+   "date_unixtime": "1732207621",
+   "edited": "2025-04-17T04:32:44",
+   "edited_unixtime": "1744889564",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_102@21-11-2024_08-47-01.jpg",
+   "photo_file_size": 64329,
+   "width": 1280,
+   "height": 620,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "USDT Airdrop 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "USDT Airdrop 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 126,
+   "type": "message",
+   "date": "2024-11-28T05:39:04",
+   "date_unixtime": "1732801144",
+   "edited": "2025-04-17T04:32:38",
+   "edited_unixtime": "1744889558",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_103@28-11-2024_05-39-04.jpg",
+   "photo_file_size": 87167,
+   "width": 1280,
+   "height": 645,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " MAGA AirDrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " MAGA AirDrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 127,
+   "type": "message",
+   "date": "2024-11-28T05:41:07",
+   "date_unixtime": "1732801267",
+   "edited": "2025-04-17T04:32:31",
+   "edited_unixtime": "1744889551",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_104@28-11-2024_05-41-07.jpg",
+   "photo_file_size": 44837,
+   "width": 1280,
+   "height": 634,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Major Swap"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Major Swap"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 128,
+   "type": "message",
+   "date": "2024-11-30T04:21:45",
+   "date_unixtime": "1732969305",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "reply_to_message_id": 121,
+   "text": "*Изменено",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "*Изменено"
+    }
+   ]
+  },
+  {
+   "id": 129,
+   "type": "message",
+   "date": "2024-11-30T04:22:16",
+   "date_unixtime": "1732969336",
+   "edited": "2025-04-17T04:32:25",
+   "edited_unixtime": "1744889545",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_105@30-11-2024_04-22-16.jpg",
+   "photo_file_size": 39229,
+   "width": 568,
+   "height": 617,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Major airdrop 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Major airdrop 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 132,
+   "type": "message",
+   "date": "2024-12-05T15:58:22",
+   "date_unixtime": "1733443102",
+   "edited": "2025-04-17T04:32:19",
+   "edited_unixtime": "1744889539",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_106@05-12-2024_15-58-22.jpg",
+   "photo_file_size": 38145,
+   "width": 1280,
+   "height": 612,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Split"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Split"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 133,
+   "type": "message",
+   "date": "2024-12-16T10:06:56",
+   "date_unixtime": "1734372416",
+   "edited": "2025-04-17T04:32:13",
+   "edited_unixtime": "1744889533",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_107@16-12-2024_10-06-56.jpg",
+   "photo_file_size": 31598,
+   "width": 1280,
+   "height": 666,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Xempire spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Xempire spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 134,
+   "type": "message",
+   "date": "2024-12-16T10:08:23",
+   "date_unixtime": "1734372503",
+   "edited": "2025-04-17T04:32:07",
+   "edited_unixtime": "1744889527",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_108@16-12-2024_10-08-23.jpg",
+   "photo_file_size": 61161,
+   "width": 590,
+   "height": 1280,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotPixel App"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotPixel App"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 135,
+   "type": "message",
+   "date": "2024-12-23T04:32:11",
+   "date_unixtime": "1734957131",
+   "edited": "2025-04-17T04:32:01",
+   "edited_unixtime": "1744889521",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_109@23-12-2024_04-32-11.jpg",
+   "photo_file_size": 49887,
+   "width": 809,
+   "height": 1120,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Notcoin Miniapp"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Notcoin Miniapp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 136,
+   "type": "message",
+   "date": "2024-12-23T05:08:59",
+   "date_unixtime": "1734959339",
+   "edited": "2025-04-17T04:31:55",
+   "edited_unixtime": "1744889515",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_110@23-12-2024_05-08-59.jpg",
+   "photo_file_size": 31830,
+   "width": 1049,
+   "height": 988,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Earn Pool Miniapp"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Earn Pool Miniapp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 137,
+   "type": "message",
+   "date": "2024-12-23T06:35:17",
+   "date_unixtime": "1734964517",
+   "edited": "2025-04-17T04:31:48",
+   "edited_unixtime": "1744889508",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_111@23-12-2024_06-35-17.jpg",
+   "photo_file_size": 155439,
+   "width": 1091,
+   "height": 1280,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotPixel App 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotPixel App 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 138,
+   "type": "message",
+   "date": "2024-12-23T08:55:26",
+   "date_unixtime": "1734972926",
+   "edited": "2025-04-17T04:31:41",
+   "edited_unixtime": "1744889501",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_112@23-12-2024_08-55-26.jpg",
+   "photo_file_size": 181767,
+   "width": 1158,
+   "height": 1280,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotPixel App 3"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotPixel App 3"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 139,
+   "type": "message",
+   "date": "2024-12-24T03:29:57",
+   "date_unixtime": "1735039797",
+   "edited": "2025-04-17T04:31:35",
+   "edited_unixtime": "1744889495",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_113@24-12-2024_03-29-57.jpg",
+   "photo_file_size": 65567,
+   "width": 1280,
+   "height": 689,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotPixel Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotPixel Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 140,
+   "type": "message",
+   "date": "2024-12-24T05:09:22",
+   "date_unixtime": "1735045762",
+   "edited": "2025-04-17T04:31:28",
+   "edited_unixtime": "1744889488",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_114@24-12-2024_05-09-22.jpg",
+   "photo_file_size": 82324,
+   "width": 1280,
+   "height": 1200,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotPixel Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotPixel Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 141,
+   "type": "message",
+   "date": "2024-12-25T05:37:44",
+   "date_unixtime": "1735133864",
+   "edited": "2025-04-17T04:31:22",
+   "edited_unixtime": "1744889482",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_115@25-12-2024_05-37-44.jpg",
+   "photo_file_size": 19769,
+   "width": 800,
+   "height": 769,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Paws Miniapp"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Paws Miniapp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 142,
+   "type": "message",
+   "date": "2024-12-29T07:09:36",
+   "date_unixtime": "1735484976",
+   "edited": "2025-04-17T04:31:16",
+   "edited_unixtime": "1744889476",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_116@29-12-2024_07-09-36.jpg",
+   "photo_file_size": 190773,
+   "width": 1280,
+   "height": 764,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Paws New Year"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Paws New Year"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 143,
+   "type": "message",
+   "date": "2024-12-29T07:10:17",
+   "date_unixtime": "1735485017",
+   "edited": "2025-04-17T04:31:10",
+   "edited_unixtime": "1744889470",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_117@29-12-2024_07-10-17.jpg",
+   "photo_file_size": 191240,
+   "width": 1280,
+   "height": 757,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Notpixel New Year"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Notpixel New Year"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 144,
+   "type": "message",
+   "date": "2024-12-29T07:10:38",
+   "date_unixtime": "1735485038",
+   "edited": "2025-04-17T04:31:02",
+   "edited_unixtime": "1744889462",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_118@29-12-2024_07-10-38.jpg",
+   "photo_file_size": 140004,
+   "width": 1280,
+   "height": 762,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Major New Year"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Major New Year"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 145,
+   "type": "message",
+   "date": "2024-12-29T07:11:15",
+   "date_unixtime": "1735485075",
+   "edited": "2025-04-17T04:30:56",
+   "edited_unixtime": "1744889456",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_119@29-12-2024_07-11-15.jpg",
+   "photo_file_size": 58492,
+   "width": 1280,
+   "height": 845,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "TrumpCoin airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "TrumpCoin airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 146,
+   "type": "message",
+   "date": "2024-12-30T07:47:44",
+   "date_unixtime": "1735573664",
+   "edited": "2025-04-17T04:30:51",
+   "edited_unixtime": "1744889451",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_120@30-12-2024_07-47-44.jpg",
+   "photo_file_size": 53910,
+   "width": 1280,
+   "height": 640,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Dogs Airdrop 4"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Dogs Airdrop 4"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 147,
+   "type": "message",
+   "date": "2025-01-02T16:47:59",
+   "date_unixtime": "1735865279",
+   "edited": "2025-04-17T04:30:46",
+   "edited_unixtime": "1744889446",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_121@02-01-2025_16-47-59.jpg",
+   "photo_file_size": 109134,
+   "width": 1280,
+   "height": 1093,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Ton Spin New Year"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Ton Spin New Year"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 149,
+   "type": "message",
+   "date": "2025-01-04T06:52:00",
+   "date_unixtime": "1736002320",
+   "edited": "2025-04-17T04:30:41",
+   "edited_unixtime": "1744889441",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_122@04-01-2025_06-52-00.jpg",
+   "photo_file_size": 77431,
+   "width": 1280,
+   "height": 660,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Gift Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Gift Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 150,
+   "type": "message",
+   "date": "2025-01-09T04:39:45",
+   "date_unixtime": "1736426385",
+   "edited": "2025-04-17T04:30:36",
+   "edited_unixtime": "1744889436",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_123@09-01-2025_04-39-45.jpg",
+   "photo_file_size": 48757,
+   "width": 858,
+   "height": 1280,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Earn Pool Miniapp"
+    },
+    " (update)\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Earn Pool Miniapp"
+    },
+    {
+     "type": "plain",
+     "text": " (update)\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 151,
+   "type": "message",
+   "date": "2025-01-09T04:39:45",
+   "date_unixtime": "1736426385",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_124@09-01-2025_04-39-45.jpg",
+   "photo_file_size": 55611,
+   "width": 860,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 152,
+   "type": "message",
+   "date": "2025-01-09T18:57:01",
+   "date_unixtime": "1736477821",
+   "edited": "2025-04-17T04:30:30",
+   "edited_unixtime": "1744889430",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_125@09-01-2025_18-57-01.jpg",
+   "photo_file_size": 83240,
+   "width": 1280,
+   "height": 624,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Daily Gift"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Daily Gift"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 153,
+   "type": "message",
+   "date": "2025-01-16T15:08:16",
+   "date_unixtime": "1737068896",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_126@16-01-2025_15-08-16.jpg",
+   "photo_file_size": 41032,
+   "width": 590,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 154,
+   "type": "message",
+   "date": "2025-01-16T15:08:16",
+   "date_unixtime": "1737068896",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_127@16-01-2025_15-08-16.jpg",
+   "photo_file_size": 49090,
+   "width": 590,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 155,
+   "type": "message",
+   "date": "2025-01-16T15:08:16",
+   "date_unixtime": "1737068896",
+   "edited": "2025-04-17T04:30:24",
+   "edited_unixtime": "1744889424",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_128@16-01-2025_15-08-16.jpg",
+   "photo_file_size": 46575,
+   "width": 590,
+   "height": 1280,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Dogs Miniapp"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Dogs Miniapp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 156,
+   "type": "message",
+   "date": "2025-01-18T06:10:27",
+   "date_unixtime": "1737209427",
+   "edited": "2025-04-17T04:30:18",
+   "edited_unixtime": "1744889418",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_129@18-01-2025_06-10-27.jpg",
+   "photo_file_size": 109154,
+   "width": 1280,
+   "height": 862,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Trump Meme"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Trump Meme"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 157,
+   "type": "message",
+   "date": "2025-01-19T05:06:23",
+   "date_unixtime": "1737291983",
+   "edited": "2025-04-17T04:29:51",
+   "edited_unixtime": "1744889391",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_130@19-01-2025_05-06-23.jpg",
+   "photo_file_size": 45088,
+   "width": 1280,
+   "height": 595,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotPixel Spin 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotPixel Spin 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 158,
+   "type": "message",
+   "date": "2025-01-19T05:09:58",
+   "date_unixtime": "1737292198",
+   "edited": "2025-04-17T04:29:46",
+   "edited_unixtime": "1744889386",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_131@19-01-2025_05-09-58.jpg",
+   "photo_file_size": 47066,
+   "width": 1280,
+   "height": 595,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Paws Spin 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Paws Spin 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 159,
+   "type": "message",
+   "date": "2025-01-19T05:10:36",
+   "date_unixtime": "1737292236",
+   "edited": "2025-04-17T04:29:40",
+   "edited_unixtime": "1744889380",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_132@19-01-2025_05-10-36.jpg",
+   "photo_file_size": 59227,
+   "width": 1280,
+   "height": 593,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Blum Spin 3"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Blum Spin 3"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 160,
+   "type": "message",
+   "date": "2025-01-19T05:11:24",
+   "date_unixtime": "1737292284",
+   "edited": "2025-04-17T04:29:19",
+   "edited_unixtime": "1744889359",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_133@19-01-2025_05-11-24.jpg",
+   "photo_file_size": 54674,
+   "width": 1280,
+   "height": 605,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Major Spin 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Major Spin 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 161,
+   "type": "message",
+   "date": "2025-01-19T05:27:31",
+   "date_unixtime": "1737293251",
+   "edited": "2025-04-17T04:29:11",
+   "edited_unixtime": "1744889351",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_134@19-01-2025_05-27-31.jpg",
+   "photo_file_size": 40858,
+   "width": 1280,
+   "height": 595,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "TON Airdrop 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "TON Airdrop 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 163,
+   "type": "message",
+   "date": "2025-01-22T04:20:30",
+   "date_unixtime": "1737548430",
+   "edited": "2025-04-17T04:29:06",
+   "edited_unixtime": "1744889346",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_135@22-01-2025_04-20-30.jpg",
+   "photo_file_size": 44143,
+   "width": 1280,
+   "height": 595,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Ton Spin 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Ton Spin 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 164,
+   "type": "message",
+   "date": "2025-01-22T04:20:45",
+   "date_unixtime": "1737548445",
+   "edited": "2025-04-17T04:29:01",
+   "edited_unixtime": "1744889341",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_136@22-01-2025_04-20-45.jpg",
+   "photo_file_size": 51293,
+   "width": 1280,
+   "height": 593,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Ton Spin 3"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Ton Spin 3"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 165,
+   "type": "message",
+   "date": "2025-01-22T04:21:03",
+   "date_unixtime": "1737548463",
+   "edited": "2025-04-17T04:28:55",
+   "edited_unixtime": "1744889335",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_137@22-01-2025_04-21-03.jpg",
+   "photo_file_size": 55322,
+   "width": 1280,
+   "height": 594,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Dogs Spin 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Dogs Spin 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 166,
+   "type": "message",
+   "date": "2025-01-22T04:21:16",
+   "date_unixtime": "1737548476",
+   "edited": "2025-04-17T04:28:47",
+   "edited_unixtime": "1744889327",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_138@22-01-2025_04-21-16.jpg",
+   "photo_file_size": 48325,
+   "width": 1280,
+   "height": 593,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Dogs Spin 3"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Dogs Spin 3"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 168,
+   "type": "message",
+   "date": "2025-01-31T09:11:03",
+   "date_unixtime": "1738343463",
+   "edited": "2025-04-17T04:28:41",
+   "edited_unixtime": "1744889321",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_139@31-01-2025_09-11-03.jpg",
+   "photo_file_size": 77144,
+   "width": 1280,
+   "height": 744,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "TrumpCoin Airdrop 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "TrumpCoin Airdrop 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 169,
+   "type": "message",
+   "date": "2025-01-31T09:16:27",
+   "date_unixtime": "1738343787",
+   "edited": "2025-04-17T04:28:31",
+   "edited_unixtime": "1744889311",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_140@31-01-2025_09-16-27.jpg",
+   "photo_file_size": 38403,
+   "width": 871,
+   "height": 883,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "NotPixel Miniapp"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "NotPixel Miniapp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 170,
+   "type": "message",
+   "date": "2025-01-31T10:47:45",
+   "date_unixtime": "1738349265",
+   "edited": "2025-04-17T04:28:24",
+   "edited_unixtime": "1744889304",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_141@31-01-2025_10-47-45.jpg",
+   "photo_file_size": 101494,
+   "width": 1280,
+   "height": 613,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " TrumpCoin Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " TrumpCoin Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 172,
+   "type": "message",
+   "date": "2025-02-08T04:05:04",
+   "date_unixtime": "1739016304",
+   "edited": "2025-04-17T04:28:11",
+   "edited_unixtime": "1744889291",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_142@08-02-2025_04-05-04.jpg",
+   "photo_file_size": 98733,
+   "width": 1280,
+   "height": 920,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Gift Market"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Gift Market"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 173,
+   "type": "message",
+   "date": "2025-02-08T04:05:28",
+   "date_unixtime": "1739016328",
+   "edited": "2025-04-17T04:28:06",
+   "edited_unixtime": "1744889286",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_143@08-02-2025_04-05-28.jpg",
+   "photo_file_size": 56096,
+   "width": 1280,
+   "height": 920,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "FPIBANK Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "FPIBANK Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 174,
+   "type": "message",
+   "date": "2025-02-09T09:23:43",
+   "date_unixtime": "1739121823",
+   "edited": "2025-04-17T04:28:01",
+   "edited_unixtime": "1744889281",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_144@09-02-2025_09-23-43.jpg",
+   "photo_file_size": 84810,
+   "width": 1280,
+   "height": 593,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "FPIBANK Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "FPIBANK Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 175,
+   "type": "message",
+   "date": "2025-02-20T07:55:43",
+   "date_unixtime": "1740066943",
+   "edited": "2025-04-17T04:27:55",
+   "edited_unixtime": "1744889275",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_145@20-02-2025_07-55-43.jpg",
+   "photo_file_size": 69402,
+   "width": 1280,
+   "height": 743,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Storm Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Storm Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 176,
+   "type": "message",
+   "date": "2025-03-01T04:49:32",
+   "date_unixtime": "1740833372",
+   "edited": "2025-04-17T04:27:50",
+   "edited_unixtime": "1744889270",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_146@01-03-2025_04-49-32.jpg",
+   "photo_file_size": 80456,
+   "width": 1280,
+   "height": 776,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Ton Spin 4"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Ton Spin 4"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 177,
+   "type": "message",
+   "date": "2025-03-01T04:50:20",
+   "date_unixtime": "1740833420",
+   "edited": "2025-04-17T04:27:43",
+   "edited_unixtime": "1744889263",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_147@01-03-2025_04-50-20.jpg",
+   "photo_file_size": 82328,
+   "width": 1280,
+   "height": 737,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "YZY Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "YZY Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 178,
+   "type": "message",
+   "date": "2025-03-01T06:13:20",
+   "date_unixtime": "1740838400",
+   "edited": "2025-04-17T04:27:36",
+   "edited_unixtime": "1744889256",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_148@01-03-2025_06-13-20.jpg",
+   "photo_file_size": 76881,
+   "width": 1280,
+   "height": 775,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Memhash Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Memhash Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 179,
+   "type": "message",
+   "date": "2025-03-01T13:29:19",
+   "date_unixtime": "1740864559",
+   "edited": "2025-04-17T04:27:31",
+   "edited_unixtime": "1744889251",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_149@01-03-2025_13-29-19.jpg",
+   "photo_file_size": 78180,
+   "width": 1280,
+   "height": 778,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Memhash Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Memhash Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 180,
+   "type": "message",
+   "date": "2025-03-23T06:28:05",
+   "date_unixtime": "1742736485",
+   "edited": "2025-04-17T04:27:25",
+   "edited_unixtime": "1744889245",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_150@23-03-2025_06-28-05.jpg",
+   "photo_file_size": 88728,
+   "width": 1280,
+   "height": 749,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Tonnel Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Tonnel Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 181,
+   "type": "message",
+   "date": "2025-03-23T07:33:39",
+   "date_unixtime": "1742740419",
+   "edited": "2025-04-17T04:27:18",
+   "edited_unixtime": "1744889238",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_151@23-03-2025_07-33-39.jpg",
+   "photo_file_size": 68897,
+   "width": 1280,
+   "height": 744,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Tonnel Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Tonnel Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 182,
+   "type": "message",
+   "date": "2025-03-28T06:42:05",
+   "date_unixtime": "1743169325",
+   "edited": "2025-04-17T04:27:12",
+   "edited_unixtime": "1744889232",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_152@28-03-2025_06-42-05.jpg",
+   "photo_file_size": 137997,
+   "width": 1280,
+   "height": 790,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "TOKEN2049 Giveaway"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "TOKEN2049 Giveaway"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 183,
+   "type": "message",
+   "date": "2025-03-28T07:09:44",
+   "date_unixtime": "1743170984",
+   "edited": "2025-04-17T04:27:06",
+   "edited_unixtime": "1744889226",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_153@28-03-2025_07-09-44.jpg",
+   "photo_file_size": 84510,
+   "width": 1280,
+   "height": 788,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Gifts Market 2"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Gifts Market 2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 184,
+   "type": "message",
+   "date": "2025-04-16T06:57:48",
+   "date_unixtime": "1744811868",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "reply_to_message_id": 96,
+   "text": [
+    {
+     "type": "bold",
+     "text": "*Изменено"
+    },
+    "\n\nТеперь используется актуальный курс TON в перерасчете на доллары ",
+    {
+     "type": "custom_emoji",
+     "text": "💎",
+     "document_id": "video_files/sticker.webm"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "*Изменено"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nТеперь используется актуальный курс TON в перерасчете на доллары "
+    },
+    {
+     "type": "custom_emoji",
+     "text": "💎",
+     "document_id": "video_files/sticker.webm"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 185,
+   "type": "message",
+   "date": "2025-04-17T04:29:16",
+   "date_unixtime": "1744889356",
+   "edited": "2025-04-17T04:29:31",
+   "edited_unixtime": "1744889371",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_154@17-04-2025_04-29-16.jpg",
+   "photo_file_size": 84045,
+   "width": 1280,
+   "height": 621,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "Trump-Coin Airdrop"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "Trump-Coin Airdrop"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 186,
+   "type": "message",
+   "date": "2025-04-17T04:31:44",
+   "date_unixtime": "1744889504",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_155@17-04-2025_04-31-44.jpg",
+   "photo_file_size": 77025,
+   "width": 1280,
+   "height": 623,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Solana Spin"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Solana Spin"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 187,
+   "type": "message",
+   "date": "2025-04-17T04:35:24",
+   "date_unixtime": "1744889724",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_156@17-04-2025_04-35-24.jpg",
+   "photo_file_size": 57503,
+   "width": 1280,
+   "height": 625,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Marinade Staking"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " Marinade Staking"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 188,
+   "type": "message",
+   "date": "2025-04-17T04:36:48",
+   "date_unixtime": "1744889808",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_157@17-04-2025_04-36-48.jpg",
+   "photo_file_size": 57216,
+   "width": 1280,
+   "height": 626,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " AMLCheck"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " AMLCheck"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 189,
+   "type": "message",
+   "date": "2025-04-17T04:38:51",
+   "date_unixtime": "1744889931",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_158@17-04-2025_04-38-51.jpg",
+   "photo_file_size": 36806,
+   "width": 1280,
+   "height": 626,
+   "text": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " BlazeStake"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "🌐"
+    },
+    {
+     "type": "bold",
+     "text": " BlazeStake"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 190,
+   "type": "message",
+   "date": "2025-04-17T04:41:49",
+   "date_unixtime": "1744890109",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_159@17-04-2025_04-41-49.jpg",
+   "photo_file_size": 41237,
+   "width": 598,
+   "height": 1101,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Paws Mini app"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Paws Mini app"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 191,
+   "type": "message",
+   "date": "2025-04-17T07:29:21",
+   "date_unixtime": "1744900161",
+   "from": "[RublevkaTeam] Офферы НЕ",
+   "from_id": "channel2168674399",
+   "photo": "photos/photo_160@17-04-2025_07-29-21.jpg",
+   "photo_file_size": 46696,
+   "width": 1280,
+   "height": 623,
+   "text": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Paws Airdrop 2 (SOL)"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "custom_emoji",
+     "text": "🌐",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": " Paws Airdrop 2 (SOL)"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#SOL"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  }
+ ]
+}
