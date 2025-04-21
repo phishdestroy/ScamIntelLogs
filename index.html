@@ -7,34 +7,74 @@
     <link rel="icon" type="image/png" href="https://www.phishdestroy.io/favicon-32x32.png">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 40px;
             background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
         }
         h1 {
             color: #1e90ff;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
-        .sidebar {
-            width: 300px;
+        .info-box {
             background-color: #fff;
             border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .team, .description, .link {
-            padding: 8px;
+        .info-box p {
+            margin: 10px 0;
+        }
+        .sidebar {
+            width: 400px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .team, .folder, .description, .link {
+            padding: 10px;
             margin: 5px 0;
-            border-radius: 3px;
+            border-radius: 5px;
         }
         .team {
             background-color: #e0f7fa;
             font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .team:hover {
+            background-color: #b2ebf2;
+        }
+        .folder {
+            background-color: #f0f0f0;
+            margin-left: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .folder:hover {
+            background-color: #e0e0e0;
         }
         .description {
             background-color: #e9ecef;
             margin-left: 15px;
-            padding: 10px;
+            padding: 15px;
+            border-left: 4px solid #1e90ff;
+            border-radius: 0 5px 5px 0;
+        }
+        .description a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .description a:hover {
+            text-decoration: underline;
         }
         .link {
             background-color: #4caf50;
@@ -42,16 +82,10 @@
             text-align: center;
             margin-left: 15px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
         .link:hover {
             background-color: #45a049;
-        }
-        .info-box {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
         }
     </style>
 </head>
@@ -67,37 +101,87 @@
     </div>
 
     <div class="sidebar" id="file-tree">
-        <!-- Simplified content -->
+        <!-- Team content will be rendered here -->
     </div>
 
     <script>
         const fileTree = document.getElementById("file-tree");
-        const team = "RublevkaTeam";
-        const link = "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/chat/messages.html";
+        const teams = ["RublevkaTeam"];
+        const folders = [
+            { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/chat/messages.html" },
+            { name: "scam_offers", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/scam_offers/messages.html" },
+            { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/channel/messages.html" },
+            { name: "designs", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/designs/messages.html" },
+            { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/successful_thefts/messages.html" }
+        ];
 
-        function renderContent() {
+        function renderFileTree() {
             fileTree.innerHTML = "";
+            teams.forEach(team => {
+                const teamDiv = document.createElement("div");
+                teamDiv.className = "team";
+                teamDiv.textContent = team;
+                teamDiv.onclick = () => toggleTeamInfo(team, teamDiv);
+                fileTree.appendChild(teamDiv);
+            });
+        }
 
-            const teamDiv = document.createElement("div");
-            teamDiv.className = "team";
-            teamDiv.textContent = team;
-            fileTree.appendChild(teamDiv);
+        function toggleTeamInfo(team, teamDiv) {
+            const existingContent = teamDiv.querySelectorAll(".description, .folder, .link");
+            if (existingContent.length > 0) {
+                existingContent.forEach(item => item.remove());
+                return;
+            }
+
+            // Add team description from README
+            const descriptionDiv = document.createElement("div");
+            descriptionDiv.className = "description";
+            descriptionDiv.innerHTML = `
+                <p><strong>About ${team}:</strong> This directory contains Telegram chat dumps and logs for ${team}, a known scammer group operating across ecosystems like Solana, TON, and others. These archives may include evidence of their fraudulent activities.</p>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li><a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
+                    <li><a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" target="_blank">Known Scammer Logins (TXT)</a></li>
+                </ul>
+            `;
+            teamDiv.appendChild(descriptionDiv);
+
+            // Add folders
+            folders.forEach(folder => {
+                const folderDiv = document.createElement("div");
+                folderDiv.className = "folder";
+                folderDiv.textContent = folder.name;
+                folderDiv.onclick = (e) => {
+                    e.stopPropagation();
+                    showFolderDescription(team, folder.name, folder.link, folderDiv);
+                };
+                teamDiv.appendChild(folderDiv);
+            });
+        }
+
+        function showFolderDescription(team, folderName, folderLink, folderDiv) {
+            const existingDescription = folderDiv.querySelectorAll(".description, .link");
+            if (existingDescription.length > 0) {
+                existingDescription.forEach(item => item.remove());
+                return;
+            }
 
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
-            descriptionDiv.textContent = "This is the chat of the scam team, it may contain details of their thefts, personal data, and victim data.";
-            teamDiv.appendChild(descriptionDiv);
+            descriptionDiv.textContent = `This is the ${folderName} of the scam team ${team}, it may contain details of their thefts, personal data, and victim data.`;
+            folderDiv.appendChild(descriptionDiv);
 
             const linkDiv = document.createElement("div");
             linkDiv.className = "link";
             linkDiv.textContent = "Go";
-            linkDiv.onclick = () => {
-                window.open(link, "_blank");
+            linkDiv.onclick = (e) => {
+                e.stopPropagation();
+                window.open(folderLink, "_blank");
             };
-            teamDiv.appendChild(linkDiv);
+            folderDiv.appendChild(linkDiv);
         }
 
-        renderContent();
+        renderFileTree();
     </script>
 </body>
 </html>
