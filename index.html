@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScamTeamList: Explore Scammer Archives</title>
+    <link rel="icon" type="image/png" href="https://www.phishdestroy.io/favicon-32x32.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            color: #1e90ff;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .team, .folder, .file, .description, .back {
+            padding: 8px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .team {
+            background-color: #e0f7fa;
+            font-weight: bold;
+        }
+        .team:hover {
+            background-color: #b2ebf2;
+        }
+        .folder {
+            background-color: #f0f0f0;
+            margin-left: 15px;
+        }
+        .folder:hover {
+            background-color: #e0e0e0;
+        }
+        .file {
+            background-color: #f9f9f9;
+            margin-left: 30px;
+        }
+        .file:hover {
+            background-color: #ececec;
+        }
+        .description {
+            background-color: #e9ecef;
+            margin-left: 15px;
+            padding: 10px;
+        }
+        .back {
+            background-color: #d3d3d3;
+            margin-left: 15px;
+            font-style: italic;
+        }
+        .back:hover {
+            background-color: #c0c0c0;
+        }
+        .info-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ScamTeamList: Explore Scammer Archives</h1>
+
+    <div class="info-box">
+        <p><strong>🔍 About:</strong> This page contains archived Telegram chat dumps of scammer activities.</p>
+        <p><strong>📊 Scammer Database:</strong> Check the detailed list of known scammers in our <a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank">Google Spreadsheet</a>.</p>
+        <p><strong>📢 Report Scammers:</strong> Use our Telegram bot to report scam activities: <a href="https://t.me/PhishDestroy_bot" target="_blank">PhishDestroy Bot</a>.</p>
+        <p><strong>🐦 Follow Us:</strong> Stay updated on Twitter: <a href="https://x.com/Phish_Destroy" target="_blank">@Phish_Destroy</a>.</p>
+        <p><strong>🌐 Visit Us:</strong> Learn more about our project at <a href="https://www.phishdestroy.io/" target="_blank">phishdestroy.io</a>.</p>
+        <p><strong>🤝 Contribute:</strong> Have more scam data? Visit the <a href="https://github.com/phishdestroy/ScamTeamList" target="_blank">GitHub repository</a> to add it.</p>
+    </div>
+
+    <div class="sidebar" id="file-tree">
+        <!-- File tree will be rendered here -->
+    </div>
+
+    <script>
+        const structure = {
+            "RublevkaTeam": [
+                { name: "chat", files: Array.from({ length: 37 }, (_, i) => `messages${i + 1}.html`) },
+                { name: "scam-offers", files: ["messages.html"] },
+                { name: "channel", files: ["messages.html"] },
+                { name: "designs", files: ["messages.html"] },
+                { name: "successful-thefts", files: ["messages.html"] }
+            ]
+            // Add more scammer groups in the future, e.g.:
+            // "NewScamTeam": [{ name: "chat", files: ["messages.html"] }]
+        };
+
+        const fileTree = document.getElementById("file-tree");
+
+        function renderFileTree() {
+            fileTree.innerHTML = "";
+            Object.keys(structure).forEach(team => {
+                const teamDiv = document.createElement("div");
+                teamDiv.className = "team";
+                teamDiv.textContent = team;
+                teamDiv.onclick = () => toggleFolders(team, teamDiv);
+                fileTree.appendChild(teamDiv);
+            });
+        }
+
+        function toggleFolders(team, teamDiv) {
+            const existingFolders = teamDiv.querySelectorAll(".folder, .description, .back, .file");
+            if (existingFolders.length > 0) {
+                existingFolders.forEach(item => item.remove());
+                return;
+            }
+
+            structure[team].forEach(folder => {
+                const folderDiv = document.createElement("div");
+                folderDiv.className = "folder";
+                folderDiv.textContent = folder.name;
+                folderDiv.onclick = (e) => {
+                    e.stopPropagation();
+                    showDescription(team, folder.name, folderDiv);
+                };
+                teamDiv.appendChild(folderDiv);
+            });
+        }
+
+        function showDescription(team, folderName, folderDiv) {
+            const existingDescription = folderDiv.querySelectorAll(".description, .back, .file");
+            if (existingDescription.length > 0) {
+                existingDescription.forEach(item => item.remove());
+                return;
+            }
+
+            const descriptionDiv = document.createElement("div");
+            descriptionDiv.className = "description";
+            descriptionDiv.textContent = `This is the ${folderName} of the ${team} group.`;
+            folderDiv.appendChild(descriptionDiv);
+
+            const backDiv = document.createElement("div");
+            backDiv.className = "back";
+            backDiv.textContent = "Show files";
+            backDiv.onclick = (e) => {
+                e.stopPropagation();
+                showFiles(team, folderName, folderDiv);
+            };
+            folderDiv.appendChild(backDiv);
+        }
+
+        function showFiles(team, folderName, folderDiv) {
+            const existingDescription = folderDiv.querySelectorAll(".description, .back, .file");
+            if (existingDescription.length > 0) {
+                existingDescription.forEach(item => item.remove());
+            }
+
+            const folderData = structure[team].find(f => f.name === folderName);
+            folderData.files.forEach(file => {
+                const fileDiv = document.createElement("div");
+                fileDiv.className = "file";
+                fileDiv.textContent = file;
+                fileDiv.onclick = (e) => {
+                    e.stopPropagation();
+                    window.open(`${team}/${folderName}/${file}`, "_blank");
+                };
+                folderDiv.appendChild(fileDiv);
+            });
+        }
+
+        renderFileTree();
+    </script>
+</body>
+</html>
