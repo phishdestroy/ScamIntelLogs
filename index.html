@@ -21,18 +21,16 @@
             border: 1px solid #ddd;
             padding: 15px;
             border-radius: 5px;
-            max-height: 600px;
-            overflow-y: auto;
         }
-        .team, .folder, .file, .description, .back {
+        .team, .folder, .description, .link {
             padding: 8px;
             margin: 5px 0;
-            cursor: pointer;
             border-radius: 3px;
         }
         .team {
             background-color: #e0f7fa;
             font-weight: bold;
+            cursor: pointer;
         }
         .team:hover {
             background-color: #b2ebf2;
@@ -40,29 +38,25 @@
         .folder {
             background-color: #f0f0f0;
             margin-left: 15px;
+            cursor: pointer;
         }
         .folder:hover {
             background-color: #e0e0e0;
-        }
-        .file {
-            background-color: #f9f9f9;
-            margin-left: 30px;
-        }
-        .file:hover {
-            background-color: #ececec;
         }
         .description {
             background-color: #e9ecef;
             margin-left: 15px;
             padding: 10px;
         }
-        .back {
-            background-color: #d3d3d3;
+        .link {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
             margin-left: 15px;
-            font-style: italic;
+            cursor: pointer;
         }
-        .back:hover {
-            background-color: #c0c0c0;
+        .link:hover {
+            background-color: #45a049;
         }
         .info-box {
             background-color: #fff;
@@ -90,23 +84,19 @@
     </div>
 
     <script>
-        const structure = {
-            "RublevkaTeam": [
-                { name: "chat", files: Array.from({ length: 37 }, (_, i) => `messages${i + 1}.html`) },
-                { name: "scam-offers", files: ["messages.html"] },
-                { name: "channel", files: ["messages.html"] },
-                { name: "designs", files: ["messages.html"] },
-                { name: "successful-thefts", files: ["messages.html"] }
-            ]
-            // Add more scammer groups in the future, e.g.:
-            // "NewScamTeam": [{ name: "chat", files: ["messages.html"] }]
-        };
-
         const fileTree = document.getElementById("file-tree");
+        const teams = ["RublevkaTeam"];
+        const folders = [
+            { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/chat/messages.html" },
+            { name: "scam-offers", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/scam-offers/messages.html" },
+            { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/channel/messages.html" },
+            { name: "designs", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/designs/messages.html" },
+            { name: "successful-thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/successful-thefts/messages.html" }
+        ];
 
         function renderFileTree() {
             fileTree.innerHTML = "";
-            Object.keys(structure).forEach(team => {
+            teams.forEach(team => {
                 const teamDiv = document.createElement("div");
                 teamDiv.className = "team";
                 teamDiv.textContent = team;
@@ -116,26 +106,26 @@
         }
 
         function toggleFolders(team, teamDiv) {
-            const existingFolders = teamDiv.querySelectorAll(".folder, .description, .back, .file");
+            const existingFolders = teamDiv.querySelectorAll(".folder, .description, .link");
             if (existingFolders.length > 0) {
                 existingFolders.forEach(item => item.remove());
                 return;
             }
 
-            structure[team].forEach(folder => {
+            folders.forEach(folder => {
                 const folderDiv = document.createElement("div");
                 folderDiv.className = "folder";
                 folderDiv.textContent = folder.name;
                 folderDiv.onclick = (e) => {
                     e.stopPropagation();
-                    showDescription(team, folder.name, folderDiv);
+                    showDescription(team, folder.name, folder.link, folderDiv);
                 };
                 teamDiv.appendChild(folderDiv);
             });
         }
 
-        function showDescription(team, folderName, folderDiv) {
-            const existingDescription = folderDiv.querySelectorAll(".description, .back, .file");
+        function showDescription(team, folderName, folderLink, folderDiv) {
+            const existingDescription = folderDiv.querySelectorAll(".description, .link");
             if (existingDescription.length > 0) {
                 existingDescription.forEach(item => item.remove());
                 return;
@@ -143,48 +133,17 @@
 
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
-            descriptionDiv.textContent = `This is the ${folderName} of the ${team} group.`;
+            descriptionDiv.textContent = `This is the "${folderName}" folder of the ${team} scam group. It may contain theft details, victim data, and other insights.`;
             folderDiv.appendChild(descriptionDiv);
 
-            const backDiv = document.createElement("div");
-            backDiv.className = "back";
-            backDiv.textContent = "Show files";
-            backDiv.onclick = (e) => {
+            const linkDiv = document.createElement("div");
+            linkDiv.className = "link";
+            linkDiv.textContent = "Open";
+            linkDiv.onclick = (e) => {
                 e.stopPropagation();
-                showFiles(team, folderName, folderDiv);
+                window.open(folderLink, "_blank");
             };
-            folderDiv.appendChild(backDiv);
-        }
-
-        function showFiles(team, folderName, folderDiv) {
-            const existingDescription = folderDiv.querySelectorAll(".description, .back, .file");
-            if (existingDescription.length > 0) {
-                existingDescription.forEach(item => item.remove());
-            }
-
-            const folderData = structure[team].find(f => f.name === folderName);
-            folderData.files.forEach(file => {
-                const fileDiv = document.createElement("div");
-                fileDiv.className = "file";
-                fileDiv.textContent = file;
-                fileDiv.onclick = (e) => {
-                    e.stopPropagation();
-                    const url = `${team}/${folderName}/${file}`;
-                    // Проверяем, существует ли файл
-                    fetch(url, { method: 'HEAD' })
-                        .then(response => {
-                            if (response.ok) {
-                                window.open(url, "_blank");
-                            } else {
-                                alert(`File ${file} not found. Please check if it exists in ${team}/${folderName}/`);
-                            }
-                        })
-                        .catch(() => {
-                            alert(`Error accessing ${file}. Please check if it exists in ${team}/${folderName}/`);
-                        });
-                };
-                folderDiv.appendChild(fileDiv);
-            });
+            folderDiv.appendChild(linkDiv);
         }
 
         renderFileTree();
