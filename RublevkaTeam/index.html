@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScamTeamList Chat Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        select {
+            padding: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+        #chat-container {
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: white;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+        .message .sender {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .message .time {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>ScamTeamList Chat Viewer</h1>
+    <label for="folder-select">Select a folder:</label>
+    <select id="folder-select" onchange="updateFileList()">
+        <option value="">-- Select a folder --</option>
+        <option value="RUBLEVKATEAM/RUBLEVKATEAM [chat]">RublevkaTeam [chat]</option>
+        <option value="RUBLEVKATEAM/RUBLEVKATEAM Scam offers">RublevkaTeam Scam offers</option>
+        <option value="RUBLEVKATEAM/RUBLEVKATEAM channel">RublevkaTeam channel</option>
+        <option value="RUBLEVKATEAM/RUBLEVKATEAM designs">RublevkaTeam designs</option>
+        <option value="RUBLEVKATEAM/[Successful thefts and damage]">[Successful thefts and damage]</option>
+    </select>
+
+    <label for="file-select">Select a file:</label>
+    <select id="file-select" onchange="loadChat()">
+        <option value="">-- Select a file --</option>
+    </select>
+
+    <div id="chat-container"></div>
+
+    <script>
+        const folderFiles = {
+            "RUBLEVKATEAM/RUBLEVKATEAM [chat]": Array.from({ length: 37 }, (_, i) => `messages${i + 1}.html`),
+            "RUBLEVKATEAM/RUBLEVKATEAM Scam offers": ["messages.html"],
+            "RUBLEVKATEAM/RUBLEVKATEAM channel": ["messages.html"],
+            "RUBLEVKATEAM/RUBLEVKATEAM designs": ["messages.html"],
+            "RUBLEVKATEAM/[Successful thefts and damage]": ["messages.html"]
+        };
+
+        function updateFileList() {
+            const folder = document.getElementById("folder-select").value;
+            const fileSelect = document.getElementById("file-select");
+            fileSelect.innerHTML = '<option value="">-- Select a file --</option>';
+
+            if (folder && folderFiles[folder]) {
+                folderFiles[folder].forEach(file => {
+                    const option = document.createElement("option");
+                    option.value = `${folder}/${file}`;
+                    option.textContent = file;
+                    fileSelect.appendChild(option);
+                });
+            }
+
+            document.getElementById("chat-container").innerHTML = "";
+        }
+
+        async function loadChat() {
+            const file = document.getElementById("file-select").value;
+            if (!file) return;
+
+            const chatContainer = document.getElementById("chat-container");
+            chatContainer.innerHTML = "Loading...";
+
+            try {
+                const response = await fetch(file);
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, "text/html");
+
+                const messages = doc.querySelectorAll(".message");
+                chatContainer.innerHTML = "";
+
+                messages.forEach(msg => {
+                    const sender = msg.querySelector(".from_name")?.textContent || "Unknown";
+                    const time = msg.querySelector(".date")?.textContent || "No time";
+                    const text = msg.querySelector(".text")?.textContent || "No message";
+
+                    const messageDiv = document.createElement("div");
+                    messageDiv.className = "message";
+                    messageDiv.innerHTML = `
+                        <div class="sender">${sender}</div>
+                        <div class="time">${time}</div>
+                        <div>${text}</div>
+                    `;
+                    chatContainer.appendChild(messageDiv);
+                });
+
+                if (messages.length === 0) {
+                    chatContainer.textContent = "No messages found in this file.";
+                }
+            } catch (error) {
+                chatContainer.textContent = "Error loading chat: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
