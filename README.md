@@ -1,11 +1,11 @@
 # 🕵️ ScamIntelLogs: Preserving Scammer Activities
 
-![ScamIntelLogs Banner](https://github.com/phishdestroy/ScamIntelLogs/raw/main/banner.png)
+<img src="https://github.com/phishdestroy/ScamIntelLogs/raw/main/baner.png" alt="ScamIntelLogs Banner" width="800">
 
 ![GitHub stars](https://img.shields.io/github/stars/phishdestroy/ScamIntelLogs?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/phishdestroy/ScamIntelLogs?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/phishdestroy/ScamIntelLogs?style=social)
-![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 🔍 **View the Data Now**: Browse archived Telegram chat dumps of scammer activities at [Chat Viewer](https://phishdestroy.github.io/ScamIntelLogs).
 
@@ -19,7 +19,7 @@ This repository preserves Telegram chat dumps and logs of various scammer groups
 - **Target Audience**: Victims, cybersecurity researchers, law enforcement, and anyone fighting scams.
 - **Updates**: This repository will be regularly updated with new data on scammer groups as we receive more information.
 
-📊 **Scammer Database**: Check the detailed list of known scammers for RublevkaTeam in our [Google Spreadsheet](https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422).
+📊 **Scammer Database**: Check the detailed list of known scammers in our [Google Spreadsheet](https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422).
 
 ---
 
@@ -34,6 +34,7 @@ This repository preserves Telegram chat dumps and logs of various scammer groups
 ## 📢 Get Involved
 - **Report Scammers**: Use our Telegram bot to report scam activities: [PhishDestroy Bot](https://t.me/PhishDestroy_bot).  
 - **Follow Us**: Stay updated on our fight against scams by following us on Twitter: [@Phish_Destroy](https://x.com/Phish_Destroy).  
+- **Visit Us**: Learn more about our project at [phishdestroy.io](https://www.phishdestroy.io/).
 
 ---
 
@@ -46,7 +47,7 @@ Have Telegram dumps or logs of scammer activities? Help us grow this archive:
 ---
 
 ## ⚖️ License
-This repository is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You are free to use, share, and adapt the data, as long as you give appropriate credit.
+This repository is licensed under [MIT License](LICENSE).
 
 ---
 
