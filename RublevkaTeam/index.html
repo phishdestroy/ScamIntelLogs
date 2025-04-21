@@ -3,128 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScamTeamList Chat Viewer</title>
+    <title>ScamIntelLogs: Explore Scammer Archives</title>
+    <link rel="icon" type="image/png" href="https://www.phishdestroy.io/favicon-32x32.png">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             background-color: #f4f4f9;
-        }
-        h1 {
             color: #333;
         }
-        select {
-            padding: 5px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            margin-right: 10px;
+        h1 {
+            color: #1e90ff;
         }
-        #chat-container {
+        .sidebar {
+            width: 300px;
+            background-color: #fff;
             border: 1px solid #ddd;
             padding: 15px;
-            background-color: white;
+            border-radius: 5px;
             max-height: 600px;
             overflow-y: auto;
         }
-        .message {
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #e9ecef;
+        .team, .folder, .file, .description, .back {
+            padding: 8px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 3px;
         }
-        .message .sender {
+        .team {
+            background-color: #e0f7fa;
             font-weight: bold;
-            color: #007bff;
         }
-        .message .time {
-            color: #666;
-            font-size: 0.9em;
+        .team:hover {
+            background-color: #b2ebf2;
+        }
+        .folder {
+            background-color: #f0f0f0;
+            margin-left: 15px;
+        }
+        .folder:hover {
+            background-color: #e0e0e0;
+        }
+        .file {
+            background-color: #f9f9f9;
+            margin-left: 30px;
+        }
+        .file:hover {
+            background-color: #ececec;
+        }
+        .description {
+            background-color: #e9ecef;
+            margin-left: 15px;
+            padding: 10px;
+        }
+        .back {
+            background-color: #d3d3d3;
+            margin-left: 15px;
+            font-style: italic;
+        }
+        .back:hover {
+            background-color: #c0c0c0;
+        }
+        .info-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            margin-left: 15px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>ScamTeamList Chat Viewer</h1>
-    <label for="folder-select">Select a folder:</label>
-    <select id="folder-select" onchange="updateFileList()">
-        <option value="">-- Select a folder --</option>
-        <option value="RUBLEVKATEAM/RUBLEVKATEAM [chat]">RublevkaTeam [chat]</option>
-        <option value="RUBLEVKATEAM/RUBLEVKATEAM Scam offers">RublevkaTeam Scam offers</option>
-        <option value="RUBLEVKATEAM/RUBLEVKATEAM channel">RublevkaTeam channel</option>
-        <option value="RUBLEVKATEAM/RUBLEVKATEAM designs">RublevkaTeam designs</option>
-        <option value="RUBLEVKATEAM/[Successful thefts and damage]">[Successful thefts and damage]</option>
-    </select>
+    <h1>ScamIntelLogs: Explore Scammer Archives</h1>
 
-    <label for="file-select">Select a file:</label>
-    <select id="file-select" onchange="loadChat()">
-        <option value="">-- Select a file --</option>
-    </select>
+    <div class="info-box">
+        <p><strong>🔍 About:</strong> This page contains archived Telegram chat dumps of scammer activities.</p>
+        <p><strong>📊 Scammer Database:</strong> Check the detailed list of known scammers in our <a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank">Google Spreadsheet</a>.</p>
+        <p><strong>📢 Report Scammers:</strong> Use our Telegram bot to report scam activities: <a href="https://t.me/PhishDestroy_bot" target="_blank">PhishDestroy Bot</a>.</p>
+        <p><strong>🐦 Follow Us:</strong> Stay updated on Twitter: <a href="https://x.com/Phish_Destroy" target="_blank">@Phish_Destroy</a>.</p>
+        <p><strong>🌐 Visit Us:</strong> Learn more about our project at <a href="https://www.phishdestroy.io/" target="_blank">phishdestroy.io</a>.</p>
+        <p><strong>🤝 Contribute:</strong> Have more scam data? Visit the <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank">GitHub repository</a> to add it.</p>
+    </div>
 
-    <div id="chat-container"></div>
+    <div class="sidebar" id="file-tree">
+        <!-- File tree will be rendered here -->
+    </div>
 
     <script>
-        const folderFiles = {
-            "RUBLEVKATEAM/RUBLEVKATEAM [chat]": Array.from({ length: 37 }, (_, i) => `messages${i + 1}.html`),
-            "RUBLEVKATEAM/RUBLEVKATEAM Scam offers": ["messages.html"],
-            "RUBLEVKATEAM/RUBLEVKATEAM channel": ["messages.html"],
-            "RUBLEVKATEAM/RUBLEVKATEAM designs": ["messages.html"],
-            "RUBLEVKATEAM/[Successful thefts and damage]": ["messages.html"]
-        };
+        const fileTree = document.getElementById("file-tree");
+        const repoOwner = "phishdestroy";
+        const repoName = "ScamIntelLogs";
+        const teams = ["RublevkaTeam"];
+        const folders = ["chat", "scam-offers", "channel", "designs", "successful-thefts"];
 
-        function updateFileList() {
-            const folder = document.getElementById("folder-select").value;
-            const fileSelect = document.getElementById("file-select");
-            fileSelect.innerHTML = '<option value="">-- Select a file --</option>';
-
-            if (folder && folderFiles[folder]) {
-                folderFiles[folder].forEach(file => {
-                    const option = document.createElement("option");
-                    option.value = `${folder}/${file}`;
-                    option.textContent = file;
-                    fileSelect.appendChild(option);
-                });
-            }
-
-            document.getElementById("chat-container").innerHTML = "";
-        }
-
-        async function loadChat() {
-            const file = document.getElementById("file-select").value;
-            if (!file) return;
-
-            const chatContainer = document.getElementById("chat-container");
-            chatContainer.innerHTML = "Loading...";
-
+        async function fetchFiles(team, folder) {
+            const url = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${team}/${folder}`;
             try {
-                const response = await fetch(file);
-                const html = await response.text();
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, "text/html");
-
-                const messages = doc.querySelectorAll(".message");
-                chatContainer.innerHTML = "";
-
-                messages.forEach(msg => {
-                    const sender = msg.querySelector(".from_name")?.textContent || "Unknown";
-                    const time = msg.querySelector(".date")?.textContent || "No time";
-                    const text = msg.querySelector(".text")?.textContent || "No message";
-
-                    const messageDiv = document.createElement("div");
-                    messageDiv.className = "message";
-                    messageDiv.innerHTML = `
-                        <div class="sender">${sender}</div>
-                        <div class="time">${time}</div>
-                        <div>${text}</div>
-                    `;
-                    chatContainer.appendChild(messageDiv);
-                });
-
-                if (messages.length === 0) {
-                    chatContainer.textContent = "No messages found in this file.";
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`GitHub API error: ${response.status}`);
                 }
+                const data = await response.json();
+                return data
+                    .filter(item => item.type === "file" && item.name.endsWith(".html"))
+                    .map(item => item.name);
             } catch (error) {
-                chatContainer.textContent = "Error loading chat: " + error.message;
+                console.error(`Error fetching files for ${team}/${folder}:`, error);
+                return [];
             }
         }
+
+        function renderFileTree() {
+            fileTree.innerHTML = "Loading...";
+            teams.forEach(team => {
+                const teamDiv = document.createElement("div");
+                teamDiv.className = "team";
+                teamDiv.textContent = team;
+                teamDiv.onclick = () => toggleFolders(team, teamDiv);
+                fileTree.appendChild(teamDiv);
+            });
+        }
+
+        function toggleFolders(team, teamDiv) {
+            const existingFolders = teamDiv.querySelectorAll(".folder, .description, .back, .file, .error");
+            if (existingFolders.length > 0) {
+                existingFolders.forEach(item => item.remove());
+                return;
+            }
+
+            folders.forEach(folder => {
+                const folderDiv = document.createElement("div");
+                folderDiv.className = "folder";
+                folderDiv.textContent = folder;
+                folderDiv.onclick = (e) => {
+                    e.stopPropagation();
+                    showDescription(team, folder, folderDiv);
+                };
+                teamDiv.appendChild(folderDiv);
+            });
+        }
+
+        async function showDescription(team, folderName, folderDiv) {
+            const existingDescription = folderDiv.querySelectorAll(".description, .back, .file, .error");
+            if (existingDescription.length > 0) {
+                existingDescription.forEach(item => item.remove());
+                return;
+            }
+
+            const descriptionDiv = document.createElement("div");
+            descriptionDiv.className = "description";
+            descriptionDiv.textContent = `This is the ${folderName} of the ${team} group.`;
+            folderDiv.appendChild(descriptionDiv);
+
+            const backDiv = document.createElement("div");
+            backDiv.className = "back";
+            backDiv.textContent = "Show files";
+            backDiv.onclick = (e) => {
+                e.stopPropagation();
+                showFiles(team, folderName, folderDiv);
+            };
+            folderDiv.appendChild(backDiv);
+        }
+
+        async function showFiles(team, folderName, folderDiv) {
+            const existingDescription = folderDiv.querySelectorAll(".description, .back, .file, .error");
+            if (existingDescription.length > 0) {
+                existingDescription.forEach(item => item.remove());
+            }
+
+            // Загружаем файлы через GitHub API
+            const files = await fetchFiles(team, folderName);
+            if (files.length === 0) {
+                const errorDiv = document.createElement("div");
+                errorDiv.className = "error";
+                errorDiv.textContent = `No files found in ${team}/${folderName}, or GitHub API limit exceeded.`;
+                folderDiv.appendChild(errorDiv);
+                return;
+            }
+
+            files.forEach(file => {
+                const fileDiv = document.createElement("div");
+                fileDiv.className = "file";
+                fileDiv.textContent = file;
+                fileDiv.onclick = (e) => {
+                    e.stopPropagation();
+                    const url = `${team}/${folderName}/${file}`;
+                    fetch(url, { method: 'HEAD' })
+                        .then(response => {
+                            if (response.ok) {
+                                window.open(url, "_blank");
+                            } else {
+                                alert(`File ${file} not found. Please check if it exists in ${team}/${folderName}/`);
+                            }
+                        })
+                        .catch(() => {
+                            alert(`Error accessing ${file}. Please check if it exists in ${team}/${folderName}/`);
+                        });
+                };
+                folderDiv.appendChild(fileDiv);
+            });
+        }
+
+        renderFileTree();
     </script>
 </body>
 </html>
