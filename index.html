@@ -8,7 +8,8 @@
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 40px;
+            margin: 0;
+            padding: 20px;
             background-color: #f4f4f9;
             color: #333;
             line-height: 1.6;
@@ -20,11 +21,17 @@
             margin-bottom: 30px;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
         .info-box {
             background-color: #fff;
             border: 1px solid #ddd;
             padding: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -32,23 +39,33 @@
             margin: 10px 0;
         }
         .sidebar {
-            width: 800px;
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+        .main-content {
+            flex: 1;
             background-color: #fff;
             border: 1px solid #ddd;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-height: 400px;
         }
-        .team, .folder, .description, .link {
+        .team, .folder {
             padding: 10px;
             margin: 5px 0;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .team {
             background-color: #e0f7fa;
             font-weight: bold;
             cursor: pointer;
-            transition: background-color 0.3s;
         }
         .team:hover {
             background-color: #b2ebf2;
@@ -57,19 +74,26 @@
             background-color: #f0f0f0;
             margin-left: 15px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
+            text-align: center;
+            color: #fff;
         }
+        .folder.chat { background-color: #ff6f61; }
+        .folder.scam_offers { background-color: #ffab40; }
+        .folder.channel, .folder.chanel { background-color: #4caf50; }
+        .folder.designs { background-color: #1e90ff; }
+        .folder.successful_thefts { background-color: #ab47bc; }
         .folder:hover {
-            background-color: #e0e0e0;
+            filter: brightness(1.1);
+            transform: scale(1.02);
         }
         .description {
             background-color: #e9ecef;
-            margin-left: 15px;
             padding: 15px;
             border-left: 4px solid #1e90ff;
             border-radius: 0 5px 5px 0;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 20px;
         }
         .description img {
@@ -96,12 +120,22 @@
             background-color: #4caf50;
             color: white;
             text-align: center;
-            margin-left: 15px;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
         }
         .link:hover {
             background-color: #45a049;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -116,12 +150,18 @@
         <p><strong>🤝 Contribute:</strong> Have more scam data? Visit the <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank">GitHub repository</a> to add it.</p>
     </div>
 
-    <div class="sidebar" id="file-tree">
-        <!-- Team content will be rendered here -->
+    <div class="container">
+        <div class="sidebar" id="file-tree">
+            <!-- Team and folder list will be rendered here -->
+        </div>
+        <div class="main-content" id="main-content">
+            <!-- Team description will be rendered here -->
+        </div>
     </div>
 
     <script>
         const fileTree = document.getElementById("file-tree");
+        const mainContent = document.getElementById("main-content");
         const teams = [
             {
                 name: "RublevkaTeam",
@@ -153,7 +193,7 @@
             },
             {
                 name: "Wasabi Squad",
-                image: "https://i.ibb.co/bMShgdkp/image.png", // Placeholder image; replace with actual image URL if available
+                image: "https://i.ibb.co/bMShgdkp/image.png",
                 description: `
                     <p><strong>📁 Wasabi Squad Telegram Dump</strong> — a dataset of Telegram accounts tied to deceptive financial schemes involving fake trading platforms and casino sites.</p>
                     <p><strong>🎯 Primary Activities:</strong></p>
@@ -195,13 +235,12 @@
         }
 
         function toggleTeamInfo(team, teamDiv) {
-            const existingContent = teamDiv.querySelectorAll(".description, .folder, .link");
-            if (existingContent.length > 0) {
-                existingContent.forEach(item => item.remove());
-                return;
-            }
+            const allTeams = fileTree.querySelectorAll(".team");
+            allTeams.forEach(t => {
+                const content = t.querySelectorAll(".description, .folder, .link");
+                content.forEach(item => item.remove());
+            });
 
-            // Add team description with image
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
             descriptionDiv.innerHTML = `
@@ -210,12 +249,12 @@
                     ${team.description}
                 </div>
             `;
-            teamDiv.appendChild(descriptionDiv);
+            mainContent.innerHTML = "";
+            mainContent.appendChild(descriptionDiv);
 
-            // Add folders
             team.folders.forEach(folder => {
                 const folderDiv = document.createElement("div");
-                folderDiv.className = "folder";
+                folderDiv.className = `folder ${folder.name}`;
                 folderDiv.textContent = folder.name;
                 folderDiv.onclick = (e) => {
                     e.stopPropagation();
@@ -235,7 +274,7 @@
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
             descriptionDiv.textContent = `This is the ${folderName} of the scam team ${teamName}, it may contain details of their thefts, personal data, and victim data.`;
-            folderDiv.appendChild(descriptionDiv);
+            mainContent.appendChild(descriptionDiv);
 
             const linkDiv = document.createElement("div");
             linkDiv.className = "link";
@@ -244,7 +283,7 @@
                 e.stopPropagation();
                 window.open(folderLink, "_blank");
             };
-            folderDiv.appendChild(linkDiv);
+            mainContent.appendChild(linkDiv);
         }
 
         renderFileTree();
