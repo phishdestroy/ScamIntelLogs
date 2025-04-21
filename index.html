@@ -32,7 +32,7 @@
             margin: 10px 0;
         }
         .sidebar {
-            width: 400px;
+            width: 800px;
             background-color: #fff;
             border: 1px solid #ddd;
             padding: 20px;
@@ -68,6 +68,18 @@
             padding: 15px;
             border-left: 4px solid #1e90ff;
             border-radius: 0 5px 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .description img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .description .content {
+            flex: 1;
         }
         .description a {
             color: #1e90ff;
@@ -75,6 +87,10 @@
         }
         .description a:hover {
             text-decoration: underline;
+        }
+        .description ul {
+            padding-left: 20px;
+            margin: 10px 0;
         }
         .link {
             background-color: #4caf50;
@@ -133,16 +149,28 @@
                 return;
             }
 
-            // Add team description from README
+            // Add team description with image
             const descriptionDiv = document.createElement("div");
             descriptionDiv.className = "description";
             descriptionDiv.innerHTML = `
-                <p><strong>About ${team}:</strong> This directory contains Telegram chat dumps and logs for ${team}, a known scammer group operating across ecosystems like Solana, TON, and others. These archives may include evidence of their fraudulent activities.</p>
-                <p><strong>Resources:</strong></p>
-                <ul>
-                    <li><a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
-                    <li><a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" target="_blank">Known Scammer Logins (TXT)</a></li>
-                </ul>
+                <img src="https://i.ibb.co/xtc39h99/image.png" alt="RublevkaTeam">
+                <div class="content">
+                    <p><strong>🧾 Dump of Telegram users affiliated with the RublevkaTeam scam group</strong> — one of the largest and most active Russian-speaking drainer operations.</p>
+                    <p>The group targets primarily CIS users via phishing campaigns in TON and Solana ecosystems. Despite being Russian-speaking, they actively scam fellow Russians — and the community seems largely fine with that.</p>
+                    <p><strong>🌐 Website:</strong> <a href="https://rublevkateam.today" target="_blank">https://rublevkateam.today</a></p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/8594315/" target="_blank">https://lolz.live/threads/8594315/</a> (verified deposit > 2M RUB)</p>
+                    <p><strong>📍 Hosting:</strong> AEZA ASN AS210644</p>
+                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/RublevkaTeam_bot" target="_blank">@RublevkaTeam_bot</a> (ID: 5811945099)</p>
+                    <p><strong>🛠 Admins:</strong> @sinactive, @nft4x, @BalaclavaRTD</p>
+                    <p><strong>⚠️ Reported by multiple users as a scam/fraud group</strong></p>
+                    <p><strong>🇷🇺 “The country must know its heroes.”</strong></p>
+                    <p><strong>🧨 Don’t believe the myth that Russian scammers avoid scamming Russians</strong> — RublevkaTeam actively builds Russian-language phishing sites and targets CIS victims without hesitation.</p>
+                    <p><strong>Resources:</strong></p>
+                    <ul>
+                        <li><a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
+                        <li><a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" target="_blank">Known Scammer Logins (TXT)</a></li>
+                    </ul>
+                </div>
             `;
             teamDiv.appendChild(descriptionDiv);
 
