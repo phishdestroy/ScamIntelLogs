@@ -5,167 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScamIntelLogs: Explore Scammer Archives</title>
     <link rel="icon" type="image/png" href="https://www.phishdestroy.io/favicon-32x32.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+        /* Custom styles for better design */
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        h1 {
-            color: #1e90ff;
-            font-size: 2.5em;
-            text-align: center;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        .text-gradient {
+            background-image: linear-gradient(to right, #3b82f6, #14b8a6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
-        .container {
-            display: flex;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+        /* Fade-in animation */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
         }
-        .info-box {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .info-box p {
-            margin: 10px 0;
-        }
-        .sidebar {
-            width: 300px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            height: fit-content;
-        }
-        .main-content {
-            flex: 1;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            min-height: 400px;
-        }
-        .team, .folder {
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        .team {
-            background-color: #e0f7fa;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .team:hover {
-            background-color: #b2ebf2;
-        }
-        .folder {
-            background-color: #f0f0f0;
-            margin-left: 15px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-            color: #fff;
-        }
-        .folder.chat { background-color: #ff6f61; }
-        .folder.scam_offers { background-color: #ffab40; }
-        .folder.channel, .folder.chanel { background-color: #4caf50; }
-        .folder.designs { background-color: #1e90ff; }
-        .folder.successful_thefts { background-color: #ab47bc; }
-        .folder.scammer_list { background-color: #f06292; }
-        .folder.payments, .folder.payouts { background-color: #ffca28; } /* Same color for payments/payouts */
-        .folder.chat_smoke { background-color: #90a4ae; } /* New color for chat_smoke */
-        .folder.info { background-color: #26c6da; } /* New color for info */
-        .folder:hover {
-            filter: brightness(1.1);
-            transform: scale(1.02);
-        }
-        .description {
-            background-color: #e9ecef;
-            padding: 15px;
-            border-left: 4px solid #1e90ff;
-            border-radius: 0 5px 5px 0;
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
-        .description img {
-            width: 200px;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .description .content {
-            flex: 1;
-        }
-        .description a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-        .description a:hover {
-            text-decoration: underline;
-        }
-        .description ul {
-            padding-left: 20px;
-            margin: 10px 0;
-        }
-        .link {
-            background-color: #4caf50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .link:hover {
-            background-color: #45a049;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            .sidebar {
-                width: 100%;
-            }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
-<body>
-    <h1>ScamIntelLogs: Explore Scammer Archives</h1>
+<body class="bg-gray-900 text-gray-300">
 
-    <div class="info-box">
-        <p><strong>🔍 About:</strong> This page contains archived Telegram chat dumps of scammer activities.</p>
-        <p><strong>📢 Report Scammers:</strong> Use our Telegram bot to report scam activities: <a href="https://t.me/PhishDestroy_bot" target="_blank">PhishDestroy Bot</a>.</p>
-        <p><strong>🐦 Follow Us:</strong> Stay updated on Twitter: <a href="https://x.com/Phish_Destroy" target="_blank">@Phish_Destroy</a>.</p>
-        <p><strong>🌐 Visit Us:</strong> Learn more about our project at <a href="https://www.phishdestroy.io/" target="_blank">phishdestroy.io</a>.</p>
-        <p><strong>🤝 Contribute:</strong> Have more scam data? Visit the <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank">GitHub repository</a> to add it.</p>
-    </div>
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-center mb-8 tracking-tight text-gradient">
+            ScamIntelLogs: Explore Scammer Archives
+        </h1>
 
-    <div class="container">
-        <div class="sidebar" id="file-tree">
-            <!-- Team and folder list will be rendered here -->
+        <!-- Info Box -->
+        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8 shadow-lg backdrop-blur-sm">
+            <p class="mb-2"><strong>🔍 About:</strong> This page contains archived Telegram chat dumps of scammer activities.</p>
+            <p class="mb-2"><strong>📢 Report Scammers:</strong> Use our Telegram bot to report scam activities: <a href="https://t.me/PhishDestroy_bot" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">PhishDestroy Bot</a>.</p>
+            <p class="mb-2"><strong>🐦 Follow Us:</strong> Stay updated on Twitter: <a href="https://x.com/Phish_Destroy" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">@Phish_Destroy</a>.</p>
+            <p class="mb-2"><strong>🌐 Visit Us:</strong> Learn more about our project at <a href="https://www.phishdestroy.io/" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">phishdestroy.io</a>.</p>
+            <p><strong>🤝 Contribute:</strong> Have more scam data? Visit the <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">GitHub repository</a> to add it.</p>
         </div>
-        <div class="main-content" id="main-content">
-            <!-- Team description will be rendered here -->
+
+        <!-- Main Container -->
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Sidebar (File Tree) -->
+            <div class="lg:w-1/3 bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4 shadow-lg h-fit" id="file-tree">
+                <!-- Team list will be rendered here -->
+            </div>
+            <!-- Main Content -->
+            <div class="flex-1 bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 shadow-lg min-h-[400px]" id="main-content">
+                 <div class="h-full flex flex-col items-center justify-center text-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                    </svg>
+                    <h2 class="text-xl font-semibold">Select a Team</h2>
+                    <p>Click on a team name on the left to view information and available archives.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
         const fileTree = document.getElementById("file-tree");
         const mainContent = document.getElementById("main-content");
+
+        // Folder styles and icons
+        const folderStyles = {
+            chat: { class: 'bg-red-500/80 hover:bg-red-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" /></svg>` },
+            scam_offers: { class: 'bg-orange-500/80 hover:bg-orange-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8.433 7.418c.158-.103.346-.196.57-.293a1 1 0 011.12.013c.213.095.401.19.559.294a1 1 0 010 1.705c-.158.103-.346.196-.57.293a1 1 0 01-1.12-.013c-.213-.095-.401-.19-.559-.294a1 1 0 010-1.705zM16.25 7.5a.75.75 0 00-1.5 0v4.335c0 .355-.18.683-.474.869l-4 2.25a.75.75 0 000 1.328l4 2.25a.75.75 0 00.948-.664V7.5z" /><path d="M3.75 7.5a.75.75 0 00-1.5 0v8.188c0 .341.192.65.493.829l4 2.25a.75.75 0 00.947-.665l.5-2.812a.75.75 0 00-.72-.829l-2.625-.375a.75.75 0 00-.676.818l.25 1.406-2.144-1.206A.75.75 0 003.75 15.688V7.5z" /></svg>` },
+            channel: { class: 'bg-green-500/80 hover:bg-green-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a6 6 0 00-6 6v3.586l-1.293 1.293a1 1 0 001.414 1.414L6 12.414V16a1 1 0 001 1h6a1 1 0 001-1v-3.586l2.293 2.293a1 1 0 001.414-1.414L16 11.586V8a6 6 0 00-6-6zM8 8a2 2 0 114 0 2 2 0 01-4 0z" /></svg>` },
+            designs: { class: 'bg-blue-500/80 hover:bg-blue-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" /><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd" /></svg>` },
+            successful_thefts: { class: 'bg-purple-500/80 hover:bg-purple-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd" /></svg>` },
+            scammer_list: { class: 'bg-pink-500/80 hover:bg-pink-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0115 11h1a1 1 0 110 2h-1a3 3 0 00-3 3c0 .667.18 1.293.5 1.83V19h2a1 1 0 110 2h-2a1 1 0 01-1-1v-1.17zM7.07 17c-.046-.327-.07-.66-.07-1a6.97 6.97 0 011.5-4.33A5 5 0 005 11H4a1 1 0 100 2h1a3 3 0 013 3c0 .667-.18 1.293-.5 1.83V19H6a1 1 0 100 2h2a1 1 0 001-1v-1.17z" /></svg>` },
+            payments: { class: 'bg-yellow-500/80 hover:bg-yellow-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8.433 7.418c.158-.103.346-.196.57-.293a1 1 0 011.12.013c.213.095.401.19.559.294a1 1 0 010 1.705c-.158.103-.346.196-.57.293a1 1 0 01-1.12-.013c-.213-.095-.401-.19-.559-.294a1 1 0 010-1.705zM16.25 7.5a.75.75 0 00-1.5 0v4.335c0 .355-.18.683-.474.869l-4 2.25a.75.75 0 000 1.328l4 2.25a.75.75 0 00.948-.664V7.5z" /><path d="M3.75 7.5a.75.75 0 00-1.5 0v8.188c0 .341.192.65.493.829l4 2.25a.75.75 0 00.947-.665l.5-2.812a.75.75 0 00-.72-.829l-2.625-.375a.75.75 0 00-.676.818l.25 1.406-2.144-1.206A.75.75 0 003.75 15.688V7.5z" /></svg>` },
+            chat_smoke: { class: 'bg-gray-500/80 hover:bg-gray-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" /></svg>` },
+            info: { class: 'bg-cyan-500/80 hover:bg-cyan-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>` },
+            analytics: { class: 'bg-indigo-500/80 hover:bg-indigo-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" /></svg>` },
+            default: { class: 'bg-gray-600/80 hover:bg-gray-600', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" /></svg>` }
+        };
+        // Folder name aliases
+        folderStyles.chanel = folderStyles.channel;
+        folderStyles.payouts = folderStyles.payments;
+
         const teams = [
             {
                 name: "RublevkaTeam",
@@ -173,18 +98,18 @@
                 description: `
                     <p><strong>🧾 Dump of Telegram users affiliated with the RublevkaTeam scam group</strong> — one of the largest and most active Russian-speaking drainer operations.</p>
                     <p>The group targets primarily CIS users via phishing campaigns in TON and Solana ecosystems. Despite being Russian-speaking, they actively scam fellow Russians — and the community seems largely fine with that.</p>
-                    <p><strong>🌐 Website:</strong> <a href="https://rublevkateam.today" target="_blank">https://rublevkateam.today</a></p>
-                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/8594315/" target="_blank">https://lolz.live/threads/8594315/</a> (verified deposit > 2M RUB)</p>
+                    <p><strong>🌐 Website:</strong> <a href="https://rublevkateam.today" target="_blank" class="text-blue-400 hover:text-blue-300">https://rublevkateam.today</a></p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/8594315/" target="_blank" class="text-blue-400 hover:text-blue-300">https://lolz.live/threads/8594315/</a> (verified deposit > 2M RUB)</p>
                     <p><strong>📍 Hosting:</strong> AEZA ASN AS210644</p>
-                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/RublevkaTeam_bot" target="_blank">@RublevkaTeam_bot</a> (ID: 5811945099)</p>
-                    <p><strong>🛠 Admins:</strong> @sinactive, @nft4x, @BalaclavaRTD</p>
+                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/RublevkaTeam_bot" target="_blank" class="text-blue-400 hover:text-blue-300">@RublevkaTeam_bot</a> (ID: 5811945099)</p>
+                    <p><strong>🛠️ Admins:</strong> @sinactive, @nft4x, @BalaclavaRTD</p>
                     <p><strong>⚠️ Reported by multiple users as a scam/fraud group</strong></p>
                     <p><strong>🇷🇺 “The country must know its heroes.”</strong></p>
                     <p><strong>🧨 Don’t believe the myth that Russian scammers avoid scamming Russians</strong> — RublevkaTeam actively builds Russian-language phishing sites and targets CIS victims without hesitation.</p>
-                    <p><strong>Resources:</strong></p>
-                    <ul>
-                        <li><a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
-                        <li><a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" target="_blank">Known Scammer Logins (TXT)</a></li>
+                    <p class="font-semibold mt-4">Resources:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank" class="text-blue-400 hover:text-blue-300">Scammer Database (Google Spreadsheet)</a></li>
+                        <li><a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" target="_blank" class="text-blue-400 hover:text-blue-300">Known Scammer Logins (TXT)</a></li>
                     </ul>
                 `,
                 folders: [
@@ -201,23 +126,23 @@
                 image: "https://i.ibb.co/bMShgdkp/image.png",
                 description: `
                     <p><strong>📁 Wasabi Squad Telegram Dump</strong> — a dataset of Telegram accounts tied to deceptive financial schemes involving fake trading platforms and casino sites.</p>
-                    <p><strong>🎯 Primary Activities:</strong></p>
-                    <ul>
+                    <p class="font-semibold mt-4">🎯 Primary Activities:</p>
+                    <ul class="list-disc list-inside space-y-1">
                         <li>💱 Fake cryptocurrency exchanges</li>
                         <li>🎰 Scam gambling platforms</li>
                         <li>🤖 Telegram bot schemes and fraudulent investment offers</li>
                     </ul>
-                    <p><strong>🧩 Infrastructure:</strong></p>
-                    <p><strong>🌐 Website:</strong> <a href="https://www.wasabihub.one/" target="_blank">https://www.wasabihub.one/</a></p>
-                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/WasabiSquad_Bot" target="_blank">@WasabiSquad_Bot</a> (Telegram ID: 7380099926)</p>
-                    <p><strong>💬 Forum thread:</strong> <a href="https://lolz.live/threads/7933252/" target="_blank">https://lolz.live/threads/7933252/</a></p>
-                    <p><strong>📌 Note:</strong></p>
+                    <p class="font-semibold mt-4">🧩 Infrastructure:</p>
+                    <p><strong>🌐 Website:</strong> <a href="https://www.wasabihub.one/" target="_blank" class="text-blue-400 hover:text-blue-300">https://www.wasabihub.one/</a></p>
+                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/WasabiSquad_Bot" target="_blank" class="text-blue-400 hover:text-blue-300">@WasabiSquad_Bot</a> (Telegram ID: 7380099926)</p>
+                    <p><strong>💬 Forum thread:</strong> <a href="https://lolz.live/threads/7933252/" target="_blank" class="text-blue-400 hover:text-blue-300">https://lolz.live/threads/7933252/</a></p>
+                    <p class="font-semibold mt-4">📌 Note:</p>
                     <p>Some young Russian scammers may have assumed they were beyond reach. However, recent Russian law enforcement practices permit the seizure of cryptocurrencies, regardless of the victims' location.</p>
                     <p><strong>🧨 This dump aims to aid in identifying and prosecuting those involved.</strong></p>
                     <p><strong>🧠 “The community must know its scammers.”</strong></p>
-                    <p><strong>Resources:</strong></p>
-                    <ul>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1wSp-xfyVoZyrPbXZwPOQUKMCaocny9e9yEdJwocAdW8/edit?usp=sharing" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
+                    <p class="font-semibold mt-4">Resources:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><a href="https://docs.google.com/spreadsheets/d/1wSp-xfyVoZyrPbXZwPOQUKMCaocny9e9yEdJwocAdW8/edit?usp=sharing" target="_blank" class="text-blue-400 hover:text-blue-300">Scammer Database (Google Spreadsheet)</a></li>
                     </ul>
                 `,
                 folders: [
@@ -225,7 +150,7 @@
                     { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/chat/messages.html" },
                     { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/successful_thefts/messages.html" },
                     { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/WasabiSquad/scammers_login.txt" },
-					{ name: "analytics", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/WasabiSquad/chatanalytics.html" }
+                    { name: "analytics", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/chatanalytics.html" }
                 ]
             },
             {
@@ -233,20 +158,20 @@
                 image: "https://i.ibb.co/KxLHnp59/image.png",
                 description: `
                     <p><strong>📁 Mercury Team Telegram Dump</strong> — a dataset of Telegram accounts tied to scam activity involving fake crypto exchanges and gambling platforms.</p>
-                    <p><strong>🔮 Main Offers:</strong></p>
-                    <ul>
-                        <li>💸 Fake "exclusive exchange" — <a href="https://t.me/MercuryTeam_bot" target="_blank">@MercuryTeam_bot</a> (ID: 6631580796)</li>
-                        <li>🎰 Scam casino — <a href="https://t.me/MercuryCasi_bot" target="_blank">@MercuryCasi_bot</a> (ID: 6431207710)</li>
+                    <p class="font-semibold mt-4">🔮 Main Offers:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>💸 Fake "exclusive exchange" — <a href="https://t.me/MercuryTeam_bot" target="_blank" class="text-blue-400 hover:text-blue-300">@MercuryTeam_bot</a> (ID: 6631580796)</li>
+                        <li>🎰 Scam casino — <a href="https://t.me/MercuryCasi_bot" target="_blank" class="text-blue-400 hover:text-blue-300">@MercuryCasi_bot</a> (ID: 6431207710)</li>
                         <li>🤖 Mentor-driven recruitment through phishing branches</li>
                     </ul>
-                    <p><strong>🌐 Infrastructure:</strong></p>
-                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/6129774/" target="_blank">https://lolz.live/threads/6129774/</a></p>
-                    <p><strong>❗️ Note:</strong></p>
+                    <p class="font-semibold mt-4">🌐 Infrastructure:</p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/6129774/" target="_blank" class="text-blue-400 hover:text-blue-300">https://lolz.live/threads/6129774/</a></p>
+                    <p class="font-semibold mt-4">❗️ Note:</p>
                     <p>Mercury Team disguises scam operations as affiliate opportunities. Victims are recruited via bots, assigned to "branches," and used to spread phishing sites.</p>
                     <p><strong>🧠 “Financial freedom through fraud is still fraud.”</strong></p>
-                    <p><strong>Resources:</strong></p>
-                    <ul>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1Swxss0rtQUW_LGyymDW8HLMyHEk2Ef3ht3sd29selSQ/edit?usp=sharing" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
+                    <p class="font-semibold mt-4">Resources:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><a href="https://docs.google.com/spreadsheets/d/1Swxss0rtQUW_LGyymDW8HLMyHEk2Ef3ht3sd29selSQ/edit?usp=sharing" target="_blank" class="text-blue-400 hover:text-blue-300">Scammer Database (Google Spreadsheet)</a></li>
                     </ul>
                 `,
                 folders: [
@@ -255,29 +180,29 @@
                     { name: "payments", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/payments/messages.html" },
                     { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/successful_thefts/messages.html" },
                     { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/MercuryTeam/scammers_login.txt" },
-					{ name: "analytics", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/chatanalytics.html" }
+                    { name: "analytics", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/chatanalytics.html" }
                 ]
             },
             {
                 name: "TheProject",
-                image: "https://i.ibb.co/sdCr8jcq/image.png", // Placeholder; replace if a specific image is provided
+                image: "https://i.ibb.co/sdCr8jcq/image.png",
                 description: `
                     <p><strong>📁 TheProject Telegram Dump</strong> — a dataset of Telegram accounts linked to large-scale phishing operations, drainer deployment, and fake affiliate structures active since 2021.</p>
-                    <p><strong>🔮 Main Offers:</strong></p>
-                    <ul>
+                    <p class="font-semibold mt-4">🔮 Main Offers:</p>
+                    <ul class="list-disc list-inside space-y-1">
                         <li>💸 Multi-token automated drainer</li>
                         <li>🧠 “Mentorship” through structured scam teams</li>
                         <li>🎯 Fake affiliate network used for recruiting and laundering</li>
-                        <li>🤖 Main bot — <a href="https://t.me/TheProject_inbot" target="_blank">@TheProject_inbot</a> (ID: 7291050577)</li>
+                        <li>🤖 Main bot — <a href="https://t.me/TheProject_inbot" target="_blank" class="text-blue-400 hover:text-blue-300">@TheProject_inbot</a> (ID: 7291050577)</li>
                     </ul>
-                    <p><strong>🌐 Infrastructure:</strong></p>
-                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/4826265/" target="_blank">https://lolz.live/threads/4826265/</a></p>
+                    <p class="font-semibold mt-4">🌐 Infrastructure:</p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/4826265/" target="_blank" class="text-blue-400 hover:text-blue-300">https://lolz.live/threads/4826265/</a></p>
                     <p><strong>💰 Claimed earnings:</strong> over $10,000,000 USD</p>
                     <p><strong>🏦 Verified deposit on lolz:</strong> ₽1,000,000 RUB</p>
-                    <p><strong>Resources:</strong></p>
-                    <ul>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1RCcYfmZvHjJlEPPjFiTAsqAGtmuZG7JB3-YrOdK4xMc/edit?usp=sharing" target="_blank">Scammer Database (Google Spreadsheet)</a></li>
-                        <li><a href="https://book.theproject.biz/" target="_blank">WebSite ScamTeam</a></li>
+                    <p class="font-semibold mt-4">Resources:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><a href="https://docs.google.com/spreadsheets/d/1RCcYfmZvHjJlEPPjFiTAsqAGtmuZG7JB3-YrOdK4xMc/edit?usp=sharing" target="_blank" class="text-blue-400 hover:text-blue-300">Scammer Database (Google Spreadsheet)</a></li>
+                        <li><a href="https://book.theproject.biz/" target="_blank" class="text-blue-400 hover:text-blue-300">WebSite ScamTeam</a></li>
                     </ul>
                 `,
                 folders: [
@@ -291,85 +216,125 @@
             }
         ];
 
+        let activeTeamDiv = null;
+
         function renderFileTree() {
             fileTree.innerHTML = "";
+            const teamsContainer = document.createElement("div");
+            teamsContainer.className = "space-y-2";
             teams.forEach(team => {
                 const teamDiv = document.createElement("div");
-                teamDiv.className = "team";
-                teamDiv.textContent = team.name;
-                teamDiv.onclick = (e) => {
+                teamDiv.className = "team-container";
+                
+                const teamHeader = document.createElement("div");
+                teamHeader.className = "bg-gray-700/60 hover:bg-gray-700 p-3 rounded-lg font-bold cursor-pointer transition-all duration-300 flex justify-between items-center";
+                teamHeader.innerHTML = `<span>${team.name}</span><svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>`;
+                
+                const foldersContainer = document.createElement("div");
+                foldersContainer.className = "pl-4 mt-2 space-y-1 hidden"; // Hidden by default
+
+                teamHeader.onclick = (e) => {
                     e.stopPropagation();
                     toggleTeamInfo(team, teamDiv);
                 };
-                fileTree.appendChild(teamDiv);
+
+                teamDiv.appendChild(teamHeader);
+                teamDiv.appendChild(foldersContainer);
+                teamsContainer.appendChild(teamDiv);
             });
+            fileTree.appendChild(teamsContainer);
         }
 
         function toggleTeamInfo(team, teamDiv) {
+            const foldersContainer = teamDiv.querySelector(".hidden, .block");
+            const arrowIcon = teamDiv.querySelector("svg");
+            const wasActive = teamDiv === activeTeamDiv;
+
             // Collapse all other teams
-            const allTeams = fileTree.querySelectorAll(".team");
-            allTeams.forEach(t => {
+            document.querySelectorAll('.team-container').forEach(t => {
                 if (t !== teamDiv) {
-                    const content = t.querySelectorAll(".folder");
-                    content.forEach(item => item.remove());
+                    t.querySelector(".pl-4").classList.add("hidden");
+                    t.querySelector("svg").classList.remove("rotate-180");
                 }
             });
 
-            // Clear the main content and show the team description
+            if (wasActive) {
+                // If clicking the active one, just collapse it
+                foldersContainer.classList.add("hidden");
+                arrowIcon.classList.remove("rotate-180");
+                activeTeamDiv = null;
+            } else {
+                // Show team description
+                showTeamDescription(team);
+
+                // Populate and show folders
+                const foldersContainer = teamDiv.querySelector('.pl-4');
+                foldersContainer.innerHTML = ""; // Clear before populating
+                team.folders.forEach(folder => {
+                    const style = folderStyles[folder.name] || folderStyles.default;
+                    const folderDiv = document.createElement("div");
+                    folderDiv.className = `flex items-center gap-3 text-white p-2 rounded-lg cursor-pointer transition-all duration-200 transform hover:scale-105 ${style.class}`;
+                    folderDiv.innerHTML = `${style.icon} <span class="flex-1">${folder.name}</span>`;
+                    folderDiv.onclick = (e) => {
+                        e.stopPropagation();
+                        showFolderDescription(team.name, folder.name, folder.link);
+                    };
+                    foldersContainer.appendChild(folderDiv);
+                });
+
+                foldersContainer.classList.remove("hidden");
+                arrowIcon.classList.add("rotate-180");
+                activeTeamDiv = teamDiv;
+            }
+        }
+        
+        function showTeamDescription(team) {
             mainContent.innerHTML = "";
             const descriptionDiv = document.createElement("div");
-            descriptionDiv.className = "description";
+            descriptionDiv.className = "description-wrapper fade-in";
             descriptionDiv.innerHTML = `
-                <img src="${team.image}" alt="${team.name}">
-                <div class="content">
-                    ${team.description}
+                <div class="flex flex-col md:flex-row items-start gap-6">
+                    <img src="${team.image}" alt="${team.name}" class="w-48 h-48 object-cover rounded-lg shadow-md border-2 border-gray-700" onerror="this.style.display='none'">
+                    <div class="flex-1 text-gray-300 space-y-3">
+                        ${team.description}
+                    </div>
                 </div>
             `;
             mainContent.appendChild(descriptionDiv);
-
-            // Remove existing folders if they exist (to toggle)
-            const existingFolders = teamDiv.querySelectorAll(".folder");
-            if (existingFolders.length > 0) {
-                existingFolders.forEach(folder => folder.remove());
-                return;
-            }
-
-            // Add folder buttons
-            team.folders.forEach(folder => {
-                const folderDiv = document.createElement("div");
-                folderDiv.className = `folder ${folder.name}`;
-                folderDiv.textContent = folder.name;
-                folderDiv.onclick = (e) => {
-                    e.stopPropagation();
-                    showFolderDescription(team.name, folder.name, folder.link);
-                };
-                teamDiv.appendChild(folderDiv);
-            });
         }
 
         function showFolderDescription(teamName, folderName, folderLink) {
-            // Clear the main content and show only the folder description
             mainContent.innerHTML = "";
+            const contentWrapper = document.createElement('div');
+            contentWrapper.className = 'fade-in flex flex-col items-center justify-center text-center h-full';
 
-            const descriptionDiv = document.createElement("div");
-            descriptionDiv.className = "description";
+            let descriptionText = '';
             if (folderName === "scammer_list") {
-                descriptionDiv.textContent = `This is the scammer list of the scam team ${teamName}. It contains a text file (scammers_login.txt) with known scammer logins and identifiers.`;
+                descriptionText = `This is the scammer list of the scam team <strong>${teamName}</strong>. It contains a text file (scammers_login.txt) with known scammer logins and identifiers.`;
+            } else if (folderName === "analytics") {
+                descriptionText = `This is the analytics section for the scam team <strong>${teamName}</strong>. It may contain chat statistics, financial reports, and other analytical information.`;
             } else {
-                descriptionDiv.textContent = `This is the ${folderName} of the scam team ${teamName}. It may contain details of their thefts, personal data, and victim data.`;
+                descriptionText = `This is the <strong>${folderName}</strong> section of the scam team <strong>${teamName}</strong>. It may contain details of their thefts, personal data, and victim data.`;
             }
-            mainContent.appendChild(descriptionDiv);
+            
+            contentWrapper.innerHTML = `
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl max-w-lg">
+                    <p class="mb-6 text-lg">${descriptionText}</p>
+                    <button class="w-full text-center bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 text-white font-bold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500">
+                        Go to Files
+                    </button>
+                </div>
+            `;
 
-            const linkDiv = document.createElement("div");
-            linkDiv.className = "link";
-            linkDiv.textContent = "Go";
-            linkDiv.onclick = (e) => {
+            contentWrapper.querySelector('button').onclick = (e) => {
                 e.stopPropagation();
                 window.open(folderLink, "_blank");
             };
-            mainContent.appendChild(linkDiv);
+            
+            mainContent.appendChild(contentWrapper);
         }
 
+        // Initialize
         renderFileTree();
     </script>
 </body>
