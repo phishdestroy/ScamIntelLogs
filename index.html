@@ -3,21 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheProject Casino / OFEDREX - Crypto Casino Scam Panel</title>
-    <link rel="icon" type="image/png" href="https://www.phishdestroy.io/favicon-32x32.png">
+    
+    <!-- Primary Meta Tags -->
+    <title>ScamIntelLogs - Scammer Archives & Threat Intelligence Database | PhishDestroy</title>
+    <meta name="title" content="ScamIntelLogs - Scammer Archives & Threat Intelligence Database | PhishDestroy">
+    <meta name="description" content="Open-source intelligence database of scammer Telegram chats, admin panels, victim data, and criminal network infrastructure. Research resource for investigators, journalists, and security researchers.">
+    <meta name="keywords" content="scam intelligence, threat intelligence, phishing investigation, crypto scam, drainer logs, telegram scammer, OSINT, cybersecurity research, fraud investigation, scammer database">
+    <meta name="author" content="PhishDestroy">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://phishdestroy.github.io/ScamIntelLogs/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phishdestroy.github.io/ScamIntelLogs/">
+    <meta property="og:title" content="ScamIntelLogs - Scammer Archives & Threat Intelligence">
+    <meta property="og:description" content="Open-source intelligence database of scammer networks. Telegram dumps, admin panels, victim records, and criminal infrastructure for research and investigation.">
+    <meta property="og:image" content="https://destroyico.pages.dev/assets/android-chrome-512x512.png">
+    <meta property="og:site_name" content="ScamIntelLogs by PhishDestroy">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://phishdestroy.github.io/ScamIntelLogs/">
+    <meta name="twitter:title" content="ScamIntelLogs - Scammer Archives & Threat Intelligence">
+    <meta name="twitter:description" content="Open-source intelligence database of scammer networks. Research resource for investigators and security researchers.">
+    <meta name="twitter:image" content="https://destroyico.pages.dev/assets/android-chrome-512x512.png">
+    <meta name="twitter:site" content="@Phish_Destroy">
+    <meta name="twitter:creator" content="@Phish_Destroy">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="https://destroyico.pages.dev/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://destroyico.pages.dev/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://destroyico.pages.dev/assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://destroyico.pages.dev/assets/apple-touch-icon.png">
+    <link rel="manifest" href="https://destroyico.pages.dev/assets/site.webmanifest">
+    <meta name="theme-color" content="#111827">
+    <meta name="msapplication-TileColor" content="#111827">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ScamIntelLogs",
+        "alternateName": "Scammer Intelligence Logs",
+        "url": "https://phishdestroy.github.io/ScamIntelLogs/",
+        "description": "Open-source intelligence database containing archived Telegram chats, admin panel access logs, victim records, and infrastructure data from criminal scam networks.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "PhishDestroy",
+            "url": "https://www.phishdestroy.io/",
+            "logo": "https://destroyico.pages.dev/assets/logo.png",
+            "sameAs": [
+                "https://twitter.com/Phish_Destroy",
+                "https://github.com/phishdestroy"
+            ]
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://phishdestroy.github.io/ScamIntelLogs/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "ScamIntelLogs Database",
+        "description": "Archived intelligence data from scammer operations including Telegram chat dumps, admin panel credentials, victim databases, and criminal network infrastructure documentation.",
+        "url": "https://phishdestroy.github.io/ScamIntelLogs/",
+        "license": "https://opensource.org/licenses/MIT",
+        "creator": {
+            "@type": "Organization",
+            "name": "PhishDestroy"
+        },
+        "keywords": ["scam intelligence", "threat data", "phishing", "crypto fraud", "OSINT"],
+        "isAccessibleForFree": true
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
         .text-gradient {
-            background-image: linear-gradient(to right, #ef4444, #f97316);
+            background-image: linear-gradient(to right, #3b82f6, #14b8a6);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
-        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -25,254 +111,382 @@
     </style>
 </head>
 <body class="bg-gray-900 text-gray-300">
+
     <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
-        
-        <!-- Back Button -->
-        <a href="../index.html" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-6 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
-            </svg>
-            Back to ScamIntelLogs
-        </a>
-
-        <!-- Header -->
-        <div class="text-center mb-8">
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gradient mb-2">
-                TheProject Casino / OFEDREX
+        <!-- Header with Logo -->
+        <header class="flex items-center justify-center gap-4 mb-8">
+            <img src="https://destroyico.pages.dev/assets/logo.png" alt="PhishDestroy Logo" class="h-12 w-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gradient">
+                ScamIntelLogs
             </h1>
-            <p class="text-xl text-gray-400">Crypto Casino Scam Panel Exposed</p>
-            <div class="flex justify-center gap-4 mt-4">
-                <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm font-medium">🔴 ACTIVE</span>
-                <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm font-medium">22 Domains</span>
-                <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm font-medium">383 Victims</span>
-            </div>
-        </div>
+        </header>
 
-        <!-- Stats Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4 text-center">
-                <div class="text-3xl font-bold text-red-400">22</div>
-                <div class="text-sm text-gray-400">Phishing Domains</div>
-            </div>
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4 text-center">
-                <div class="text-3xl font-bold text-orange-400">383</div>
-                <div class="text-sm text-gray-400">Total Victims</div>
-            </div>
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4 text-center">
-                <div class="text-3xl font-bold text-yellow-400">30+</div>
-                <div class="text-sm text-gray-400">Countries</div>
-            </div>
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4 text-center">
-                <div class="text-3xl font-bold text-green-400">85%</div>
-                <div class="text-sm text-gray-400">Worker Commission</div>
-            </div>
-        </div>
-
-        <!-- Main Content Grid -->
-        <div class="grid lg:grid-cols-2 gap-8 mb-8">
+        <!-- Info Box -->
+        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8 shadow-lg backdrop-blur-sm">
+            <h2 class="text-xl font-bold text-white mb-4">🗄️ Scammer Intelligence Archive</h2>
+            <p class="mb-4 text-gray-300">Open-source repository of leaked/dumped data from criminal scam networks. Contains Telegram chat logs, admin panel access, victim databases, theft records, payment flows, and internal infrastructure documentation.</p>
             
-            <!-- Scam Method -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6">
-                <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                    <span class="text-2xl">🎯</span> Scam Method
-                </h2>
-                <ol class="space-y-3 text-gray-300">
-                    <li class="flex gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 bg-red-500/20 text-red-400 rounded-full flex items-center justify-center text-sm font-bold">1</span>
-                        <span>Victims receive promo codes via social media/Telegram</span>
-                    </li>
-                    <li class="flex gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 bg-orange-500/20 text-orange-400 rounded-full flex items-center justify-center text-sm font-bold">2</span>
-                        <span>Register on fake casino sites (spacema.bet, lurexcoin.com)</span>
-                    </li>
-                    <li class="flex gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 bg-yellow-500/20 text-yellow-400 rounded-full flex items-center justify-center text-sm font-bold">3</span>
-                        <span>Fake "winnings" displayed to build trust</span>
-                    </li>
-                    <li class="flex gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 bg-green-500/20 text-green-400 rounded-full flex items-center justify-center text-sm font-bold">4</span>
-                        <span>Required to deposit crypto for "withdrawal verification"</span>
-                    </li>
-                    <li class="flex gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 bg-purple-500/20 text-purple-400 rounded-full flex items-center justify-center text-sm font-bold">5</span>
-                        <span>Funds stolen, withdrawal never processed</span>
-                    </li>
-                </ol>
-            </div>
-
-            <!-- Leaked Credentials -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6">
-                <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                    <span class="text-2xl">🔑</span> Leaked Credentials
-                </h2>
-                <div class="bg-gray-900/50 rounded-lg p-4 font-mono text-sm space-y-2">
-                    <div><span class="text-gray-500">Email:</span> <span class="text-green-400">lancerbuy777@project.com</span></div>
-                    <div><span class="text-gray-500">Password:</span> <span class="text-red-400">holabol1337</span></div>
-                    <div><span class="text-gray-500">Role:</span> <span class="text-blue-400">worker</span></div>
-                    <div><span class="text-gray-500">User ID:</span> <span class="text-yellow-400">228</span></div>
-                    <div><span class="text-gray-500">Commission:</span> <span class="text-purple-400">85%</span></div>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-gray-900/50 rounded-lg p-4">
+                    <h3 class="font-semibold text-white mb-2">📂 Data Types:</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>💬 <strong>Chats</strong> — Internal Telegram conversations</li>
+                        <li>📢 <strong>Channels</strong> — Announcement/news channels</li>
+                        <li>💰 <strong>Successful Thefts</strong> — Confirmed victim records</li>
+                        <li>🎨 <strong>Designs</strong> — Phishing templates & assets</li>
+                        <li>💳 <strong>Payments</strong> — Financial flows & payouts</li>
+                        <li>🎰 <strong>Admin Panels</strong> — Backend access & configs</li>
+                        <li>👥 <strong>Scammer Lists</strong> — Participant identities</li>
+                    </ul>
                 </div>
-                <div class="mt-4 p-3 bg-red-500/10 border border-red-500/20 rounded-lg">
-                    <p class="text-sm text-red-300"><strong>Super Account Keyword:</strong> <code class="bg-gray-900 px-2 py-1 rounded">ximerawork</code></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Phishing Domains -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
-            <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <span class="text-2xl">🌐</span> Phishing Domains (22)
-            </h2>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                <div class="bg-red-500/20 text-red-300 px-3 py-2 rounded-lg text-sm font-mono">spacema.bet <span class="text-red-400">(130)</span></div>
-                <div class="bg-orange-500/20 text-orange-300 px-3 py-2 rounded-lg text-sm font-mono">lurexcoin.com <span class="text-orange-400">(76)</span></div>
-                <div class="bg-yellow-500/20 text-yellow-300 px-3 py-2 rounded-lg text-sm font-mono">ofedrex.com <span class="text-yellow-400">(74)</span></div>
-                <div class="bg-green-500/20 text-green-300 px-3 py-2 rounded-lg text-sm font-mono">money-king.bet <span class="text-green-400">(20)</span></div>
-                <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg text-sm font-mono">mogulbet.vip <span class="text-blue-400">(15)</span></div>
-                <div class="bg-purple-500/20 text-purple-300 px-3 py-2 rounded-lg text-sm font-mono">xwebet.com <span class="text-purple-400">(7)</span></div>
-                <div class="bg-pink-500/20 text-pink-300 px-3 py-2 rounded-lg text-sm font-mono">axidex.com <span class="text-pink-400">(5)</span></div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">sho.mom</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">bitfirefx.com</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">infocryptox.com</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">merbibet.com</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">greencasino.bet</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">goldix.bet</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">bolterex.com</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">evbobet.top</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">explay.bet</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">fortexo.top</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">inclusivebets.fun</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">luckberry.run</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">testpet.icu</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">www.casinopro.fit</div>
-                <div class="bg-gray-500/20 text-gray-300 px-3 py-2 rounded-lg text-sm font-mono">www.spacema.bet</div>
-            </div>
-        </div>
-
-        <!-- Victim Statistics -->
-        <div class="grid lg:grid-cols-2 gap-8 mb-8">
-            <!-- By Country -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6">
-                <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                    <span class="text-2xl">👥</span> Victims by Country (Top 10)
-                </h2>
-                <div class="space-y-2">
-                    <div class="flex justify-between items-center"><span>🇮🇳 India</span><span class="text-red-400 font-bold">77 (20.1%)</span></div>
-                    <div class="flex justify-between items-center"><span>🇭🇺 Hungary</span><span class="text-orange-400 font-bold">45 (11.7%)</span></div>
-                    <div class="flex justify-between items-center"><span>🇵🇱 Poland</span><span class="text-yellow-400 font-bold">40 (10.4%)</span></div>
-                    <div class="flex justify-between items-center"><span>🇷🇴 Romania</span><span class="text-green-400 font-bold">25 (6.5%)</span></div>
-                    <div class="flex justify-between items-center"><span>🇺🇸 United States</span><span class="text-blue-400 font-bold">24 (6.3%)</span></div>
-                    <div class="flex justify-between items-center"><span>🇳🇱 Netherlands</span><span class="text-purple-400 font-bold">24 (6.3%)</span></div>
-                    <div class="flex justify-between items-center"><span>🇩🇪 Germany</span><span class="text-pink-400 font-bold">21 (5.5%)</span></div>
-                    <div class="flex justify-between items-center"><span>🇮🇩 Indonesia</span><span class="text-gray-400 font-bold">12 (3.1%)</span></div>
-                    <div class="flex justify-between items-center"><span>🇫🇮 Finland</span><span class="text-gray-400 font-bold">11 (2.9%)</span></div>
-                    <div class="flex justify-between items-center"><span>🇫🇷 France</span><span class="text-gray-400 font-bold">9 (2.3%)</span></div>
+                <div class="bg-gray-900/50 rounded-lg p-4">
+                    <h3 class="font-semibold text-white mb-2">🎯 Use Cases:</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>🔍 Law enforcement investigations</li>
+                        <li>📰 Journalism & reporting</li>
+                        <li>🛡️ Security research</li>
+                        <li>⚖️ Victim identification & recovery</li>
+                        <li>📊 Criminal network analysis</li>
+                        <li>🧠 Understanding scam TTPs</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Promo Codes -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6">
-                <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                    <span class="text-2xl">🎟️</span> Promo Codes Used
-                </h2>
-                <div class="space-y-2">
-                    <div class="flex justify-between items-center"><span class="font-mono bg-red-500/20 px-2 py-1 rounded">DREAM</span><span class="text-red-400 font-bold">115 users</span></div>
-                    <div class="flex justify-between items-center"><span class="font-mono bg-orange-500/20 px-2 py-1 rounded">LRX774</span><span class="text-orange-400 font-bold">61 users</span></div>
-                    <div class="flex justify-between items-center"><span class="font-mono bg-yellow-500/20 px-2 py-1 rounded">SEAL</span><span class="text-yellow-400 font-bold">9 users</span></div>
-                    <div class="flex justify-between items-center"><span class="font-mono bg-green-500/20 px-2 py-1 rounded">NEW26</span><span class="text-green-400 font-bold">8 users</span></div>
-                    <div class="flex justify-between items-center"><span class="font-mono bg-blue-500/20 px-2 py-1 rounded">BEP201</span><span class="text-blue-400 font-bold">5 users</span></div>
-                    <div class="flex justify-between items-center"><span class="font-mono bg-purple-500/20 px-2 py-1 rounded">ELON</span><span class="text-purple-400 font-bold">5 users</span></div>
-                </div>
-                <p class="text-sm text-gray-500 mt-4">Monitor these codes to detect new scam domains</p>
-            </div>
-        </div>
-
-        <!-- Technical Details -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
-            <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <span class="text-2xl">🔧</span> Technical Infrastructure
-            </h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                    <h3 class="font-semibold text-gray-300 mb-2">Panel Backend</h3>
-                    <div class="bg-gray-900/50 rounded-lg p-4 font-mono text-sm space-y-1">
-                        <div><span class="text-gray-500">Framework:</span> <span class="text-blue-400">Laravel PHP</span></div>
-                        <div><span class="text-gray-500">Path:</span> <span class="text-green-400">/var/www/casino-backend</span></div>
-                        <div><span class="text-gray-500">Debug Mode:</span> <span class="text-red-400">ENABLED ⚠️</span></div>
-                        <div><span class="text-gray-500">Admin Path:</span> <span class="text-yellow-400">/adm_panel</span></div>
-                        <div><span class="text-gray-500">CDN:</span> <span class="text-orange-400">Cloudflare</span></div>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-gray-300 mb-2">API Endpoints</h3>
-                    <div class="bg-gray-900/50 rounded-lg p-4 font-mono text-xs space-y-1">
-                        <div class="text-purple-400">/backend-api/auth/me</div>
-                        <div class="text-purple-400">/backend-api/worker/users/list</div>
-                        <div class="text-purple-400">/backend-api/admin/users/list</div>
-                        <div class="text-purple-400">/backend-api/admin/deposits</div>
-                        <div class="text-purple-400">/backend-api/admin/settings</div>
-                        <div class="text-purple-400">/backend-api/admin/logs</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Download Files -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
-            <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <span class="text-2xl">📁</span> Download Files
-            </h2>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <a href="domains.txt" class="flex items-center gap-3 bg-red-500/20 hover:bg-red-500/30 p-4 rounded-lg transition-colors">
-                    <span class="text-2xl">🌐</span>
-                    <div>
-                        <div class="font-semibold text-white">domains.txt</div>
-                        <div class="text-sm text-gray-400">22 phishing domains</div>
-                    </div>
+            <div class="flex flex-wrap gap-4 text-sm">
+                <a href="https://t.me/PhishDestroy_bot" target="_blank" class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                    <span>📢</span> Report Scammers
                 </a>
-                <a href="victim_emails.txt" class="flex items-center gap-3 bg-orange-500/20 hover:bg-orange-500/30 p-4 rounded-lg transition-colors">
-                    <span class="text-2xl">📧</span>
-                    <div>
-                        <div class="font-semibold text-white">victim_emails.txt</div>
-                        <div class="text-sm text-gray-400">383 victim emails</div>
-                    </div>
+                <a href="https://x.com/Phish_Destroy" target="_blank" class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                    <span>🐦</span> @Phish_Destroy
                 </a>
-                <a href="iocs.json" class="flex items-center gap-3 bg-yellow-500/20 hover:bg-yellow-500/30 p-4 rounded-lg transition-colors">
-                    <span class="text-2xl">🛡️</span>
-                    <div>
-                        <div class="font-semibold text-white">iocs.json</div>
-                        <div class="text-sm text-gray-400">Machine-readable IOCs</div>
-                    </div>
+                <a href="https://www.phishdestroy.io/" target="_blank" class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                    <span>🌐</span> phishdestroy.io
                 </a>
-                <a href="panel_config.json" class="flex items-center gap-3 bg-green-500/20 hover:bg-green-500/30 p-4 rounded-lg transition-colors">
-                    <span class="text-2xl">⚙️</span>
-                    <div>
-                        <div class="font-semibold text-white">panel_config.json</div>
-                        <div class="text-sm text-gray-400">Panel configuration</div>
-                    </div>
-                </a>
-                <a href="victim_stats.json" class="flex items-center gap-3 bg-blue-500/20 hover:bg-blue-500/30 p-4 rounded-lg transition-colors">
-                    <span class="text-2xl">📊</span>
-                    <div>
-                        <div class="font-semibold text-white">victim_stats.json</div>
-                        <div class="text-sm text-gray-400">Victim statistics</div>
-                    </div>
-                </a>
-                <a href="README.md" class="flex items-center gap-3 bg-purple-500/20 hover:bg-purple-500/30 p-4 rounded-lg transition-colors">
-                    <span class="text-2xl">📄</span>
-                    <div>
-                        <div class="font-semibold text-white">README.md</div>
-                        <div class="text-sm text-gray-400">Full report</div>
-                    </div>
+                <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank" class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                    <span>🤝</span> Contribute Data
                 </a>
             </div>
         </div>
 
+        <!-- Main Container -->
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Sidebar (File Tree) -->
+            <nav class="lg:w-1/3 bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4 shadow-lg h-fit" id="file-tree" aria-label="Scam teams navigation">
+            </nav>
+            <!-- Main Content -->
+            <main class="flex-1 bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 shadow-lg min-h-[400px]" id="main-content">
+                 <div class="h-full flex flex-col items-center justify-center text-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                    </svg>
+                    <h2 class="text-xl font-semibold">Select a Team</h2>
+                    <p>Click on a team name to view intelligence data and available archives.</p>
+                </div>
+            </main>
+        </div>
+        
         <!-- Footer -->
-        <div class="text-center text-gray-500 text-sm">
-            <p>Collected by <a href="https://github.com/phishdestroy" class="text-blue-400 hover:text-blue-300">PhishDestroy</a> | January 2026</p>
-            <p class="mt-2">This intelligence is provided for defensive purposes only.</p>
-        </div>
+        <footer class="mt-8 text-center text-sm text-gray-500">
+            <p>© 2024-2025 <a href="https://www.phishdestroy.io/" class="text-blue-400 hover:text-blue-300">PhishDestroy</a>. Data provided for research and investigative purposes.</p>
+            <p class="mt-1">🧠 "Transparency exposes fraudsters. The community must know its scammers."</p>
+        </footer>
     </div>
+
+    <script>
+        const fileTree = document.getElementById("file-tree");
+        const mainContent = document.getElementById("main-content");
+
+        const folderStyles = {
+            chat: { class: 'bg-red-500/80 hover:bg-red-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" /></svg>` },
+            scam_offers: { class: 'bg-orange-500/80 hover:bg-orange-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8.433 7.418c.158-.103.346-.196.57-.293a1 1 0 011.12.013c.213.095.401.19.559.294a1 1 0 010 1.705c-.158.103-.346.196-.57.293a1 1 0 01-1.12-.013c-.213-.095-.401-.19-.559-.294a1 1 0 010-1.705z" /></svg>` },
+            channel: { class: 'bg-green-500/80 hover:bg-green-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a6 6 0 00-6 6v3.586l-1.293 1.293a1 1 0 001.414 1.414L6 12.414V16a1 1 0 001 1h6a1 1 0 001-1v-3.586l2.293 2.293a1 1 0 001.414-1.414L16 11.586V8a6 6 0 00-6-6z" /></svg>` },
+            designs: { class: 'bg-blue-500/80 hover:bg-blue-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" /><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd" /></svg>` },
+            successful_thefts: { class: 'bg-purple-500/80 hover:bg-purple-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd" /></svg>` },
+            scammer_list: { class: 'bg-pink-500/80 hover:bg-pink-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0115 11h1a1 1 0 110 2h-1a3 3 0 00-3 3c0 .667.18 1.293.5 1.83V19h2a1 1 0 110 2h-2a1 1 0 01-1-1v-1.17z" /></svg>` },
+            payments: { class: 'bg-yellow-500/80 hover:bg-yellow-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" /></svg>` },
+            chat_smoke: { class: 'bg-gray-500/80 hover:bg-gray-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2z" clip-rule="evenodd" /></svg>` },
+            info: { class: 'bg-cyan-500/80 hover:bg-cyan-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>` },
+            analytics: { class: 'bg-indigo-500/80 hover:bg-indigo-500', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" /></svg>` },
+            casino: { class: 'bg-amber-600/80 hover:bg-amber-600', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5zm0 2.236L15 8v9H5V8l5-3.764zM10 11a1 1 0 100 2 1 1 0 000-2z" /></svg>` },
+            default: { class: 'bg-gray-600/80 hover:bg-gray-600', icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" /></svg>` }
+        };
+        folderStyles.chanel = folderStyles.channel;
+        folderStyles.newchanel = folderStyles.channel;
+        folderStyles.payouts = folderStyles.payments;
+        folderStyles.chat_part2 = folderStyles.chat;
+        folderStyles.chat_part3 = folderStyles.chat;
+        folderStyles.chat_part4 = folderStyles.chat;
+
+        const teams = [
+            {
+                name: "RublevkaTeam",
+                image: "https://i.ibb.co/xtc39h99/image.png",
+                description: `
+                    <p><strong>🧾 Dump of Telegram users affiliated with the RublevkaTeam scam group</strong> — one of the largest and most active Russian-speaking drainer operations.</p>
+                    <p>The group targets primarily CIS users via phishing campaigns in TON and Solana ecosystems. Despite being Russian-speaking, they actively scam fellow Russians — and the community seems largely fine with that.</p>
+                    <p><strong>🌐 Website:</strong> <a href="https://rublevkateam.today" target="_blank" class="text-blue-400 hover:text-blue-300">https://rublevkateam.today</a></p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/8594315/" target="_blank" class="text-blue-400 hover:text-blue-300">https://lolz.live/threads/8594315/</a> (verified deposit > 2M RUB)</p>
+                    <p><strong>📍 Hosting:</strong> AEZA ASN AS210644</p>
+                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/RublevkaTeam_bot" target="_blank" class="text-blue-400 hover:text-blue-300">@RublevkaTeam_bot</a> (ID: 5811945099)</p>
+                    <p><strong>🛠️ Admins:</strong> @sinactive, @nft4x, @BalaclavaRTD</p>
+                    <p><strong>⚠️ Reported by multiple users as a scam/fraud group</strong></p>
+                    <p><strong>🇷🇺 "The country must know its heroes."</strong></p>
+                    <p><strong>🧨 Don't believe the myth that Russian scammers avoid scamming Russians</strong> — RublevkaTeam actively builds Russian-language phishing sites and targets CIS victims without hesitation.</p>
+                    <p class="font-semibold mt-4">Resources:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank" class="text-blue-400 hover:text-blue-300">Scammer Database (Google Spreadsheet)</a></li>
+                        <li><a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" target="_blank" class="text-blue-400 hover:text-blue-300">Known Scammer Logins (TXT)</a></li>
+                    </ul>
+                `,
+                folders: [
+                    { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/chat/messages.html" },
+                    { name: "scam_offers", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/scam_offers/messages.html" },
+                    { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/channel/messages.html" },
+                    { name: "designs", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/designs/messages.html" },
+                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/successful_thefts/messages.html" },
+                    { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" },
+                    { name: "newchanel", link: "https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/newchanel/messages.html" }
+                ]
+            },
+            {
+                name: "Wasabi Squad",
+                image: "https://i.ibb.co/bMShgdkp/image.png",
+                description: `
+                    <p><strong>📁 Wasabi Squad Telegram Dump</strong> — a dataset of Telegram accounts tied to deceptive financial schemes involving fake trading platforms and casino sites.</p>
+                    <p class="font-semibold mt-4">🎯 Primary Activities:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>💱 Fake cryptocurrency exchanges</li>
+                        <li>🎰 Scam gambling platforms</li>
+                        <li>🤖 Telegram bot schemes and fraudulent investment offers</li>
+                    </ul>
+                    <p class="font-semibold mt-4">🧩 Infrastructure:</p>
+                    <p><strong>🌐 Website:</strong> <a href="https://www.wasabihub.one/" target="_blank" class="text-blue-400 hover:text-blue-300">https://www.wasabihub.one/</a></p>
+                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/WasabiSquad_Bot" target="_blank" class="text-blue-400 hover:text-blue-300">@WasabiSquad_Bot</a> (Telegram ID: 7380099926)</p>
+                    <p><strong>💬 Forum thread:</strong> <a href="https://lolz.live/threads/7933252/" target="_blank" class="text-blue-400 hover:text-blue-300">https://lolz.live/threads/7933252/</a></p>
+                    <p class="font-semibold mt-4">📌 Note:</p>
+                    <p>Some young Russian scammers may have assumed they were beyond reach. However, recent Russian law enforcement practices permit the seizure of cryptocurrencies, regardless of the victims' location.</p>
+                    <p><strong>🧨 This dump aims to aid in identifying and prosecuting those involved.</strong></p>
+                    <p><strong>🧠 "The community must know its scammers."</strong></p>
+                    <p class="font-semibold mt-4">Resources:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><a href="https://docs.google.com/spreadsheets/d/1wSp-xfyVoZyrPbXZwPOQUKMCaocny9e9yEdJwocAdW8/edit?usp=sharing" target="_blank" class="text-blue-400 hover:text-blue-300">Scammer Database (Google Spreadsheet)</a></li>
+                    </ul>
+                `,
+                folders: [
+                    { name: "chanel", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/chanel/messages.html" },
+                    { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/chat/messages.html" },
+                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/successful_thefts/messages.html" },
+                    { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/WasabiSquad/scammers_login.txt" },
+                    { name: "analytics", link: "https://phishdestroy.github.io/ScamIntelLogs/WasabiSquad/chatanalytics.html" }
+                ]
+            },
+            {
+                name: "Mercury Team",
+                image: "https://i.ibb.co/KxLHnp59/image.png",
+                description: `
+                    <p><strong>📁 Mercury Team Telegram Dump</strong> — a dataset of Telegram accounts tied to scam activity involving fake crypto exchanges and gambling platforms.</p>
+                    <p class="font-semibold mt-4">🔮 Main Offers:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>💸 Fake "exclusive exchange" — <a href="https://t.me/MercuryTeam_bot" target="_blank" class="text-blue-400 hover:text-blue-300">@MercuryTeam_bot</a> (ID: 6631580796)</li>
+                        <li>🎰 Scam casino — <a href="https://t.me/MercuryCasi_bot" target="_blank" class="text-blue-400 hover:text-blue-300">@MercuryCasi_bot</a> (ID: 6431207710)</li>
+                        <li>🤖 Mentor-driven recruitment through phishing branches</li>
+                    </ul>
+                    <p class="font-semibold mt-4">🌐 Infrastructure:</p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/6129774/" target="_blank" class="text-blue-400 hover:text-blue-300">https://lolz.live/threads/6129774/</a></p>
+                    <p class="font-semibold mt-4">❗️ Note:</p>
+                    <p>Mercury Team disguises scam operations as affiliate opportunities. Victims are recruited via bots, assigned to "branches," and used to spread phishing sites.</p>
+                    <p><strong>🧠 "Financial freedom through fraud is still fraud."</strong></p>
+                    <p class="font-semibold mt-4">Resources:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><a href="https://docs.google.com/spreadsheets/d/1Swxss0rtQUW_LGyymDW8HLMyHEk2Ef3ht3sd29selSQ/edit?usp=sharing" target="_blank" class="text-blue-400 hover:text-blue-300">Scammer Database (Google Spreadsheet)</a></li>
+                    </ul>
+                `,
+                folders: [
+                    { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/channel/messages.html" },
+                    { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/chat/messages.html" },
+                    { name: "payments", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/payments/messages.html" },
+                    { name: "successful_thefts", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/successful_thefts/messages.html" },
+                    { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/MercuryTeam/scammers_login.txt" },
+                    { name: "analytics", link: "https://phishdestroy.github.io/ScamIntelLogs/MercuryTeam/chatanalytics.html" }
+                ]
+            },
+            {
+                name: "TheProject",
+                image: "https://i.ibb.co/sdCr8jcq/image.png",
+                description: `
+                    <p><strong>📁 TheProject Telegram Dump</strong> — a dataset of Telegram accounts linked to large-scale phishing operations, drainer deployment, and fake affiliate structures active since 2021.</p>
+                    <p class="font-semibold mt-4">🔮 Main Offers:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>💸 Multi-token automated drainer</li>
+                        <li>🧠 "Mentorship" through structured scam teams</li>
+                        <li>🎯 Fake affiliate network used for recruiting and laundering</li>
+                        <li>🎰 Scam casino platform with fake wins</li>
+                        <li>🤖 Main bot — <a href="https://t.me/TheProject_inbot" target="_blank" class="text-blue-400 hover:text-blue-300">@TheProject_inbot</a> (ID: 7291050577)</li>
+                    </ul>
+                    <p class="font-semibold mt-4">🌐 Infrastructure:</p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/4826265/" target="_blank" class="text-blue-400 hover:text-blue-300">https://lolz.live/threads/4826265/</a></p>
+                    <p><strong>💰 Claimed earnings:</strong> over $10,000,000 USD</p>
+                    <p><strong>🏦 Verified deposit on lolz:</strong> ₽1,000,000 RUB</p>
+                    <p class="font-semibold mt-4">Resources:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><a href="https://docs.google.com/spreadsheets/d/1RCcYfmZvHjJlEPPjFiTAsqAGtmuZG7JB3-YrOdK4xMc/edit?usp=sharing" target="_blank" class="text-blue-400 hover:text-blue-300">Scammer Database (Google Spreadsheet)</a></li>
+                        <li><a href="https://book.theproject.biz/" target="_blank" class="text-blue-400 hover:text-blue-300">WebSite ScamTeam</a></li>
+                    </ul>
+                `,
+                folders: [
+                    { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/channel/messages.html" },
+                    { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/chat/messages.html" },
+                    { name: "chat_smoke", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/chat_smoke/messages.html" },
+                    { name: "info", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/info/messages.html" },
+                    { name: "payouts", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/payouts/messages.html" },
+                    { name: "casino", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/casino/index.html" },
+                    { name: "scammer_list", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TheProject/scammers_login.txt" }
+                ]
+            },
+            {
+                name: "717Team",
+                image: "https://i.ibb.co/placeholder717/image.png",
+                description: `
+                    <p><strong>📁 717Team Telegram Dump</strong> — archived chat logs from the 717Team scam operation.</p>
+                    <p class="font-semibold mt-4">🔮 Activities:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>💸 Crypto drainer operations</li>
+                        <li>🎯 Phishing campaigns</li>
+                    </ul>
+                    <p class="font-semibold mt-4">📌 Note:</p>
+                    <p>Chat logs split into 4 parts due to size.</p>
+                    <p><strong>🧠 "Transparency exposes fraudsters."</strong></p>
+                `,
+                folders: [
+                    { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/717Team/messages.html" },
+                    { name: "chat_part2", link: "https://phishdestroy.github.io/ScamIntelLogs/717Team/messages2.html" },
+                    { name: "chat_part3", link: "https://phishdestroy.github.io/ScamIntelLogs/717Team/messages3.html" },
+                    { name: "chat_part4", link: "https://phishdestroy.github.io/ScamIntelLogs/717Team/messages4.html" }
+                ]
+            }
+        ];
+
+        let activeTeamDiv = null;
+
+        function renderFileTree() {
+            fileTree.innerHTML = "";
+            const teamsContainer = document.createElement("div");
+            teamsContainer.className = "space-y-2";
+            teams.forEach(team => {
+                const teamDiv = document.createElement("div");
+                teamDiv.className = "team-container";
+                
+                const teamHeader = document.createElement("div");
+                teamHeader.className = "bg-gray-700/60 hover:bg-gray-700 p-3 rounded-lg font-bold cursor-pointer transition-all duration-300 flex justify-between items-center";
+                teamHeader.innerHTML = `<span>${team.name}</span><svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>`;
+                
+                const foldersContainer = document.createElement("div");
+                foldersContainer.className = "pl-4 mt-2 space-y-1 hidden";
+
+                teamHeader.onclick = (e) => {
+                    e.stopPropagation();
+                    toggleTeamInfo(team, teamDiv);
+                };
+
+                teamDiv.appendChild(teamHeader);
+                teamDiv.appendChild(foldersContainer);
+                teamsContainer.appendChild(teamDiv);
+            });
+            fileTree.appendChild(teamsContainer);
+        }
+
+        function toggleTeamInfo(team, teamDiv) {
+            const foldersContainer = teamDiv.querySelector(".hidden, .block");
+            const arrowIcon = teamDiv.querySelector("svg");
+            const wasActive = teamDiv === activeTeamDiv;
+
+            document.querySelectorAll('.team-container').forEach(t => {
+                if (t !== teamDiv) {
+                    t.querySelector(".pl-4").classList.add("hidden");
+                    t.querySelector("svg").classList.remove("rotate-180");
+                }
+            });
+
+            if (wasActive) {
+                foldersContainer.classList.add("hidden");
+                arrowIcon.classList.remove("rotate-180");
+                activeTeamDiv = null;
+            } else {
+                showTeamDescription(team);
+
+                const foldersContainer = teamDiv.querySelector('.pl-4');
+                foldersContainer.innerHTML = "";
+                team.folders.forEach(folder => {
+                    const style = folderStyles[folder.name] || folderStyles.default;
+                    const folderDiv = document.createElement("div");
+                    folderDiv.className = `flex items-center gap-3 text-white p-2 rounded-lg cursor-pointer transition-all duration-200 transform hover:scale-105 ${style.class}`;
+                    folderDiv.innerHTML = `${style.icon} <span class="flex-1">${folder.name}</span>`;
+                    folderDiv.onclick = (e) => {
+                        e.stopPropagation();
+                        showFolderDescription(team.name, folder.name, folder.link);
+                    };
+                    foldersContainer.appendChild(folderDiv);
+                });
+
+                foldersContainer.classList.remove("hidden");
+                arrowIcon.classList.add("rotate-180");
+                activeTeamDiv = teamDiv;
+            }
+        }
+        
+        function showTeamDescription(team) {
+            mainContent.innerHTML = "";
+            const descriptionDiv = document.createElement("div");
+            descriptionDiv.className = "description-wrapper fade-in";
+            descriptionDiv.innerHTML = `
+                <div class="flex flex-col md:flex-row items-start gap-6">
+                    <img src="${team.image}" alt="${team.name}" class="w-48 h-48 object-cover rounded-lg shadow-md border-2 border-gray-700" onerror="this.style.display='none'">
+                    <div class="flex-1 text-gray-300 space-y-3">
+                        ${team.description}
+                    </div>
+                </div>
+            `;
+            mainContent.appendChild(descriptionDiv);
+        }
+
+        function showFolderDescription(teamName, folderName, folderLink) {
+            mainContent.innerHTML = "";
+            const contentWrapper = document.createElement('div');
+            contentWrapper.className = 'fade-in flex flex-col items-center justify-center text-center h-full';
+
+            let descriptionText = '';
+            if (folderName === "scammer_list") {
+                descriptionText = `This is the scammer list of <strong>${teamName}</strong>. Contains known scammer logins and Telegram identifiers.`;
+            } else if (folderName === "analytics") {
+                descriptionText = `Analytics section for <strong>${teamName}</strong>. Chat statistics, financial reports, and operational metrics.`;
+            } else if (folderName === "casino") {
+                descriptionText = `Scam casino panel data from <strong>${teamName}</strong>. Contains fake gambling platform infrastructure and victim interaction logs.`;
+            } else if (folderName === "successful_thefts") {
+                descriptionText = `Confirmed theft records from <strong>${teamName}</strong>. Victim wallets, amounts stolen, and transaction data.`;
+            } else if (folderName === "payments" || folderName === "payouts") {
+                descriptionText = `Payment/payout records of <strong>${teamName}</strong>. Internal financial flows and affiliate payments.`;
+            } else {
+                descriptionText = `<strong>${folderName}</strong> section of <strong>${teamName}</strong>. May contain internal communications, victim data, and operational details.`;
+            }
+            
+            contentWrapper.innerHTML = `
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl max-w-lg">
+                    <p class="mb-6 text-lg">${descriptionText}</p>
+                    <button class="w-full text-center bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 text-white font-bold py-3 px-4 rounded-lg transition-all duration-300 shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500">
+                        Go to Files
+                    </button>
+                </div>
+            `;
+
+            contentWrapper.querySelector('button').onclick = (e) => {
+                e.stopPropagation();
+                window.open(folderLink, "_blank");
+            };
+            
+            mainContent.appendChild(contentWrapper);
+        }
+
+        renderFileTree();
+    </script>
 </body>
 </html>
