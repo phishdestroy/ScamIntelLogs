@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-mode="fluid" data-menu-color="light" data-topbar-color="light" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="csrf-token" content="C1qYQL38eUFNXC6MguxVqysdZBsr1TpixM7qf6r3">
+    <title>Промокоды | Olympus - Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow"/>
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="https://olympus-panel.cc/assets/images/favicon.ico">
+
+    <!-- Plugin css -->
+    <link rel="stylesheet" href="https://olympus-panel.cc/assets/vendor/jquery-toast-plugin/jquery.toast.min.css">
+    <!-- Datatables css -->
+    <link href="https://olympus-panel.cc/assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://olympus-panel.cc/assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://olympus-panel.cc/assets/vendor/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://olympus-panel.cc/assets/vendor/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://olympus-panel.cc/assets/vendor/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <!-- Select2 css -->
+    <link href="https://olympus-panel.cc/assets/vendor/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+    
+    <style>
+        .text-truncate {
+            width: 150px;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Theme Config Js -->
+    <script src="https://olympus-panel.cc/assets/js/hyper-config.js"></script>
+
+    <!-- App css -->
+    <link href="https://olympus-panel.cc/assets/css/app.min.css?ver=0.0.002" rel="stylesheet" type="text/css" id="app-style" />
+
+    <!-- Icons css -->
+    <link href="https://olympus-panel.cc/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="modulepreload" as="script" href="https://olympus-panel.cc/build/assets/app-NUzP8Bd0.js" /><script type="module" src="https://olympus-panel.cc/build/assets/app-NUzP8Bd0.js" data-navigate-track="reload"></script></head>
+
+<body class=" show">
+
+    <div class="wrapper">
+                    <!-- ========== Topbar Start ========== -->
+<div class="navbar-custom">
+    <div class="topbar container-fluid">
+        <div class="d-flex align-items-center gap-lg-2 gap-1">
+
+            <!-- Topbar Brand Logo -->
+            <div class="logo-topbar">
+                <!-- Logo light -->
+                <a href="https://olympus-panel.cc/office" class="logo-light">
+                    <span class="text-white text-title">
+                        Syndicate
+                    </span>
+                </a>
+
+                <!-- Logo Dark -->
+                <a href="https://olympus-panel.cc/office" class="logo-dark">
+                    <span class="text-white text-title">
+                        Syndicate
+                    </span>
+                </a>
+            </div>
+
+            <!-- Sidebar Menu Toggle Button -->
+            <button class="button-toggle-menu">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <!-- Horizontal Menu Toggle Button -->
+            <button class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                <div class="lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+
+        <ul class="topbar-menu d-flex align-items-center gap-3">
+            <!--
+            <li class="d-none d-sm-inline-block">
+                <div class="nav-link" id="light-dark-mode" data-bs-toggle="tooltip" data-bs-placement="left" title="Theme Mode">
+                    <i class="ri-moon-line font-22"></i>
+                </div>
+            </li>
+            -->
+
+
+            <li class="d-none d-md-inline-block">
+                <a class="nav-link" href="" data-toggle="fullscreen">
+                    <i class="ri-fullscreen-line font-22"></i>
+                </a>
+            </li>
+
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle arrow-none nav-user px-2" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                    <span class="account-user-avatar">
+                        <div class="rounded-circle" style="font-size: 32px;">
+                            <i class="ri-ghost-2-line"></i>
+                        </div>
+                    </span>
+                    <span class="d-lg-flex flex-column gap-1 d-none">
+                        <h5 class="my-0"><span class="__cf_email__" data-cfemail="4c3f3c2322283920252f3f29202d3f21233f2d393e0c29212d2520622f2321">[email&#160;protected]</span></h5>
+                        <h6 class="my-0 fw-normal">70%</h6>
+                    </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated profile-dropdown">
+                    <!-- item-->
+                    <div class=" dropdown-header noti-title">
+                        <h6 class="text-overflow m-0">Welcome!</h6>
+                    </div>
+
+                    <!-- item-->
+                    <!--
+                    <a href="https://olympus-panel.cc/office/locked" class="dropdown-item">
+                        <i class="mdi mdi-lock-outline me-1"></i>
+                        <span>Заблокировать экран</span>
+                    </a>
+                    -->
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item" onclick="$('#logout-form').submit()">
+                        <i class="mdi mdi-logout me-1"></i>
+                        <span>Выйти</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ========== Topbar End ========== -->
+            <!-- ========== Left Sidebar Start ========== -->
+<div class="leftside-menu">
+
+    <!-- Sidebar Hover Menu Toggle Button -->
+    <div class="button-sm-hover" data-bs-toggle="tooltip" data-bs-placement="right" title="Show Full Sidebar">
+        <i class="ri-checkbox-blank-circle-line align-middle"></i>
+    </div>
+
+    <!-- Full Sidebar Menu Close Button -->
+    <div class="button-close-fullsidebar">
+        <i class="ri-close-fill align-middle"></i>
+    </div>
+
+    <!-- Sidebar -left -->
+    <div class="h-100" id="leftside-menu-container" data-simplebar>
+        <!-- Leftbar User -->
+        <div class="leftbar-user d-block">
+            <a href="https://olympus-panel.cc/office" wire:navigate>
+                <h4 class="page-title">Olympus</h4>
+                <span class="leftbar-user-name mt-2"></span>
+            </a>
+        </div>
+
+        <!--- Sidemenu -->
+        <ul class="side-nav">
+            <li class="side-nav-item">
+                <a href="https://olympus-panel.cc/office" class="side-nav-link " wire:navigate>
+                    <i class="uil-home-alt"></i>
+                    <span> Dashboards </span>
+                </a>
+            </li>
+
+                            <li class="side-nav-item ">
+                    <a href="https://olympus-panel.cc/office/users" class="side-nav-link" wire:navigate>
+                        <i class="uil-users-alt"></i>
+                        <span> Пользователи </span>
+                    </a>
+                </li>
+            
+                            <li class="side-nav-item ">
+                    <a href="https://olympus-panel.cc/office/logs" class="side-nav-link" wire:navigate>
+                        <i class="uil uil-receipt"></i>
+                        <span> Логи </span>
+                    </a>
+                </li>
+            
+            <li class="side-nav-item ">
+                <a href="https://olympus-panel.cc/office/chat" class="side-nav-link" wire:navigate>
+                    <i class="uil-comments-alt"></i>
+                    <span> Live - чат </span>
+                </a>
+            </li>
+
+                            <li class="side-nav-item ">
+                    <a href="https://olympus-panel.cc/office/deposits" class="side-nav-link" wire:navigate>
+                        <i class="uil uil-money-withdraw"></i>
+                        <span> Депозиты </span>
+                    </a>
+                </li>
+            
+                            <li class="side-nav-item ">
+                    <a href="https://olympus-panel.cc/office/payouts" class="side-nav-link" wire:navigate>
+                        <i class="uil uil-money-insert"></i>
+                        <span> Выплаты </span>
+                    </a>
+                </li>
+            
+                            <li class="side-nav-item ">
+                    <a href="https://olympus-panel.cc/office/domains" class="side-nav-link" wire:navigate>
+                        <i class="uil uil-globe"></i>
+                        <span> Домены </span>
+                    </a>
+                </li>
+            
+            
+                            <li class="side-nav-item side-menu-active menuitem-active">
+                    <a href="https://olympus-panel.cc/office/promos" class="side-nav-link" wire:navigate>
+                        <i class="uil uil-ticket"></i>
+                        <span> Промокоды </span>
+                    </a>
+                </li>
+            
+                            <li class="side-nav-item ">
+                    <a href="https://olympus-panel.cc/office/settings" class="side-nav-link" wire:navigate>
+                        <i class="ri-settings-5-line"></i>
+                        <span> Настройки </span>
+                    </a>
+                </li>
+
+                <li class="side-nav-item ">
+                    <a href="https://olympus-panel.cc/office/api" class="side-nav-link" wire:navigate>
+                        <i class="uil-server-network-alt"></i>
+                        <span> API </span>
+                    </a>
+                </li>
+            
+        </ul>
+        <!--- End Sidemenu -->
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- ========== Left Sidebar End ========== -->
+        
+        <div class="content-page pb-0">
+            <div class="content">
+
+                <div class="container-fluid">
+                    <div class="row">
+    <div class="col-12">
+        <div class="page-title-box">
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a wire:navigate href="https://olympus-panel.cc/office">Панель</a></li>
+                                                                                                        <li class="breadcrumb-item active">Промокоды</li>
+                                                                                        </ol>
+            </div>
+
+            <h4 class="page-title">Промокоды</h4>
+        </div>
+    </div>
+</div>
+
+                    
+    <div class="row">
+        <div class="col-4">
+                            <div class="card">
+                    <div class="card-body">
+                        <form wire:snapshot="{&quot;data&quot;:{&quot;code&quot;:&quot;&quot;,&quot;amount&quot;:&quot;&quot;,&quot;bonus&quot;:null,&quot;type&quot;:&quot;%&quot;,&quot;tg_user&quot;:null,&quot;isSaving&quot;:false},&quot;memo&quot;:{&quot;id&quot;:&quot;UbIDxA04tKUnE7Z53Elt&quot;,&quot;name&quot;:&quot;forms.panel.promos.promos-create-form&quot;,&quot;path&quot;:&quot;office\/promos&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;e10919c14207de6980ee5b0325820905ab392d32ad51dfedc4c2fe78d87be29e&quot;}" wire:effects="[]" wire:id="UbIDxA04tKUnE7Z53Elt" wire:submit="store">
+    <div class="mb-3">
+        <label for="amount" class="form-label">Сумма $</label>
+        <input type="text" id="amount" class="form-control " wire:model="amount">
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->    </div>
+
+    <div class="mb-3 form-floating d-flex flex-stack gap-2">
+        <div class="w-75">
+            <label for="bonus" class="form-label">Бонус к первому депозиту</label>
+            <input type="text" id="bonus" class="form-control" wire:model="bonus">
+        </div>
+
+        <div class="w-25">
+            <label for="bonus_type" class="form-label">Тип</label>
+            <select class="form-select" id="bonus_type" wire:model="type">
+                <option value="%">%</option>
+                <option value="$">$</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="promo" class="form-label required">Промокод</label>
+        <input type="text" id="promo" class="form-control " wire:model="code">
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->    </div>
+
+    <div class="mb-3">
+        <label for="tg_id" class="form-label">TG ID пользователя</label>
+        <input type="text" id="tg_id" class="form-control" wire:model="tg_user">
+    </div>
+
+    <button class="btn btn-success">
+        <span wire:loading.remove wire:target="store">Создать промокод</span>
+        <span wire:loading wire:target="store" style="display: none;">
+            <span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>
+            Загрузка...
+        </span>
+    </button>
+</form>
+                    </div>
+                </div>
+                    </div>
+
+        <div class="col-8" wire:ignore.self>
+            <div wire:snapshot="{&quot;data&quot;:{&quot;perPage&quot;:10,&quot;search&quot;:&quot;&quot;,&quot;statPromo&quot;:&quot;&quot;,&quot;statPromoError&quot;:&quot;&quot;,&quot;statPromoData&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;0anwLjT4AuNprk4MHj1G&quot;,&quot;name&quot;:&quot;panel.promos.promos-table&quot;,&quot;path&quot;:&quot;office\/promos&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;a7b3bd6f8b9be08f09c46289605ec666ba683fe38c5f4746d6bd2b0840d7e146&quot;}" wire:effects="{&quot;listeners&quot;:[&quot;promos-saved&quot;,&quot;promo-deleted&quot;]}" wire:id="0anwLjT4AuNprk4MHj1G" class="card">
+    <div class="card-body">
+
+        <div class="d-flex justify-content-between">
+            <div class="app-search">
+                <form>
+                    <div class="input-group">
+                        <input type="search" wire:model.live.debounce.500ms="search" class="form-control dropdown-toggle" placeholder="Поиск по названию" id="top-search">
+                        <span class="ri-search-line search-icon"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <table class="table table-striped table-centered mb-0">
+            <thead>
+            <tr>
+                <th>Код</th>
+                <th>Сумма</th>
+                <th>Активаций</th>
+                <th>Депозитов</th>
+                <th>Сумма</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->            </tbody>
+        </table>
+
+        
+        <div wire:loading.flex style="display: none;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-white bg-opacity-75">
+                <span class="spinner-border"></span>
+            </div>
+        </div>
+
+        <div class="mt-3 d-flex justify-content-between">
+            <select class="form-select w-auto" wire:model.live="perPage">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+
+            <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+        </div>
+
+        <!-- Large modal -->
+        <div class="modal fade" id="stat-promo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myLargeModalLabel">Статистика промокода </h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped table-centered mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Страна</th>
+                                    <th>Активаций</th>
+                                    <th>Депозитов</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->                            </tbody>
+                        </table>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div>
+</div>
+
+        </div>
+    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor js -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://olympus-panel.cc/assets/js/vendor.min.js"></script>
+
+    <!-- Code Highlight js -->
+    <script src="https://olympus-panel.cc/assets/vendor/highlightjs/highlight.pack.min.js"></script>
+    <script src="https://olympus-panel.cc/assets/vendor/clipboard/clipboard.min.js"></script>
+    <script src="https://olympus-panel.cc/assets/js/hyper-syntax.js"></script>
+
+    <script src="https://olympus-panel.cc/assets/vendor/jquery-toast-plugin/jquery.toast.min.js"></script>
+
+    <!-- Toastr Demo js -->
+    <script src="https://olympus-panel.cc/assets/js/pages/demo.toastr.js"></script>
+
+    <!--  Select2 Js -->
+    <script src="https://olympus-panel.cc/assets/vendor/select2/js/select2.min.js"></script>
+
+    <!-- Dragula js-->
+    <script src="https://olympus-panel.cc/assets/vendor/dragula/dragula.min.js"></script>
+
+    <!-- Dragula Demo Component js -->
+    <script src="https://olympus-panel.cc/assets/js/ui/component.dragula.js"></script>
+
+    <script >
+    console.warn('Livewire: The published Livewire assets are out of date\n See: https://livewire.laravel.com/docs/installation#publishing-livewires-frontend-assets')
+</script>
+<script src="https://olympus-panel.cc/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="C1qYQL38eUFNXC6MguxVqysdZBsr1TpixM7qf6r3" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+        <script>
+        window.addEventListener('promo-deleted', event => {
+            // Показываем уведомление пользователю
+            $.NotificationApp.send(null,"Промокод удалён успешно.","bottom-right","rgba(0,0,0,0.2)","success");
+        });
+
+        window.addEventListener('promo-load-stat', event => {
+            $('#stat-promo').modal('show');
+        });
+    </script>
+
+    <!-- App js -->
+    <script src="https://olympus-panel.cc/assets/js/app.min.js"></script>
+    <script src="https://olympus-panel.cc/assets/js/main.js?ver=1769758237"></script>
+</body>
+</html>

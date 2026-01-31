@@ -1,0 +1,704 @@
+[
+  {
+    "id": 1,
+    "domain": "olympus-panel.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": "2348234832742",
+    "google_tag": "349859347834",
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 1,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": "2348234832742",
+      "google_tag_id": "349859347834",
+      "twitter_pixel_id": "3894834478374",
+      "twitter_event_view": "34988934783478",
+      "twitter_event_register": "34988347834",
+      "twitter_event_promo": "349878347843",
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "\"null\""
+    }
+  },
+  {
+    "id": 2,
+    "domain": "domain2.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 2,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 3,
+    "domain": "domain3.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 3,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 4,
+    "domain": "domain4.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 4,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 5,
+    "domain": "domain5.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 5,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 6,
+    "domain": "domain6.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 6,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 7,
+    "domain": "domain7.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 7,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 8,
+    "domain": "domain8.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 8,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 9,
+    "domain": "domain9.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 9,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 10,
+    "domain": "domain10.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 10,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 11,
+    "domain": "domain11.com",
+    "template": "theme_default",
+    "user_balance": "455",
+    "facebook_pixel": "sksdcmdsd",
+    "google_tag": "238e238e932e32",
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 11,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": "sksdcmdsd",
+      "google_tag_id": "238e238e932e32",
+      "twitter_pixel_id": "2342342324",
+      "twitter_event_view": "dcnjsdc",
+      "twitter_event_register": "jsdcnksdcdsоокеn",
+      "twitter_event_promo": "jsndcksdnckdsds",
+      "user_balance": "455",
+      "template": "theme_default",
+      "countries_block": "\"\\\"\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"null\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\"\\\"\""
+    }
+  },
+  {
+    "id": 12,
+    "domain": "test-api.com",
+    "template": "default_liquid_glass",
+    "user_balance": "0",
+    "facebook_pixel": "38434834",
+    "google_tag": "38434834",
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 12,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": "38434834",
+      "google_tag_id": "38434834",
+      "twitter_pixel_id": "38434834",
+      "twitter_event_view": "38434834",
+      "twitter_event_register": "38434834",
+      "twitter_event_promo": "38434834",
+      "user_balance": "0",
+      "template": "default_liquid_glass",
+      "countries_block": "\"null\""
+    }
+  },
+  {
+    "id": 13,
+    "domain": "olympus-api.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": "2348234832742",
+    "google_tag": "349859347834",
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 13,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": "2348234832742",
+      "google_tag_id": "349859347834",
+      "twitter_pixel_id": "3894834478374",
+      "twitter_event_view": "34988934783478",
+      "twitter_event_register": "34988347834",
+      "twitter_event_promo": "349878347843",
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "\"null\""
+    }
+  },
+  {
+    "id": 14,
+    "domain": "olympus-pane.com",
+    "template": "default_liquid_glass",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 14,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "default_liquid_glass",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 15,
+    "domain": "gambler-partners.is",
+    "template": "default_liquid_glass",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 15,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "default_liquid_glass",
+      "countries_block": "\"null\""
+    }
+  },
+  {
+    "id": 16,
+    "domain": "olympus-invite.com",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": "2348234832742",
+    "google_tag": "349859347834",
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 16,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": "2348234832742",
+      "google_tag_id": "349859347834",
+      "twitter_pixel_id": "3894834478374",
+      "twitter_event_view": "34988934783478",
+      "twitter_event_register": "34988347834",
+      "twitter_event_promo": "349878347843",
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "\"null\""
+    }
+  },
+  {
+    "id": 17,
+    "domain": "olympus-panel.io",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": "2348234832742",
+    "google_tag": "349859347834",
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 17,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": "2348234832742",
+      "google_tag_id": "349859347834",
+      "twitter_pixel_id": "3894834478374",
+      "twitter_event_view": "34988934783478",
+      "twitter_event_register": "34988347834",
+      "twitter_event_promo": "349878347843",
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "\"null\""
+    }
+  },
+  {
+    "id": 18,
+    "domain": "olympus-panel.cc",
+    "template": "theme_default",
+    "user_balance": "0",
+    "facebook_pixel": "2348234832742",
+    "google_tag": "349859347834",
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 18,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": "2348234832742",
+      "google_tag_id": "349859347834",
+      "twitter_pixel_id": "3894834478374",
+      "twitter_event_view": "34988934783478",
+      "twitter_event_register": "34988347834",
+      "twitter_event_promo": "349878347843",
+      "user_balance": "0",
+      "template": "theme_default",
+      "countries_block": "\"null\""
+    }
+  },
+  {
+    "id": 19,
+    "domain": "olympys.free",
+    "template": "default_liquid_glass",
+    "user_balance": "1",
+    "facebook_pixel": "",
+    "google_tag": "1",
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 19,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": "",
+      "google_tag_id": "1",
+      "twitter_pixel_id": "",
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "1",
+      "template": "default_liquid_glass",
+      "countries_block": "\"\\\"\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"null\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\"\\\"\""
+    }
+  },
+  {
+    "id": 20,
+    "domain": "inclusivebets.com",
+    "template": "default_liquid_glass",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 20,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "default_liquid_glass",
+      "countries_block": "\"\\\"null\\\"\""
+    }
+  },
+  {
+    "id": 21,
+    "domain": "inclusivebets.fun",
+    "template": "default_liquid_glass",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 21,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "default_liquid_glass",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 22,
+    "domain": "rioroyal.sbs",
+    "template": "default_liquid_glass",
+    "user_balance": "2",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 22,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "2",
+      "template": "default_liquid_glass",
+      "countries_block": "\"null\""
+    }
+  },
+  {
+    "id": 23,
+    "domain": "mantrasafe.com",
+    "template": "default_liquid_glass",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 23,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "default_liquid_glass",
+      "countries_block": "null"
+    }
+  },
+  {
+    "id": 24,
+    "domain": "cdsfeedwdrvjfv.com",
+    "template": "default_liquid_glass",
+    "user_balance": "5000",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 24,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "5000",
+      "template": "default_liquid_glass",
+      "countries_block": "\"null\""
+    }
+  },
+  {
+    "id": 25,
+    "domain": "plinkozaw.com",
+    "template": "default_liquid_glass",
+    "user_balance": "3500",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 25,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "3500",
+      "template": "default_liquid_glass",
+      "countries_block": "\"\\\"null\\\"\""
+    }
+  },
+  {
+    "id": 26,
+    "domain": "pipo4kapapki.ru",
+    "template": "default_liquid_glass",
+    "user_balance": "0",
+    "facebook_pixel": null,
+    "google_tag": null,
+    "raw_data": {
+      "domain": [
+        null,
+        {
+          "class": "App\\Models\\Domain",
+          "key": 26,
+          "s": "mdl"
+        }
+      ],
+      "facebook_pixel_id": null,
+      "google_tag_id": null,
+      "twitter_pixel_id": null,
+      "twitter_event_view": null,
+      "twitter_event_register": null,
+      "twitter_event_promo": null,
+      "user_balance": "0",
+      "template": "default_liquid_glass",
+      "countries_block": "null"
+    }
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "panel_name": "Olympus Panel",
+  "panel_alias": "Syndicate Casino",
+  "type": "crypto_casino_scam",
+  "status": "active",
+  "discovery_date": "2026-01-30",
+  "domains": [
+    "olympus-panel.cc",
+    "olympus-panel.io",
+    "olympus-panel.com",
+    "olympus-api.com",
+    "olympus-pane.com",
+    "olympus-invite.com",
+    "olympys.free",
+    "gambler-partners.is",
+    "inclusivebets.com",
+    "inclusivebets.fun",
+    "rioroyal.sbs",
+    "mantrasafe.com",
+    "cdsfeedwdrvjfv.com",
+    "plinkozaw.com",
+    "pipo4kapapki.ru"
+  ],
+  "infrastructure": {
+    "admin_panel": "olympus-panel.cc",
+    "api_backend": "olympus-api.com",
+    "nameservers": [
+      "plato.ns.cloudflare.com",
+      "violet.ns.cloudflare.com"
+    ]
+  },
+  "technical": {
+    "framework": "Laravel + Livewire v3",
+    "frontend": "Hyper Admin Dashboard",
+    "cdn": "Cloudflare"
+  },
+  "telegram": [
+    "@olympus_panel_bot",
+    "t.me/olympus_panel_bot"
+  ],
+  "api_endpoints": [
+    "/office/dashboard",
+    "/office/users",
+    "/office/logs",
+    "/office/chat",
+    "/office/deposits",
+    "/office/payouts",
+    "/office/domains",
+    "/office/promos",
+    "/office/settings",
+    "/office/api",
+    "/api/promo",
+    "/api/domains",
+    "/livewire/update",
+    "/livewire/upload-file"
+  ],
+  "scam_settings": {
+    "min_deposit": 50,
+    "min_withdraw": 100,
+    "worker_share": "70%",
+    "chat_bot_name": "Alice",
+    "super_account_keyword": "olympus"
+  }
+}

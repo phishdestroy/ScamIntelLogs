@@ -1,0 +1,2941 @@
+{
+ "name": "Olympus Panel [Info]🎰",
+ "type": "private_supergroup",
+ "id": 3649385731,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2026-01-02T11:10:40",
+   "date_unixtime": "1767341440",
+   "actor": "Olympus Panel [Info]🎰",
+   "actor_id": "channel3649385731",
+   "action": "migrate_from_group",
+   "title": "Olympus Panel [Info]🎰",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 17,
+   "type": "service",
+   "date": "2026-01-12T10:43:16",
+   "date_unixtime": "1768203796",
+   "actor": "Anthony",
+   "actor_id": "user8309733097",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 18,
+   "type": "message",
+   "date": "2026-01-12T18:33:30",
+   "date_unixtime": "1768232010",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": [
+    "🔥 ",
+    {
+     "type": "bold",
+     "text": "Olympus"
+    },
+    " — ваш путь к стабильному доходу в гемблинг-вертикали\n\nOlympus — это современный инструмент для эффективной монетизации трафика, созданный командой профессионалов из разных сфер. Мы объединили лучшие решения в одном продукте, чтобы вы получали максимальную прибыль без лишних сложностей.\n\n💎 Почему выбирают нас:\n🔹 Новый перспективный проект\n🔹 Быстрый рост и масштабирование\n🔹 Прозрачные автоматические выплаты\n🔹 Регулярные обновления\n🔹 Оперативная техподдержка\n🔹 Проверенный и качественный продукт\n\n",
+    {
+     "type": "bold",
+     "text": "Olympus"
+    },
+    " — для тех, кто хочет зарабатывать сегодня и быть уверенным в завтра.\n\n🚀 Убедитесь сами, что сделали правильный выбор.\n\nНачать работу - ",
+    {
+     "type": "mention",
+     "text": "@olympus_invite_bot"
+    },
+    "\n\n🔗 Полезные ссылки:\n└  👨‍💻 Связаться с нами: ",
+    {
+     "type": "mention",
+     "text": "@olympus_owner"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔥 "
+    },
+    {
+     "type": "bold",
+     "text": "Olympus"
+    },
+    {
+     "type": "plain",
+     "text": " — ваш путь к стабильному доходу в гемблинг-вертикали\n\nOlympus — это современный инструмент для эффективной монетизации трафика, созданный командой профессионалов из разных сфер. Мы объединили лучшие решения в одном продукте, чтобы вы получали максимальную прибыль без лишних сложностей.\n\n💎 Почему выбирают нас:\n🔹 Новый перспективный проект\n🔹 Быстрый рост и масштабирование\n🔹 Прозрачные автоматические выплаты\n🔹 Регулярные обновления\n🔹 Оперативная техподдержка\n🔹 Проверенный и качественный продукт\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Olympus"
+    },
+    {
+     "type": "plain",
+     "text": " — для тех, кто хочет зарабатывать сегодня и быть уверенным в завтра.\n\n🚀 Убедитесь сами, что сделали правильный выбор.\n\nНачать работу - "
+    },
+    {
+     "type": "mention",
+     "text": "@olympus_invite_bot"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n🔗 Полезные ссылки:\n└  👨‍💻 Связаться с нами: "
+    },
+    {
+     "type": "mention",
+     "text": "@olympus_owner"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "type": "service",
+   "date": "2026-01-13T00:38:15",
+   "date_unixtime": "1768253895",
+   "actor": "UJYJHY",
+   "actor_id": "user6131701143",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 20,
+   "type": "service",
+   "date": "2026-01-13T00:39:30",
+   "date_unixtime": "1768253970",
+   "actor": "UJYJHY",
+   "actor_id": "user6131701143",
+   "action": "remove_members",
+   "members": [
+    "UJYJHY"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 21,
+   "type": "service",
+   "date": "2026-01-13T11:11:51",
+   "date_unixtime": "1768291911",
+   "actor": null,
+   "actor_id": "user8158336728",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 22,
+   "type": "service",
+   "date": "2026-01-13T11:13:26",
+   "date_unixtime": "1768292006",
+   "actor": "Akatwokolpaka",
+   "actor_id": "user7438862642",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 23,
+   "type": "service",
+   "date": "2026-01-13T11:36:34",
+   "date_unixtime": "1768293394",
+   "actor": "All-in",
+   "actor_id": "user7482879192",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 24,
+   "type": "message",
+   "date": "2026-01-13T11:36:56",
+   "date_unixtime": "1768293416",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "photo": "photos/photo_1@13-01-2026_11-36-56.jpg",
+   "photo_file_size": 82643,
+   "width": 590,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 25,
+   "type": "message",
+   "date": "2026-01-13T11:36:59",
+   "date_unixtime": "1768293419",
+   "edited": "2026-01-13T11:37:57",
+   "edited_unixtime": "1768293477",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "text": "Это что такое ахахаха",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Это что такое ахахаха"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "😁",
+      "recent": [
+       {
+        "from": "Zeus",
+        "from_id": "user8357671727",
+        "date": "2026-01-13T11:37:57"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 26,
+   "type": "message",
+   "date": "2026-01-13T11:40:08",
+   "date_unixtime": "1768293608",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "photo": "photos/photo_2@13-01-2026_11-40-08.jpg",
+   "photo_file_size": 94995,
+   "width": 590,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 27,
+   "type": "message",
+   "date": "2026-01-13T11:40:14",
+   "date_unixtime": "1768293614",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "text": "И с ботом явно что то не так",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "И с ботом явно что то не так"
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "type": "message",
+   "date": "2026-01-13T11:40:23",
+   "date_unixtime": "1768293623",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "text": "Я хуй знает зачем релизить сырой продукт",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Я хуй знает зачем релизить сырой продукт"
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "type": "message",
+   "date": "2026-01-13T11:40:43",
+   "date_unixtime": "1768293643",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "Бот чисто под инвайт",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Бот чисто под инвайт"
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "type": "message",
+   "date": "2026-01-13T11:41:09",
+   "date_unixtime": "1768293669",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 29,
+   "text": "А сайт почему под мобилки не адаптирован?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "А сайт почему под мобилки не адаптирован?"
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "type": "message",
+   "date": "2026-01-13T11:42:42",
+   "date_unixtime": "1768293762",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 24,
+   "text": "Бляаххаах я даже пароль не могу ввести",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Бляаххаах я даже пароль не могу ввести"
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "type": "message",
+   "date": "2026-01-13T11:42:48",
+   "date_unixtime": "1768293768",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "text": "Потому что все кривое",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Потому что все кривое"
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "type": "message",
+   "date": "2026-01-13T11:44:24",
+   "date_unixtime": "1768293864",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "text": "Крч можешь сразу проект закрывать, перспектив 0",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Крч можешь сразу проект закрывать, перспектив 0"
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "type": "message",
+   "date": "2026-01-13T11:48:23",
+   "date_unixtime": "1768294103",
+   "from": "Akatwokolpaka",
+   "from_id": "user7438862642",
+   "reply_to_message_id": 32,
+   "photo": "photos/photo_3@13-01-2026_11-48-23.jpg",
+   "photo_file_size": 64220,
+   "width": 591,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 35,
+   "type": "message",
+   "date": "2026-01-13T11:49:21",
+   "date_unixtime": "1768294161",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 34,
+   "text": "Видимо ток под андроиды адаптировано",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Видимо ток под андроиды адаптировано"
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "type": "service",
+   "date": "2026-01-13T13:29:34",
+   "date_unixtime": "1768300174",
+   "actor": "wex",
+   "actor_id": "user5914478936",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 37,
+   "type": "service",
+   "date": "2026-01-13T13:55:25",
+   "date_unixtime": "1768301725",
+   "actor": "fraudlent",
+   "actor_id": "user1528871002",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 38,
+   "type": "service",
+   "date": "2026-01-13T15:14:38",
+   "date_unixtime": "1768306478",
+   "actor": "Support1 117",
+   "actor_id": "user7746529958",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 39,
+   "type": "service",
+   "date": "2026-01-13T15:22:02",
+   "date_unixtime": "1768306922",
+   "actor": "fraudlent",
+   "actor_id": "user1528871002",
+   "action": "remove_members",
+   "members": [
+    "fraudlent"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 40,
+   "type": "service",
+   "date": "2026-01-13T16:12:29",
+   "date_unixtime": "1768309949",
+   "actor": "Akatwokolpaka",
+   "actor_id": "user7438862642",
+   "action": "remove_members",
+   "members": [
+    "Akatwokolpaka"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 41,
+   "type": "service",
+   "date": "2026-01-13T17:26:25",
+   "date_unixtime": "1768314385",
+   "actor": "eowkskmana",
+   "actor_id": "user6349684100",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 42,
+   "type": "service",
+   "date": "2026-01-13T17:58:23",
+   "date_unixtime": "1768316303",
+   "actor": "1",
+   "actor_id": "user6750370016",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 43,
+   "type": "service",
+   "date": "2026-01-13T18:00:08",
+   "date_unixtime": "1768316408",
+   "actor": "1",
+   "actor_id": "user6750370016",
+   "action": "remove_members",
+   "members": [
+    "1"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 44,
+   "type": "service",
+   "date": "2026-01-13T21:36:21",
+   "date_unixtime": "1768329381",
+   "actor": "дуся няшкинс",
+   "actor_id": "user8296515832",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 45,
+   "type": "message",
+   "date": "2026-01-13T21:36:44",
+   "date_unixtime": "1768329404",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "photo": "photos/photo_4@13-01-2026_21-36-44.jpg",
+   "photo_file_size": 45749,
+   "width": 359,
+   "height": 587,
+   "text": "а это что",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "а это что"
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "type": "message",
+   "date": "2026-01-13T21:39:55",
+   "date_unixtime": "1768329595",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "Это у меня приветственное сообщение в чате такое",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Это у меня приветственное сообщение в чате такое"
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "type": "message",
+   "date": "2026-01-13T21:40:06",
+   "date_unixtime": "1768329606",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "я про то как оно выглядит",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "я про то как оно выглядит"
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "type": "service",
+   "date": "2026-01-14T19:51:55",
+   "date_unixtime": "1768409515",
+   "actor": "Syn",
+   "actor_id": "user1267215099",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 49,
+   "type": "service",
+   "date": "2026-01-15T12:13:31",
+   "date_unixtime": "1768468411",
+   "actor": "Gevorg",
+   "actor_id": "user864750171",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 50,
+   "type": "message",
+   "date": "2026-01-15T12:14:25",
+   "date_unixtime": "1768468465",
+   "from": "Gevorg",
+   "from_id": "user864750171",
+   "text": "Привет мужики , что скажите",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Привет мужики , что скажите"
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "type": "message",
+   "date": "2026-01-15T12:15:29",
+   "date_unixtime": "1768468529",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "Привет, нужно заливаться",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Привет, нужно заливаться"
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "type": "message",
+   "date": "2026-01-15T14:04:45",
+   "date_unixtime": "1768475085",
+   "from": "Gevorg",
+   "from_id": "user864750171",
+   "text": "Это что такое",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Это что такое"
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "type": "service",
+   "date": "2026-01-15T16:43:06",
+   "date_unixtime": "1768484586",
+   "actor": "abstaruct",
+   "actor_id": "user5814386600",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 54,
+   "type": "service",
+   "date": "2026-01-15T17:31:15",
+   "date_unixtime": "1768487475",
+   "actor": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+   "actor_id": "user7306401729",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 55,
+   "type": "service",
+   "date": "2026-01-15T17:44:15",
+   "date_unixtime": "1768488255",
+   "actor": "triplesix",
+   "actor_id": "user7582494572",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 56,
+   "type": "message",
+   "date": "2026-01-15T17:53:32",
+   "date_unixtime": "1768488812",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "reply_to_message_id": 54,
+   "text": "о привет",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "о привет"
+    }
+   ]
+  },
+  {
+   "id": 57,
+   "type": "message",
+   "date": "2026-01-15T17:54:38",
+   "date_unixtime": "1768488878",
+   "from": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+   "from_id": "user7306401729",
+   "reply_to_message_id": 45,
+   "text": "это ватсап",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "это ватсап"
+    }
+   ]
+  },
+  {
+   "id": 58,
+   "type": "message",
+   "date": "2026-01-15T17:55:00",
+   "date_unixtime": "1768488900",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "reply_to_message_id": 57,
+   "text": "люксард гемблинг 2",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "люксард гемблинг 2"
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "type": "message",
+   "date": "2026-01-15T17:55:06",
+   "date_unixtime": "1768488906",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "там куча ассетов",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "там куча ассетов"
+    }
+   ]
+  },
+  {
+   "id": 60,
+   "type": "message",
+   "date": "2026-01-15T17:55:08",
+   "date_unixtime": "1768488908",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "с люксарда",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "с люксарда"
+    }
+   ]
+  },
+  {
+   "id": 61,
+   "type": "message",
+   "date": "2026-01-15T17:55:09",
+   "date_unixtime": "1768488909",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": ":D",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": ":D"
+    }
+   ]
+  },
+  {
+   "id": 62,
+   "type": "message",
+   "date": "2026-01-15T17:55:18",
+   "date_unixtime": "1768488918",
+   "from": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+   "from_id": "user7306401729",
+   "reply_to_message_id": 24,
+   "text": "это мои бывшие",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "это мои бывшие"
+    }
+   ]
+  },
+  {
+   "id": 63,
+   "type": "message",
+   "date": "2026-01-15T17:55:19",
+   "date_unixtime": "1768488919",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "и с гемблера",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "и с гемблера"
+    }
+   ]
+  },
+  {
+   "id": 64,
+   "type": "service",
+   "date": "2026-01-15T18:45:11",
+   "date_unixtime": "1768491911",
+   "actor": "пквое",
+   "actor_id": "user6668171627",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 65,
+   "type": "service",
+   "date": "2026-01-15T19:18:48",
+   "date_unixtime": "1768493928",
+   "actor": "fraudlent",
+   "actor_id": "user1528871002",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 66,
+   "type": "service",
+   "date": "2026-01-15T20:19:48",
+   "date_unixtime": "1768497588",
+   "actor": "triplesix",
+   "actor_id": "user7582494572",
+   "action": "remove_members",
+   "members": [
+    "triplesix"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 67,
+   "type": "message",
+   "date": "2026-01-15T20:54:02",
+   "date_unixtime": "1768499642",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 58,
+   "text": "Их проект второй или подражатели?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Их проект второй или подражатели?"
+    }
+   ]
+  },
+  {
+   "id": 68,
+   "type": "message",
+   "date": "2026-01-15T20:54:58",
+   "date_unixtime": "1768499698",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "подражатели кого?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "подражатели кого?"
+    }
+   ]
+  },
+  {
+   "id": 69,
+   "type": "message",
+   "date": "2026-01-15T21:38:49",
+   "date_unixtime": "1768502329",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 68,
+   "text": "Гемблера",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Гемблера"
+    }
+   ]
+  },
+  {
+   "id": 70,
+   "type": "message",
+   "date": "2026-01-15T22:21:35",
+   "date_unixtime": "1768504895",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "хз у них щас больше функций чем у гемблерап",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "хз у них щас больше функций чем у гемблерап"
+    }
+   ]
+  },
+  {
+   "id": 71,
+   "type": "service",
+   "date": "2026-01-16T10:33:13",
+   "date_unixtime": "1768548793",
+   "actor": "gbc",
+   "actor_id": "user8148513627",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 72,
+   "type": "service",
+   "date": "2026-01-16T16:12:43",
+   "date_unixtime": "1768569163",
+   "actor": "olympys",
+   "actor_id": "user7473143954",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 73,
+   "type": "service",
+   "date": "2026-01-17T12:54:56",
+   "date_unixtime": "1768643696",
+   "actor": "💸☠️☠️☠️💸",
+   "actor_id": "user7391290661",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 74,
+   "type": "service",
+   "date": "2026-01-17T13:45:09",
+   "date_unixtime": "1768646709",
+   "actor": "Shimmer",
+   "actor_id": "user5222739418",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 75,
+   "type": "message",
+   "date": "2026-01-18T03:24:58",
+   "date_unixtime": "1768695898",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "reply_to_message_id": 69,
+   "text": "тем более у гемблера нет разработчиков буквально",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "тем более у гемблера нет разработчиков буквально"
+    }
+   ]
+  },
+  {
+   "id": 76,
+   "type": "message",
+   "date": "2026-01-18T03:25:15",
+   "date_unixtime": "1768695915",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 75,
+   "text": "С чего ты взял?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "С чего ты взял?"
+    }
+   ]
+  },
+  {
+   "id": 77,
+   "type": "message",
+   "date": "2026-01-18T03:25:36",
+   "date_unixtime": "1768695936",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "ты видел за последние 3 месяца например обновление связанное именно с функционалом а не с дизайном?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "ты видел за последние 3 месяца например обновление связанное именно с функционалом а не с дизайном?"
+    }
+   ]
+  },
+  {
+   "id": 78,
+   "type": "message",
+   "date": "2026-01-18T03:25:43",
+   "date_unixtime": "1768695943",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "у него нет бэкендеров",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "у него нет бэкендеров"
+    }
+   ]
+  },
+  {
+   "id": 79,
+   "type": "message",
+   "date": "2026-01-18T03:26:10",
+   "date_unixtime": "1768695970",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "я почему то прям на 99% уверен",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "я почему то прям на 99% уверен"
+    }
+   ]
+  },
+  {
+   "id": 80,
+   "type": "message",
+   "date": "2026-01-18T03:26:16",
+   "date_unixtime": "1768695976",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "что больше обновлений по влютам и тд не будет",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "что больше обновлений по влютам и тд не будет"
+    }
+   ]
+  },
+  {
+   "id": 81,
+   "type": "message",
+   "date": "2026-01-18T03:26:34",
+   "date_unixtime": "1768695994",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 77,
+   "text": "Думаешь они просто один раз заплатили фрилансеру и потом забили?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Думаешь они просто один раз заплатили фрилансеру и потом забили?"
+    }
+   ]
+  },
+  {
+   "id": 82,
+   "type": "message",
+   "date": "2026-01-18T03:26:40",
+   "date_unixtime": "1768696000",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "text": "Хотя бля у них же сток бабок",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Хотя бля у них же сток бабок"
+    }
+   ]
+  },
+  {
+   "id": 83,
+   "type": "message",
+   "date": "2026-01-18T03:26:42",
+   "date_unixtime": "1768696002",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "много чего могло произойти",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "много чего могло произойти"
+    }
+   ]
+  },
+  {
+   "id": 84,
+   "type": "message",
+   "date": "2026-01-18T03:26:46",
+   "date_unixtime": "1768696006",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "даже бабки не решают",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "даже бабки не решают"
+    }
+   ]
+  },
+  {
+   "id": 85,
+   "type": "message",
+   "date": "2026-01-18T03:26:48",
+   "date_unixtime": "1768696008",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "text": "Почему им норм разрабов не взять",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Почему им норм разрабов не взять"
+    }
+   ]
+  },
+  {
+   "id": 86,
+   "type": "message",
+   "date": "2026-01-18T03:26:53",
+   "date_unixtime": "1768696013",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "бэкенд это самый важный функционал",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "бэкенд это самый важный функционал"
+    }
+   ]
+  },
+  {
+   "id": 87,
+   "type": "message",
+   "date": "2026-01-18T03:26:57",
+   "date_unixtime": "1768696017",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "если фронт спиздить можно",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "если фронт спиздить можно"
+    }
+   ]
+  },
+  {
+   "id": 88,
+   "type": "message",
+   "date": "2026-01-18T03:27:03",
+   "date_unixtime": "1768696023",
+   "edited": "2026-01-18T03:27:09",
+   "edited_unixtime": "1768696029",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "то бэк никому отдавать не проверенному нельзя",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "то бэк никому отдавать не проверенному нельзя"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "All-in",
+        "from_id": "user7482879192",
+        "date": "2026-01-18T03:27:09"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 89,
+   "type": "message",
+   "date": "2026-01-18T03:27:09",
+   "date_unixtime": "1768696029",
+   "edited": "2026-01-18T03:27:16",
+   "edited_unixtime": "1768696036",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "ток если в ирл набрать чтоб колени прострелить",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "ток если в ирл набрать чтоб колени прострелить"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "😁",
+      "recent": [
+       {
+        "from": "All-in",
+        "from_id": "user7482879192",
+        "date": "2026-01-18T03:27:16"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 90,
+   "type": "message",
+   "date": "2026-01-18T03:27:13",
+   "date_unixtime": "1768696033",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "а тут тоже знаешь",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "а тут тоже знаешь"
+    }
+   ]
+  },
+  {
+   "id": 91,
+   "type": "message",
+   "date": "2026-01-18T03:27:17",
+   "date_unixtime": "1768696037",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "как ты найдешь в ирл",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "как ты найдешь в ирл"
+    }
+   ]
+  },
+  {
+   "id": 92,
+   "type": "message",
+   "date": "2026-01-18T03:27:33",
+   "date_unixtime": "1768696053",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "а у того же люксарда",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "а у того же люксарда"
+    }
+   ]
+  },
+  {
+   "id": 93,
+   "type": "message",
+   "date": "2026-01-18T03:27:36",
+   "date_unixtime": "1768696056",
+   "edited": "2026-01-18T03:27:42",
+   "edited_unixtime": "1768696062",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "по фиче в день выходит",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "по фиче в день выходит"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "All-in",
+        "from_id": "user7482879192",
+        "date": "2026-01-18T03:27:42"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 94,
+   "type": "message",
+   "date": "2026-01-18T03:27:41",
+   "date_unixtime": "1768696061",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "уже больше функционала чем у гемблера",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "уже больше функционала чем у гемблера"
+    }
+   ]
+  },
+  {
+   "id": 95,
+   "type": "message",
+   "date": "2026-01-18T03:28:04",
+   "date_unixtime": "1768696084",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 92,
+   "text": "Бля ну они прям 1 в 1 чуть ли не каждую кнопку и текст спиздили у гемблера",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Бля ну они прям 1 в 1 чуть ли не каждую кнопку и текст спиздили у гемблера"
+    }
+   ]
+  },
+  {
+   "id": 96,
+   "type": "message",
+   "date": "2026-01-18T03:28:34",
+   "date_unixtime": "1768696114",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "ничего не поделаешь с этим потому что это одна и та же сфера",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "ничего не поделаешь с этим потому что это одна и та же сфера"
+    }
+   ]
+  },
+  {
+   "id": 97,
+   "type": "message",
+   "date": "2026-01-18T03:28:50",
+   "date_unixtime": "1768696130",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "но у них есть беттинг где кастом стримы загружать можно еще",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "но у них есть беттинг где кастом стримы загружать можно еще"
+    }
+   ]
+  },
+  {
+   "id": 98,
+   "type": "message",
+   "date": "2026-01-18T03:28:54",
+   "date_unixtime": "1768696134",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "и загрузка своих лендосов",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "и загрузка своих лендосов"
+    }
+   ]
+  },
+  {
+   "id": 99,
+   "type": "message",
+   "date": "2026-01-18T03:29:00",
+   "date_unixtime": "1768696140",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 97,
+   "text": "Это прям топ",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Это прям топ"
+    }
+   ]
+  },
+  {
+   "id": 100,
+   "type": "message",
+   "date": "2026-01-18T03:29:02",
+   "date_unixtime": "1768696142",
+   "edited": "2026-01-18T03:29:09",
+   "edited_unixtime": "1768696149",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "вместо того чтоб ставить эти порно лендосы трап сосет гею",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "вместо того чтоб ставить эти порно лендосы трап сосет гею"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "😁",
+      "recent": [
+       {
+        "from": "All-in",
+        "from_id": "user7482879192",
+        "date": "2026-01-18T03:29:10"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 101,
+   "type": "message",
+   "date": "2026-01-18T03:29:46",
+   "date_unixtime": "1768696186",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "если у гемблера обновы где он ток дизайны дрочит",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "если у гемблера обновы где он ток дизайны дрочит"
+    }
+   ]
+  },
+  {
+   "id": 102,
+   "type": "message",
+   "date": "2026-01-18T03:29:54",
+   "date_unixtime": "1768696194",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "то тут я хз будто функционал который ваще все переворачивает",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "то тут я хз будто функционал который ваще все переворачивает"
+    }
+   ]
+  },
+  {
+   "id": 103,
+   "type": "message",
+   "date": "2026-01-18T03:33:24",
+   "date_unixtime": "1768696404",
+   "edited": "2026-01-18T03:39:19",
+   "edited_unixtime": "1768696759",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "и там оффер лучше имхо",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "и там оффер лучше имхо"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "All-in",
+        "from_id": "user7482879192",
+        "date": "2026-01-18T03:39:20"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 104,
+   "type": "service",
+   "date": "2026-01-18T18:46:31",
+   "date_unixtime": "1768751191",
+   "actor": "Purify Light",
+   "actor_id": "user6533516867",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 105,
+   "type": "message",
+   "date": "2026-01-18T19:00:31",
+   "date_unixtime": "1768752031",
+   "from": "Purify Light",
+   "from_id": "user6533516867",
+   "text": [
+    {
+     "type": "mention",
+     "text": "@melvin_creos"
+    },
+    " бля и ты уже тут"
+   ],
+   "text_entities": [
+    {
+     "type": "mention",
+     "text": "@melvin_creos"
+    },
+    {
+     "type": "plain",
+     "text": " бля и ты уже тут"
+    }
+   ]
+  },
+  {
+   "id": 106,
+   "type": "message",
+   "date": "2026-01-18T19:00:47",
+   "date_unixtime": "1768752047",
+   "from": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+   "from_id": "user7306401729",
+   "reply_to_message_id": 105,
+   "text": "Тоже увидел, что зашел, не стал выписывать))) Как ты брат?)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Тоже увидел, что зашел, не стал выписывать))) Как ты брат?)"
+    }
+   ]
+  },
+  {
+   "id": 107,
+   "type": "message",
+   "date": "2026-01-18T19:00:58",
+   "date_unixtime": "1768752058",
+   "edited": "2026-01-18T19:01:10",
+   "edited_unixtime": "1768752070",
+   "from": "Purify Light",
+   "from_id": "user6533516867",
+   "reply_to_message_id": 106,
+   "file": "video_files/tiktok-tiktokbad.mp4",
+   "file_name": "tiktok-tiktokbad.mp4",
+   "file_size": 65521,
+   "media_type": "animation",
+   "mime_type": "video/mp4",
+   "duration_seconds": 6,
+   "width": 208,
+   "height": 156,
+   "text": "",
+   "text_entities": [],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤",
+      "recent": [
+       {
+        "from": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+        "from_id": "user7306401729",
+        "date": "2026-01-18T19:01:10"
+       }
+      ]
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "😁",
+      "recent": [
+       {
+        "from": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+        "from_id": "user7306401729",
+        "date": "2026-01-18T19:01:10"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 108,
+   "type": "message",
+   "date": "2026-01-18T19:01:50",
+   "date_unixtime": "1768752110",
+   "from": "Purify Light",
+   "from_id": "user6533516867",
+   "reply_to_message_id": 106,
+   "text": "тик ток сдох кардинг сдох анлак",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "тик ток сдох кардинг сдох анлак"
+    }
+   ]
+  },
+  {
+   "id": 109,
+   "type": "message",
+   "date": "2026-01-18T19:02:10",
+   "date_unixtime": "1768752130",
+   "from": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+   "from_id": "user7306401729",
+   "reply_to_message_id": 108,
+   "text": "чем занимаешься щас?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "чем занимаешься щас?"
+    }
+   ]
+  },
+  {
+   "id": 110,
+   "type": "message",
+   "date": "2026-01-18T19:02:31",
+   "date_unixtime": "1768752151",
+   "from": "Purify Light",
+   "from_id": "user6533516867",
+   "reply_to_message_id": 109,
+   "text": "Строительный бизнес открыл",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Строительный бизнес открыл"
+    }
+   ]
+  },
+  {
+   "id": 111,
+   "type": "message",
+   "date": "2026-01-18T19:02:37",
+   "date_unixtime": "1768752157",
+   "from": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+   "from_id": "user7306401729",
+   "reply_to_message_id": 110,
+   "text": "возьмешь прорабом?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "возьмешь прорабом?"
+    }
+   ]
+  },
+  {
+   "id": 112,
+   "type": "message",
+   "date": "2026-01-18T19:02:42",
+   "date_unixtime": "1768752162",
+   "from": "Purify Light",
+   "from_id": "user6533516867",
+   "text": "Уже занято",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Уже занято"
+    }
+   ]
+  },
+  {
+   "id": 113,
+   "type": "message",
+   "date": "2026-01-18T19:03:14",
+   "date_unixtime": "1768752194",
+   "from": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+   "from_id": "user7306401729",
+   "reply_to_message_id": 112,
+   "text": "По старой дружбе.",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "По старой дружбе."
+    }
+   ]
+  },
+  {
+   "id": 114,
+   "type": "message",
+   "date": "2026-01-18T19:03:24",
+   "date_unixtime": "1768752204",
+   "from": "Purify Light",
+   "from_id": "user6533516867",
+   "reply_to_message_id": 113,
+   "text": "Знакомы?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Знакомы?"
+    }
+   ]
+  },
+  {
+   "id": 115,
+   "type": "message",
+   "date": "2026-01-18T19:03:33",
+   "date_unixtime": "1768752213",
+   "from": "🔰 ᴍᴇʟᴠɪɴ 𝐁𝐈𝐎 [𝐃𝐄𝐄𝐏/𝐂𝐑𝐄𝐎/𝐑𝐄𝐄𝐋𝐒]",
+   "from_id": "user7306401729",
+   "reply_to_message_id": 114,
+   "file": "video_files/sticker.webm",
+   "file_name": "sticker.webm",
+   "file_size": 47104,
+   "thumbnail": "video_files/sticker.webm_thumb.jpg",
+   "thumbnail_file_size": 5098,
+   "media_type": "sticker",
+   "sticker_emoji": "😲",
+   "mime_type": "video/webm",
+   "width": 512,
+   "height": 410,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 116,
+   "type": "message",
+   "date": "2026-01-18T19:05:43",
+   "date_unixtime": "1768752343",
+   "from": "Purify Light",
+   "from_id": "user6533516867",
+   "file": "video_files/@VideoToGifConverterBot.mp4",
+   "file_name": "@VideoToGifConverterBot.mp4",
+   "file_size": 84236,
+   "thumbnail": "video_files/@VideoToGifConverterBot.mp4_thumb.jpg",
+   "thumbnail_file_size": 7547,
+   "media_type": "animation",
+   "mime_type": "video/mp4",
+   "duration_seconds": 4,
+   "width": 1280,
+   "height": 330,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 117,
+   "type": "service",
+   "date": "2026-01-20T10:45:04",
+   "date_unixtime": "1768895104",
+   "actor": "𝖚𝖓𝖉𝖊𝖗 не афк",
+   "actor_id": "user6788803871",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 118,
+   "type": "service",
+   "date": "2026-01-20T10:47:01",
+   "date_unixtime": "1768895221",
+   "actor": "𝖚𝖓𝖉𝖊𝖗 не афк",
+   "actor_id": "user6788803871",
+   "action": "remove_members",
+   "members": [
+    "𝖚𝖓𝖉𝖊𝖗 не афк"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 119,
+   "type": "service",
+   "date": "2026-01-20T18:59:54",
+   "date_unixtime": "1768924794",
+   "actor": "Илья",
+   "actor_id": "user1928069002",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 120,
+   "type": "service",
+   "date": "2026-01-20T19:41:39",
+   "date_unixtime": "1768927299",
+   "actor": "Илья",
+   "actor_id": "user1928069002",
+   "action": "remove_members",
+   "members": [
+    "Илья"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 121,
+   "type": "service",
+   "date": "2026-01-20T20:03:45",
+   "date_unixtime": "1768928625",
+   "actor": "bezzavesti",
+   "actor_id": "user7195155937",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 122,
+   "type": "service",
+   "date": "2026-01-20T23:36:13",
+   "date_unixtime": "1768941373",
+   "actor": "6:66",
+   "actor_id": "user938096555",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 123,
+   "type": "service",
+   "date": "2026-01-21T23:19:48",
+   "date_unixtime": "1769026788",
+   "actor": "Ye",
+   "actor_id": "user1848799660",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 124,
+   "type": "message",
+   "date": "2026-01-21T23:20:11",
+   "date_unixtime": "1769026811",
+   "edited": "2026-01-21T23:22:12",
+   "edited_unixtime": "1769026932",
+   "from": "Ye",
+   "from_id": "user1848799660",
+   "text": "Дарова",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Дарова"
+    }
+   ]
+  },
+  {
+   "id": 125,
+   "type": "message",
+   "date": "2026-01-21T23:20:22",
+   "date_unixtime": "1769026822",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "👋",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "👋"
+    }
+   ]
+  },
+  {
+   "id": 126,
+   "type": "message",
+   "date": "2026-01-21T23:24:43",
+   "date_unixtime": "1769027083",
+   "from": "Ye",
+   "from_id": "user1848799660",
+   "text": "А че делать надо щас",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "А че делать надо щас"
+    }
+   ]
+  },
+  {
+   "id": 127,
+   "type": "message",
+   "date": "2026-01-21T23:24:49",
+   "date_unixtime": "1769027089",
+   "from": "Ye",
+   "from_id": "user1848799660",
+   "text": "В чем задача моя",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "В чем задача моя"
+    }
+   ]
+  },
+  {
+   "id": 128,
+   "type": "message",
+   "date": "2026-01-22T00:28:45",
+   "date_unixtime": "1769030925",
+   "from": "All-in",
+   "from_id": "user7482879192",
+   "reply_to_message_id": 127,
+   "text": "Плакать",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Плакать"
+    }
+   ]
+  },
+  {
+   "id": 129,
+   "type": "service",
+   "date": "2026-01-23T15:34:18",
+   "date_unixtime": "1769171658",
+   "actor": "Omerta Funds",
+   "actor_id": "user454503574",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 130,
+   "type": "service",
+   "date": "2026-01-23T16:36:42",
+   "date_unixtime": "1769175402",
+   "actor": "УСПЕХОВ/FART'Y-ZARYADA.i-Jly6Bu-VS3m.RODvDH6lM'4.a1-JlXBC—ССП8.8 Костями лягу только за родних, сукки ебанние",
+   "actor_id": "user7703839598",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 131,
+   "type": "message",
+   "date": "2026-01-23T16:44:58",
+   "date_unixtime": "1769175898",
+   "from": "УСПЕХОВ/FART'Y-ZARYADA.i-Jly6Bu-VS3m.RODvDH6lM'4.a1-JlXBC—ССП8.8 Костями лягу только за родних, сукки ебанние",
+   "from_id": "user7703839598",
+   "text": "Ку",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ку"
+    }
+   ]
+  },
+  {
+   "id": 132,
+   "type": "message",
+   "date": "2026-01-23T16:45:18",
+   "date_unixtime": "1769175918",
+   "from": "УСПЕХОВ/FART'Y-ZARYADA.i-Jly6Bu-VS3m.RODvDH6lM'4.a1-JlXBC—ССП8.8 Костями лягу только за родних, сукки ебанние",
+   "from_id": "user7703839598",
+   "text": "Я вошёл по логину и пассу",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Я вошёл по логину и пассу"
+    }
+   ]
+  },
+  {
+   "id": 133,
+   "type": "message",
+   "date": "2026-01-23T16:45:36",
+   "date_unixtime": "1769175936",
+   "from": "УСПЕХОВ/FART'Y-ZARYADA.i-Jly6Bu-VS3m.RODvDH6lM'4.a1-JlXBC—ССП8.8 Костями лягу только за родних, сукки ебанние",
+   "from_id": "user7703839598",
+   "text": "Где я могу смотреть онлайн приведенных клиентов?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Где я могу смотреть онлайн приведенных клиентов?"
+    }
+   ]
+  },
+  {
+   "id": 134,
+   "type": "service",
+   "date": "2026-01-23T16:46:00",
+   "date_unixtime": "1769175960",
+   "actor": "bezzavesti",
+   "actor_id": "user7195155937",
+   "action": "remove_members",
+   "members": [
+    "bezzavesti"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 135,
+   "type": "message",
+   "date": "2026-01-23T16:46:07",
+   "date_unixtime": "1769175967",
+   "from": "УСПЕХОВ/FART'Y-ZARYADA.i-Jly6Bu-VS3m.RODvDH6lM'4.a1-JlXBC—ССП8.8 Костями лягу только за родних, сукки ебанние",
+   "from_id": "user7703839598",
+   "text": "Что мне рекламировать, как я пойму где мой мамонт",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Что мне рекламировать, как я пойму где мой мамонт"
+    }
+   ]
+  },
+  {
+   "id": 136,
+   "type": "message",
+   "date": "2026-01-23T16:46:13",
+   "date_unixtime": "1769175973",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "Раздел \"Пользователи\", там и статистика",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Раздел \"Пользователи\", там и статистика"
+    }
+   ]
+  },
+  {
+   "id": 137,
+   "type": "message",
+   "date": "2026-01-23T16:46:31",
+   "date_unixtime": "1769175991",
+   "from": "УСПЕХОВ/FART'Y-ZARYADA.i-Jly6Bu-VS3m.RODvDH6lM'4.a1-JlXBC—ССП8.8 Костями лягу только за родних, сукки ебанние",
+   "from_id": "user7703839598",
+   "reply_to_message_id": 136,
+   "text": "Рекламить тот домен что выдал бот и все?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Рекламить тот домен что выдал бот и все?"
+    }
+   ]
+  },
+  {
+   "id": 138,
+   "type": "message",
+   "date": "2026-01-23T16:46:49",
+   "date_unixtime": "1769176009",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "Бот панель выдал, тут нужно свой домен привязать",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Бот панель выдал, тут нужно свой домен привязать"
+    }
+   ]
+  },
+  {
+   "id": 139,
+   "type": "message",
+   "date": "2026-01-23T16:47:14",
+   "date_unixtime": "1769176034",
+   "from": "УСПЕХОВ/FART'Y-ZARYADA.i-Jly6Bu-VS3m.RODvDH6lM'4.a1-JlXBC—ССП8.8 Костями лягу только за родних, сукки ебанние",
+   "from_id": "user7703839598",
+   "text": "А Где",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "А Где"
+    }
+   ]
+  },
+  {
+   "id": 140,
+   "type": "service",
+   "date": "2026-01-23T19:37:01",
+   "date_unixtime": "1769186221",
+   "actor": "murphy",
+   "actor_id": "user8461543646",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 141,
+   "type": "service",
+   "date": "2026-01-23T19:42:15",
+   "date_unixtime": "1769186535",
+   "actor": "murphy",
+   "actor_id": "user8461543646",
+   "action": "remove_members",
+   "members": [
+    "murphy"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 142,
+   "type": "service",
+   "date": "2026-01-23T21:38:21",
+   "date_unixtime": "1769193501",
+   "actor": "Андрей",
+   "actor_id": "user8210019170",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 143,
+   "type": "service",
+   "date": "2026-01-24T13:38:07",
+   "date_unixtime": "1769251087",
+   "actor": "Shimmer",
+   "actor_id": "user5222739418",
+   "action": "remove_members",
+   "members": [
+    "Shimmer"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 144,
+   "type": "service",
+   "date": "2026-01-24T13:42:38",
+   "date_unixtime": "1769251358",
+   "actor": "d",
+   "actor_id": "user1336474956",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 145,
+   "type": "service",
+   "date": "2026-01-25T15:20:58",
+   "date_unixtime": "1769343658",
+   "actor": "Pyro",
+   "actor_id": "user7731552711",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 146,
+   "type": "service",
+   "date": "2026-01-25T19:15:48",
+   "date_unixtime": "1769357748",
+   "actor": "conscience not to face",
+   "actor_id": "user1779472342",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 147,
+   "type": "service",
+   "date": "2026-01-26T13:41:46",
+   "date_unixtime": "1769424106",
+   "actor": "🦅🇲🇽",
+   "actor_id": "user8362530985",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 148,
+   "type": "message",
+   "date": "2026-01-26T13:43:07",
+   "date_unixtime": "1769424187",
+   "from": "🦅🇲🇽",
+   "from_id": "user8362530985",
+   "text": "здарова",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "здарова"
+    }
+   ]
+  },
+  {
+   "id": 149,
+   "type": "message",
+   "date": "2026-01-26T13:43:26",
+   "date_unixtime": "1769424206",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "👋",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "👋"
+    }
+   ]
+  },
+  {
+   "id": 150,
+   "type": "message",
+   "date": "2026-01-26T13:57:00",
+   "date_unixtime": "1769425020",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "photo": "photos/photo_5@26-01-2026_13-57-00.jpg",
+   "photo_file_size": 23494,
+   "width": 346,
+   "height": 541,
+   "text": "а поч оно такое",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "а поч оно такое"
+    }
+   ]
+  },
+  {
+   "id": 151,
+   "type": "message",
+   "date": "2026-01-26T14:02:14",
+   "date_unixtime": "1769425334",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "А какое должно быть?\nЭто стандартная форма чата",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "А какое должно быть?\nЭто стандартная форма чата"
+    }
+   ]
+  },
+  {
+   "id": 152,
+   "type": "service",
+   "date": "2026-01-26T14:02:17",
+   "date_unixtime": "1769425337",
+   "actor": "Андрей",
+   "actor_id": "user8210019170",
+   "action": "remove_members",
+   "members": [
+    "Андрей"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 153,
+   "type": "message",
+   "date": "2026-01-26T14:08:30",
+   "date_unixtime": "1769425710",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "reply_to_message_id": 150,
+   "text": "хз чтоб этот блок хотябы не выходил за хедер чтоб этот блок был внутри сапки",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "хз чтоб этот блок хотябы не выходил за хедер чтоб этот блок был внутри сапки"
+    }
+   ]
+  },
+  {
+   "id": 154,
+   "type": "message",
+   "date": "2026-01-26T14:09:15",
+   "date_unixtime": "1769425755",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "Так в этом и суть, это диз такой",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Так в этом и суть, это диз такой"
+    }
+   ]
+  },
+  {
+   "id": 155,
+   "type": "message",
+   "date": "2026-01-26T14:13:27",
+   "date_unixtime": "1769426007",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "text": "ну нормально нормально да",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "ну нормально нормально да"
+    }
+   ]
+  },
+  {
+   "id": 156,
+   "type": "service",
+   "date": "2026-01-26T14:17:27",
+   "date_unixtime": "1769426247",
+   "actor": "Bogdik",
+   "actor_id": "user956241015",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 157,
+   "type": "service",
+   "date": "2026-01-26T14:20:50",
+   "date_unixtime": "1769426450",
+   "actor": "Bogdik",
+   "actor_id": "user956241015",
+   "action": "remove_members",
+   "members": [
+    "Bogdik"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 158,
+   "type": "service",
+   "date": "2026-01-26T19:01:44",
+   "date_unixtime": "1769443304",
+   "actor": "Eh2920 Cars",
+   "actor_id": "user8350011121",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 159,
+   "type": "service",
+   "date": "2026-01-26T19:13:34",
+   "date_unixtime": "1769444014",
+   "actor": "🦅🇲🇽",
+   "actor_id": "user8362530985",
+   "action": "remove_members",
+   "members": [
+    "🦅🇲🇽"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 160,
+   "type": "service",
+   "date": "2026-01-26T20:35:12",
+   "date_unixtime": "1769448912",
+   "actor": "Jim",
+   "actor_id": "user7554787439",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 161,
+   "type": "service",
+   "date": "2026-01-27T17:13:29",
+   "date_unixtime": "1769523209",
+   "actor": "Grey Wolf",
+   "actor_id": "user7988509200",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 162,
+   "type": "message",
+   "date": "2026-01-27T17:13:41",
+   "date_unixtime": "1769523221",
+   "from": "Grey Wolf",
+   "from_id": "user7988509200",
+   "text": "Всем привет",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Всем привет"
+    }
+   ]
+  },
+  {
+   "id": 163,
+   "type": "message",
+   "date": "2026-01-27T17:13:51",
+   "date_unixtime": "1769523231",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "👋",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "👋"
+    }
+   ]
+  },
+  {
+   "id": 164,
+   "type": "service",
+   "date": "2026-01-27T21:26:36",
+   "date_unixtime": "1769538396",
+   "actor": "🇺🇸 archgeniue",
+   "actor_id": "user1167573803",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 165,
+   "type": "service",
+   "date": "2026-01-27T21:27:20",
+   "date_unixtime": "1769538440",
+   "actor": "🇺🇸 archgeniue",
+   "actor_id": "user1167573803",
+   "action": "remove_members",
+   "members": [
+    "🇺🇸 archgeniue"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 166,
+   "type": "service",
+   "date": "2026-01-27T22:39:31",
+   "date_unixtime": "1769542771",
+   "actor": "Mohhamed Strange",
+   "actor_id": "user8482765564",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 167,
+   "type": "service",
+   "date": "2026-01-28T00:25:23",
+   "date_unixtime": "1769549123",
+   "actor": "Mohhamed Strange",
+   "actor_id": "user8482765564",
+   "action": "remove_members",
+   "members": [
+    "Mohhamed Strange"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 168,
+   "type": "service",
+   "date": "2026-01-28T12:36:00",
+   "date_unixtime": "1769592960",
+   "actor": "Bilbo Ebobebins",
+   "actor_id": "user8190096666",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 169,
+   "type": "message",
+   "date": "2026-01-28T12:42:47",
+   "date_unixtime": "1769593367",
+   "from": "Bilbo Ebobebins",
+   "from_id": "user8190096666",
+   "text": "привет всем, есть мануал?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "привет всем, есть мануал?"
+    }
+   ]
+  },
+  {
+   "id": 170,
+   "type": "message",
+   "date": "2026-01-28T12:42:58",
+   "date_unixtime": "1769593378",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "👋",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "👋"
+    }
+   ]
+  },
+  {
+   "id": 171,
+   "type": "message",
+   "date": "2026-01-28T12:43:00",
+   "date_unixtime": "1769593380",
+   "edited": "2026-01-28T12:43:09",
+   "edited_unixtime": "1769593389",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "Да",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Да"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤",
+      "recent": [
+       {
+        "from": "Bilbo Ebobebins",
+        "from_id": "user8190096666",
+        "date": "2026-01-28T12:43:09"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 172,
+   "type": "service",
+   "date": "2026-01-28T18:20:10",
+   "date_unixtime": "1769613610",
+   "actor": "rWn",
+   "actor_id": "user1002019079",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 173,
+   "type": "service",
+   "date": "2026-01-28T18:27:31",
+   "date_unixtime": "1769614051",
+   "actor": "rWn",
+   "actor_id": "user1002019079",
+   "action": "remove_members",
+   "members": [
+    "rWn"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 174,
+   "type": "service",
+   "date": "2026-01-28T18:37:58",
+   "date_unixtime": "1769614678",
+   "actor": "Me",
+   "actor_id": "user283011911",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 175,
+   "type": "service",
+   "date": "2026-01-28T19:31:31",
+   "date_unixtime": "1769617891",
+   "actor": "1",
+   "actor_id": "user8231399573",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 176,
+   "type": "service",
+   "date": "2026-01-28T19:32:48",
+   "date_unixtime": "1769617968",
+   "actor": "Maks Yakovlev",
+   "actor_id": "user1928089227",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 177,
+   "type": "service",
+   "date": "2026-01-28T19:54:40",
+   "date_unixtime": "1769619280",
+   "actor": "Isejjwkwi",
+   "actor_id": "user1809177771",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 178,
+   "type": "service",
+   "date": "2026-01-28T19:58:05",
+   "date_unixtime": "1769619485",
+   "actor": "Maks Yakovlev",
+   "actor_id": "user1928089227",
+   "action": "remove_members",
+   "members": [
+    "Maks Yakovlev"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 179,
+   "type": "service",
+   "date": "2026-01-28T20:01:21",
+   "date_unixtime": "1769619681",
+   "actor": "🦈",
+   "actor_id": "user5825313256",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 180,
+   "type": "service",
+   "date": "2026-01-28T20:06:03",
+   "date_unixtime": "1769619963",
+   "actor": "Kjjjiiji",
+   "actor_id": "user6894214328",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 181,
+   "type": "service",
+   "date": "2026-01-28T20:17:27",
+   "date_unixtime": "1769620647",
+   "actor": "Ivan",
+   "actor_id": "user1003939200",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 182,
+   "type": "service",
+   "date": "2026-01-28T20:27:43",
+   "date_unixtime": "1769621263",
+   "actor": "cbd",
+   "actor_id": "user6405812261",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 183,
+   "type": "service",
+   "date": "2026-01-28T20:28:26",
+   "date_unixtime": "1769621306",
+   "actor": "Антон",
+   "actor_id": "user310092374",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 184,
+   "type": "service",
+   "date": "2026-01-28T20:29:09",
+   "date_unixtime": "1769621349",
+   "actor": "cbd",
+   "actor_id": "user6405812261",
+   "action": "remove_members",
+   "members": [
+    "cbd"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 185,
+   "type": "service",
+   "date": "2026-01-28T20:31:28",
+   "date_unixtime": "1769621488",
+   "actor": "Шлюха фембой 💗",
+   "actor_id": "user940039384",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 186,
+   "type": "message",
+   "date": "2026-01-28T20:31:52",
+   "date_unixtime": "1769621512",
+   "from": "Шлюха фембой 💗",
+   "from_id": "user940039384",
+   "text": "Где рефку взять?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Где рефку взять?"
+    }
+   ]
+  },
+  {
+   "id": 187,
+   "type": "service",
+   "date": "2026-01-28T20:37:06",
+   "date_unixtime": "1769621826",
+   "actor": "карат",
+   "actor_id": "user7776996206",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 188,
+   "type": "service",
+   "date": "2026-01-28T21:08:10",
+   "date_unixtime": "1769623690",
+   "actor": "Mauglee",
+   "actor_id": "user7813744534",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 189,
+   "type": "service",
+   "date": "2026-01-28T22:28:28",
+   "date_unixtime": "1769628508",
+   "actor": "Алексей",
+   "actor_id": "user886308776",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 190,
+   "type": "service",
+   "date": "2026-01-28T22:30:13",
+   "date_unixtime": "1769628613",
+   "actor": "Алексей",
+   "actor_id": "user886308776",
+   "action": "remove_members",
+   "members": [
+    "Алексей"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 191,
+   "type": "service",
+   "date": "2026-01-28T22:56:56",
+   "date_unixtime": "1769630216",
+   "actor": "Wassup",
+   "actor_id": "user1975183764",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 192,
+   "type": "service",
+   "date": "2026-01-28T23:47:39",
+   "date_unixtime": "1769633259",
+   "actor": "michelin",
+   "actor_id": "user1169545161",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 193,
+   "type": "message",
+   "date": "2026-01-28T23:48:04",
+   "date_unixtime": "1769633284",
+   "from": "michelin",
+   "from_id": "user1169545161",
+   "text": "новая тима, да?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "новая тима, да?"
+    }
+   ]
+  },
+  {
+   "id": 194,
+   "type": "message",
+   "date": "2026-01-28T23:48:14",
+   "date_unixtime": "1769633294",
+   "from": "Zeus",
+   "from_id": "user8357671727",
+   "text": "Да",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Да"
+    }
+   ]
+  },
+  {
+   "id": 195,
+   "type": "message",
+   "date": "2026-01-28T23:49:32",
+   "date_unixtime": "1769633372",
+   "from": "michelin",
+   "from_id": "user1169545161",
+   "photo": "photos/photo_6@28-01-2026_23-49-32.jpg",
+   "photo_file_size": 49153,
+   "width": 590,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 196,
+   "type": "message",
+   "date": "2026-01-28T23:49:37",
+   "date_unixtime": "1769633377",
+   "from": "michelin",
+   "from_id": "user1169545161",
+   "reply_to_message_id": 195,
+   "text": "пофиксите",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "пофиксите"
+    }
+   ]
+  },
+  {
+   "id": 197,
+   "type": "message",
+   "date": "2026-01-28T23:50:09",
+   "date_unixtime": "1769633409",
+   "from": "карат",
+   "from_id": "user7776996206",
+   "reply_to_message_id": 195,
+   "text": "На конверт влияет , остальное норм",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "На конверт влияет , остальное норм"
+    }
+   ]
+  },
+  {
+   "id": 198,
+   "type": "message",
+   "date": "2026-01-29T00:08:39",
+   "date_unixtime": "1769634519",
+   "from": "дуся няшкинс",
+   "from_id": "user8296515832",
+   "reply_to_message_id": 197,
+   "text": "да",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "да"
+    }
+   ]
+  },
+  {
+   "id": 199,
+   "type": "service",
+   "date": "2026-01-29T00:11:06",
+   "date_unixtime": "1769634666",
+   "actor": "Бонус😎",
+   "actor_id": "user8054069428",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 200,
+   "type": "service",
+   "date": "2026-01-29T00:23:01",
+   "date_unixtime": "1769635381",
+   "actor": "Бонус😎",
+   "actor_id": "user8054069428",
+   "action": "remove_members",
+   "members": [
+    "Бонус😎"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 201,
+   "type": "message",
+   "date": "2026-01-29T01:25:15",
+   "date_unixtime": "1769639115",
+   "from": "Purify Light",
+   "from_id": "user6533516867",
+   "reply_to_message_id": 195,
+   "text": "Так это мейн домен",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Так это мейн домен"
+    }
+   ]
+  },
+  {
+   "id": 202,
+   "type": "message",
+   "date": "2026-01-29T01:27:29",
+   "date_unixtime": "1769639249",
+   "from": "карат",
+   "from_id": "user7776996206",
+   "photo": "photos/photo_7@29-01-2026_01-27-29.jpg",
+   "photo_file_size": 14431,
+   "width": 492,
+   "height": 287,
+   "text": "Я не могу скамить индусов если мне 16?((((",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Я не могу скамить индусов если мне 16?(((("
+    }
+   ]
+  },
+  {
+   "id": 203,
+   "type": "service",
+   "date": "2026-01-29T10:57:55",
+   "date_unixtime": "1769673475",
+   "actor": "Т",
+   "actor_id": "user6659991323",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 204,
+   "type": "service",
+   "date": "2026-01-29T12:40:38",
+   "date_unixtime": "1769679638",
+   "actor": "WW",
+   "actor_id": "user7498725898",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 205,
+   "type": "service",
+   "date": "2026-01-29T16:02:04",
+   "date_unixtime": "1769691724",
+   "actor": "ceofirma",
+   "actor_id": "user8088127073",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 206,
+   "type": "service",
+   "date": "2026-01-29T16:03:58",
+   "date_unixtime": "1769691838",
+   "actor": "ceofirma",
+   "actor_id": "user8088127073",
+   "action": "remove_members",
+   "members": [
+    "ceofirma"
+   ],
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 207,
+   "type": "service",
+   "date": "2026-01-29T21:31:09",
+   "date_unixtime": "1769711469",
+   "actor": "#RATT",
+   "actor_id": "user6841518813",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 208,
+   "type": "service",
+   "date": "2026-01-30T10:04:21",
+   "date_unixtime": "1769756661",
+   "actor": "Steve",
+   "actor_id": "user6266427434",
+   "action": "join_group_by_link",
+   "inviter": "Group",
+   "text": "",
+   "text_entities": []
+  }
+ ]
+}

