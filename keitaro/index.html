@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keitaro TDS - Detection Toolkit</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.7}
+.container{max-width:1200px;margin:0 auto;padding:30px 20px}
+h1{color:#f59e0b;font-size:2.2em;margin-bottom:10px;text-align:center}
+.subtitle{color:#888;text-align:center;margin-bottom:30px;font-size:1.1em}
+.disclaimer{background:linear-gradient(135deg,#1a1a2e,#16213e);border:1px solid #f59e0b;border-radius:12px;padding:25px;margin-bottom:30px}
+.disclaimer h2{color:#f59e0b;margin-bottom:15px;font-size:1.3em}
+.disclaimer p{color:#ccc;margin-bottom:10px}
+.disclaimer strong{color:#fff}
+.section{background:#151515;border:1px solid #333;border-radius:12px;padding:25px;margin-bottom:25px}
+.section h3{color:#60a5fa;margin-bottom:15px;border-bottom:1px solid #333;padding-bottom:10px}
+.section p{color:#bbb;margin-bottom:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:30px}
+.card{background:#1a1a1a;border:1px solid #333;border-radius:10px;padding:20px}
+.card h4{color:#f59e0b;margin-bottom:10px}
+.card p{color:#999;font-size:14px}
+.stats{display:flex;justify-content:center;gap:50px;margin:30px 0;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-num{font-size:2.5em;color:#f59e0b;font-weight:bold}
+.stat-label{color:#888;font-size:14px}
+.tag{display:inline-block;background:#f59e0b;color:#000;padding:3px 12px;border-radius:4px;font-size:12px;font-weight:600;margin-right:5px;margin-bottom:5px}
+.tag.red{background:#ef4444;color:#fff}
+.tag.blue{background:#3b82f6;color:#fff}
+.tag.green{background:#22c55e;color:#fff}
+ul{list-style:none;margin:15px 0}
+ul li{padding:8px 0;border-bottom:1px solid #222;color:#bbb}
+ul li:last-child{border:none}
+ul li strong{color:#fff}
+code{background:#2a2a2a;padding:2px 8px;border-radius:4px;font-family:monospace;color:#f59e0b}
+pre{background:#1a1a1a;padding:15px;border-radius:8px;overflow-x:auto;margin:15px 0}
+pre code{background:none;padding:0}
+a{color:#60a5fa;text-decoration:none}
+a:hover{text-decoration:underline}
+.files{margin-top:20px}
+.file-item{display:flex;align-items:center;padding:12px;background:#1a1a1a;border-radius:8px;margin-bottom:10px}
+.file-item:hover{background:#222}
+.file-icon{font-size:1.5em;margin-right:15px}
+.file-info h5{color:#fff;margin-bottom:3px}
+.file-info p{color:#666;font-size:13px}
+.evidence-box{background:#0f0f0f;border:1px solid #f59e0b;border-radius:8px;padding:20px;margin:20px 0}
+.evidence-box h4{color:#f59e0b;margin-bottom:15px}
+footer{text-align:center;padding:30px;color:#555;border-top:1px solid #222;margin-top:30px}
+.warning{color:#ef4444;font-weight:600}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🔍 Keitaro TDS Detection Toolkit</h1>
+<p class="subtitle">Traffic Distribution System | Cloaking Detection | Security Research</p>
+
+<div class="stats">
+<div class="stat"><div class="stat-num">1,565+</div><div class="stat-label">Admin Panels Found</div></div>
+<div class="stat"><div class="stat-num">7</div><div class="stat-label">Detection Methods</div></div>
+<div class="stat"><div class="stat-num">0</div><div class="stat-label">Legitimate Uses Found</div></div>
+</div>
+
+<div class="disclaimer">
+<h2>⚠️ Important Disclaimer</h2>
+<p><strong>We are not claiming all Keitaro users are criminals.</strong> However, despite extensive research, we have found no legitimate use cases for this tool. Every instance we've encountered involves malware, phishing, scams, or ad fraud.</p>
+<p><strong>We do not block anything.</strong> This repository provides detection tools for security researchers, abuse teams, and fraud investigators.</p>
+<p><strong>Our tools are non-invasive.</strong> They only use publicly documented Keitaro API endpoints. No exploitation, no attacks - just detection.</p>
+</div>
+
+<div class="section">
+<h3>What is Keitaro TDS?</h3>
+<p>Keitaro is a <strong>Traffic Distribution System</strong> - software designed to show different content to different visitors. In practice, this means:</p>
+<div class="grid" style="margin-top:20px">
+<div class="card">
+<h4>👮 Moderators See</h4>
+<p>Legitimate content: news articles, blogs, empty pages, or "under construction" messages</p>
+</div>
+<div class="card">
+<h4>👤 Victims See</h4>
+<p>Malicious content: crypto scams, phishing pages, malware downloads, fake shops</p>
+</div>
+</div>
+<p>This is called <strong>"cloaking"</strong> - and it exists solely to deceive platform moderators and security systems.</p>
+</div>
+
+<div class="section">
+<h3>Why We Believe This Cannot Be Legitimate</h3>
+<ul>
+<li><span class="tag red">DECEPTION</span> <strong>Core purpose is hiding content from reviewers</strong> - no legitimate business needs this</li>
+<li><span class="tag red">AVCHECK</span> <strong>Direct ties to malware testing services</strong> - used to test malware against antivirus</li>
+<li><span class="tag red">MALWARE</span> <strong>Linked to multiple malspam campaigns</strong> - banking trojans, ransomware distribution</li>
+<li><span class="tag red">FORUMS</span> <strong>Advertised on cybercrime forums</strong> - Russian-speaking underground markets</li>
+<li><span class="tag red">STRUCTURE</span> <strong>Russian devs, Estonian company</strong> - jurisdiction shopping to avoid takedowns</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>Our Research Findings</h3>
+<p>After analyzing <strong>1,500+ Keitaro panels</strong>, we found them hosting:</p>
+<div class="grid" style="margin-top:15px">
+<div class="card"><h4>💰 Crypto Scams</h4><p>Fake investment platforms, wallet drainers, Ponzi schemes</p></div>
+<div class="card"><h4>🎣 Phishing</h4><p>Bank impersonation, exchange clones, government services</p></div>
+<div class="card"><h4>🦠 Malware</h4><p>Fake updates, cracked software, loader distribution</p></div>
+<div class="card"><h4>🛒 Fake Shops</h4><p>Non-delivering e-commerce, counterfeit goods</p></div>
+<div class="card"><h4>💕 Romance Scams</h4><p>Dating fraud, sextortion schemes</p></div>
+<div class="card"><h4>🎰 Illegal Gambling</h4><p>Unlicensed casinos, rigged betting sites</p></div>
+</div>
+<div class="evidence-box">
+<h4>Finding: Zero Legitimate Use Cases</h4>
+<p>Despite extensive searching, we could not find a single example of Keitaro being used for legitimate purposes. If the platform it's hiding content from would approve that content - why hide it?</p>
+</div>
+</div>
+
+<div class="section">
+<h3>📁 Repository Contents</h3>
+<div class="files">
+<a href="script/keitaro_hunter_4.py" class="file-item">
+<span class="file-icon">🐍</span>
+<div class="file-info">
+<h5>keitaro_hunter_4.py</h5>
+<p>Detection script - checks if websites use Keitaro TDS (440 lines, Python)</p>
+</div>
+</a>
+<a href="panels.csv" class="file-item">
+<span class="file-icon">📊</span>
+<div class="file-info">
+<h5>panels.csv</h5>
+<p>1,565+ discovered Keitaro admin panels with IP, location, hosting provider</p>
+</div>
+</a>
+<a href="script/README.md" class="file-item">
+<span class="file-icon">📖</span>
+<div class="file-info">
+<h5>Script Documentation</h5>
+<p>Installation, usage, detection methods explained</p>
+</div>
+</a>
+<a href="script.jpg" class="file-item">
+<span class="file-icon">🖼️</span>
+<div class="file-info">
+<h5>script.jpg</h5>
+<p>Screenshot of detection script in action</p>
+</div>
+</a>
+</div>
+</div>
+
+<div class="section">
+<h3>🔬 Detection Methods</h3>
+<p>Our script uses <strong>7 detection techniques</strong> based on official Keitaro documentation:</p>
+<ul>
+<li><span class="tag blue">API</span> <strong>Click API</strong> - Tests <code>/click_api/v3</code> endpoint response</li>
+<li><span class="tag blue">PARAMS</span> <strong>Offer Reaction</strong> - Checks response to <code>_lp</code> and <code>_token</code> params</li>
+<li><span class="tag blue">TOKENS</span> <strong>Update Tokens</strong> - Tests <code>_update_tokens=1</code> behavior</li>
+<li><span class="tag blue">URL</span> <strong>Offer Params</strong> - Looks for characteristic URL parameters</li>
+<li><span class="tag blue">COOKIE</span> <strong>Subid Cookie</strong> - Detects tracking cookies</li>
+<li><span class="tag blue">HTML</span> <strong>HTML Markers</strong> - Finds KTracking, {subid}, {offer} in source</li>
+<li><span class="tag blue">LANDING</span> <strong>Landing Params</strong> - Identifies <code>_subid + _token</code> patterns</li>
+</ul>
+<p style="margin-top:15px"><strong>Verdict:</strong> ≥2 evidences = <span class="tag green">KEITARO CONFIRMED</span></p>
+</div>
+
+<div class="section">
+<h3>Quick Start</h3>
+<pre><code># Install dependencies
+pip install httpx faker rich
+
+# Scan single domain
+python keitaro_hunter_4.py suspicious-site.com
+
+# Mass scan from file
+python keitaro_hunter_4.py domains.txt -w 100 -o results.json
+
+# With proxy rotation
+python keitaro_hunter_4.py domains.txt -p proxies.txt</code></pre>
+</div>
+
+<div class="section">
+<h3>For Security Researchers</h3>
+<p>Signs a site uses Keitaro cloaking:</p>
+<ul>
+<li><code>/admin</code> redirects to Keitaro login page ("Welcome!")</li>
+<li>URLs contain <code>_lp=1</code>, <code>_token=</code>, <code>_subid=</code> parameters</li>
+<li>Different content from datacenter IPs vs residential IPs</li>
+<li><code>/click_api/v3</code> endpoint returns JSON (even if error)</li>
+<li>Cookies named <code>subid</code> or similar tracking identifiers</li>
+</ul>
+</div>
+
+<footer>
+<p>PhishDestroy Threat Intelligence | Detection Toolkit</p>
+<p style="color:#666;margin-top:10px">For security research, abuse investigation, and ad fraud detection</p>
+</footer>
+</div>
+</body>
+</html>
