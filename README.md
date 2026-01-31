@@ -1,107 +1,193 @@
-# ScamIntelLogs: Exposing Scammer Activities for a Safer Digital World
+# ScamIntelLogs
 
-<img src="https://github.com/phishdestroy/ScamIntelLogs/raw/main/baner.png" alt="ScamIntelLogs Banner" width="800">
+<div align="center">
+  <img src="https://github.com/phishdestroy/ScamIntelLogs/raw/main/baner.png" alt="ScamIntelLogs Banner" width="100%">
+  
+  <p><strong>Open-Source Scammer Intelligence Archive</strong></p>
+  <p>Internal data, chat logs, admin panels, and infrastructure from criminal scam networks</p>
 
-![GitHub stars](https://img.shields.io/github/stars/phishdestroy/ScamIntelLogs?style=social)
-![GitHub forks](https://img.shields.io/github/forks/phishdestroy/ScamIntelLogs?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/phishdestroy/ScamIntelLogs?style=social)
-![License](https://img.shields.io/badge/license-MIT-blue)
+  [![GitHub Stars](https://img.shields.io/github/stars/phishdestroy/ScamIntelLogs?style=for-the-badge&logo=github&color=yellow)](https://github.com/phishdestroy/ScamIntelLogs/stargazers)
+  [![GitHub Forks](https://img.shields.io/github/forks/phishdestroy/ScamIntelLogs?style=for-the-badge&logo=github&color=blue)](https://github.com/phishdestroy/ScamIntelLogs/network/members)
+  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+  [![Website](https://img.shields.io/badge/Website-phishdestroy.io-purple?style=for-the-badge&logo=firefox)](https://www.phishdestroy.io/)
 
-**Explore the Data Now**: Dive into archived Telegram chat dumps of scammer activities at our [Chat Viewer](https://phishdestroy.github.io/ScamIntelLogs).  
-**Main Directory**: Access all scam team data directly at [ScamIntelLogs Repository](https://github.com/phishdestroy/ScamIntelLogs).
+  <br>
 
----
+  [**📂 Browse Archive**](https://phishdestroy.github.io/ScamIntelLogs) • 
+  [**🤖 Report Scammers**](https://t.me/PhishDestroy_bot) • 
+  [**🐦 Twitter**](https://x.com/Phish_Destroy) • 
+  [**🌐 Website**](https://www.phishdestroy.io/)
 
-## About This Project
-
-ScamIntelLogs is a bold initiative to preserve and expose Telegram chat dumps, logs, and other incriminating data from scammer groups operating across ecosystems like Solana, TON, and beyond. These groups often delete their channels and messages to evade accountability, but we believe in shining a light on their activities to protect communities, empower victims, and assist law enforcement.
-
-### Why We Do This
-Scammers thrive in the shadows, preying on the vulnerable with phishing schemes, drainers, and fake affiliate networks. They often boast about their "successes"—millions stolen, lives disrupted—while hiding behind the illusion of anonymity. At ScamIntelLogs, we reject the notion that scammers deserve privacy. **Their actions forfeit any right to confidentiality.** By archiving and sharing their data, we ensure that their boasts reach a wider audience—not to glorify them, but to expose them. The more people who see this, the harder it becomes for scammers to operate undetected.
-
-### Our Stance
-- **No Privacy for Scammers**: Scammers exploit trust and harm communities. We believe they have no right to hide their actions. This project strips away their anonymity, making their operations visible to victims, researchers, and authorities.
-- **Empowering Justice**: These archives serve as a resource for law enforcement, cybersecurity researchers, and affected communities to identify, track, and prosecute scammers.
-- **Open Access**: The data in this repository is not protected by any restrictive license. Law enforcement agencies can use it at their discretion, and individuals or organizations are free to clone, improve, and build upon this project to further the fight against scams.
-
-### Project Goals
-- **Preserve Evidence**: Archive Telegram chat dumps and logs to prevent scammers from erasing their tracks.
-- **Raise Awareness**: Educate the public about scam tactics and the scale of these operations.
-- **Support Accountability**: Provide actionable data for victims, researchers, and law enforcement to take action.
-
-### Target Audience
-- Victims seeking to understand or report scam activities.
-- Cybersecurity researchers studying scam operations.
-- Law enforcement agencies pursuing justice.
-- Community members committed to fighting fraud.
-
-### Updates
-We regularly update this repository with new data on scammer groups as we receive it. Stay tuned for more exposes!
+</div>
 
 ---
 
-## Repository Structure
+## 📋 Overview
 
-- **RublevkaTeam/**: Telegram chat dumps and logs for RublevkaTeam, a notorious Russian-speaking drainer operation. [Read More](RublevkaTeam/README.md)
-- **WasabiSquad/**: Data on Wasabi Squad’s deceptive financial schemes. [Read More](WasabiSquad/README.md)
-- **MercuryTeam/**: Archives of Mercury Team’s fake crypto exchanges and gambling platforms. [Read More](MercuryTeam/README.md)
-- **TheProject/**: Logs of TheProject’s large-scale phishing and drainer operations since 2021. [Read More](TheProject/README.md)
-- **index.html**: A user-friendly chat viewer for browsing Telegram dumps. [View Now](https://phishdestroy.github.io/ScamIntelLogs)
+**ScamIntelLogs** is a public intelligence archive containing leaked, dumped, and collected data from cryptocurrency scam operations. This repository preserves evidence that scammers typically delete to evade accountability.
 
-### Scammer Database
-We maintain a detailed list of known scammers across all teams in our shared Google Spreadsheet:  
-- **Main Scammer Database**: [Spreadsheet]([https://phishdestroy.github.io/ScamIntelLogs/](https://phishdestroy.github.io/ScamIntelLogs/))
+### What's Inside
 
-> **Note**: The previous link for RublevkaTeam’s scammer database was outdated. It has been updated to point to the main database, which includes RublevkaTeam and other groups for a comprehensive view.
-
-> **Future Plans**: We aim to expand this repository with more scam teams. If you have data on other scammers, please contribute by adding a new directory (e.g., `NewScamTeam/`).
-
----
-
-## Our Position: Transparency Over Secrecy
-
-Scammers often flaunt their ill-gotten gains—claiming millions in earnings, as seen with groups like TheProject, which boasts over $10,000,000 USD in stolen funds. They rely on secrecy to continue their operations, believing they can delete their tracks and escape consequences. We’re here to change that narrative. By making their data public, we ensure that their boasts are seen by more people—not to celebrate their crimes, but to amplify their exposure. Victims, communities, and authorities deserve to know the truth.
-
-This repository operates under the principle that transparency is the best weapon against fraud. The data here is freely available, unprotected by any restrictive license. Law enforcement can use it to build cases, researchers can analyze trends, and developers can clone, improve, and expand this project to create even more effective tools against scammers. Together, we can turn their arrogance into their downfall.
+| Data Type | Description |
+|-----------|-------------|
+| 💬 **Internal Chats** | Telegram group conversations, private messages, operational discussions |
+| 🎛️ **Admin Panels** | Screenshots, configs, and audits of scam infrastructure |
+| 👥 **Scammer Identities** | Telegram IDs, usernames, wallet addresses, known aliases |
+| 💰 **Theft Records** | Victim wallets, stolen amounts, transaction hashes |
+| 🎨 **Phishing Assets** | Design templates, clone sites, drainer configs |
+| 📊 **Financial Flows** | Payment records, affiliate payouts, laundering paths |
+| 🌐 **Infrastructure** | Domains, hosting providers, bot tokens, API endpoints |
 
 ---
 
-## Get Involved
+## ⚖️ Methodology
 
-We’re on a mission to make the digital world safer, and we can’t do it alone. Join us in exposing scammers and protecting communities:
+> **We do NOT hack, attack, bruteforce, or compromise any systems.**
 
-- **Report Scammers**: Share scam activities with our Telegram bot: [PhishDestroy Bot](https://t.me/PhishDestroy_bot). Your reports help us grow this archive and protect others.
-- **Follow Us**: Stay updated on our efforts by following us on Twitter: [@Phish_Destroy](https://x.com/Phish_Destroy). We share updates, insights, and new exposes regularly.
-- **Visit Us**: Learn more about our mission and explore additional resources at [phishdestroy.io](https://www.phishdestroy.io/). We’re committed to empowering communities with knowledge and tools to fight scams.
+All data is collected through **passive intelligence gathering**:
 
----
+- 🔍 **OSINT** — Open-source intelligence from public sources
+- 📥 **Leaked Data** — Community-submitted dumps from insiders
+- 🕵️ **Social Engineering Artifacts** — Data exposed by scammers themselves
+- 📡 **Passive Monitoring** — Public channels, forums, blockchain analysis
+- 🎁 **Voluntary Submissions** — Victims and researchers sharing evidence
 
-## How to Contribute
-
-Have Telegram dumps, logs, or other data on scammer activities? Help us expand this archive and make a difference:
-
-1. Fork this repository.
-2. Add your data in a new directory (e.g., `NewScamTeam/`).
-3. Submit a Pull Request with a detailed description of the data.
-4. Optionally, add scammer details to our [Main Scammer Database](https://docs.google.com/spreadsheets/d/1RCcYfmZvHjJlEPPjFiTAsqAGtmuZG7JB3-YrOdK4xMc/edit?usp=sharing).
-
-We welcome contributions from anyone passionate about fighting scams. Whether you’re a victim, researcher, or developer, your efforts can help protect others.
+When admin panel access is obtained (through leaks or misconfiguration), we conduct **non-destructive audits** to document infrastructure without modification.
 
 ---
 
-## License
+## 🎯 Purpose
 
-This repository is licensed under the [MIT License](LICENSE). You are free to use, clone, modify, and distribute the data and code as you see fit. We encourage law enforcement, researchers, and developers to leverage this project to build a safer digital ecosystem.
+### Who Benefits
+
+| Audience | Use Case |
+|----------|----------|
+| 🔬 **Security Researchers** | Study scam TTPs, drainer mechanics, social engineering |
+| 👮 **Law Enforcement** | Evidence for investigations and prosecutions |
+| 📰 **Journalists** | Exposés on organized crypto fraud |
+| ⚖️ **Victims** | Identify attackers, support recovery efforts |
+| 🛡️ **Threat Intel Teams** | IOCs, infrastructure patterns, actor tracking |
+
+### Why Archive This
+
+Scammers systematically destroy evidence — deleting Telegram chats, burning wallets, rotating domains. This archive ensures:
+
+- **Permanent Record** — Evidence survives deletion attempts
+- **Pattern Analysis** — Cross-reference actors across operations  
+- **Accountability** — Public exposure deters future activity
+- **Community Defense** — Shared knowledge protects potential victims
 
 ---
 
-## Let’s Expose Scammers Together!
+## 📂 Repository Structure
 
-At ScamIntelLogs, we believe in the power of transparency and community action. Scammers may think they can hide, but with your help, we’ll ensure their actions are seen by the world. Together, we can protect victims, hold scammers accountable, and make the internet a safer place for everyone.
+```
+ScamIntelLogs/
+├── RublevkaTeam/          # TON/Solana drainer operation
+│   ├── chat/              # Internal Telegram chat
+│   ├── channel/           # Announcement channel
+│   ├── successful_thefts/ # Confirmed victim records
+│   ├── designs/           # Phishing templates
+│   └── scammers_login.txt # Known participant IDs
+├── WasabiSquad/           # Fake exchange/casino scams
+├── MercuryTeam/           # Crypto exchange fraud
+├── TheProject/            # Large-scale drainer ($10M+ claimed)
+│   ├── casino/            # Scam gambling platform
+│   └── ...
+├── 717Team/               # Drainer operation (split archives)
+└── index.html             # Web-based archive browser
+```
 
-Join us today—report a scam, contribute data, or simply spread the word. Let’s turn the tables on fraudsters and show them that their days of operating in the shadows are over.
+---
 
-**ScamIntelLogs Team**  
-🌐 [phishdestroy.io](https://www.phishdestroy.io/)  
-🐦 [@Phish_Destroy](https://x.com/Phish_Destroy)  
-🤖 [PhishDestroy Bot](https://t.me/PhishDestroy_bot)
+## 🗂️ Documented Teams
+
+| Team | Type | Est. Damage | Status |
+|------|------|-------------|--------|
+| [**RublevkaTeam**](RublevkaTeam/) | TON/Solana Drainer | Unknown | 🔴 Active |
+| [**WasabiSquad**](WasabiSquad/) | Fake Exchange/Casino | Unknown | 🟡 Unknown |
+| [**MercuryTeam**](MercuryTeam/) | Fake Exchange | Unknown | 🟡 Unknown |
+| [**TheProject**](TheProject/) | Multi-chain Drainer | $10M+ (claimed) | 🔴 Active |
+| [**717Team**](717Team/) | Drainer | Unknown | 🟡 Unknown |
+
+---
+
+## 🔗 Related Projects
+
+This archive is part of the **PhishDestroy** threat intelligence ecosystem:
+
+| Project | Description |
+|---------|-------------|
+| [**destroylist**](https://github.com/phishdestroy/destroylist) | 70,000+ malicious domains blocklist |
+| [**PhishDestroy Bot**](https://t.me/PhishDestroy_bot) | Telegram bot for scam reporting |
+| [**phishdestroy.io**](https://www.phishdestroy.io/) | Main project website |
+
+---
+
+## 🤝 Contributing
+
+We accept submissions of scam-related intelligence:
+
+### What We Accept
+- Telegram chat exports (JSON/HTML)
+- Admin panel screenshots/configs
+- Scammer identity information
+- Domain/infrastructure data
+- Wallet addresses and transaction evidence
+
+### How to Submit
+
+**Option 1: Pull Request**
+```bash
+git clone https://github.com/phishdestroy/ScamIntelLogs.git
+# Add data to new directory: NewTeamName/
+git commit -m "Add NewTeamName data"
+# Submit PR
+```
+
+**Option 2: Anonymous Submission**
+- Telegram: [@PhishDestroy_bot](https://t.me/PhishDestroy_bot)
+- We protect source confidentiality
+
+### Submission Guidelines
+- Remove personal victim data (redact if necessary)
+- Include context: team name, operation type, timeframe
+- Provide source attribution if comfortable
+- Structure data in readable format
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository contains **evidence of criminal activity** for research purposes
+- Data is provided **"as-is"** without verification guarantees
+- **Do not use** this data for harassment, vigilante justice, or illegal purposes
+- **Victim PII** should be handled responsibly
+- We are **not responsible** for misuse of this information
+
+---
+
+## 📜 License
+
+[MIT License](LICENSE) — Free to use, clone, modify, and distribute.
+
+Law enforcement agencies are explicitly authorized to use this data for investigations.
+
+---
+
+<div align="center">
+
+### 🛡️ Fighting Fraud Through Transparency
+
+**Scammers delete evidence. We preserve it.**
+
+<br>
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/Phish_Destroy?style=social)](https://x.com/Phish_Destroy)
+[![GitHub](https://img.shields.io/badge/GitHub-phishdestroy-black?style=flat&logo=github)](https://github.com/phishdestroy)
+
+<br>
+
+*"The community must know its scammers."*
+
+</div>
