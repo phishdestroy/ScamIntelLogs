@@ -3,213 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScamIntelLogs: Explore Scammer Archives</title>
-    <link rel="icon" type="image/png" href="https://www.phishdestroy.io/favicon-32x32.png">
+    <title>RublevkaTeam - TON/Solana Drainer Intelligence | ScamIntelLogs</title>
+    <meta name="description" content="Archived evidence from RublevkaTeam drainer operation: Telegram chats, phishing designs, scam offers, theft records, and participant identities. TON/Solana phishing targeting CIS users.">
+    <meta name="keywords" content="RublevkaTeam, TON drainer, Solana drainer, crypto scam, phishing, OSINT, scammer database, threat intelligence">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://phishdestroy.github.io/ScamIntelLogs/RublevkaTeam/">
+    <meta property="og:title" content="RublevkaTeam - TON/Solana Drainer Intelligence">
+    <meta property="og:description" content="Archived evidence from RublevkaTeam: chats, designs, theft records, participant identities.">
+    <meta property="og:image" content="https://destroyico.pages.dev/assets/android-chrome-512x512.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Phish_Destroy">
+    <link rel="icon" type="image/x-icon" href="https://destroyico.pages.dev/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://destroyico.pages.dev/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://destroyico.pages.dev/assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://destroyico.pages.dev/assets/apple-touch-icon.png">
+    <link rel="manifest" href="https://destroyico.pages.dev/assets/site.webmanifest">
+    <meta name="theme-color" content="#111827">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        h1 {
-            color: #1e90ff;
-        }
-        .sidebar {
-            width: 300px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-            max-height: 600px;
-            overflow-y: auto;
-        }
-        .team, .folder, .file, .description, .back {
-            padding: 8px;
-            margin: 5px 0;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-        .team {
-            background-color: #e0f7fa;
-            font-weight: bold;
-        }
-        .team:hover {
-            background-color: #b2ebf2;
-        }
-        .folder {
-            background-color: #f0f0f0;
-            margin-left: 15px;
-        }
-        .folder:hover {
-            background-color: #e0e0e0;
-        }
-        .file {
-            background-color: #f9f9f9;
-            margin-left: 30px;
-        }
-        .file:hover {
-            background-color: #ececec;
-        }
-        .description {
-            background-color: #e9ecef;
-            margin-left: 15px;
-            padding: 10px;
-        }
-        .back {
-            background-color: #d3d3d3;
-            margin-left: 15px;
-            font-style: italic;
-        }
-        .back:hover {
-            background-color: #c0c0c0;
-        }
-        .info-box {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        .error {
-            color: red;
-            margin-left: 15px;
-            padding: 10px;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .text-gradient { background-image: linear-gradient(to right, #ef4444, #f97316); -webkit-background-clip: text; background-clip: text; color: transparent; }
     </style>
 </head>
-<body>
-    <h1>ScamIntelLogs: Explore Scammer Archives</h1>
+<body class="bg-gray-900 text-gray-300 min-h-screen">
+    <div class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
 
-    <div class="info-box">
-        <p><strong>🔍 About:</strong> This page contains archived Telegram chat dumps of scammer activities.</p>
-        <p><strong>📊 Scammer Database:</strong> Check the detailed list of known scammers in our <a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank">Google Spreadsheet</a>.</p>
-        <p><strong>📢 Report Scammers:</strong> Use our Telegram bot to report scam activities: <a href="https://t.me/PhishDestroy_bot" target="_blank">PhishDestroy Bot</a>.</p>
-        <p><strong>🐦 Follow Us:</strong> Stay updated on Twitter: <a href="https://x.com/Phish_Destroy" target="_blank">@Phish_Destroy</a>.</p>
-        <p><strong>🌐 Visit Us:</strong> Learn more about our project at <a href="https://www.phishdestroy.io/" target="_blank">phishdestroy.io</a>.</p>
-        <p><strong>🤝 Contribute:</strong> Have more scam data? Visit the <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank">GitHub repository</a> to add it.</p>
+        <a href="../" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-6 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>
+            Back to ScamIntelLogs
+        </a>
+
+        <div class="text-center mb-8">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gradient mb-2">RublevkaTeam</h1>
+            <p class="text-xl text-gray-400">TON / Solana Drainer Operation</p>
+            <div class="flex justify-center gap-3 mt-4 flex-wrap">
+                <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm font-medium">Drainer</span>
+                <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm font-medium">CIS Targeting</span>
+                <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium">TON + Solana</span>
+            </div>
+        </div>
+
+        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
+            <h2 class="text-lg font-bold text-white mb-3">Operation Summary</h2>
+            <p class="text-sm text-gray-400 mb-4">One of the largest Russian-speaking drainer operations, targeting CIS users through TON and Solana phishing campaigns. Despite being Russian-speaking, the group actively scams fellow Russian users. Infrastructure includes a website, Telegram bot, and forum presence with a verified 2M+ RUB deposit.</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
+                <div class="bg-gray-900/50 rounded-lg p-3"><span class="text-gray-500">Website:</span> <span class="text-blue-400">rublevkateam.today</span></div>
+                <div class="bg-gray-900/50 rounded-lg p-3"><span class="text-gray-500">Bot:</span> <span class="text-blue-400">@RublevkaTeam_bot</span></div>
+                <div class="bg-gray-900/50 rounded-lg p-3"><span class="text-gray-500">Hosting:</span> <span class="text-gray-300">AEZA AS210644</span></div>
+                <div class="bg-gray-900/50 rounded-lg p-3"><span class="text-gray-500">Admins:</span> <span class="text-gray-300">@sinactive, @nft4x, @BalaclavaRTD</span></div>
+            </div>
+        </div>
+
+        <h2 class="text-xl font-bold text-white mb-4">Evidence Archive</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <a href="chat/messages.html" class="flex items-center gap-4 bg-red-500/10 ring-1 ring-red-500/20 hover:bg-red-500/20 p-4 rounded-xl transition-colors">
+                <span class="text-2xl">💬</span>
+                <div>
+                    <div class="font-semibold text-white">Internal Chat</div>
+                    <div class="text-sm text-gray-400">Group conversations, coordination, disputes</div>
+                </div>
+            </a>
+            <a href="channel/messages.html" class="flex items-center gap-4 bg-green-500/10 ring-1 ring-green-500/20 hover:bg-green-500/20 p-4 rounded-xl transition-colors">
+                <span class="text-2xl">📢</span>
+                <div>
+                    <div class="font-semibold text-white">Channel</div>
+                    <div class="text-sm text-gray-400">Announcements and public posts</div>
+                </div>
+            </a>
+            <a href="scam_offers/messages.html" class="flex items-center gap-4 bg-orange-500/10 ring-1 ring-orange-500/20 hover:bg-orange-500/20 p-4 rounded-xl transition-colors">
+                <span class="text-2xl">🎣</span>
+                <div>
+                    <div class="font-semibold text-white">Scam Offers</div>
+                    <div class="text-sm text-gray-400">Active phishing campaigns and templates</div>
+                </div>
+            </a>
+            <a href="designs/messages.html" class="flex items-center gap-4 bg-blue-500/10 ring-1 ring-blue-500/20 hover:bg-blue-500/20 p-4 rounded-xl transition-colors">
+                <span class="text-2xl">🎨</span>
+                <div>
+                    <div class="font-semibold text-white">Designs</div>
+                    <div class="text-sm text-gray-400">Phishing page templates and clone assets</div>
+                </div>
+            </a>
+            <a href="successful_thefts/messages.html" class="flex items-center gap-4 bg-purple-500/10 ring-1 ring-purple-500/20 hover:bg-purple-500/20 p-4 rounded-xl transition-colors">
+                <span class="text-2xl">💰</span>
+                <div>
+                    <div class="font-semibold text-white">Confirmed Thefts</div>
+                    <div class="text-sm text-gray-400">Victim wallets, amounts, transaction hashes</div>
+                </div>
+            </a>
+            <a href="newchanel/messages.html" class="flex items-center gap-4 bg-teal-500/10 ring-1 ring-teal-500/20 hover:bg-teal-500/20 p-4 rounded-xl transition-colors">
+                <span class="text-2xl">📡</span>
+                <div>
+                    <div class="font-semibold text-white">New Channel</div>
+                    <div class="text-sm text-gray-400">Updated channel content</div>
+                </div>
+            </a>
+            <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/RublevkaTeam/scammers_login.txt" target="_blank" class="flex items-center gap-4 bg-pink-500/10 ring-1 ring-pink-500/20 hover:bg-pink-500/20 p-4 rounded-xl transition-colors">
+                <span class="text-2xl">👥</span>
+                <div>
+                    <div class="font-semibold text-white">Scammer List</div>
+                    <div class="text-sm text-gray-400">Participant Telegram IDs and usernames</div>
+                </div>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/197KolORgHAv_W7Nai0yAIQugPUZPONr3sf1IdcbDU9s/edit?gid=1691335422#gid=1691335422" target="_blank" class="flex items-center gap-4 bg-yellow-500/10 ring-1 ring-yellow-500/20 hover:bg-yellow-500/20 p-4 rounded-xl transition-colors">
+                <span class="text-2xl">📊</span>
+                <div>
+                    <div class="font-semibold text-white">Scammer Database</div>
+                    <div class="text-sm text-gray-400">Google Spreadsheet with full database</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="text-center text-sm text-gray-500 border-t border-gray-800 pt-6">
+            <p>Collected by <a href="https://www.phishdestroy.io/" class="text-blue-400 hover:text-blue-300">PhishDestroy</a> | <a href="https://github.com/phishdestroy/ScamIntelLogs" class="text-blue-400 hover:text-blue-300">GitHub</a></p>
+        </div>
     </div>
-
-    <div class="sidebar" id="file-tree">
-        <!-- File tree will be rendered here -->
-    </div>
-
-    <script>
-        const fileTree = document.getElementById("file-tree");
-        const repoOwner = "phishdestroy";
-        const repoName = "ScamIntelLogs";
-        const teams = ["RublevkaTeam"];
-        const folders = ["chat", "scam-offers", "channel", "designs", "successful-thefts"];
-
-        async function fetchFiles(team, folder) {
-            const url = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${team}/${folder}`;
-            try {
-                const response = await fetch(url);
-                if (!response.ok) {
-                    throw new Error(`GitHub API error: ${response.status}`);
-                }
-                const data = await response.json();
-                return data
-                    .filter(item => item.type === "file" && item.name.endsWith(".html"))
-                    .map(item => item.name);
-            } catch (error) {
-                console.error(`Error fetching files for ${team}/${folder}:`, error);
-                return [];
-            }
-        }
-
-        function renderFileTree() {
-            fileTree.innerHTML = "Loading...";
-            teams.forEach(team => {
-                const teamDiv = document.createElement("div");
-                teamDiv.className = "team";
-                teamDiv.textContent = team;
-                teamDiv.onclick = () => toggleFolders(team, teamDiv);
-                fileTree.appendChild(teamDiv);
-            });
-        }
-
-        function toggleFolders(team, teamDiv) {
-            const existingFolders = teamDiv.querySelectorAll(".folder, .description, .back, .file, .error");
-            if (existingFolders.length > 0) {
-                existingFolders.forEach(item => item.remove());
-                return;
-            }
-
-            folders.forEach(folder => {
-                const folderDiv = document.createElement("div");
-                folderDiv.className = "folder";
-                folderDiv.textContent = folder;
-                folderDiv.onclick = (e) => {
-                    e.stopPropagation();
-                    showDescription(team, folder, folderDiv);
-                };
-                teamDiv.appendChild(folderDiv);
-            });
-        }
-
-        async function showDescription(team, folderName, folderDiv) {
-            const existingDescription = folderDiv.querySelectorAll(".description, .back, .file, .error");
-            if (existingDescription.length > 0) {
-                existingDescription.forEach(item => item.remove());
-                return;
-            }
-
-            const descriptionDiv = document.createElement("div");
-            descriptionDiv.className = "description";
-            descriptionDiv.textContent = `This is the ${folderName} of the ${team} group.`;
-            folderDiv.appendChild(descriptionDiv);
-
-            const backDiv = document.createElement("div");
-            backDiv.className = "back";
-            backDiv.textContent = "Show files";
-            backDiv.onclick = (e) => {
-                e.stopPropagation();
-                showFiles(team, folderName, folderDiv);
-            };
-            folderDiv.appendChild(backDiv);
-        }
-
-        async function showFiles(team, folderName, folderDiv) {
-            const existingDescription = folderDiv.querySelectorAll(".description, .back, .file, .error");
-            if (existingDescription.length > 0) {
-                existingDescription.forEach(item => item.remove());
-            }
-
-            // Загружаем файлы через GitHub API
-            const files = await fetchFiles(team, folderName);
-            if (files.length === 0) {
-                const errorDiv = document.createElement("div");
-                errorDiv.className = "error";
-                errorDiv.textContent = `No files found in ${team}/${folderName}, or GitHub API limit exceeded.`;
-                folderDiv.appendChild(errorDiv);
-                return;
-            }
-
-            files.forEach(file => {
-                const fileDiv = document.createElement("div");
-                fileDiv.className = "file";
-                fileDiv.textContent = file;
-                fileDiv.onclick = (e) => {
-                    e.stopPropagation();
-                    const url = `${team}/${folderName}/${file}`;
-                    fetch(url, { method: 'HEAD' })
-                        .then(response => {
-                            if (response.ok) {
-                                window.open(url, "_blank");
-                            } else {
-                                alert(`File ${file} not found. Please check if it exists in ${team}/${folderName}/`);
-                            }
-                        })
-                        .catch(() => {
-                            alert(`Error accessing ${file}. Please check if it exists in ${team}/${folderName}/`);
-                        });
-                };
-                folderDiv.appendChild(fileDiv);
-            });
-        }
-
-        renderFileTree();
-    </script>
 </body>
 </html>

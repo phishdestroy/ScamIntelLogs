@@ -81,34 +81,24 @@ Scammers systematically destroy evidence — deleting Telegram chats, burning wa
 
 ## 📂 Repository Structure
 
+Each scam operation gets its own directory. Inside, evidence is organized by type:
+
 ```
-ScamIntelLogs/
-├── RublevkaTeam/          # TON/Solana drainer operation
-│   ├── chat/              # Internal Telegram chat
-│   ├── channel/           # Announcement channel
-│   ├── successful_thefts/ # Confirmed victim records
-│   ├── designs/           # Phishing templates
-│   └── scammers_login.txt # Known participant IDs
-├── WasabiSquad/           # Fake exchange/casino scams
-├── MercuryTeam/           # Crypto exchange fraud
-├── TheProject/            # Large-scale drainer ($10M+ claimed)
-│   ├── casino/            # Scam gambling platform
-│   └── ...
-├── 717Team/               # Drainer operation (split archives)
-└── index.html             # Web-based archive browser
+TeamName/
+├── chat/              # Internal Telegram group conversations
+├── channel/           # Public channel announcements
+├── successful_thefts/ # Confirmed theft records (wallets, tx hashes, amounts)
+├── designs/           # Phishing page templates and clone assets
+├── payments/          # Payment logs, affiliate payouts
+├── scammers_login.txt # Known participant Telegram IDs and usernames
+├── domains.txt        # Associated phishing domains
+├── iocs.json          # Machine-readable indicators of compromise
+└── index.html         # Visual evidence browser for this team
 ```
 
----
+Not every team has all folders — it depends on what evidence was collected. The root `index.html` lists all archived operations with descriptions and direct links to every subfolder.
 
-## 🗂️ Documented Teams
-
-| Team | Type | Est. Damage | Status |
-|------|------|-------------|--------|
-| [**RublevkaTeam**](RublevkaTeam/) | TON/Solana Drainer | Unknown | 🔴 Active |
-| [**WasabiSquad**](WasabiSquad/) | Fake Exchange/Casino | Unknown | 🟡 Unknown |
-| [**MercuryTeam**](MercuryTeam/) | Fake Exchange | Unknown | 🟡 Unknown |
-| [**TheProject**](TheProject/) | Multi-chain Drainer | $10M+ (claimed) | 🔴 Active |
-| [**717Team**](717Team/) | Drainer | Unknown | 🟡 Unknown |
+**[Browse the full archive](https://phishdestroy.github.io/ScamIntelLogs/)**
 
 ---
 
