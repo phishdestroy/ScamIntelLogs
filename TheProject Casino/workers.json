@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html
+    lang="en" class="layout-navbar-fixed layout-compact layout-menu-100vh dark-style layout-menu-fixed"
+    dir="ltr"
+    data-theme="theme-default"
+    data-assets-path="http://ofedrex.com/assets"
+
+    data-template="vertical-menu-template"
+    data-style="dark"
+>
+<head>
+    <meta charset="utf-8"/>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Admin</title>
+    <meta name="description" content=""/>
+    <meta name="csrf-token" content="bGjhnuAV4hJpwUlGHHDjZP8DO8C91NdHeWs0wMpq">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="http://ofedrex.com/assets/img/favicon/favicon.ico"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/fonts/fontawesome.css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/fonts/tabler-icons.css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/fonts/flag-icons.css"/>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/css/rtl/core.css" class="template-customizer-core-css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/css/rtl/theme-default.css"
+          class="template-customizer-theme-css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/css/demo.css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/css/custom.css"/>
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/libs/node-waves/node-waves.css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/libs/typeahead-js/typeahead.css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/libs/apex-charts/apex-charts.css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/libs/swiper/swiper.css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css"/>
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/libs/bootstrap-maxlength/bootstrap-maxlength.css"/>
+    <link rel="stylesheet"
+          href="http://ofedrex.com/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css"/>
+    <link rel="stylesheet"
+          href="http://ofedrex.com/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css"/>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/css/pages/cards-advance.css"/>
+
+    <link rel="stylesheet" href="http://ofedrex.com/assets/vendor/css/pages/app-chat.css"/>
+
+    <!-- Helpers -->
+    <script src="http://ofedrex.com/assets/vendor/js/helpers.js"></script>
+    <script src="http://ofedrex.com/assets/vendor/js/template-customizer.js"></script>
+    <script src="http://ofedrex.com/assets/js/config.js"></script>
+</head>
+<body>
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+
+
+            <!-- Layout container -->
+            <div class="layout-page">
+
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <!-- Invoice List Widget -->
+
+
+                        <!-- Invoice List Table -->
+                        <div class="card login-form">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-center h-px-500">
+                                    <form action="http://ofedrex.com/backend-api/admin/auth/login" method="POST" enctype="multipart/form-data" class="w-px-400 border rounded p-3 p-md-5">
+                                        <input type="hidden" name="_token" value="bGjhnuAV4hJpwUlGHHDjZP8DO8C91NdHeWs0wMpq" autocomplete="off">                                        <h3 class="mb-6">Sign In</h3>
+
+                                        
+                                        <div class="mb-6">
+                                            <label class="form-label" for="form-alignment-username">Email</label>
+                                            <input type="email" name="email" id="form-alignment-username" class="form-control" placeholder="Email" />
+                                        </div>
+
+                                        <div class="mb-6 form-password-toggle">
+                                            <label class="form-label" for="form-alignment-password">Password</label>
+                                            <div class="input-group input-group-merge">
+                                                <input
+                                                    name="password"
+                                                    type="password"
+                                                    id="form-alignment-password"
+                                                    class="form-control"
+                                                    placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                                                    aria-describedby="form-alignment-password2" />
+                                                <span class="input-group-text cursor-pointer" id="form-alignment-password2"
+                                                ><i class="ti ti-eye-off"></i
+                                                    ></span>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                        <div class="d-grid gap-2">
+                                            <button type="submit" class="btn btn-primary">Login</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Content -->
+
+                    <!-- Footer -->
+
+                    <!-- / Footer -->
+
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+        </div>
+
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+
+        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+        <div class="drag-target"></div>
+    </div>
+
+<script>
+    // Pass admin ID to JavaScript
+    window.adminId = 228;
+</script>
+
+<!-- Scripts -->
+<script src="http://ofedrex.com/assets/vendor/libs/jquery/jquery.js"></script>
+<script src="http://ofedrex.com/assets/vendor/libs/popper/popper.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/js/bootstrap.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/libs/node-waves/node-waves.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/libs/hammer/hammer.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/libs/i18n/i18n.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/libs/typeahead-js/typeahead.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/js/menu.js" defer></script>
+
+<!-- Vendors JS -->
+<script src="http://ofedrex.com/assets/vendor/libs/apex-charts/apexcharts.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/libs/swiper/swiper.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/libs/bootstrap-maxlength/bootstrap-maxlength.js" defer></script>
+<script src="http://ofedrex.com/assets/vendor/libs/moment/moment.js" defer></script>
+<!-- Main JS -->
+<script src="http://ofedrex.com/assets/js/main.js" defer></script>
+<script src="http://ofedrex.com/assets/js/app-admin-workers-list.js" defer></script>
+<script src="http://ofedrex.com/assets/js/app-kyc-list.js" defer></script>
+<!-- Page JS -->
+<script src="http://ofedrex.com/assets/js/dashboards-analytics.js" defer></script>
+<script src="http://ofedrex.com/assets/js/form-layouts.js" defer></script>
+<script src="http://ofedrex.com/assets/js/app-chat.js" type="module" defer></script>
+<script src="http://ofedrex.com/assets/js/app-transactions-list.js" defer></script>
+<script src="http://ofedrex.com/assets/js/app-balance-list-admin.js" defer></script>
+<script src="http://ofedrex.com/assets/js/app-admin-withdraw-req-list.js" defer></script>
+<script src="http://ofedrex.com/assets/js/app-admin-users-list.js" defer></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c5f6a91cdf1d0bb',t:'MTc2OTc1OTgyMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

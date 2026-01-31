@@ -1,0 +1,89 @@
+{
+  "name": "ofedrex-TheProject Casino",
+  "discovered": "2026-01-30",
+  "status": "active",
+  "type": "crypto_casino_scam",
+  
+  "panel": {
+    "url": "https://ofedrex.com",
+    "brand": "TheProject Casino",
+    "admin_path": "/adm_panel",
+    "api_base": "/backend-api/",
+    "backend_path": "/var/www/casino-backend",
+    "framework": "Laravel",
+    "cdn": "Cloudflare"
+  },
+  
+  "domains": [
+    "axidex.com",
+    "bitfirefx.com",
+    "bolterex.com",
+    "evbobet.top",
+    "explay.bet",
+    "fortexo.top",
+    "goldix.bet",
+    "greencasino.bet",
+    "inclusivebets.fun",
+    "infocryptox.com",
+    "luckberry.run",
+    "lurexcoin.com",
+    "merbibet.com",
+    "mogulbet.vip",
+    "money-king.bet",
+    "ofedrex.com",
+    "sho.mom",
+    "spacema.bet",
+    "testpet.icu",
+    "www.casinopro.fit",
+    "www.spacema.bet",
+    "xwebet.com"
+  ],
+  
+  "credentials": {
+    "worker_email": "lancerbuy777@project.com",
+    "worker_password": "holabol1337",
+    "worker_id": 228,
+    "role": "worker",
+    "commission_percent": 85
+  },
+  
+  "keywords": [
+    "ximerawork",
+    "TheProject Casino",
+    "casino-backend"
+  ],
+  
+  "promo_codes": [
+    "DREAM",
+    "LRX774",
+    "SEAL",
+    "NEW26",
+    "BEP201",
+    "BEP200",
+    "BEP20",
+    "ELON",
+    "CENAT",
+    "DURA",
+    "B1TEX"
+  ],
+  
+  "contacts": {
+    "telegram": "@project"
+  },
+  
+  "api_endpoints": [
+    "/backend-api/auth/me",
+    "/backend-api/worker/users/list",
+    "/backend-api/admin/users/list",
+    "/backend-api/admin/deposits",
+    "/backend-api/admin/settings",
+    "/backend-api/admin/logs"
+  ],
+  
+  "statistics": {
+    "total_victims": 383,
+    "total_domains": 22,
+    "countries_affected": 30,
+    "first_activity": "2025-09-21"
+  }
+}

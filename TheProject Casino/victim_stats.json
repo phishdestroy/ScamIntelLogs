@@ -1,0 +1,67 @@
+{
+  "total_victims": 383,
+  "data_period": {
+    "first_registration": "2025-09-21",
+    "last_registration": "2026-01-29"
+  },
+  
+  "by_country": {
+    "India": 77,
+    "Hungary": 45,
+    "Poland": 40,
+    "Romania": 25,
+    "United States": 24,
+    "Netherlands": 24,
+    "Germany": 21,
+    "Indonesia": 12,
+    "Finland": 11,
+    "France": 9,
+    "Czechia": 8,
+    "United Kingdom": 7,
+    "Sweden": 6,
+    "Bulgaria": 5,
+    "Israel": 4,
+    "Lithuania": 3,
+    "Ireland": 2,
+    "Other": 60
+  },
+  
+  "by_domain": {
+    "spacema.bet": 130,
+    "lurexcoin.com": 76,
+    "ofedrex.com": 74,
+    "money-king.bet": 20,
+    "mogulbet.vip": 15,
+    "xwebet.com": 7,
+    "axidex.com": 5,
+    "sho.mom": 5,
+    "bitfirefx.com": 4,
+    "infocryptox.com": 4,
+    "merbibet.com": 3,
+    "goldix.bet": 3,
+    "greencasino.bet": 2,
+    "other": 35
+  },
+  
+  "by_promo_code": {
+    "DREAM": 115,
+    "LRX774": 61,
+    "SEAL": 9,
+    "NEW26": 8,
+    "BEP201": 5,
+    "ELON": 5,
+    "BEP20": 4,
+    "DURA": 3,
+    "CENAT": 3,
+    "B1TEX": 3,
+    "no_code": 167
+  },
+  
+  "activity_status": {
+    "active_2_weeks": 155,
+    "active_1_month": 44,
+    "active_2_months": 80,
+    "active_3_months": 55,
+    "active_4_months": 49
+  }
+}
