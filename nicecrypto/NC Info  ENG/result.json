@@ -1,0 +1,409 @@
+{
+ "name": "NC Info | ENG",
+ "type": "public_channel",
+ "id": 3605815564,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2025-12-22T10:08:33",
+   "date_unixtime": "1766387313",
+   "actor": "NC Info | ENG",
+   "actor_id": "channel3605815564",
+   "action": "create_channel",
+   "title": "NiceCrypto info | ENG",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 3,
+   "type": "service",
+   "date": "2025-12-28T23:23:23",
+   "date_unixtime": "1766953403",
+   "actor": "NC Info | ENG",
+   "actor_id": "channel3605815564",
+   "action": "edit_group_title",
+   "title": "NC Info | ENG",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 4,
+   "type": "message",
+   "date": "2026-01-08T23:46:24",
+   "date_unixtime": "1767905184",
+   "from": "NC Info | ENG",
+   "from_id": "channel3605815564",
+   "photo": "photos/photo_1@08-01-2026_23-46-24.jpg",
+   "photo_file_size": 51296,
+   "width": 710,
+   "height": 1052,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 5,
+   "type": "message",
+   "date": "2026-01-08T23:46:24",
+   "date_unixtime": "1767905184",
+   "from": "NC Info | ENG",
+   "from_id": "channel3605815564",
+   "photo": "photos/photo_2@08-01-2026_23-46-24.jpg",
+   "photo_file_size": 121255,
+   "width": 921,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 6,
+   "type": "message",
+   "date": "2026-01-08T23:46:24",
+   "date_unixtime": "1767905184",
+   "from": "NC Info | ENG",
+   "from_id": "channel3605815564",
+   "photo": "photos/photo_3@08-01-2026_23-46-24.jpg",
+   "photo_file_size": 24286,
+   "width": 608,
+   "height": 496,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 7,
+   "type": "message",
+   "date": "2026-01-08T23:46:26",
+   "date_unixtime": "1767905186",
+   "edited": "2026-01-28T15:58:46",
+   "edited_unixtime": "1769605126",
+   "from": "NC Info | ENG",
+   "from_id": "channel3605815564",
+   "text": [
+    "Devlog 07.01.2026\n\n1. New “Modal Config” settings section:\n- Enable/disable wallets: Ability to control wallet availability in the modal window.\n- Change wallet priority: Set the priority of wallet display in the modal window.\n- Edit text: Ability to change the text in the modal window for loading and error messages.\n- Modal window theme settings\n\n2. New “WalletConnect Config” settings section:\n- Change metadata: Ability to edit metadata displayed when connecting via walletconnect\n\n",
+    {
+     "type": "text_link",
+     "text": "🤖 Main Bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    " | ",
+    {
+     "type": "text_link",
+     "text": "💬 Chat",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    " | 💬 ",
+    {
+     "type": "text_link",
+     "text": "Support",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Devlog 07.01.2026\n\n1. New “Modal Config” settings section:\n- Enable/disable wallets: Ability to control wallet availability in the modal window.\n- Change wallet priority: Set the priority of wallet display in the modal window.\n- Edit text: Ability to change the text in the modal window for loading and error messages.\n- Modal window theme settings\n\n2. New “WalletConnect Config” settings section:\n- Change metadata: Ability to edit metadata displayed when connecting via walletconnect\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "🤖 Main Bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": " | "
+    },
+    {
+     "type": "text_link",
+     "text": "💬 Chat",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    {
+     "type": "plain",
+     "text": " | 💬 "
+    },
+    {
+     "type": "text_link",
+     "text": "Support",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "message",
+   "date": "2026-01-08T23:49:45",
+   "date_unixtime": "1767905385",
+   "from": "NC Info | ENG",
+   "from_id": "channel3605815564",
+   "photo": "photos/photo_4@08-01-2026_23-49-45.jpg",
+   "photo_file_size": 58017,
+   "width": 824,
+   "height": 810,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 9,
+   "type": "message",
+   "date": "2026-01-08T23:50:43",
+   "date_unixtime": "1767905443",
+   "edited": "2026-01-28T15:58:40",
+   "edited_unixtime": "1769605120",
+   "from": "NC Info | ENG",
+   "from_id": "channel3605815564",
+   "text": [
+    "Devlog 08.01.2026\n\n1. Added “Buy Gas” feature in the “AML Configuration” section:\n- This feature allows you to conduct transactions from a completely empty and new wallet. Please note: this feature is not supported for Bybit Web3 wallets. For it to work correctly, you need to specify the TronRG API key ",
+    {
+     "type": "text_link",
+     "text": "TronRG",
+     "href": "https://t.me/BuyTronEnergy_bot"
+    },
+    ". Don't forget to top up the bot's TronRG balance ",
+    {
+     "type": "text_link",
+     "text": "TronRG",
+     "href": "https://t.me/BuyTronEnergy_bot"
+    },
+    ".\n\n",
+    {
+     "type": "text_link",
+     "text": "🤖 Main Bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    " | ",
+    {
+     "type": "text_link",
+     "text": "💬 Chat",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    " | 💬 ",
+    {
+     "type": "text_link",
+     "text": "Support",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Devlog 08.01.2026\n\n1. Added “Buy Gas” feature in the “AML Configuration” section:\n- This feature allows you to conduct transactions from a completely empty and new wallet. Please note: this feature is not supported for Bybit Web3 wallets. For it to work correctly, you need to specify the TronRG API key "
+    },
+    {
+     "type": "text_link",
+     "text": "TronRG",
+     "href": "https://t.me/BuyTronEnergy_bot"
+    },
+    {
+     "type": "plain",
+     "text": ". Don't forget to top up the bot's TronRG balance "
+    },
+    {
+     "type": "text_link",
+     "text": "TronRG",
+     "href": "https://t.me/BuyTronEnergy_bot"
+    },
+    {
+     "type": "plain",
+     "text": ".\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "🤖 Main Bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": " | "
+    },
+    {
+     "type": "text_link",
+     "text": "💬 Chat",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    {
+     "type": "plain",
+     "text": " | 💬 "
+    },
+    {
+     "type": "text_link",
+     "text": "Support",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "type": "message",
+   "date": "2026-01-22T20:14:10",
+   "date_unixtime": "1769102050",
+   "edited": "2026-01-27T11:11:09",
+   "edited_unixtime": "1769501469",
+   "from": "NC Info | ENG",
+   "from_id": "channel3605815564",
+   "photo": "photos/photo_5@22-01-2026_20-14-10.jpg",
+   "photo_file_size": 89193,
+   "width": 1280,
+   "height": 640,
+   "text": [
+    "Make a deposit of $1,000 to ",
+    {
+     "type": "text_link",
+     "text": "LOLZ",
+     "href": "https://lolz.live/threads/9580248/"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Make a deposit of $1,000 to "
+    },
+    {
+     "type": "text_link",
+     "text": "LOLZ",
+     "href": "https://lolz.live/threads/9580248/"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤"
+     }
+    ]
+  },
+  {
+   "id": 11,
+   "type": "message",
+   "date": "2026-01-24T21:50:08",
+   "date_unixtime": "1769280608",
+   "from": "NC Info | ENG",
+   "from_id": "channel3605815564",
+   "text": [
+    "Our topics on forums:\n\n",
+    {
+     "type": "text_link",
+     "text": "WWH",
+     "href": "https://wwh2club.to/index.php?threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.290536/"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LOLZ",
+     "href": "https://lolz.live/threads/9580248/"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "BHF",
+     "href": "https://bhf.pro/threads/718320/"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "DARKMARKET",
+     "href": "https://darkmarket.ca/threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.115137"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "PROCRD",
+     "href": "https://procrd.cc/threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.32683/#post-237009"
+    },
+    "\n\nReminder:\nThe increased interest rate is valid until the end of January! (75% in your favor)"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Our topics on forums:\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "WWH",
+     "href": "https://wwh2club.to/index.php?threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.290536/"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LOLZ",
+     "href": "https://lolz.live/threads/9580248/"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "BHF",
+     "href": "https://bhf.pro/threads/718320/"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "DARKMARKET",
+     "href": "https://darkmarket.ca/threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.115137"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "PROCRD",
+     "href": "https://procrd.cc/threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.32683/#post-237009"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nReminder:\nThe increased interest rate is valid until the end of January! (75% in your favor)"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "type": "message",
+   "date": "2026-01-25T12:53:37",
+   "date_unixtime": "1769334817",
+   "from": "NC Info | ENG",
+   "from_id": "channel3605815564",
+   "text": [
+    "We are actively creating offers (designs) for Tron. Subscribe to the ",
+    {
+     "type": "text_link",
+     "text": "channel with designs",
+     "href": "https://t.me/+mmu_O_xc2ZRlMDhk"
+    },
+    ", and you may find the offer you need."
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "We are actively creating offers (designs) for Tron. Subscribe to the "
+    },
+    {
+     "type": "text_link",
+     "text": "channel with designs",
+     "href": "https://t.me/+mmu_O_xc2ZRlMDhk"
+    },
+    {
+     "type": "plain",
+     "text": ", and you may find the offer you need."
+    }
+   ]
+  }
+ ]
+}

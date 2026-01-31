@@ -1,0 +1,958 @@
+{
+ "name": "NC Info | RUS",
+ "type": "public_channel",
+ "id": 3522562902,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2025-12-22T10:07:43",
+   "date_unixtime": "1766387263",
+   "actor": "NC Info | RUS",
+   "actor_id": "channel3522562902",
+   "action": "create_channel",
+   "title": "NiceCrypto info | RUS",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 10,
+   "type": "message",
+   "date": "2026-01-04T21:20:54",
+   "date_unixtime": "1767550854",
+   "edited": "2026-01-28T15:56:56",
+   "edited_unixtime": "1769605016",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "text": [
+    {
+     "type": "bold",
+     "text": "Добро пожаловать в официальный канал проекта!"
+    },
+    "\n\nМы рады приветствовать вас и благодарим за интерес к нашему продукту. Данный проект является результатом длительной и последовательной работы, в ходе которой мы ставили перед собой одну ключевую цель — создать технологичное, стабильное и максимально удобное решение, ориентированное на реальные потребности пользователей.\n\nМы изначально нацелены на долгосрочное развитие и выстраивание устойчивых партнёрских отношений. Для нас важно не только предоставить качественный инструмент, но и постоянно совершенствовать его, опираясь на обратную связь и практический опыт использования. Мы открыты к предложениям, внимательно рассматриваем инициативы и прислушиваемся к каждому пользователю, поскольку убеждены, что сильный продукт создаётся в диалоге с сообществом.\n\nВ основе проекта лежат принципы прозрачности, надёжности и полной автоматизации. Весь функционал доступен пользователям круглосуточно и сосредоточен в Telegram-боте, что позволяет в любое время управлять настройками, контролировать процессы и оперативно реагировать на изменения без необходимости обращаться к третьим лицам.\n\nУделено особое внимание стабильности работы, качеству пользовательского опыта и регулярному обновлению функционала. Проект активно развивается: на текущем этапе он запущен в тестовом режиме с поддержкой сети TRON, при этом в ближайших планах — расширение и подключение дополнительных сетей.\nЭтот канал будет использоваться для публикации новостей, обновлений, анонсов и важной информации о развитии проекта. Благодарим вас за доверие и участие — вместе мы формируем продукт, ориентированный на долгую и эффективную работу.\n\n",
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    " | ",
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    " | 💬 ",
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Добро пожаловать в официальный канал проекта!"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nМы рады приветствовать вас и благодарим за интерес к нашему продукту. Данный проект является результатом длительной и последовательной работы, в ходе которой мы ставили перед собой одну ключевую цель — создать технологичное, стабильное и максимально удобное решение, ориентированное на реальные потребности пользователей.\n\nМы изначально нацелены на долгосрочное развитие и выстраивание устойчивых партнёрских отношений. Для нас важно не только предоставить качественный инструмент, но и постоянно совершенствовать его, опираясь на обратную связь и практический опыт использования. Мы открыты к предложениям, внимательно рассматриваем инициативы и прислушиваемся к каждому пользователю, поскольку убеждены, что сильный продукт создаётся в диалоге с сообществом.\n\nВ основе проекта лежат принципы прозрачности, надёжности и полной автоматизации. Весь функционал доступен пользователям круглосуточно и сосредоточен в Telegram-боте, что позволяет в любое время управлять настройками, контролировать процессы и оперативно реагировать на изменения без необходимости обращаться к третьим лицам.\n\nУделено особое внимание стабильности работы, качеству пользовательского опыта и регулярному обновлению функционала. Проект активно развивается: на текущем этапе он запущен в тестовом режиме с поддержкой сети TRON, при этом в ближайших планах — расширение и подключение дополнительных сетей.\nЭтот канал будет использоваться для публикации новостей, обновлений, анонсов и важной информации о развитии проекта. Благодарим вас за доверие и участие — вместе мы формируем продукт, ориентированный на долгую и эффективную работу.\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": " | "
+    },
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    {
+     "type": "plain",
+     "text": " | 💬 "
+    },
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "type": "message",
+   "date": "2026-01-06T23:33:23",
+   "date_unixtime": "1767731603",
+   "edited": "2026-01-28T15:56:50",
+   "edited_unixtime": "1769605010",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "photo": "photos/photo_1@06-01-2026_23-33-23.jpg",
+   "photo_file_size": 51296,
+   "width": 710,
+   "height": 1052,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Devlog 07.01.2026"
+    },
+    "\n\n1. Новый раздел настроек \"",
+    {
+     "type": "bold",
+     "text": "Modal Config"
+    },
+    "\":\n- ",
+    {
+     "type": "bold",
+     "text": "Включение/выключение кошельков:"
+    },
+    " Возможность управлять доступностью кошельков в модальном окне.\n- ",
+    {
+     "type": "bold",
+     "text": "Изменение приоритета кошельков:"
+    },
+    " Настройка приоритетности отображения кошельков в модальном окне.\n- ",
+    {
+     "type": "bold",
+     "text": "Редактирование текста:"
+    },
+    " Возможность изменять текст в модальном окне загрузки и сообщений об ошибках.\n- ",
+    {
+     "type": "bold",
+     "text": "Настройка темы модального окна"
+    },
+    "\n\n2. Новый раздел настроек \"",
+    {
+     "type": "bold",
+     "text": "WalletConnect Config"
+    },
+    "\":\n- ",
+    {
+     "type": "bold",
+     "text": "Изменение метаданных:"
+    },
+    " Возможность редактировать метаданные, отображаемые при подключении через walletconnect\n\n",
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    " | ",
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    " | 💬 ",
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#devlog"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#tron"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Devlog 07.01.2026"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n1. Новый раздел настроек \""
+    },
+    {
+     "type": "bold",
+     "text": "Modal Config"
+    },
+    {
+     "type": "plain",
+     "text": "\":\n- "
+    },
+    {
+     "type": "bold",
+     "text": "Включение/выключение кошельков:"
+    },
+    {
+     "type": "plain",
+     "text": " Возможность управлять доступностью кошельков в модальном окне.\n- "
+    },
+    {
+     "type": "bold",
+     "text": "Изменение приоритета кошельков:"
+    },
+    {
+     "type": "plain",
+     "text": " Настройка приоритетности отображения кошельков в модальном окне.\n- "
+    },
+    {
+     "type": "bold",
+     "text": "Редактирование текста:"
+    },
+    {
+     "type": "plain",
+     "text": " Возможность изменять текст в модальном окне загрузки и сообщений об ошибках.\n- "
+    },
+    {
+     "type": "bold",
+     "text": "Настройка темы модального окна"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n2. Новый раздел настроек \""
+    },
+    {
+     "type": "bold",
+     "text": "WalletConnect Config"
+    },
+    {
+     "type": "plain",
+     "text": "\":\n- "
+    },
+    {
+     "type": "bold",
+     "text": "Изменение метаданных:"
+    },
+    {
+     "type": "plain",
+     "text": " Возможность редактировать метаданные, отображаемые при подключении через walletconnect\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": " | "
+    },
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    {
+     "type": "plain",
+     "text": " | 💬 "
+    },
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#devlog"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#tron"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "type": "message",
+   "date": "2026-01-06T23:33:23",
+   "date_unixtime": "1767731603",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "photo": "photos/photo_2@06-01-2026_23-33-23.jpg",
+   "photo_file_size": 121258,
+   "width": 921,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 14,
+   "type": "message",
+   "date": "2026-01-06T23:33:23",
+   "date_unixtime": "1767731603",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "photo": "photos/photo_3@06-01-2026_23-33-23.jpg",
+   "photo_file_size": 24286,
+   "width": 608,
+   "height": 496,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 15,
+   "type": "message",
+   "date": "2026-01-06T23:33:23",
+   "date_unixtime": "1767731603",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "photo": "photos/photo_4@06-01-2026_23-33-23.jpg",
+   "photo_file_size": 102898,
+   "width": 896,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 16,
+   "type": "message",
+   "date": "2026-01-07T15:22:59",
+   "date_unixtime": "1767788579",
+   "edited": "2026-01-28T15:56:27",
+   "edited_unixtime": "1769604987",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "photo": "photos/photo_5@07-01-2026_15-22-59.jpg",
+   "photo_file_size": 34776,
+   "width": 872,
+   "height": 696,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Devlog 07.01.2026"
+    },
+    "\n\n1. Обновлен раздел настроек \"",
+    {
+     "type": "bold",
+     "text": "Signed contracts"
+    },
+    "\".\n- Добавлено отображение текущего баланса токена\n\n",
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    " | ",
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    " | 💬 ",
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#devlog"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#tron"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Devlog 07.01.2026"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n1. Обновлен раздел настроек \""
+    },
+    {
+     "type": "bold",
+     "text": "Signed contracts"
+    },
+    {
+     "type": "plain",
+     "text": "\".\n- Добавлено отображение текущего баланса токена\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": " | "
+    },
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    {
+     "type": "plain",
+     "text": " | 💬 "
+    },
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#devlog"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#tron"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "type": "message",
+   "date": "2026-01-07T15:39:51",
+   "date_unixtime": "1767789591",
+   "edited": "2026-01-28T15:56:21",
+   "edited_unixtime": "1769604981",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "text": [
+    "Наш топик на форуме WWH:\n\n",
+    {
+     "type": "link",
+     "text": "wwh2club.to/index.php?threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.290536/"
+    },
+    "\n\n",
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    " | ",
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    " | 💬 ",
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Наш топик на форуме WWH:\n\n"
+    },
+    {
+     "type": "link",
+     "text": "wwh2club.to/index.php?threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.290536/"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": " | "
+    },
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    {
+     "type": "plain",
+     "text": " | 💬 "
+    },
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "type": "message",
+   "date": "2026-01-08T18:32:32",
+   "date_unixtime": "1767886352",
+   "edited": "2026-01-28T15:55:48",
+   "edited_unixtime": "1769604948",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "photo": "photos/photo_6@08-01-2026_18-32-32.jpg",
+   "photo_file_size": 61615,
+   "width": 876,
+   "height": 826,
+   "text": [
+    "Devlog ",
+    {
+     "type": "bold",
+     "text": "08.01.2026"
+    },
+    "\n\n1. Добавлена функция ",
+    {
+     "type": "bold",
+     "text": "\"Buy Gas\""
+    },
+    " в разделе ",
+    {
+     "type": "bold",
+     "text": "\"AML Configuration\""
+    },
+    ":\n- Эта функция позволяет проводить операции с ",
+    {
+     "type": "bold",
+     "text": "совершенно пустого и нового "
+    },
+    "кошелька. Обратите внимание: функция не поддерживается для кошелька",
+    {
+     "type": "bold",
+     "text": " Bybit Web3"
+    },
+    ". Для её корректной работы требуется указать API-ключ ",
+    {
+     "type": "text_link",
+     "text": "TronRG",
+     "href": "https://t.me/BuyTronEnergy_bot"
+    },
+    ". Не забудьте пополнить баланс ",
+    {
+     "type": "text_link",
+     "text": "TronRG",
+     "href": "https://t.me/BuyTronEnergy_bot"
+    },
+    " бота.\n\n",
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    " | ",
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    " | 💬 ",
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#devlog"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#tron"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Devlog "
+    },
+    {
+     "type": "bold",
+     "text": "08.01.2026"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n1. Добавлена функция "
+    },
+    {
+     "type": "bold",
+     "text": "\"Buy Gas\""
+    },
+    {
+     "type": "plain",
+     "text": " в разделе "
+    },
+    {
+     "type": "bold",
+     "text": "\"AML Configuration\""
+    },
+    {
+     "type": "plain",
+     "text": ":\n- Эта функция позволяет проводить операции с "
+    },
+    {
+     "type": "bold",
+     "text": "совершенно пустого и нового "
+    },
+    {
+     "type": "plain",
+     "text": "кошелька. Обратите внимание: функция не поддерживается для кошелька"
+    },
+    {
+     "type": "bold",
+     "text": " Bybit Web3"
+    },
+    {
+     "type": "plain",
+     "text": ". Для её корректной работы требуется указать API-ключ "
+    },
+    {
+     "type": "text_link",
+     "text": "TronRG",
+     "href": "https://t.me/BuyTronEnergy_bot"
+    },
+    {
+     "type": "plain",
+     "text": ". Не забудьте пополнить баланс "
+    },
+    {
+     "type": "text_link",
+     "text": "TronRG",
+     "href": "https://t.me/BuyTronEnergy_bot"
+    },
+    {
+     "type": "plain",
+     "text": " бота.\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": " | "
+    },
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    {
+     "type": "plain",
+     "text": " | 💬 "
+    },
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#devlog"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#tron"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "type": "message",
+   "date": "2026-01-18T17:16:33",
+   "date_unixtime": "1768745793",
+   "edited": "2026-01-28T15:55:33",
+   "edited_unixtime": "1769604933",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "photo": "photos/photo_7@18-01-2026_17-16-33.jpg",
+   "photo_file_size": 89193,
+   "width": 1280,
+   "height": 640,
+   "text": [
+    "Внесли депозит на ",
+    {
+     "type": "text_link",
+     "text": "LOLZ",
+     "href": "https://lolz.live/threads/9580248/"
+    },
+    " в размере 1000$.\n\n",
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    " | ",
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    " | 💬 ",
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Внесли депозит на "
+    },
+    {
+     "type": "text_link",
+     "text": "LOLZ",
+     "href": "https://lolz.live/threads/9580248/"
+    },
+    {
+     "type": "plain",
+     "text": " в размере 1000$.\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "🤖 Основной бот",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": " | "
+    },
+    {
+     "type": "text_link",
+     "text": "💬 Чат",
+     "href": "https://t.me/+nwjXjH4qPNhmYWRk"
+    },
+    {
+     "type": "plain",
+     "text": " | 💬 "
+    },
+    {
+     "type": "text_link",
+     "text": "Саппорт",
+     "href": "https://t.me/NiceCrypto_Support"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "type": "message",
+   "date": "2026-01-24T12:34:43",
+   "date_unixtime": "1769247283",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "text": [
+    {
+     "type": "bold",
+     "text": "Наши топики на форумах:"
+    },
+    "\n\n",
+    {
+     "type": "text_link",
+     "text": "WWH",
+     "href": "https://wwh2club.to/index.php?threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.290536/"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "LOLZ",
+     "href": "https://lolz.live/threads/9580248/"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "BHF",
+     "href": "https://bhf.pro/threads/718320/"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "DARKMARKET",
+     "href": "https://darkmarket.ca/threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.115137"
+    },
+    "\n",
+    {
+     "type": "text_link",
+     "text": "PROCRD",
+     "href": "https://procrd.cc/threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.32683/#post-237009"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Напоминаем"
+    },
+    "\nДо конца января действует повышенный процент! (75% в вашу сторону)"
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Наши топики на форумах:"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "text_link",
+     "text": "WWH",
+     "href": "https://wwh2club.to/index.php?threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.290536/"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "LOLZ",
+     "href": "https://lolz.live/threads/9580248/"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "BHF",
+     "href": "https://bhf.pro/threads/718320/"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "DARKMARKET",
+     "href": "https://darkmarket.ca/threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.115137"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "text_link",
+     "text": "PROCRD",
+     "href": "https://procrd.cc/threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.32683/#post-237009"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Напоминаем"
+    },
+    {
+     "type": "plain",
+     "text": "\nДо конца января действует повышенный процент! (75% в вашу сторону)"
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "type": "message",
+   "date": "2026-01-25T15:34:38",
+   "date_unixtime": "1769344478",
+   "edited": "2026-01-25T15:36:18",
+   "edited_unixtime": "1769344578",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "text": [
+    "Активно делаем офферы (дизайны) для Tron. Подпишитесь на ",
+    {
+     "type": "text_link",
+     "text": "канал с дизайнами",
+     "href": "https://t.me/+mmu_O_xc2ZRlMDhk"
+    },
+    ", скорее всего там уже лежит готовый, подходящий для Вас оффер на тысячи $ прибыли!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Активно делаем офферы (дизайны) для Tron. Подпишитесь на "
+    },
+    {
+     "type": "text_link",
+     "text": "канал с дизайнами",
+     "href": "https://t.me/+mmu_O_xc2ZRlMDhk"
+    },
+    {
+     "type": "plain",
+     "text": ", скорее всего там уже лежит готовый, подходящий для Вас оффер на тысячи $ прибыли!"
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "type": "message",
+   "date": "2026-01-28T19:45:11",
+   "date_unixtime": "1769618711",
+   "edited": "2026-01-28T19:46:13",
+   "edited_unixtime": "1769618773",
+   "from": "NC Info | RUS",
+   "from_id": "channel3522562902",
+   "photo": "photos/photo_8@28-01-2026_19-45-11.jpg",
+   "photo_file_size": 34466,
+   "width": 1280,
+   "height": 224,
+   "text": "Подкорректировали и внесли полную ясность в условия нашей партнерской программы, а также было решено продлить повышенный процент до конца Февраля для знакомства новых пользователей с проектом. + увеличили депозит до 101к рублей",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Подкорректировали и внесли полную ясность в условия нашей партнерской программы, а также было решено продлить повышенный процент до конца Февраля для знакомства новых пользователей с проектом. + увеличили депозит до 101к рублей"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,311 @@
+{
+ "name": "NC Payments",
+ "type": "public_channel",
+ "id": 3462761505,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2025-12-28T23:14:53",
+   "date_unixtime": "1766952893",
+   "actor": "NC Payments",
+   "actor_id": "channel3462761505",
+   "action": "create_channel",
+   "title": "NC PAYMENTS",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 4,
+   "type": "message",
+   "date": "2026-01-08T17:07:37",
+   "date_unixtime": "1767881257",
+   "edited": "2026-01-27T16:30:38",
+   "edited_unixtime": "1769520638",
+   "from": "NC Payments",
+   "from_id": "channel3462761505",
+   "photo": "photos/photo_1@08-01-2026_17-07-37.jpg",
+   "photo_file_size": 47236,
+   "width": 1280,
+   "height": 515,
+   "text": [
+    "🇷🇺 Выплата партнеру составила",
+    {
+     "type": "bold",
+     "text": " $1200"
+    },
+    "\n🇺🇸 The payout to the partner was ",
+    {
+     "type": "bold",
+     "text": "$1200"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🇷🇺 Выплата партнеру составила"
+    },
+    {
+     "type": "bold",
+     "text": " $1200"
+    },
+    {
+     "type": "plain",
+     "text": "\n🇺🇸 The payout to the partner was "
+    },
+    {
+     "type": "bold",
+     "text": "$1200"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "message",
+   "date": "2026-01-09T22:00:59",
+   "date_unixtime": "1767985259",
+   "edited": "2026-01-27T16:30:27",
+   "edited_unixtime": "1769520627",
+   "from": "NC Payments",
+   "from_id": "channel3462761505",
+   "photo": "photos/photo_2@09-01-2026_22-00-59.jpg",
+   "photo_file_size": 47900,
+   "width": 1280,
+   "height": 537,
+   "text": [
+    "🇷🇺 Выплата партнеру составила",
+    {
+     "type": "bold",
+     "text": " $2606"
+    },
+    "\n🇺🇸 The payout to the partner was ",
+    {
+     "type": "bold",
+     "text": "$2606"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🇷🇺 Выплата партнеру составила"
+    },
+    {
+     "type": "bold",
+     "text": " $2606"
+    },
+    {
+     "type": "plain",
+     "text": "\n🇺🇸 The payout to the partner was "
+    },
+    {
+     "type": "bold",
+     "text": "$2606"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "type": "message",
+   "date": "2026-01-10T17:36:25",
+   "date_unixtime": "1768055785",
+   "edited": "2026-01-27T16:30:14",
+   "edited_unixtime": "1769520614",
+   "from": "NC Payments",
+   "from_id": "channel3462761505",
+   "photo": "photos/photo_3@10-01-2026_17-36-25.jpg",
+   "photo_file_size": 45069,
+   "width": 1280,
+   "height": 533,
+   "text": [
+    "🇷🇺 Выплата партнеру составила",
+    {
+     "type": "bold",
+     "text": " $1684"
+    },
+    "\n🇺🇸 The payout to the partner was ",
+    {
+     "type": "bold",
+     "text": "$1684"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🇷🇺 Выплата партнеру составила"
+    },
+    {
+     "type": "bold",
+     "text": " $1684"
+    },
+    {
+     "type": "plain",
+     "text": "\n🇺🇸 The payout to the partner was "
+    },
+    {
+     "type": "bold",
+     "text": "$1684"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "type": "message",
+   "date": "2026-01-13T12:45:39",
+   "date_unixtime": "1768297539",
+   "edited": "2026-01-27T16:30:00",
+   "edited_unixtime": "1769520600",
+   "from": "NC Payments",
+   "from_id": "channel3462761505",
+   "photo": "photos/photo_4@13-01-2026_12-45-39.jpg",
+   "photo_file_size": 44820,
+   "width": 1280,
+   "height": 526,
+   "text": [
+    "🇷🇺 Выплата партнеру составила",
+    {
+     "type": "bold",
+     "text": " $2964"
+    },
+    "\n🇺🇸 The payout to the partner was ",
+    {
+     "type": "bold",
+     "text": "$2964"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🇷🇺 Выплата партнеру составила"
+    },
+    {
+     "type": "bold",
+     "text": " $2964"
+    },
+    {
+     "type": "plain",
+     "text": "\n🇺🇸 The payout to the partner was "
+    },
+    {
+     "type": "bold",
+     "text": "$2964"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "message",
+   "date": "2026-01-23T09:34:11",
+   "date_unixtime": "1769150051",
+   "edited": "2026-01-27T16:29:48",
+   "edited_unixtime": "1769520588",
+   "from": "NC Payments",
+   "from_id": "channel3462761505",
+   "photo": "photos/photo_5@23-01-2026_09-34-11.jpg",
+   "photo_file_size": 42181,
+   "width": 1280,
+   "height": 488,
+   "text": [
+    "🇷🇺 Выплата партнеру составила",
+    {
+     "type": "bold",
+     "text": " $2040"
+    },
+    "\n🇺🇸 The payout to the partner was ",
+    {
+     "type": "bold",
+     "text": "$2040"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🇷🇺 Выплата партнеру составила"
+    },
+    {
+     "type": "bold",
+     "text": " $2040"
+    },
+    {
+     "type": "plain",
+     "text": "\n🇺🇸 The payout to the partner was "
+    },
+    {
+     "type": "bold",
+     "text": "$2040"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "type": "message",
+   "date": "2026-01-28T00:19:06",
+   "date_unixtime": "1769548746",
+   "from": "NC Payments",
+   "from_id": "channel3462761505",
+   "photo": "photos/photo_6@28-01-2026_00-19-06.jpg",
+   "photo_file_size": 60715,
+   "width": 748,
+   "height": 1230,
+   "text": [
+    "🇷🇺 Выплата партнеру составила",
+    {
+     "type": "bold",
+     "text": " $674"
+    },
+    "\n🇺🇸 The payout to the partner was ",
+    {
+     "type": "bold",
+     "text": "$674"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🇷🇺 Выплата партнеру составила"
+    },
+    {
+     "type": "bold",
+     "text": " $674"
+    },
+    {
+     "type": "plain",
+     "text": "\n🇺🇸 The payout to the partner was "
+    },
+    {
+     "type": "bold",
+     "text": "$674"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  }
+ ]
+}

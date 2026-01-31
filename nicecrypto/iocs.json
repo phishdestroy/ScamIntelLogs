@@ -1,0 +1,53 @@
+{
+  "name": "NiceCrypto Drainer",
+  "type": "Crypto Wallet Drainer",
+  "network": "TRON",
+  "status": "Active",
+  "first_seen": "2025-12-22",
+  "last_activity": "2026-01-28",
+  "telegram": {
+    "bot": "@NCsetup_bot",
+    "support": "@NiceCrypto_Support",
+    "chat": "https://t.me/+nwjXjH4qPNhmYWRk",
+    "channels": {
+      "info_rus": {
+        "name": "NC Info | RUS",
+        "id": 3522562902,
+        "type": "public_channel"
+      },
+      "info_eng": {
+        "name": "NC Info | ENG", 
+        "id": 3605815564,
+        "type": "public_channel"
+      },
+      "payments": {
+        "name": "NC Payments",
+        "id": 3462761505,
+        "type": "public_channel"
+      }
+    }
+  },
+  "infrastructure": {
+    "docs": "wiki.nicecrypto.forum",
+    "forum_topic": "wwh2club.to/index.php?threads/nicecrypto-affiliate-tron-drainer-do-80-best-panel-youve-ever-used.290536/"
+  },
+  "affiliate_share": "up to 80%",
+  "features": [
+    "TRON network drainer",
+    "Telegram bot control panel",
+    "WalletConnect integration",
+    "Modal window customization",
+    "Auto-withdraw on approval",
+    "Balance monitoring",
+    "Custom landing pages"
+  ],
+  "planned_networks": ["SOL", "EVM", "TON"],
+  "payments_recorded": [
+    {"date": "2026-01-08", "amount": 1200},
+    {"date": "2026-01-09", "amount": 2606},
+    {"date": "2026-01-10", "amount": 1684},
+    {"date": "2026-01-13", "amount": 2964},
+    {"date": "2026-01-23", "amount": "unknown"},
+    {"date": "2026-01-28", "amount": "unknown"}
+  ]
+}

@@ -1,0 +1,1896 @@
+{
+ "name": "NC Designs",
+ "type": "private_channel",
+ "id": 3612324576,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2026-01-04T14:48:02",
+   "date_unixtime": "1767527282",
+   "actor": "NC Designs",
+   "actor_id": "channel3612324576",
+   "action": "create_channel",
+   "title": "NC Designs",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 3,
+   "type": "message",
+   "date": "2026-01-04T18:43:42",
+   "date_unixtime": "1767541422",
+   "edited": "2026-01-25T12:50:32",
+   "edited_unixtime": "1769334632",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_1@04-01-2026_18-43-42.jpg",
+   "photo_file_size": 89651,
+   "width": 1280,
+   "height": 646,
+   "text": [
+    {
+     "type": "bold",
+     "text": "ByBit AML Verification"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "Сервис проверки AML риска от биржи Bybit представляет собой надежное решение для обеспечения безопасности ваших транзакций. Этот инструмент позволяет пользователям оценивать риск, связанный с антиотмывочными требованиями, и обеспечивает дополнительный уровень защиты для ваших активов.",
+     "collapsed": false
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "ID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "bold",
+     "text": ":"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "ByBitAML"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "Bybit's AML risk check service is a reliable solution for ensuring the security of your transactions. This tool allows users to assess the risk associated with anti-money laundering requirements and provides an additional level of protection for your assets.",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "ByBitAML"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#AML"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "ByBit AML Verification"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Сервис проверки AML риска от биржи Bybit представляет собой надежное решение для обеспечения безопасности ваших транзакций. Этот инструмент позволяет пользователям оценивать риск, связанный с антиотмывочными требованиями, и обеспечивает дополнительный уровень защиты для ваших активов.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "ID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "bold",
+     "text": ":"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "ByBitAML"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Bybit's AML risk check service is a reliable solution for ensuring the security of your transactions. This tool allows users to assess the risk associated with anti-money laundering requirements and provides an additional level of protection for your assets.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "ByBitAML"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#AML"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "message",
+   "date": "2026-01-04T18:57:36",
+   "date_unixtime": "1767542256",
+   "edited": "2026-01-25T12:49:47",
+   "edited_unixtime": "1769334587",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_2@04-01-2026_18-57-36.jpg",
+   "photo_file_size": 67386,
+   "width": 1280,
+   "height": 640,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Trust Wallet AML Verification "
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "Сервис проверки AML риска от кошелька Trust Wallet предоставляет пользователям надежные инструменты для обеспечения безопасности и соблюдения антиотмывочных требований. Этот сервис помогает оценить риски, связанные с транзакциями, и защищает ваши активы от нежелательных операций.",
+     "collapsed": false
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "ID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "bold",
+     "text": ":"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "TrustAML"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "Trust Wallet's AML risk check service provides users with reliable tools to ensure security and compliance with anti-money laundering requirements. This service helps assess the risks associated with transactions and protects your assets from unwanted operations.",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "TrustAML"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#AML"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Trust Wallet AML Verification "
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Сервис проверки AML риска от кошелька Trust Wallet предоставляет пользователям надежные инструменты для обеспечения безопасности и соблюдения антиотмывочных требований. Этот сервис помогает оценить риски, связанные с транзакциями, и защищает ваши активы от нежелательных операций.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "ID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "bold",
+     "text": ":"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "TrustAML"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Trust Wallet's AML risk check service provides users with reliable tools to ensure security and compliance with anti-money laundering requirements. This service helps assess the risks associated with transactions and protects your assets from unwanted operations.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "TrustAML"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#AML"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤"
+     }
+    ]
+  },
+  {
+   "id": 6,
+   "type": "message",
+   "date": "2026-01-04T21:17:46",
+   "date_unixtime": "1767550666",
+   "edited": "2026-01-25T12:48:44",
+   "edited_unixtime": "1769334524",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_3@04-01-2026_21-17-46.jpg",
+   "photo_file_size": 59429,
+   "width": 1280,
+   "height": 640,
+   "text": [
+    {
+     "type": "bold",
+     "text": "AMLBOT AML Verification"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "Сервис проверки AML риска от AML BOT предлагает пользователям надежные инструменты для минимизации рисков, связанных с отмыванием денег. Этот автоматизированный бот анализирует транзакции, выявляет подозрительные активности и помогает пользователям соблюдать законодательные требования.",
+     "collapsed": false
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "ID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "bold",
+     "text": ":"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "AML_BOT"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "The AML risk verification service from AML BOT offers users reliable tools for minimizing risks associated with money laundering. This automated bot analyzes transactions, identifies suspicious activity, and helps users comply with legal requirements.",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "AML_BOT"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#AML"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "AMLBOT AML Verification"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Сервис проверки AML риска от AML BOT предлагает пользователям надежные инструменты для минимизации рисков, связанных с отмыванием денег. Этот автоматизированный бот анализирует транзакции, выявляет подозрительные активности и помогает пользователям соблюдать законодательные требования.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "ID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "bold",
+     "text": ":"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "AML_BOT"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "The AML risk verification service from AML BOT offers users reliable tools for minimizing risks associated with money laundering. This automated bot analyzes transactions, identifies suspicious activity, and helps users comply with legal requirements.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "AML_BOT"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#AML"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "type": "message",
+   "date": "2026-01-18T20:54:52",
+   "date_unixtime": "1768758892",
+   "edited": "2026-01-25T13:55:10",
+   "edited_unixtime": "1769338510",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_4@18-01-2026_20-54-52.jpg",
+   "photo_file_size": 107909,
+   "width": 1280,
+   "height": 747,
+   "text": [
+    {
+     "type": "bold",
+     "text": "TRON DROP"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "Раздача монеты TRON позволяет участникам получить токены, выполнив простые условия. Чтобы стать частью акции, достаточно подключить кошелек и следовать указанным инструкциям. Это отличная возможность познакомиться с возможностями TRON и расширить свои криптовалютные активы.",
+     "collapsed": false
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "ID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "TronDROP"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "The TRON coin distribution allows participants to receive tokens by fulfilling simple conditions. To take part in the promotion, simply connect your wallet and follow the instructions provided. This is an excellent opportunity to learn about the capabilities of TRON and expand your cryptocurrency assets.",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "TronDROP"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#DROP"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "TRON DROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Раздача монеты TRON позволяет участникам получить токены, выполнив простые условия. Чтобы стать частью акции, достаточно подключить кошелек и следовать указанным инструкциям. Это отличная возможность познакомиться с возможностями TRON и расширить свои криптовалютные активы.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "ID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "TronDROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "The TRON coin distribution allows participants to receive tokens by fulfilling simple conditions. To take part in the promotion, simply connect your wallet and follow the instructions provided. This is an excellent opportunity to learn about the capabilities of TRON and expand your cryptocurrency assets.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "TronDROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#DROP"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "message",
+   "date": "2026-01-18T20:56:00",
+   "date_unixtime": "1768758960",
+   "edited": "2026-01-25T13:55:04",
+   "edited_unixtime": "1769338504",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_5@18-01-2026_20-56-00.jpg",
+   "photo_file_size": 78013,
+   "width": 1280,
+   "height": 747,
+   "text": [
+    {
+     "type": "bold",
+     "text": "TETHER DROP"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "Раздача стейблкоина USDT предоставляет возможность получить токены за выполнение простых условий. Для участия просто подключите свой кошелек и следуйте указанным инструкциям. Это отличный шанс расширить свои криптовалютные активы с помощью USDT.",
+     "collapsed": false
+    },
+    "\nID для установки в ",
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "TetherDROP"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "The USDT stablecoin distribution offers the opportunity to receive tokens for fulfilling simple conditions. To participate, simply connect your wallet and follow the instructions provided. This is an excellent opportunity to expand your cryptocurrency assets with USDT.",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "TetherDROP"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#DROP"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "TETHER DROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Раздача стейблкоина USDT предоставляет возможность получить токены за выполнение простых условий. Для участия просто подключите свой кошелек и следуйте указанным инструкциям. Это отличный шанс расширить свои криптовалютные активы с помощью USDT.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "TetherDROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "The USDT stablecoin distribution offers the opportunity to receive tokens for fulfilling simple conditions. To participate, simply connect your wallet and follow the instructions provided. This is an excellent opportunity to expand your cryptocurrency assets with USDT.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "TetherDROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#DROP"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "type": "message",
+   "date": "2026-01-18T21:03:11",
+   "date_unixtime": "1768759391",
+   "edited": "2026-01-25T13:54:59",
+   "edited_unixtime": "1769338499",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_6@18-01-2026_21-03-11.jpg",
+   "photo_file_size": 45532,
+   "width": 1280,
+   "height": 639,
+   "text": [
+    {
+     "type": "bold",
+     "text": "ALGO SWAP"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "ALGOSWAP — это надежный обменник с поддержкой широкого спектра криптовалют. Он предлагает пользователям удобный и интуитивно понятный интерфейс, позволяющий быстро и легко обменивать популярные токены и альткойны с минимальными комиссиями. Платформа обеспечивает возможность обмена на карты и через систему быстрых платежей (СБП), что делает финансовые операции еще более комфортными. Кроме того, ALGOSWAP предоставляет программу лояльности, позволяя пользователям получать бонусы и специальные акции. Присоединяйтесь к сообществу ALGOSWAP и наслаждайтесь всеми преимуществами современного обмена криптовалют!",
+     "collapsed": false
+    },
+    "\nID для установки в ",
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "AlgoSWAP"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "ALGOSWAP is a reliable exchange that supports a wide range of cryptocurrencies. It offers users a convenient and intuitive interface that allows them to quickly and easily exchange popular tokens and altcoins with minimal fees. The platform provides the ability to exchange to cards and through the fast payment system (FPS), which makes financial transactions even more convenient. In addition, ALGOSWAP offers a loyalty program, allowing users to receive bonuses and special promotions. Join the ALGOSWAP community and enjoy all the benefits of modern cryptocurrency exchange!",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "AlgoSWAP"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#SWAP"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "ALGO SWAP"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "ALGOSWAP — это надежный обменник с поддержкой широкого спектра криптовалют. Он предлагает пользователям удобный и интуитивно понятный интерфейс, позволяющий быстро и легко обменивать популярные токены и альткойны с минимальными комиссиями. Платформа обеспечивает возможность обмена на карты и через систему быстрых платежей (СБП), что делает финансовые операции еще более комфортными. Кроме того, ALGOSWAP предоставляет программу лояльности, позволяя пользователям получать бонусы и специальные акции. Присоединяйтесь к сообществу ALGOSWAP и наслаждайтесь всеми преимуществами современного обмена криптовалют!",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "AlgoSWAP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "ALGOSWAP is a reliable exchange that supports a wide range of cryptocurrencies. It offers users a convenient and intuitive interface that allows them to quickly and easily exchange popular tokens and altcoins with minimal fees. The platform provides the ability to exchange to cards and through the fast payment system (FPS), which makes financial transactions even more convenient. In addition, ALGOSWAP offers a loyalty program, allowing users to receive bonuses and special promotions. Join the ALGOSWAP community and enjoy all the benefits of modern cryptocurrency exchange!",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "AlgoSWAP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#SWAP"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "type": "message",
+   "date": "2026-01-18T21:15:10",
+   "date_unixtime": "1768760110",
+   "edited": "2026-01-25T13:54:54",
+   "edited_unixtime": "1769338494",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_7@18-01-2026_21-15-10.jpg",
+   "photo_file_size": 72664,
+   "width": 1280,
+   "height": 642,
+   "text": [
+    {
+     "type": "bold",
+     "text": "REDOT INVOICE"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "Redot Pay — это инновационная платформа, которая предлагает пользователям возможность оплачивать покупки с помощью чеков и других удобных методов. Она обеспечивает безопасные и быстрые финансовые транзакции, позволяя легко управлять своими расходами. Благодаря разнообразию доступных платежных решений, Redot Pay делает процесс покупок максимально простым и эффективным, предоставляя пользователям гибкость при оплате товаров и услуг. Наслаждайтесь комфортом и надежностью с Redot Pay!",
+     "collapsed": false
+    },
+    "\nID для установки в ",
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "RedotInvoice"
+    },
+    "\nДля создания чека откройте ",
+    {
+     "type": "link",
+     "text": "ваш-домен.com/?bestaffiliate=NC"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "Redot Pay is an innovative platform that offers users the ability to pay for purchases using checks and other convenient methods. It provides secure and fast financial transactions, allowing you to easily manage your expenses. With a variety of payment solutions available, Redot Pay makes the shopping process as simple and efficient as possible, giving users flexibility when paying for goods and services. Enjoy comfort and reliability with Redot Pay!",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "RedotInvoice"
+    },
+    "\nTo create an invoice, open ",
+    {
+     "type": "link",
+     "text": "your-domain.com/?bestaffiliate=NC"
+    },
+    ".\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#INVOICE"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "REDOT INVOICE"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Redot Pay — это инновационная платформа, которая предлагает пользователям возможность оплачивать покупки с помощью чеков и других удобных методов. Она обеспечивает безопасные и быстрые финансовые транзакции, позволяя легко управлять своими расходами. Благодаря разнообразию доступных платежных решений, Redot Pay делает процесс покупок максимально простым и эффективным, предоставляя пользователям гибкость при оплате товаров и услуг. Наслаждайтесь комфортом и надежностью с Redot Pay!",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "RedotInvoice"
+    },
+    {
+     "type": "plain",
+     "text": "\nДля создания чека откройте "
+    },
+    {
+     "type": "link",
+     "text": "ваш-домен.com/?bestaffiliate=NC"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Redot Pay is an innovative platform that offers users the ability to pay for purchases using checks and other convenient methods. It provides secure and fast financial transactions, allowing you to easily manage your expenses. With a variety of payment solutions available, Redot Pay makes the shopping process as simple and efficient as possible, giving users flexibility when paying for goods and services. Enjoy comfort and reliability with Redot Pay!",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "RedotInvoice"
+    },
+    {
+     "type": "plain",
+     "text": "\nTo create an invoice, open "
+    },
+    {
+     "type": "link",
+     "text": "your-domain.com/?bestaffiliate=NC"
+    },
+    {
+     "type": "plain",
+     "text": ".\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#INVOICE"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "type": "message",
+   "date": "2026-01-18T21:56:37",
+   "date_unixtime": "1768762597",
+   "edited": "2026-01-25T13:54:50",
+   "edited_unixtime": "1769338490",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_8@18-01-2026_21-56-37.jpg",
+   "photo_file_size": 43620,
+   "width": 1280,
+   "height": 643,
+   "text": [
+    {
+     "type": "bold",
+     "text": "USDT DROP"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "В связи с раздачей 1 миллиона токенов USDT, у вас есть уникальная возможность стать участником этого события. Чтобы получить доступ к раздаче токенов, необходимо выполнить несколько простых условий. Убедитесь, что вы ознакомлены с правилами участия, чтобы не упустить шанс стать обладателем своих токенов. Присоединяйтесь к нашей акции и следите за подробностями, чтобы не пропустить эту возможность!",
+     "collapsed": false
+    },
+    "\nID для установки в ",
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "USDT_DROP"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "In connection with the distribution of 1 million USDT tokens, you have a unique opportunity to participate in this event. To gain access to the token distribution, you need to fulfill a few simple conditions. Make sure you are familiar with the rules of participation so you don't miss your chance to become a token holder. Join our promotion and follow the details so you don't miss this opportunity!",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "USDT_DROP"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#DROP"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "USDT DROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "В связи с раздачей 1 миллиона токенов USDT, у вас есть уникальная возможность стать участником этого события. Чтобы получить доступ к раздаче токенов, необходимо выполнить несколько простых условий. Убедитесь, что вы ознакомлены с правилами участия, чтобы не упустить шанс стать обладателем своих токенов. Присоединяйтесь к нашей акции и следите за подробностями, чтобы не пропустить эту возможность!",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "USDT_DROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "In connection with the distribution of 1 million USDT tokens, you have a unique opportunity to participate in this event. To gain access to the token distribution, you need to fulfill a few simple conditions. Make sure you are familiar with the rules of participation so you don't miss your chance to become a token holder. Join our promotion and follow the details so you don't miss this opportunity!",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "USDT_DROP"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#DROP"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "type": "message",
+   "date": "2026-01-24T14:27:40",
+   "date_unixtime": "1769254060",
+   "edited": "2026-01-28T00:50:01",
+   "edited_unixtime": "1769550601",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_9@24-01-2026_14-27-40.jpg",
+   "photo_file_size": 81213,
+   "width": 1280,
+   "height": 641,
+   "text": [
+    {
+     "type": "bold",
+     "text": "TRUST CRYPTO CARD"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "Выпуск криптокарты от Trust Wallet. Популярный сервис Trust Wallet представил свою новую криптокарту, которая открывает уникальные возможности для пользователей. Эта инновационная карта позволяет автоматически конвертировать криптовалюту в фиатные деньги, что делает покупки еще более удобными. Теперь вы можете легко расплачиваться за товары и услуги, не задумываясь о сложностях конвертации. Trust Wallet продолжает расширять горизонты финансовых технологий, предлагая своим клиентам простые и эффективные решения для управления своими активами.",
+     "collapsed": false
+    },
+    "\nID для установки в ",
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "trust-crypto-card"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "Trust Wallet launches crypto card. The popular Trust Wallet service has unveiled its new crypto card, which opens up unique opportunities for users. This innovative card allows you to automatically convert cryptocurrency into fiat money, making shopping even more convenient. Now you can easily pay for goods and services without worrying about the complexities of conversion. Trust Wallet continues to expand the horizons of financial technology by offering its customers simple and effective solutions for managing their assets.",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "trust-crypto-card"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "TRUST CRYPTO CARD"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Выпуск криптокарты от Trust Wallet. Популярный сервис Trust Wallet представил свою новую криптокарту, которая открывает уникальные возможности для пользователей. Эта инновационная карта позволяет автоматически конвертировать криптовалюту в фиатные деньги, что делает покупки еще более удобными. Теперь вы можете легко расплачиваться за товары и услуги, не задумываясь о сложностях конвертации. Trust Wallet продолжает расширять горизонты финансовых технологий, предлагая своим клиентам простые и эффективные решения для управления своими активами.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "trust-crypto-card"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Trust Wallet launches crypto card. The popular Trust Wallet service has unveiled its new crypto card, which opens up unique opportunities for users. This innovative card allows you to automatically convert cryptocurrency into fiat money, making shopping even more convenient. Now you can easily pay for goods and services without worrying about the complexities of conversion. Trust Wallet continues to expand the horizons of financial technology by offering its customers simple and effective solutions for managing their assets.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "trust-crypto-card"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤"
+     }
+    ]
+  },
+  {
+   "id": 14,
+   "type": "message",
+   "date": "2026-01-24T22:05:28",
+   "date_unixtime": "1769281528",
+   "edited": "2026-01-25T13:54:39",
+   "edited_unixtime": "1769338479",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_10@24-01-2026_22-05-28.jpg",
+   "photo_file_size": 79060,
+   "width": 1280,
+   "height": 640,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Trust Invoice"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "Trust Invoice позволяет пользователям как создавать, так и принимать чеки для получения USDT. Этот сервис упрощает процесс выставления счетов и помогает эффективно управлять финансами, обеспечивая безопасный и удобный способ работы с стейблкоинами. Пользователи могут легко генерировать чеки, а также принимать их от других участников, что делает взаимодействие максимально удобным и гибким.",
+     "collapsed": false
+    },
+    "\nID для установки в ",
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "trust-invoice"
+    },
+    "\nДля создания чека откройте ",
+    {
+     "type": "link",
+     "text": "ваш-домен.com/?bestaffiliate=NC"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "Trust Invoice allows users to both create and accept checks for receiving USDT. This service simplifies the billing process and helps you manage your finances effectively, providing a secure and convenient way to work with stablecoins. Users can easily generate checks and accept them from other participants, making interaction as convenient and flexible as possible.",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "trust-invoice"
+    },
+    "\nTo create an invoice, open ",
+    {
+     "type": "link",
+     "text": "your-domain.com/?bestaffiliate=NC"
+    },
+    ".\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#INVOICE"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Trust Invoice"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Trust Invoice позволяет пользователям как создавать, так и принимать чеки для получения USDT. Этот сервис упрощает процесс выставления счетов и помогает эффективно управлять финансами, обеспечивая безопасный и удобный способ работы с стейблкоинами. Пользователи могут легко генерировать чеки, а также принимать их от других участников, что делает взаимодействие максимально удобным и гибким.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "trust-invoice"
+    },
+    {
+     "type": "plain",
+     "text": "\nДля создания чека откройте "
+    },
+    {
+     "type": "link",
+     "text": "ваш-домен.com/?bestaffiliate=NC"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "Trust Invoice allows users to both create and accept checks for receiving USDT. This service simplifies the billing process and helps you manage your finances effectively, providing a secure and convenient way to work with stablecoins. Users can easily generate checks and accept them from other participants, making interaction as convenient and flexible as possible.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "trust-invoice"
+    },
+    {
+     "type": "plain",
+     "text": "\nTo create an invoice, open "
+    },
+    {
+     "type": "link",
+     "text": "your-domain.com/?bestaffiliate=NC"
+    },
+    {
+     "type": "plain",
+     "text": ".\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#INVOICE"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     }
+    ]
+  },
+  {
+   "id": 15,
+   "type": "message",
+   "date": "2026-01-24T22:05:28",
+   "date_unixtime": "1769281528",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_11@24-01-2026_22-05-28.jpg",
+   "photo_file_size": 37122,
+   "width": 1280,
+   "height": 639,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 16,
+   "type": "message",
+   "date": "2026-01-25T12:30:30",
+   "date_unixtime": "1769333430",
+   "edited": "2026-01-25T13:54:35",
+   "edited_unixtime": "1769338475",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_12@25-01-2026_12-30-30.jpg",
+   "photo_file_size": 44936,
+   "width": 1280,
+   "height": 641,
+   "text": [
+    {
+     "type": "bold",
+     "text": "TRX SWAP"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "TRX-SWAP — это платформа, позволяющая проводить обмен между TRX и USDT, а также продавать и покупать энергию за TRX. Сервис предлагает пользователям интуитивно понятный интерфейс для быстрого и удобного обмена токенов. TRX-SWAP обеспечивает безопасные транзакции и гибкие условия, позволяя максимально эффективно управлять своими цифровыми активами.",
+     "collapsed": false
+    },
+    "\nID для установки в ",
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "trx-swap"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "TRX-SWAP is a platform that allows you to exchange TRX for USDT, as well as sell and buy energy for TRX. The service offers users an intuitive interface for fast and convenient token exchange. TRX-SWAP provides secure transactions and flexible terms, allowing you to manage your digital assets as efficiently as possible.",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "trx-swap"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#SWAP"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "TRX SWAP"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "TRX-SWAP — это платформа, позволяющая проводить обмен между TRX и USDT, а также продавать и покупать энергию за TRX. Сервис предлагает пользователям интуитивно понятный интерфейс для быстрого и удобного обмена токенов. TRX-SWAP обеспечивает безопасные транзакции и гибкие условия, позволяя максимально эффективно управлять своими цифровыми активами.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "trx-swap"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "TRX-SWAP is a platform that allows you to exchange TRX for USDT, as well as sell and buy energy for TRX. The service offers users an intuitive interface for fast and convenient token exchange. TRX-SWAP provides secure transactions and flexible terms, allowing you to manage your digital assets as efficiently as possible.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "trx-swap"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#SWAP"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "type": "message",
+   "date": "2026-01-25T13:11:50",
+   "date_unixtime": "1769335910",
+   "edited": "2026-01-25T13:54:29",
+   "edited_unixtime": "1769338469",
+   "from": "NC Designs",
+   "from_id": "channel3612324576",
+   "photo": "photos/photo_13@25-01-2026_13-11-50.jpg",
+   "photo_file_size": 26527,
+   "width": 1280,
+   "height": 642,
+   "text": [
+    {
+     "type": "bold",
+     "text": "CRYPTOMUS INVOICE"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "CRYPTOMUS INVOICE предоставляет пользователям возможность принимать USDT через чековые платежи. Эта платформа упрощает процесс получения стейблкоинов, гарантируя безопасность и удобство транзакций. С помощью сервисных чеков можно легко организовать взаимодействие с клиентами и партнерами, что делает финансовые операции более эффективными.",
+     "collapsed": false
+    },
+    "\nID для установки в ",
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "cryptomus-invoice"
+    },
+    "\nДля создания чека откройте ",
+    {
+     "type": "link",
+     "text": "ваш-домен.com/?bestaffiliate=NC"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "CRYPTOMUS INVOICE provides users with the ability to receive USDT through invoice payments. This platform simplifies the process of receiving stablecoins, ensuring security and convenience in transactions. With the use of service invoices, users can easily organize interactions with clients and partners, making financial operations more efficient.",
+     "collapsed": false
+    },
+    "\nID for installation in the ",
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    ": ",
+    {
+     "type": "code",
+     "text": "cryptomus-invoice"
+    },
+    "\nTo create an invoice, open ",
+    {
+     "type": "link",
+     "text": "your-domain.com/?bestaffiliate=NC"
+    },
+    ".\n\n",
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#INVOICE"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "CRYPTOMUS INVOICE"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "CRYPTOMUS INVOICE предоставляет пользователям возможность принимать USDT через чековые платежи. Эта платформа упрощает процесс получения стейблкоинов, гарантируя безопасность и удобство транзакций. С помощью сервисных чеков можно легко организовать взаимодействие с клиентами и партнерами, что делает финансовые операции более эффективными.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID для установки в "
+    },
+    {
+     "type": "text_link",
+     "text": "боте",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "cryptomus-invoice"
+    },
+    {
+     "type": "plain",
+     "text": "\nДля создания чека откройте "
+    },
+    {
+     "type": "link",
+     "text": "ваш-домен.com/?bestaffiliate=NC"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "CRYPTOMUS INVOICE provides users with the ability to receive USDT through invoice payments. This platform simplifies the process of receiving stablecoins, ensuring security and convenience in transactions. With the use of service invoices, users can easily organize interactions with clients and partners, making financial operations more efficient.",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\nID for installation in the "
+    },
+    {
+     "type": "text_link",
+     "text": "bot",
+     "href": "https://t.me/NCsetup_bot"
+    },
+    {
+     "type": "plain",
+     "text": ": "
+    },
+    {
+     "type": "code",
+     "text": "cryptomus-invoice"
+    },
+    {
+     "type": "plain",
+     "text": "\nTo create an invoice, open "
+    },
+    {
+     "type": "link",
+     "text": "your-domain.com/?bestaffiliate=NC"
+    },
+    {
+     "type": "plain",
+     "text": ".\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#TRON"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#INVOICE"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  }
+ ]
+}
