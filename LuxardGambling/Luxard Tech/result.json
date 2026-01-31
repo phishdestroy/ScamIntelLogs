@@ -1,0 +1,928 @@
+{
+ "name": "Luxard Tech",
+ "type": "public_channel",
+ "id": 3232848355,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2025-12-10T02:32:55",
+   "date_unixtime": "1765323175",
+   "actor": "Luxard Tech",
+   "actor_id": "channel3232848355",
+   "action": "create_channel",
+   "title": "Luxard Tech",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 3,
+   "type": "message",
+   "date": "2025-12-18T03:07:23",
+   "date_unixtime": "1766016443",
+   "edited": "2026-01-07T20:29:54",
+   "edited_unixtime": "1767806994",
+   "from": "Luxard Tech",
+   "from_id": "channel3232848355",
+   "photo": "photos/photo_1@18-12-2025_03-07-23.jpg",
+   "photo_file_size": 96187,
+   "width": 1280,
+   "height": 600,
+   "text": [
+    {
+     "type": "bold",
+     "text": "Добро пожаловать в технический канал проекта !"
+    },
+    "\n\nЗдесь мы будем публиковать все ключевые технические обновления платформы:\nрелизы, новые функции, изменения в логике работы, фиксы, оптимизации и планы по развитию.\n\n",
+    {
+     "type": "bold",
+     "text": "Этот канал создан для:"
+    },
+    "\n\n1. Партнёров и клиентов, работающих с платформой\n\n2. Команд и специалистов, которым важны детали\n\n3. Всех, кто хочет понимать, как и куда развивается продукт\n\nМы строим продукт без компромиссов и будем максимально прозрачно показывать его эволюцию — от MVP до полноценной экосистемы.\n\n📌 ",
+    {
+     "type": "bold",
+     "text": "Следите за обновлениями — дальше будет только серьёзнее"
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "👉Стать партнёром - @luxardgambling_bot",
+     "collapsed": false
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "💸Как начать работу (Шаг За Шагом) - info.luxardgambling.com",
+     "collapsed": false
+    },
+    "\n\n",
+    {
+     "type": "blockquote",
+     "text": "💡Дополнительные ресурсы:\n Новостной канал - @luxardgambling_news\n\n👋 Обращайтесь в любое время — всегда рады помочь:\n  По общим вопросам - LXRD\n  По техническим вопросам - Noirex или Karnel\n  Мы на Lolz - Тык",
+     "collapsed": false
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Добро пожаловать в технический канал проекта !"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nЗдесь мы будем публиковать все ключевые технические обновления платформы:\nрелизы, новые функции, изменения в логике работы, фиксы, оптимизации и планы по развитию.\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Этот канал создан для:"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n1. Партнёров и клиентов, работающих с платформой\n\n2. Команд и специалистов, которым важны детали\n\n3. Всех, кто хочет понимать, как и куда развивается продукт\n\nМы строим продукт без компромиссов и будем максимально прозрачно показывать его эволюцию — от MVP до полноценной экосистемы.\n\n📌 "
+    },
+    {
+     "type": "bold",
+     "text": "Следите за обновлениями — дальше будет только серьёзнее"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "👉Стать партнёром - @luxardgambling_bot",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "💸Как начать работу (Шаг За Шагом) - info.luxardgambling.com",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "💡Дополнительные ресурсы:\n Новостной канал - @luxardgambling_news\n\n👋 Обращайтесь в любое время — всегда рады помочь:\n  По общим вопросам - LXRD\n  По техническим вопросам - Noirex или Karnel\n  Мы на Lolz - Тык",
+     "collapsed": false
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "type": "message",
+   "date": "2025-12-21T19:28:47",
+   "date_unixtime": "1766334527",
+   "edited": "2026-01-12T00:31:28",
+   "edited_unixtime": "1768167088",
+   "from": "Luxard Tech",
+   "from_id": "channel3232848355",
+   "photo": "photos/photo_2@21-12-2025_19-28-47.jpg",
+   "photo_file_size": 81686,
+   "width": 1280,
+   "height": 600,
+   "text": [
+    {
+     "type": "hashtag",
+     "text": "#patch"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#U211225D"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#updates"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#info"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Patch: U211225D"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "Date: 21.12.2025"
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "1️⃣",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": "Добавлена возможность регистрации аккаунтов пользователей с гео США"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Комментарий:"
+    },
+    "\nВ процессе работы с лицензионным агрегатором возникают определённые ограничения. Для обхода этих ограничений было принято техническое решение, что обусловлено высокой популярностью данного региона среди пользователей VPN-сервисов.\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "2️⃣",
+     "document_id": "stickers/AnimatedSticker (1).tgs"
+    },
+    {
+     "type": "bold",
+     "text": "Добавлено модальное окно, информирующее о невозможности игры в казино для пользователей из гео, запрещённых  в связи с лицензиями регуляторов, с перенаправлением в службу поддержки"
+    },
+    ".\n\n",
+    {
+     "type": "bold",
+     "text": "Комментарий:"
+    },
+    "\nЭтот инструмент — отличный способ укрепить доверие к платформе среди опытных игроков. Он также помогает повысить вовлечённость пользователей, так как они начинают взаимодействовать с поддержкой.\n\n💬",
+    {
+     "type": "bold",
+     "text": "По техническим вопросам, связанным с обновлениями, просьба обращаться к"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Noirex",
+     "href": "https://t.me/luxardgambling_tech_noirex"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "или"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Karnel",
+     "href": "https://t.me/luxardgambling_tech_karnel"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "С уважением,"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "Luxard Gambling"
+    },
+    {
+     "type": "bold",
+     "text": "🥇"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "hashtag",
+     "text": "#patch"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#U211225D"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#updates"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#info"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Patch: U211225D"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "Date: 21.12.2025"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "1️⃣",
+     "document_id": "stickers/AnimatedSticker.tgs"
+    },
+    {
+     "type": "bold",
+     "text": "Добавлена возможность регистрации аккаунтов пользователей с гео США"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Комментарий:"
+    },
+    {
+     "type": "plain",
+     "text": "\nВ процессе работы с лицензионным агрегатором возникают определённые ограничения. Для обхода этих ограничений было принято техническое решение, что обусловлено высокой популярностью данного региона среди пользователей VPN-сервисов.\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "2️⃣",
+     "document_id": "stickers/AnimatedSticker (1).tgs"
+    },
+    {
+     "type": "bold",
+     "text": "Добавлено модальное окно, информирующее о невозможности игры в казино для пользователей из гео, запрещённых  в связи с лицензиями регуляторов, с перенаправлением в службу поддержки"
+    },
+    {
+     "type": "plain",
+     "text": ".\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Комментарий:"
+    },
+    {
+     "type": "plain",
+     "text": "\nЭтот инструмент — отличный способ укрепить доверие к платформе среди опытных игроков. Он также помогает повысить вовлечённость пользователей, так как они начинают взаимодействовать с поддержкой.\n\n💬"
+    },
+    {
+     "type": "bold",
+     "text": "По техническим вопросам, связанным с обновлениями, просьба обращаться к"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Noirex",
+     "href": "https://t.me/luxardgambling_tech_noirex"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "или"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Karnel",
+     "href": "https://t.me/luxardgambling_tech_karnel"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "С уважением,"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "Luxard Gambling"
+    },
+    {
+     "type": "bold",
+     "text": "🥇"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "message",
+   "date": "2025-12-21T19:28:47",
+   "date_unixtime": "1766334527",
+   "from": "Luxard Tech",
+   "from_id": "channel3232848355",
+   "photo": "photos/photo_3@21-12-2025_19-28-47.jpg",
+   "photo_file_size": 27104,
+   "width": 1280,
+   "height": 720,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 9,
+   "type": "message",
+   "date": "2026-01-12T00:27:38",
+   "date_unixtime": "1768166858",
+   "edited": "2026-01-19T00:11:03",
+   "edited_unixtime": "1768770663",
+   "from": "Luxard Tech",
+   "from_id": "channel3232848355",
+   "photo": "photos/photo_4@12-01-2026_00-27-38.jpg",
+   "photo_file_size": 84207,
+   "width": 1280,
+   "height": 600,
+   "text": [
+    {
+     "type": "hashtag",
+     "text": "#patch"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#W1101262А"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#updates"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#info"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Patch: W1101262А\nDate: 11.01.2026"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "\nВ рамках W0111262A был реализован комплекс функциональных, аналитических и инфраструктурных обновлений, направленных на повышение гибкости платформы, улучшение контроля трафика и оптимизацию операционных процессов."
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🥇",
+     "document_id": "stickers/sticker (1).webp"
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "⚪️",
+     "document_id": "stickers/AnimatedSticker (2).tgs"
+    },
+    {
+     "type": "bold",
+     "text": "Новый функционал и расширения:"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "1. Персональные лендинги в панели\nВозможность создания и управления кастомными лендингами прямо из панели, ускоряющая запуск офферов и A/B-тестирование без разработчиков.\n\n2. Поддержка фриспинов в промокодах\nФункционал для начисления фриспинов с гибкой настройкой, что способствует росту активации пользователей и улучшению LTV.\n\n3. Видео в фейк-матчах (Live Streaming)\nЗагрузка видеопотоков в фейк-матчи с полноценным стриминговым функционалом для повышения вовлечённости и доверия пользователей.\n\n4. Динамический аналитический пиксель\nДинамический пиксель для точного трекинга пользовательских событий и гибкой интеграции с аналитическими системами.\n\n5. Верификация без депозита\nВозможность прохождения KYC-верификации без депозита, снижая барьер для новых пользователей и улучшая процесс онбординга.\n\n6. Подсказки для службы поддержки\nКонтекстные подсказки и шаблоны для ускорения обработки тикетов и повышения качества поддержки.\n\n7. Тестирование Postback и API (WebSocket)\nВстроенный инструмент для быстрого тестирования Postback-уведомлений и WebSocket-интеграций, упрощающий диагностику ошибок.\n\n8. Глобальный свитч автопуш-уведомлений\nПереключатель для управления автопушами без изменения индивидуальных настроек.\n\n9. Настройка отображения на оффере\nДобавлена возможность включать/отключать партнеров в футере и отображение онлайн-статуса на слотах. А также блоков статистики на основном лендосе",
+     "collapsed": true
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "⚪️",
+     "document_id": "stickers/AnimatedSticker (2).tgs"
+    },
+    {
+     "type": "bold",
+     "text": "Улучшения и оптимизация:"
+    },
+    "\n",
+    {
+     "type": "blockquote",
+     "text": "1. Оптимизация сервисов и платформы",
+     "collapsed": true
+    },
+    {
+     "type": "blockquote",
+     "text": "\nУлучшена производительность backend-сервисов, снизив время отклика и повысив отказоустойчивость системы.\n\n",
+     "collapsed": true
+    },
+    {
+     "type": "blockquote",
+     "text": "2. Улучшение панели поддержки",
+     "collapsed": true
+    },
+    {
+     "type": "blockquote",
+     "text": "\nРефакторинг панели саппорта для улучшения навигации и производительности.",
+     "collapsed": true
+    },
+    "\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🥇",
+     "document_id": "stickers/sticker (1).webp"
+    },
+    "\n\n💡",
+    {
+     "type": "bold",
+     "text": "Патч W0111262A является важным шагом в развитии платформы и создает базу для дальнейших масштабных обновлений, направленных на рост монетизации, улучшение аналитики и повышение эффективности работы с трафиком."
+    },
+    "\n\n💬",
+    {
+     "type": "bold",
+     "text": "По техническим вопросам, связанным с обновлениями, просьба обращаться к"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Noirex",
+     "href": "https://t.me/luxardgambling_tech_noirex"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "или"
+    },
+    " ",
+    {
+     "type": "text_link",
+     "text": "Karnel",
+     "href": "https://t.me/luxardgambling_tech_karnel"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "С уважением,"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "Luxard Gambling"
+    },
+    {
+     "type": "bold",
+     "text": "🥇"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "hashtag",
+     "text": "#patch"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#W1101262А"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#updates"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#info"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Patch: W1101262А\nDate: 11.01.2026"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "\nВ рамках W0111262A был реализован комплекс функциональных, аналитических и инфраструктурных обновлений, направленных на повышение гибкости платформы, улучшение контроля трафика и оптимизацию операционных процессов."
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🥇",
+     "document_id": "stickers/sticker (1).webp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "⚪️",
+     "document_id": "stickers/AnimatedSticker (2).tgs"
+    },
+    {
+     "type": "bold",
+     "text": "Новый функционал и расширения:"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "1. Персональные лендинги в панели\nВозможность создания и управления кастомными лендингами прямо из панели, ускоряющая запуск офферов и A/B-тестирование без разработчиков.\n\n2. Поддержка фриспинов в промокодах\nФункционал для начисления фриспинов с гибкой настройкой, что способствует росту активации пользователей и улучшению LTV.\n\n3. Видео в фейк-матчах (Live Streaming)\nЗагрузка видеопотоков в фейк-матчи с полноценным стриминговым функционалом для повышения вовлечённости и доверия пользователей.\n\n4. Динамический аналитический пиксель\nДинамический пиксель для точного трекинга пользовательских событий и гибкой интеграции с аналитическими системами.\n\n5. Верификация без депозита\nВозможность прохождения KYC-верификации без депозита, снижая барьер для новых пользователей и улучшая процесс онбординга.\n\n6. Подсказки для службы поддержки\nКонтекстные подсказки и шаблоны для ускорения обработки тикетов и повышения качества поддержки.\n\n7. Тестирование Postback и API (WebSocket)\nВстроенный инструмент для быстрого тестирования Postback-уведомлений и WebSocket-интеграций, упрощающий диагностику ошибок.\n\n8. Глобальный свитч автопуш-уведомлений\nПереключатель для управления автопушами без изменения индивидуальных настроек.\n\n9. Настройка отображения на оффере\nДобавлена возможность включать/отключать партнеров в футере и отображение онлайн-статуса на слотах. А также блоков статистики на основном лендосе",
+     "collapsed": true
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "⚪️",
+     "document_id": "stickers/AnimatedSticker (2).tgs"
+    },
+    {
+     "type": "bold",
+     "text": "Улучшения и оптимизация:"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "blockquote",
+     "text": "1. Оптимизация сервисов и платформы",
+     "collapsed": true
+    },
+    {
+     "type": "blockquote",
+     "text": "\nУлучшена производительность backend-сервисов, снизив время отклика и повысив отказоустойчивость системы.\n\n",
+     "collapsed": true
+    },
+    {
+     "type": "blockquote",
+     "text": "2. Улучшение панели поддержки",
+     "collapsed": true
+    },
+    {
+     "type": "blockquote",
+     "text": "\nРефакторинг панели саппорта для улучшения навигации и производительности.",
+     "collapsed": true
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "➿",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🥇",
+     "document_id": "stickers/sticker (1).webp"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n💡"
+    },
+    {
+     "type": "bold",
+     "text": "Патч W0111262A является важным шагом в развитии платформы и создает базу для дальнейших масштабных обновлений, направленных на рост монетизации, улучшение аналитики и повышение эффективности работы с трафиком."
+    },
+    {
+     "type": "plain",
+     "text": "\n\n💬"
+    },
+    {
+     "type": "bold",
+     "text": "По техническим вопросам, связанным с обновлениями, просьба обращаться к"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Noirex",
+     "href": "https://t.me/luxardgambling_tech_noirex"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "или"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "text_link",
+     "text": "Karnel",
+     "href": "https://t.me/luxardgambling_tech_karnel"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "С уважением,"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "Luxard Gambling"
+    },
+    {
+     "type": "bold",
+     "text": "🥇"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  }
+ ]
+}

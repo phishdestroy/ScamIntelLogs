@@ -1,0 +1,147 @@
+{
+  "team": "Luxard Gambling",
+  "type": "Scam Casino & Sportsbook Platform (Panel-as-a-Service)",
+  "first_seen": "2025-12-10",
+  "last_activity": "2026-01-31",
+  "domains": [
+    "luxardgambling.com",
+    "info.luxardgambling.com"
+  ],
+  "telegram": {
+    "bot": "@luxardgambling_bot",
+    "news_channel": {
+      "name": "Luxard News",
+      "handle": "@luxardgambling_news",
+      "id": 3014361090,
+      "type": "public_channel",
+      "created": "2025-12-10"
+    },
+    "tech_channel": {
+      "name": "Luxard Tech",
+      "handle": "@luxardgambling_tech_news",
+      "id": 3232848355,
+      "type": "public_channel",
+      "created": "2025-12-10"
+    },
+    "support_contacts": [
+      { "handle": "@luxardgambling", "role": "general support" },
+      { "handle": "@luxardgambling_tech", "role": "technical support" },
+      { "handle": "@luxardgambling_tech_noirex", "alias": "Noirex", "role": "technical" },
+      { "handle": "@luxardgambling_tech_karnel", "alias": "Karnel", "role": "technical" }
+    ],
+    "key_actors": [
+      { "alias": "LXRD", "role": "general questions / possible owner" },
+      { "alias": "Noirex", "handle": "@luxardgambling_tech_noirex", "role": "technical lead" },
+      { "alias": "Karnel", "handle": "@luxardgambling_tech_karnel", "role": "technical lead" }
+    ]
+  },
+  "infrastructure": {
+    "documentation": "info.luxardgambling.com (GitBook)",
+    "languages": ["Russian", "English"],
+    "verticals": ["Casino", "Sports Betting"],
+    "claimed_team_size": 17,
+    "claimed_dev_time": "9 months"
+  },
+  "panel": {
+    "url": "luxardgambling.com",
+    "sections": ["Home", "Domains", "Statistics", "Users", "Deposits", "Payments", "Promo codes", "Support", "Event generation", "Settings", "API"],
+    "settings_tabs": ["General", "Security", "Sapport", "Blacklist", "Verification", "Postbeki", "Thermal"],
+    "worker_commission": "70%",
+    "minimum_deposit": "$50",
+    "minimum_withdrawal": "$100",
+    "balance_on_registration": "$0",
+    "currency": "USD",
+    "coefficient_inflation": "+35%",
+    "multi_account": false,
+    "cross_domain": false,
+    "super_account_keyword": true,
+    "minigame_win_chance": "configurable",
+    "mammoth_variables": {
+      "%sum_verif%": "verification error amount",
+      "%sum_1%": "alias for %sum_verif%",
+      "%sum_afterverif%": "post-verification error amount",
+      "%sum_2%": "alias for %sum_afterverif%",
+      "%sum_3%": "VIP level error amount",
+      "%sum_AML%": "AML check error amount",
+      "%sum_4%": "alias for %sum_AML%",
+      "%sum_5%": "security point error amount"
+    }
+  },
+  "payments": {
+    "crypto": {
+      "networks": ["ETH (ERC-20)", "BTC", "SOL", "BNB (BSC)", "TRX (TRC-20)", "XRP"],
+      "auto_split": "70% worker / 30% platform",
+      "individual_wallets": true,
+      "confirmation_time": "5-15 min (up to 1 hour during congestion)"
+    },
+    "fiat": {
+      "methods": ["VISA", "MasterCard", "Apple Pay", "Google Pay"],
+      "aggregator": "unknown (configurable per worker, hidden server-side)",
+      "note": "gray-market processor accepting unlicensed gambling"
+    }
+  },
+  "landing_templates": [
+    "Elon Musk / SpaceX",
+    "Elon Musk / Tesla",
+    "MrBeast",
+    "Jake Paul",
+    "IShowSpeed",
+    "Kendrick Lamar",
+    "Virat Kohli",
+    "Lamine Yamal",
+    "Desire Doue",
+    "Casino Design 1",
+    "Casino Design 2",
+    "Casino Design 3",
+    "Generic Modal (%DOMAIN_NAME%)",
+    "Custom Upload"
+  ],
+  "platform_features": [
+    "6,000+ betting markets",
+    "200,000+ monthly sports matches",
+    "200+ sports disciplines including eSports",
+    "Fictional event creation (Crazy Odds Events) with fake video streams",
+    "AutoPush notifications with Claim Bonus / Make Deposit buttons",
+    "Fake live match streaming (MP4 upload)",
+    "Multi-domain white-label with auto-generated NS records",
+    "Google Search Console integration via TXT records",
+    "Celebrity landing page templates with %DOMAIN_NAME% dynamic branding",
+    "Promo codes with configurable wagering, free spins, free bets",
+    "Dynamic analytics pixel",
+    "WebSocket postback API",
+    "Live chat with preset templates and mammoth variables",
+    "Cascading withdrawal blocks (verification → payment method → VIP → security score → AML → regional → tax)",
+    "Loss cashback mechanic (configurable %)",
+    "Odds boost multiplier (platform-wide)",
+    "Team scaling (turnkey business, team bot, designer services)"
+  ],
+  "scam_method": {
+    "type": "Fake Casino/Sportsbook with cascading deposit extraction",
+    "victim_term": "mammoth (Russian: мамонт)",
+    "steps": [
+      "Victims lured via fake celebrity landing pages, Telegram spam, social media, paid ads",
+      "Registration with promo codes (fake bonuses, free spins, super-account keyword for rigged wins)",
+      "Fake winnings displayed (coefficients inflated by 35%, configurable minigame win chance)",
+      "Withdrawal blocked: $100 verification deposit required (%sum_verif%)",
+      "Payment method verification: $300 deposit demanded (%sum_afterverif%)",
+      "VIP status upgrade required (%sum_3%), XP accumulation via deposits",
+      "Security score must reach 100/100 (%sum_5%)",
+      "AML check demands more funds (%sum_AML%)",
+      "Regional restrictions with 10% bypass fee, fabricated tax obligations",
+      "Funds never withdrawn, victim blocked or ghosted"
+    ],
+    "minimum_deposits": {
+      "verification": "$100",
+      "payment_method_verification": "$300",
+      "vip_upgrade": "$500+"
+    }
+  },
+  "evidence": {
+    "panel_screenshots": 7,
+    "landing_designs": 16,
+    "telegram_channel_dumps": 2,
+    "guide_pages_archived": 34
+  },
+  "forum_presence": "lolz.live (mentioned in channels)",
+  "collected": "2026-01-31"
+}
