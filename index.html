@@ -94,9 +94,16 @@
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
         }
         .text-gradient {
             background-image: linear-gradient(to right, #3b82f6, #14b8a6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .text-gradient-warm {
+            background-image: linear-gradient(135deg, #f59e0b, #ef4444, #ec4899);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -108,18 +115,102 @@
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        /* Animated background */
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background-image:
+                linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: gridMove 20s linear infinite;
+        }
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(60px, 60px); }
+        }
+
+        /* Floating orbs */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.15;
+            z-index: -1;
+            animation: orbFloat 15s ease-in-out infinite;
+        }
+        .orb-1 { width: 400px; height: 400px; background: #3b82f6; top: -100px; left: -100px; animation-delay: 0s; }
+        .orb-2 { width: 350px; height: 350px; background: #14b8a6; bottom: -80px; right: -80px; animation-delay: -5s; }
+        .orb-3 { width: 300px; height: 300px; background: #8b5cf6; top: 50%; left: 50%; animation-delay: -10s; }
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.05); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Pulse glow for important elements */
+        .glow-border {
+            position: relative;
+        }
+        .glow-border::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: inherit;
+            background: linear-gradient(135deg, #3b82f6, #14b8a6, #8b5cf6, #3b82f6);
+            background-size: 300% 300%;
+            animation: borderGlow 4s ease infinite;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        @keyframes borderGlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Counter animation */
+        .counter { font-variant-numeric: tabular-nums; }
+
+        /* Shield icon pulse */
+        .shield-pulse {
+            animation: shieldPulse 2s ease-in-out infinite;
+        }
+        @keyframes shieldPulse {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0 transparent); }
+            50% { transform: scale(1.05); filter: drop-shadow(0 0 20px rgba(59,130,246,0.3)); }
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-300">
 
-    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 relative">
         <!-- Header with Logo -->
-        <header class="flex items-center justify-center gap-4 mb-8">
-            <img src="https://destroyico.pages.dev/assets/logo.png" alt="PhishDestroy Logo" class="h-12 w-12">
+        <header class="flex items-center justify-center gap-4 mb-4">
+            <img src="https://destroyico.pages.dev/assets/logo.png" alt="PhishDestroy Logo" class="h-14 w-14 shield-pulse">
             <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gradient">
                 ScamIntelLogs
             </h1>
         </header>
+        <p class="text-center text-gray-500 text-sm mb-8">Open-Source Scam Intelligence & Threat Research Archive</p>
 
         <!-- Info Box -->
         <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8 shadow-lg backdrop-blur-sm">
@@ -185,12 +276,210 @@
             </main>
         </div>
 
+        <!-- Mission Section -->
+        <div class="reveal mt-12 mb-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-extrabold text-white mb-2">Our Mission</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-800/60 backdrop-blur-sm ring-1 ring-white/10 rounded-2xl p-6 text-center hover:ring-blue-500/30 transition-all duration-500 hover:-translate-y-1">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-500/10 rounded-2xl flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Protect Victims</h3>
+                    <p class="text-sm text-gray-400">We expose criminal networks so that potential victims can recognize fraud patterns before losing their money. Prevention through awareness.</p>
+                </div>
+                <div class="bg-gray-800/60 backdrop-blur-sm ring-1 ring-white/10 rounded-2xl p-6 text-center hover:ring-teal-500/30 transition-all duration-500 hover:-translate-y-1">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-teal-500/10 rounded-2xl flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Aid Investigations</h3>
+                    <p class="text-sm text-gray-400">Structured intelligence for law enforcement, security researchers, and journalists investigating organized cybercrime and financial fraud.</p>
+                </div>
+                <div class="bg-gray-800/60 backdrop-blur-sm ring-1 ring-white/10 rounded-2xl p-6 text-center hover:ring-purple-500/30 transition-all duration-500 hover:-translate-y-1">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-500/10 rounded-2xl flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Expose & Deter</h3>
+                    <p class="text-sm text-gray-400">Scammers operate in the dark. We bring their infrastructure, methods, identities, and communications into the light. Transparency is deterrence.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer Section -->
+        <div class="reveal mb-8">
+            <div class="glow-border rounded-2xl">
+                <div class="bg-gray-900/95 backdrop-blur-xl rounded-2xl p-8">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-extrabold text-white">Important Disclaimer</h2>
+                            <p class="text-sm text-gray-500">Please read carefully before using this resource</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-gray-400">
+                        <div class="flex gap-3 bg-red-500/5 rounded-xl p-4 ring-1 ring-red-500/10">
+                            <span class="text-red-400 text-lg mt-0.5">1.</span>
+                            <div>
+                                <p class="text-white font-semibold mb-1">This Is NOT a Promotion of Fraud</p>
+                                <p>This archive exists solely to combat, condemn, and expose criminal scam operations. We do not endorse, encourage, or provide instructions for any form of fraud, theft, or deception. Scamming destroys lives — it is not a "business" or "hustle," it is a crime with real victims and real consequences.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3 bg-blue-500/5 rounded-xl p-4 ring-1 ring-blue-500/10">
+                            <span class="text-blue-400 text-lg mt-0.5">2.</span>
+                            <div>
+                                <p class="text-white font-semibold mb-1">Research & Investigation Only</p>
+                                <p>All data is published for legitimate purposes: law enforcement investigations, academic security research, journalism, victim identification, and fraud prevention. Using this data to replicate, continue, or facilitate any criminal activity is strictly prohibited and may constitute a criminal offense in your jurisdiction.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3 bg-amber-500/5 rounded-xl p-4 ring-1 ring-amber-500/10">
+                            <span class="text-amber-400 text-lg mt-0.5">3.</span>
+                            <div>
+                                <p class="text-white font-semibold mb-1">Consequences Are Real</p>
+                                <p>Every scam network documented here has caused real financial and psychological harm to real people. Participants in these operations face criminal prosecution, asset seizure, and imprisonment. Russian and international law enforcement increasingly cooperate on cryptocurrency fraud cases — there is no safe haven.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3 bg-purple-500/5 rounded-xl p-4 ring-1 ring-purple-500/10">
+                            <span class="text-purple-400 text-lg mt-0.5">4.</span>
+                            <div>
+                                <p class="text-white font-semibold mb-1">No Liability</p>
+                                <p>PhishDestroy provides this data "as is" without warranty. We are not responsible for how third parties use the published information. By accessing this archive, you agree to use it only for lawful purposes consistent with our stated mission.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- License Section -->
+        <div class="reveal mb-8">
+            <div class="bg-gray-800/60 backdrop-blur-sm ring-1 ring-white/10 rounded-2xl p-8">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="flex-shrink-0 text-center">
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500/20 to-teal-500/20 rounded-2xl flex items-center justify-center ring-1 ring-white/10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        </div>
+                        <div class="mt-3">
+                            <span class="inline-block bg-teal-500/20 text-teal-300 px-3 py-1 rounded-full text-xs font-bold">MIT License</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-xl font-bold text-white mb-3">Open Source Under MIT License</h2>
+                        <p class="text-sm text-gray-400 mb-3">This project is free and open-source software. You are free to use, copy, modify, and distribute the data and tools for any <strong class="text-white">lawful purpose</strong>, including:</p>
+                        <div class="grid sm:grid-cols-2 gap-2 text-sm">
+                            <div class="flex items-center gap-2 text-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-teal-400 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                Security research & publications
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-teal-400 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                Law enforcement operations
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-teal-400 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                Investigative journalism
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-teal-400 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                Fraud prevention & awareness
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-teal-400 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                Victim support & recovery
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-teal-400 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                                Building anti-fraud tools
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4">Full license text: <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/LICENSE" target="_blank" class="text-blue-400 hover:text-blue-300">github.com/phishdestroy/ScamIntelLogs/LICENSE</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Counter -->
+        <div class="reveal mb-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-800/60 backdrop-blur-sm ring-1 ring-white/10 rounded-2xl p-5 text-center hover:ring-blue-500/30 transition-all duration-300">
+                    <div class="text-3xl font-extrabold text-blue-400 counter" data-target="10">0</div>
+                    <div class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Teams Exposed</div>
+                </div>
+                <div class="bg-gray-800/60 backdrop-blur-sm ring-1 ring-white/10 rounded-2xl p-5 text-center hover:ring-teal-500/30 transition-all duration-300">
+                    <div class="text-3xl font-extrabold text-teal-400 counter" data-target="3262">0</div>
+                    <div class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Evidence Files</div>
+                </div>
+                <div class="bg-gray-800/60 backdrop-blur-sm ring-1 ring-white/10 rounded-2xl p-5 text-center hover:ring-purple-500/30 transition-all duration-300">
+                    <div class="text-3xl font-extrabold text-purple-400 counter" data-target="1565">0</div>
+                    <div class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Panels Detected</div>
+                </div>
+                <div class="bg-gray-800/60 backdrop-blur-sm ring-1 ring-white/10 rounded-2xl p-5 text-center hover:ring-amber-500/30 transition-all duration-300">
+                    <div class="text-3xl font-extrabold text-amber-400 counter" data-target="100">0%</div>
+                    <div class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Open Source</div>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
-        <footer class="mt-8 text-center text-sm text-gray-500">
-            <p>© 2024-2026 <a href="https://www.phishdestroy.io/" class="text-blue-400 hover:text-blue-300">PhishDestroy</a>. Data provided for research and investigative purposes.</p>
-            <p class="mt-1">🧠 "Transparency exposes fraudsters. The community must know its scammers."</p>
+        <footer class="mt-8 border-t border-gray-800 pt-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
+                <div class="flex items-center gap-3">
+                    <img src="https://destroyico.pages.dev/assets/logo.png" alt="PhishDestroy" class="h-8 w-8">
+                    <span class="font-bold text-white">PhishDestroy</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <a href="https://t.me/PhishDestroy_bot" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">Report Scam</a>
+                    <a href="https://x.com/Phish_Destroy" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">Twitter</a>
+                    <a href="https://www.phishdestroy.io/" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">Website</a>
+                    <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">GitHub</a>
+                </div>
+            </div>
+            <div class="text-center text-xs text-gray-600 space-y-1">
+                <p>&copy; 2024&ndash;2026 PhishDestroy. All data provided strictly for research and investigative purposes.</p>
+                <p class="text-gray-500">"Transparency destroys fraud. The community must know its scammers."</p>
+            </div>
         </footer>
     </div>
+
+    <!-- Scroll Reveal + Counter Animation -->
+    <script>
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Trigger counter animation
+                    entry.target.querySelectorAll('.counter').forEach(c => animateCounter(c));
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Counter animation
+        function animateCounter(el) {
+            if (el.dataset.animated) return;
+            el.dataset.animated = true;
+            const target = parseInt(el.dataset.target);
+            const isPercent = el.textContent.includes('%');
+            const duration = 1500;
+            const start = performance.now();
+            function update(now) {
+                const progress = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(eased * target);
+                el.textContent = current.toLocaleString() + (isPercent ? '%' : (target > 100 ? '+' : ''));
+                if (progress < 1) requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
+        }
+    </script>
 
     <script>
         const fileTree = document.getElementById("file-tree");
@@ -347,7 +636,7 @@
                     </ul>
                 `,
                 folders: [
-                    { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/channel/messages.html" },
+                    { name: "channel", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/chanel/messages.html" },
                     { name: "chat", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/chat/messages.html" },
                     { name: "chat_smoke", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/chat_smoke/messages.html" },
                     { name: "info", link: "https://phishdestroy.github.io/ScamIntelLogs/TheProject/info/messages.html" },
@@ -474,6 +763,46 @@
                 folders: [
                     { name: "script", link: "https://github.com/phishdestroy/ScamIntelLogs/tree/main/keitaro/script" },
                     { name: "database", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/keitaro/panels.csv" }
+                ]
+            },
+            {
+                name: "Luxard Gambling",
+                path: "LuxardGambling",
+                image: "https://i.ibb.co/NdWsQ7f5/Luxard-Gambling.jpg",
+                description: `
+                    <p><strong>🎰 Luxard Gambling</strong> — Scam casino & sportsbook Panel-as-a-Service platform providing turnkey fake gambling infrastructure to affiliates ("workers"). 70% worker commission. Active since December 2025.</p>
+                    <p class="font-semibold mt-4">🔮 Activities:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>🎰 Fake casino with real game aggregator integration</li>
+                        <li>⚽ Fake sportsbook with fictional events ("Crazy Odds") + fake live streams</li>
+                        <li>💸 Cascading deposit extraction ($100 → $300 → $500+ → never paid out)</li>
+                        <li>🎭 12+ fake celebrity landing pages (Elon Musk, MrBeast, Jake Paul, etc.)</li>
+                        <li>📖 Full GitBook documentation with victim ("mammoth") manipulation scripts</li>
+                        <li>👥 Team scaling model ("$25K/mo turnkey business")</li>
+                    </ul>
+                    <p class="font-semibold mt-4">⚙️ Technical:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Custom panel: Home, Domains, Statistics, Users, Deposits, Payments, Promo codes, Support, Event generation, Settings, API</li>
+                        <li>Coefficient inflation: +35%, configurable minigame win chances</li>
+                        <li>"Mammoth" template variables: %sum_verif%, %sum_AML%, %sum_3%, %sum_5%</li>
+                        <li>Crypto: ETH, BTC, SOL, BNB, TRX, XRP (auto-split 70/30)</li>
+                        <li>Fiat: VISA, MasterCard, Apple Pay, Google Pay (gray-market processor)</li>
+                    </ul>
+                    <p class="font-semibold mt-4">🌐 Infrastructure:</p>
+                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/luxardgambling_bot" target="_blank" class="text-blue-400 hover:text-blue-300">@luxardgambling_bot</a></p>
+                    <p><strong>📢 News:</strong> <a href="https://t.me/luxardgambling_news" target="_blank" class="text-blue-400 hover:text-blue-300">@luxardgambling_news</a></p>
+                    <p><strong>🔧 Tech:</strong> <a href="https://t.me/luxardgambling_tech_news" target="_blank" class="text-blue-400 hover:text-blue-300">@luxardgambling_tech_news</a></p>
+                    <p><strong>📖 Docs:</strong> info.luxardgambling.com (GitBook, RU + EN)</p>
+                    <p class="font-semibold mt-4">👤 Key Actors:</p>
+                    <p>LXRD (owner), Noirex (tech), Karnel (tech)</p>
+                `,
+                folders: [
+                    { name: "Luxard News", link: "https://phishdestroy.github.io/ScamIntelLogs/LuxardGambling/Luxard%20News/messages.html" },
+                    { name: "Luxard Tech", link: "https://phishdestroy.github.io/ScamIntelLogs/LuxardGambling/Luxard%20Tech/messages.html" },
+                    { name: "guide", link: "https://phishdestroy.github.io/ScamIntelLogs/LuxardGambling/guide/" },
+                    { name: "panel", link: "https://github.com/phishdestroy/ScamIntelLogs/tree/main/LuxardGambling/screen" },
+                    { name: "designs", link: "https://github.com/phishdestroy/ScamIntelLogs/tree/main/LuxardGambling/screen/design" },
+                    { name: "iocs", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/LuxardGambling/iocs.json" }
                 ]
             }
         ];
