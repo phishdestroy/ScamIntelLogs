@@ -94,6 +94,22 @@
         /* Input glow on focus */
         .input-glow:focus{border-color:rgba(6,182,212,.5);box-shadow:0 0 20px rgba(6,182,212,.08)}
 
+        /* Abuse contacts panel */
+        .abuse-panel{animation:fadeUp .5s cubic-bezier(.4,0,.2,1)}
+        .abuse-copy{cursor:pointer;transition:all .2s}
+        .abuse-copy:hover{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.3)}
+        .abuse-copy.copied{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.3)}
+
+        /* Deploy modal */
+        .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);z-index:50;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
+        .modal-overlay.open{opacity:1;pointer-events:auto}
+        .modal-box{background:#0d1117;border:1px solid rgba(255,255,255,.08);border-radius:20px;max-width:560px;width:90%;max-height:85vh;overflow-y:auto;transform:scale(.95);transition:transform .3s}
+        .modal-overlay.open .modal-box{transform:scale(1)}
+
+        /* Deploy button glow */
+        @keyframes deployGlow{0%,100%{box-shadow:0 0 15px rgba(245,158,11,.12)}50%{box-shadow:0 0 30px rgba(245,158,11,.2)}}
+        .deploy-btn{animation:deployGlow 2.5s ease-in-out infinite}
+
         /* Scrollbar */
         ::-webkit-scrollbar{width:5px}
         ::-webkit-scrollbar-track{background:transparent}
@@ -129,15 +145,88 @@
         <p class="text-sm text-gray-500 max-w-md mx-auto">7 evidence checks tied to <a href="https://docs.keitaro.io" target="_blank" class="text-cyan-400/70 hover:text-cyan-300 transition-colors">official Keitaro docs</a> &mdash; score &ge;2 = confirmed</p>
     </div>
 
-    <!-- Proxy config -->
-    <div class="mb-6">
-        <details id="proxyDetails">
-            <summary class="text-[11px] text-gray-600 cursor-pointer hover:text-gray-400 select-none transition-colors">Proxy configuration (optional)</summary>
-            <div class="mt-2 glass rounded-xl p-4 anim-in">
+    <!-- Proxy config + Deploy -->
+    <div class="mb-6 glass rounded-xl p-4">
+        <div class="flex items-center gap-3 mb-3">
+            <div class="flex-1">
                 <input id="cfWorker" type="text" placeholder="https://your-worker.your-subdomain.workers.dev" class="w-full bg-black/40 border border-white/10 rounded-lg px-3 py-2.5 mono text-xs text-gray-300 input-glow focus:outline-none transition-all placeholder-gray-600">
-                <p class="text-[11px] text-gray-600 mt-2">Deploy <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/keitaro/worker.js" target="_blank" class="text-cyan-400/70 hover:text-cyan-300">worker.js</a> to CF Workers for cookies + redirect chain. Without worker 6/7 checks work via public CORS proxy.</p>
             </div>
-        </details>
+            <button onclick="openDeployModal()" class="deploy-btn shrink-0 px-4 py-2.5 bg-gradient-to-r from-amber-600/20 to-orange-600/20 border border-amber-500/30 hover:border-amber-500/50 text-amber-300 hover:text-amber-200 text-xs font-bold rounded-lg transition-all flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+                Deploy Worker
+            </button>
+        </div>
+        <div class="flex items-center gap-3 text-[11px]">
+            <div class="flex items-center gap-1.5">
+                <span id="proxyStatus" class="inline-block w-1.5 h-1.5 rounded-full bg-gray-600"></span>
+                <span id="proxyLabel" class="text-gray-600">No worker &mdash; 6/7 checks via public CORS proxy</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deploy Modal -->
+    <div class="modal-overlay" id="deployModal" onclick="if(event.target===this)closeDeployModal()">
+        <div class="modal-box p-6">
+            <div class="flex items-center justify-between mb-5">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+                    Deploy CF Worker
+                </h3>
+                <button onclick="closeDeployModal()" class="text-gray-500 hover:text-white transition-colors p-1">&times;</button>
+            </div>
+
+            <div class="bg-amber-500/[.06] border border-amber-500/15 rounded-xl p-4 mb-5">
+                <div class="text-xs font-bold text-amber-400 mb-1">Why deploy a worker?</div>
+                <div class="text-[11px] text-gray-400 leading-relaxed">
+                    Without a worker, cookies and redirect chains can't be captured (CORS limitation). With your own CF Worker: <strong class="text-white">7/7 checks</strong>, full cookie analysis, complete redirect chain logging.
+                </div>
+                <div class="flex items-center gap-2 mt-2 text-[11px]">
+                    <span class="px-2 py-0.5 bg-green-500/10 text-green-400 rounded-md font-bold border border-green-500/15">FREE</span>
+                    <span class="text-gray-500">1 Cloudflare account = <strong class="text-gray-300">100,000 requests/day</strong> free tier</span>
+                </div>
+            </div>
+
+            <div class="space-y-4 mb-5">
+                <div class="flex items-start gap-3">
+                    <span class="shrink-0 w-6 h-6 rounded-full bg-cyan-500/15 border border-cyan-500/20 flex items-center justify-center text-xs font-bold text-cyan-400">1</span>
+                    <div>
+                        <div class="text-xs font-semibold text-white mb-1">Install Wrangler CLI</div>
+                        <div class="bg-black/40 rounded-lg px-3 py-2 mono text-[11px] text-gray-400 border border-white/[.04] select-all cursor-pointer" onclick="copyText(this,'npm install -g wrangler')">npm install -g wrangler</div>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="shrink-0 w-6 h-6 rounded-full bg-cyan-500/15 border border-cyan-500/20 flex items-center justify-center text-xs font-bold text-cyan-400">2</span>
+                    <div>
+                        <div class="text-xs font-semibold text-white mb-1">Login to Cloudflare</div>
+                        <div class="bg-black/40 rounded-lg px-3 py-2 mono text-[11px] text-gray-400 border border-white/[.04] select-all cursor-pointer" onclick="copyText(this,'wrangler login')">wrangler login</div>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="shrink-0 w-6 h-6 rounded-full bg-cyan-500/15 border border-cyan-500/20 flex items-center justify-center text-xs font-bold text-cyan-400">3</span>
+                    <div>
+                        <div class="text-xs font-semibold text-white mb-1">Download &amp; deploy worker.js</div>
+                        <div class="bg-black/40 rounded-lg px-3 py-2 mono text-[11px] text-gray-400 border border-white/[.04] space-y-1">
+                            <div class="select-all cursor-pointer" onclick="copyText(this,'curl -O https://raw.githubusercontent.com/phishdestroy/ScamIntelLogs/main/keitaro/worker.js')">curl -O https://raw.githubusercontent.com/phishdestroy/ScamIntelLogs/main/keitaro/worker.js</div>
+                            <div class="select-all cursor-pointer" onclick="copyText(this,'wrangler deploy worker.js --name keitaro-proxy')">wrangler deploy worker.js --name keitaro-proxy</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="shrink-0 w-6 h-6 rounded-full bg-green-500/15 border border-green-500/20 flex items-center justify-center text-xs font-bold text-green-400">4</span>
+                    <div>
+                        <div class="text-xs font-semibold text-white mb-1">Paste your worker URL above</div>
+                        <div class="text-[11px] text-gray-500">Format: <span class="mono text-gray-400">https://keitaro-proxy.YOUR-SUBDOMAIN.workers.dev</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-black/30 border border-white/[.04] rounded-xl p-4 text-[11px] text-gray-500 space-y-1">
+                <div class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> <span class="text-gray-400">Free Cloudflare account: <strong class="text-gray-300">100,000 requests/day</strong></span></div>
+                <div class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> <span class="text-gray-400">Deploys in under 30 seconds</span></div>
+                <div class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> <span class="text-gray-400">No server needed &mdash; runs on Cloudflare edge</span></div>
+                <div class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> <span class="text-gray-400">Open-source: <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/keitaro/worker.js" target="_blank" class="text-cyan-400/70 hover:text-cyan-300">view source</a></span></div>
+            </div>
+        </div>
     </div>
 
     <!-- Tabs -->
@@ -173,6 +262,68 @@
         <div id="verdict" class="rounded-2xl p-6 text-center mb-6 border border-white/[.06] bg-white/[.02] hidden">
             <div id="vScore" class="text-4xl font-black mono text-gray-600">-/7</div>
             <div id="vLabel" class="text-sm font-semibold text-gray-500 mt-1.5 tracking-wider uppercase">Waiting</div>
+        </div>
+
+        <!-- Abuse Contacts (shown when Keitaro confirmed) -->
+        <div id="abusePanel" class="hidden mb-5">
+            <div class="abuse-panel rounded-2xl p-5 bg-gradient-to-r from-red-500/[.06] to-red-500/[.02] border border-red-500/20">
+                <div class="flex items-center gap-2 mb-3">
+                    <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.072 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+                    <span class="text-xs font-bold text-red-400 uppercase tracking-wider">Keitaro Detected &mdash; Report Abuse</span>
+                </div>
+                <p class="text-[11px] text-gray-500 mb-3">This domain uses Keitaro TDS cloaking infrastructure. Report to all relevant parties:</p>
+                <div class="grid sm:grid-cols-2 gap-2">
+                    <div class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5" onclick="copyAbuse(this,'report-abuse@keitaro.io')">
+                        <div class="shrink-0 w-7 h-7 rounded-md bg-red-500/10 border border-red-500/15 flex items-center justify-center text-[10px] font-bold text-red-400">K</div>
+                        <div class="min-w-0">
+                            <div class="text-[10px] text-gray-500">Keitaro (Apliteni OU)</div>
+                            <div class="mono text-[11px] text-gray-300 truncate">report-abuse@keitaro.io</div>
+                        </div>
+                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    </div>
+                    <div class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5" onclick="copyAbuse(this,'abuse@clickup.com')">
+                        <div class="shrink-0 w-7 h-7 rounded-md bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-[10px] font-bold text-violet-400">CU</div>
+                        <div class="min-w-0">
+                            <div class="text-[10px] text-gray-500">ClickUp (data storage)</div>
+                            <div class="mono text-[11px] text-gray-300 truncate">abuse@clickup.com</div>
+                        </div>
+                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    </div>
+                    <div class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5" onclick="copyAbuse(this,'abuse@amazonaws.com')">
+                        <div class="shrink-0 w-7 h-7 rounded-md bg-amber-500/10 border border-amber-500/15 flex items-center justify-center text-[10px] font-bold text-amber-400">AWS</div>
+                        <div class="min-w-0">
+                            <div class="text-[10px] text-gray-500">Amazon AWS (infrastructure)</div>
+                            <div class="mono text-[11px] text-gray-300 truncate">abuse@amazonaws.com</div>
+                        </div>
+                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    </div>
+                    <div class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5" onclick="copyAbuse(this,'abuse-reports@stripe.com')">
+                        <div class="shrink-0 w-7 h-7 rounded-md bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-[10px] font-bold text-blue-400">S</div>
+                        <div class="min-w-0">
+                            <div class="text-[10px] text-gray-500">Stripe (payment processor)</div>
+                            <div class="mono text-[11px] text-gray-300 truncate">abuse-reports@stripe.com</div>
+                        </div>
+                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    </div>
+                    <a href="https://safebrowsing.google.com/safebrowsing/report_phish/" target="_blank" class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5">
+                        <div class="shrink-0 w-7 h-7 rounded-md bg-green-500/10 border border-green-500/15 flex items-center justify-center text-[10px] font-bold text-green-400">G</div>
+                        <div class="min-w-0">
+                            <div class="text-[10px] text-gray-500">Google Safe Browsing</div>
+                            <div class="text-[11px] text-gray-300">Report phishing page</div>
+                        </div>
+                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                    <a href="https://www.phishing.org/report" target="_blank" class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5">
+                        <div class="shrink-0 w-7 h-7 rounded-md bg-cyan-500/10 border border-cyan-500/15 flex items-center justify-center text-[10px] font-bold text-cyan-400">AP</div>
+                        <div class="min-w-0">
+                            <div class="text-[10px] text-gray-500">Anti-Phishing Working Group</div>
+                            <div class="text-[11px] text-gray-300">APWG Report</div>
+                        </div>
+                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                </div>
+                <p class="text-[10px] text-gray-600 mt-3 italic">Click any email to copy. For faster takedowns, report directly to the domain's hosting provider and registrar.</p>
+            </div>
         </div>
 
         <!-- Log -->
@@ -281,7 +432,7 @@
                         <span class="text-[13px] font-semibold text-gray-200">HTML markers: KTracking / {subid} / {offer}</span>
                         <a href="https://docs.keitaro.io/en/campaign-integrations/tracking-script.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
                     </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Official Keitaro tracking script uses <span class="mono text-gray-400">KTracking</span> API and placeholders <span class="mono text-gray-400">{subid}</span> / <span class="mono text-gray-400">{offer}</span>. Scanner searches HTML bodies of all chain responses.</p>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Official Keitaro tracking script uses <span class="mono text-gray-400">KTracking</span> API and placeholders <span class="mono text-gray-400">{subid}</span> / <span class="mono text-gray-400">{offer}</span>. Also matches <span class="mono text-gray-400">keitaro</span> string. Scanner searches HTML bodies of all chain responses.</p>
                 </div>
 
                 <div class="px-5 py-4">
@@ -299,7 +450,7 @@
                         <span class="text-[13px] font-semibold text-gray-200">Behavior: reacts to Offer URL params (_lp + _token)</span>
                         <a href="https://docs.keitaro.io/en/landing-pages-and-offers/offer-url.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
                     </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Compares MAIN vs OFFER_TEST first HTTP response: <strong class="text-gray-300">status</strong>, <strong class="text-gray-300">content-type</strong>, <strong class="text-gray-300">location</strong>, <strong class="text-gray-300">body length</strong>. Any difference means the server understands Keitaro-specific params.</p>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Compares MAIN vs OFFER_TEST final response: <strong class="text-gray-300">status</strong>, <strong class="text-gray-300">content-type</strong>, <strong class="text-gray-300">body length</strong> (diff &gt;100 bytes). Any difference means the server understands Keitaro-specific params.</p>
                 </div>
 
                 <div class="px-5 py-4">
@@ -308,7 +459,7 @@
                         <span class="text-[13px] font-semibold text-gray-200">Behavior: reacts to _update_tokens=1</span>
                         <a href="https://docs.keitaro.io/en/landing-pages-and-offers/update-params.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
                     </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Compares MAIN vs UPDATE_TOKENS first HTTP response: <strong class="text-gray-300">status</strong>, <strong class="text-gray-300">content-type</strong>, <strong class="text-gray-300">location</strong>, <strong class="text-gray-300">body length</strong>. _update_tokens=1 is a documented mechanism for updating click params (can return empty response).</p>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Compares MAIN vs UPDATE_TOKENS final response: <strong class="text-gray-300">status</strong>, <strong class="text-gray-300">content-type</strong>, <strong class="text-gray-300">body length</strong> (diff &gt;100 bytes). _update_tokens=1 is a documented mechanism for updating click params (can return empty response).</p>
                 </div>
 
             </div>
@@ -370,7 +521,7 @@ const EVIDENCES = [
     { id: 1, name: 'Offer Params',     hint: '_lp + _token',       doc: DOCS.offer_url },
     { id: 2, name: 'Landing Params',   hint: '_subid + _token',    doc: DOCS.lp_redirect },
     { id: 3, name: 'Subid Cookie',     hint: 'subid=',             doc: DOCS.tracking },
-    { id: 4, name: 'HTML Markers',     hint: 'KTracking {subid}',  doc: DOCS.tracking },
+    { id: 4, name: 'HTML Markers',     hint: 'KTracking keitaro',  doc: DOCS.tracking },
     { id: 5, name: 'Click API',        hint: '/click_api/v3',      doc: DOCS.click_api },
     { id: 6, name: 'Offer Reaction',   hint: 'MAIN vs OFFER',     doc: DOCS.offer_url },
     { id: 7, name: 'Update Tokens',    hint: 'MAIN vs UPDATE',    doc: DOCS.update_params },
@@ -481,8 +632,8 @@ async function scanDomain(domain, onLog, onCheck) {
     const details = Array(7).fill('');
     let chains = {};
 
-    // Build URLs exactly like Python
-    const offerTestUrl = buildUrl(stripQF(mainUrl), { _lp: '1', _token: 'invalid' });
+    // Build URLs exactly like Python: all from origin, not full URL
+    const offerTestUrl = buildUrl(mainOrigin, { _lp: '1', _token: 'invalid' });
     const clickApiUrl = mainOrigin + '/click_api/v3?token=invalid&info=1&log=1';
     const updateTokensUrl = mainOrigin + '/?_update_tokens=1&sub_id=invalid&sub_id_1=TEST';
 
@@ -522,30 +673,26 @@ async function scanDomain(domain, onLog, onCheck) {
 
     onLog('--- 7 evidence checks ---', 'dim');
 
-    // Collect all URLs + locations from all chains (for E1, E2 param checks)
-    const allUrlsAndLocs = [];
+    // Python checks final_url of each chain (not intermediate redirects)
+    const chainFinalUrls = [];
     for (const c of Object.values(chains)) {
         if (!c) continue;
-        if (c.finalUrl) allUrlsAndLocs.push(c.finalUrl);
-        if (c.redirects) c.redirects.forEach(r => {
-            if (r.url) allUrlsAndLocs.push(r.url);
-            if (r.headers && r.headers.location) allUrlsAndLocs.push(r.headers.location);
-        });
+        if (c.finalUrl) chainFinalUrls.push(c.finalUrl);
     }
 
-    // E1: Offer URL params (_lp + _token/token)
+    // E1: Offer URL params (_lp + _token/token) — Python: check final_url of each chain
     onCheck(1, 'run');
-    const e1hit = allUrlsAndLocs.find(u => urlHasParams(u, '_lp', ['_token', 'token']));
+    const e1hit = chainFinalUrls.find(u => urlHasParams(u, '_lp', ['_token', 'token']));
     results[0] = !!e1hit;
-    details[0] = e1hit ? `Found: ${e1hit}` : 'Not found in URL/Location across all chains';
+    details[0] = e1hit ? `Found: ${e1hit}` : 'Not found in final URLs across all chains';
     onCheck(1, results[0] ? 'pass' : 'fail', results[0] ? 'found' : 'not found');
     onLog(`E1 Offer Params: ${F(results[0])} ${details[0]}`, results[0] ? 'ok' : 'dim');
 
-    // E2: Landing params (_subid + _token/token)
+    // E2: Landing params (_subid + _token/token) — Python: check final_url of each chain
     onCheck(2, 'run');
-    const e2hit = allUrlsAndLocs.find(u => urlHasParams(u, '_subid', ['_token', 'token']));
+    const e2hit = chainFinalUrls.find(u => urlHasParams(u, '_subid', ['_token', 'token']));
     results[1] = !!e2hit;
-    details[1] = e2hit ? `Found: ${e2hit}` : 'Not found in URL/Location across all chains';
+    details[1] = e2hit ? `Found: ${e2hit}` : 'Not found in final URLs across all chains';
     onCheck(2, results[1] ? 'pass' : 'fail', results[1] ? 'found' : 'not found');
     onLog(`E2 Landing Params: ${F(results[1])} ${details[1]}`, results[1] ? 'ok' : 'dim');
 
@@ -565,9 +712,9 @@ async function scanDomain(domain, onLog, onCheck) {
     onCheck(3, results[2] ? 'pass' : 'fail', results[2] ? 'Cookie' : 'not found');
     onLog(`E3 Subid Cookie: ${F(results[2])} ${details[2]}`, results[2] ? 'ok' : 'dim');
 
-    // E4: HTML Markers (KTracking, {subid}, {offer} — exactly 3 like Python)
+    // E4: HTML Markers (KTracking, {subid}, {offer}, keitaro — exactly 4 like Python)
     onCheck(4, 'run');
-    const markers = [[/\bKTracking\b/i, 'KTracking'], [/\{subid\}/i, '{subid}'], [/\{offer\}/i, '{offer}']];
+    const markers = [[/\bKTracking\b/i, 'KTracking'], [/\{subid\}/i, '{subid}'], [/\{offer\}/i, '{offer}'], [/keitaro/i, 'keitaro']];
     const e4found = [];
     for (const c of Object.values(chains)) {
         if (!c || !c.body) continue;
@@ -594,34 +741,32 @@ async function scanDomain(domain, onLog, onCheck) {
     onCheck(5, results[4] ? 'pass' : 'fail', results[4] ? `HTTP ${ca ? ca.status : '-'} JSON` : 'no');
     onLog(`E5 Click API: ${F(results[4])} ${details[4]}`, results[4] ? 'ok' : 'dim');
 
-    // E6: Offer Reaction (compare MAIN vs OFFER_TEST first hop: status, ct, location, body_len)
+    // E6: Offer Reaction — Python: compare FINAL response (status, content_type, abs(body_len) > 100)
     onCheck(6, 'run');
-    const baseH = firstHop(chains.MAIN), testH = firstHop(chains.OFFER_TEST);
-    if (baseH && testH && baseH.status) {
-        const reacted = (testH.status !== baseH.status)
-            || ((testH.content_type || '') !== (baseH.content_type || ''))
-            || ((testH.location || '') !== (baseH.location || ''))
-            || (testH.body_len !== baseH.body_len);
+    const baseR = chains.MAIN, testR = chains.OFFER_TEST;
+    if (baseR && testR && baseR.status) {
+        const reacted = (testR.status !== baseR.status)
+            || ((testR.contentType || '') !== (baseR.contentType || ''))
+            || (Math.abs((testR.bodyLength || 0) - (baseR.bodyLength || 0)) > 100);
         results[5] = reacted;
-        details[5] = `Base [MAIN] -> status=${baseH.status}, ct=${baseH.content_type || '-'}, loc=${baseH.location || '-'}, len=${baseH.body_len}; `
-            + `Test [OFFER_TEST] -> status=${testH.status}, ct=${testH.content_type || '-'}, loc=${testH.location || '-'}, len=${testH.body_len}`;
+        details[5] = `Base [MAIN] -> status=${baseR.status}, ct=${sCt(baseR.contentType)}, len=${baseR.bodyLength || 0}; `
+            + `Test [OFFER_TEST] -> status=${testR.status}, ct=${sCt(testR.contentType)}, len=${testR.bodyLength || 0}`;
     } else { results[5] = false; details[5] = 'Missing MAIN or OFFER_TEST response'; }
-    onCheck(6, results[5] ? 'pass' : 'fail', results[5] ? `${baseH?.status}\u2192${testH?.status}` : 'no change');
+    onCheck(6, results[5] ? 'pass' : 'fail', results[5] ? `${baseR?.status}\u2192${testR?.status}` : 'no change');
     onLog(`E6 Offer Reaction: ${F(results[5])} ${details[5]}`, results[5] ? 'ok' : 'dim');
 
-    // E7: Update Tokens Reaction (compare MAIN vs UPDATE_TOKENS first hop)
+    // E7: Update Tokens — Python: compare FINAL response (status, content_type, abs(body_len) > 100)
     onCheck(7, 'run');
-    const utH = firstHop(chains.UPDATE_TOKENS);
-    if (baseH && utH && baseH.status) {
-        const reacted = (utH.status !== baseH.status)
-            || ((utH.content_type || '') !== (baseH.content_type || ''))
-            || ((utH.location || '') !== (baseH.location || ''))
-            || (utH.body_len !== baseH.body_len);
+    const utR = chains.UPDATE_TOKENS;
+    if (baseR && utR && baseR.status) {
+        const reacted = (utR.status !== baseR.status)
+            || ((utR.contentType || '') !== (baseR.contentType || ''))
+            || (Math.abs((utR.bodyLength || 0) - (baseR.bodyLength || 0)) > 100);
         results[6] = reacted;
-        details[6] = `Base [MAIN] -> status=${baseH.status}, ct=${baseH.content_type || '-'}, loc=${baseH.location || '-'}, len=${baseH.body_len}; `
-            + `Test [UPDATE_TOKENS] -> status=${utH.status}, ct=${utH.content_type || '-'}, loc=${utH.location || '-'}, len=${utH.body_len}`;
+        details[6] = `Base [MAIN] -> status=${baseR.status}, ct=${sCt(baseR.contentType)}, len=${baseR.bodyLength || 0}; `
+            + `Test [UPDATE_TOKENS] -> status=${utR.status}, ct=${sCt(utR.contentType)}, len=${utR.bodyLength || 0}`;
     } else { results[6] = false; details[6] = 'Missing MAIN or UPDATE_TOKENS response'; }
-    onCheck(7, results[6] ? 'pass' : 'fail', results[6] ? `${baseH?.status}\u2192${utH?.status}` : 'no change');
+    onCheck(7, results[6] ? 'pass' : 'fail', results[6] ? `${baseR?.status}\u2192${utR?.status}` : 'no change');
     onLog(`E7 Update Tokens: ${F(results[6])} ${details[6]}`, results[6] ? 'ok' : 'dim');
 
     const total = results.length;
@@ -803,6 +948,7 @@ async function runSingle() {
     document.getElementById('scanIco').innerHTML = '<circle class="anim-spin origin-center" cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="31.4" stroke-dashoffset="10"/>';
 
     resetSingle();
+    showAbusePanel(false);
     document.getElementById('scanBar').classList.remove('hidden');
     document.getElementById('headerDot').className = 'status-dot active';
     document.getElementById('headerStatus').textContent = 'Scanning...';
@@ -823,6 +969,7 @@ async function runSingle() {
         document.getElementById('headerStatus').textContent = 'Error';
     } else {
         setVerdictUI(score, total);
+        if (score >= 2) showAbusePanel(true);
         let vt, vc;
         if (score >= 2) { vt = `Keitaro CONFIRMED (passed ${score}/${total} evidences)`; vc = 'text-red-400'; }
         else if (score === 1) { vt = `Keitaro NOT CONFIRMED (only 1 evidence, need \u22652)`; vc = 'text-yellow-400'; }
@@ -914,12 +1061,59 @@ function switchTab(tab) {
     });
 }
 
+// ===================== ABUSE PANEL =====================
+function showAbusePanel(show) {
+    const panel = document.getElementById('abusePanel');
+    if (show) panel.classList.remove('hidden');
+    else panel.classList.add('hidden');
+}
+
+function copyAbuse(el, text) {
+    navigator.clipboard.writeText(text).then(() => {
+        el.classList.add('copied');
+        const orig = el.querySelector('.mono');
+        if (orig) { const t = orig.textContent; orig.textContent = 'Copied!'; setTimeout(() => { orig.textContent = t; el.classList.remove('copied'); }, 1200); }
+    });
+}
+
+// ===================== DEPLOY MODAL =====================
+function openDeployModal() { document.getElementById('deployModal').classList.add('open'); }
+function closeDeployModal() { document.getElementById('deployModal').classList.remove('open'); }
+
+function copyText(el, text) {
+    navigator.clipboard.writeText(text).then(() => {
+        const orig = el.textContent;
+        el.textContent = 'Copied!';
+        el.style.color = '#34d399';
+        setTimeout(() => { el.textContent = orig; el.style.color = ''; }, 1000);
+    });
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDeployModal(); });
+
+// ===================== PROXY STATUS =====================
+function updateProxyStatus() {
+    const w = getWorkerUrl();
+    const dot = document.getElementById('proxyStatus');
+    const label = document.getElementById('proxyLabel');
+    if (w) {
+        dot.className = 'inline-block w-1.5 h-1.5 rounded-full bg-green-400';
+        label.className = 'text-green-400/80';
+        label.textContent = 'CF Worker connected — 7/7 checks';
+    } else {
+        dot.className = 'inline-block w-1.5 h-1.5 rounded-full bg-gray-600';
+        label.className = 'text-gray-600';
+        label.textContent = 'No worker — 6/7 checks via public CORS proxy';
+    }
+}
+
 // ===================== INIT =====================
 buildGrid();
 document.getElementById('domainInput').addEventListener('keydown', e => { if (e.key==='Enter') runSingle(); });
 const saved = localStorage.getItem('keitaro_worker');
 if (saved) document.getElementById('cfWorker').value = saved;
-document.getElementById('cfWorker').addEventListener('change', function(){ localStorage.setItem('keitaro_worker', this.value); });
+document.getElementById('cfWorker').addEventListener('input', function(){ localStorage.setItem('keitaro_worker', this.value); updateProxyStatus(); });
+updateProxyStatus();
 </script>
 </body>
 </html>
