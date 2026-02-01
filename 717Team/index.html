@@ -3,90 +3,560 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>717Team - Drainer Operation Chat Logs | ScamIntelLogs</title>
-    <meta name="description" content="Archived Telegram chat logs from the 717Team crypto drainer and phishing operation. Four-part chat export with photos, videos, and operational coordination data.">
-    <meta name="keywords" content="717Team, crypto drainer, phishing operation, Telegram chat logs, OSINT, scam intelligence">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://phishdestroy.github.io/ScamIntelLogs/717Team/">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://phishdestroy.github.io/ScamIntelLogs/717Team/">
-    <meta property="og:title" content="717Team - Drainer Operation Chat Logs">
-    <meta property="og:description" content="Archived Telegram chat logs from 717Team crypto drainer operation.">
+    <title>717Team Intelligence Report | ScamIntelLogs</title>
+    <meta name="description" content="Full intelligence report on 717Team crypto drainer operation. 125 members, 85 TRX wallets, 13 phishing domains, stolen USDT evidence.">
+    <meta property="og:title" content="717Team - Crypto Drainer Operation Intel">
+    <meta property="og:description" content="Archived Telegram chat logs, wallets, domains, and evidence from 717Team crypto drainer.">
     <meta property="og:image" content="https://destroyico.pages.dev/assets/android-chrome-512x512.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Phish_Destroy">
     <link rel="icon" type="image/x-icon" href="https://destroyico.pages.dev/assets/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="https://destroyico.pages.dev/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://destroyico.pages.dev/assets/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://destroyico.pages.dev/assets/apple-touch-icon.png">
-    <link rel="manifest" href="https://destroyico.pages.dev/assets/site.webmanifest">
     <meta name="theme-color" content="#111827">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .text-gradient { background-image: linear-gradient(to right, #ec4899, #f43f5e); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .grad-text { background: linear-gradient(135deg, #f43f5e, #ec4899, #a855f7); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .card { background: rgba(30,30,40,0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; backdrop-filter: blur(8px); }
+        .card:hover { border-color: rgba(255,255,255,0.15); }
+        .glow-red { box-shadow: 0 0 30px rgba(244,63,94,0.15); }
+        .tag { display: inline-block; padding: 2px 10px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+        .wallet-cell { font-family: 'Courier New', monospace; font-size: 0.7rem; word-break: break-all; }
+        .copy-btn { cursor: pointer; opacity: 0.4; transition: opacity 0.2s; }
+        .copy-btn:hover { opacity: 1; }
+        .photo-grid img { border-radius: 8px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+        .photo-grid img:hover { transform: scale(1.03); box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 999; align-items: center; justify-content: center; cursor: zoom-out; }
+        #lightbox.active { display: flex; }
+        #lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; }
+        .stat-num { font-size: 2rem; font-weight: 800; line-height: 1; }
+        table { border-collapse: collapse; width: 100%; }
+        th { position: sticky; top: 0; background: #1e1e28; z-index: 2; }
+        .domain-card { transition: all 0.2s; }
+        .domain-card:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .scroll-table { max-height: 500px; overflow-y: auto; }
+        .scroll-table::-webkit-scrollbar { width: 6px; }
+        .scroll-table::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-300 min-h-screen">
-    <div class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+<body class="bg-gray-950 text-gray-300 min-h-screen">
 
-        <a href="../" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-6 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>
-            Back to ScamIntelLogs
-        </a>
+<div id="lightbox" onclick="this.classList.remove('active')"><img id="lb-img" src="" alt=""></div>
 
-        <div class="text-center mb-8">
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gradient mb-2">717Team</h1>
-            <p class="text-xl text-gray-400">Drainer Operation</p>
-            <div class="flex justify-center gap-3 mt-4 flex-wrap">
-                <span class="px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-sm font-medium">Crypto Drainer</span>
-                <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm font-medium">Phishing</span>
-            </div>
-        </div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
-            <h2 class="text-lg font-bold text-white mb-3">Operation Summary</h2>
-            <p class="text-sm text-gray-400">Crypto drainer and phishing operation. Full Telegram chat export archived and split into 4 parts due to volume. Contains internal coordination messages, shared media, photos, video messages, and sticker assets used within the group. Valuable for analyzing communication patterns, participant behavior, and operational methods.</p>
-        </div>
+    <!-- Nav -->
+    <a href="../" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8 text-sm transition-colors">
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+        Back to ScamIntelLogs
+    </a>
 
-        <h2 class="text-xl font-bold text-white mb-4">Chat Logs (4 Parts)</h2>
-        <div class="grid sm:grid-cols-2 gap-4 mb-8">
-            <a href="messages.html" class="flex items-center gap-4 bg-red-500/10 ring-1 ring-red-500/20 hover:bg-red-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">💬</span>
-                <div>
-                    <div class="font-semibold text-white">Chat - Part 1</div>
-                    <div class="text-sm text-gray-400">First segment of Telegram group export</div>
-                </div>
-            </a>
-            <a href="messages2.html" class="flex items-center gap-4 bg-orange-500/10 ring-1 ring-orange-500/20 hover:bg-orange-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">💬</span>
-                <div>
-                    <div class="font-semibold text-white">Chat - Part 2</div>
-                    <div class="text-sm text-gray-400">Second segment of Telegram group export</div>
-                </div>
-            </a>
-            <a href="messages3.html" class="flex items-center gap-4 bg-yellow-500/10 ring-1 ring-yellow-500/20 hover:bg-yellow-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">💬</span>
-                <div>
-                    <div class="font-semibold text-white">Chat - Part 3</div>
-                    <div class="text-sm text-gray-400">Third segment of Telegram group export</div>
-                </div>
-            </a>
-            <a href="messages4.html" class="flex items-center gap-4 bg-green-500/10 ring-1 ring-green-500/20 hover:bg-green-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">💬</span>
-                <div>
-                    <div class="font-semibold text-white">Chat - Part 4</div>
-                    <div class="text-sm text-gray-400">Fourth segment of Telegram group export</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="text-center text-sm text-gray-500 border-t border-gray-800 pt-6">
-            <p>Collected by <a href="https://www.phishdestroy.io/" class="text-blue-400 hover:text-blue-300">PhishDestroy</a> | <a href="https://github.com/phishdestroy/ScamIntelLogs" class="text-blue-400 hover:text-blue-300">GitHub</a></p>
+    <!-- Header -->
+    <div class="text-center mb-12 reveal">
+        <h1 class="text-5xl sm:text-6xl font-black tracking-tight grad-text mb-3">717Team</h1>
+        <p class="text-xl text-gray-400 mb-4">Crypto Drainer & Fake AML Verification Operation</p>
+        <div class="flex justify-center gap-2 flex-wrap">
+            <span class="tag bg-red-500/20 text-red-400">Wallet Drainer</span>
+            <span class="tag bg-pink-500/20 text-pink-400">Fake AML</span>
+            <span class="tag bg-orange-500/20 text-orange-400">Phishing</span>
+            <span class="tag bg-purple-500/20 text-purple-400">TRX/TRON</span>
+            <span class="tag bg-yellow-500/20 text-yellow-400">Active Jan 2026</span>
         </div>
     </div>
+
+    <!-- Stats Row -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10 reveal">
+        <div class="card p-5 text-center glow-red">
+            <div class="stat-num text-red-400">125</div>
+            <div class="text-xs text-gray-500 mt-1">Group Members</div>
+        </div>
+        <div class="card p-5 text-center">
+            <div class="stat-num text-pink-400">85</div>
+            <div class="text-xs text-gray-500 mt-1">TRX Wallets</div>
+        </div>
+        <div class="card p-5 text-center">
+            <div class="stat-num text-orange-400">15</div>
+            <div class="text-xs text-gray-500 mt-1">Domains</div>
+        </div>
+        <div class="card p-5 text-center">
+            <div class="stat-num text-purple-400">30</div>
+            <div class="text-xs text-gray-500 mt-1">TX Hashes</div>
+        </div>
+    </div>
+
+    <!-- Operation Summary -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-3">Operation Summary</h2>
+        <p class="text-sm text-gray-400 leading-relaxed mb-4">717Team operates a <strong class="text-white">fake AML verification</strong> and <strong class="text-white">wallet drainer</strong> scheme on the TRON/TRX network. Victims are directed to phishing domains (checkscore.cc, amlbot.pw, wallet-invoice.pw, etc.) posing as legitimate AML/KYC verification services. Upon connecting their wallets, a <strong class="text-white">smart contract drainer</strong> steals all USDT. The operation uses @withdraw_717_bot for automated payouts (~70% to workers). Coordination happens in Telegram with 125+ participants.</p>
+        <div class="grid sm:grid-cols-3 gap-3 text-xs">
+            <div class="bg-red-500/10 rounded-lg p-3"><span class="text-red-400 font-semibold">Method:</span> Fake AML check &rarr; wallet connect &rarr; approve tx &rarr; drain USDT</div>
+            <div class="bg-orange-500/10 rounded-lg p-3"><span class="text-orange-400 font-semibold">Network:</span> TRON (TRX) / TRC-20 USDT</div>
+            <div class="bg-purple-500/10 rounded-lg p-3"><span class="text-purple-400 font-semibold">Payout:</span> @withdraw_717_bot (auto, ~70%)</div>
+        </div>
+    </div>
+
+    <!-- Key Actor: TSA Profile -->
+    <div class="card p-6 mb-10 glow-red reveal">
+        <div class="flex items-start gap-4 mb-4">
+            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center text-white font-black text-xl flex-shrink-0">D</div>
+            <div>
+                <h2 class="text-lg font-bold text-white">Key Actor: user7149807602</h2>
+                <p class="text-sm text-gray-400">Telegram ID: <code class="text-pink-400">7149807602</code></p>
+            </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-3 text-sm mb-4">
+            <div><span class="text-gray-500">Display Name:</span> <span class="text-white font-semibold">debank</span></div>
+            <div><span class="text-gray-500">Telegram:</span> <a href="https://t.me/imdebank" class="text-blue-400 hover:text-blue-300">@imdebank</a></div>
+            <div><span class="text-gray-500">Also known as:</span> <span class="text-white">@bogiepnl</span></div>
+            <div><span class="text-gray-500">Role:</span> <span class="text-red-400 font-semibold">Admin / Founder</span></div>
+            <div><span class="text-gray-500">ETH Wallet:</span> <code class="text-xs text-yellow-400 break-all">0x9943777f44053566fFa9d43869D33D1B48387A3B</code></div>
+            <div><span class="text-gray-500">Status:</span> <span class="text-red-400">Active</span></div>
+        </div>
+        <div class="text-xs text-gray-500 bg-gray-900/50 rounded-lg p-3">
+            <strong class="text-gray-400">TSA Intel:</strong> Active in 3 groups: <span class="text-white">[RublevkaTeam] Chat NOT</span>, <span class="text-white">Solana</span> (public), <span class="text-white">СОЛЕВАЯ НОРКА</span>. Asked for fake Solana honeypot tokens in both Russian and English. Discussed auto-withdrawal setup and seed phrase leaks.
+        </div>
+    </div>
+
+    <!-- Phishing Domains with URLScan Evidence -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Phishing Domains & URLScan Evidence</h2>
+    <div class="grid sm:grid-cols-2 gap-4 mb-10 reveal">
+        <!-- checkscore.cc -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-red-400 font-bold text-sm">checkscore.cc</div>
+                    <div class="text-xs text-gray-500">Primary fake AML &mdash; "Trust AML" &bull; IP: 188.114.97.3 &bull; Cloudflare</div>
+                </div>
+                <span class="tag bg-red-500/20 text-red-400">Main</span>
+            </div>
+            <a href="https://urlscan.io/result/019c04d2-c9d4-775c-a3a1-c575c34e132d/" target="_blank" rel="noopener">
+                <img src="https://urlscan.io/screenshots/019c04d2-c9d4-775c-a3a1-c575c34e132d.png" alt="checkscore.cc screenshot" class="w-full rounded-lg mt-2 border border-gray-700/50" loading="lazy">
+            </a>
+            <div class="flex gap-2 mt-2">
+                <a href="https://urlscan.io/result/019c04d2-c9d4-775c-a3a1-c575c34e132d/" target="_blank" class="text-xs text-blue-400 hover:text-blue-300">URLScan &rarr;</a>
+            </div>
+        </div>
+        <!-- amlbot.pw -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-pink-400 font-bold text-sm">amlbot.pw</div>
+                    <div class="text-xs text-gray-500">"AML Check" &bull; IP: 172.67.177.155 &bull; Cloudflare &bull; @phish_report tagged</div>
+                </div>
+                <span class="tag bg-pink-500/20 text-pink-400">Phishing</span>
+            </div>
+            <a href="https://urlscan.io/result/019c16b8-6f27-70fa-b8b8-a3cba2e7c5d9/" target="_blank" rel="noopener">
+                <img src="https://urlscan.io/screenshots/019c16b8-6f27-70fa-b8b8-a3cba2e7c5d9.png" alt="amlbot.pw screenshot" class="w-full rounded-lg mt-2 border border-gray-700/50" loading="lazy">
+            </a>
+            <div class="flex gap-2 mt-2">
+                <a href="https://urlscan.io/result/019c16b8-6f27-70fa-b8b8-a3cba2e7c5d9/" target="_blank" class="text-xs text-blue-400 hover:text-blue-300">URLScan &rarr;</a>
+            </div>
+        </div>
+        <!-- wallet-invoice.pw -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-orange-400 font-bold text-sm">wallet-invoice.pw</div>
+                    <div class="text-xs text-gray-500">"USDT Receipt Creator" &bull; IP: 172.67.222.10 &bull; drainer.js from kick-facepunch.com</div>
+                </div>
+                <span class="tag bg-red-500/20 text-red-400">Malicious</span>
+            </div>
+            <a href="https://urlscan.io/result/019c0abc-86e7-774c-af19-a941807e0af0/" target="_blank" rel="noopener">
+                <img src="https://urlscan.io/screenshots/019c0abc-86e7-774c-af19-a941807e0af0.png" alt="wallet-invoice.pw screenshot" class="w-full rounded-lg mt-2 border border-gray-700/50" loading="lazy">
+            </a>
+            <div class="text-xs text-red-400/80 mt-2">Loads drainer.js + modal.js from kick-facepunch.com &bull; Wallet adapters: TronLink, Ledger, BitKeep, OKX, ByBit, Trust</div>
+            <div class="flex gap-2 mt-1">
+                <a href="https://urlscan.io/result/019c0abc-86e7-774c-af19-a941807e0af0/" target="_blank" class="text-xs text-blue-400 hover:text-blue-300">URLScan &rarr;</a>
+            </div>
+        </div>
+        <!-- wallet-receive.com -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-orange-400 font-bold text-sm">wallet-receive.com</div>
+                    <div class="text-xs text-gray-500">"USDT Receipt Creator" &bull; IP: 172.67.146.101 &bull; drainer.js &bull; certstream-flagged</div>
+                </div>
+                <span class="tag bg-red-500/20 text-red-400">Malicious</span>
+            </div>
+            <a href="https://urlscan.io/result/019c04e2-e8c3-7507-bd40-4cd3a0a8e752/" target="_blank" rel="noopener">
+                <img src="https://urlscan.io/screenshots/019c04e2-e8c3-7507-bd40-4cd3a0a8e752.png" alt="wallet-receive.com screenshot" class="w-full rounded-lg mt-2 border border-gray-700/50" loading="lazy">
+            </a>
+            <div class="text-xs text-red-400/80 mt-2">Exfiltrates to ncdomen.com &bull; Wallet adapters: TronLink, Ledger, OKX, BitKeep, Bybit, WalletConnect</div>
+            <div class="flex gap-2 mt-1">
+                <a href="https://urlscan.io/result/019c04e2-e8c3-7507-bd40-4cd3a0a8e752/" target="_blank" class="text-xs text-blue-400 hover:text-blue-300">URLScan &rarr;</a>
+            </div>
+        </div>
+        <!-- trust-receive.com -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-orange-400 font-bold text-sm">trust-receive.com</div>
+                    <div class="text-xs text-gray-500">"USDT Receipt Creator" &bull; IP: 188.114.96.3 &bull; Trust Wallet impersonation</div>
+                </div>
+                <span class="tag bg-red-500/20 text-red-400">Malicious</span>
+            </div>
+            <a href="https://urlscan.io/result/019c04da-ba7d-725b-add3-7ec41df39aee/" target="_blank" rel="noopener">
+                <img src="https://urlscan.io/screenshots/019c04da-ba7d-725b-add3-7ec41df39aee.png" alt="trust-receive.com screenshot" class="w-full rounded-lg mt-2 border border-gray-700/50" loading="lazy">
+            </a>
+            <div class="text-xs text-red-400/80 mt-2">drainer.js + modal.js from kick-facepunch.com &bull; SSL cert issued Jan 25, 2026</div>
+            <div class="flex gap-2 mt-1">
+                <a href="https://urlscan.io/result/019c04da-ba7d-725b-add3-7ec41df39aee/" target="_blank" class="text-xs text-blue-400 hover:text-blue-300">URLScan &rarr;</a>
+            </div>
+        </div>
+        <!-- cryptomus.ltd -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-yellow-400 font-bold text-sm">cryptomus.ltd</div>
+                    <div class="text-xs text-gray-500">"Cryptomus Exchange | Crypto Invoice" &bull; IP: 172.67.167.134</div>
+                </div>
+                <span class="tag bg-red-500/20 text-red-400">Malicious</span>
+            </div>
+            <a href="https://urlscan.io/result/019c157b-c0ea-7776-a414-8e061e8489f2/" target="_blank" rel="noopener">
+                <img src="https://urlscan.io/screenshots/019c157b-c0ea-7776-a414-8e061e8489f2.png" alt="cryptomus.ltd screenshot" class="w-full rounded-lg mt-2 border border-gray-700/50" loading="lazy">
+            </a>
+            <div class="text-xs text-red-400/80 mt-2">drainer.js + modal.js from kick-facepunch.com &bull; Targets TronLink, Ledger, OKX, Bybit, Trust</div>
+            <div class="flex gap-2 mt-1">
+                <a href="https://urlscan.io/result/019c157b-c0ea-7776-a414-8e061e8489f2/" target="_blank" class="text-xs text-blue-400 hover:text-blue-300">URLScan &rarr;</a>
+            </div>
+        </div>
+        <!-- cryptomus-invoice.com (no urlscan) -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-yellow-400 font-bold text-sm">cryptomus-invoice.com</div>
+                    <div class="text-xs text-gray-500">Cryptomus payment impersonation</div>
+                </div>
+                <span class="tag bg-yellow-500/20 text-yellow-400">Impersonation</span>
+            </div>
+        </div>
+        <!-- cryptomus-payment.com (new, from logs) -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-yellow-400 font-bold text-sm">cryptomus-payment.com</div>
+                    <div class="text-xs text-gray-500">Most active domain in logs &mdash; $2,200 theft</div>
+                </div>
+                <span class="tag bg-red-500/20 text-red-400">Active</span>
+            </div>
+        </div>
+        <!-- manual.717team.cc -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-purple-400 font-bold text-sm">manual.717team.cc</div>
+                    <div class="text-xs text-gray-500">Internal operation manual / worker training</div>
+                </div>
+                <span class="tag bg-purple-500/20 text-purple-400">Manual</span>
+            </div>
+        </div>
+        <!-- Drainer infrastructure -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-red-400 font-bold text-sm">kick-facepunch.com</div>
+                    <div class="text-xs text-gray-500">Serves drainer.js & modal.js to all phishing domains</div>
+                </div>
+                <span class="tag bg-red-500/20 text-red-400">Drainer C2</span>
+            </div>
+        </div>
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-red-400 font-bold text-sm">ncdomen.com</div>
+                    <div class="text-xs text-gray-500">Data exfiltration endpoint for stolen wallet data</div>
+                </div>
+                <span class="tag bg-red-500/20 text-red-400">Exfil</span>
+            </div>
+        </div>
+        <!-- dark.shopping -->
+        <div class="domain-card card p-4">
+            <div class="flex justify-between items-start mb-2">
+                <div>
+                    <div class="text-gray-400 font-bold text-sm">dark.shopping</div>
+                    <div class="text-xs text-gray-500">Darknet marketplace</div>
+                </div>
+                <span class="tag bg-gray-500/20 text-gray-400">Marketplace</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmed Thefts -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Confirmed USDT Thefts &mdash; Victim Log</h2>
+    <div class="card p-5 mb-4 reveal">
+        <div class="text-center mb-4">
+            <div class="stat-num text-red-400">$2,946.25</div>
+            <div class="text-xs text-gray-500 mt-1">Total Confirmed Drained (from bot logs)</div>
+        </div>
+        <div class="scroll-table" style="max-height:500px">
+            <table class="text-xs w-full">
+                <thead>
+                    <tr class="text-gray-500">
+                        <th class="text-left p-2 font-medium">Date</th>
+                        <th class="text-left p-2 font-medium">Wallet</th>
+                        <th class="text-right p-2 font-medium">Amount</th>
+                        <th class="text-left p-2 font-medium">Domain</th>
+                        <th class="text-left p-2 font-medium">IP</th>
+                        <th class="text-left p-2 font-medium">Geo</th>
+                        <th class="text-left p-2 font-medium">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t border-gray-800/50 bg-red-500/10"><td class="p-2">Jan 23</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TQGLaaHxARL5w1iAoqNq1gChE8sN1JKG55" target="_blank" class="text-blue-400 hover:text-blue-300">TQGLaa...KG55</a></td><td class="p-2 text-right text-red-400 font-bold">2,200.40</td><td class="p-2 text-yellow-400">cryptomus-payment.com</td><td class="p-2 text-gray-500">2402:4000:...</td><td class="p-2">Colombo, Sri Lanka</td><td class="p-2"><span class="tag bg-red-500/20 text-red-400">DRAINED</span></td></tr>
+                    <tr class="border-t border-gray-800/50 bg-red-500/5"><td class="p-2">Jan 26</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TRgGeyWcmkhZZ7qHmfxCGwMYknhAAboQJA" target="_blank" class="text-blue-400 hover:text-blue-300">TRgGey...QJA</a></td><td class="p-2 text-right text-red-400 font-bold">203.00</td><td class="p-2 text-yellow-400">cryptomus-payment.com</td><td class="p-2 text-gray-500">94.246.204.214</td><td class="p-2">Kohtla-Järve, Estonia</td><td class="p-2"><span class="tag bg-red-500/20 text-red-400">DRAINED</span></td></tr>
+                    <tr class="border-t border-gray-800/50 bg-red-500/5"><td class="p-2">Jan 10</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TVgTrvfaTPYNFn7AEhKb5KXVBUTvuEwiTU" target="_blank" class="text-blue-400 hover:text-blue-300">TVgTrv...wiTU</a></td><td class="p-2 text-right text-red-400 font-bold">133.55</td><td class="p-2 text-pink-400">amlbot.pw</td><td class="p-2 text-gray-500">185.138.166.85</td><td class="p-2">Amsterdam, Netherlands</td><td class="p-2"><span class="tag bg-red-500/20 text-red-400">DRAINED</span></td></tr>
+                    <tr class="border-t border-gray-800/50"><td class="p-2">Jan 29</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TNDRMejLRQ5ZsM8esSCeoc8GrU4yB4KWRi" target="_blank" class="text-blue-400 hover:text-blue-300">TNDRMe...WRi</a></td><td class="p-2 text-right text-orange-400 font-bold">102.39</td><td class="p-2 text-yellow-400">cryptomus-payment.com</td><td class="p-2 text-gray-500">2403:6200:...</td><td class="p-2">Phuket, Thailand</td><td class="p-2"><span class="tag bg-orange-500/20 text-orange-400">APPROVED</span></td></tr>
+                    <tr class="border-t border-gray-800/50 bg-red-500/5"><td class="p-2">Jan 18</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TRTSwJggrhs7ALXpvUsuo1zTFq3Y1J1vZv" target="_blank" class="text-blue-400 hover:text-blue-300">TRTSwJ...1vZv</a></td><td class="p-2 text-right text-red-400 font-bold">90.01</td><td class="p-2 text-yellow-400">cryptomus-invoice.com</td><td class="p-2 text-gray-500">88.252.231.95</td><td class="p-2">Erzincan, Turkey</td><td class="p-2"><span class="tag bg-red-500/20 text-red-400">DRAINED</span></td></tr>
+                    <tr class="border-t border-gray-800/50 bg-red-500/5"><td class="p-2">Jan 28</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TDp7XRUuhCKf1xerM7oXKuVh1GhX4JLL5A" target="_blank" class="text-blue-400 hover:text-blue-300">TDp7XR...JLL5A</a></td><td class="p-2 text-right text-red-400 font-bold">77.94</td><td class="p-2 text-red-400">checkscore.cc</td><td class="p-2 text-gray-500">91.239.157.242</td><td class="p-2">Frankfurt, Germany</td><td class="p-2"><span class="tag bg-red-500/20 text-red-400">DRAINED</span></td></tr>
+                    <tr class="border-t border-gray-800/50 bg-red-500/5"><td class="p-2">Jan 29</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TELbinK4WddmasuLkZyTRB86opTZZnEHeh" target="_blank" class="text-blue-400 hover:text-blue-300">TELbin...EHeh</a></td><td class="p-2 text-right text-red-400 font-bold">39.13</td><td class="p-2 text-yellow-400">cryptomus.ltd</td><td class="p-2 text-gray-500">202.58.197.64</td><td class="p-2">Denpasar, Bali, Indonesia</td><td class="p-2"><span class="tag bg-red-500/20 text-red-400">DRAINED</span></td></tr>
+                    <tr class="border-t border-gray-800/50"><td class="p-2">Jan 26</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TQQaP8zqofdoHqmidHZsZEb4B8j4YreAch" target="_blank" class="text-blue-400 hover:text-blue-300">TQQaP8...Ach</a></td><td class="p-2 text-right text-orange-400 font-bold">16.19</td><td class="p-2 text-yellow-400">cryptomus-payment.com</td><td class="p-2 text-gray-500">2001:e60:...</td><td class="p-2">Gwanak-gu, Seoul, South Korea</td><td class="p-2"><span class="tag bg-orange-500/20 text-orange-400">APPROVED</span></td></tr>
+                    <tr class="border-t border-gray-800/50"><td class="p-2">Jan 26</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TRTSwJggrhs7ALXpvUsuo1zTFq3Y1J1vZv" target="_blank" class="text-blue-400 hover:text-blue-300">TRTSwJ...1vZv</a></td><td class="p-2 text-right text-orange-400 font-bold">38.83</td><td class="p-2 text-yellow-400">cryptomus-invoice.com</td><td class="p-2 text-gray-500">88.252.231.95</td><td class="p-2">Erzincan, Turkey</td><td class="p-2"><span class="tag bg-orange-500/20 text-orange-400">DEPOSIT</span></td></tr>
+                    <tr class="border-t border-gray-800/50"><td class="p-2">Jan 15</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TGtALveE2JdLpsUNHve51g3hzZg4rW7gkU" target="_blank" class="text-blue-400 hover:text-blue-300">TGtALv...7gkU</a></td><td class="p-2 text-right text-yellow-400 font-bold">9.00</td><td class="p-2 text-pink-400">amlbot.pw</td><td class="p-2 text-gray-500">&mdash;</td><td class="p-2">&mdash;</td><td class="p-2"><span class="tag bg-orange-500/20 text-orange-400">APPROVED</span></td></tr>
+                    <tr class="border-t border-gray-800/50"><td class="p-2">Jan 28</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TAnje8CXKFW9r82cChSkYxyxJSfUHSDwk9" target="_blank" class="text-blue-400 hover:text-blue-300">TAnje8...Dwk9</a></td><td class="p-2 text-right text-yellow-400 font-bold">4.23</td><td class="p-2 text-orange-400">wallet-invoice.pw</td><td class="p-2 text-gray-500">2a02:8440:...</td><td class="p-2">Metz, France</td><td class="p-2"><span class="tag bg-orange-500/20 text-orange-400">DEPOSIT</span></td></tr>
+                    <tr class="border-t border-gray-800/50"><td class="p-2">Jan 22</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TNDRMejLRQ5ZsM8esSCeoc8GrU4yB4KWRi" target="_blank" class="text-blue-400 hover:text-blue-300">TNDRMe...WRi</a></td><td class="p-2 text-right text-yellow-400 font-bold">2.39</td><td class="p-2 text-yellow-400">cryptomus-payment.com</td><td class="p-2 text-gray-500">2403:6200:...</td><td class="p-2">Phuket, Thailand</td><td class="p-2"><span class="tag bg-orange-500/20 text-orange-400">APPROVED</span></td></tr>
+                    <tr class="border-t border-gray-800/50"><td class="p-2">Jan 24</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/TVzwRJhx43jQBhK3SYbKVHybXRGxyWbmNo" target="_blank" class="text-blue-400 hover:text-blue-300">TVzwRJ...bmNo</a></td><td class="p-2 text-right text-yellow-400 font-bold">1.01</td><td class="p-2 text-yellow-400">cryptomus-payment.com</td><td class="p-2 text-gray-500">146.70.193.15</td><td class="p-2">Belgrade, Serbia</td><td class="p-2"><span class="tag bg-orange-500/20 text-orange-400">APPROVED</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-xs text-gray-500 mt-3">DRAINED = funds confirmed stolen &bull; APPROVED = wallet gave approval (drainer has access) &bull; DEPOSIT = new funds arrived to compromised wallet</div>
+    </div>
+
+    <!-- Victim Connections (0-balance, wallet connected to phishing site) -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">All Victim Connections (85 wallets)</h2>
+    <div class="card p-4 mb-10 reveal">
+        <div class="scroll-table" style="max-height:400px">
+            <table class="text-xs w-full">
+                <thead>
+                    <tr class="text-gray-500">
+                        <th class="text-left p-2 font-medium">Date</th>
+                        <th class="text-left p-2 font-medium">Wallet</th>
+                        <th class="text-left p-2 font-medium">Domain</th>
+                        <th class="text-left p-2 font-medium">IP</th>
+                        <th class="text-left p-2 font-medium">Location</th>
+                        <th class="text-left p-2 font-medium">Browser</th>
+                    </tr>
+                </thead>
+                <tbody id="victim-table"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Transaction Hashes -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Transaction Hashes (30)</h2>
+    <div class="card p-4 mb-10 reveal">
+        <div class="scroll-table" style="max-height:300px">
+            <table class="text-xs">
+                <thead><tr><th class="text-left p-2 text-gray-500 font-medium">#</th><th class="text-left p-2 text-gray-500 font-medium">TX Hash</th><th class="text-right p-2 text-gray-500 font-medium">Link</th></tr></thead>
+                <tbody id="tx-table"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Chat Logs -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Chat Logs (3,882 Messages)</h2>
+    <div class="grid sm:grid-cols-2 gap-4 mb-10 reveal">
+        <a href="messages.html" class="card p-5 hover:border-red-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center text-red-400 font-bold flex-shrink-0">1</div>
+            <div><div class="font-semibold text-white text-sm">Chat Export — Part 1</div><div class="text-xs text-gray-500">First segment of Telegram group</div></div>
+        </a>
+        <a href="messages2.html" class="card p-5 hover:border-orange-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center text-orange-400 font-bold flex-shrink-0">2</div>
+            <div><div class="font-semibold text-white text-sm">Chat Export — Part 2</div><div class="text-xs text-gray-500">Second segment</div></div>
+        </a>
+        <a href="messages3.html" class="card p-5 hover:border-yellow-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-yellow-500/20 flex items-center justify-center text-yellow-400 font-bold flex-shrink-0">3</div>
+            <div><div class="font-semibold text-white text-sm">Chat Export — Part 3</div><div class="text-xs text-gray-500">Third segment</div></div>
+        </a>
+        <a href="messages4.html" class="card p-5 hover:border-green-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center text-green-400 font-bold flex-shrink-0">4</div>
+            <div><div class="font-semibold text-white text-sm">Chat Export — Part 4</div><div class="text-xs text-gray-500">Fourth segment</div></div>
+        </a>
+    </div>
+
+    <!-- TRX Wallets -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">TRX Victim/Operator Wallets (85)</h2>
+    <div class="card p-4 mb-10 reveal">
+        <div class="scroll-table">
+            <table class="text-xs">
+                <thead><tr><th class="text-left p-2 text-gray-500 font-medium">#</th><th class="text-left p-2 text-gray-500 font-medium">Wallet Address</th><th class="text-right p-2 text-gray-500 font-medium">Tronscan</th></tr></thead>
+                <tbody id="wallet-table"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Group Members -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Group Members (125)</h2>
+    <div class="card p-4 mb-10 reveal">
+        <div class="scroll-table">
+            <table class="text-xs">
+                <thead><tr><th class="text-left p-2 text-gray-500 font-medium">User ID</th><th class="text-left p-2 text-gray-500 font-medium">Display Name</th></tr></thead>
+                <tbody id="members-table"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Photo Gallery -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Photo Evidence (70 images)</h2>
+    <div class="photo-grid grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 mb-10 reveal" id="photo-gallery"></div>
+
+    <!-- Footer -->
+    <div class="text-center text-xs text-gray-600 border-t border-gray-800/50 pt-6 mt-10">
+        <p>Intelligence collected by <a href="https://www.phishdestroy.io/" class="text-blue-400 hover:text-blue-300">PhishDestroy</a> | <a href="https://github.com/phishdestroy/ScamIntelLogs" class="text-blue-400 hover:text-blue-300">GitHub</a></p>
+        <p class="mt-1">This data is provided for law enforcement, security research, and anti-fraud purposes.</p>
+    </div>
+</div>
+
+<script>
+// TX Hashes
+const txHashes = [
+"01536bae85b8587cf154ea1ab8f550df522d0b49d10492940b50330d7f103aed",
+"028a98cdaa5abc2631352b649e212e31c8302c32c37adb76fe1f5768b21af710",
+"084878c90b7c3b9687f36ea96f5d16d4525b27a8f28605beeaab4455100fc904",
+"09aa3c0c0686af6cce8922a13f87d64b74e512afc49a1e6b7035249197ff16d6",
+"0b4a0e6edc97cb5db8a533692ff23c3cbc4a3c9a4c8d673320206bd3b8a7360c",
+"0d0ef95f967dabc1e8797256a668ff83834c6f11b9684b05bf2d3dab721d83b1",
+"1ac75c7980d58d09ed30b0a004fc321609845b12cf2cb946736189ff621d17b0",
+"1bac8624190c750fda1bac10831ec6da2cb7d54244882004228f61dcc12d1464",
+"2a492ed1d6719b75ce0b495891ac2e1251008707438b086c96e42d0b6b36030a",
+"36447f4beb46e44fc34d27a3838017eb8cd7c9edbb44bf69d62e7ac0de03e314",
+"3f8c1fe3a4ef5f34ea1b9746e951c27b9679856952b6bf146a7981ed1c9b321d",
+"4715a19819f577dc1781e766845ff35f4ffda3ac851ec31215cc5d1e1e8ff2b5",
+"4e0d608430fb8069a7605c5ec0585fbf3c712d7c9efe05fb2b45512f50e0e3a8",
+"56b7dd637844df72b9e336fa9829bfc081edfa72117090b2ad10766a0235dffd",
+"6128dfce03af62d28a521c99867c3068103f22f0e60341513b47a1f50ae4db44",
+"6181e7e36e64cdbc0feaa34c4e3063e8c3686b78e8774c748f88a70c05d817f9",
+"6d5662cc0730385abf66ec3490652e274b1e9ecb0f769501bb136e29dba88c51",
+"6f15f641fe3aa23c4b279967a8f7cb85e5eaa4792b1e8ea63c411560e34bfcaa",
+"824c06c607d98c9fb259bb14fcf606dec585ec13362cd387267b07f8188fd289",
+"a7f00086f9d00b7270d8d70cd84bc2955bb578af4cf1cbeae0c200ce71ec8090",
+"adb40b598e1a67182cd009cb001058e423be0ee32770cd1e4a662efadb2849bb",
+"b1394de152b29f5f93cf7c6801f8080f13ceb972ca5741bffec7c6c3a61c306f",
+"c649250020a22f83e720ca97274baf8d367d6f6ba3ebad86b2838c29c59f4d18",
+"cc8a5e9a944ae11e3db55d130fe7b7d319570e0d283c5a599594ae76d44c1bb4",
+"d0c2d3a92e41f57bf51340f0134ec1b80f8ccbbb8d82b64b29821aa2b608699f",
+"e04f09388685f8b8f85b64987c124b6732b7c2fc2f383c91b072daca8ec66e92",
+"e4f0e08220ccc7bc87c31d1bac2f7533001ec799e019898c403a90d48046fa2a",
+"f2ba59412fadb850ce5b0a76b2cc105de50d604162c88c221870de8b367d8640",
+"fa467522aaf61494cf843dc3013a5a44e30a2e3b06648bba7bf407d269062edb",
+"fd4ff2376e10ddc3daa4910b90f694c1fec4f3ade0a7ed23de7478a3aae6d8fd"
+];
+const txTb = document.getElementById('tx-table');
+txHashes.forEach((h,i) => {
+    txTb.innerHTML += `<tr class="border-t border-gray-800/50 hover:bg-gray-800/30"><td class="p-2 text-gray-500">${i+1}</td><td class="p-2 wallet-cell text-gray-300">${h}</td><td class="p-2 text-right"><a href="https://tronscan.org/#/transaction/${h}" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300">View</a></td></tr>`;
+});
+
+// Wallets
+const wallets = [
+"TAiE8ohyZb29oxDRUXTkDsAjqyGhPzp9ym","TAnje8CXKFW9r82cChSkYxyxJSfUHSDwk9","TANqLKKFHf5qjPhfsYdapCXDBD36EL2twX","TANZWcDyqc71sbDYCBbWMPP1KhjD2KRfvU","TASFR9Wey43VD9Qj1zBburfQZN2mZ1noQh","TAv3qDqjcTMaDGYSAKkAYg7EWHfyCM8wfu","TBCCnYL8EZM98LH7WZCUfLWWYme3mhr6Ti","TBCH9xTvGRZLskE88VAkmgECDeW5aWn54V","TBg6xjYdfxHrLNDK77qmq2Yv7hLXPDbbqV","TBTg96288vQspq9oNqCd1fPEt5LSg5guY1","TC3NxGykDXqsDGozLDtH6rmTxhutdmYcmo","TC9fm9TUpN4Wh1xRVv3oPc93p4s1VreC8U","TCdx3dpdZF6yCKFNjU82XNGrj7WTbkooDZ","TCkgK7AsAvnv68VLaRQiwyqAhnEM7izpqF","TCptg49s5Gd8hZCu5iw2uewKFTkTxW7YQe","TDGZ4GfvCRe1d8oksj8fBD77ZHw4bkCPBA","TDp7XRUuhCKf1xerM7oXKuVh1GhX4JLL5A","TEbjkgN6jvv6vf4yp6wBvddmqQcxeoQ1db","TEd9NZPD8AdaJs8ZCBcAiogQ2pes3bq1sS","TEdWhyfNCu1FdhfMCY9NBqahCCgM6XEta1","TELbinK4WddmasuLkZyTRB86opTZZnEHeh","TEMtHwa9HfKw3p4ExtfE2LVWoZJhMkkyoq","TF4pftX1yspbSdbDf5Tn1UjGgr8VBeyJKd","TFjFGkTsDjWTf5y38Ux9HPbHFkSCEac5LS","TFkWeSiVqaadp7dmUWWaN2K7FW2BWFjPTu","TFPV8f78dAF8wJzFfG12VamrEjtEonovvW","TFXeryNgtJARkk66pqaMLsxFtH1VCVPRMR","TG9odAsyhgXHQH1aWTSUeBg97aXLT2U8Av","TGe69iBkzyixrf4m3oRK6AZm5VyPUYRbBu","TGR4hZzHPz8uyg3ALbdNXvx5tKkQzmjcWT","TGtALveE2JdLpsUNHve51g3hzZg4rW7gkU","TH95vj4MprNzzGWPeDhS2F2AeJRwrPbTWk","THNDXZYVaeWmmiYy8GWnKB2B77XtSE4Khh","THyQZWqhFpkuMnXdk2SGh3qU4ecR5Qfuxk","TJ4rKBTACvD2PoTAv4CLYpAn7XMWemdA28","TJu7HcjXXyC5YmfZn2GJLdNKxa8dBk8zT3","TJX5v9neLnoUykFrPtCFQpXWzzrZNWsGVa","TKEuUVMCBNpfGnTApynDQP75v86XUjPWAS","TKsUs5vPLpv9HJ6xCGNLZwe5eReGFLUuxQ","TL4UqFYw4W9f4QESmE2PqV2N54JYjX9vnu","TLDeutYsNztvegZmWG14RKobsppP6YADrz","TLJjh115fHBEAGqFDxURLodECKL6m1H1im","TMGyXZutMJHSFeAG5B6cawo8yeRCCNQDTg","TMj2n1WQaoq2QU5eXiSJwz7kzeme1bKrr6","TNDRMejLRQ5ZsM8esSCeoc8GrU4yB4KWRi","TNmFJeWaaJcw47ky3HPRpLdMy8RnNVF9QA","TNopVPjajiFZeheCrtkXswz83CyavLC5NW","TNtx9TSnhh8TyUPNn2fbj34isGRmJZP93j","TP2rL5qU3hAi2JotwFL6BMT9qjwCUduWV7","TPmqeLfp3pxTY3HVeADx3P3cQsULvhzGea","TPxo9h6RP1KaQbevBegjFebKZpYgCHUJRv","TQEpmRq9BTWJ3u6B4tE9v1okYLRR4AnYfi","TQGLaaHxARL5w1iAoqNq1gChE8sN1JKG55","TQLPcgPTmj1Q6i1qQW2xrcuV1dx9PGjb9c","TQLzRJRfVaBQ2vvVCBzyS93LkydMkmEcBp","TQQaP8zqofdoHqmidHZsZEb4B8j4YreAch","TQvhNtVLyJy3PfuZQieRd5PSeH8mEpgva1","TQx4CmsPJkX8CGou23RBB7nHKBamspYRx5","TRBk1XyT2fJqN52AvAHv3JHThVaiM4Eswm","TRFL1eohimo1bpmkSLkPZ7VLbhZZRgSvbi","TRgGeyWcmkhZZ7qHmfxCGwMYknhAAboQJA","TRHXZ8mTrZjEfyp8995P6PVYGfuPfqPwML","TRPSEJK8XckAbDDVoQvKG2FNdgzmmXme2W","TRTSwJggrhs7ALXpvUsuo1zTFq3Y1J1vZv","TSTL4T43bdKXHdiBWFmEZQvGZamQzbd8go","TTbg9SNxCB7aBctdVqsn7pUiCMApJ1cmn8","TUasAXgmKYoYetmPkXV6UrDZ9frndgzqjs","TUgTUwGXy5jPmVMTi1ZJDssjdj1JbwfPmx","TUNvcLfFEpPb4yxKm8QJdGKtyokn4nVaBq","TUTZUKXx5Zt1NosUrBzin6y4Ae6pVU5LVq","TUwmRdwyyGoskG9bFXg4Zu6naS4NZAbT2B","TV6idAYKuLkkiUtmNT6JqaUtuEggQ1b8Ei","TVgTrvfaTPYNFn7AEhKb5KXVBUTvuEwiTU","TVJC5QtwZJzQEfPGNNkyFuq2SKXnEo6Mwi","TVoZjMN2DZyD45GtsyTzSc66nK93ibK2fw","TVyznuEBVPqsX3XgZYa457H3XZ5Ee53vPL","TVzwRJhx43jQBhK3SYbKVHybXRGxyWbmNo","TW4qXuWd3rnaLUJkLsjw9cEHhPGdsAsdrd","TWn7Vx6grFJmPKeLYD6gRe4bftArDeejqG","TWsth17sBVm6urDQSv3Xcm27YenzyX28dz","TXQ5Sw16CPJvzxSP27a7ELL9m5dHo9agcR","TYAuPve6mfACzipNxrD6PwAorsyWDywQid","TYJ33F5FQF1ewFyaDvDpdXYUd7XP2Y2ajC","TYr3Wr6w7zi7PiELDMnnjX6swibr91PEvC","TYTcRob4H2bQhxkuh33Hm8RLrNLj4PiDaR"
+];
+const wTb = document.getElementById('wallet-table');
+wallets.forEach((w,i) => {
+    wTb.innerHTML += `<tr class="border-t border-gray-800/50 hover:bg-gray-800/30"><td class="p-2 text-gray-500">${i+1}</td><td class="p-2 wallet-cell text-gray-300">${w}</td><td class="p-2 text-right"><a href="https://tronscan.org/#/address/${w}" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300">View</a></td></tr>`;
+});
+
+// Members
+const members = [
+["1066755453","Пепсиzzᴳᴼᴹ"],["1085725023","weworld228"],["1092487668","."],["1159727752","Marat"],["1253577672","VETEMENTS LTD."],["1797489378","Hoodrich"],["1863917557","fxcarlex"],["332639253","Vladik"],["441970222","Евгений"],["483142763","(empty)"],["5058782741","yeh"],["5128512787","LeadConverter"],["5183260314","We True"],["5490302478","Noxy"],["5548613362","ne znaesh"],["5587749832","ок"],["5633854349","Sad"],["5654829812","𝔹𝑒Ⱬ𝔻𝕒𝕡৳"],["5680278215","Reseller"],["5709279256","bob"],["5804654987","DU ROVE"],["5817813293","Freskot"],["5856930659","qq"],["589873642","yuwxck"],["5958749625","(hidden)"],["6436025470","ins."],["6438298325","77"],["6452512346","hot dammm"],["6472059617","Sosiii"],["6483265227","SMLWD"],["6490551161","astral"],["6551357914","pateki"],["6620491892","(emoji)"],["6635599615","#stopme"],["6836604554","Dava"],["6874198143","Т"],["7017152029","mefedron"],["7043376037","(hidden)"],["7044434135","𝚅𝚊𝚍𝚒𝚖"],["7052187718","stephaan"],["7075809789","z"],["7140687779","Валерия"],["7149807602","debank ⭐"],["7167291434","Alkogol' Posle Sporta"],["7193919592","(emoji)"],["7213667542","Dmitry Pen'Kov"],["7222934070","Kurt"],["7291223779","Cortex"],["7307211220","Jony"],["7394981513","D C"],["7417891690","gdls"],["7455959714","mgmaev"],["7494870864","sparkman"],["7511079696","Вячеслав"],["7515401363","секта"],["7519825756","KRT x 717 team"],["7579427223","fluxxwap"],["7588348111","Deleted Account"],["7591334860","AlexW"],["7595299019","(none)"],["7597235537","Володя"],["7620797145","(emoji)"],["7677608906","748"],["7797629767","scarlett"],["7798861308","RAGE"],["7799811949","Stacydmas"],["7802090063","Alex"],["7806417370","White"],["7828439538","sad"],["7839622180","Michael Patel | GBV"],["7859193109","Mr.NalDark"],["7860231780","si"],["7879939228","Cocaine kill girls"],["7890883426","Артем Пиратовский"],["7934403593","Pier Woodman"],["7934707100","(none)"],["7956306282","YUNG"],["7968878320","Giga"],["8010846501","Brainier"],["8041709005","alt"],["8044243116","911"],["8068302472","Altwërk"],["8071087865","jungarik remake"],["8078173529","Britney Spears"],["8099118118","Анастасия"],["8115085482","Камень"],["8127605337","Amon"],["8137742411","ros."],["8172525926","s"],["8187885802","F3tish"],["8192495111","paper"],["8203250493","Zombie Rob"],["8207958091","Echo"],["8213008565","damn, nothing to say"],["8221358692","Дэдушка Жорик"],["8265805937","Moon"],["8273061810","Grower"],["8328121514","Giop"],["8335517346","waterfall"],["8337527360","717 Notifications"],["8347784669","deadkennedy"],["8357598344","100"],["8363868027","(none)"],["8386936114","Den"],["8388737926","F3arrain"],["8391141247","(none)"],["8400751401","Mark K."],["8401824118","TRC"],["8439962142","Dear"],["8446186266","Jessica Williams"],["8452926422","Gifted"],["846583570","Alim"],["8510080477","keep yourself save"],["8510705775","crypto.com"],["8514978076","exxa"],["8526340958","ROSA"],["8527761437","clire"],["8537595095","(none)"],["8546797156","Ezdel"],["8559024749","Tibor Fisher"],["8561946952","Mr Hyde"],["8575454803","suka"],["8578637450","Vanessa Carter"],["8587447792","lv"],["913695256","𝓚𝓾𝓭𝓮𝓼𝓷𝓲𝓴"]
+];
+const mTb = document.getElementById('members-table');
+members.forEach(([uid,name]) => {
+    const cls = uid === '7149807602' ? 'bg-red-500/10' : '';
+    const badge = uid === '7149807602' ? ' <span class="tag bg-red-500/20 text-red-400 ml-2">ADMIN</span>' : uid === '8337527360' ? ' <span class="tag bg-purple-500/20 text-purple-400 ml-2">BOT</span>' : '';
+    mTb.innerHTML += `<tr class="border-t border-gray-800/50 hover:bg-gray-800/30 ${cls}"><td class="p-2 text-gray-500 font-mono">${uid}</td><td class="p-2 text-gray-300">${name}${badge}</td></tr>`;
+});
+
+// Photos
+const photos = [
+"photo_1@08-01-2026_00-19-47.jpg","photo_2@08-01-2026_23-17-00.jpg","photo_3@09-01-2026_15-41-04.jpg","photo_4@09-01-2026_15-43-34.jpg","photo_5@09-01-2026_15-45-22.jpg","photo_6@09-01-2026_16-58-19.jpg","photo_7@10-01-2026_04-02-37.jpg","photo_8@10-01-2026_17-59-49.jpg","photo_9@10-01-2026_18-00-21.jpg","photo_10@10-01-2026_19-13-44.jpg","photo_11@11-01-2026_02-27-10.jpg","photo_12@12-01-2026_18-55-19.jpg","photo_13@13-01-2026_17-37-57.jpg","photo_14@14-01-2026_08-57-26.jpg","photo_15@15-01-2026_15-08-43.jpg","photo_16@15-01-2026_15-08-43.jpg","photo_17@15-01-2026_20-47-16.jpg","photo_18@15-01-2026_21-06-53.jpg","photo_19@15-01-2026_22-15-50.jpg","photo_20@16-01-2026_00-16-07.jpg","photo_21@16-01-2026_18-29-04.jpg","photo_22@17-01-2026_19-55-34.jpg","photo_23@17-01-2026_19-58-54.jpg","photo_24@17-01-2026_20-15-32.jpg","photo_25@17-01-2026_21-40-38.jpg","photo_26@17-01-2026_22-47-49.jpg","photo_27@17-01-2026_22-48-52.jpg","photo_28@18-01-2026_13-11-00.jpg","photo_29@18-01-2026_13-25-51.jpg","photo_30@18-01-2026_15-56-21.jpg","photo_31@18-01-2026_16-48-15.jpg","photo_32@18-01-2026_16-55-44.jpg","photo_33@18-01-2026_16-59-17.jpg","photo_34@18-01-2026_17-25-18.jpg","photo_35@18-01-2026_18-12-16.jpg","photo_36@18-01-2026_18-12-16.jpg","photo_37@19-01-2026_07-22-29.jpg","photo_38@22-01-2026_02-22-22.jpg","photo_39@22-01-2026_13-34-30.jpg","photo_40@22-01-2026_13-34-30.jpg","photo_41@23-01-2026_04-39-19.jpg","photo_42@23-01-2026_13-50-43.jpg","photo_43@24-01-2026_00-40-25.jpg","photo_44@24-01-2026_06-40-40.jpg","photo_45@24-01-2026_17-39-12.jpg","photo_46@24-01-2026_22-43-01.jpg","photo_47@24-01-2026_22-43-20.jpg","photo_48@25-01-2026_15-20-50.jpg","photo_49@25-01-2026_15-56-40.jpg","photo_50@25-01-2026_18-05-13.jpg","photo_51@26-01-2026_00-28-08.jpg","photo_52@26-01-2026_09-40-49.jpg","photo_53@26-01-2026_14-14-10.jpg","photo_54@26-01-2026_16-09-21.jpg","photo_55@26-01-2026_16-23-19.jpg","photo_56@26-01-2026_16-23-58.jpg","photo_57@26-01-2026_20-09-16.jpg","photo_58@26-01-2026_20-16-49.jpg","photo_59@27-01-2026_10-59-59.jpg","photo_60@27-01-2026_18-30-33.jpg","photo_61@27-01-2026_18-30-33.jpg","photo_62@27-01-2026_18-30-33.jpg","photo_66@27-01-2026_22-08-00.jpg","photo_67@27-01-2026_22-22-24.jpg","photo_68@27-01-2026_22-22-24.jpg","photo_69@27-01-2026_23-37-08.jpg","photo_73@28-01-2026_20-43-41.jpg","photo_74@28-01-2026_20-51-54.jpg","photo_75@29-01-2026_09-13-04.jpg","photo_76@29-01-2026_17-04-48.jpg"
+];
+const gallery = document.getElementById('photo-gallery');
+photos.forEach(p => {
+    const thumb = p.replace('.jpg','_thumb.jpg');
+    gallery.innerHTML += `<img src="photos/${thumb}" alt="${p}" loading="lazy" class="w-full aspect-square object-cover bg-gray-800" onclick="document.getElementById('lb-img').src='photos/${p}';document.getElementById('lightbox').classList.add('active')" onerror="this.src='photos/${p}'">`;
+});
+
+// Victim connections table
+const victims = [
+["2026-01-09","TFkWeSiVqaadp7dmUWWaN2K7FW2BWFjPTu","checkscore.cc","91.124.92.83","Hoofddorp, Netherlands","Webkit 605.1.15"],
+["2026-01-09","TYAuPve6mfACzipNxrD6PwAorsyWDywQid","amlbot.pw","45.141.202.63","Amsterdam, Netherlands","Safari 26.0"],
+["2026-01-09","TBCH9xTvGRZLskE88VAkmgECDeW5aWn54V","amlbot.pw","2a10:c944:321::a12","Meppel, Netherlands","Webkit 605.1.15"],
+["2026-01-10","TDGZ4GfvCRe1d8oksj8fBD77ZHw4bkCPBA","cryptomus-invoice.com","185.113.136.50","Warsaw, Poland","Firefox 140.0"],
+["2026-01-10","TVgTrvfaTPYNFn7AEhKb5KXVBUTvuEwiTU","amlbot.pw","185.138.166.85","Amsterdam, Netherlands","Webkit 605.1.15"],
+["2026-01-10","TQEpmRq9BTWJ3u6B4tE9v1okYLRR4AnYfi","amlbot.pw","45.9.251.212","Milan, Italy","Safari 26.3"],
+["2026-01-10","TYTcRob4H2bQhxkuh33Hm8RLrNLj4PiDaR","amlbot.pw","45.9.251.212","Milan, Italy","Safari 26.3"],
+["2026-01-13","TC3NxGykDXqsDGozLDtH6rmTxhutdmYcmo","amlbot.pw","185.246.191.59","Warsaw, Poland","Firefox 146.0"],
+["2026-01-14","TVJC5QtwZJzQEfPGNNkyFuq2SKXnEo6Mwi","cryptomus-payment.com","172.120.20.117","San Francisco, USA","Chrome 144.0"],
+["2026-01-14","TBg6xjYdfxHrLNDK77qmq2Yv7hLXPDbbqV","amlbot.pw","197.218.62.225","Maputo, Mozambique","Chrome 143.0"],
+["2026-01-16","TUasAXgmKYoYetmPkXV6UrDZ9frndgzqjs","amlbot.pw","59.103.220.62","Lahore, Pakistan","Safari 16.6.1"],
+["2026-01-17","TH95vj4MprNzzGWPeDhS2F2AeJRwrPbTWk","cryptomus-invoice.com","143.14.42.225","Sandefjord, Norway","Safari 26.2"],
+["2026-01-17","TBTg96288vQspq9oNqCd1fPEt5LSg5guY1","cryptomus-invoice.com","2400:9800:...","Semarang, Indonesia","Chrome 143.0"],
+["2026-01-17","TMGyXZutMJHSFeAG5B6cawo8yeRCCNQDTg","cryptomus-invoice.com","89.110.64.208","Amsterdam, Netherlands","Safari 26.2"],
+["2026-01-17","TTbg9SNxCB7aBctdVqsn7pUiCMApJ1cmn8","cryptomus-invoice.com","91.124.92.83","Amsterdam, Netherlands","Webkit 605.1.15"],
+["2026-01-18","TNopVPjajiFZeheCrtkXswz83CyavLC5NW","cryptomus.ltd","2a0e:d600:...","Warsaw, Poland","Chrome 143.0"],
+["2026-01-18","TLJjh115fHBEAGqFDxURLodECKL6m1H1im","amlbot.pw","212.30.36.50","Nuremberg, Germany","Webkit 605.1.15"],
+["2026-01-18","TCdx3dpdZF6yCKFNjU82XNGrj7WTbkooDZ","amlbot.pw","198.244.234.214","London, UK","Edge 144.0"],
+["2026-01-18","TUNvcLfFEpPb4yxKm8QJdGKtyokn4nVaBq","amlbot.pw","111.88.31.55","Karachi, Pakistan","Chrome 144.0"],
+["2026-01-18","TMj2n1WQaoq2QU5eXiSJwz7kzeme1bKrr6","cryptomus-invoice.com","77.67.178.221","Istanbul, Turkey","Safari 18.6.2"],
+["2026-01-18","TRTSwJggrhs7ALXpvUsuo1zTFq3Y1J1vZv","cryptomus-invoice.com","88.252.231.95","Erzincan, Turkey","Chrome 143.0"],
+["2026-01-19","TQvhNtVLyJy3PfuZQieRd5PSeH8mEpgva1","cryptomus-payment.com","85.203.39.234","Riga, Latvia","UNKNOWN"],
+["2026-01-20","TWn7Vx6grFJmPKeLYD6gRe4bftArDeejqG","cryptomus-payment.com","2402:800:...","Nha Trang, Vietnam","Safari 26.2"],
+["2026-01-20","TCkgK7AsAvnv68VLaRQiwyqAhnEM7izpqF","cryptomus-payment.com","202.58.204.100","Denpasar, Bali","Safari 18.6.2"],
+["2026-01-20","TCptg49s5Gd8hZCu5iw2uewKFTkTxW7YQe","cryptomus-payment.com","98.159.233.82","Albuquerque, USA","Safari 16.3"],
+["2026-01-20","TQLPcgPTmj1Q6i1qQW2xrcuV1dx9PGjb9c","cryptomus-payment.com","212.237.120.158","Erbil, Iraq","Safari 18.4.1"],
+["2026-01-20","TC9fm9TUpN4Wh1xRVv3oPc93p4s1VreC8U","cryptomus-payment.com","196.112.16.82","Douar Toulal, Morocco","Safari 26.2"],
+["2026-01-20","TJu7HcjXXyC5YmfZn2GJLdNKxa8dBk8zT3","cryptomus-payment.com","5.155.76.91","Damascus, Syria","Chrome 144.0"],
+["2026-01-20","TANqLKKFHf5qjPhfsYdapCXDBD36EL2twX","cryptomus-payment.com","113.19.183.121","Cebu City, Philippines","Chrome 143.0"],
+["2026-01-20","TEd9NZPD8AdaJs8ZCBcAiogQ2pes3bq1sS","cryptomus-payment.com","105.105.196.78","Batna, Algeria","Chrome 143.0"],
+["2026-01-22","TGe69iBkzyixrf4m3oRK6AZm5VyPUYRbBu","cryptomus-payment.com","31.208.186.195","Sollentuna, Sweden","Chrome 144.0"],
+["2026-01-22","TEbjkgN6jvv6vf4yp6wBvddmqQcxeoQ1db","cryptomus-payment.com","185.177.229.246","Frankfurt, Germany","Chrome 138.0"],
+["2026-01-22","THNDXZYVaeWmmiYy8GWnKB2B77XtSE4Khh","cryptomus-payment.com","185.246.191.59","Warsaw, Poland","Firefox 147.0"],
+["2026-01-22","TNDRMejLRQ5ZsM8esSCeoc8GrU4yB4KWRi","cryptomus-payment.com","2403:6200:...","Phuket, Thailand","Safari 18.5"],
+["2026-01-23","TGR4hZzHPz8uyg3ALbdNXvx5tKkQzmjcWT","cryptomus-payment.com","2001:ac8:...","Stans, Switzerland","Firefox 140.0"],
+["2026-01-23","TVoZjMN2DZyD45GtsyTzSc66nK93ibK2fw","cryptomus-payment.com","114.10.98.132","Palembang, Indonesia","Safari 26.2"],
+["2026-01-23","TANZWcDyqc71sbDYCBbWMPP1KhjD2KRfvU","cryptomus-payment.com","102.89.82.86","Lagos, Nigeria","Chrome 143.0"],
+["2026-01-23","TQGLaaHxARL5w1iAoqNq1gChE8sN1JKG55","cryptomus-payment.com","2402:4000:...","Colombo, Sri Lanka","Chrome 143.0"],
+["2026-01-24","TPmqeLfp3pxTY3HVeADx3P3cQsULvhzGea","cryptomus-payment.com","102.90.123.67","Port Harcourt, Nigeria","Chrome 143.0"],
+["2026-01-24","TPxo9h6RP1KaQbevBegjFebKZpYgCHUJRv","cryptomus-payment.com","37.165.191.97","Saint-Joseph, France","Safari 26.1"],
+["2026-01-24","TYJ33F5FQF1ewFyaDvDpdXYUd7XP2Y2ajC","cryptomus-payment.com","45.95.232.138","Zurich, Switzerland","Safari 26.0.1"],
+["2026-01-24","TFjFGkTsDjWTf5y38Ux9HPbHFkSCEac5LS","cryptomus-payment.com","140.213.4.113","Jakarta, Indonesia","Chrome 143.0"],
+["2026-01-24","TVzwRJhx43jQBhK3SYbKVHybXRGxyWbmNo","cryptomus-payment.com","146.70.193.15","Belgrade, Serbia","Safari 15.8.2"],
+["2026-01-25","TBCCnYL8EZM98LH7WZCUfLWWYme3mhr6Ti","cryptomus-payment.com","197.211.59.114","Lagos, Nigeria","Safari 604.1"],
+["2026-01-25","TXQ5Sw16CPJvzxSP27a7ELL9m5dHo9agcR","cryptomus-payment.com","105.117.8.89","Abuja, Nigeria","Chrome 144.0"],
+["2026-01-25","TV6idAYKuLkkiUtmNT6JqaUtuEggQ1b8Ei","cryptomus-payment.com","2a10:1fc0:...","Warsaw, Poland","Chrome 143.0"],
+["2026-01-25","TF4pftX1yspbSdbDf5Tn1UjGgr8VBeyJKd","cryptomus-payment.com","103.41.79.22","Tanjung Pinang, Indonesia","Chrome 144.0"],
+["2026-01-25","TRFL1eohimo1bpmkSLkPZ7VLbhZZRgSvbi","cryptomus-payment.com","202.134.14.141","Dhaka, Bangladesh","Chrome 143.0"],
+["2026-01-25","TRBk1XyT2fJqN52AvAHv3JHThVaiM4Eswm","cryptomus-payment.com","202.67.47.17","Batam, Indonesia","Chrome 144.0"],
+["2026-01-25","TNmFJeWaaJcw47ky3HPRpLdMy8RnNVF9QA","cryptomus-payment.com","160.22.223.11","Slawi, Indonesia","Chrome 144.0"],
+["2026-01-25","TNtx9TSnhh8TyUPNn2fbj34isGRmJZP93j","cryptomus-payment.com","82.53.193.171","Bergamo, Italy","Safari 18.7.3"],
+["2026-01-25","TFXeryNgtJARkk66pqaMLsxFtH1VCVPRMR","cryptomus-payment.com","114.10.119.173","Jakarta, Indonesia","Safari 26.2"],
+["2026-01-26","TVyznuEBVPqsX3XgZYa457H3XZ5Ee53vPL","amlbot.pw","154.9.240.162","Los Angeles, USA","Safari 18.6"],
+["2026-01-26","TLDeutYsNztvegZmWG14RKobsppP6YADrz","cryptomus-payment.com","87.121.82.128","Helsinki, Finland","Safari 26.1"],
+["2026-01-26","TJX5v9neLnoUykFrPtCFQpXWzzrZNWsGVa","cryptomus-payment.com","103.41.79.22","Tanjung Pinang, Indonesia","Chrome 143.0"],
+["2026-01-26","TRgGeyWcmkhZZ7qHmfxCGwMYknhAAboQJA","cryptomus-payment.com","94.246.204.214","Kohtla-Järve, Estonia","UNKNOWN"],
+["2026-01-26","TQQaP8zqofdoHqmidHZsZEb4B8j4YreAch","cryptomus-payment.com","2001:e60:...","Seoul, South Korea","Safari 18.6"],
+["2026-01-27","TRPSEJK8XckAbDDVoQvKG2FNdgzmmXme2W","amlbot.pw","94.26.90.131","Frankfurt, Germany","Safari 18.6"],
+["2026-01-28","TYr3Wr6w7zi7PiELDMnnjX6swibr91PEvC","cryptomus-payment.com","2a03:e600:...","Vienna, Austria","Chrome 144.0"],
+["2026-01-28","TAnje8CXKFW9r82cChSkYxyxJSfUHSDwk9","trust-receive.com","2a02:8440:...","Metz, France","Safari 26.2"],
+["2026-01-28","TDp7XRUuhCKf1xerM7oXKuVh1GhX4JLL5A","checkscore.cc","91.239.157.242","Frankfurt, Germany","Webkit 605.1.15"],
+["2026-01-29","TSTL4T43bdKXHdiBWFmEZQvGZamQzbd8go","wallet-invoice.pw","37.35.66.33","Pristina, Kosovo","Safari 26.2"],
+["2026-01-29","TEdWhyfNCu1FdhfMCY9NBqahCCgM6XEta1","cryptomus.ltd","195.12.231.28","London, UK","Safari 26.2"],
+["2026-01-29","TQLzRJRfVaBQ2vvVCBzyS93LkydMkmEcBp","cryptomus.ltd","103.216.220.20","Brisbane, Australia","Chrome 144.0"],
+["2026-01-29","TKsUs5vPLpv9HJ6xCGNLZwe5eReGFLUuxQ","cryptomus.ltd","208.91.69.17","Chicago, USA","Safari 18.5"],
+["2026-01-29","TELbinK4WddmasuLkZyTRB86opTZZnEHeh","cryptomus.ltd","202.58.197.64","Denpasar, Bali","Safari 26.2"]
+];
+const vTb = document.getElementById('victim-table');
+victims.forEach(([date,w,dom,ip,geo,br]) => {
+    vTb.innerHTML += `<tr class="border-t border-gray-800/50 hover:bg-gray-800/30"><td class="p-2 text-gray-500">${date.slice(5)}</td><td class="p-2 wallet-cell"><a href="https://tronscan.org/#/address/${w}" target="_blank" class="text-blue-400 hover:text-blue-300">${w.slice(0,6)}...${w.slice(-4)}</a></td><td class="p-2 text-yellow-400">${dom}</td><td class="p-2 text-gray-500">${ip}</td><td class="p-2">${geo}</td><td class="p-2 text-gray-500">${br}</td></tr>`;
+});
+
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
 </body>
 </html>
