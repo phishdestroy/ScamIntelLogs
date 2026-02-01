@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keitaro TDS Detector | PhishDestroy</title>
+    <meta name="description" content="Online Keitaro TDS detection tool based on official documentation. 7-point evidence-based detection.">
+    <link rel="icon" type="image/x-icon" href="https://destroyico.pages.dev/assets/favicon.ico">
+    <meta property="og:title" content="Keitaro TDS Detector">
+    <meta property="og:description" content="Evidence-based Keitaro TDS detection tied to official docs.">
+    <meta property="og:image" content="https://i.ibb.co/XkbYNyjW/Keitaro-TDS.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#06080d">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;background:#06080d;overflow-x:hidden}
+        .mono{font-family:'JetBrains Mono',monospace}
+
+        /* Ambient background glow */
+        body::before{content:'';position:fixed;top:-40%;left:-20%;width:80%;height:80%;background:radial-gradient(ellipse,rgba(6,182,212,.06) 0%,transparent 70%);pointer-events:none;z-index:0}
+        body::after{content:'';position:fixed;bottom:-30%;right:-15%;width:70%;height:70%;background:radial-gradient(ellipse,rgba(139,92,246,.04) 0%,transparent 70%);pointer-events:none;z-index:0}
+
+        .grad-text{background:linear-gradient(135deg,#06b6d4,#3b82f6,#8b5cf6);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+        /* Glass panels */
+        .glass{background:rgba(255,255,255,.02);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.06)}
+        .glass-strong{background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08)}
+
+        /* Tabs */
+        .tab{padding:8px 22px;font-size:13px;font-weight:600;cursor:pointer;border-radius:10px;transition:all .25s;color:#6b7280;position:relative;overflow:hidden}
+        .tab:hover{color:#d1d5db;background:rgba(255,255,255,.03)}
+        .tab.active{background:linear-gradient(135deg,rgba(6,182,212,.12),rgba(59,130,246,.08));color:#06b6d4;box-shadow:0 0 20px rgba(6,182,212,.08)}
+
+        /* Evidence cards */
+        .ck{
+            position:relative;transition:all .4s cubic-bezier(.4,0,.2,1);
+            border:1px solid rgba(255,255,255,.05);border-radius:14px;padding:14px;
+            background:rgba(255,255,255,.015);overflow:hidden;
+        }
+        .ck::before{content:'';position:absolute;inset:0;border-radius:14px;opacity:0;transition:opacity .4s}
+        .ck.idle{border-color:rgba(255,255,255,.05)}
+        .ck.run{border-color:rgba(59,130,246,.5);box-shadow:0 0 25px rgba(59,130,246,.12)}
+        .ck.run::before{background:linear-gradient(180deg,rgba(59,130,246,.06) 0%,transparent 60%);opacity:1}
+        .ck.pass{border-color:rgba(34,197,94,.5);box-shadow:0 0 25px rgba(34,197,94,.1)}
+        .ck.pass::before{background:linear-gradient(180deg,rgba(34,197,94,.06) 0%,transparent 60%);opacity:1}
+        .ck.fail{border-color:rgba(255,255,255,.06);opacity:.55}
+
+        /* Scanning shimmer on active card */
+        @keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+        .ck.run::after{
+            content:'';position:absolute;inset:0;
+            background:linear-gradient(90deg,transparent,rgba(59,130,246,.08),transparent);
+            animation:shimmer 1.5s ease-in-out infinite;
+        }
+
+        /* Verdict styles */
+        .v-confirmed{background:linear-gradient(135deg,rgba(239,68,68,.08),rgba(239,68,68,.03));border:2px solid rgba(239,68,68,.4);box-shadow:0 0 60px rgba(239,68,68,.1),0 0 120px rgba(239,68,68,.04)}
+        .v-notconfirmed{background:linear-gradient(135deg,rgba(234,179,8,.06),rgba(234,179,8,.02));border:2px solid rgba(234,179,8,.3);box-shadow:0 0 40px rgba(234,179,8,.06)}
+        .v-clean{background:linear-gradient(135deg,rgba(34,197,94,.06),rgba(34,197,94,.02));border:2px solid rgba(34,197,94,.3);box-shadow:0 0 40px rgba(34,197,94,.06)}
+
+        /* Animations */
+        @keyframes spin{to{transform:rotate(360deg)}}
+        .anim-spin{animation:spin .8s linear infinite}
+        @keyframes pulse2{0%,100%{opacity:.5}50%{opacity:1}}
+        .anim-pulse{animation:pulse2 1.5s ease-in-out infinite}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+        .anim-in{animation:fadeUp .35s cubic-bezier(.4,0,.2,1)}
+        @keyframes scaleIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+        .anim-scale{animation:scaleIn .4s cubic-bezier(.4,0,.2,1)}
+        @keyframes glow{0%,100%{box-shadow:0 0 20px rgba(6,182,212,.15)}50%{box-shadow:0 0 40px rgba(6,182,212,.25)}}
+        .anim-glow{animation:glow 2s ease-in-out infinite}
+        @keyframes verdictPop{0%{opacity:0;transform:scale(.8)}60%{transform:scale(1.03)}100%{opacity:1;transform:scale(1)}}
+        .anim-verdict{animation:verdictPop .5s cubic-bezier(.4,0,.2,1)}
+        @keyframes slideRight{from{width:0}to{width:var(--target-w)}}
+
+        /* Scan progress bar */
+        .scan-progress{height:3px;border-radius:4px;background:rgba(255,255,255,.05);overflow:hidden;margin-bottom:20px}
+        .scan-progress-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#06b6d4,#3b82f6,#8b5cf6);transition:width .3s;box-shadow:0 0 10px rgba(6,182,212,.4)}
+
+        /* Score ring */
+        .score-ring{position:relative;width:70px;height:70px}
+        .score-ring svg{transform:rotate(-90deg)}
+        .score-ring circle{fill:none;stroke-width:3;stroke-linecap:round}
+        .score-ring .bg{stroke:rgba(255,255,255,.06)}
+        .score-ring .fg{transition:stroke-dashoffset .6s cubic-bezier(.4,0,.2,1),stroke .4s}
+
+        /* Mass scan */
+        .mass-row{border-bottom:1px solid rgba(255,255,255,.04);transition:background .3s}
+        .mass-row:last-child{border-bottom:none}
+        .mass-row:hover{background:rgba(255,255,255,.02)}
+
+        /* Input glow on focus */
+        .input-glow:focus{border-color:rgba(6,182,212,.5);box-shadow:0 0 20px rgba(6,182,212,.08)}
+
+        /* Scrollbar */
+        ::-webkit-scrollbar{width:5px}
+        ::-webkit-scrollbar-track{background:transparent}
+        ::-webkit-scrollbar-thumb{background:#1f2937;border-radius:3px}
+
+        /* Status dot */
+        @keyframes statusPulse{0%,100%{box-shadow:0 0 0 0 rgba(6,182,212,.4)}50%{box-shadow:0 0 0 6px rgba(6,182,212,0)}}
+        .status-dot{width:6px;height:6px;border-radius:50%;display:inline-block}
+        .status-dot.active{background:#06b6d4;animation:statusPulse 1.5s infinite}
+        .status-dot.done{background:#34d399}
+        .status-dot.idle{background:#374151}
+    </style>
+</head>
+<body class="text-gray-300 min-h-screen relative">
+
+<div class="max-w-5xl mx-auto px-4 py-8 relative z-10">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-10">
+        <a href="../" class="text-sm text-gray-500 hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+            ScamIntelLogs
+        </a>
+        <a href="https://www.phishdestroy.io/" target="_blank" class="text-[11px] text-gray-600 hover:text-gray-400 transition-colors">PhishDestroy</a>
+    </div>
+
+    <div class="text-center mb-8">
+        <div class="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full bg-cyan-500/[.07] border border-cyan-500/[.15]">
+            <span class="status-dot idle" id="headerDot"></span>
+            <span class="text-[11px] mono text-cyan-400/80" id="headerStatus">Ready</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-black tracking-tight grad-text mb-2">Keitaro TDS Detector</h1>
+        <p class="text-sm text-gray-500 max-w-md mx-auto">7 evidence checks tied to <a href="https://docs.keitaro.io" target="_blank" class="text-cyan-400/70 hover:text-cyan-300 transition-colors">official Keitaro docs</a> &mdash; score &ge;2 = confirmed</p>
+    </div>
+
+    <!-- Proxy config -->
+    <div class="mb-6">
+        <details id="proxyDetails">
+            <summary class="text-[11px] text-gray-600 cursor-pointer hover:text-gray-400 select-none transition-colors">Proxy configuration (optional)</summary>
+            <div class="mt-2 glass rounded-xl p-4 anim-in">
+                <input id="cfWorker" type="text" placeholder="https://your-worker.your-subdomain.workers.dev" class="w-full bg-black/40 border border-white/10 rounded-lg px-3 py-2.5 mono text-xs text-gray-300 input-glow focus:outline-none transition-all placeholder-gray-600">
+                <p class="text-[11px] text-gray-600 mt-2">Deploy <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/keitaro/worker.js" target="_blank" class="text-cyan-400/70 hover:text-cyan-300">worker.js</a> to CF Workers for cookies + redirect chain. Without worker 6/7 checks work via public CORS proxy.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex gap-2 mb-6 glass-strong rounded-xl p-1.5 w-fit">
+        <div class="tab active" onclick="switchTab('single')" id="tabSingle">Single Scan</div>
+        <div class="tab" onclick="switchTab('mass')" id="tabMass">Mass Scan</div>
+        <div class="tab" onclick="switchTab('method')" id="tabMethod">Methodology</div>
+    </div>
+
+    <!-- ==================== SINGLE SCAN ==================== -->
+    <div id="singlePane">
+        <div class="flex gap-2.5 mb-6">
+            <div class="flex-1 relative">
+                <input id="domainInput" type="text" placeholder="example.com/path" class="w-full bg-white/[.03] border border-white/10 rounded-xl px-4 py-3.5 text-white mono text-sm input-glow focus:outline-none transition-all placeholder-gray-600" autofocus>
+            </div>
+            <button id="singleBtn" onclick="runSingle()" class="group px-6 py-3.5 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 active:from-cyan-700 active:to-blue-700 text-white font-bold rounded-xl transition-all text-sm disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30">
+                <span class="flex items-center gap-2">
+                    <svg id="scanIco" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <span id="scanTxt">Scan</span>
+                </span>
+            </button>
+        </div>
+
+        <!-- Scan progress -->
+        <div class="scan-progress hidden" id="scanBar">
+            <div class="scan-progress-fill" id="scanBarFill" style="width:0%"></div>
+        </div>
+
+        <!-- Evidence grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5" id="grid"></div>
+
+        <!-- Verdict -->
+        <div id="verdict" class="rounded-2xl p-6 text-center mb-6 border border-white/[.06] bg-white/[.02] hidden">
+            <div id="vScore" class="text-4xl font-black mono text-gray-600">-/7</div>
+            <div id="vLabel" class="text-sm font-semibold text-gray-500 mt-1.5 tracking-wider uppercase">Waiting</div>
+        </div>
+
+        <!-- Log -->
+        <div class="glass rounded-2xl overflow-hidden mb-5">
+            <div class="flex items-center justify-between px-4 py-2.5 border-b border-white/[.04]">
+                <div class="flex items-center gap-2">
+                    <span class="status-dot idle" id="logDot"></span>
+                    <span class="text-[11px] font-semibold text-gray-500 uppercase tracking-widest">Log</span>
+                </div>
+                <span id="logStatus" class="text-[11px] mono text-gray-600"></span>
+            </div>
+            <div id="log" class="px-4 py-3 max-h-64 overflow-y-auto mono text-[12px] leading-5 space-y-0.5">
+                <div class="text-gray-600">Enter a domain and press Scan.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MASS SCAN ==================== -->
+    <div id="massPane" class="hidden">
+        <div class="mb-4">
+            <textarea id="massInput" rows="6" placeholder="Paste domains, one per line:&#10;example1.com&#10;example2.com/path&#10;example3.com" class="w-full bg-white/[.03] border border-white/10 rounded-xl px-4 py-3 text-white mono text-sm input-glow focus:outline-none transition-all placeholder-gray-600 resize-y"></textarea>
+        </div>
+        <div class="flex items-center gap-3 mb-5">
+            <button id="massBtn" onclick="runMass()" class="px-5 py-2.5 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold rounded-xl transition-all text-sm disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-cyan-500/20">Scan All</button>
+            <button id="massStop" onclick="stopMass()" class="px-5 py-2.5 bg-gray-800/80 hover:bg-gray-700 text-gray-300 font-semibold rounded-xl transition-all text-sm hidden border border-white/[.06]">Stop</button>
+            <span id="massProgress" class="text-xs mono text-gray-500"></span>
+            <button id="exportBtn" onclick="exportCSV()" class="ml-auto px-4 py-2 bg-gray-800/80 hover:bg-gray-700 text-gray-400 text-xs font-semibold rounded-xl transition-all hidden border border-white/[.06]">Export CSV</button>
+        </div>
+        <div id="massBar" class="w-full h-1.5 bg-gray-800/50 rounded-full mb-5 overflow-hidden hidden">
+            <div id="massBarFill" class="h-full bg-gradient-to-r from-cyan-500 via-blue-500 to-violet-500 rounded-full transition-all duration-300 shadow-[0_0_10px_rgba(6,182,212,.4)]" style="width:0%"></div>
+        </div>
+        <div id="massResults" class="glass rounded-2xl overflow-hidden hidden">
+            <div class="grid grid-cols-[1fr_60px_100px] sm:grid-cols-[1fr_60px_60px_60px_60px_60px_60px_60px_100px] gap-0 px-4 py-2.5 border-b border-white/[.06] text-[11px] font-semibold text-gray-500 uppercase tracking-wider">
+                <div>Domain</div>
+                <div class="text-center hidden sm:block">E1</div><div class="text-center hidden sm:block">E2</div><div class="text-center hidden sm:block">E3</div><div class="text-center hidden sm:block">E4</div><div class="text-center hidden sm:block">E5</div><div class="text-center hidden sm:block">E6</div><div class="text-center hidden sm:block">E7</div>
+                <div class="text-center">Score</div>
+                <div class="text-center">Verdict</div>
+            </div>
+            <div id="massTable"></div>
+        </div>
+    </div>
+
+    <!-- ==================== METHODOLOGY ==================== -->
+    <div id="methodPane" class="hidden">
+
+        <div class="glass rounded-2xl overflow-hidden mb-5">
+            <div class="px-5 py-3.5 border-b border-white/[.06]">
+                <h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9432;</span> How detection works</h2>
+            </div>
+            <div class="px-5 py-4 text-[13px] text-gray-400 leading-relaxed space-y-2">
+                <p>The scanner sends <strong class="text-gray-200">4 HTTP request chains</strong> to the target and compares responses:</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 my-3">
+                    <div class="bg-black/30 rounded-xl px-4 py-3 mono text-[11px] border border-white/[.04]">
+                        <span class="text-cyan-400 font-bold">MAIN</span> <span class="text-gray-600">&mdash; baseline GET {url}</span>
+                    </div>
+                    <div class="bg-black/30 rounded-xl px-4 py-3 mono text-[11px] border border-white/[.04]">
+                        <span class="text-cyan-400 font-bold">OFFER_TEST</span> <span class="text-gray-600">&mdash; GET {url}?_lp=1&_token=invalid</span>
+                    </div>
+                    <div class="bg-black/30 rounded-xl px-4 py-3 mono text-[11px] border border-white/[.04]">
+                        <span class="text-cyan-400 font-bold">CLICK_API</span> <span class="text-gray-600">&mdash; GET {origin}/click_api/v3</span>
+                    </div>
+                    <div class="bg-black/30 rounded-xl px-4 py-3 mono text-[11px] border border-white/[.04]">
+                        <span class="text-cyan-400 font-bold">UPDATE_TOKENS</span> <span class="text-gray-600">&mdash; GET {origin}/?_update_tokens=1</span>
+                    </div>
+                </div>
+                <p>Each response is analyzed through <strong class="text-gray-200">7 independent evidence checks</strong>, each tied to official Keitaro documentation.</p>
+            </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden mb-5">
+            <div class="px-5 py-3.5 border-b border-white/[.06]">
+                <h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9733;</span> 7 Evidence Checks</h2>
+            </div>
+            <div class="divide-y divide-white/[.04]">
+
+                <div class="px-5 py-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E1</span>
+                        <span class="text-[13px] font-semibold text-gray-200">Offer URL params: _lp + _token/token</span>
+                        <a href="https://docs.keitaro.io/en/landing-pages-and-offers/offer-url.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
+                    </div>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Searches all URLs and Location headers across all chains for query params <span class="mono text-gray-400">_lp</span> + <span class="mono text-gray-400">_token</span>/<span class="mono text-gray-400">token</span>. Keitaro Offer URL (LP&rarr;Offer) uses these as documented.</p>
+                </div>
+
+                <div class="px-5 py-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E2</span>
+                        <span class="text-[13px] font-semibold text-gray-200">Landing redirect params: _subid + _token/token</span>
+                        <a href="https://docs.keitaro.io/en/landing-pages-and-offers/landing-page-redirect.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
+                    </div>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Searches all URLs and Location headers for <span class="mono text-gray-400">_subid</span> + <span class="mono text-gray-400">_token</span>/<span class="mono text-gray-400">token</span>. Keitaro landing redirect adds these before redirecting to landing page.</p>
+                </div>
+
+                <div class="px-5 py-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E3</span>
+                        <span class="text-[13px] font-semibold text-gray-200">Cookie: Set-Cookie contains "subid="</span>
+                        <a href="https://docs.keitaro.io/en/campaign-integrations/tracking-script.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
+                    </div>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Keitaro Tracking Script stores click id in cookie <span class="mono text-gray-400">subid</span>. Scanner checks all Set-Cookie headers across all chains. <span class="text-yellow-500/80 text-[11px]">Requires CF Worker &mdash; CORS proxies cannot forward cookies.</span></p>
+                </div>
+
+                <div class="px-5 py-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E4</span>
+                        <span class="text-[13px] font-semibold text-gray-200">HTML markers: KTracking / {subid} / {offer}</span>
+                        <a href="https://docs.keitaro.io/en/campaign-integrations/tracking-script.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
+                    </div>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Official Keitaro tracking script uses <span class="mono text-gray-400">KTracking</span> API and placeholders <span class="mono text-gray-400">{subid}</span> / <span class="mono text-gray-400">{offer}</span>. Scanner searches HTML bodies of all chain responses.</p>
+                </div>
+
+                <div class="px-5 py-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E5</span>
+                        <span class="text-[13px] font-semibold text-gray-200">API: /click_api/v3 exists (non-404 + JSON)</span>
+                        <a href="https://docs.keitaro.io/en/development/click-api.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
+                    </div>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Keitaro has a documented public Click API at <span class="mono text-gray-400">/click_api/v3</span>. Scanner sends request with invalid token. Non-404 + JSON-like response indicates the endpoint exists.</p>
+                </div>
+
+                <div class="px-5 py-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E6</span>
+                        <span class="text-[13px] font-semibold text-gray-200">Behavior: reacts to Offer URL params (_lp + _token)</span>
+                        <a href="https://docs.keitaro.io/en/landing-pages-and-offers/offer-url.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
+                    </div>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Compares MAIN vs OFFER_TEST first HTTP response: <strong class="text-gray-300">status</strong>, <strong class="text-gray-300">content-type</strong>, <strong class="text-gray-300">location</strong>, <strong class="text-gray-300">body length</strong>. Any difference means the server understands Keitaro-specific params.</p>
+                </div>
+
+                <div class="px-5 py-4">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E7</span>
+                        <span class="text-[13px] font-semibold text-gray-200">Behavior: reacts to _update_tokens=1</span>
+                        <a href="https://docs.keitaro.io/en/landing-pages-and-offers/update-params.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
+                    </div>
+                    <p class="text-[12px] text-gray-500 leading-relaxed">Compares MAIN vs UPDATE_TOKENS first HTTP response: <strong class="text-gray-300">status</strong>, <strong class="text-gray-300">content-type</strong>, <strong class="text-gray-300">location</strong>, <strong class="text-gray-300">body length</strong>. _update_tokens=1 is a documented mechanism for updating click params (can return empty response).</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden mb-5">
+            <div class="px-5 py-3.5 border-b border-white/[.06]">
+                <h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9878;</span> Verdict</h2>
+            </div>
+            <div class="px-5 py-4 space-y-3">
+                <div class="flex items-start gap-3">
+                    <span class="text-red-400 font-bold mono text-sm w-12 text-right shrink-0">&ge;2</span>
+                    <span class="text-[13px]"><span class="text-red-400 font-semibold">KEITARO CONFIRMED</span> <span class="text-gray-600">&mdash; multiple independent documented evidences</span></span>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-yellow-400 font-bold mono text-sm w-12 text-right shrink-0">1</span>
+                    <span class="text-[13px]"><span class="text-yellow-400 font-semibold">NOT CONFIRMED</span> <span class="text-gray-600">&mdash; only 1 evidence, need &ge;2 (can be coincidental)</span></span>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-green-400 font-bold mono text-sm w-12 text-right shrink-0">0</span>
+                    <span class="text-[13px]"><span class="text-green-400 font-semibold">NOT DETECTED</span> <span class="text-gray-600">&mdash; no documented evidences found</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden mb-5">
+            <div class="px-5 py-3.5 border-b border-white/[.06]">
+                <h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9881;</span> What is Keitaro TDS?</h2>
+            </div>
+            <div class="px-5 py-4 text-[13px] text-gray-400 leading-relaxed space-y-2">
+                <p><strong class="text-gray-200">Keitaro</strong> is a commercial Traffic Distribution System (TDS) that routes visitors by geo, device, OS, referrer, etc. Legitimate product, but widely abused to <strong class="text-gray-300">cloak</strong> phishing, malware, and scam pages &mdash; showing clean content to bots and malicious content to real victims.</p>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <a href="https://keitaro.io" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 bg-cyan-500/5 px-3 py-1.5 rounded-lg border border-cyan-500/10 transition-colors">keitaro.io</a>
+                    <a href="https://docs.keitaro.io" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 bg-cyan-500/5 px-3 py-1.5 rounded-lg border border-cyan-500/10 transition-colors">Official Docs</a>
+                    <a href="https://github.com/phishdestroy/ScamIntelLogs/tree/main/keitaro/script" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 bg-cyan-500/5 px-3 py-1.5 rounded-lg border border-cyan-500/10 transition-colors">Python Scanner</a>
+                    <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/keitaro/panels.csv" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 bg-cyan-500/5 px-3 py-1.5 rounded-lg border border-cyan-500/10 transition-colors">Known Panels (1,565+)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-8 text-center text-[11px] text-gray-700">
+        Based on <a href="https://github.com/phishdestroy/ScamIntelLogs/tree/main/keitaro/script" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">keitaro_hunter</a> &middot; <a href="https://www.phishdestroy.io/" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">PhishDestroy</a>
+    </div>
+</div>
+
+<script>
+// ===================== CONFIG =====================
+const DOCS = {
+    click_api:      'https://docs.keitaro.io/en/development/click-api.html',
+    offer_url:      'https://docs.keitaro.io/en/landing-pages-and-offers/offer-url.html',
+    lp_redirect:    'https://docs.keitaro.io/en/landing-pages-and-offers/landing-page-redirect.html',
+    tracking:       'https://docs.keitaro.io/en/campaign-integrations/tracking-script.html',
+    update_params:  'https://docs.keitaro.io/en/landing-pages-and-offers/update-params.html',
+};
+
+// Evidence order matches Python: offer_params, landing_params, subid_cookie, html_markers, click_api, offer_reaction, update_tokens
+const EVIDENCES = [
+    { id: 1, name: 'Offer Params',     hint: '_lp + _token',       doc: DOCS.offer_url },
+    { id: 2, name: 'Landing Params',   hint: '_subid + _token',    doc: DOCS.lp_redirect },
+    { id: 3, name: 'Subid Cookie',     hint: 'subid=',             doc: DOCS.tracking },
+    { id: 4, name: 'HTML Markers',     hint: 'KTracking {subid}',  doc: DOCS.tracking },
+    { id: 5, name: 'Click API',        hint: '/click_api/v3',      doc: DOCS.click_api },
+    { id: 6, name: 'Offer Reaction',   hint: 'MAIN vs OFFER',     doc: DOCS.offer_url },
+    { id: 7, name: 'Update Tokens',    hint: 'MAIN vs UPDATE',    doc: DOCS.update_params },
+];
+
+let massAbort = false, massResults = [];
+
+// ===================== URL HELPERS (match Python) =====================
+function normalizeUrl(d) {
+    d = d.trim().replace(/\/+$/, '');
+    if (!/^https?:\/\//i.test(d)) d = 'https://' + d;
+    return d;
+}
+
+// Python: origin_of() -> scheme://netloc
+function originOf(url) {
+    try { const u = new URL(url); return u.origin; }
+    catch { return url; }
+}
+
+// Python: strip_query_fragment() -> remove query and fragment
+function stripQF(url) {
+    try { const u = new URL(url); u.search = ''; u.hash = ''; return u.href; }
+    catch { return url.split('?')[0].split('#')[0]; }
+}
+
+// Python: build_url_with_query() -> add params to URL
+function buildUrl(base, params) {
+    try {
+        const u = new URL(base);
+        for (const [k, v] of Object.entries(params)) u.searchParams.set(k, v);
+        return u.href;
+    } catch { return base + '?' + new URLSearchParams(params).toString(); }
+}
+
+// Python: parse_qs check on url or location
+function urlHasParams(url, requiredKey, altKeys) {
+    try {
+        const p = new URL(url).searchParams;
+        if (!p.has(requiredKey)) return false;
+        return altKeys.some(k => p.has(k));
+    } catch { return false; }
+}
+
+// ===================== PROXY =====================
+function getWorkerUrl() { return document.getElementById('cfWorker').value.trim(); }
+
+async function proxyFetch(url) {
+    const w = getWorkerUrl();
+    if (w) return workerFetch(w, url);
+    return fallbackFetch(url);
+}
+
+async function workerFetch(worker, url) {
+    const sep = worker.includes('?') ? '&' : '?';
+    const r = await fetch(`${worker}${sep}url=${encodeURIComponent(url)}`, { signal: AbortSignal.timeout(20000) });
+    if (!r.ok) throw new Error(`Worker HTTP ${r.status}`);
+    const j = await r.json();
+    if (j.error) throw new Error(j.error);
+    return j;
+}
+
+async function fallbackFetch(url) {
+    const apis = [
+        { fn: u => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`, parse: 'allorigins' },
+        { fn: u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`, parse: 'raw' },
+    ];
+    for (const api of apis) {
+        try {
+            const r = await fetch(api.fn(url), { signal: AbortSignal.timeout(15000) });
+            if (api.parse === 'allorigins') {
+                const j = await r.json();
+                const body = j.contents || '';
+                return {
+                    finalUrl: (j.status && j.status.url) || url,
+                    status: (j.status && j.status.http_code) || 0,
+                    contentType: (j.status && j.status.content_type) || '',
+                    body, bodyLength: (j.status && j.status.content_length) || body.length,
+                    cookies: [], redirects: [], error: null,
+                };
+            } else {
+                const body = await r.text();
+                return { finalUrl: url, status: r.status, contentType: r.headers.get('content-type') || '', body, bodyLength: body.length, cookies: [], redirects: [], error: null };
+            }
+        } catch { continue; }
+    }
+    throw new Error('All proxies failed');
+}
+
+// Extract first hop info from worker response (matches Python first_http_hop)
+function firstHop(chain) {
+    if (!chain) return null;
+    const r0 = chain.redirects && chain.redirects[0];
+    return {
+        status: r0 ? r0.status : chain.status,
+        content_type: r0 ? (r0.headers && (r0.headers['content-type'] || '')) : (chain.contentType || ''),
+        location: r0 ? (r0.headers && (r0.headers['location'] || '')) : '',
+        body_len: chain.bodyLength || 0,
+    };
+}
+
+// ===================== DETECTION (matches Python exactly) =====================
+
+async function scanDomain(domain, onLog, onCheck) {
+    const mainUrl = normalizeUrl(domain);
+    const mainOrigin = originOf(mainUrl);
+    const results = Array(7).fill(null);
+    const details = Array(7).fill('');
+    let chains = {};
+
+    // Build URLs exactly like Python
+    const offerTestUrl = buildUrl(stripQF(mainUrl), { _lp: '1', _token: 'invalid' });
+    const clickApiUrl = mainOrigin + '/click_api/v3?token=invalid&info=1&log=1';
+    const updateTokensUrl = mainOrigin + '/?_update_tokens=1&sub_id=invalid&sub_id_1=TEST';
+
+    // FETCH 4 CHAINS
+    onLog('MAIN: ' + mainUrl, 'dim');
+    try {
+        chains.MAIN = await proxyFetch(mainUrl);
+        onLog(`MAIN: ${chains.MAIN.status}, ${chains.MAIN.bodyLength}b, ct=${sCt(chains.MAIN.contentType)}`);
+    } catch (e) {
+        const httpUrl = mainUrl.replace('https://', 'http://');
+        try {
+            chains.MAIN = await proxyFetch(httpUrl);
+            onLog(`MAIN (http): ${chains.MAIN.status}, ${chains.MAIN.bodyLength}b`);
+        } catch (e2) {
+            onLog(`MAIN: failed - ${e2.message}`, 'fail');
+            return { score: 0, total: 0, results, details, error: e2.message };
+        }
+    }
+
+    onLog('OFFER_TEST: ' + offerTestUrl, 'dim');
+    try {
+        chains.OFFER_TEST = await proxyFetch(offerTestUrl);
+        onLog(`OFFER_TEST: ${chains.OFFER_TEST.status}, ${chains.OFFER_TEST.bodyLength}b, ct=${sCt(chains.OFFER_TEST.contentType)}`);
+    } catch (e) { chains.OFFER_TEST = null; onLog(`OFFER_TEST: failed - ${e.message}`, 'warn'); }
+
+    onLog('CLICK_API: ' + clickApiUrl, 'dim');
+    try {
+        chains.CLICK_API = await proxyFetch(clickApiUrl);
+        onLog(`CLICK_API: ${chains.CLICK_API.status}, ${chains.CLICK_API.bodyLength}b, ct=${sCt(chains.CLICK_API.contentType)}`);
+    } catch (e) { chains.CLICK_API = null; onLog(`CLICK_API: failed - ${e.message}`, 'warn'); }
+
+    onLog('UPDATE_TOKENS: ' + updateTokensUrl, 'dim');
+    try {
+        chains.UPDATE_TOKENS = await proxyFetch(updateTokensUrl);
+        onLog(`UPDATE_TOKENS: ${chains.UPDATE_TOKENS.status}, ${chains.UPDATE_TOKENS.bodyLength}b, ct=${sCt(chains.UPDATE_TOKENS.contentType)}`);
+    } catch (e) { chains.UPDATE_TOKENS = null; onLog(`UPDATE_TOKENS: failed - ${e.message}`, 'warn'); }
+
+    onLog('--- 7 evidence checks ---', 'dim');
+
+    // Collect all URLs + locations from all chains (for E1, E2 param checks)
+    const allUrlsAndLocs = [];
+    for (const c of Object.values(chains)) {
+        if (!c) continue;
+        if (c.finalUrl) allUrlsAndLocs.push(c.finalUrl);
+        if (c.redirects) c.redirects.forEach(r => {
+            if (r.url) allUrlsAndLocs.push(r.url);
+            if (r.headers && r.headers.location) allUrlsAndLocs.push(r.headers.location);
+        });
+    }
+
+    // E1: Offer URL params (_lp + _token/token)
+    onCheck(1, 'run');
+    const e1hit = allUrlsAndLocs.find(u => urlHasParams(u, '_lp', ['_token', 'token']));
+    results[0] = !!e1hit;
+    details[0] = e1hit ? `Found: ${e1hit}` : 'Not found in URL/Location across all chains';
+    onCheck(1, results[0] ? 'pass' : 'fail', results[0] ? 'found' : 'not found');
+    onLog(`E1 Offer Params: ${F(results[0])} ${details[0]}`, results[0] ? 'ok' : 'dim');
+
+    // E2: Landing params (_subid + _token/token)
+    onCheck(2, 'run');
+    const e2hit = allUrlsAndLocs.find(u => urlHasParams(u, '_subid', ['_token', 'token']));
+    results[1] = !!e2hit;
+    details[1] = e2hit ? `Found: ${e2hit}` : 'Not found in URL/Location across all chains';
+    onCheck(2, results[1] ? 'pass' : 'fail', results[1] ? 'found' : 'not found');
+    onLog(`E2 Landing Params: ${F(results[1])} ${details[1]}`, results[1] ? 'ok' : 'dim');
+
+    // E3: Subid Cookie
+    onCheck(3, 'run');
+    const allCookies = [];
+    for (const c of Object.values(chains)) {
+        if (!c) continue;
+        if (c.cookies) c.cookies.forEach(ck => allCookies.push(ck));
+        if (c.redirects) c.redirects.forEach(r => { if (r.headers && r.headers['set-cookie']) allCookies.push(r.headers['set-cookie']); });
+    }
+    if (allCookies.length > 0 || getWorkerUrl()) {
+        const hit = allCookies.find(c => /\bsubid=/i.test(c));
+        results[2] = !!hit;
+        details[2] = hit ? `Found: ${hit}` : 'No "subid" cookie in Set-Cookie across all chains';
+    } else { results[2] = false; details[2] = 'No cookies available (need CF Worker)'; }
+    onCheck(3, results[2] ? 'pass' : 'fail', results[2] ? 'Cookie' : 'not found');
+    onLog(`E3 Subid Cookie: ${F(results[2])} ${details[2]}`, results[2] ? 'ok' : 'dim');
+
+    // E4: HTML Markers (KTracking, {subid}, {offer} — exactly 3 like Python)
+    onCheck(4, 'run');
+    const markers = [[/\bKTracking\b/i, 'KTracking'], [/\{subid\}/i, '{subid}'], [/\{offer\}/i, '{offer}']];
+    const e4found = [];
+    for (const c of Object.values(chains)) {
+        if (!c || !c.body) continue;
+        for (const [rx, name] of markers) {
+            if (rx.test(c.body)) e4found.push(name);
+        }
+    }
+    results[3] = e4found.length > 0;
+    details[3] = e4found.length > 0 ? e4found.join('; ') : 'Markers not found in HTML across all chains';
+    onCheck(4, results[3] ? 'pass' : 'fail', results[3] ? e4found.join(', ') : 'not found');
+    onLog(`E4 HTML Markers: ${F(results[3])} ${details[3]}`, results[3] ? 'ok' : 'dim');
+
+    // E5: Click API (/click_api/v3 exists, non-404 + JSON)
+    onCheck(5, 'run');
+    const ca = chains.CLICK_API;
+    if (ca) {
+        const ct = (ca.contentType || '').toLowerCase();
+        const body = (ca.body || '').trim().substring(0, 220);
+        const jsonish = ct.includes('json') || body.startsWith('{') || body.startsWith('[');
+        const ok = ca.status !== 404 && ca.status !== 0 && jsonish;
+        results[4] = ok;
+        details[4] = `[CLICK_API] HTTP ${ca.status}, content-type=${ct || '<none>'}, body sample: ${body || '<no body>'}`;
+    } else { results[4] = false; details[4] = 'CLICK_API chain has no HTTP response'; }
+    onCheck(5, results[4] ? 'pass' : 'fail', results[4] ? `HTTP ${ca ? ca.status : '-'} JSON` : 'no');
+    onLog(`E5 Click API: ${F(results[4])} ${details[4]}`, results[4] ? 'ok' : 'dim');
+
+    // E6: Offer Reaction (compare MAIN vs OFFER_TEST first hop: status, ct, location, body_len)
+    onCheck(6, 'run');
+    const baseH = firstHop(chains.MAIN), testH = firstHop(chains.OFFER_TEST);
+    if (baseH && testH && baseH.status) {
+        const reacted = (testH.status !== baseH.status)
+            || ((testH.content_type || '') !== (baseH.content_type || ''))
+            || ((testH.location || '') !== (baseH.location || ''))
+            || (testH.body_len !== baseH.body_len);
+        results[5] = reacted;
+        details[5] = `Base [MAIN] -> status=${baseH.status}, ct=${baseH.content_type || '-'}, loc=${baseH.location || '-'}, len=${baseH.body_len}; `
+            + `Test [OFFER_TEST] -> status=${testH.status}, ct=${testH.content_type || '-'}, loc=${testH.location || '-'}, len=${testH.body_len}`;
+    } else { results[5] = false; details[5] = 'Missing MAIN or OFFER_TEST response'; }
+    onCheck(6, results[5] ? 'pass' : 'fail', results[5] ? `${baseH?.status}\u2192${testH?.status}` : 'no change');
+    onLog(`E6 Offer Reaction: ${F(results[5])} ${details[5]}`, results[5] ? 'ok' : 'dim');
+
+    // E7: Update Tokens Reaction (compare MAIN vs UPDATE_TOKENS first hop)
+    onCheck(7, 'run');
+    const utH = firstHop(chains.UPDATE_TOKENS);
+    if (baseH && utH && baseH.status) {
+        const reacted = (utH.status !== baseH.status)
+            || ((utH.content_type || '') !== (baseH.content_type || ''))
+            || ((utH.location || '') !== (baseH.location || ''))
+            || (utH.body_len !== baseH.body_len);
+        results[6] = reacted;
+        details[6] = `Base [MAIN] -> status=${baseH.status}, ct=${baseH.content_type || '-'}, loc=${baseH.location || '-'}, len=${baseH.body_len}; `
+            + `Test [UPDATE_TOKENS] -> status=${utH.status}, ct=${utH.content_type || '-'}, loc=${utH.location || '-'}, len=${utH.body_len}`;
+    } else { results[6] = false; details[6] = 'Missing MAIN or UPDATE_TOKENS response'; }
+    onCheck(7, results[6] ? 'pass' : 'fail', results[6] ? `${baseH?.status}\u2192${utH?.status}` : 'no change');
+    onLog(`E7 Update Tokens: ${F(results[6])} ${details[6]}`, results[6] ? 'ok' : 'dim');
+
+    const total = results.length;
+    const score = results.filter(r => r === true).length;
+    return { score, total, results, details, error: null };
+}
+
+function F(v) { return v ? 'PASS' : 'FAIL'; }
+function sCt(ct) { return (ct || '-').split(';')[0].trim() || '-'; }
+
+// ===================== SINGLE SCAN UI =====================
+let currentScore = 0;
+
+function buildGrid() {
+    const g = document.getElementById('grid');
+    currentScore = 0;
+    g.innerHTML = EVIDENCES.map(c => `
+        <div class="ck idle" id="ck${c.id}" style="animation-delay:${(c.id-1)*40}ms">
+            <div class="flex items-center justify-between mb-1">
+                <div class="flex items-center gap-1.5">
+                    <span id="ico${c.id}" class="text-gray-700 text-sm transition-all duration-300">&#9679;</span>
+                    <a href="${c.doc}" target="_blank" class="text-[10px] font-bold text-gray-600 hover:text-cyan-400 transition-colors" title="Docs">E${c.id}</a>
+                </div>
+                <div id="badge${c.id}" class="text-[9px] mono px-1.5 py-0.5 rounded-md opacity-0 transition-all duration-300"></div>
+            </div>
+            <div class="text-[13px] font-semibold text-gray-300 leading-tight">${c.name}</div>
+            <div class="text-[11px] text-gray-600 mono mt-0.5">${c.hint}</div>
+            <div id="det${c.id}" class="text-[10px] text-gray-600 mono mt-1.5 hidden truncate"></div>
+        </div>
+    `).join('') + `
+        <div class="ck idle flex items-center justify-center" id="ckV">
+            <div class="text-center">
+                <div class="score-ring mx-auto mb-1">
+                    <svg viewBox="0 0 70 70" width="70" height="70">
+                        <circle class="bg" cx="35" cy="35" r="30"/>
+                        <circle class="fg" id="scoreRing" cx="35" cy="35" r="30" stroke="#374151" stroke-dasharray="188.5" stroke-dashoffset="188.5"/>
+                    </svg>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span id="vsMini" class="text-lg font-black mono text-gray-600">0/7</span>
+                    </div>
+                </div>
+                <div id="vlMini" class="text-[10px] text-gray-600 font-semibold mt-0.5 transition-all duration-300">Waiting</div>
+            </div>
+        </div>`;
+}
+
+function setCheckUI(n, state, detail) {
+    const card = document.getElementById(`ck${n}`);
+    const ico = document.getElementById(`ico${n}`);
+    const det = document.getElementById(`det${n}`);
+    const badge = document.getElementById(`badge${n}`);
+
+    card.className = 'ck ' + ({ run: 'run', pass: 'pass', fail: 'fail' }[state] || 'idle');
+
+    if (state === 'run') {
+        ico.innerHTML = '<span class="inline-block anim-spin">&#9881;</span>';
+        ico.className = 'text-blue-400 text-sm transition-all duration-300';
+        badge.textContent = 'checking';
+        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-blue-500/10 text-blue-400 opacity-100 transition-all duration-300';
+    } else if (state === 'pass') {
+        ico.innerHTML = '&#10003;';
+        ico.className = 'text-green-400 text-sm transition-all duration-300';
+        badge.textContent = 'PASS';
+        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-green-500/15 text-green-400 font-bold opacity-100 transition-all duration-300';
+        currentScore++;
+        updateScoreRing();
+        // Update progress bar
+        const fill = document.getElementById('scanBarFill');
+        fill.style.width = ((currentScore + (7 - currentScore) * 0) / 7 * 100) + '%'; // we update on each check below
+    } else if (state === 'fail') {
+        ico.innerHTML = '&#10007;';
+        ico.className = 'text-gray-600 text-sm transition-all duration-300';
+        badge.textContent = 'FAIL';
+        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-white/[.04] text-gray-600 opacity-100 transition-all duration-300';
+    }
+
+    if (detail) { det.textContent = detail; det.classList.remove('hidden'); }
+
+    // Update progress bar based on completed checks
+    const completedChecks = document.querySelectorAll('.ck.pass, .ck.fail').length;
+    const scanFill = document.getElementById('scanBarFill');
+    if (scanFill) scanFill.style.width = (completedChecks / 7 * 100) + '%';
+}
+
+function updateScoreRing() {
+    const ring = document.getElementById('scoreRing');
+    const sm = document.getElementById('vsMini');
+    const circumference = 188.5;
+    const offset = circumference - (currentScore / 7) * circumference;
+    ring.style.strokeDashoffset = offset;
+
+    // Color based on score
+    if (currentScore >= 2) {
+        ring.style.stroke = '#ef4444';
+        sm.className = 'text-lg font-black mono text-red-400';
+    } else if (currentScore === 1) {
+        ring.style.stroke = '#eab308';
+        sm.className = 'text-lg font-black mono text-yellow-400';
+    } else {
+        ring.style.stroke = '#06b6d4';
+        sm.className = 'text-lg font-black mono text-cyan-400';
+    }
+    sm.textContent = `${currentScore}/7`;
+}
+
+function setVerdictUI(score, total) {
+    const v = document.getElementById('verdict');
+    v.classList.remove('hidden');
+    const s = document.getElementById('vScore'), l = document.getElementById('vLabel');
+    const lm = document.getElementById('vlMini');
+
+    // Final score ring update
+    const ring = document.getElementById('scoreRing');
+    const circumference = 188.5;
+    ring.style.strokeDashoffset = circumference - (score / 7) * circumference;
+
+    s.textContent = `${score}/${total}`;
+
+    if (score >= 2) {
+        v.className = 'rounded-2xl p-6 text-center mb-6 v-confirmed anim-verdict';
+        s.className = 'text-4xl font-black mono text-red-400';
+        l.textContent = 'KEITARO CONFIRMED'; l.className = 'text-sm font-bold text-red-400 uppercase tracking-wider mt-1.5';
+        ring.style.stroke = '#ef4444';
+        document.getElementById('vsMini').className = 'text-lg font-black mono text-red-400';
+        lm.textContent = 'CONFIRMED'; lm.className = 'text-[10px] text-red-400 font-bold mt-0.5 transition-all duration-300';
+        document.getElementById('ckV').className = 'ck flex items-center justify-center';
+        document.getElementById('ckV').style.borderColor = 'rgba(239,68,68,.4)';
+        document.getElementById('ckV').style.boxShadow = '0 0 30px rgba(239,68,68,.1)';
+    } else if (score === 1) {
+        v.className = 'rounded-2xl p-6 text-center mb-6 v-notconfirmed anim-verdict';
+        s.className = 'text-4xl font-black mono text-yellow-400';
+        l.textContent = 'NOT CONFIRMED (need \u22652)'; l.className = 'text-sm font-bold text-yellow-400 uppercase tracking-wider mt-1.5';
+        ring.style.stroke = '#eab308';
+        document.getElementById('vsMini').className = 'text-lg font-black mono text-yellow-400';
+        lm.textContent = '1 EVIDENCE'; lm.className = 'text-[10px] text-yellow-400 font-bold mt-0.5 transition-all duration-300';
+        document.getElementById('ckV').className = 'ck flex items-center justify-center';
+        document.getElementById('ckV').style.borderColor = 'rgba(234,179,8,.3)';
+        document.getElementById('ckV').style.boxShadow = '0 0 20px rgba(234,179,8,.06)';
+    } else {
+        v.className = 'rounded-2xl p-6 text-center mb-6 v-clean anim-verdict';
+        s.className = 'text-4xl font-black mono text-green-400';
+        l.textContent = 'NOT DETECTED'; l.className = 'text-sm font-bold text-green-400 uppercase tracking-wider mt-1.5';
+        ring.style.stroke = '#22c55e';
+        document.getElementById('vsMini').className = 'text-lg font-black mono text-green-400';
+        lm.textContent = 'CLEAN'; lm.className = 'text-[10px] text-green-400 font-bold mt-0.5 transition-all duration-300';
+        document.getElementById('ckV').className = 'ck flex items-center justify-center';
+        document.getElementById('ckV').style.borderColor = 'rgba(34,197,94,.3)';
+        document.getElementById('ckV').style.boxShadow = '0 0 20px rgba(34,197,94,.06)';
+    }
+}
+
+function sLog(msg, type) {
+    const el = document.getElementById('log');
+    const colors = { ok: 'text-green-400', fail: 'text-red-400', warn: 'text-yellow-400', dim: 'text-gray-600', info: 'text-gray-400' };
+    const d = document.createElement('div');
+    d.className = `anim-in ${colors[type] || colors.info}`;
+    const t = new Date().toLocaleTimeString('en-GB', { hour12: false });
+    d.innerHTML = `<span class="text-gray-700 select-none">${t}</span> ${msg}`;
+    el.appendChild(d); el.scrollTop = el.scrollHeight;
+}
+
+function resetSingle() {
+    buildGrid();
+    document.getElementById('verdict').classList.add('hidden');
+    document.getElementById('log').innerHTML = '';
+    document.getElementById('logStatus').textContent = '';
+    document.getElementById('scanBar').classList.add('hidden');
+    document.getElementById('scanBarFill').style.width = '0%';
+    document.getElementById('headerDot').className = 'status-dot idle';
+    document.getElementById('headerStatus').textContent = 'Ready';
+}
+
+async function runSingle() {
+    const inp = document.getElementById('domainInput').value.trim();
+    if (!inp) return;
+    const btn = document.getElementById('singleBtn');
+    btn.disabled = true;
+    document.getElementById('scanTxt').textContent = 'Scanning...';
+    document.getElementById('scanIco').innerHTML = '<circle class="anim-spin origin-center" cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="31.4" stroke-dashoffset="10"/>';
+
+    resetSingle();
+    document.getElementById('scanBar').classList.remove('hidden');
+    document.getElementById('headerDot').className = 'status-dot active';
+    document.getElementById('headerStatus').textContent = 'Scanning...';
+    document.getElementById('logDot').className = 'status-dot active';
+
+    sLog(`Target: <span class="text-white font-semibold">${inp}</span>`);
+    sLog(getWorkerUrl() ? 'Proxy: CF Worker (7/7)' : 'Proxy: allorigins (6/7, no cookies)', 'dim');
+
+    const { score, total, error } = await scanDomain(inp, sLog, setCheckUI);
+
+    document.getElementById('headerDot').className = 'status-dot done';
+    document.getElementById('logDot').className = 'status-dot done';
+    document.getElementById('scanBarFill').style.width = '100%';
+
+    if (error) {
+        sLog(`Error: ${error}`, 'fail');
+        document.getElementById('logStatus').textContent = 'Failed';
+        document.getElementById('headerStatus').textContent = 'Error';
+    } else {
+        setVerdictUI(score, total);
+        let vt, vc;
+        if (score >= 2) { vt = `Keitaro CONFIRMED (passed ${score}/${total} evidences)`; vc = 'text-red-400'; }
+        else if (score === 1) { vt = `Keitaro NOT CONFIRMED (only 1 evidence, need \u22652)`; vc = 'text-yellow-400'; }
+        else { vt = 'Keitaro NOT DETECTED (no documented evidences found)'; vc = 'text-green-400'; }
+        sLog(`<span class="font-bold ${vc}">${vt}</span>`, score >= 2 ? 'fail' : score === 1 ? 'warn' : 'ok');
+        document.getElementById('logStatus').textContent = `${score}/${total}`;
+        document.getElementById('headerStatus').textContent = score >= 2 ? 'CONFIRMED' : score === 1 ? 'Not confirmed' : 'Clean';
+    }
+    btn.disabled = false;
+    document.getElementById('scanTxt').textContent = 'Scan';
+    document.getElementById('scanIco').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>';
+}
+
+// ===================== MASS SCAN =====================
+async function runMass() {
+    const raw = document.getElementById('massInput').value.trim();
+    if (!raw) return;
+    const domains = [...new Set(raw.split('\n').map(d => d.trim()).filter(d => d && !d.startsWith('#')))];
+    if (!domains.length) return;
+    massAbort = false; massResults = [];
+    const btn = document.getElementById('massBtn'); btn.disabled = true;
+    document.getElementById('massStop').classList.remove('hidden');
+    document.getElementById('massBar').classList.remove('hidden');
+    document.getElementById('massResults').classList.remove('hidden');
+    document.getElementById('exportBtn').classList.add('hidden');
+    document.getElementById('massTable').innerHTML = '';
+    document.getElementById('headerDot').className = 'status-dot active';
+    document.getElementById('headerStatus').textContent = 'Mass scan...';
+    for (let i = 0; i < domains.length; i++) {
+        if (massAbort) break;
+        document.getElementById('massProgress').textContent = `${i+1} / ${domains.length}`;
+        document.getElementById('massBarFill').style.width = `${((i+1)/domains.length*100).toFixed(1)}%`;
+        addMassRow(domains[i], i);
+        const { score, total, results, error } = await scanDomain(domains[i], ()=>{}, ()=>{});
+        const entry = { domain: domains[i], score, total, results, error };
+        massResults.push(entry);
+        updateMassRow(i, entry);
+    }
+    document.getElementById('massProgress').textContent = massAbort ? 'Stopped' : `Done: ${domains.length}`;
+    btn.disabled = false;
+    document.getElementById('massStop').classList.add('hidden');
+    document.getElementById('exportBtn').classList.remove('hidden');
+    document.getElementById('headerDot').className = 'status-dot done';
+    document.getElementById('headerStatus').textContent = 'Done';
+}
+function stopMass() { massAbort = true; }
+
+function addMassRow(domain, idx) {
+    const t = document.getElementById('massTable'), row = document.createElement('div');
+    row.id = `mr${idx}`;
+    row.className = 'mass-row grid grid-cols-[1fr_60px_100px] sm:grid-cols-[1fr_60px_60px_60px_60px_60px_60px_60px_100px] gap-0 px-4 py-2.5 items-center text-xs';
+    row.innerHTML = `<div class="mono text-gray-300 truncate">${domain}</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center mono text-gray-600">...</div><div class="text-center"><span class="anim-pulse text-cyan-400">scanning</span></div>`;
+    t.appendChild(row);
+}
+
+function updateMassRow(idx, entry) {
+    const row = document.getElementById(`mr${idx}`);
+    if (!row) return;
+    const { domain, score, total, results, error } = entry;
+    const cells = results.map(r => `<div class="text-center hidden sm:block">${r===true?'<span class="text-green-400">&#10003;</span>':'<span class="text-gray-600">&#10007;</span>'}</div>`).join('');
+    let vc, vt;
+    if (error) { vc='text-gray-500'; vt='error'; }
+    else if (score>=2) { vc='text-red-400 font-bold'; vt='KEITARO'; }
+    else if (score===1) { vc='text-yellow-400'; vt='1 evid.'; }
+    else { vc='text-green-400'; vt='clean'; }
+    const sc = score>=2?'text-red-400':score===1?'text-yellow-400':'text-green-400';
+    row.innerHTML = `<div class="mono text-gray-300 truncate">${domain}</div>${cells}<div class="text-center mono ${sc} font-semibold">${error?'-':score+'/'+total}</div><div class="text-center"><span class="${vc}">${vt}</span></div>`;
+    row.className = `mass-row grid grid-cols-[1fr_60px_100px] sm:grid-cols-[1fr_60px_60px_60px_60px_60px_60px_60px_100px] gap-0 px-4 py-2.5 items-center text-xs anim-in ${score>=2?'bg-red-500/[.03]':''}`;
+}
+
+function exportCSV() {
+    const header = 'domain,score,total,E1,E2,E3,E4,E5,E6,E7,verdict\n';
+    const rows = massResults.map(r => {
+        const v = r.error?'error':r.score>=2?'keitaro':r.score===1?'not_confirmed':'clean';
+        return `${r.domain},${r.score},${r.total},${r.results.map(c=>c?'1':'0').join(',')},${v}`;
+    }).join('\n');
+    const blob = new Blob([header+rows], { type: 'text/csv' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+    a.download = `keitaro_scan_${new Date().toISOString().slice(0,10)}.csv`; a.click();
+}
+
+// ===================== TABS =====================
+function switchTab(tab) {
+    ['single','mass','method'].forEach(t => {
+        const pane = document.getElementById(t+'Pane');
+        const tabEl = document.getElementById('tab'+t[0].toUpperCase()+t.slice(1));
+        pane.classList.toggle('hidden', tab!==t);
+        tabEl.classList.toggle('active', tab===t);
+    });
+}
+
+// ===================== INIT =====================
+buildGrid();
+document.getElementById('domainInput').addEventListener('keydown', e => { if (e.key==='Enter') runSingle(); });
+const saved = localStorage.getItem('keitaro_worker');
+if (saved) document.getElementById('cfWorker').value = saved;
+document.getElementById('cfWorker').addEventListener('change', function(){ localStorage.setItem('keitaro_worker', this.value); });
+</script>
+</body>
+</html>
