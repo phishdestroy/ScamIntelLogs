@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://phishdestroy.io/gambler/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMBLER Scam Investigation - Verified Report</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: rgba(0, 0, 0, 0.3);
+            --accent-red: #ff4757;
+            --accent-orange: #ffa502;
+            --accent-green: #2ed573;
+            --accent-blue: #3742fa;
+            --accent-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --text-muted: rgba(255, 255, 255, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0c0c1e 0%, #1a1a3e 25%, #0f0f2d 50%, #1e1e4a 75%, #0a0a1a 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(255, 71, 87, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 40% 60%, rgba(55, 66, 250, 0.1) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: -1;
+            animation: bgPulse 15s ease-in-out infinite;
+        }
+
+        @keyframes bgPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Glassmorphism card */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            box-shadow:
+                0 8px 32px var(--glass-shadow),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 40px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 71, 87, 0.1), transparent 30%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            100% { transform: rotate(360deg); }
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ff4757, #ffa502, #ff6b81);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 16px;
+            position: relative;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 20px rgba(255, 71, 87, 0.5)); }
+            50% { filter: drop-shadow(0 0 40px rgba(255, 71, 87, 0.8)); }
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+            position: relative;
+        }
+
+        .badge-row {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .badge {
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .badge-danger {
+            background: linear-gradient(135deg, rgba(255, 71, 87, 0.3), rgba(255, 71, 87, 0.1));
+            border: 1px solid rgba(255, 71, 87, 0.5);
+            color: #ff4757;
+        }
+
+        .badge-warning {
+            background: linear-gradient(135deg, rgba(255, 165, 2, 0.3), rgba(255, 165, 2, 0.1));
+            border: 1px solid rgba(255, 165, 2, 0.5);
+            color: #ffa502;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            padding: 32px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-red), var(--accent-orange));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .stat-value {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ff4757, #ffa502);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .stat-card.green .stat-value {
+            background: linear-gradient(135deg, #2ed573, #7bed9f);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .stat-card.blue .stat-value {
+            background: linear-gradient(135deg, #3742fa, #70a1ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 32px;
+            overflow: hidden;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 24px 32px;
+            background: linear-gradient(90deg, rgba(255, 71, 87, 0.15), transparent);
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        section h2 .icon {
+            font-size: 1.8rem;
+        }
+
+        .section-content {
+            padding: 32px;
+        }
+
+        /* Alert box */
+        .alert {
+            background: linear-gradient(135deg, rgba(255, 71, 87, 0.15), rgba(255, 71, 87, 0.05));
+            border: 1px solid rgba(255, 71, 87, 0.3);
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .alert-icon {
+            font-size: 2rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .alert-content h4 {
+            color: var(--accent-red);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        /* Table */
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: 16px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: sticky;
+            top: 0;
+        }
+
+        tr {
+            transition: all 0.3s ease;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        /* Wallet address */
+        .wallet {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 0.8rem;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 8px 12px;
+            border-radius: 8px;
+            color: #70a1ff;
+            word-break: break-all;
+            display: inline-block;
+            max-width: 100%;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .wallet:hover {
+            background: rgba(55, 66, 250, 0.2);
+            color: #ffffff;
+            transform: scale(1.02);
+        }
+
+        /* TX hash */
+        .tx-hash {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-green);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tx-hash:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .tx-hash::after {
+            content: '↗';
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .tx-hash:hover::after {
+            opacity: 1;
+        }
+
+        /* Amount */
+        .amount {
+            font-weight: 700;
+            color: var(--accent-orange);
+        }
+
+        .amount-btc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Status badge */
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-verified {
+            background: linear-gradient(135deg, rgba(46, 213, 115, 0.3), rgba(46, 213, 115, 0.1));
+            color: var(--accent-green);
+            border: 1px solid rgba(46, 213, 115, 0.5);
+        }
+
+        .status-verified::before {
+            content: '✓';
+        }
+
+        /* Domain list */
+        .domain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 12px;
+        }
+
+        .domain-item {
+            background: linear-gradient(135deg, rgba(255, 71, 87, 0.1), rgba(255, 71, 87, 0.05));
+            border: 1px solid rgba(255, 71, 87, 0.2);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .domain-item:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 71, 87, 0.5);
+            box-shadow: 0 10px 30px rgba(255, 71, 87, 0.2);
+        }
+
+        /* Settings grid */
+        .settings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .setting-item:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .setting-key {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .setting-value {
+            font-weight: 700;
+            color: var(--accent-red);
+        }
+
+        .setting-value.on {
+            color: var(--accent-green);
+        }
+
+        /* Victim card */
+        .victim-card {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .victim-card:hover {
+            background: rgba(0, 0, 0, 0.3);
+            transform: translateX(4px);
+        }
+
+        .victim-email {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #70a1ff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .victim-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .victim-info span {
+            font-size: 0.9rem;
+        }
+
+        .victim-info strong {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, rgba(46, 213, 115, 0.2), rgba(46, 213, 115, 0.1));
+            border: 1px solid rgba(46, 213, 115, 0.3);
+            padding: 12px 24px;
+            border-radius: 100px;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; letter-spacing: 2px; }
+            .stat-value { font-size: 2rem; }
+            th, td { padding: 12px; font-size: 0.85rem; }
+            .section-content { padding: 20px; }
+        }
+
+        /* Loading animation for links */
+        .loading-shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        /* Gallery styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+        }
+        .gallery-item {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            border: 1px solid var(--glass-border);
+        }
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border-color: var(--accent-red);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--glass-border);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.02);
+        }
+        .gallery-info {
+            padding: 20px;
+        }
+        .gallery-info h4 {
+            color: var(--accent-orange);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .gallery-info .frame-num {
+            background: var(--accent-red);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        .gallery-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .gallery-info .evidence-list {
+            margin-top: 12px;
+            padding-left: 0;
+            list-style: none;
+        }
+        .gallery-info .evidence-list li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .gallery-info .evidence-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+        }
+        .gallery-info .highlight {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+        .timeline-section {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid var(--glass-border);
+        }
+        .timeline-section h3 {
+            color: var(--accent-purple);
+            margin-bottom: 24px;
+            font-size: 1.3rem;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--accent-purple), var(--accent-red), var(--accent-orange));
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 24px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-red);
+            border-radius: 50%;
+            border: 2px solid var(--bg-dark);
+        }
+        .timeline-item h4 {
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        .timeline-item p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .timeline-item .time {
+            color: var(--accent-orange);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95%;
+            max-height: 95%;
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .lightbox-close:hover {
+            transform: scale(1.2);
+        }
+
+        /* Secure badge */
+        .secure-header {
+            background: linear-gradient(135deg, rgba(46, 213, 115, 0.2), rgba(46, 213, 115, 0.05));
+            border: 1px solid rgba(46, 213, 115, 0.3);
+            padding: 12px 24px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            color: var(--accent-green);
+        }
+        .secure-header .lock-icon {
+            font-size: 1.2rem;
+        }
+    </style>
+<style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style></head>
+<body>
+    <div class="container">
+        <div style="text-align: center;">
+            <div class="secure-header">
+                <span class="lock-icon">🔒</span>
+                <span>Password Protected Report | CONFIDENTIAL</span>
+            </div>
+        </div>
+
+        <header class="glass">
+            <h1>🎰 GAMBLER SCAM</h1>
+            <p class="subtitle">Cryptocurrency Gambling Fraud Investigation Report</p>
+            <div class="badge-row">
+                <span class="badge badge-danger">⚠️ SCAM OPERATION</span>
+                <span class="badge badge-warning">🔗 gambler-partners.is</span>
+                <span class="badge badge-danger">📱 @gamblerworkmain</span>
+            </div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card glass">
+                <div class="stat-value">$2,617,301</div>
+                <div class="stat-label">Total Stolen</div>
+            </div>
+            <div class="stat-card glass blue">
+                <div class="stat-value">12,114</div>
+                <div class="stat-label">Victim Deposits</div>
+            </div>
+            <div class="stat-card glass green">
+                <div class="stat-value">80%</div>
+                <div class="stat-label">Scammer Cut</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-value">22+</div>
+                <div class="stat-label">Fake Domains</div>
+            </div>
+        </div>
+
+        <section class="glass">
+            <h2><span class="icon">💰</span> Scammer Bitcoin Wallets <span class="status status-verified">Blockchain Verified</span></h2>
+            <div class="section-content">
+                <div class="alert">
+                    <span class="alert-icon">⚠️</span>
+                    <div class="alert-content">
+                        <h4>Primary Collection Wallets</h4>
+                        <p>All wallets verified via mempool.space API. These receive stolen funds with ~80/20 split pattern.</p>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Wallet Address</th>
+                                <th>Transactions</th>
+                                <th>Total Received</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="badge badge-danger">PRIMARY</span></td>
+                                <td><a href="https://mempool.space/address/bc1q98hlr5k4xllvwj0fzsxulg87mqwfvgeukc9lct" target="_blank" class="wallet">bc1q98hlr5k4xllvwj0fzsxulg87mqwfvgeukc9lct</a></td>
+                                <td><strong>69</strong> tx</td>
+                                <td><span class="amount">0.0858 BTC</span></td>
+                                <td><span class="status status-verified">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-warning">SECONDARY</span></td>
+                                <td><a href="https://mempool.space/address/bc1q3egm8um5rjg4yrzy8zvf4r0wqy2mk80s7m5lqa" target="_blank" class="wallet">bc1q3egm8um5rjg4yrzy8zvf4r0wqy2mk80s7m5lqa</a></td>
+                                <td><strong>9,516</strong> tx</td>
+                                <td><span class="amount">17.97 BTC</span></td>
+                                <td><span class="status status-verified">Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-danger">FEE SPLIT</span></td>
+                                <td><a href="https://mempool.space/address/bc1qe8wj398z5hsz9khhqc3dsyl8w9xqn9k38vl2aq" target="_blank" class="wallet">bc1qe8wj398z5hsz9khhqc3dsyl8w9xqn9k38vl2aq</a></td>
+                                <td><strong>39,185</strong> tx</td>
+                                <td><span class="amount">12.23 BTC</span></td>
+                                <td><span class="status status-verified">Verified</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 style="margin: 32px 0 20px; color: var(--text-secondary); font-size: 1.1rem;">Multi-Chain Wallets (Admin Panel)</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Network</th>
+                                <th>Wallet Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="badge badge-warning">XRP</span></td>
+                                <td><span class="wallet">rPzYMbVBUnVx24agniojutSXubisnQ</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-warning">ETH/ERC20</span></td>
+                                <td><span class="wallet">0x8C4E00Fa81F495466eED929D8D</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-warning">BSC/BEP20</span></td>
+                                <td><span class="wallet">0x8C4E00Fa81F495466eED929D8D</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-warning">TRC20</span></td>
+                                <td><span class="wallet">TLupaQfHbZZyJCW9qWHmwLascy</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-warning">TON</span></td>
+                                <td><span class="wallet">UQDjFRb71sG3lgKrGDIYk2dHqSN1</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-warning">SOL</span></td>
+                                <td><span class="wallet">ZxKpTtRwpf1KDemY1wXson7VSLaF</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass">
+            <h2><span class="icon">🔗</span> Bitcoin Transactions <span class="status status-verified">Blockchain Verified</span></h2>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Transaction Hash</th>
+                                <th>Block</th>
+                                <th>Date</th>
+                                <th>Input</th>
+                                <th>Output (80%)</th>
+                                <th>Fee (20%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://mempool.space/tx/54194af6ac545b930194992a4c4f14c343322966f9162fdc9255da1a89d9c14f" target="_blank" class="tx-hash">54194af6ac545b93...89d9c14f</a></td>
+                                <td><strong>906,473</strong></td>
+                                <td>21 Jul 2025<br><small style="color: var(--text-muted)">05:09:51 UTC</small></td>
+                                <td>
+                                    <span class="amount">$293.32</span><br>
+                                    <span class="amount-btc">0.0025016 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$234.47</span><br>
+                                    <span class="amount-btc">0.00199977 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$58.66</span><br>
+                                    <span class="amount-btc">0.00050032 BTC</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://mempool.space/tx/ffbc345aa879f3d2ce50e2e06426691fb432974b5f59c24e77b18ba0d679b930" target="_blank" class="tx-hash">ffbc345aa879f3d2...d679b930</a></td>
+                                <td><strong>906,658</strong></td>
+                                <td>22 Jul 2025<br><small style="color: var(--text-muted)">09:04:06 UTC</small></td>
+                                <td>
+                                    <span class="amount">$185.83</span><br>
+                                    <span class="amount-btc">0.00158216 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$148.31</span><br>
+                                    <span class="amount-btc">0.0012627 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$37.16</span><br>
+                                    <span class="amount-btc">0.00031644 BTC</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://mempool.space/tx/486f7c980fdff10978d3fd659ba0345018e46919bead75d5d6b5d49c0c6af1aa" target="_blank" class="tx-hash">486f7c980fdff109...c6af1aa</a></td>
+                                <td><strong>906,745</strong></td>
+                                <td>23 Jul 2025<br><small style="color: var(--text-muted)">00:07:15 UTC</small></td>
+                                <td>
+                                    <span class="amount">$128.38</span><br>
+                                    <span class="amount-btc">0.00109305 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$104.17</span><br>
+                                    <span class="amount-btc">0.0008684 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$26.22</span><br>
+                                    <span class="amount-btc">0.00021861 BTC</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://mempool.space/tx/cb80694e9864ab14502b805d49e1aafdba5274f95999249bbd1f6fb1c4a67989" target="_blank" class="tx-hash">cb80694e9864ab14...4a67989</a></td>
+                                <td><strong>906,773</strong></td>
+                                <td>23 Jul 2025<br><small style="color: var(--text-muted)">05:31:08 UTC</small></td>
+                                <td>
+                                    <span class="amount">$203.13</span><br>
+                                    <span class="amount-btc">0.00169325 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$162.32</span><br>
+                                    <span class="amount-btc">0.00135309 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$40.62</span><br>
+                                    <span class="amount-btc">0.00033865 BTC</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://mempool.space/tx/381c51622728b8aec68e9dad08a09408266d8d2425f2c3170cae81c2d132d5b6" target="_blank" class="tx-hash">381c51622728b8ae...132d5b6</a></td>
+                                <td><strong>906,817</strong></td>
+                                <td>23 Jul 2025<br><small style="color: var(--text-muted)">11:14:42 UTC</small></td>
+                                <td>
+                                    <span class="amount">$96.27</span><br>
+                                    <span class="amount-btc">0.00080253 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$76.29</span><br>
+                                    <span class="amount-btc">0.00063598 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$19.25</span><br>
+                                    <span class="amount-btc">0.00016051 BTC</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://mempool.space/tx/d590b0e1e241b75fdf4d954faea260b04f9cfebf44e42afecf86586582446993" target="_blank" class="tx-hash">d590b0e1e241b75f...2446993</a></td>
+                                <td><strong>908,414</strong></td>
+                                <td>03 Aug 2025<br><small style="color: var(--text-muted)">16:11:25 UTC</small></td>
+                                <td>
+                                    <span class="amount">$148.34</span><br>
+                                    <span class="amount-btc">0.00131827 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$118.50</span><br>
+                                    <span class="amount-btc">0.0010531 BTC</span>
+                                </td>
+                                <td>
+                                    <span class="amount">$29.66</span><br>
+                                    <span class="amount-btc">0.00026366 BTC</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass">
+            <h2><span class="icon">⚙️</span> Scam Configuration</h2>
+            <div class="section-content">
+                <div class="alert">
+                    <span class="alert-icon">💀</span>
+                    <div class="alert-content">
+                        <h4>TRAP: Withdrawal Impossible!</h4>
+                        <p>Minimum deposit is $50 but minimum withdrawal is $5,000 — victims can NEVER withdraw their money!</p>
+                    </div>
+                </div>
+                <div class="settings-grid">
+                    <div class="setting-item">
+                        <span class="setting-key">Minimum Deposit</span>
+                        <span class="setting-value">$50</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">Minimum Withdrawal</span>
+                        <span class="setting-value">$5,000 (TRAP!)</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">Slot Manipulation Threshold</span>
+                        <span class="setting-value">$25,000</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">Drainer Amount</span>
+                        <span class="setting-value">$100</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">Slot Manipulation</span>
+                        <span class="setting-value on">ENABLED ✓</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">Drainer</span>
+                        <span class="setting-value on">ENABLED ✓</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">Fake Withdrawal</span>
+                        <span class="setting-value on">ENABLED ✓</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">Admin Keyword</span>
+                        <span class="setting-value">w711225</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass">
+            <h2><span class="icon">👥</span> Victim Deposits (Sample - 12,114 Total)</h2>
+            <div class="section-content">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Amount</th>
+                                <th>Token</th>
+                                <th>Domain</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>mark98teariki@gmail.com</td>
+                                <td><span class="amount">$1,065.54</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>amzroll.com</td>
+                                <td>15.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>mark98teariki@gmail.com</td>
+                                <td><span class="amount">$785.85</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>amzroll.com</td>
+                                <td>15.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>lingoo1@web.de</td>
+                                <td><span class="amount">$350.22</span></td>
+                                <td><span class="badge badge-warning">Ripple</span></td>
+                                <td>jackspot.top</td>
+                                <td>03.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>leifleonard1979@gmail.com</td>
+                                <td><span class="amount">$319.27</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>yeezywin.com</td>
+                                <td>23.07.2025</td>
+                            </tr>
+                            <tr>
+                                <td>davethedino123@gmail.com</td>
+                                <td><span class="amount">$316.70</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>tagcas.com</td>
+                                <td>13.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>vafej68459@axcradio.com</td>
+                                <td><span class="amount">$264.87</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>beastwen.com</td>
+                                <td>02.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>yascasa6@gmail.com</td>
+                                <td><span class="amount">$236.62</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>kaicas.com</td>
+                                <td>14.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>pouyakavoosi4292@gmail.com</td>
+                                <td><span class="amount">$221.58</span></td>
+                                <td><span class="badge badge-warning">Tether TRC20</span></td>
+                                <td>nerocas.com</td>
+                                <td>15.09.2025</td>
+                            </tr>
+                            <tr>
+                                <td>shrabbayzdy@gmail.com</td>
+                                <td><span class="amount">$215.64</span></td>
+                                <td><span class="badge badge-warning">Tether BEP20</span></td>
+                                <td>bexcas.com</td>
+                                <td>11.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>crystalw8865@gmail.com</td>
+                                <td><span class="amount">$210.00</span></td>
+                                <td><span class="badge badge-warning">USD Coin BASE</span></td>
+                                <td>rapiy.com</td>
+                                <td>03.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>abduraufamonov225@gmail.com</td>
+                                <td><span class="amount">$203.66</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>casoxi.com</td>
+                                <td>02.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>jayraay83@gmail.com</td>
+                                <td><span class="amount">$201.01</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>nerocas.com</td>
+                                <td>23.07.2025</td>
+                            </tr>
+                            <tr>
+                                <td>liangjie1301@gmail.com</td>
+                                <td><span class="amount">$200.00</span></td>
+                                <td><span class="badge badge-warning">Tether TRC20</span></td>
+                                <td>nerocas.com</td>
+                                <td>22.07.2025</td>
+                            </tr>
+                            <tr>
+                                <td>salmanali2530pk@gmail.com</td>
+                                <td><span class="amount">$185.66</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>topfex.com</td>
+                                <td>28.08.2025</td>
+                            </tr>
+                            <tr>
+                                <td>calafatemiguel2@gmail.com</td>
+                                <td><span class="amount">$185.76</span></td>
+                                <td><span class="badge badge-warning">Bitcoin</span></td>
+                                <td>lumdox.com</td>
+                                <td>04.08.2025</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass">
+            <h2><span class="icon">📋</span> Detailed Victim Profiles</h2>
+            <div class="section-content">
+                <div class="victim-card">
+                    <div class="victim-email">📧 liangjie1301@gmail.com</div>
+                    <div class="victim-info">
+                        <span><strong>Country:</strong> Italy (IT)</span>
+                        <span><strong>Domain:</strong> nerocas.com</span>
+                        <span><strong>Total Lost:</strong> <span class="amount">$386.82</span></span>
+                        <span><strong>Promo:</strong> summerwin</span>
+                        <span><strong>Played:</strong> 1500/1500</span>
+                        <span><strong>Registration:</strong> 22.07.2025 02:00:45</span>
+                        <span><strong>Last IP:</strong> 78.209.13.198</span>
+                        <span><strong>Reg IP:</strong> 93.56.140.132</span>
+                    </div>
+                    <div style="margin-top: 16px;">
+                        <strong style="color: var(--text-muted);">Assigned BTC:</strong>
+                        <a href="https://mempool.space/address/bc1q3d0flh0v4530cntw3qy77yv4c8xzper4jpaza0" target="_blank" class="wallet">bc1q3d0flh0v4530cntw3qy77yv4c8xzper4jpaza0</a>
+                    </div>
+                </div>
+
+                <div class="victim-card">
+                    <div class="victim-email">📧 ianbailor@icloud.com</div>
+                    <div class="victim-info">
+                        <span><strong>Country:</strong> United States (US)</span>
+                        <span><strong>Domain:</strong> vencaz.com</span>
+                        <span><strong>Total Lost:</strong> <span class="amount">$45.26</span></span>
+                        <span><strong>Promo:</strong> rxt</span>
+                        <span><strong>Played:</strong> 2500/2500</span>
+                        <span><strong>Registration:</strong> 18.07.2025 07:34:14</span>
+                        <span><strong>IP:</strong> 2600:1002:a102:5a9f:7d14:dbef:51ec:8418</span>
+                    </div>
+                </div>
+
+                <div class="victim-card">
+                    <div class="victim-email">📧 davethedino123@gmail.com</div>
+                    <div class="victim-info">
+                        <span><strong>Country:</strong> United States (US)</span>
+                        <span><strong>Domain:</strong> tagcas.com</span>
+                        <span><strong>Total Lost:</strong> <span class="amount">$696.04</span></span>
+                        <span><strong>Promo:</strong> get1152</span>
+                        <span><strong>Registration:</strong> 18.07.2025 05:38:36</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass">
+            <h2><span class="icon">🌐</span> Fake Casino Domains (22+)</h2>
+            <div class="section-content">
+                <p style="margin-bottom: 20px; color: var(--text-secondary);">All domains feed into central admin panel at <strong>gambler-partners.is</strong></p>
+                <div class="domain-grid">
+                    <div class="domain-item">nerocas.com</div>
+                    <div class="domain-item">mesxa.com</div>
+                    <div class="domain-item">dubcas.com</div>
+                    <div class="domain-item">yeezywin.com</div>
+                    <div class="domain-item">zaxcas.com</div>
+                    <div class="domain-item">nysxa.com</div>
+                    <div class="domain-item">jexcas.com</div>
+                    <div class="domain-item">nadcas.com</div>
+                    <div class="domain-item">vencaz.com</div>
+                    <div class="domain-item">lumdox.com</div>
+                    <div class="domain-item">casoxi.com</div>
+                    <div class="domain-item">nickicas.com</div>
+                    <div class="domain-item">rapiy.com</div>
+                    <div class="domain-item">jackspot.top</div>
+                    <div class="domain-item">beastwen.com</div>
+                    <div class="domain-item">topfex.com</div>
+                    <div class="domain-item">manywon.com</div>
+                    <div class="domain-item">amzroll.com</div>
+                    <div class="domain-item">kaicas.com</div>
+                    <div class="domain-item">tagcas.com</div>
+                    <div class="domain-item">bexcas.com</div>
+                    <div class="domain-item">xcashup.top</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass">
+            <h2><span class="icon">📱</span> Telegram Evidence</h2>
+            <div class="section-content">
+                <div class="alert">
+                    <span class="alert-icon">💬</span>
+                    <div class="alert-content">
+                        <h4>Admin Confession</h4>
+                        <p style="font-style: italic; margin-top: 8px;">"Our team based on the scam decided to change wallets to third-party, and the amount that accumulated to send to shelter/for needs."</p>
+                        <p style="margin-top: 8px; color: var(--text-muted);">— @gamblerworkmain, August 2025</p>
+                    </div>
+                </div>
+                <div class="settings-grid">
+                    <div class="setting-item">
+                        <span class="setting-key">Channel</span>
+                        <span class="setting-value" style="color: var(--accent-blue);">GAMBLER</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">Username</span>
+                        <span class="setting-value" style="color: var(--accent-blue);">@gamblerworkmain</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">Group</span>
+                        <span class="setting-value" style="color: var(--accent-blue);">Dubai Squad | Инфо</span>
+                    </div>
+                    <div class="setting-item">
+                        <span class="setting-key">TX Group</span>
+                        <span class="setting-value" style="color: var(--accent-blue);">Транзы BTCOWNER (10 members)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass">
+            <h2><span class="icon">🎬</span> Video Evidence Gallery - Full Breakdown</h2>
+            <div class="section-content">
+                <p style="margin-bottom: 24px; color: var(--text-secondary);">
+                    Complete frame-by-frame analysis of the GAMBLER scam admin panel video (224 frames).
+                    Click any image to view full size.
+                </p>
+
+                <div class="gallery-grid">
+                    <!-- Telegram Evidence -->
+                    <div class="gallery-item">
+                        <a href="./GAMBLER Scam Investigation - Verified Report_files/frame_0005.png" target="_blank" onclick="openLightbox(&#39;screenshots/frame_0005.png&#39;); return false;">
+                            <img src="./GAMBLER Scam Investigation - Verified Report_files/frame_0005.png" alt="Telegram GAMBLER Channel">
+                        </a>
+                        <div class="gallery-info">
+                            <h4><span class="frame-num">Frame 005</span> Telegram Evidence</h4>
+                            <p>GAMBLER Telegram channel showing admin confession about the scam operation.</p>
+                            <ul class="evidence-list">
+                                <li>Channel: <span class="highlight">GAMBLER</span></li>
+                                <li>Group: <span class="highlight">Dubai Squad | Инфо</span></li>
+                                <li>Admin admits to scam: "Наша команда на основе скама..."</li>
+                                <li>Mentions wallet changes and fund transfers</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Admin Deposits Page -->
+                    <div class="gallery-item">
+                        <a href="./GAMBLER Scam Investigation - Verified Report_files/frame_0030.png" target="_blank" onclick="openLightbox(&#39;screenshots/frame_0030.png&#39;); return false;">
+                            <img src="./GAMBLER Scam Investigation - Verified Report_files/frame_0030.png" alt="Admin Panel Deposits">
+                        </a>
+                        <div class="gallery-info">
+                            <h4><span class="frame-num">Frame 030</span> Admin Panel - Deposits</h4>
+                            <p>Main deposits page showing all victim transactions with full statistics.</p>
+                            <ul class="evidence-list">
+                                <li>URL: <span class="highlight">gambler-partners.is/deposits</span></li>
+                                <li>Total stolen: <span class="highlight">$2,617,301</span></li>
+                                <li>Admin: <span class="highlight">werean (80% cut)</span></li>
+                                <li>Showing 1-10 of <span class="highlight">12,114</span> deposits</li>
+                                <li>1,212 pages of victim data</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Settings Page -->
+                    <div class="gallery-item">
+                        <a href="./GAMBLER Scam Investigation - Verified Report_files/frame_0035.png" target="_blank" onclick="openLightbox(&#39;screenshots/frame_0035.png&#39;); return false;">
+                            <img src="./GAMBLER Scam Investigation - Verified Report_files/frame_0035.png" alt="Scam Settings">
+                        </a>
+                        <div class="gallery-info">
+                            <h4><span class="frame-num">Frame 035</span> Scam Configuration</h4>
+                            <p>Settings page revealing the scam mechanics and financial traps.</p>
+                            <ul class="evidence-list">
+                                <li>Keyword: <span class="highlight">w711225</span></li>
+                                <li>Min deposit: <span class="highlight">$50</span></li>
+                                <li>Min withdrawal: <span class="highlight">$5,000</span> (TRAP!)</li>
+                                <li>Slot manipulation threshold: $25,000</li>
+                                <li>Drainer amount: $100</li>
+                                <li>Подкрутка (Slot manipulation): <span class="highlight">ENABLED</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Security/Wallets Page -->
+                    <div class="gallery-item">
+                        <a href="./GAMBLER Scam Investigation - Verified Report_files/frame_0036.png" target="_blank" onclick="openLightbox(&#39;screenshots/frame_0036.png&#39;); return false;">
+                            <img src="./GAMBLER Scam Investigation - Verified Report_files/frame_0036.png" alt="Wallet Configuration">
+                        </a>
+                        <div class="gallery-info">
+                            <h4><span class="frame-num">Frame 036</span> Multi-Chain Wallets</h4>
+                            <p>Security settings showing all scammer wallet addresses across 8 blockchains.</p>
+                            <ul class="evidence-list">
+                                <li>BTC: <span class="highlight">bc1q98hlr5k4xllvwj0fzsxulg87mqwf...</span></li>
+                                <li>ETH/ERC20: 0x8C4E00Fa81F495466eED929D8D</li>
+                                <li>TRC20: TLupaQfHbZZyJCW9qWHmwLascy</li>
+                                <li>XRP: rPzYMbVBUnVx24agniojutSXubisnQ</li>
+                                <li>Note: "Кошелек BTC в панели заканчивается на 9lct"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Victim Profile -->
+                    <div class="gallery-item">
+                        <a href="./GAMBLER Scam Investigation - Verified Report_files/frame_0045.png" target="_blank" onclick="openLightbox(&#39;screenshots/frame_0045.png&#39;); return false;">
+                            <img src="./GAMBLER Scam Investigation - Verified Report_files/frame_0045.png" alt="Victim Profile">
+                        </a>
+                        <div class="gallery-info">
+                            <h4><span class="frame-num">Frame 045</span> Victim Profile Detail</h4>
+                            <p>Detailed victim profile showing personal data and transaction history.</p>
+                            <ul class="evidence-list">
+                                <li>Email: <span class="highlight">ianbailor@icloud.com</span></li>
+                                <li>Country: US</li>
+                                <li>Domain: vencaz.com</li>
+                                <li>Deposits: <span class="highlight">$45.26</span></li>
+                                <li>Promo code: rxt</li>
+                                <li>IP tracked: 2600:1002:a102:5a9f:7d14:dbef:51ec:8418</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Blockchain TX 1 -->
+                    <div class="gallery-item">
+                        <a href="./GAMBLER Scam Investigation - Verified Report_files/frame_0055.png" target="_blank" onclick="openLightbox(&#39;screenshots/frame_0055.png&#39;); return false;">
+                            <img src="./GAMBLER Scam Investigation - Verified Report_files/frame_0055.png" alt="Blockchain Transaction 1">
+                        </a>
+                        <div class="gallery-info">
+                            <h4><span class="frame-num">Frame 055</span> Blockchain Evidence #1</h4>
+                            <p>Blockchair showing verified Bitcoin transaction with 80/20 split pattern.</p>
+                            <ul class="evidence-list">
+                                <li>TX: <span class="highlight">ffbc345aa879f3d2...d679b930</span></li>
+                                <li>Block: 906,658 (16,700 confirmations)</li>
+                                <li>Input: 0.00158216 BTC ($185.83)</li>
+                                <li>Output 0: 0.0012627 BTC → Scammer (80%)</li>
+                                <li>Output 1: 0.00031644 BTC → Fee split (20%)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Blockchain TX 2 -->
+                    <div class="gallery-item">
+                        <a href="./GAMBLER Scam Investigation - Verified Report_files/frame_0060.png" target="_blank" onclick="openLightbox(&#39;screenshots/frame_0060.png&#39;); return false;">
+                            <img src="./GAMBLER Scam Investigation - Verified Report_files/frame_0060.png" alt="Blockchain Transaction 2">
+                        </a>
+                        <div class="gallery-info">
+                            <h4><span class="frame-num">Frame 060</span> Blockchain Evidence #2</h4>
+                            <p>Another verified transaction showing funds flowing to scammer wallets.</p>
+                            <ul class="evidence-list">
+                                <li>TX: <span class="highlight">381c51622728b8ae...132d5b6</span></li>
+                                <li>Block: 906,817 (16,541 confirmations)</li>
+                                <li>Input: 0.00080253 BTC ($96.27)</li>
+                                <li>Output to PRIMARY wallet: $76.29</li>
+                                <li>Output to FEE wallet: $19.25</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Blockchain TX 3 -->
+                    <div class="gallery-item">
+                        <a href="./GAMBLER Scam Investigation - Verified Report_files/frame_0130.png" target="_blank" onclick="openLightbox(&#39;screenshots/frame_0130.png&#39;); return false;">
+                            <img src="./GAMBLER Scam Investigation - Verified Report_files/frame_0130.png" alt="Blockchain Transaction 3">
+                        </a>
+                        <div class="gallery-info">
+                            <h4><span class="frame-num">Frame 130</span> Blockchain Evidence #3</h4>
+                            <p>Largest captured transaction showing significant theft.</p>
+                            <ul class="evidence-list">
+                                <li>TX: <span class="highlight">54194af6ac545b93...89d9c14f</span></li>
+                                <li>Block: 906,473 (16,885 confirmations)</li>
+                                <li>Input: <span class="highlight">0.0025016 BTC ($293.32)</span></li>
+                                <li>Output 0: $234.47 → SECONDARY wallet</li>
+                                <li>Output 1: $58.66 → FEE wallet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Timeline -->
+                <div class="timeline-section">
+                    <h3>📹 Video Timeline Analysis</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="time">00:00 - 00:15</span>
+                            <h4>Telegram Evidence (Frames 0-9)</h4>
+                            <p>Video begins with Telegram chat showing GAMBLER channel, Dubai Squad group, and admin confession about the scam operation. Admin mentions changing wallets and accumulated funds.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">00:15 - 00:45</span>
+                            <h4>Admin Panel Login &amp; Dashboard (Frames 10-27)</h4>
+                            <p>Operator logs into gambler-partners.is admin panel as user "werean" with 80% cut. Dashboard shows total deposits of $2,617,301.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">00:45 - 01:30</span>
+                            <h4>Deposits List - All Pages (Frames 28-50)</h4>
+                            <p>Scrolling through deposits page showing 12,114 victim deposits across 1,212 pages. Each entry shows email, amount, crypto type, domain, and timestamp.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">01:30 - 02:15</span>
+                            <h4>Victim Profiles (Frames 51-80)</h4>
+                            <p>Individual victim profiles showing detailed info: email, country, IP addresses, deposit amounts, promo codes used, and assigned wallet addresses for each victim.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">02:15 - 03:00</span>
+                            <h4>Settings &amp; Configuration (Frames 81-110)</h4>
+                            <p>Complete settings page showing the scam configuration: $50 min deposit, $5,000 min withdrawal trap, slot manipulation toggle, drainer settings, and error message templates.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">03:00 - 03:45</span>
+                            <h4>Security &amp; Wallets (Frames 111-140)</h4>
+                            <p>Security settings showing all 8 blockchain wallet addresses configured for receiving stolen funds. 2FA settings and password management visible.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">03:45 - 04:30</span>
+                            <h4>Blockchain Verification (Frames 141-200)</h4>
+                            <p>Blockchair.com pages showing verified Bitcoin transactions with full hashes, block numbers, confirmations, and the 80/20 split pattern to scammer wallets.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">04:30 - END</span>
+                            <h4>Additional Evidence (Frames 200-224)</h4>
+                            <p>More victim profiles, transaction history, and final wallet verification showing the massive scale of the operation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Evidence Summary -->
+                <div style="margin-top: 40px; padding: 24px; background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(255, 71, 87, 0.1)); border-radius: 16px; border: 1px solid rgba(168, 85, 247, 0.3);">
+                    <h3 style="color: var(--accent-purple); margin-bottom: 16px;">🔍 Key Evidence Summary</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <div>
+                            <h5 style="color: var(--accent-orange); margin-bottom: 8px;">Admin Panel</h5>
+                            <ul style="color: var(--text-secondary); font-size: 0.9rem; padding-left: 20px;">
+                                <li>URL: gambler-partners.is</li>
+                                <li>Admin user: werean</li>
+                                <li>Commission: 80%</li>
+                                <li>Total victims: 12,114+</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 style="color: var(--accent-orange); margin-bottom: 8px;">Financial Data</h5>
+                            <ul style="color: var(--text-secondary); font-size: 0.9rem; padding-left: 20px;">
+                                <li>Total stolen: $2,617,301</li>
+                                <li>Min deposit: $50</li>
+                                <li>Min withdrawal: $5,000 (impossible)</li>
+                                <li>Drainer: $100</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 style="color: var(--accent-orange); margin-bottom: 8px;">Verified Wallets</h5>
+                            <ul style="color: var(--text-secondary); font-size: 0.9rem; padding-left: 20px;">
+                                <li>3 BTC wallets confirmed</li>
+                                <li>6 verified transactions</li>
+                                <li>48,770+ total TX on wallets</li>
+                                <li>30+ BTC total received</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 style="color: var(--accent-orange); margin-bottom: 8px;">Fake Domains</h5>
+                            <ul style="color: var(--text-secondary); font-size: 0.9rem; padding-left: 20px;">
+                                <li>22+ casino domains</li>
+                                <li>All feed to central panel</li>
+                                <li>Active July-Sept 2025</li>
+                                <li>International victims</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="glass">
+            <div class="verified-badge">
+                ✓ All Blockchain Data Verified via mempool.space API
+            </div>
+            <p>Report generated from video frame analysis (224 frames)</p>
+            <p>Data verified: January 2026</p>
+            <p style="margin-top: 16px; color: var(--accent-red); font-weight: 600;">
+                For law enforcement and fraud investigation purposes only
+            </p>
+        </footer>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">×</span>
+        <img id="lightbox-img" src="https://phishdestroy.io/gambler/" alt="Full size image">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+
+</body></html>

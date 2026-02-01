@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMBLER Panel — Fake Casino Scam Network | ScamIntelLogs</title>
+    <meta name="description" content="Full intelligence report on GAMBLER Panel fake casino SaaS. $50M+ stolen, 5,515 domains, 2M+ victims, 6,000 affiliates. KrebsOnSecurity coverage. Channel dumps with evidence.">
+    <meta property="og:title" content="GAMBLER Panel — $50M+ Fake Casino Scam Network Exposed">
+    <meta property="og:description" content="5,515 domains, $50M+ deposits, 2M victims, 6K affiliates. Full Telegram channel dumps and panel evidence.">
+    <meta property="og:image" content="https://destroyico.pages.dev/assets/android-chrome-512x512.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Phish_Destroy">
+    <link rel="icon" type="image/x-icon" href="https://destroyico.pages.dev/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://destroyico.pages.dev/assets/favicon-32x32.png">
+    <meta name="theme-color" content="#0a0a1a">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#0c0c1e 0%,#1a1a3e 50%,#0a0a1a 100%);background-attachment:fixed}
+        .grad-text{background:linear-gradient(135deg,#ff4757,#ffa502,#ff6b81);-webkit-background-clip:text;background-clip:text;color:transparent}
+        .grad-green{background:linear-gradient(135deg,#2ed573,#7bed9f);-webkit-background-clip:text;background-clip:text;color:transparent}
+        .card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;backdrop-filter:blur(12px)}
+        .card:hover{border-color:rgba(255,255,255,0.15)}
+        .glow{box-shadow:0 0 40px rgba(255,71,87,0.15)}
+        .tag{display:inline-block;padding:3px 12px;border-radius:9999px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+        .stat-num{font-size:2.5rem;font-weight:900;line-height:1}
+        .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+        .img-card{border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s}
+        .img-card:hover{transform:scale(1.02);box-shadow:0 8px 30px rgba(0,0,0,.5)}
+        .img-card img{width:100%;display:block}
+        #lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:999;align-items:center;justify-content:center;cursor:zoom-out}
+        #lightbox.active{display:flex}
+        #lightbox img{max-width:95vw;max-height:95vh;border-radius:8px}
+        .domain-cloud{display:flex;flex-wrap:wrap;gap:4px;max-height:300px;overflow-y:auto}
+        .domain-cloud span{font-size:.6rem;padding:2px 6px;background:rgba(255,71,87,.1);border:1px solid rgba(255,71,87,.2);border-radius:4px;color:#ff6b81;font-family:monospace}
+        .quote{border-left:3px solid #ff4757;padding-left:16px;margin:12px 0;color:rgba(255,255,255,.6);font-style:italic}
+        .media-link{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:12px;transition:all .2s}
+        .media-link:hover{background:rgba(255,255,255,.06)}
+        .tl{border-left:2px solid rgba(255,71,87,.3);padding-left:16px;margin-left:8px}
+        .tl-item{position:relative;padding-bottom:12px}
+        .tl-item::before{content:'';position:absolute;left:-21px;top:6px;width:10px;height:10px;border-radius:50%;background:#ff4757}
+        .scroll-box{max-height:500px;overflow-y:auto}
+        .scroll-box::-webkit-scrollbar{width:5px}
+        .scroll-box::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
+        .inf-row{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.05);padding:6px 0;font-size:.75rem}
+        .msg-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:14px 16px;margin-bottom:8px}
+        .msg-ru{color:rgba(255,255,255,.4);font-size:.7rem;line-height:1.5;font-style:italic}
+        .msg-en{color:rgba(255,255,255,.85);font-size:.78rem;line-height:1.5;margin-top:4px}
+        .msg-date{font-size:.6rem;color:rgba(255,255,255,.25);font-family:monospace}
+        .msg-label{font-size:.55rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:1px 6px;border-radius:4px;display:inline-block;margin-left:6px}
+        .urlscan-domain{font-size:.7rem;padding:4px 8px;background:rgba(255,71,87,.08);border:1px solid rgba(255,71,87,.15);border-radius:6px;color:#ff6b81;font-family:monospace;display:inline-block}
+        .urlscan-domain:hover{background:rgba(255,71,87,.2);border-color:rgba(255,71,87,.4)}
+
+        /* Modal system */
+        .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:100;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s ease;padding:20px}
+        .modal-overlay.open{opacity:1;pointer-events:auto}
+        .modal-box{background:linear-gradient(135deg,#0e0e24,#141432,#0e0e24);border:1px solid rgba(255,255,255,.1);border-radius:20px;max-width:900px;width:100%;max-height:85vh;overflow-y:auto;transform:scale(.95) translateY(20px);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:0 24px 80px rgba(0,0,0,.6),0 0 40px rgba(255,71,87,.08)}
+        .modal-overlay.open .modal-box{transform:scale(1) translateY(0)}
+        .modal-header{position:sticky;top:0;z-index:10;background:linear-gradient(135deg,#0e0e24,#141432);padding:20px 24px 16px;border-bottom:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center}
+        .modal-header h3{font-size:1.1rem;font-weight:800;color:#fff}
+        .modal-close{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:#9ca3af;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;font-size:16px}
+        .modal-close:hover{background:rgba(255,71,87,.15);border-color:rgba(255,71,87,.3);color:#ff4757}
+        .modal-body{padding:24px}
+        .modal-body::-webkit-scrollbar{width:5px}
+        .modal-body::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
+
+        /* Quick-open card triggers */
+        .popup-trigger{cursor:pointer;position:relative;overflow:hidden}
+        .popup-trigger::after{content:'';position:absolute;top:8px;right:8px;width:24px;height:24px;background:rgba(255,255,255,.08);border-radius:6px;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s}
+        .popup-trigger:hover::after{opacity:1}
+        .popup-trigger:hover{border-color:rgba(255,71,87,.3)!important;box-shadow:0 0 30px rgba(255,71,87,.08)}
+        .popup-icon{position:absolute;top:10px;right:10px;width:20px;height:20px;border-radius:5px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .25s}
+        .popup-trigger:hover .popup-icon{opacity:1}
+
+        /* API endpoint styling in modal */
+        .api-endpoint{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:12px 16px;margin-bottom:8px;transition:border-color .2s}
+        .api-endpoint:hover{border-color:rgba(255,71,87,.2)}
+        .api-method{font-size:.65rem;font-weight:800;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.5px;font-family:monospace}
+        .api-method.get{background:rgba(34,197,94,.15);color:#22c55e}
+        .api-method.post{background:rgba(59,130,246,.15);color:#3b82f6}
+        .api-method.patch{background:rgba(234,179,8,.15);color:#eab308}
+        .api-method.delete{background:rgba(239,68,68,.15);color:#ef4444}
+        .api-path{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#d1d5db;margin-left:8px}
+    </style>
+</head>
+<body class="text-gray-300 min-h-screen">
+<div id="lightbox" onclick="this.classList.remove('active')"><img id="lb-img" src="" alt=""></div>
+
+<!-- Modal overlay -->
+<div id="modal" class="modal-overlay" onclick="if(event.target===this)closeModal()">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h3 id="modalTitle"></h3>
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- Nav -->
+    <a href="../" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8 text-sm transition-colors">
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+        Back to ScamIntelLogs
+    </a>
+
+    <!-- Header -->
+    <div class="text-center mb-12 reveal">
+        <h1 class="text-5xl sm:text-7xl font-black tracking-tight grad-text mb-3" style="filter:drop-shadow(0 0 30px rgba(255,71,87,.4))">GAMBLER</h1>
+        <p class="text-xl text-gray-400 mb-1">"A soulless project that is made for profit"</p>
+        <p class="text-sm text-gray-500 mb-5">Fake Casino SaaS &mdash; <a href="https://wiki.gambler-partners.is" target="_blank" class="text-blue-400 hover:text-blue-300">gambler-partners.is</a> &mdash; URLScan: <a href="https://urlscan.io/search/#hash%3A234f1a89ac1c64f2b60e7b7aaf30d3ec2cd97acd3f5fc844f4f55256eccaf843" target="_blank" class="text-blue-400 hover:text-blue-300">hash fingerprint</a> | <a href="https://urlscan.io/search/#page.title%3A%22Most%20Popular%20Online%20Crypto%20Casino%20Based%20on%20Blockchain%22" target="_blank" class="text-blue-400 hover:text-blue-300">page title fingerprint</a></p>
+        <div class="flex justify-center gap-2 flex-wrap">
+            <span class="tag bg-red-500/20 text-red-400">Fake Casino Engine</span>
+            <span class="tag bg-orange-500/20 text-orange-400">5,515 Domains</span>
+            <span class="tag bg-pink-500/20 text-pink-400">WalletConnect Drainer</span>
+            <span class="tag bg-purple-500/20 text-purple-400">6K+ Partners</span>
+            <span class="tag bg-yellow-500/20 text-yellow-400">2M+ Victims</span>
+            <span class="tag bg-green-500/20 text-green-400">$50M+ Deposits</span>
+            <span class="tag bg-blue-500/20 text-blue-400">GAMBLER AI</span>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10 reveal">
+        <div class="card p-5 text-center glow"><div class="stat-num grad-text">$50M+</div><div class="text-xs text-gray-500 mt-1">Total Deposits (admitted)</div></div>
+        <div class="card p-5 text-center"><div class="stat-num text-orange-400">5,515</div><div class="text-xs text-gray-500 mt-1">Scam Domains</div></div>
+        <div class="card p-5 text-center"><div class="stat-num text-pink-400">2M+</div><div class="text-xs text-gray-500 mt-1">Registered Victims</div></div>
+        <div class="card p-5 text-center"><div class="stat-num text-purple-400">6K+</div><div class="text-xs text-gray-500 mt-1">Partners/Affiliates</div></div>
+    </div>
+
+    <!-- Media Coverage -->
+    <div class="card p-6 mb-10 glow reveal">
+        <h2 class="text-lg font-bold text-white mb-4">Media Coverage</h2>
+        <div class="space-y-1">
+            <a href="https://krebsonsecurity.com/2025/08/affiliates-flock-to-soulless-scam-gambling-machine/" target="_blank" class="media-link border border-gray-800/50 rounded-lg"><div class="w-8 h-8 rounded bg-red-500/20 flex items-center justify-center text-red-400 font-black text-xs flex-shrink-0">K</div><div><div class="text-sm font-semibold text-white">KrebsOnSecurity</div><div class="text-xs text-gray-500">Affiliates Flock to 'Soulless' Scam Gambling Machine &mdash; Aug 2025</div></div></a>
+            <a href="https://www.casino.org/news/russian-criminals-build-scalable-affiliate-network-for-slick-crypto-gambling-scams/" target="_blank" class="media-link border border-gray-800/50 rounded-lg"><div class="w-8 h-8 rounded bg-orange-500/20 flex items-center justify-center text-orange-400 font-black text-xs flex-shrink-0">C</div><div><div class="text-sm font-semibold text-white">Casino.org</div><div class="text-xs text-gray-500">Russian Criminals Build Scalable Affiliate Network for Slick Crypto Gambling Scams</div></div></a>
+            <a href="https://the420.in/russian-gambler-panel-fake-casino-scam-cryptocurrency-fraud-social-media/" target="_blank" class="media-link border border-gray-800/50 rounded-lg"><div class="w-8 h-8 rounded bg-yellow-500/20 flex items-center justify-center text-yellow-400 font-black text-xs flex-shrink-0">4</div><div><div class="text-sm font-semibold text-white">The420.in</div><div class="text-xs text-gray-500">From Instagram Ads to Empty Wallets: How 'Gambler Panel' Turns Social Media Into a Crypto Theft Machine</div></div></a>
+            <a href="https://www.technadu.com/gambler-panel-scam-operations-with-affiliate-network-target-victims-through-fake-online-casinos/607451/" target="_blank" class="media-link border border-gray-800/50 rounded-lg"><div class="w-8 h-8 rounded bg-blue-500/20 flex items-center justify-center text-blue-400 font-black text-xs flex-shrink-0">T</div><div><div class="text-sm font-semibold text-white">TechNadu</div><div class="text-xs text-gray-500">Gambler Panel Scam Targets Crypto Users Through Fake Casinos</div></div></a>
+            <a href="https://www.scamadviser.com/check-website/wiki.gambler-partners.is" target="_blank" class="media-link border border-gray-800/50 rounded-lg"><div class="w-8 h-8 rounded bg-pink-500/20 flex items-center justify-center text-pink-400 font-black text-xs flex-shrink-0">S</div><div><div class="text-sm font-semibold text-white">ScamAdviser</div><div class="text-xs text-gray-500">Trust Score: 0/100 &mdash; "Very Likely Unsafe"</div></div></a>
+        </div>
+    </div>
+
+    <!-- What is GAMBLER -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">What is GAMBLER Panel?</h2>
+        <p class="text-sm text-gray-400 leading-relaxed mb-4"><strong class="text-white">GAMBLER</strong> is a Russian-language <strong class="text-white">Scam-as-a-Service (SaaS)</strong> fake casino platform. Active since <strong class="text-white">August 2024</strong>, it provides turnkey fraudulent casino websites to 6,000+ affiliates. Admins admitted to <strong class="text-red-400">$50 million+ in deposits in one year</strong> from the "blue" design alone, with <strong class="text-red-400">"all deposits going one way"</strong> (victims never get money back). Their stated goal is <strong class="text-white">$2 billion in deposits</strong>.</p>
+        <div class="grid sm:grid-cols-3 gap-3 text-xs mb-4">
+            <div class="bg-red-500/10 rounded-lg p-3"><strong class="text-red-400">Fake casino engine:</strong> Custom-built from scratch with rigged slots ("automatic spin-up/spin-down"). $50 min deposit, $5,000 min withdrawal trap.</div>
+            <div class="bg-orange-500/10 rounded-lg p-3"><strong class="text-orange-400">WalletConnect drainer:</strong> Launched Feb 24, 2025. Drains entire crypto wallet. Partner got $90K from single victim. Supports BTC, LTC, TRON, BSC.</div>
+            <div class="bg-pink-500/10 rounded-lg p-3"><strong class="text-pink-400">GAMBLER AI:</strong> Launched May 2025 after 6 months dev. Fully automated AI live support that manipulates victims into re-depositing. "Squeezed him until he deposited."</div>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-3 text-xs mb-4">
+            <div class="bg-purple-500/10 rounded-lg p-3"><strong class="text-purple-400">Country tiers:</strong> Different scam amounts by country wealth. US: $17,580/1000 registrations. Canada: $16,900. EU: $11,340.</div>
+            <div class="bg-yellow-500/10 rounded-lg p-3"><strong class="text-yellow-400">150+ landing pages:</strong> Celebrity themes (Messi, Drake, Musk, Ronaldo, Trump), game themes, explicit/porn designs. Deepfake endorsements.</div>
+            <div class="bg-green-500/10 rounded-lg p-3"><strong class="text-green-400">Anti-detection:</strong> Pre-written counter-phishing template targeting <strong class="text-white">@PhishDestroy_bot</strong> by name. Abuse-resistant registrars (nicenic.net).</div>
+        </div>
+        <div class="quote">"In one year, the volume of deposits exceeded <strong>$50 million</strong>. Even for a regular casino these are significant results, but remember that on our project <strong>all deposits go in one direction</strong>." &mdash; Aug 27, 2025</div>
+        <div class="quote">"We completely rewrote Pragmatic slots... our own slots with <strong>automatic spin-up/spin-down</strong>. Such slots exist nowhere else." &mdash; Jan 6, 2025</div>
+        <div class="quote">"The user would have annoyed a live support agent and been sent to blacklist, but <strong>GAMBLER AI squeezed him until he deposited</strong>." &mdash; Sep 15, 2025</div>
+    </div>
+
+    <!-- How the Scam Works -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">How the Scam Works</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
+            <div class="bg-gradient-to-b from-blue-500/10 to-transparent rounded-lg p-4 border border-blue-500/20"><div class="text-blue-400 font-bold mb-2">1. Social Media Ad</div><p class="text-gray-400">Instagram/TikTok/Discord ads: "Exclusive celebrity partnership. Get $2,500 free credit with promo code!"</p></div>
+            <div class="bg-gradient-to-b from-green-500/10 to-transparent rounded-lg p-4 border border-green-500/20"><div class="text-green-400 font-bold mb-2">2. Rigged Wins</div><p class="text-gray-400">Victim plays rigged slots. Engine shows fake wins via "automatic spin-up." Balance grows. Wants to withdraw.</p></div>
+            <div class="bg-gradient-to-b from-yellow-500/10 to-transparent rounded-lg p-4 border border-yellow-500/20"><div class="text-yellow-400 font-bold mb-2">3. Verification Trap</div><p class="text-gray-400">"Deposit ~$100 to verify identity." Fake ToS with %sum_verif% variables. Withdrawal reminder popup every 3 hours.</p></div>
+            <div class="bg-gradient-to-b from-orange-500/10 to-transparent rounded-lg p-4 border border-orange-500/20"><div class="text-orange-400 font-bold mb-2">4. AI Re-Deposit</div><p class="text-gray-400">GAMBLER AI "closes objections" 24/7. 80% repeat deposit rate. Victim keeps depositing for weeks/months.</p></div>
+            <div class="bg-gradient-to-b from-red-500/10 to-transparent rounded-lg p-4 border border-red-500/20"><div class="text-red-400 font-bold mb-2">5. Wallet Drain</div><p class="text-gray-400">Final: "Connect wallet to withdraw." WalletConnect drains all crypto. Record: $90K single drain.</p></div>
+        </div>
+    </div>
+
+    <!-- Infrastructure -->
+    <div class="card p-6 mb-10 reveal popup-trigger" onclick="openModal('infra')">
+        <div class="popup-icon"><svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg></div>
+        <h2 class="text-lg font-bold text-white mb-4">Infrastructure</h2>
+        <div class="grid sm:grid-cols-2 gap-6 text-xs">
+            <div class="space-y-1">
+                <div class="inf-row"><span class="text-gray-500">Current panel</span><a href="https://wiki.gambler-partners.is" target="_blank" class="text-blue-400">gambler-partners.is</a></div>
+                <div class="inf-row"><span class="text-gray-500">Previous panels</span><span class="text-white">gambler-panel.com &rarr; gambler-work.com</span></div>
+                <div class="inf-row"><span class="text-gray-500">Mirrors</span><span class="text-white">gambler1.com, gambler2.com</span></div>
+                <div class="inf-row"><span class="text-gray-500">Landing</span><a href="https://gambler-partners.is/land" target="_blank" class="text-blue-400">gambler-partners.is/land</a></div>
+                <div class="inf-row"><span class="text-gray-500">Bot</span><span class="text-white">@gambler_panel_bot</span></div>
+                <div class="inf-row"><span class="text-gray-500">Lolzteam</span><a href="https://lolz.live/threads/5918290" target="_blank" class="text-blue-400">lolz.live/threads/5918290</a> (400K+ views)</div>
+                <div class="inf-row"><span class="text-gray-500">Lolzteam owners</span><span class="text-red-400">FSB-affiliated, presumably taking a cut</span></div>
+                <div class="inf-row"><span class="text-gray-500">Est. revenue</span><span class="text-red-400 font-bold">$10M+</span></div>
+                <div class="inf-row"><span class="text-gray-500">URLScan hash</span><a href="https://urlscan.io/search/#hash%3A234f1a89ac1c64f2b60e7b7aaf30d3ec2cd97acd3f5fc844f4f55256eccaf843" target="_blank" class="text-blue-400 font-mono text-[10px]">234f1a89...af843</a></div>
+                <div class="inf-row"><span class="text-gray-500">URLScan title</span><a href="https://urlscan.io/search/#page.title%3A%22Most%20Popular%20Online%20Crypto%20Casino%20Based%20on%20Blockchain%22" target="_blank" class="text-blue-400 text-[10px]">"Most Popular Online Crypto Casino..."</a></div>
+            </div>
+            <div class="space-y-1">
+                <div class="inf-row"><span class="text-gray-500">Hosting</span><span class="text-white">Cloudflare (104.18.40.47)</span></div>
+                <div class="inf-row"><span class="text-gray-500">Backend</span><span class="text-white">GitBook (a7d824dd01-hosting.gitbook.io)</span></div>
+                <div class="inf-row"><span class="text-gray-500">Domain registered</span><span class="text-white">Sep 29, 2025</span></div>
+                <div class="inf-row"><span class="text-gray-500">Recommended registrar</span><span class="text-white">nicenic.net (abuse-resistant)</span></div>
+                <div class="inf-row"><span class="text-gray-500">Demo domains</span><span class="text-white">newdemogreen.com, demodonald.cc, demoelon.cc</span></div>
+                <div class="inf-row"><span class="text-gray-500">Crypto support</span><span class="text-white">BTC, LTC, TRX/USDT-TRC20, BNB/USDT-BEP20</span></div>
+                <div class="inf-row"><span class="text-gray-500">ScamAdviser</span><span class="text-red-400 font-bold">0/100</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Actors -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Key Actors (TSA Intelligence)</h2>
+    <div class="grid sm:grid-cols-2 gap-4 mb-10 reveal">
+        <div class="card p-5 glow">
+            <div class="flex items-start gap-3 mb-3">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-white font-black text-lg flex-shrink-0">G</div>
+                <div><h3 class="text-sm font-bold text-white">ID: 8124198200</h3><p class="text-xs text-gray-500">@gamblerworkmain</p></div>
+                <span class="tag bg-red-500/20 text-red-400 ml-auto">ADMIN</span>
+            </div>
+            <div class="text-xs space-y-1">
+                <div><span class="text-gray-500">Name:</span> <span class="text-white">G A M B L E R Channels</span></div>
+                <div><span class="text-gray-500">Active:</span> Mar 2025 &mdash; Jan 2026 (38 msg, 3 groups)</div>
+                <div><span class="text-gray-500">Channels:</span> @gambler_tech, @gambler_info</div>
+                <div><span class="text-gray-500">Groups:</span> Хостер обзор, TraFFeeQ Chat, ХРОНИКИ LOLZ</div>
+                <div><span class="text-gray-500">Prev handle:</span> @gamblerwork (deleted Mar 19, 2025)</div>
+            </div>
+        </div>
+        <div class="card p-5 glow">
+            <div class="flex items-start gap-3 mb-3">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-black text-lg flex-shrink-0">L</div>
+                <div><h3 class="text-sm font-bold text-white">ID: 7916076811</h3><p class="text-xs text-gray-500">@lord_gamb</p></div>
+                <span class="tag bg-purple-500/20 text-purple-400 ml-auto">OPERATOR</span>
+            </div>
+            <div class="text-xs space-y-1">
+                <div><span class="text-gray-500">Name:</span> <span class="text-white">LORD</span></div>
+                <div><span class="text-gray-500">Role:</span> Technical + general questions</div>
+                <div><span class="text-gray-500">Prev handle:</span> @lordgambler (changed Dec 17, 2024)</div>
+                <div><span class="text-gray-500">Note:</span> Leaked panel credentials in Telegram bio</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Affiliate structure -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">Affiliate Structure</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+            <div class="bg-yellow-500/10 rounded-lg p-3"><strong class="text-yellow-400">70% cut:</strong> Affiliates keep up to 70%. Min $10/verified deposit. 6,000+ partners. Telegram group: ~2,500 active.</div>
+            <div class="bg-red-500/10 rounded-lg p-3"><strong class="text-red-400">Lolzteam:</strong> Thread lolz.live/threads/5918290 with 400K+ views. Pays for placement. Recruits from traffic arbitrage forums.</div>
+            <div class="bg-blue-500/10 rounded-lg p-3"><strong class="text-blue-400">Full toolkit:</strong> 150+ landings, ad templates, chat scripts, Instagram/TikTok tactics, Facebook Pixel, Google Tag events, WebSocket API for team leaders.</div>
+            <div class="bg-purple-500/10 rounded-lg p-3"><strong class="text-purple-400">Scams partners too:</strong> "Dubai Squad" team caught stealing $500K-$800K from own workers by hiding repeat deposits (2.5x discrepancy).</div>
+        </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">Timeline (from channel dumps)</h2>
+        <div class="scroll-box">
+            <div class="tl text-xs space-y-0">
+                <div class="tl-item"><span class="text-gray-500">Aug 2024</span> &mdash; <span class="text-white">Project launched</span>, Lolzteam thread posted</div>
+                <div class="tl-item"><span class="text-gray-500">Sep 2024</span> &mdash; First slots: Sugar Rush, Pragmatic replicas (Sweet Bonanza, Gates of Olympus, Dog House)</div>
+                <div class="tl-item"><span class="text-gray-500">Oct 2024</span> &mdash; <span class="text-yellow-400">1,700 subscribers</span>, deposit notification bot, live support added</div>
+                <div class="tl-item"><span class="text-gray-500">Nov 2024</span> &mdash; <span class="text-yellow-400">3,000+ subscribers</span>, 400K lolz views. BTC/LTC support. Facebook Pixel. WebSocket API.</div>
+                <div class="tl-item"><span class="text-gray-500">Dec 2024</span> &mdash; TRON + BSC deposits. Panel moved to <span class="text-blue-400">gambler-panel.com</span>. "Verification error" trap. Promo codes.</div>
+                <div class="tl-item"><span class="text-gray-500">Dec 31, 2024</span> &mdash; Admitted: <span class="text-red-400">6,000+ partners, 2,000,000+ victims, "highest conversion in history of fake projects"</span></div>
+                <div class="tl-item"><span class="text-gray-500">Jan 2025</span> &mdash; Announced WalletConnect drainer: "Profits of $50-100k will not be a problem"</div>
+                <div class="tl-item"><span class="text-gray-500">Feb 10, 2025</span> &mdash; Complete source code rewrite. "More online users than Stake casino"</div>
+                <div class="tl-item"><span class="text-gray-500">Feb 24, 2025</span> &mdash; <span class="text-red-400 font-bold">WALLET CONNECT DRAIN LAUNCHED</span>. Partner got $90K single drain.</div>
+                <div class="tl-item"><span class="text-gray-500">Mar 2025</span> &mdash; 3D games (Chicken Cross, Aviamasters). Custom landings. Fake license pages.</div>
+                <div class="tl-item"><span class="text-gray-500">Mar 19</span> &mdash; All admin accounts deleted, re-created as @gamblerworkmain + @lord_gamb</div>
+                <div class="tl-item"><span class="text-gray-500">Apr 2025</span> &mdash; Country-tiered scam amounts (Tier 1/2/3 by GDP)</div>
+                <div class="tl-item"><span class="text-gray-500">May 2025</span> &mdash; <span class="text-red-400 font-bold">GAMBLER AI LAUNCHED</span> &mdash; fully automated victim manipulation chatbot</div>
+                <div class="tl-item"><span class="text-gray-500">Jun 2025</span> &mdash; Hacksaw Gaming slots. Landing page: gambler-partners.is/land</div>
+                <div class="tl-item"><span class="text-gray-500">Jul 2025</span> &mdash; Exposed "Dubai Squad" stealing $500K-$800K from workers. DDoS attacks.</div>
+                <div class="tl-item"><span class="text-gray-500">Aug 27, 2025</span> &mdash; <span class="text-red-400 font-bold">ADMITTED $50M+ DEPOSITS IN 1 YEAR</span>. "All deposits go one way." Goal: $2 BILLION. New green design.</div>
+                <div class="tl-item"><span class="text-gray-500">Sep 2025</span> &mdash; $5M deposits in 2 weeks from new design. US=$17,580/1000 regs. Panel &rarr; gambler-partners.is</div>
+                <div class="tl-item"><span class="text-gray-500">Oct 2025</span> &mdash; Record daily deposits. "Withdrawal reminder" popup every 3h. Google Tag events.</div>
+                <div class="tl-item"><span class="text-gray-500">Nov 2025</span> &mdash; Recommended <span class="text-blue-400">nicenic.net</span> registrar. Anti-PhishDestroy counter-phishing template.</div>
+                <div class="tl-item"><span class="text-gray-500">Dec 2025</span> &mdash; <span class="text-yellow-400">Trump + Elon Musk casino designs</span> (demodonald.cc, demoelon.cc). 150+ landings. Adjustable slot rigging.</div>
+                <div class="tl-item"><span class="text-gray-500">Jan 2026</span> &mdash; Bank card deposits added. Operation continues.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Channel Messages with Translations -->
+    <div class="card p-6 mb-10 reveal popup-trigger" onclick="openModal('messages')">
+        <div class="popup-icon"><svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg></div>
+        <h2 class="text-lg font-bold text-white mb-2">Channel Messages (Original + Translation)</h2>
+        <p class="text-xs text-gray-500 mb-4">Key messages from GAMBLER Telegram channels. Click to expand. Full dumps: <a href="GAMBLER NEWS/messages.html" class="text-blue-400" onclick="event.stopPropagation()">GAMBLER NEWS</a> | <a href="GAMBLER - Технические новости/messages.html" class="text-blue-400" onclick="event.stopPropagation()">Tech News</a></p>
+        <div class="scroll-box" style="max-height:700px">
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2024-08-03 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span></div>
+                <div class="msg-ru">Здравствуйте, наш канал создан для обзора лучших партнерских программ, которые работают под фейковое казино.</div>
+                <div class="msg-en"><strong>Hello, our channel was created to review the best affiliate programs that operate fake casinos.</strong></div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2024-09-03 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span></div>
+                <div class="msg-ru">Мы написали с нуля свои собственные слоты с автоматической подкруткой/раскруткой. Таких слотов нет нигде.</div>
+                <div class="msg-en"><strong>We wrote our own slots from scratch with automatic spin-up/spin-down. Such slots exist nowhere else.</strong> Completely rewrote Pragmatic Play replicas: Sugar Rush, Sweet Bonanza, Gates of Olympus, Dog House. Custom outcome manipulation engine built-in.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2024-10-14 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span></div>
+                <div class="msg-ru">1700 подписчиков! Добавлена система уведомлений о каждом депозите и живой чат поддержки.</div>
+                <div class="msg-en"><strong>1,700 subscribers!</strong> Deposit notification system added for every deposit. Live support chat integrated. Fake casino getting major traction.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2024-11-06 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span></div>
+                <div class="msg-ru">3000+ подписчиков и более 400К просмотров на ветке Lolzteam. BTC и LTC пополнения. Facebook Pixel. WebSocket API для тимлидов.</div>
+                <div class="msg-en"><strong>3,000+ subscribers, 400K+ views on Lolzteam thread.</strong> BTC &amp; LTC deposits added. Facebook Pixel tracking. WebSocket API for team leaders to manage affiliates.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2024-12-31 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span> <span class="msg-label bg-yellow-500/20 text-yellow-400">KEY</span></div>
+                <div class="msg-ru">Мы достигли самой высокой конверсии в истории фейковых проектов. У нас более 6 000 партнёров и более 2 000 000 зарегистрированных пользователей.</div>
+                <div class="msg-en"><strong>"We achieved the highest conversion rate in the history of fake projects. We have over 6,000 partners and over 2,000,000 registered users."</strong> Panel moved to gambler-panel.com. TRON &amp; BSC crypto deposits. "Verification error" deposit trap and promo code system operational.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ffa502">
+                <div class="msg-date">2025-01-06 <span class="msg-label bg-orange-500/20 text-orange-400">TECH NEWS</span></div>
+                <div class="msg-ru">Мы написали с нуля слоты Pragmatic Play с автоматической подкруткой/раскруткой. Мы долго готовили эту обнову, полностью переписали движок казино.</div>
+                <div class="msg-en"><strong>Completely rewrote Pragmatic Play slots from scratch with automatic spin-up/spin-down.</strong> Long-prepared update, entire casino engine rewritten. All slot outcomes are rigged with configurable manipulation thresholds.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2025-01-14 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span></div>
+                <div class="msg-ru">Wallet Connect Drain. Прибыли в 50-100к не будут проблемой.</div>
+                <div class="msg-en"><strong>WalletConnect Drain announced.</strong> "Profits of $50-100K will not be a problem." Drains entire crypto wallet when victim connects. Supports BTC, LTC, TRON, BSC chains.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2025-02-10 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span></div>
+                <div class="msg-ru">Полностью переписали код с нуля. Больше онлайн-пользователей чем у казино Stake.</div>
+                <div class="msg-en"><strong>Complete source code rewrite from scratch. "More online users than Stake casino."</strong> Full engine rebuild for scale.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2025-02-24 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span> <span class="msg-label bg-red-500/30 text-red-300">CRITICAL</span></div>
+                <div class="msg-ru">WALLET CONNECT DRAIN запущен. Партнер получил $90K с одного дрейна.</div>
+                <div class="msg-en"><strong>WALLETCONNECT DRAIN LAUNCHED.</strong> Partner reported $90K from a single wallet drain. Entire crypto wallets emptied when victims click "Connect Wallet to withdraw."</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ffa502">
+                <div class="msg-date">2025-04-20 <span class="msg-label bg-orange-500/20 text-orange-400">TECH NEWS</span></div>
+                <div class="msg-ru">Добавили страну в профиле юзера. Конверсия по странам: US=$17,580 / CA=$16,900 / AU=$14,300 / EU=$11,340 за 1000 регистраций.</div>
+                <div class="msg-en"><strong>Country-tiered scam targets added.</strong> Conversion rates per 1,000 registrations: US=$17,580 | Canada=$16,900 | Australia=$14,300 | EU=$11,340. Victims ranked by country wealth.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2025-05-19 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span> <span class="msg-label bg-purple-500/20 text-purple-400">AI</span></div>
+                <div class="msg-ru">GAMBLER AI запущен! Полностью автоматизированная AI-поддержка. 6 месяцев разработки. Юзер бы задолбал живого саппорта и отправился бы в ЧС, а GAMBLER AI выжал его до депозита.</div>
+                <div class="msg-en"><strong>GAMBLER AI LAUNCHED!</strong> Fully automated AI live support after 6 months of development. <strong>"The user would have annoyed a live support agent and been sent to blacklist, but GAMBLER AI squeezed him until he deposited."</strong> 24/7 automated victim manipulation.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2025-07-22 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span></div>
+                <div class="msg-ru">Команда Dubai Squad крала $500K-$800K у своих воркеров, скрывая повторные депозиты (разница в 2.5 раза).</div>
+                <div class="msg-en"><strong>Dubai Squad exposed stealing $500K-$800K from their own workers</strong> by hiding repeat deposits (2.5x discrepancy between actual and reported). Internal scam-within-a-scam.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2025-08-27 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span> <span class="msg-label bg-red-500/30 text-red-300">KEY ADMISSION</span></div>
+                <div class="msg-ru">За год объем депозитов превысил $50 миллионов. Даже для обычного казино это значительные результаты, но помните что на нашем проекте все депозиты идут в одну сторону. Наша цель - $2 миллиарда депозитов.</div>
+                <div class="msg-en"><strong>"In one year, the volume of deposits exceeded $50 million. Even for a regular casino these are significant results, but remember that on our project all deposits go in one direction."</strong> Goal announced: <strong>$2 BILLION in deposits</strong>. New green casino design launched.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2025-09-09 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span></div>
+                <div class="msg-ru">$5 миллионов депозитов за 2 недели с нового дизайна.</div>
+                <div class="msg-en"><strong>$5 million in deposits in just 2 weeks</strong> from the new green casino design. US market generating $17,580 per 1,000 registrations.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ffa502">
+                <div class="msg-date">2025-09-15 <span class="msg-label bg-orange-500/20 text-orange-400">TECH NEWS</span></div>
+                <div class="msg-ru">Добавили настройку переменных в пользовательском соглашении: %sum_dep%, %sum_wager%, %sum_verif%. Юзер должен пополнить для верификации.</div>
+                <div class="msg-en"><strong>Added configurable Terms of Service manipulation variables:</strong> %sum_dep% (deposit amount), %sum_wager% (wager requirement), %sum_verif% (verification deposit). Dynamically generated fake ToS to trap victims into "verification deposits."</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ffa502">
+                <div class="msg-date">2025-10-10 <span class="msg-label bg-orange-500/20 text-orange-400">TECH NEWS</span></div>
+                <div class="msg-ru">Добавили попап-напоминание о выводе средств, показывается каждые 3 часа. Добавили отслеживание Google Tag events.</div>
+                <div class="msg-en"><strong>"Withdrawal reminder" popup added</strong>, shown every 3 hours to pressure victims. Google Tag Manager events for tracking victim behavior across the funnel.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ffa502">
+                <div class="msg-date">2025-11-27 <span class="msg-label bg-orange-500/20 text-orange-400">TECH NEWS</span> <span class="msg-label bg-green-500/20 text-green-400">ANTI-PHISHDESTROY</span></div>
+                <div class="msg-ru">Рекомендуем nicenic.net для регистрации доменов. В случае жалобы или блокировки: пишем в Telegram, открываем тикет. Пример текста: "Мы считаем что блокировка вызвана массовыми ложными жалобами от злонамеренных конкурентов... через Telegram бот PhishDestroy_bot или сайт PhishDestroy.io"</div>
+                <div class="msg-en"><strong>Recommended nicenic.net as abuse-resistant registrar.</strong> Pre-written counter-phishing template distributed to all partners, specifically naming <strong>@PhishDestroy_bot and PhishDestroy.io</strong> as threats. Template claims reports are "automated mass reports from malicious competitors." Instructs partners to contest every takedown.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ffa502">
+                <div class="msg-date">2025-12-03 <span class="msg-label bg-orange-500/20 text-orange-400">TECH NEWS</span></div>
+                <div class="msg-ru">Добавили возможность регулировать подкрутку в оригинальных играх. Порог суммы баланса юзера, после которого будет отключаться подкрутка.</div>
+                <div class="msg-en"><strong>Added adjustable rigging controls for original games.</strong> Partners can set a balance threshold after which the rigged "spin-up" turns off. Configurable separately for slot games. Proof the entire casino outcome system is fraudulent.</div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ff4757">
+                <div class="msg-date">2025-12-22 <span class="msg-label bg-red-500/20 text-red-400">GAMBLER NEWS</span></div>
+                <div class="msg-ru">Дамы и господа, рады представить вам два новых дизайна казино в коллаборации с Дональдом Трампом и Илоном Маском. Более 150 тематических лендингов. Le Mines - эксклюзивная игра GAMBLER x Hacksaw Gaming. Drop The Boss - игра с Дональдом Трампом.</div>
+                <div class="msg-en"><strong>Launched Trump &amp; Elon Musk casino designs.</strong> 150+ themed landing pages. Exclusive games: "Le Mines" (GAMBLER x Hacksaw Gaming), "Drop The Boss" (Trump-themed). Demo: demodonald.cc, demoelon.cc. <strong>367 reactions.</strong></div>
+            </div>
+
+            <div class="msg-card" style="border-left:3px solid #ffa502">
+                <div class="msg-date">2026-01-23 <span class="msg-label bg-orange-500/20 text-orange-400">TECH NEWS</span></div>
+                <div class="msg-ru">Добавили настройку платежных систем для пополнений с банковских карт. Теперь вы можете менять их местами, ненужные отключать.</div>
+                <div class="msg-en"><strong>Bank card payment systems added.</strong> Partners can configure and reorder payment providers for credit/debit card deposits. Operation expanding beyond crypto-only to traditional banking.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- URLScan Live Domain Detection -->
+    <div class="card p-6 mb-10 reveal popup-trigger" onclick="openModal('urlscan')">
+        <div class="popup-icon"><svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg></div>
+        <h2 class="text-lg font-bold text-white mb-2">URLScan Live Domain Detection</h2>
+        <p class="text-xs text-gray-500 mb-4">Domains detected via URLScan fingerprinting. Click to expand. Search by <a href="https://urlscan.io/search/#hash%3A234f1a89ac1c64f2b60e7b7aaf30d3ec2cd97acd3f5fc844f4f55256eccaf843" target="_blank" class="text-blue-400" onclick="event.stopPropagation()">content hash</a> or <a href="https://urlscan.io/search/#page.title%3A%22Most%20Popular%20Online%20Crypto%20Casino%20Based%20on%20Blockchain%22" target="_blank" class="text-blue-400" onclick="event.stopPropagation()">page title</a> for latest results.</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+            <a href="https://urlscan.io/result/019c17c2-47d8-70c9-8646-8e528fb42c32/related/" target="_blank" class="urlscan-domain">rollblitz.io</a>
+            <a href="https://urlscan.io/search/#page.domain:luxx.casino" target="_blank" class="urlscan-domain">luxx.casino</a>
+            <a href="https://urlscan.io/search/#page.domain:blockbet.live" target="_blank" class="urlscan-domain">blockbet.live</a>
+            <a href="https://urlscan.io/search/#page.domain:kaiwin.cc" target="_blank" class="urlscan-domain">kaiwin.cc</a>
+            <a href="https://urlscan.io/search/#page.domain:ritmoplay.world" target="_blank" class="urlscan-domain">ritmoplay.world</a>
+            <a href="https://urlscan.io/search/#page.domain:playgq.com" target="_blank" class="urlscan-domain">playgq.com</a>
+            <a href="https://urlscan.io/search/#page.domain:trumpluck.hk" target="_blank" class="urlscan-domain">trumpluck.hk</a>
+            <a href="https://urlscan.io/search/#page.domain:goldencoin.cc" target="_blank" class="urlscan-domain">goldencoin.cc</a>
+            <a href="https://urlscan.io/search/#page.domain:epicdrops.info" target="_blank" class="urlscan-domain">epicdrops.info</a>
+            <a href="https://urlscan.io/search/#page.domain:kamoxe.com" target="_blank" class="urlscan-domain">kamoxe.com</a>
+            <a href="https://urlscan.io/search/#page.domain:wenowex.com" target="_blank" class="urlscan-domain">wenowex.com</a>
+            <a href="https://urlscan.io/search/#page.domain:vasewin.at" target="_blank" class="urlscan-domain">vasewin.at</a>
+            <a href="https://urlscan.io/search/#page.domain:mukomex.com" target="_blank" class="urlscan-domain">mukomex.com</a>
+            <a href="https://urlscan.io/search/#page.domain:failax.com" target="_blank" class="urlscan-domain">failax.com</a>
+            <a href="https://urlscan.io/search/#page.domain:jeuluxe.casino" target="_blank" class="urlscan-domain">jeuluxe.casino</a>
+            <a href="https://urlscan.io/search/#page.domain:zusewin.cc" target="_blank" class="urlscan-domain">zusewin.cc</a>
+            <a href="https://urlscan.io/search/#page.domain:elongamb.com" target="_blank" class="urlscan-domain">elongamb.com</a>
+            <a href="https://urlscan.io/search/#page.domain:goldingo.life" target="_blank" class="urlscan-domain">goldingo.life</a>
+            <a href="https://urlscan.io/search/#page.domain:exgamb.cc" target="_blank" class="urlscan-domain">exgamb.cc</a>
+            <a href="https://urlscan.io/search/#page.domain:exowin.net" target="_blank" class="urlscan-domain">exowin.net</a>
+            <a href="https://urlscan.io/search/#page.domain:cashnatural.com" target="_blank" class="urlscan-domain">cashnatural.com</a>
+            <a href="https://urlscan.io/search/#page.domain:spin-games.cc" target="_blank" class="urlscan-domain">spin-games.cc</a>
+            <a href="https://urlscan.io/search/#page.domain:stellixbet.com" target="_blank" class="urlscan-domain">stellixbet.com</a>
+            <a href="https://urlscan.io/search/#page.domain:jaxsyluck88.us" target="_blank" class="urlscan-domain">jaxsyluck88.us</a>
+            <a href="https://urlscan.io/search/#page.domain:emcash.top" target="_blank" class="urlscan-domain">emcash.top</a>
+            <a href="https://urlscan.io/search/#page.domain:webvion.cc" target="_blank" class="urlscan-domain">webvion.cc</a>
+            <a href="https://urlscan.io/search/#page.domain:roarax.com" target="_blank" class="urlscan-domain">roarax.com</a>
+        </div>
+        <div class="text-xs text-gray-500">Sample of recently scanned domains. Click any domain to view its URLScan report. Use the fingerprint links above for live, up-to-date detection results.</div>
+    </div>
+
+    <!-- Channel Evidence - photos from GAMBLER NEWS -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Channel Evidence: GAMBLER NEWS</h2>
+    <p class="text-xs text-gray-500 mb-3 reveal">Channel ID: 2073492571 &mdash; <a href="GAMBLER NEWS/messages.html" class="text-blue-400 hover:text-blue-300">Full chat dump</a> &mdash; 61 photos, 7 videos</p>
+    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2 mb-10 reveal">
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_1@03-08-2024_03-50-35.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_16@31-12-2024_09-14-39.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_18@10-02-2025_21-09-47.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_19@24-02-2025_19-41-15.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_22@01-03-2025_10-34-52.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_30@19-05-2025_00-44-59.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_35@27-08-2025_14-52-31.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_36@27-08-2025_17-16-22.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_37@27-08-2025_19-52-25.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_38@09-09-2025_18-12-42.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_46@15-09-2025_20-28-56.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_50@08-10-2025_21-03-04.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_57@06-12-2025_14-30-48.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_58@22-12-2025_16-03-36.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_59@22-12-2025_20-17-54.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_60@30-12-2025_21-59-59.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER NEWS/photos/photo_61@01-01-2026_00-05-23.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+    </div>
+
+    <!-- Channel Evidence - TECH NEWS -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Channel Evidence: GAMBLER Tech News</h2>
+    <p class="text-xs text-gray-500 mb-3 reveal">Channel ID: 2260103997 &mdash; <a href="GAMBLER - Технические новости/messages.html" class="text-blue-400 hover:text-blue-300">Full chat dump</a> &mdash; 25 photos</p>
+    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2 mb-10 reveal">
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_1@30-12-2024_06-57-49.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_2@15-02-2025_05-20-51.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_5@24-02-2025_19-59-59.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_8@20-04-2025_05-56-33.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_9@19-05-2025_12-06-33.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_10@15-08-2025_09-47-17.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_12@29-08-2025_03-07-25.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_14@11-09-2025_19-55-05.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_16@10-10-2025_13-08-57.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_17@27-11-2025_14-19-12.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_20@03-12-2025_19-28-26.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_21@06-12-2025_14-32-49.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_23@27-12-2025_02-53-30.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_24@30-12-2025_21-56-54.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+        <div class="img-card"><img src="GAMBLER - Технические новости/photos/photo_25@23-01-2026_10-04-07.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"></div>
+    </div>
+
+    <!-- Panel Screenshots (from saved reports) -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Panel Admin Screenshots</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10 reveal">
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/gambler-panel-deposits-stats.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Deposits: 12,114 entries, $2.6M (single partner)</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/gambler-panel-settings.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">$50 min deposit / $5,000 min withdrawal</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/gambler-panel-domains.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Domain management</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/gambler-panel-payments1.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Payment processing</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/gambler-panel-kyc.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Fake KYC system</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/gambler-panel-motives.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Deposit motivation scripts</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/gambler-panel-traffic.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Traffic analytics</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/gambler-panel-variables.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Panel configuration</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/gambler-panel-docs-intro.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Wiki "How to scam 101"</div></div>
+    </div>
+
+    <!-- Casino designs -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Casino Designs (Stolen Celebrity Images + Explicit Content)</h2>
+    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2 mb-10 reveal">
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/1-default.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Default</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/2-lionel-messi.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Messi</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/3-elon-musk.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Elon Musk</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/4-conor-mcgregor.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">McGregor</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/5-cristiano-ronaldo.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Ronaldo</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/20-drake.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Drake</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/10-changpeng-zhao.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">CZ</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/mbappe.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Mbapp&eacute;</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/keanu-reeves.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Keanu</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/kylie-jenner.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Kylie</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/50-cent.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">50 Cent</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/18-brazzers.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Brazzers</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/playboy.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Playboy</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/trans-8.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Explicit</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/anime-1.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Anime</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/7-gates-of-olympus.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Olympus</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/coinflip.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Coinflip</div></div>
+        <div class="img-card"><img src="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report_files/plinko.jpg" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-1 text-xs text-gray-500 text-center">Plinko</div></div>
+    </div>
+
+    <!-- Video Evidence -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Video Evidence</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10 reveal">
+        <div class="img-card"><img src="GAMBLER Scam Investigation - Verified Report_files/frame_0005.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Admin confession</div></div>
+        <div class="img-card"><img src="GAMBLER Scam Investigation - Verified Report_files/frame_0030.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Panel: $2.6M visible</div></div>
+        <div class="img-card"><img src="GAMBLER Scam Investigation - Verified Report_files/frame_0035.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">12,114 deposits</div></div>
+        <div class="img-card"><img src="GAMBLER Scam Investigation - Verified Report_files/frame_0060.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">8 blockchain wallets</div></div>
+    </div>
+
+    <!-- Reports -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Full Reports</h2>
+    <div class="grid sm:grid-cols-2 gap-4 mb-10 reveal">
+        <a href="GAMBLER Scam Investigation - Verified Report.html" class="card p-5 hover:border-red-500/30 transition-colors flex items-center gap-4"><div class="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center text-red-400 font-bold flex-shrink-0">1</div><div><div class="font-semibold text-white text-sm">GAMBLER Scam Investigation</div><div class="text-xs text-gray-500">Verified Report &mdash; video evidence, BTC wallets, victim profiles</div></div></a>
+        <a href="Gambler Panel_ Organized Crime Network Analysis _ PhishDestroy Abuse Report.html" class="card p-5 hover:border-orange-500/30 transition-colors flex items-center gap-4"><div class="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center text-orange-400 font-bold flex-shrink-0">2</div><div><div class="font-semibold text-white text-sm">Organized Crime Network Analysis</div><div class="text-xs text-gray-500">PhishDestroy Abuse Report &mdash; panel screenshots, templates, domains</div></div></a>
+    </div>
+
+    <!-- Domain Cloud -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">5,515 Fake Casino Domains</h2>
+    <div class="card p-4 mb-10 reveal popup-trigger" onclick="openModal('domains')">
+        <div class="popup-icon"><svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg></div>
+        <div class="domain-cloud" id="dc"></div>
+        <div class="text-xs text-gray-500 mt-3">First 500 of 5,515 domains. Click to expand full list. <a href="domain.txt" class="text-blue-400" onclick="event.stopPropagation()">domain.txt</a> | <a href="https://krebsonsecurity.com/2025/08/affiliates-flock-to-soulless-scam-gambling-machine/" target="_blank" class="text-blue-400" onclick="event.stopPropagation()">KrebsOnSecurity</a></div>
+    </div>
+
+    <!-- Auto-Detection & PhishDestroy Response -->
+    <div class="card p-6 mb-10 reveal" style="border-color:rgba(46,213,115,.3)">
+        <h2 class="text-lg font-bold grad-green mb-3">Auto-Detected by PhishDestroy</h2>
+        <p class="text-sm text-gray-400 leading-relaxed mb-3">GAMBLER's 5,515+ domains are auto-detected by <a href="../keitaro/checker.html" class="text-blue-400">PhishDestroy Keitaro Hunter</a>. Same Keitaro TDS fingerprints, identical panel structure, reused templates. They know it &mdash; that's why they distribute <strong class="text-white">anti-PhishDestroy counter-phishing templates</strong> to partners, specifically naming @PhishDestroy_bot as a threat to counter.</p>
+        <div class="quote">"Recommended: use nicenic.net registrar and pre-written counter-phishing template if your domain gets reported by PhishDestroy_bot" &mdash; Nov 27, 2025, Tech channel</div>
+    </div>
+
+    <div class="card p-6 mb-10 reveal" style="border-color:rgba(46,213,115,.5);background:rgba(46,213,115,.03)">
+        <h2 class="text-lg font-bold grad-green mb-3">PhishDestroy Response: 3,000+ Domains Killed</h2>
+        <p class="text-sm text-gray-400 leading-relaxed mb-3">After GAMBLER published a post in their channel about mass reports and distributed anti-PhishDestroy templates, we understood that <strong class="text-white">the scammers had lost their fear</strong>. In response, PhishDestroy targeted their oldest and most established domains &mdash; those active for <strong class="text-white">6 months or more</strong> &mdash; and took down <strong class="text-red-400">over 3,000 domains within a few weeks</strong>.</p>
+        <p class="text-sm text-gray-400 leading-relaxed mb-3">Previously, our automated system was sending only one report per domain as a standard approach, since the operation has thousands of sites. After their anti-PhishDestroy campaign, we <strong class="text-white">configured dedicated parsers to automatically detect and report GAMBLER infrastructure</strong> using URLScan fingerprints (<a href="https://urlscan.io/search/#hash%3A234f1a89ac1c64f2b60e7b7aaf30d3ec2cd97acd3f5fc844f4f55256eccaf843" target="_blank" class="text-blue-400">hash</a> + <a href="https://urlscan.io/search/#page.title%3A%22Most%20Popular%20Online%20Crypto%20Casino%20Based%20on%20Blockchain%22" target="_blank" class="text-blue-400">page title</a>). Their domains are now automatically detected and reported at scale.</p>
+        <div class="grid sm:grid-cols-2 gap-3 text-xs mt-4">
+            <div class="bg-green-500/10 rounded-lg p-3"><strong class="text-green-400">Estimated GAMBLER revenue:</strong> Over <strong class="text-white">$10 million</strong>. With $50M+ in deposits and a 70/30 split with affiliates, the panel operators' take is substantial.</div>
+            <div class="bg-red-500/10 rounded-lg p-3"><strong class="text-red-400">Lolzteam &amp; FSB connection:</strong> Lolzteam forum owners are reportedly <strong class="text-white">FSB-affiliated</strong> and presumably taking a cut from GAMBLER's promotion on their platform (400K+ views thread).</div>
+        </div>
+    </div>
+
+    <!-- Leaked API Documentation -->
+    <div class="card p-6 mb-10 reveal popup-trigger" onclick="openModal('api')" style="border-color:rgba(255,71,87,.2)">
+        <div class="popup-icon"><svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg></div>
+        <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-red-500/15 flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold text-white">Leaked API Documentation</h2>
+                <p class="text-xs text-gray-500 mt-1">15 endpoints: promo codes, victim wallet extraction, domain management, AI toggle, rigged game coefficients. Click to view full API docs.</p>
+            </div>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-4">
+            <span class="tag bg-green-500/15 text-green-400">5 GET</span>
+            <span class="tag bg-blue-500/15 text-blue-400">6 POST</span>
+            <span class="tag bg-yellow-500/15 text-yellow-400">1 PATCH</span>
+            <span class="tag bg-red-500/15 text-red-400">2 DELETE</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-xs text-gray-600 border-t border-gray-800/50 pt-6 mt-10">
+        <p>Intelligence collected by <a href="https://www.phishdestroy.io/" class="text-blue-400 hover:text-blue-300">PhishDestroy</a> | <a href="https://github.com/phishdestroy/ScamIntelLogs" class="text-blue-400 hover:text-blue-300">GitHub</a></p>
+        <p class="mt-1">This data is provided for law enforcement, security research, and anti-fraud purposes.</p>
+    </div>
+</div>
+
+<script>
+const d=["goldingo.lat","blitzbetz.live","emiswin.com","1acey.xyz","drop-the-boss.xyz","infinity1500.com","drake777.com","casinoflux.org","casikx.com","webvortex.games","bcxbet.top","kotbet.casino","1wfepm.online","moonxcas.com","webxled.rest","wanerdex.com","lumewex.com","winsxbet.com","4game.bet","coinrushbet.com","manybet.lol","jorcasino.live","hardrockwin.top","slotacas.com","stakec.us","catbet.top","dylnero.live","jomnexa.live","wenredex.com","winix.sbs","fortunapulse.com","playora.pro","scaplay.top","goxplay.top","gamagalaxy.online","cenatgamb.com","fetowex.com","bestgamblings.com","moneycounter.bet","jerobet.com","vaxobet.com","sonygamble.bet","lumah.top","betstakez.com","winorlose.top","fortuneallegro.com","one-winner.bet","rnplay.top","go1win.pro","gamwinx.com","winjom.com","betroyal.pro","cashcasinowin.top","bagelspin.com","bettex.top","bigebet.com","praywin.vip","highrollerluck.top","wexboom.bar","sipwineco.com","metaspinx.com","5win.games","kickbet.top","jetwor.com","slots365.casino","winspins365.com","wegcub.top","melox.pro","zompyx.com","spinsbeast.com","befowex.com","elite47.live","nebluck.com","luxespin.pro","1rolls.com","aldencas.com","kuranos.com","winluxe.net","wild777.online","mexdax.top","bit-casino.top","wingetx.com","bandagam.com","velonir.com","fitowex.com","plexwex.com","stakepalace.com","topfex.com","lumivalife.com","mrbeastmbet.com","luckytokenz.com","betwux.com","coolcas.com","baxwo.com","wrxcasino.com","apenbox.com","wortexbet.com","playrugroller.com","wypera.world","diamondcash.club","snake-casino.pro","loowin.icu","rolleus.com","casneo.com","spinzbet.sbs","souroo.com","yuppwin.com","dexgam.com","spinstates.com","drakewins.com","xxwin.top","snipwex.com","wbinko.org","gambleking.sbs","lyxcas.com","depwex.com","stakeusa.bet","gostbet.shop","istake.us.com","queebet.com","macarius.bet","gracaz.com","betwoof.com","blockchaincasino.top","xobetx.com","bitspin.vip","werendex.com","linosebet.com","wincloud.top","jetspin.pro","luckyrolls.win","jackpyo.site","spinx.top","x-lucky.cc","casvix.com","velocas.com","takebet.top","luxgamb.com","golucker.com","hutcas.com","diamondangel.top","upwin.org","101luckycash.com","bxstake.com","bingowex.com","pixgame.org","hotbet.top","betflom.com","astbets.online","gold-rabbit.live","tapecash.com","gamessslot.pro","winday.bet","forxcas.com","rollexbet.xyz","gamblnes.com","spin.yt","bettokenz.com","rxbet.eu","bcspin.us","luxorvipclub.com","trykas.com","beatscasino.us","gamblegalaxy.top","spinwin.cash","dokocas.com","playwiz.top","hemowex.com","nemowex.com","futureconn.com","winblast.bet","dinobet.top","lemowex.com","casinoa.vip","forewex.com","riowin.org","rexgame.top","luckyplay.cc","g-slot.net","stake-only.us.com","7rolls.com","blimwex.com","winlys.top","flozybet.com","thebetstakez.com","firewallion.com","spinforce.top","dogontop.net","rollume.com","femowex.com","belowex.com","wexboom.com","necocoin.com","slotwin.us","fortunewin.top","mycasino.icu","threewin.top","freshcas.com","wise-games.casino","gg-beast.com","eclips.casino","aurumspin.top","maobet.top","alpharoll.net","spintrick.com","bubencas.com","mrbetx.com","gexowin.com","naledex.com","gevonax.com","exho.pro","casinofun.top","homexcas.com","boomx.io","jemowex.com","gametop.bet","jomcas.bet","ronbet.top","spinshade.com","togibets.com","foxsino.com","remowex.com","goldenace.top","gmlord.com","ludix.ink","mystloot.com","revolux.world","megawinempire.bet","trustrolls.bet","lucked.bet","bailwex.com","playvado.world","froxbet.com","nexowex.com","bettex.today","soxcas.com","stake3.us","velowex.com","betoria.lat","lixcas.com","lenbix.top","getj3000.com","pavcas.com","goodcas.net","duxlin.com","lumaspin.xyz","hugebigwin.xyz","benowex.com","lutrixa.com","keluron.com","heldspin.com","luxx.casino","beatexy.com","zyqel.com","depvex.com","coollspins.com","dimowex.com","jolybet.live","1slots.bet","casinocash.vip","sparkwex.com","beastzo.com","ganarluxgold.top","1bigwin.live","evencas.com","prozwex.com","werawex.com","heywin.xyz","spinwex.top","vaxwin.top","pepespins.com","bestcas.vip","karoplays.com","slotxcas.com","xposedspin.com","hugexspin.com","nerawex.com","nova-stake.com","ilonmusk.biz","mxcasyx.com","vokcas.com","delagocas.com","snakespins.com","purebet.top","diceorbit.top","semowex.com","bemowex.com","fomewex.com","xroscas.com","zenoroll.com","tronwex.com","jetcasx.com","bitwinna.com","zazwin.com","binanceair.money","jefvex.com","makorabet.com","vekcas.com","cashrollkings.com","starlight47.lol","uspined.com","zombacas.com","rustwex.com","slotlive.bet","zetboom.com","nelapot.com","hugecas.com","goldenspin.club","wolfcas.vip","cryptonexus.one","zemowex.com","wokocas.com","gemowex.com","okx-online.xyz","cassinox.top","xemwin.com","rollthewin.today","solspin.digital","bimowex.com","zhopacas.com","lasxa.com","beastroyal.com","rooobet.xyz","loomwin.top","limwex.com","weobet.cc","betrix.fun","x-cash.cc","notkas.com","newdemogreen.com","demodonald.cc","demoelon.cc"];
+const dc=document.getElementById('dc');d.forEach(x=>{dc.innerHTML+=`<span>${x}</span>`});
+const obs=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');obs.unobserve(i.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Modal system
+function openModal(type) {
+    const modal = document.getElementById('modal');
+    const title = document.getElementById('modalTitle');
+    const body = document.getElementById('modalBody');
+    const content = modalContent[type];
+    if (!content) return;
+    title.textContent = content.title;
+    body.innerHTML = content.html;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+const modalContent = {
+    urlscan: {
+        title: 'URLScan Live Domain Detection',
+        html: `
+            <p class="text-sm text-gray-400 mb-4">Domains detected via URLScan content hash and page title fingerprinting. These are live phishing casino domains running GAMBLER infrastructure.</p>
+            <div class="grid gap-2 mb-4">
+                <a href="https://urlscan.io/search/#hash%3A234f1a89ac1c64f2b60e7b7aaf30d3ec2cd97acd3f5fc844f4f55256eccaf843" target="_blank" class="api-endpoint flex items-center gap-3"><span class="api-method get">HASH</span><span class="api-path">234f1a89ac1c64f2b60e7b7aaf30d3ec2cd97acd3f5fc844f4f55256eccaf843</span></a>
+                <a href="https://urlscan.io/search/#page.title%3A%22Most%20Popular%20Online%20Crypto%20Casino%20Based%20on%20Blockchain%22" target="_blank" class="api-endpoint flex items-center gap-3"><span class="api-method post">TITLE</span><span class="api-path">"Most Popular Online Crypto Casino Based on Blockchain"</span></a>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-3">Detected Domains (sample)</h4>
+            <div class="domain-cloud" style="max-height:none">${["rollblitz.io","luxx.casino","blockbet.live","kaiwin.cc","ritmoplay.world","playgq.com","trumpluck.hk","goldencoin.cc","epicdrops.info","kamoxe.com","wenowex.com","vasewin.at","mukomex.com","failax.com","jeuluxe.casino","zusewin.cc","elongamb.com","goldingo.life","exgamb.cc","exowin.net","cashnatural.com","spin-games.cc","stellixbet.com","jaxsyluck88.us","emcash.top","webvion.cc","roarax.com"].map(d=>`<span>${d}</span>`).join('')}</div>
+            <p class="text-xs text-gray-500 mt-4">Use the hash or title fingerprint links above to search URLScan for the latest live results. New domains are deployed daily.</p>
+        `
+    },
+    domains: {
+        title: '5,515 Fake Casino Domains',
+        html: `
+            <p class="text-sm text-gray-400 mb-2">Sample of domains used by GAMBLER affiliates for fake casino phishing. Full list available as <a href="domain.txt" class="text-blue-400">domain.txt</a>.</p>
+            <div class="flex gap-2 mb-4 flex-wrap">
+                <span class="tag bg-red-500/20 text-red-400">${d.length} shown</span>
+                <span class="tag bg-orange-500/20 text-orange-400">5,515 total</span>
+            </div>
+            <div class="domain-cloud" style="max-height:none">${d.map(x=>`<span>${x}</span>`).join('')}</div>
+        `
+    },
+    messages: {
+        title: 'Channel Messages (Original + Translation)',
+        html: document.querySelector('.scroll-box[style*="700px"]') ? document.querySelector('.scroll-box[style*="700px"]').innerHTML : ''
+    },
+    infra: {
+        title: 'GAMBLER Infrastructure',
+        html: `
+            <div class="grid sm:grid-cols-2 gap-6 text-xs mb-6">
+                <div class="space-y-2">
+                    <h4 class="text-sm font-bold text-white mb-2">Panel &amp; Frontend</h4>
+                    <div class="inf-row"><span class="text-gray-500">Current panel</span><a href="https://wiki.gambler-partners.is" target="_blank" class="text-blue-400">gambler-partners.is</a></div>
+                    <div class="inf-row"><span class="text-gray-500">Previous panels</span><span class="text-white">gambler-panel.com &rarr; gambler-work.com</span></div>
+                    <div class="inf-row"><span class="text-gray-500">Mirrors</span><span class="text-white">gambler1.com, gambler2.com</span></div>
+                    <div class="inf-row"><span class="text-gray-500">Landing</span><span class="text-white">gambler-partners.is/land</span></div>
+                    <div class="inf-row"><span class="text-gray-500">Demo domains</span><span class="text-white">newdemogreen.com, demodonald.cc, demoelon.cc</span></div>
+                </div>
+                <div class="space-y-2">
+                    <h4 class="text-sm font-bold text-white mb-2">Backend &amp; Hosting</h4>
+                    <div class="inf-row"><span class="text-gray-500">Hosting</span><span class="text-white">Cloudflare (104.18.40.47)</span></div>
+                    <div class="inf-row"><span class="text-gray-500">Backend</span><span class="text-white">GitBook (a7d824dd01-hosting.gitbook.io)</span></div>
+                    <div class="inf-row"><span class="text-gray-500">Domain registered</span><span class="text-white">Sep 29, 2025</span></div>
+                    <div class="inf-row"><span class="text-gray-500">Recommended registrar</span><span class="text-red-400">nicenic.net (abuse-resistant)</span></div>
+                    <div class="inf-row"><span class="text-gray-500">Crypto support</span><span class="text-white">BTC, LTC, TRX/USDT-TRC20, BNB/USDT-BEP20</span></div>
+                    <div class="inf-row"><span class="text-gray-500">ScamAdviser</span><span class="text-red-400 font-bold">0/100</span></div>
+                    <div class="inf-row"><span class="text-gray-500">Est. operator revenue</span><span class="text-red-400 font-bold">$10M+</span></div>
+                </div>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-2">Telegram</h4>
+            <div class="space-y-2 text-xs">
+                <div class="inf-row"><span class="text-gray-500">Bot</span><span class="text-white">@gambler_panel_bot</span></div>
+                <div class="inf-row"><span class="text-gray-500">Admin #1</span><span class="text-white">@gamblerworkmain (ID: 8124198200)</span></div>
+                <div class="inf-row"><span class="text-gray-500">Admin #2</span><span class="text-white">@lord_gamb (ID: 7916076811)</span></div>
+                <div class="inf-row"><span class="text-gray-500">Lolzteam</span><a href="https://lolz.live/threads/5918290" target="_blank" class="text-blue-400">lolz.live/threads/5918290</a></div>
+            </div>
+            <div class="mt-4 bg-red-500/10 rounded-lg p-3 text-xs">
+                <strong class="text-red-400">Lolzteam &amp; FSB:</strong> Forum owners are reportedly FSB-affiliated and presumably taking a cut from GAMBLER's 400K+ views promotion thread.
+            </div>
+        `
+    },
+    api: {
+        title: 'Leaked API Documentation',
+        html: `
+            <p class="text-sm text-gray-400 mb-1">Extracted from <code class="text-xs bg-white/5 px-1 rounded">wiki.gambler-partners.is/dlya-tsov/api-docs</code></p>
+            <p class="text-xs text-gray-500 mb-4">Base URL: <code class="text-red-400">https://gambler-partners.is/api</code> | Auth: <code class="text-gray-400">Authorization: &lt;api_token&gt;</code></p>
+
+            <h4 class="text-sm font-bold text-white mb-3 mt-4">Promo Codes</h4>
+            <div class="api-endpoint flex items-center gap-3"><span class="api-method get">GET</span><span class="api-path">/me/promo/:promo</span><span class="text-xs text-gray-500 ml-auto">Get specific promo code</span></div>
+            <div class="api-endpoint flex items-center gap-3"><span class="api-method get">GET</span><span class="api-path">/me/promo</span><span class="text-xs text-gray-500 ml-auto">List all promo codes</span></div>
+            <div class="api-endpoint flex items-center gap-3"><span class="api-method post">POST</span><span class="api-path">/me/promo</span><span class="text-xs text-gray-500 ml-auto">Create promo code</span></div>
+            <div class="api-endpoint flex items-center gap-3"><span class="api-method patch">PATCH</span><span class="api-path">/me/promo</span><span class="text-xs text-gray-500 ml-auto">Modify promo code</span></div>
+            <div class="api-endpoint flex items-center gap-3"><span class="api-method delete">DEL</span><span class="api-path">/me/promo</span><span class="text-xs text-gray-500 ml-auto">Delete promo code</span></div>
+
+            <h4 class="text-sm font-bold text-white mb-3 mt-6">Mammoths (Victims)</h4>
+            <div class="api-endpoint"><div class="flex items-center gap-3 mb-2"><span class="api-method get">GET</span><span class="api-path">/api/me/mammoths/:id/txs/wallets</span></div><p class="text-xs text-gray-500">Extract victim wallet addresses. Supported networks: btc, xrp, erc20, bep20, trc20, sol, ton, base</p></div>
+
+            <h4 class="text-sm font-bold text-white mb-3 mt-6">Domains</h4>
+            <div class="api-endpoint flex items-center gap-3"><span class="api-method get">GET</span><span class="api-path">/me/domains</span><span class="text-xs text-gray-500 ml-auto">List all domains</span></div>
+            <div class="api-endpoint"><div class="flex items-center gap-3 mb-2"><span class="api-method post">POST</span><span class="api-path">/me/domains</span></div><p class="text-xs text-gray-500">Add phishing domain. Params: webVersion (green/trump/musk/blue), domain, template, pixelId</p></div>
+            <div class="api-endpoint flex items-center gap-3"><span class="api-method delete">DEL</span><span class="api-path">/me/domains</span><span class="text-xs text-gray-500 ml-auto">Remove domain</span></div>
+            <div class="api-endpoint flex items-center gap-3"><span class="api-method post">POST</span><span class="api-path">/me/domains/verify</span><span class="text-xs text-gray-500 ml-auto">Verify nameservers</span></div>
+            <div class="api-endpoint"><div class="flex items-center gap-3 mb-2"><span class="api-method post">POST</span><span class="api-path">/me/domains/template</span></div><p class="text-xs text-gray-500">Change landing template. 150+ templates: celebrity (trump, musk, messi, drake...), explicit (brazzers, playboy...), game themes</p></div>
+            <div class="api-endpoint"><div class="flex items-center gap-3 mb-2"><span class="api-method post">POST</span><span class="api-path">/me/domains/geoblock</span></div><p class="text-xs text-gray-500">Configure country blocking via Cloudflare WAF. ISO 3166 alpha-2 codes</p></div>
+            <div class="api-endpoint"><div class="flex items-center gap-3 mb-2"><span class="api-method post">POST</span><span class="api-path">/me/domains/ai</span></div><p class="text-xs text-gray-500">Toggle GAMBLER AI in live support. Params: domain, useAI (boolean)</p></div>
+            <div class="api-endpoint"><div class="flex items-center gap-3 mb-2"><span class="api-method post">POST</span><span class="api-path">/me/domains/regpage</span></div><p class="text-xs text-gray-500">Set post-registration redirect: mines, plinko, crash, limbo, dice, coinflip, tower, bonuses, deposit, withdraw</p></div>
+
+            <h4 class="text-sm font-bold text-white mb-3 mt-6">Games (Rigged)</h4>
+            <div class="api-endpoint"><div class="flex items-center gap-3 mb-2"><span class="api-method get">GET</span><span class="api-path">/api/me/extra/crash</span></div><p class="text-xs text-gray-500">Get predetermined Crash multiplier. Returns startsAt (ISO timestamp) + multiplier (float). Game outcomes are fully rigged.</p></div>
+
+            <div class="mt-6 bg-red-500/10 rounded-lg p-4 text-xs">
+                <strong class="text-red-400">Note:</strong> This API is used by GAMBLER affiliates to manage phishing domains, extract victim wallet addresses, and predict rigged game outcomes. Full documentation: <a href="api-docs.md" class="text-blue-400">api-docs.md</a>
+            </div>
+        `
+    }
+};
+</script>
+</body>
+</html>
