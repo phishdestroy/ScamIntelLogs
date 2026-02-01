@@ -37,8 +37,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://destroyico.pages.dev/assets/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://destroyico.pages.dev/assets/apple-touch-icon.png">
     <link rel="manifest" href="https://destroyico.pages.dev/assets/site.webmanifest">
-    <meta name="theme-color" content="#111827">
-    <meta name="msapplication-TileColor" content="#111827">
+    <meta name="theme-color" content="#0a0a1a">
+    <meta name="msapplication-TileColor" content="#0a0a1a">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -95,6 +95,8 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             overflow-x: hidden;
+            background: linear-gradient(135deg, #07071a 0%, #0f0f2e 40%, #0a0a20 70%, #060614 100%);
+            background-attachment: fixed;
         }
         .text-gradient {
             background-image: linear-gradient(to right, #3b82f6, #14b8a6);
@@ -137,17 +139,21 @@
             position: fixed;
             border-radius: 50%;
             filter: blur(80px);
-            opacity: 0.15;
+            opacity: 0.12;
             z-index: -1;
-            animation: orbFloat 15s ease-in-out infinite;
+            animation: orbFloat 15s ease-in-out infinite, orbPulse 6s ease-in-out infinite;
         }
-        .orb-1 { width: 400px; height: 400px; background: #3b82f6; top: -100px; left: -100px; animation-delay: 0s; }
-        .orb-2 { width: 350px; height: 350px; background: #14b8a6; bottom: -80px; right: -80px; animation-delay: -5s; }
-        .orb-3 { width: 300px; height: 300px; background: #8b5cf6; top: 50%; left: 50%; animation-delay: -10s; }
+        .orb-1 { width: 400px; height: 400px; background: #3b82f6; top: -100px; left: -100px; animation-delay: 0s, 0s; }
+        .orb-2 { width: 350px; height: 350px; background: #14b8a6; bottom: -80px; right: -80px; animation-delay: -5s, -2s; }
+        .orb-3 { width: 300px; height: 300px; background: #8b5cf6; top: 50%; left: 50%; animation-delay: -10s, -4s; }
         @keyframes orbFloat {
             0%, 100% { transform: translate(0, 0) scale(1); }
             33% { transform: translate(30px, -30px) scale(1.05); }
             66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+        @keyframes orbPulse {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 0.18; }
         }
 
         /* Scroll reveal */
@@ -217,23 +223,62 @@
             backdrop-filter: blur(20px) saturate(1.4);
             -webkit-backdrop-filter: blur(20px) saturate(1.4);
             border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.04);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass:hover {
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.12);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08), 0 0 20px rgba(59,130,246,0.05);
         }
         .glass-strong {
-            background: rgba(255,255,255,0.05);
-            backdrop-filter: blur(32px) saturate(1.6);
-            -webkit-backdrop-filter: blur(32px) saturate(1.6);
-            border: 1px solid rgba(255,255,255,0.12);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.06);
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(40px) saturate(1.8);
+            -webkit-backdrop-filter: blur(40px) saturate(1.8);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.08), inset 0 -1px 0 rgba(255,255,255,0.02);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .glass-strong::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at 30% 20%, rgba(59,130,246,0.03) 0%, transparent 60%);
+            pointer-events: none;
+            animation: glassSheen 8s ease-in-out infinite;
+        }
+        @keyframes glassSheen {
+            0%, 100% { opacity: 0.5; transform: translate(0, 0); }
+            50% { opacity: 1; transform: translate(5%, 5%); }
         }
         .glass-link {
             background: rgba(255,255,255,0.04);
             border: 1px solid rgba(255,255,255,0.06);
-            transition: all 0.3s ease;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .glass-link::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(20,184,166,0.08));
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+        .glass-link:hover::before {
+            opacity: 1;
         }
         .glass-link:hover {
             background: rgba(255,255,255,0.08);
-            border-color: rgba(255,255,255,0.15);
-            transform: translateY(-1px);
+            border-color: rgba(255,255,255,0.18);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(59,130,246,0.1), 0 0 1px rgba(255,255,255,0.15);
         }
 
         /* Hero noise texture */
@@ -249,14 +294,115 @@
         /* Subtle logo glow */
         .logo-glow {
             filter: drop-shadow(0 0 24px rgba(59,130,246,0.25));
-            transition: filter 0.4s ease;
+            transition: filter 0.4s ease, transform 0.4s ease;
         }
         .logo-glow:hover {
-            filter: drop-shadow(0 0 32px rgba(59,130,246,0.4));
+            filter: drop-shadow(0 0 40px rgba(59,130,246,0.5));
+            transform: scale(1.05);
+        }
+
+        /* Mission card hover glow */
+        .mission-card {
+            position: relative;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .mission-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, var(--glow-color, rgba(59,130,246,0.2)), transparent 60%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: -1;
+        }
+        .mission-card:hover::before {
+            opacity: 1;
+        }
+        .mission-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3), 0 0 30px var(--glow-color, rgba(59,130,246,0.08));
+            border-color: rgba(255,255,255,0.15);
+        }
+        .mission-card:hover .mission-icon {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px var(--glow-color, rgba(59,130,246,0.2));
+        }
+        .mission-icon {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Stat card hover */
+        .stat-card {
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+        .stat-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 0%, var(--stat-color, rgba(59,130,246,0.1)), transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-4px) scale(1.03);
+            border-color: rgba(255,255,255,0.15);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 20px var(--stat-color, rgba(59,130,246,0.08));
+        }
+        .stat-card:hover::after {
+            opacity: 1;
+        }
+
+        /* Shimmer line on grid lines */
+        .bg-grid::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(59,130,246,0.08), transparent 70%);
+            border-radius: 50%;
+            animation: gridGlow 12s ease-in-out infinite;
+            pointer-events: none;
+        }
+        @keyframes gridGlow {
+            0%, 100% { top: 20%; left: 10%; opacity: 0.3; }
+            25% { top: 60%; left: 70%; opacity: 0.6; }
+            50% { top: 80%; left: 30%; opacity: 0.3; }
+            75% { top: 10%; left: 80%; opacity: 0.6; }
+        }
+
+        /* Footer link hover */
+        footer a {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        footer a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(to right, #3b82f6, #14b8a6);
+            transition: width 0.3s ease;
+        }
+        footer a:hover::after {
+            width: 100%;
+        }
+
+        /* Accent line pulse */
+        .accent-line {
+            animation: accentPulse 4s ease-in-out infinite;
+        }
+        @keyframes accentPulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; filter: brightness(1.2); }
         }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-300">
+<body class="text-gray-300">
 
     <!-- Animated Background -->
     <div class="bg-grid"></div>
@@ -295,8 +441,9 @@
                     <span class="glass-link rounded-full px-3 py-1.5 text-xs sm:text-sm text-gray-300">IOCs</span>
                 </div>
 
-                <!-- Keitaro Checker CTA -->
-                <a href="keitaro/checker.html" class="group relative inline-flex items-center gap-3 mb-6 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-600/15 via-red-600/10 to-amber-600/15 border border-amber-500/25 hover:border-amber-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(245,158,11,.12)] overflow-hidden">
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-3 mb-6">
+                <a href="keitaro/checker.html" class="group relative inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-600/15 via-red-600/10 to-amber-600/15 border border-amber-500/25 hover:border-amber-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(245,158,11,.12)] overflow-hidden">
                     <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/[.03] to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></span>
                     <span class="relative flex items-center justify-center w-9 h-9 rounded-lg bg-amber-500/15 border border-amber-500/20 group-hover:scale-110 transition-transform">
                         <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
@@ -307,6 +454,18 @@
                     </span>
                     <svg class="relative w-4 h-4 text-amber-500/50 group-hover:text-amber-400 group-hover:translate-x-1 transition-all ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                 </a>
+                <a href="wiki.html" class="group relative inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-600/10 via-blue-600/10 to-violet-600/10 border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,.1)] overflow-hidden">
+                    <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/[.03] to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></span>
+                    <span class="relative flex items-center justify-center w-9 h-9 rounded-lg bg-cyan-500/15 border border-cyan-500/20 group-hover:scale-110 transition-transform">
+                        <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    </span>
+                    <span class="relative">
+                        <span class="block text-sm font-bold text-cyan-300 group-hover:text-cyan-200 transition-colors">Investigation Wiki</span>
+                        <span class="block text-[11px] text-gray-500 group-hover:text-gray-400 transition-colors">OSINT tools, Telegram extraction, blockchain tracing</span>
+                    </span>
+                    <svg class="relative w-4 h-4 text-cyan-500/50 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+                </div>
 
                 <!-- Links -->
                 <div class="flex flex-wrap gap-3 text-sm">
@@ -354,22 +513,22 @@
                 <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="glass rounded-2xl p-6 text-center hover:scale-[1.02] transition-all duration-500">
-                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-500/10 rounded-2xl flex items-center justify-center">
+                <div class="glass mission-card rounded-2xl p-6 text-center" style="--glow-color: rgba(59,130,246,0.15)">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-500/10 rounded-2xl flex items-center justify-center mission-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2">Protect Victims</h3>
                     <p class="text-sm text-gray-400">We expose criminal networks so that potential victims can recognize fraud patterns before losing their money. Prevention through awareness.</p>
                 </div>
-                <div class="glass rounded-2xl p-6 text-center hover:scale-[1.02] transition-all duration-500">
-                    <div class="w-16 h-16 mx-auto mb-4 bg-teal-500/10 rounded-2xl flex items-center justify-center">
+                <div class="glass mission-card rounded-2xl p-6 text-center" style="--glow-color: rgba(20,184,166,0.15)">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-teal-500/10 rounded-2xl flex items-center justify-center mission-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2">Aid Investigations</h3>
                     <p class="text-sm text-gray-400">Structured intelligence for law enforcement, security researchers, and journalists investigating organized cybercrime and financial fraud.</p>
                 </div>
-                <div class="glass rounded-2xl p-6 text-center hover:scale-[1.02] transition-all duration-500">
-                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-500/10 rounded-2xl flex items-center justify-center">
+                <div class="glass mission-card rounded-2xl p-6 text-center" style="--glow-color: rgba(139,92,246,0.15)">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-purple-500/10 rounded-2xl flex items-center justify-center mission-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
                     </div>
                     <h3 class="text-lg font-bold text-white mb-2">Expose & Deter</h3>
@@ -463,21 +622,21 @@
         <!-- Stats Counter -->
         <div class="reveal mb-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-                <div class="glass rounded-2xl p-5 text-center hover:scale-[1.02] transition-all duration-300">
-                    <div class="text-2xl sm:text-3xl font-extrabold text-blue-400 counter" data-target="11">0</div>
-                    <div class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Teams Exposed</div>
+                <div class="glass stat-card rounded-2xl p-5 text-center" style="--stat-color: rgba(59,130,246,0.12)">
+                    <div class="relative z-10 text-2xl sm:text-3xl font-extrabold text-blue-400 counter" data-target="11">0</div>
+                    <div class="relative z-10 text-xs text-gray-500 mt-1 uppercase tracking-wider">Teams Exposed</div>
                 </div>
-                <div class="glass rounded-2xl p-5 text-center hover:scale-[1.02] transition-all duration-300">
-                    <div class="text-2xl sm:text-3xl font-extrabold text-teal-400 counter" data-target="3262">0</div>
-                    <div class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Evidence Files</div>
+                <div class="glass stat-card rounded-2xl p-5 text-center" style="--stat-color: rgba(20,184,166,0.12)">
+                    <div class="relative z-10 text-2xl sm:text-3xl font-extrabold text-teal-400 counter" data-target="3262">0</div>
+                    <div class="relative z-10 text-xs text-gray-500 mt-1 uppercase tracking-wider">Evidence Files</div>
                 </div>
-                <div class="glass rounded-2xl p-5 text-center hover:scale-[1.02] transition-all duration-300">
-                    <div class="text-2xl sm:text-3xl font-extrabold text-purple-400 counter" data-target="1565">0</div>
-                    <div class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Panels Detected</div>
+                <div class="glass stat-card rounded-2xl p-5 text-center" style="--stat-color: rgba(139,92,246,0.12)">
+                    <div class="relative z-10 text-2xl sm:text-3xl font-extrabold text-purple-400 counter" data-target="1565">0</div>
+                    <div class="relative z-10 text-xs text-gray-500 mt-1 uppercase tracking-wider">Panels Detected</div>
                 </div>
-                <div class="glass rounded-2xl p-5 text-center hover:scale-[1.02] transition-all duration-300">
-                    <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 counter" data-target="100">0%</div>
-                    <div class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Open Source</div>
+                <div class="glass stat-card rounded-2xl p-5 text-center" style="--stat-color: rgba(245,158,11,0.12)">
+                    <div class="relative z-10 text-2xl sm:text-3xl font-extrabold text-amber-400 counter" data-target="100">0%</div>
+                    <div class="relative z-10 text-xs text-gray-500 mt-1 uppercase tracking-wider">Open Source</div>
                 </div>
             </div>
         </div>
@@ -895,11 +1054,42 @@
                     <p><strong>CIS Block:</strong> RU, UA, BY, KZ</p>
                 `,
                 folders: [
-                    { name: "panel", link: "https://github.com/phishdestroy/ScamIntelLogs/tree/main/TRXDrop/screen" },
-                    { name: "script", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/script_tron.js" },
-                    { name: "script", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/script.js" },
-                    { name: "script", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/wallet-modal.js" },
+                    { name: "panel", link: "https://github.com/phishdestroy/ScamIntelLogs/tree/main/TRXDrop/screenshots" },
+                    { name: "script", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/drainer-tron-core.js" },
+                    { name: "script", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/drainer-loader.js" },
+                    { name: "script", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/drainer-wallet-modal.js" },
                     { name: "iocs", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/iocs.json" }
+                ]
+            },
+            {
+                name: "GAMBLER",
+                path: "gambler",
+                image: "https://i.ibb.co/mCQY1g99/717Team.png",
+                description: `
+                    <p><strong>🎰 GAMBLER Panel</strong> — "A soulless project that is made for profit." Russian-language Scam-as-a-Service fake casino platform with $50M+ in stolen deposits, 2M+ registered victims, 6,000+ affiliates, and 5,515 phishing domains. Featured by KrebsOnSecurity (Aug 2025).</p>
+                    <p class="font-semibold mt-4">🔮 Main Offers:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>🎰 Custom-built fake casino engine with rigged slots</li>
+                        <li>💸 WalletConnect crypto wallet drainer ($90K single drain)</li>
+                        <li>🤖 GAMBLER AI — automated victim manipulation chatbot</li>
+                        <li>🌐 150+ landing pages (Trump, Musk, celebrity themes)</li>
+                    </ul>
+                    <p class="font-semibold mt-4">🌐 Infrastructure:</p>
+                    <p><strong>📌 Panel:</strong> <a href="https://wiki.gambler-partners.is" target="_blank" class="text-blue-400 hover:text-blue-300">gambler-partners.is</a> (prev: gambler-panel.com → gambler-work.com)</p>
+                    <p><strong>🤖 Bot:</strong> <a href="https://t.me/gambler_panel_bot" target="_blank" class="text-blue-400 hover:text-blue-300">@gambler_panel_bot</a></p>
+                    <p><strong>📌 Forum:</strong> <a href="https://lolz.live/threads/5918290/" target="_blank" class="text-blue-400 hover:text-blue-300">lolz.live/threads/5918290</a> (400K+ views)</p>
+                    <p><strong>💰 Admitted:</strong> $50M+ deposits in 1 year, goal $2 BILLION</p>
+                    <p><strong>🛠️ Admins:</strong> <a href="https://t.me/gamblerworkmain" target="_blank" class="text-blue-400 hover:text-blue-300">@gamblerworkmain</a> (8124198200), <a href="https://t.me/lord_gamb" target="_blank" class="text-blue-400 hover:text-blue-300">@lord_gamb</a> (7916076811)</p>
+                    <p class="font-semibold mt-4">📌 Note:</p>
+                    <p>Auto-detected by PhishDestroy Keitaro Hunter. They distribute anti-PhishDestroy counter-phishing templates to partners. Active since Aug 2024, still operating as of Jan 2026.</p>
+                    <p><strong>🧠 "All deposits go in one direction."</strong></p>
+                `,
+                folders: [
+                    { name: "investigation", link: "https://phishdestroy.github.io/ScamIntelLogs/gambler/" },
+                    { name: "domains", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/gambler/domain.txt" },
+                    { name: "admin_messages", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/gambler/user-8124198200-messages.json" },
+                    { name: "panel_screenshots", link: "https://github.com/phishdestroy/ScamIntelLogs/tree/main/gambler/Gambler%20Panel_%20Organized%20Crime%20Network%20Analysis%20_%20PhishDestroy%20Abuse%20Report_files" },
+                    { name: "video_evidence", link: "https://github.com/phishdestroy/ScamIntelLogs/tree/main/gambler/GAMBLER%20Scam%20Investigation%20-%20Verified%20Report_files" }
                 ]
             }
         ];

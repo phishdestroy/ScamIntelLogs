@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Investigation Wiki | ScamIntelLogs</title>
+    <meta name="description" content="Open-source intelligence guide for investigating crypto scam networks. Tools, techniques, and methodology for Telegram OSINT, blockchain analysis, and infrastructure mapping.">
+    <link rel="icon" type="image/x-icon" href="https://destroyico.pages.dev/assets/favicon.ico">
+    <meta property="og:title" content="OSINT Investigation Wiki — ScamIntelLogs">
+    <meta property="og:description" content="Comprehensive guide to investigating scam networks using open-source tools and techniques.">
+    <meta property="og:image" content="https://destroyico.pages.dev/assets/android-chrome-512x512.png">
+    <meta name="theme-color" content="#06080d">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{box-sizing:border-box;scroll-behavior:smooth}
+        body{font-family:'Inter',sans-serif;background:#06080d;overflow-x:hidden}
+        .mono{font-family:'JetBrains Mono',monospace}
+
+        /* Ambient */
+        body::before{content:'';position:fixed;top:-40%;left:-20%;width:80%;height:80%;background:radial-gradient(ellipse,rgba(6,182,212,.05) 0%,transparent 70%);pointer-events:none;z-index:0}
+        body::after{content:'';position:fixed;bottom:-30%;right:-15%;width:70%;height:70%;background:radial-gradient(ellipse,rgba(139,92,246,.04) 0%,transparent 70%);pointer-events:none;z-index:0}
+
+        .text-gradient{background:linear-gradient(135deg,#06b6d4,#3b82f6,#8b5cf6);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+        /* Scroll reveal */
+        .reveal{opacity:0;transform:translateY(20px);transition:all .6s cubic-bezier(.4,0,.2,1)}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+
+        /* Cards */
+        .card{background:rgba(255,255,255,.02);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.06);border-radius:16px;transition:all .3s}
+        .card:hover{border-color:rgba(255,255,255,.12);box-shadow:0 0 30px rgba(6,182,212,.05)}
+
+        /* Tool cards */
+        .tool-card{position:relative;overflow:hidden;transition:all .4s cubic-bezier(.4,0,.2,1)}
+        .tool-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,182,212,.04) 0%,transparent 60%);opacity:0;transition:opacity .3s}
+        .tool-card:hover::before{opacity:1}
+        .tool-card:hover{transform:translateY(-2px);border-color:rgba(6,182,212,.3);box-shadow:0 8px 30px rgba(6,182,212,.08)}
+
+        /* Mistake cards */
+        .mistake-card{border-left:3px solid rgba(239,68,68,.4);transition:all .3s}
+        .mistake-card:hover{border-left-color:rgba(239,68,68,.8);background:rgba(239,68,68,.03)}
+
+        /* TOC */
+        .toc-link{transition:all .2s;border-left:2px solid transparent;padding-left:12px}
+        .toc-link:hover,.toc-link.active{border-left-color:#06b6d4;color:#06b6d4}
+
+        /* Section anchor offset */
+        section[id]{scroll-margin-top:24px}
+
+        /* Shimmer */
+        @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+        .shimmer{background:linear-gradient(90deg,transparent 25%,rgba(255,255,255,.03) 50%,transparent 75%);background-size:200% 100%;animation:shimmer 3s infinite}
+
+        /* Floating badge */
+        @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+        .float{animation:float 4s ease-in-out infinite}
+
+        /* Pulse ring */
+        @keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(6,182,212,.3)}70%{box-shadow:0 0 0 8px rgba(6,182,212,0)}100%{box-shadow:0 0 0 0 rgba(6,182,212,0)}}
+        .pulse-ring{animation:pulseRing 2s infinite}
+
+        /* Code block */
+        .code-block{background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow-x:auto}
+
+        /* Number counter */
+        .step-num{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+
+        ::-webkit-scrollbar{width:5px}
+        ::-webkit-scrollbar-track{background:transparent}
+        ::-webkit-scrollbar-thumb{background:#1f2937;border-radius:3px}
+    </style>
+</head>
+<body class="text-gray-300 min-h-screen relative">
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 relative z-10">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-10">
+        <a href="./" class="text-sm text-gray-500 hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+            ScamIntelLogs
+        </a>
+        <div class="flex items-center gap-3">
+            <a href="keitaro/checker.html" class="text-[11px] text-gray-600 hover:text-cyan-400 transition-colors">Keitaro Checker</a>
+            <a href="https://www.phishdestroy.io/" target="_blank" class="text-[11px] text-gray-600 hover:text-gray-400 transition-colors">PhishDestroy</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-cyan-500/[.07] border border-cyan-500/[.15]">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 pulse-ring"></span>
+            <span class="text-[11px] mono text-cyan-400/80 uppercase tracking-wider">Open-Source Intelligence Guide</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-gradient mb-4">Investigation Wiki</h1>
+        <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-6">Tools, techniques, and methodology for investigating crypto scam networks using open-source intelligence</p>
+        <div class="flex justify-center gap-2 flex-wrap">
+            <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 rounded-full text-xs font-semibold border border-cyan-500/20">Telegram OSINT</span>
+            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold border border-blue-500/20">Blockchain Analysis</span>
+            <span class="px-3 py-1 bg-violet-500/10 text-violet-400 rounded-full text-xs font-semibold border border-violet-500/20">Infrastructure Mapping</span>
+            <span class="px-3 py-1 bg-green-500/10 text-green-400 rounded-full text-xs font-semibold border border-green-500/20">Passive Recon</span>
+            <span class="px-3 py-1 bg-red-500/10 text-red-400 rounded-full text-xs font-semibold border border-red-500/20">Scammer Mistakes</span>
+        </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+
+        <!-- TOC Sidebar -->
+        <nav class="lg:w-56 shrink-0 lg:sticky lg:top-6 lg:self-start hidden lg:block">
+            <div class="card p-4">
+                <div class="text-[10px] uppercase tracking-widest text-gray-600 font-bold mb-3">Contents</div>
+                <div class="space-y-1 text-[12px]" id="tocNav">
+                    <a href="#why" class="toc-link block py-1 text-gray-500 hover:text-cyan-400">Why This Works</a>
+                    <a href="#mistakes" class="toc-link block py-1 text-gray-500 hover:text-cyan-400">Scammer Mistakes</a>
+                    <a href="#telegram" class="toc-link block py-1 text-gray-500 hover:text-cyan-400">Telegram OSINT</a>
+                    <a href="#blockchain" class="toc-link block py-1 text-gray-500 hover:text-cyan-400">Blockchain Analysis</a>
+                    <a href="#infrastructure" class="toc-link block py-1 text-gray-500 hover:text-cyan-400">Infrastructure Recon</a>
+                    <a href="#tools" class="toc-link block py-1 text-gray-500 hover:text-cyan-400">Tools & Scripts</a>
+                    <a href="#workflow" class="toc-link block py-1 text-gray-500 hover:text-cyan-400">Investigation Workflow</a>
+                    <a href="#data" class="toc-link block py-1 text-gray-500 hover:text-cyan-400">What You Find</a>
+                    <a href="#legal" class="toc-link block py-1 text-gray-500 hover:text-cyan-400">Legal & Ethics</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-1 min-w-0 space-y-12">
+
+            <!-- ===== WHY THIS WORKS ===== -->
+            <section id="why" class="reveal">
+                <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                    <span class="step-num bg-cyan-500/15 border border-cyan-500/20 text-cyan-400">01</span>
+                    Why Open-Source Investigation Works
+                </h2>
+                <div class="card p-6 mb-4">
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Scammers operate under the assumption that their internal communications and infrastructure are invisible. They're wrong. Here's why:</p>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-black/20 rounded-xl p-4 border border-white/[.04]">
+                            <div class="text-xs font-bold text-cyan-400 mb-2">Early Stage Visibility</div>
+                            <p class="text-[12px] text-gray-500">When scam groups form, all members are visible. Before they learn OPSEC, real Telegram accounts are used — personal profiles, phone numbers, mutual contacts. This window is where most intelligence is harvested.</p>
+                        </div>
+                        <div class="bg-black/20 rounded-xl p-4 border border-white/[.04]">
+                            <div class="text-xs font-bold text-cyan-400 mb-2">Text Reveals Data</div>
+                            <p class="text-[12px] text-gray-500">In internal chats, scammers share wallet addresses, victim IPs, domains, payment amounts, screenshots with metadata. Every message is potential evidence — they just don't think anyone is watching.</p>
+                        </div>
+                        <div class="bg-black/20 rounded-xl p-4 border border-white/[.04]">
+                            <div class="text-xs font-bold text-cyan-400 mb-2">Infrastructure Leaves Traces</div>
+                            <p class="text-[12px] text-gray-500">Phishing domains need DNS, hosting, SSL certs. Payment flows need wallets. Every piece of infrastructure is registered somewhere, and most of it is queryable through public tools.</p>
+                        </div>
+                        <div class="bg-black/20 rounded-xl p-4 border border-white/[.04]">
+                            <div class="text-xs font-bold text-cyan-400 mb-2">Blockchain Is Public</div>
+                            <p class="text-[12px] text-gray-500">Every transaction on-chain is permanent and visible. Stolen funds can be traced from victim wallet through mixers, bridges, and eventually to exchanges where KYC exists. The ledger never forgets.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SCAMMER MISTAKES ===== -->
+            <section id="mistakes" class="reveal">
+                <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                    <span class="step-num bg-red-500/15 border border-red-500/20 text-red-400">02</span>
+                    Common Scammer Mistakes
+                </h2>
+                <p class="text-sm text-gray-500 mb-5">These are the operational security failures we exploit over and over:</p>
+
+                <div class="space-y-3">
+                    <div class="mistake-card card p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-400 text-lg mt-0.5">01</span>
+                            <div>
+                                <div class="text-sm font-bold text-white mb-1">Using personal Telegram accounts</div>
+                                <p class="text-[12px] text-gray-500">Scammers join work chats from their real accounts — the ones linked to personal phone numbers, with real profile photos, mutual friends, and years of history. They create "work" accounts later, but by then we already have their personal IDs from the early group member list.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mistake-card card p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-400 text-lg mt-0.5">02</span>
+                            <div>
+                                <div class="text-sm font-bold text-white mb-1">Early group formation = visible members</div>
+                                <p class="text-[12px] text-gray-500">When a Telegram group is created, all initial members are visible to any member. Before the group grows and settings are locked, the complete member list — admins, workers, developers — is exposed. This is the <strong class="text-gray-300">gold mine</strong> of any investigation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mistake-card card p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-400 text-lg mt-0.5">03</span>
+                            <div>
+                                <div class="text-sm font-bold text-white mb-1">Sharing victim data in plain text</div>
+                                <p class="text-[12px] text-gray-500">IP addresses, wallet addresses, stolen amounts, victim names, bank details — all shared openly in group chats. Screenshots of admin panels with victim databases visible. Every message becomes evidence that can be cross-referenced with blockchain data and victim reports.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mistake-card card p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-400 text-lg mt-0.5">04</span>
+                            <div>
+                                <div class="text-sm font-bold text-white mb-1">Reusing infrastructure across operations</div>
+                                <p class="text-[12px] text-gray-500">Same hosting provider, same registrar, same wallet for receiving funds, same Telegram bots. When one operation is exposed, the shared infrastructure links it to every other operation the same actors run. One domain leads to twenty.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mistake-card card p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-400 text-lg mt-0.5">05</span>
+                            <div>
+                                <div class="text-sm font-bold text-white mb-1">Screenshots with metadata</div>
+                                <p class="text-[12px] text-gray-500">Admin panel screenshots showing URLs in the address bar, OS language settings, timezone, browser bookmarks, notification pop-ups from personal apps. Desktop screenshots that reveal usernames, file paths, installed software. Every pixel is intelligence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mistake-card card p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-400 text-lg mt-0.5">06</span>
+                            <div>
+                                <div class="text-sm font-bold text-white mb-1">Posting payment proof & wallet balances</div>
+                                <p class="text-[12px] text-gray-500">Scammers love to flex — posting wallet balances, payment screenshots, exchange withdrawal confirmations. Each one is a traceable financial artifact that links their identity to specific wallets and transactions on the public blockchain.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mistake-card card p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-400 text-lg mt-0.5">07</span>
+                            <div>
+                                <div class="text-sm font-bold text-white mb-1">Not encrypting bot tokens & API keys</div>
+                                <p class="text-[12px] text-gray-500">Telegram bot tokens, API keys for payment processors, admin panel credentials — shared in plain text in group chats. A single leaked bot token reveals the entire command infrastructure, all users who interacted with it, and the message history.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== TELEGRAM OSINT ===== -->
+            <section id="telegram" class="reveal">
+                <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                    <span class="step-num bg-blue-500/15 border border-blue-500/20 text-blue-400">03</span>
+                    Telegram OSINT
+                </h2>
+                <p class="text-sm text-gray-500 mb-5">Telegram is the primary communication platform for CIS-region scam operations. Here's how to extract intelligence from it:</p>
+
+                <div class="space-y-4">
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-blue-400 mb-3 uppercase tracking-wider">Group Member Extraction</div>
+                        <div class="text-[12px] text-gray-400 space-y-2">
+                            <p>When you have access to a scam group (through leaks, infiltration, or public invite links), the <strong class="text-gray-300">member list is the first priority</strong>:</p>
+                            <ul class="space-y-1.5 ml-2">
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> Export full member list: <span class="mono text-gray-300">user_id, username, first_name, last_name, phone</span></li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> Check admin list separately — admins are the operators</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> Cross-reference user IDs across multiple groups to map networks</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> Early members (by join date) are usually the core team</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> Check if personal accounts have profile photos, bios, linked channels</li>
+                            </ul>
+                        </div>
+                        <div class="code-block mt-3 p-3">
+                            <div class="text-[10px] text-gray-600 mb-1"># Telethon — extract group members</div>
+                            <pre class="mono text-[11px] text-cyan-400/80 whitespace-pre-wrap">from telethon.sync import TelegramClient
+from telethon.tl.functions.channels import GetParticipantsRequest
+from telethon.tl.types import ChannelParticipantsSearch
+
+async with TelegramClient('session', api_id, api_hash) as client:
+    participants = await client.get_participants(group)
+    for user in participants:
+        print(f"{user.id} | @{user.username} | {user.first_name} {user.last_name} | {user.phone}")</pre>
+                        </div>
+                    </div>
+
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-blue-400 mb-3 uppercase tracking-wider">Chat Export & Analysis</div>
+                        <div class="text-[12px] text-gray-400 space-y-2">
+                            <p>Full chat history contains the most valuable intelligence:</p>
+                            <ul class="space-y-1.5 ml-2">
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> <strong class="text-gray-300">Wallet addresses</strong> — regex extract all crypto addresses from messages</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> <strong class="text-gray-300">Domains</strong> — extract all URLs, map phishing infrastructure</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> <strong class="text-gray-300">IP addresses</strong> — victim IPs shared in logs, admin panel IPs in screenshots</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> <strong class="text-gray-300">Financial amounts</strong> — stolen sums, payment shares, affiliate percentages</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> <strong class="text-gray-300">Bot tokens</strong> — <span class="mono">123456:ABC-DEF...</span> format reveals entire bot infrastructure</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> <strong class="text-gray-300">Timestamps</strong> — activity patterns reveal timezone and working hours</li>
+                            </ul>
+                        </div>
+                        <div class="code-block mt-3 p-3">
+                            <div class="text-[10px] text-gray-600 mb-1"># Export chat to JSON with Telethon</div>
+                            <pre class="mono text-[11px] text-cyan-400/80 whitespace-pre-wrap">import json, re
+
+messages = []
+async for msg in client.iter_messages(group, limit=None):
+    messages.append({
+        "id": msg.id, "date": str(msg.date),
+        "from_id": msg.sender_id,
+        "text": msg.text or "",
+        "media": bool(msg.media)
+    })
+
+# Extract IOCs from text
+wallets = set()
+domains = set()
+for m in messages:
+    wallets.update(re.findall(r'\b(0x[a-fA-F0-9]{40})\b', m["text"]))  # ETH
+    wallets.update(re.findall(r'\b(T[A-Za-z1-9]{33})\b', m["text"]))    # TRX
+    domains.update(re.findall(r'https?://([^\s/]+)', m["text"]))</pre>
+                        </div>
+                    </div>
+
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-blue-400 mb-3 uppercase tracking-wider">User ID Lookup & Cross-Reference</div>
+                        <div class="text-[12px] text-gray-400 space-y-2">
+                            <p>Telegram user IDs are permanent. Even when usernames change, the numeric ID stays. Use it to:</p>
+                            <ul class="space-y-1.5 ml-2">
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> Track the same person across multiple scam groups</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> Find their activity in public groups and channels</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> Use <a href="https://t.me/username_to_id_bot" target="_blank" class="text-cyan-400 hover:text-cyan-300">@username_to_id_bot</a> for quick lookups</li>
+                                <li class="flex gap-2"><span class="text-blue-400">&bull;</span> Build a graph of relationships between user IDs across groups</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== BLOCKCHAIN ANALYSIS ===== -->
+            <section id="blockchain" class="reveal">
+                <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                    <span class="step-num bg-green-500/15 border border-green-500/20 text-green-400">04</span>
+                    Blockchain Analysis
+                </h2>
+                <p class="text-sm text-gray-500 mb-5">Follow the money. Every on-chain transaction is permanent evidence:</p>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-green-400 mb-2">Victim Wallet &rarr; Scammer Wallet</div>
+                        <p class="text-[12px] text-gray-500 mb-3">Trace the initial theft transaction. The receiving wallet is the first node in the money flow graph.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <a href="https://etherscan.io" target="_blank" class="text-[10px] mono px-2 py-1 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 hover:bg-green-500/20 transition-colors">etherscan.io</a>
+                            <a href="https://tronscan.org" target="_blank" class="text-[10px] mono px-2 py-1 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 hover:bg-green-500/20 transition-colors">tronscan.org</a>
+                            <a href="https://bscscan.com" target="_blank" class="text-[10px] mono px-2 py-1 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 hover:bg-green-500/20 transition-colors">bscscan.com</a>
+                        </div>
+                    </div>
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-green-400 mb-2">Scammer Wallet &rarr; Exchange</div>
+                        <p class="text-[12px] text-gray-500 mb-3">Track funds to CEX deposit addresses. Exchanges have KYC — this is where pseudonymous meets identity.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <a href="https://misttrack.io" target="_blank" class="text-[10px] mono px-2 py-1 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 hover:bg-green-500/20 transition-colors">misttrack.io</a>
+                            <a href="https://metasleuth.io" target="_blank" class="text-[10px] mono px-2 py-1 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 hover:bg-green-500/20 transition-colors">metasleuth.io</a>
+                        </div>
+                    </div>
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-green-400 mb-2">Drainer Contract Analysis</div>
+                        <p class="text-[12px] text-gray-500 mb-3">Decompile drainer smart contracts to find fee addresses, admin wallets, and the drainer-as-a-service operator.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <a href="https://library.dedaub.com" target="_blank" class="text-[10px] mono px-2 py-1 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 hover:bg-green-500/20 transition-colors">dedaub.com</a>
+                            <a href="https://ethervm.io/decompile" target="_blank" class="text-[10px] mono px-2 py-1 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 hover:bg-green-500/20 transition-colors">ethervm.io</a>
+                        </div>
+                    </div>
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-green-400 mb-2">Wallet Clustering</div>
+                        <p class="text-[12px] text-gray-500 mb-3">Group related wallets by shared transaction patterns, common funding sources, or sequential creation timestamps.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <a href="https://breadcrumbs.app" target="_blank" class="text-[10px] mono px-2 py-1 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 hover:bg-green-500/20 transition-colors">breadcrumbs.app</a>
+                            <a href="https://arkham.com" target="_blank" class="text-[10px] mono px-2 py-1 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 hover:bg-green-500/20 transition-colors">arkham.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== INFRASTRUCTURE RECON ===== -->
+            <section id="infrastructure" class="reveal">
+                <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                    <span class="step-num bg-violet-500/15 border border-violet-500/20 text-violet-400">05</span>
+                    Infrastructure Reconnaissance
+                </h2>
+                <p class="text-sm text-gray-500 mb-5">Map the technical infrastructure behind scam operations:</p>
+
+                <div class="space-y-4">
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-violet-400 mb-3">Domain Intelligence</div>
+                        <div class="grid sm:grid-cols-3 gap-3 text-[12px]">
+                            <div class="bg-black/20 rounded-lg p-3 border border-white/[.04]">
+                                <div class="text-gray-300 font-semibold mb-1">WHOIS & History</div>
+                                <p class="text-gray-600">Registration dates, registrant data (if not private), nameserver changes, historical ownership</p>
+                                <div class="flex gap-1 mt-2">
+                                    <span class="mono text-[10px] text-violet-400/60">whois.domaintools.com</span>
+                                </div>
+                            </div>
+                            <div class="bg-black/20 rounded-lg p-3 border border-white/[.04]">
+                                <div class="text-gray-300 font-semibold mb-1">DNS Records</div>
+                                <p class="text-gray-600">A, CNAME, MX, TXT records. IP addresses behind domains. Shared hosting = shared actors.</p>
+                                <div class="flex gap-1 mt-2">
+                                    <span class="mono text-[10px] text-violet-400/60">securitytrails.com</span>
+                                </div>
+                            </div>
+                            <div class="bg-black/20 rounded-lg p-3 border border-white/[.04]">
+                                <div class="text-gray-300 font-semibold mb-1">SSL Certificates</div>
+                                <p class="text-gray-600">Certificate transparency logs. Find all domains on the same cert, discover related infrastructure.</p>
+                                <div class="flex gap-1 mt-2">
+                                    <span class="mono text-[10px] text-violet-400/60">crt.sh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-violet-400 mb-3">Reverse IP & Hosting</div>
+                        <div class="text-[12px] text-gray-400 space-y-2">
+                            <p>When you have one IP from a phishing domain, you can find every other domain hosted on it:</p>
+                            <div class="code-block p-3 mt-2">
+                                <pre class="mono text-[11px] text-violet-400/80 whitespace-pre-wrap"># Reverse IP lookup — find all domains on same server
+curl "https://api.hackertarget.com/reverseiplookup/?q=1.2.3.4"
+
+# Shodan — find open ports, services, banners
+shodan host 1.2.3.4
+
+# Censys — TLS certificates on IP
+censys search "ip:1.2.3.4"</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-5">
+                        <div class="text-xs font-bold text-violet-400 mb-3">Keitaro TDS Detection</div>
+                        <div class="text-[12px] text-gray-400 space-y-2">
+                            <p>Scam operations frequently use <strong class="text-gray-300">Keitaro TDS</strong> to cloak phishing pages from moderators. Our tools detect it:</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <a href="keitaro/checker.html" class="px-3 py-2 bg-amber-500/10 text-amber-400 rounded-lg text-[11px] font-bold border border-amber-500/20 hover:bg-amber-500/15 transition-colors">Online Checker (7 evidence checks)</a>
+                                <a href="https://github.com/phishdestroy/ScamIntelLogs/tree/main/keitaro/script" target="_blank" class="px-3 py-2 bg-amber-500/10 text-amber-400 rounded-lg text-[11px] font-bold border border-amber-500/20 hover:bg-amber-500/15 transition-colors">Python Scanner (mass scan)</a>
+                                <a href="keitaro/" class="px-3 py-2 bg-amber-500/10 text-amber-400 rounded-lg text-[11px] font-bold border border-amber-500/20 hover:bg-amber-500/15 transition-colors">Keitaro Research &amp; Intel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== TOOLS & SCRIPTS ===== -->
+            <section id="tools" class="reveal">
+                <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                    <span class="step-num bg-amber-500/15 border border-amber-500/20 text-amber-400">06</span>
+                    Tools &amp; Open-Source Scripts
+                </h2>
+                <p class="text-sm text-gray-500 mb-5">Everything listed here is free and open-source:</p>
+
+                <div class="grid sm:grid-cols-2 gap-3">
+                    <a href="https://github.com/LonamiWebs/Telethon" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/15 font-bold">TELEGRAM</span>
+                            <span class="text-sm font-bold text-white">Telethon</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Python Telegram API client. Extract members, messages, media, bot interactions. The core tool for Telegram OSINT.</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">pip install telethon</div>
+                    </a>
+                    <a href="https://github.com/pyrogram/pyrogram" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/15 font-bold">TELEGRAM</span>
+                            <span class="text-sm font-bold text-white">Pyrogram</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Alternative Telegram MTProto library. Async, modern API. Good for high-volume data extraction.</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">pip install pyrogram</div>
+                    </a>
+                    <a href="https://github.com/sherlock-project/sherlock" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 font-bold">OSINT</span>
+                            <span class="text-sm font-bold text-white">Sherlock</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Find usernames across 400+ social networks. When you have a scammer's username, check if they reuse it.</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">sherlock username123</div>
+                    </a>
+                    <a href="https://github.com/soxoj/maigret" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-green-500/10 text-green-400 border border-green-500/15 font-bold">OSINT</span>
+                            <span class="text-sm font-bold text-white">Maigret</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Advanced username OSINT. 3000+ sites, profile parsing, report generation. Fork of Sherlock with deeper analysis.</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">maigret username123 --html</div>
+                    </a>
+                    <a href="https://github.com/laramies/theHarvester" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-violet-500/10 text-violet-400 border border-violet-500/15 font-bold">RECON</span>
+                            <span class="text-sm font-bold text-white">theHarvester</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Domain reconnaissance: subdomains, emails, IPs, employee names from public sources (Shodan, VirusTotal, etc.).</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">theHarvester -d domain.com -b all</div>
+                    </a>
+                    <a href="https://github.com/aboul3la/Sublist3r" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-violet-500/10 text-violet-400 border border-violet-500/15 font-bold">RECON</span>
+                            <span class="text-sm font-bold text-white">Sublist3r</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Subdomain enumeration. Find hidden admin panels, staging sites, API endpoints on scam domains.</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">sublist3r -d domain.com</div>
+                    </a>
+                    <a href="https://github.com/projectdiscovery/httpx" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-cyan-500/10 text-cyan-400 border border-cyan-500/15 font-bold">SCAN</span>
+                            <span class="text-sm font-bold text-white">httpx</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Fast HTTP toolkit. Probe domains in bulk, extract titles, status codes, tech stack, redirects. Pairs well with mass domain lists.</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">cat domains.txt | httpx -title -sc -tech</div>
+                    </a>
+                    <a href="https://github.com/projectdiscovery/nuclei" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-cyan-500/10 text-cyan-400 border border-cyan-500/15 font-bold">SCAN</span>
+                            <span class="text-sm font-bold text-white">Nuclei</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Template-based vulnerability scanner. Custom templates can detect specific phishing kits, panels, and drainers.</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">nuclei -u domain.com -t phishing/</div>
+                    </a>
+                    <a href="https://github.com/phishdestroy/ScamIntelLogs/tree/main/keitaro/script" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-red-500/10 text-red-400 border border-red-500/15 font-bold">DETECT</span>
+                            <span class="text-sm font-bold text-white">Keitaro Hunter</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Our Python script for mass Keitaro TDS detection. 7 evidence checks, multi-threaded, proxy support. Finds cloaking infrastructure.</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">python keitaro_hunter_4.py -f domains.txt</div>
+                    </a>
+                    <a href="https://github.com/phishdestroy/destroylist" target="_blank" class="tool-card card p-4 block">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-[10px] mono px-2 py-0.5 rounded-md bg-red-500/10 text-red-400 border border-red-500/15 font-bold">BLOCKLIST</span>
+                            <span class="text-sm font-bold text-white">DestroyList</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">70,000+ malicious domains blocklist maintained by PhishDestroy. Updated regularly. Use for threat feeds or cross-referencing.</p>
+                        <div class="mono text-[10px] text-gray-600 mt-2">curl destroylist/domains.txt</div>
+                    </a>
+                </div>
+
+                <div class="card p-5 mt-4">
+                    <div class="text-xs font-bold text-amber-400 mb-3">Online Services (Free Tier)</div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px]">
+                        <a href="https://crt.sh" target="_blank" class="bg-black/20 rounded-lg p-2.5 border border-white/[.04] hover:border-white/10 transition-colors text-center">
+                            <div class="font-bold text-gray-300">crt.sh</div>
+                            <div class="text-gray-600">CT Logs</div>
+                        </a>
+                        <a href="https://urlscan.io" target="_blank" class="bg-black/20 rounded-lg p-2.5 border border-white/[.04] hover:border-white/10 transition-colors text-center">
+                            <div class="font-bold text-gray-300">urlscan.io</div>
+                            <div class="text-gray-600">URL Analysis</div>
+                        </a>
+                        <a href="https://www.virustotal.com" target="_blank" class="bg-black/20 rounded-lg p-2.5 border border-white/[.04] hover:border-white/10 transition-colors text-center">
+                            <div class="font-bold text-gray-300">VirusTotal</div>
+                            <div class="text-gray-600">Multi-scanner</div>
+                        </a>
+                        <a href="https://www.shodan.io" target="_blank" class="bg-black/20 rounded-lg p-2.5 border border-white/[.04] hover:border-white/10 transition-colors text-center">
+                            <div class="font-bold text-gray-300">Shodan</div>
+                            <div class="text-gray-600">Port/Service scan</div>
+                        </a>
+                        <a href="https://web.archive.org" target="_blank" class="bg-black/20 rounded-lg p-2.5 border border-white/[.04] hover:border-white/10 transition-colors text-center">
+                            <div class="font-bold text-gray-300">Wayback Machine</div>
+                            <div class="text-gray-600">Historical pages</div>
+                        </a>
+                        <a href="https://dnsdumpster.com" target="_blank" class="bg-black/20 rounded-lg p-2.5 border border-white/[.04] hover:border-white/10 transition-colors text-center">
+                            <div class="font-bold text-gray-300">DNSdumpster</div>
+                            <div class="text-gray-600">DNS recon</div>
+                        </a>
+                        <a href="https://search.censys.io" target="_blank" class="bg-black/20 rounded-lg p-2.5 border border-white/[.04] hover:border-white/10 transition-colors text-center">
+                            <div class="font-bold text-gray-300">Censys</div>
+                            <div class="text-gray-600">Internet scan</div>
+                        </a>
+                        <a href="https://hunter.io" target="_blank" class="bg-black/20 rounded-lg p-2.5 border border-white/[.04] hover:border-white/10 transition-colors text-center">
+                            <div class="font-bold text-gray-300">Hunter.io</div>
+                            <div class="text-gray-600">Email finder</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== INVESTIGATION WORKFLOW ===== -->
+            <section id="workflow" class="reveal">
+                <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                    <span class="step-num bg-cyan-500/15 border border-cyan-500/20 text-cyan-400">07</span>
+                    Investigation Workflow
+                </h2>
+                <p class="text-sm text-gray-500 mb-5">A typical scam network investigation follows this flow:</p>
+
+                <div class="space-y-3">
+                    <div class="card p-4 flex items-start gap-4 shimmer">
+                        <span class="step-num bg-cyan-500/15 border border-cyan-500/20 text-cyan-400 mt-0.5">1</span>
+                        <div>
+                            <div class="text-sm font-bold text-white mb-1">Entry Point</div>
+                            <p class="text-[12px] text-gray-500">Victim report, leaked chat dump, public Telegram group link, phishing domain from blocklist, or blockchain transaction alert. Any single data point is enough to start.</p>
+                        </div>
+                    </div>
+                    <div class="card p-4 flex items-start gap-4">
+                        <span class="step-num bg-cyan-500/15 border border-cyan-500/20 text-cyan-400 mt-0.5">2</span>
+                        <div>
+                            <div class="text-sm font-bold text-white mb-1">Telegram Extraction</div>
+                            <p class="text-[12px] text-gray-500">Export full member list and chat history. Extract all IOCs: wallets, domains, IPs, bot tokens. Map the group structure — who are admins, developers, workers.</p>
+                        </div>
+                    </div>
+                    <div class="card p-4 flex items-start gap-4">
+                        <span class="step-num bg-cyan-500/15 border border-cyan-500/20 text-cyan-400 mt-0.5">3</span>
+                        <div>
+                            <div class="text-sm font-bold text-white mb-1">Identity Pivot</div>
+                            <p class="text-[12px] text-gray-500">From Telegram user IDs, pivot to usernames. Run Sherlock/Maigret to find same username across platforms. Check if personal accounts reveal real identities, locations, social connections.</p>
+                        </div>
+                    </div>
+                    <div class="card p-4 flex items-start gap-4">
+                        <span class="step-num bg-cyan-500/15 border border-cyan-500/20 text-cyan-400 mt-0.5">4</span>
+                        <div>
+                            <div class="text-sm font-bold text-white mb-1">Infrastructure Mapping</div>
+                            <p class="text-[12px] text-gray-500">From domains, resolve IPs. Reverse IP to find co-hosted domains. Check SSL certs on crt.sh. Query WHOIS history. Identify hosting provider, registrar, CDN. Detect Keitaro TDS.</p>
+                        </div>
+                    </div>
+                    <div class="card p-4 flex items-start gap-4">
+                        <span class="step-num bg-cyan-500/15 border border-cyan-500/20 text-cyan-400 mt-0.5">5</span>
+                        <div>
+                            <div class="text-sm font-bold text-white mb-1">Financial Trail</div>
+                            <p class="text-[12px] text-gray-500">Trace wallet transactions. Map the flow: victim &rarr; collector &rarr; consolidation &rarr; mixer/bridge &rarr; exchange. Identify the exchange endpoint where KYC can unmask the actor.</p>
+                        </div>
+                    </div>
+                    <div class="card p-4 flex items-start gap-4">
+                        <span class="step-num bg-cyan-500/15 border border-cyan-500/20 text-cyan-400 mt-0.5">6</span>
+                        <div>
+                            <div class="text-sm font-bold text-white mb-1">Cross-Reference & Archive</div>
+                            <p class="text-[12px] text-gray-500">Connect the dots. Same user ID in multiple groups? Same wallet receiving from different drainers? Same registrar for 50 domains? Build the complete picture and archive everything permanently.</p>
+                        </div>
+                    </div>
+                    <div class="card p-4 flex items-start gap-4">
+                        <span class="step-num bg-green-500/15 border border-green-500/20 text-green-400 mt-0.5">7</span>
+                        <div>
+                            <div class="text-sm font-bold text-white mb-1">Report & Publish</div>
+                            <p class="text-[12px] text-gray-500">Submit to ScamIntelLogs, report to law enforcement, share IOCs with the community, submit domains to blocklists, report phishing to Google Safe Browsing and registrars.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== WHAT YOU FIND ===== -->
+            <section id="data" class="reveal">
+                <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                    <span class="step-num bg-yellow-500/15 border border-yellow-500/20 text-yellow-400">08</span>
+                    What You Actually Find
+                </h2>
+                <p class="text-sm text-gray-500 mb-5">Real examples of data types extracted from scam network investigations:</p>
+
+                <div class="grid sm:grid-cols-3 gap-3">
+                    <div class="card p-4 text-center">
+                        <div class="text-2xl font-black text-cyan-400 mb-1 float">IPs</div>
+                        <div class="text-[11px] text-gray-500">Victim IPs from admin panel logs, scammer IPs from screenshot metadata, server IPs from DNS</div>
+                    </div>
+                    <div class="card p-4 text-center">
+                        <div class="text-2xl font-black text-green-400 mb-1 float" style="animation-delay:.5s">Wallets</div>
+                        <div class="text-[11px] text-gray-500">ETH, TRX, BTC, SOL addresses. Drainer contracts. Exchange deposit addresses. Affiliate payout wallets.</div>
+                    </div>
+                    <div class="card p-4 text-center">
+                        <div class="text-2xl font-black text-amber-400 mb-1 float" style="animation-delay:1s">$$$</div>
+                        <div class="text-[11px] text-gray-500">Stolen amounts per victim, total operation volume, affiliate share percentages, payment proofs</div>
+                    </div>
+                    <div class="card p-4 text-center">
+                        <div class="text-2xl font-black text-red-400 mb-1 float" style="animation-delay:1.5s">Domains</div>
+                        <div class="text-[11px] text-gray-500">Phishing URLs, landing pages, API endpoints, admin panel paths, TDS redirector chains</div>
+                    </div>
+                    <div class="card p-4 text-center">
+                        <div class="text-2xl font-black text-violet-400 mb-1 float" style="animation-delay:2s">IDs</div>
+                        <div class="text-[11px] text-gray-500">Telegram user IDs, bot tokens, API keys, panel credentials, email addresses</div>
+                    </div>
+                    <div class="card p-4 text-center">
+                        <div class="text-2xl font-black text-blue-400 mb-1 float" style="animation-delay:2.5s">Patterns</div>
+                        <div class="text-[11px] text-gray-500">Activity timezones, language patterns, infrastructure reuse, shared wallet networks, recurring actors</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== LEGAL & ETHICS ===== -->
+            <section id="legal" class="reveal">
+                <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                    <span class="step-num bg-gray-500/15 border border-gray-500/20 text-gray-400">09</span>
+                    Legal &amp; Ethics
+                </h2>
+
+                <div class="card p-6 border-yellow-500/15">
+                    <div class="text-xs font-bold text-yellow-400 mb-3 uppercase tracking-wider">Rules of Engagement</div>
+                    <div class="space-y-3 text-[12px] text-gray-400">
+                        <div class="flex gap-3">
+                            <span class="text-green-400 shrink-0">DO</span>
+                            <span>Use <strong class="text-gray-300">publicly available data</strong> — Telegram public groups, blockchain explorers, DNS records, WHOIS, CT logs, cached pages</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-green-400 shrink-0">DO</span>
+                            <span>Accept <strong class="text-gray-300">voluntarily submitted data</strong> from insiders, victims, and researchers</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-green-400 shrink-0">DO</span>
+                            <span>Conduct <strong class="text-gray-300">non-destructive audits</strong> of misconfigured panels — read-only, document, don't modify</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-green-400 shrink-0">DO</span>
+                            <span>Report findings to <strong class="text-gray-300">law enforcement</strong> and share IOCs with the security community</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-green-400 shrink-0">DO</span>
+                            <span><strong class="text-gray-300">Protect victim data</strong> — redact PII, don't re-victimize people whose data was stolen</span>
+                        </div>
+                        <div class="border-t border-white/[.06] my-3"></div>
+                        <div class="flex gap-3">
+                            <span class="text-red-400 shrink-0">DON'T</span>
+                            <span>Hack, bruteforce, or compromise systems — <strong class="text-gray-300">passive collection only</strong></span>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-red-400 shrink-0">DON'T</span>
+                            <span>Use collected data for <strong class="text-gray-300">vigilante justice, harassment, or extortion</strong></span>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-red-400 shrink-0">DON'T</span>
+                            <span>Publish <strong class="text-gray-300">unredacted victim PII</strong> — protect the victims, expose the scammers</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-red-400 shrink-0">DON'T</span>
+                            <span>Interact with scammers directly — <strong class="text-gray-300">observe, document, report</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-5 mt-4">
+                    <div class="text-[12px] text-gray-500 leading-relaxed">
+                        <p>This guide is for <strong class="text-gray-300">security researchers, law enforcement, journalists, and anti-fraud professionals</strong>. All techniques described use publicly available data and open-source tools. We do not endorse or encourage unauthorized access to any systems.</p>
+                        <p class="mt-2">Licensed under <a href="LICENSE" class="text-cyan-400 hover:text-cyan-300">MIT License</a>. See our <a href="SECURITY.md" class="text-cyan-400 hover:text-cyan-300">Security Policy</a> for vulnerability reporting.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-[11px] text-gray-700 mt-12 mb-8 border-t border-white/[.04] pt-6">
+        <a href="https://www.phishdestroy.io/" target="_blank" class="hover:text-gray-400 transition-colors">PhishDestroy</a>
+        &middot;
+        <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank" class="hover:text-gray-400 transition-colors">GitHub</a>
+        &middot;
+        <a href="https://t.me/PhishDestroy_bot" target="_blank" class="hover:text-gray-400 transition-colors">Report Scam</a>
+        &middot;
+        <span class="text-gray-700">Scammers delete evidence. We preserve it.</span>
+    </div>
+</div>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+}, { threshold: 0.08, rootMargin: '-30px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// TOC active tracking
+const sections = document.querySelectorAll('section[id]');
+const tocLinks = document.querySelectorAll('#tocNav a');
+const tocObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            tocLinks.forEach(l => l.classList.remove('active'));
+            const active = document.querySelector(`#tocNav a[href="#${e.target.id}"]`);
+            if (active) active.classList.add('active');
+        }
+    });
+}, { threshold: 0.15, rootMargin: '-80px 0px -60% 0px' });
+sections.forEach(s => tocObs.observe(s));
+</script>
+</body>
+</html>

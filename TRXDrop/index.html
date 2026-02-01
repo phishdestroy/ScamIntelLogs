@@ -3,430 +3,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRXDrop - TRON/Solana Crypto Drainer Panel | ScamIntelLogs</title>
-    <meta name="description" content="Archived evidence from TRXDrop: AI-generated Angel Drainer reseller panel, TRON/Solana wallet draining scripts analysis, admin panel screenshots, IOCs, and scam-the-scammer assessment.">
-    <meta name="keywords" content="TRXDrop, Angel Drainer, TRON drainer, Solana drainer, crypto scam, wallet drainer, phishing, OSINT, scammer database, threat intelligence, trxdrop.live, trump-drop.world">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://phishdestroy.github.io/ScamIntelLogs/TRXDrop/">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://phishdestroy.github.io/ScamIntelLogs/TRXDrop/">
-    <meta property="og:title" content="TRXDrop - TRON/Solana Crypto Drainer Panel Analysis">
-    <meta property="og:description" content="Full technical analysis of TRXDrop drainer panel. AI-generated code, scam-the-scammer architecture, decrypted scripts.">
-    <meta property="og:image" content="https://i.ibb.co/9kL9fZyx/TRXDrop-Screenshot-1.png">
-    <meta name="twitter:card" content="summary_large_image">
+    <title>TRXDrop — TRON/Solana Drainer Panel | ScamIntelLogs</title>
+    <meta name="description" content="Full analysis of TRXDrop: AI-generated Angel Drainer reseller panel. TRON/Solana wallet draining scripts, admin panel screenshots, IOCs, scam-the-scammer assessment.">
+    <meta property="og:title" content="TRXDrop — TRON/Solana Crypto Drainer Panel Exposed">
+    <meta property="og:description" content="AI-generated Angel Drainer reseller. Decrypted scripts, panel screenshots, IOCs, attack flow analysis.">
+    <meta property="og:image" content="https://destroyico.pages.dev/assets/android-chrome-512x512.png">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Phish_Destroy">
     <link rel="icon" type="image/x-icon" href="https://destroyico.pages.dev/assets/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="https://destroyico.pages.dev/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://destroyico.pages.dev/assets/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://destroyico.pages.dev/assets/apple-touch-icon.png">
-    <link rel="manifest" href="https://destroyico.pages.dev/assets/site.webmanifest">
-    <meta name="theme-color" content="#111827">
+    <meta name="theme-color" content="#0a0a1a">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .text-gradient { background-image: linear-gradient(to right, #ef4444, #f97316); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        .screenshot-img { border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.2s; cursor: pointer; }
-        .screenshot-img:hover { transform: scale(1.02); }
-        .code-block { background: #0d1117; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 16px; font-family: 'Courier New', monospace; font-size: 13px; overflow-x: auto; color: #e6edf3; }
-        .func-name { color: #d2a8ff; }
-        .comment { color: #8b949e; }
-        .string { color: #a5d6ff; }
-        .keyword { color: #ff7b72; }
+        body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#0c0c1e 0%,#1a1a3e 50%,#0a0a1a 100%);background-attachment:fixed}
+        .grad-text{background:linear-gradient(135deg,#a855f7,#6366f1,#3b82f6);-webkit-background-clip:text;background-clip:text;color:transparent}
+        .card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;backdrop-filter:blur(12px)}
+        .card:hover{border-color:rgba(255,255,255,0.15)}
+        .glow{box-shadow:0 0 40px rgba(168,85,247,0.15)}
+        .tag{display:inline-block;padding:3px 12px;border-radius:9999px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+        .stat-num{font-size:2.5rem;font-weight:900;line-height:1}
+        .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+        .img-card{border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s}
+        .img-card:hover{transform:scale(1.02);box-shadow:0 8px 30px rgba(0,0,0,.5)}
+        .img-card img{width:100%;display:block}
+        #lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:999;align-items:center;justify-content:center;cursor:zoom-out}
+        #lightbox.active{display:flex}
+        #lightbox img{max-width:95vw;max-height:95vh;border-radius:8px}
+        .inf-row{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.05);padding:6px 0;font-size:.75rem}
+        .quote{border-left:3px solid #a855f7;padding-left:16px;margin:12px 0;color:rgba(255,255,255,.6);font-style:italic}
+        .scroll-box{max-height:500px;overflow-y:auto}
+        .scroll-box::-webkit-scrollbar{width:5px}
+        .scroll-box::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
+        .fn-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:12px 14px;margin-bottom:6px}
+        .fn-name{color:#c084fc;font-family:monospace;font-size:.8rem;font-weight:700}
     </style>
 </head>
-<body class="bg-gray-900 text-gray-300 min-h-screen">
-    <div class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+<body class="text-gray-300 min-h-screen">
+<div id="lightbox" onclick="this.classList.remove('active')"><img id="lb-img" src="" alt=""></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-        <a href="../" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-6 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>
-            Back to ScamIntelLogs
-        </a>
+    <!-- Nav -->
+    <a href="../" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8 text-sm transition-colors">
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+        Back to ScamIntelLogs
+    </a>
 
-        <div class="text-center mb-8">
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gradient mb-2">TRXDrop</h1>
-            <p class="text-xl text-gray-400">TRON &amp; Solana Wallet Drainer Panel</p>
-            <p class="text-sm text-gray-500 mt-1">trxdrop.live &mdash; Angel Drainer Reseller via trump-drop.world</p>
-            <div class="flex justify-center gap-3 mt-4 flex-wrap">
-                <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm font-medium">Wallet Drainer</span>
-                <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm font-medium">TRON / Solana</span>
-                <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm font-medium">AI-Generated Code</span>
-                <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm font-medium">Scam-the-Scammer</span>
-            </div>
-        </div>
-
-        <!-- SCAM-THE-SCAMMER WARNING -->
-        <div class="bg-red-500/10 ring-2 ring-red-500/30 rounded-xl p-6 mb-8">
-            <h2 class="text-lg font-bold text-red-400 mb-3">&#9888; Scam-the-Scammer Assessment</h2>
-            <p class="text-sm text-gray-300 mb-4">This panel has a <strong class="text-red-400">high probability of stealing funds from its own workers</strong>. Drainer reseller panels are notorious for this pattern &mdash; they recruit workers (traffers), let them drive victims, then silently redirect stolen funds to the operator. This is extremely common: scammers scamming scammers.</p>
-            <div class="grid sm:grid-cols-2 gap-3 text-sm">
-                <div class="bg-gray-900/60 rounded-lg p-3">
-                    <span class="text-red-400 font-semibold">Auto-Commission Theft</span>
-                    <p class="text-gray-400 mt-1">30 TRX forcibly deducted per drain before any worker payout. Operator's funding wallet private key stored in config &mdash; operator has full control.</p>
-                </div>
-                <div class="bg-gray-900/60 rounded-lg p-3">
-                    <span class="text-red-400 font-semibold">Server-Side Transaction Building</span>
-                    <p class="text-gray-400 mt-1">All drain transactions built on operator's server (<code>/api/buildTransactions</code>). The operator controls what transactions victims sign &mdash; can redirect funds to any wallet at any time.</p>
-                </div>
-                <div class="bg-gray-900/60 rounded-lg p-3">
-                    <span class="text-red-400 font-semibold">No On-Chain Verification</span>
-                    <p class="text-gray-400 mt-1">Workers have no way to verify actual drain amounts on-chain. Statistics shown in panel are generated by the operator's backend &mdash; easily faked.</p>
-                </div>
-                <div class="bg-gray-900/60 rounded-lg p-3">
-                    <span class="text-red-400 font-semibold">Trivial "Encryption"</span>
-                    <p class="text-gray-400 mt-1">XOR cipher with hardcoded key <code class="text-orange-400">TRX_SECURE_2024_PANEL_KEY</code> &mdash; provides zero real security. All traffic between client and backend is trivially interceptable.</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-400 mt-4"><strong class="text-yellow-400">Verdict:</strong> Either will steal from workers after first significant drain, or is already doing so. The panel architecture is designed for the operator to have complete control over all funds. Typical pattern for reseller-grade drainers.</p>
-        </div>
-
-        <!-- OPERATION SUMMARY -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
-            <h2 class="text-lg font-bold text-white mb-3">Operation Summary</h2>
-            <p class="text-sm text-gray-400 mb-4">TRXDrop is a wallet drainer affiliate panel at <strong class="text-white">trxdrop.live</strong> operating as a reseller for Angel Drainer infrastructure. The actual drainer scripts and backend API are hosted on <strong class="text-white">trump-drop.world</strong>. Workers register accounts, create drainer configurations, receive generated scripts, and deploy them on phishing pages disguised as TRX airdrops. Victims are tricked into signing malicious transactions through spoofed wallet interfaces.</p>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
-                <div class="bg-gray-900/50 rounded-lg p-3"><span class="text-gray-500">Panel:</span> <span class="text-blue-400">trxdrop.live</span></div>
-                <div class="bg-gray-900/50 rounded-lg p-3"><span class="text-gray-500">Backend:</span> <span class="text-blue-400">trump-drop.world</span></div>
-                <div class="bg-gray-900/50 rounded-lg p-3"><span class="text-gray-500">Drainer Base:</span> <span class="text-blue-400">Angel Drainer</span></div>
-                <div class="bg-gray-900/50 rounded-lg p-3"><span class="text-gray-500">CIS Block:</span> <span class="text-blue-400">RU, UA, BY, KZ</span></div>
-            </div>
-        </div>
-
-        <!-- AI-GENERATED CODE -->
-        <div class="bg-purple-500/10 ring-1 ring-purple-500/20 rounded-xl p-6 mb-8">
-            <h2 class="text-lg font-bold text-purple-400 mb-3">&#129302; AI-Generated Panel</h2>
-            <p class="text-sm text-gray-400 mb-3">The panel shows strong indicators of being built with AI code generation (likely <strong class="text-white">Claude or GPT-4</strong> based on code style patterns):</p>
-            <ul class="text-sm text-gray-400 space-y-2 list-disc list-inside">
-                <li><strong class="text-white">Boilerplate React CRA structure</strong> &mdash; default Create React App scaffolding with no customization, generic folder layout</li>
-                <li><strong class="text-white">Generic variable naming</strong> &mdash; <code>_0x57ca47</code>, <code>_0x411f3c</code> in obfuscated parts, but clean camelCase in core logic &mdash; typical of AI writing code then running through a basic obfuscator</li>
-                <li><strong class="text-white">Excessive console.log debugging</strong> &mdash; 30+ debug log statements left in production code (<code>[Drainer]</code>, <code>[AutoConnect]</code> prefixes) &mdash; AI-generated code commonly includes verbose logging that human developers would strip</li>
-                <li><strong class="text-white">Placeholder-style comments</strong> &mdash; <code>// TRON Wallet Modal v2.2 - Fixed wallet connections</code>, <code>// Order: WalletConnect, Trust, TronLink, then others</code> read like AI prompt instructions left in output</li>
-                <li><strong class="text-white">Overly clean architecture</strong> &mdash; separation of concerns (loader/drainer/modal as separate files), consistent code style, proper error handling everywhere &mdash; inconsistent with typical underground tooling which is usually chaotic</li>
-                <li><strong class="text-white">Copy-paste anti-debug</strong> &mdash; the debugger trap IIFE is identical between script.js and script_tron.js with only variable names changed &mdash; generated separately then assembled</li>
-            </ul>
-        </div>
-
-        <!-- PANEL SCREENSHOTS -->
-        <h2 class="text-xl font-bold text-white mb-4">Panel Screenshots</h2>
-
-        <div class="space-y-6 mb-8">
-            <!-- Dashboard -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4">
-                <h3 class="text-base font-bold text-white mb-2">Dashboard &mdash; Main Panel View</h3>
-                <p class="text-sm text-gray-400 mb-3">Branded as "TRON Panel". Sidebar: Dashboard, TRON (Configurations), Solana (Configuration), News, Profile, Hosting, Support. Main area shows 4 stat cards (Total Clicks, Connections, Approvals, USDT Drained) with fake "+12/8/15/23% vs last period" growth indicators. Activity Overview and USDT Drains charts. All values at zero &mdash; either freshly deployed or inactive.</p>
-                <img src="https://i.ibb.co/9kL9fZyx/TRXDrop-Screenshot-1.png" alt="TRXDrop Dashboard" class="w-full screenshot-img" loading="lazy">
-            </div>
-
-            <!-- Config part 1 -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4">
-                <h3 class="text-base font-bold text-white mb-2">TRON Configuration &mdash; Transaction Settings &amp; Force Approval</h3>
-                <p class="text-sm text-gray-400 mb-3">Create Configuration modal. Fields: Configuration Name, Minimum Balance ($10 &mdash; won't drain wallets below this), Force Approval Mode toggle (tooltip: "Only request Approval (no transfer). Funds will be drained via AutoDrain when balance >= $1000"), Telegram notifications (Chat ID and Bot Token fields). Russian text visible: "ТИПЫ УВЕДОМЛЕНИЙ / NOTIFICATION TYPES".</p>
-                <img src="https://i.ibb.co/Wp70kCmg/TRXDrop-Screenshot-2.png" alt="TRXDrop Config Part 1" class="w-full screenshot-img" loading="lazy">
-            </div>
-
-            <!-- Config part 2 -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4">
-                <h3 class="text-base font-bold text-white mb-2">TRON Configuration &mdash; Notification Types &amp; WalletConnect Spoof</h3>
-                <p class="text-sm text-gray-400 mb-3">11 notification event toggles: Approved, Connection, Zero Balance, Strategize Failed, Joined, Selected Wallet, Left, Wallet Not Found, Force Approval, Drain, Error. Below: WalletConnect spoof settings &mdash; impersonates "Trust Wallet" with trustwallet.com URL and favicon. Low Balance Message shown to victims with insufficient funds.</p>
-                <img src="https://i.ibb.co/KjWd3z7T/TRXDrop-Screenshot-3.png" alt="TRXDrop Config Part 2" class="w-full screenshot-img" loading="lazy">
-            </div>
-
-            <!-- Config part 3 -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4">
-                <h3 class="text-base font-bold text-white mb-2">TRON Configuration &mdash; Spoof Settings &amp; Auto Commission</h3>
-                <p class="text-sm text-gray-400 mb-3">Fake transaction display: Estimate Changes = "Receive 10,000 TRX ($2,200)", Transaction Status = "full safe", Source Name = "TRX Airdrop" with "verified" badge. Theme selector (Light/Dark), Modal Style (Reown Classic / TronScan New). Auto Commission (TRX Funding) section collapsed below.</p>
-                <img src="https://i.ibb.co/qYKPWy7f/TRXDrop-Screenshot-4.png" alt="TRXDrop Config Part 3" class="w-full screenshot-img" loading="lazy">
-            </div>
-
-            <!-- Auto Commission -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4">
-                <h3 class="text-base font-bold text-white mb-2">TRON Configuration &mdash; Auto Commission (TRX Funding)</h3>
-                <p class="text-sm text-gray-400 mb-3">The most suspicious section. Enable Auto Commission toggle (ON). Requires worker's Funding Wallet Address AND Private Key (stored server-side!). TRX Amount to Send: 30, Min USDT Balance Required: 10, Wait Timeout: 15s, Max Funding Attempts: 3, Cooldown: 5 min. Exclusion system: 24h duration, permanent exclusions enabled, max 9999 exclusions. <strong class="text-red-400">Storing private keys server-side gives the operator complete control over worker funds.</strong></p>
-                <img src="https://i.ibb.co/6LyG6qN/TRXDrop-Screenshot-5.png" alt="TRXDrop Auto Commission" class="w-full screenshot-img" loading="lazy">
-            </div>
-
-            <!-- Solana Config -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4">
-                <h3 class="text-base font-bold text-white mb-2">Solana Configurations &mdash; Script Generation</h3>
-                <p class="text-sm text-gray-400 mb-3">Solana drainer section. Config "34535" with Crasher and Spoof $ tags. Installation Instructions: 1) Create configuration, 2) Download script, 3) Install on site. Generated code snippet: <code>&lt;link rel="stylesheet" href="./style.css"&gt;</code> + <code>&lt;script type="module" src="./dapp.js"&gt;</code> with connect button HTML.</p>
-                <img src="https://i.ibb.co/WNGKhW1Y/TRXDrop-Screenshot-6.png" alt="TRXDrop Solana Config" class="w-full screenshot-img" loading="lazy">
-            </div>
-
-            <!-- Solana Create New -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4">
-                <h3 class="text-base font-bold text-white mb-2">Solana Drainer &mdash; Create New Configuration</h3>
-                <p class="text-sm text-gray-400 mb-3">Worker Information (auto-assigned, cannot be changed). Drainer Modes section with 3 options: <strong class="text-white">Crasher</strong> (enabled, desktop only &mdash; closes browser after drain to destroy evidence), <strong class="text-white">Spoof</strong> (disabled &mdash; shows fake token balances), <strong class="text-white">Honeypot</strong> (disabled &mdash; "Mint fake token to user wallet", incompatible with Crasher). Telegram Notifications below.</p>
-                <img src="https://i.ibb.co/zYVf03N/TRXDrop-Screenshot-7.png" alt="TRXDrop Solana Create" class="w-full screenshot-img" loading="lazy">
-            </div>
-
-            <!-- Solana Spoof Settings -->
-            <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-4">
-                <h3 class="text-base font-bold text-white mb-2">Solana Drainer &mdash; Spoof Mode Settings</h3>
-                <p class="text-sm text-gray-400 mb-3">Drainer Modes with both Crasher and Spoof enabled. Spoof settings: SOL = 1, USDT = 100 &mdash; these fake balances are displayed to victims to make the scam page appear legitimate. Honeypot mode shown disabled with warning "Cannot be used with Crasher".</p>
-                <img src="https://i.ibb.co/TMqdsLGw/TRXDrop-Screenshot-8.png" alt="TRXDrop Solana Spoof" class="w-full screenshot-img" loading="lazy">
-            </div>
-        </div>
-
-        <!-- DECRYPTED CODE ANALYSIS -->
-        <h2 class="text-xl font-bold text-white mb-4">Decrypted Code Analysis</h2>
-
-        <!-- script.js -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-6">
-            <h3 class="text-base font-bold text-white mb-2">script.js &mdash; Loader &amp; Anti-Analysis (68 lines)</h3>
-            <p class="text-sm text-gray-400 mb-3">Entry point injected into victim's phishing page. Responsibilities:</p>
-            <ul class="text-sm text-gray-400 space-y-1 list-disc list-inside mb-4">
-                <li><strong class="text-white">Anti-Debug IIFE</strong> &mdash; recursive function with <code>debugger</code> statement, called via <code>setInterval</code> every 1000ms. Uses division trick (<code>("" + x/x).length !== 1</code>) to alternate between <code>(function(){}).constructor("debugger")()</code> and direct <code>debugger</code> keyword</li>
-                <li><strong class="text-white">Console Hijacking</strong> &mdash; <code>Object.defineProperty(window, "console", ...)</code> replaces all 5 console methods (log, warn, error, info, debug) with empty functions</li>
-                <li><strong class="text-white">XOR-Encrypted Config</strong> &mdash; <code>window.config</code> set to Base64-encoded XOR-encrypted JSON blob containing all drainer settings (spoof text, wallet details, notification preferences)</li>
-                <li><strong class="text-white">Script Chain Loading</strong> &mdash; sequentially loads: <code>walletconnect-bundle.js</code> (1.1MB WalletConnect SDK), <code>axios@1.6.7</code>, then <code>script_tron.js?v=29</code> (drainer core), then <code>wallet-modal.js?v=29</code> (fake UI)</li>
-                <li><strong class="text-white">UI Injection</strong> &mdash; injects CSS styles for loading overlay, low-balance error modal, and sign-waiting modal into page DOM</li>
-                <li><strong class="text-white">Button Binding</strong> &mdash; finds all elements with class <code>connectWallet</code> and binds click handlers to open the fake wallet modal</li>
-            </ul>
-        </div>
-
-        <!-- script_tron.js -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-6">
-            <h3 class="text-base font-bold text-white mb-2">script_tron.js &mdash; Core TRON Drainer (525 lines)</h3>
-            <p class="text-sm text-gray-400 mb-3">Main drainer engine. All communication with <code>trump-drop.world</code> is XOR-encrypted with key <code>TRX_SECURE_2024_PANEL_KEY</code>.</p>
-
-            <h4 class="text-sm font-bold text-gray-300 mt-4 mb-2">Key Functions:</h4>
-            <div class="space-y-3 text-sm">
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">xorConvert(data, key)</code>
-                    <p class="text-gray-400 mt-1">Dual-mode XOR cipher. Detects Base64 input via regex, decodes if needed, XORs each char with key (cycling), returns Base64 or plaintext. Used for ALL API request/response encryption.</p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">sendNotification(type, extras)</code>
-                    <p class="text-gray-400 mt-1">XOR-encrypts payload and POSTs to <code>/api/notification</code>. Types: joined, selected_wallet, connection, approved, drain, error, etc. Sends session ID + full encrypted config with every notification.</p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">connectWalletConnect()</code>
-                    <p class="text-gray-400 mt-1">Server-Side Events (SSE) connection to <code>/api/fetchWalletConnect</code>. Server generates WalletConnect pairing URI, client opens official WC modal with it. Listens for events: <code>connection</code> (show QR), <code>wallet</code> (show signing UI), <code>signed</code> (done), <code>error</code>. Uses project ID <code>fbf5b42d6feed07049dd9e59d888645a</code>.</p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">connectTronLink()</code>
-                    <p class="text-gray-400 mt-1">Multi-provider detection: checks <code>window.bitkeep.tronWeb</code>, <code>window.tronWeb</code>, <code>window.tronLink</code> in sequence. On mobile: attempts <code>tron_requestAccounts</code> with 1s/2s wait delays. Falls back to TronLink deeplink protocol. On desktop: uses TronWalletAdapters.TronLinkAdapter.</p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">processWalletConnection(address, walletName, adapter)</code>
-                    <p class="text-gray-400 mt-1"><strong class="text-red-400">Core malicious function.</strong> XOR-encrypts wallet address + config, POSTs to <code>/api/buildTransactions</code>. Server returns crafted malicious transactions. Then enters <strong class="text-red-400">forced signing loop: 50 attempts with 500ms delay</strong>. Tries adapter.signTransaction, wcAdapter.signTransaction, or tronWeb.trx.sign. If victim rejects &mdash; immediately retries. Signed transaction sent to <code>/api/sendTransaction</code>.</p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">init() + Mobile Auto-Connect</code>
-                    <p class="text-gray-400 mt-1">On mobile devices, after 1.5s delay, automatically attempts to connect without user interaction. Checks Bitget (bitkeep), imToken (UA sniffing), then generic TronLink. If wallet provider found &mdash; calls <code>processWalletConnection</code> directly, bypassing the modal entirely. <strong class="text-red-400">Victims opening the page in a wallet browser get drained automatically.</strong></p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">walletDeeplinks{}</code>
-                    <p class="text-gray-400 mt-1">Deeplink URLs for 7 wallets: Trust (<code>link.trustwallet.com</code>), OKX (<code>okx://wallet/dapp</code>), TokenPocket (<code>tpdapp://open</code>), SafePal (<code>link.safepal.io</code>), MathWallet (<code>mathwallet://</code>), Bitget (<code>bkcode.vip</code>), imToken (<code>imtokenv2://</code>). On mobile, clicking a wallet opens the scam page inside that wallet's browser &mdash; triggering auto-connect.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- wallet-modal.js -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-6">
-            <h3 class="text-base font-bold text-white mb-2">wallet-modal.js &mdash; Fake Wallet Connection UI (695 lines)</h3>
-            <p class="text-sm text-gray-400 mb-3">Pixel-perfect imitation of a legitimate Web3 wallet connection modal.</p>
-
-            <h4 class="text-sm font-bold text-gray-300 mt-4 mb-2">Key Components:</h4>
-            <div class="space-y-3 text-sm">
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">WALLET_MODAL_CONFIG.wallets[]</code>
-                    <p class="text-gray-400 mt-1">7 wallet definitions: WalletConnect (QR Code), Trust Wallet (WalletConnect), TronLink (Extension/Mobile), TokenPocket (WalletConnect), Bitget (Deeplink), imToken (Deeplink), Ledger (Desktop only, WalletConnect). All icons loaded from <code>trump-drop.world/icons/</code>.</p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">injectWalletModalStyles()</code>
-                    <p class="text-gray-400 mt-1">390 lines of CSS injected into page. Professional design: <code>z-index: 999999999</code>, backdrop blur, smooth animations, dark/light themes, mobile bottom-sheet layout. Inter font. Scrollbar styling. Warning modal for desktop-only wallets.</p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">handleWalletConnection(wallet)</code>
-                    <p class="text-gray-400 mt-1">Routes connections based on type: <code>walletconnect</code> &rarr; <code>TronDrainer.connectWalletConnect()</code>, <code>tronlink</code> &rarr; <code>TronDrainer.connectTronLink()</code>, <code>deeplink</code> &rarr; checks if inside wallet browser (direct connect) or opens deeplink to wallet app. Desktop always falls back to WalletConnect.</p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">getThemeFromConfig()</code>
-                    <p class="text-gray-400 mt-1">Duplicate XOR decryption function (same logic as script_tron.js). Reads theme from encrypted <code>window.config</code>. Applies dark/light mode to all modal elements.</p>
-                </div>
-                <div class="bg-gray-900/50 rounded-lg p-3">
-                    <code class="text-purple-400">Footer: "New to crypto? Get a wallet"</code>
-                    <p class="text-gray-400 mt-1">Links to trustwallet.com &mdash; social engineering element that adds legitimacy to the fake modal.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- PANEL FUNCTIONS -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
-            <h2 class="text-lg font-bold text-white mb-3">Panel Functions &amp; API Endpoints</h2>
-            <div class="grid sm:grid-cols-2 gap-4 text-sm">
-                <div>
-                    <h4 class="font-semibold text-gray-300 mb-2">Authentication &amp; Profile</h4>
-                    <ul class="text-gray-400 space-y-1">
-                        <li><code class="text-orange-400">POST /api/auth/login</code> &mdash; JWT HS256 login</li>
-                        <li><code class="text-orange-400">GET /api/user/profile</code> &mdash; worker profile data</li>
-                        <li><code class="text-orange-400">PUT /api/user/wallet</code> &mdash; update payout wallet</li>
-                        <li><code class="text-orange-400">PUT /api/user/password</code> &mdash; change password</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-gray-300 mb-2">Drainer Configuration</h4>
-                    <ul class="text-gray-400 space-y-1">
-                        <li><code class="text-orange-400">GET/POST /api/configurations</code> &mdash; list/create configs</li>
-                        <li><code class="text-orange-400">PUT/DELETE /api/configurations/{id}</code> &mdash; edit/delete</li>
-                        <li><code class="text-orange-400">POST /api/generate-script</code> &mdash; generate TRON drainer</li>
-                        <li><code class="text-orange-400">POST /api/generate-solana-script</code> &mdash; generate Solana drainer</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-gray-300 mb-2">Drain Operations</h4>
-                    <ul class="text-gray-400 space-y-1">
-                        <li><code class="text-orange-400">POST /api/buildTransactions</code> &mdash; server builds malicious txs</li>
-                        <li><code class="text-orange-400">POST /api/sendTransaction</code> &mdash; submit signed tx</li>
-                        <li><code class="text-orange-400">POST /api/notification</code> &mdash; event notifications</li>
-                        <li><code class="text-orange-400">GET /api/fetchWalletConnect</code> &mdash; SSE for WC pairing</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-gray-300 mb-2">Panel Data</h4>
-                    <ul class="text-gray-400 space-y-1">
-                        <li><code class="text-orange-400">GET /api/statistics</code> &mdash; clicks/connects/drains</li>
-                        <li><code class="text-orange-400">GET /api/news</code> &mdash; operator announcements</li>
-                        <li><code class="text-orange-400">GET /api/admin/users</code> &mdash; admin: all workers</li>
-                        <li><code class="text-orange-400">GET /api/admin/settings</code> &mdash; admin: global settings</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- SCAM FLOW -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
-            <h2 class="text-lg font-bold text-white mb-3">Attack Flow</h2>
-            <ol class="text-sm text-gray-400 space-y-2 list-decimal list-inside">
-                <li>Victim lands on fake TRX airdrop page with drainer scripts injected in <code>&lt;head&gt;</code></li>
-                <li>Loader (<code>script.js</code>) activates anti-debug traps and decrypts XOR config</li>
-                <li>On mobile: auto-connect triggers after 1.5s if wallet browser detected (Bitget, imToken, TronLink)</li>
-                <li>On desktop: victim clicks "Connect Wallet" &mdash; sees professional-looking fake wallet modal</li>
-                <li>Wallet selected &rarr; <code>selected_wallet</code> notification sent to operator via Telegram</li>
-                <li>Connection established via WalletConnect QR / TronLink extension / deeplink to wallet app</li>
-                <li>Wallet address + encrypted config sent to <code>/api/buildTransactions</code> on trump-drop.world</li>
-                <li>Server returns crafted malicious transactions. Victim sees fake: <strong class="text-white">"Receive 10,000 TRX ($2,200)"</strong> with "verified" badge</li>
-                <li>Forced signing loop: <strong class="text-red-400">50 retry attempts, 500ms interval</strong>. Victim must close browser to escape</li>
-                <li>Signed transaction submitted to blockchain via <code>/api/sendTransaction</code></li>
-                <li>TRX + USDT drained from wallet. 30 TRX auto-commission to operator. Telegram notification dispatched</li>
-            </ol>
-        </div>
-
-        <!-- PANEL OPERATOR -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
-            <h2 class="text-lg font-bold text-white mb-3">Panel Operator</h2>
-            <div class="grid sm:grid-cols-2 gap-4 text-sm">
-                <div>
-                    <h4 class="font-semibold text-gray-300 mb-2">Support Account</h4>
-                    <p><span class="text-gray-500">Telegram:</span> <a href="https://t.me/STNlRAWbIaFLiH" target="_blank" class="text-blue-400 hover:text-blue-300">@STNlRAWbIaFLiH</a></p>
-                    <p><span class="text-gray-500">Telegram ID:</span> <span class="text-white">6823931109</span></p>
-                    <p><span class="text-gray-500">Registered:</span> <span class="text-white">~December 2023</span></p>
-                    <p><span class="text-gray-500">Role:</span> <span class="text-white">Panel support / operator</span></p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-gray-300 mb-2">Known Telegram Groups</h4>
-                    <ul class="text-gray-400 space-y-1">
-                        <li><a href="https://t.me/TrCryptEx" target="_blank" class="text-blue-400 hover:text-blue-300">Обмен крипты в Турции</a></li>
-                        <li><a href="https://t.me/Nizniy_Novgorod_vse_zdes" target="_blank" class="text-blue-400 hover:text-blue-300">Нижний Новгород</a></li>
-                        <li><span class="text-pink-400">🔒</span> <a href="https://t.me/c/2437038405" target="_blank" class="text-blue-400 hover:text-blue-300">Partyyy</a> (private)</li>
-                        <li><span class="text-gray-500">✖️</span> <a href="https://t.me/kangerooofficial" target="_blank" class="text-blue-400 hover:text-blue-300">Kangeroo Official Group</a> (left)</li>
-                        <li><span class="text-gray-500">✖️</span> <a href="https://t.me/gam3ssio" target="_blank" class="text-blue-400 hover:text-blue-300">GAM3S.IO</a> (left)</li>
-                        <li><a href="https://t.me/XAIAgentAI" target="_blank" class="text-blue-400 hover:text-blue-300">XAIAgent</a></li>
-                        <li><a href="https://t.me/onfa_global" target="_blank" class="text-blue-400 hover:text-blue-300">ONFA Global</a></li>
-                        <li><a href="https://t.me/MonadGlobal" target="_blank" class="text-blue-400 hover:text-blue-300">Monad Community</a></li>
-                        <li><a href="https://t.me/digiflazzmarketplace" target="_blank" class="text-blue-400 hover:text-blue-300">DIGIFLAZZ SELLER &amp; BUYER</a></li>
-                        <li><span class="text-gray-500">✖️</span> <a href="https://t.me/vipsignalsfreeee" target="_blank" class="text-blue-400 hover:text-blue-300">365 alerts</a> (left)</li>
-                        <li><a href="https://t.me/expatsinvest" target="_blank" class="text-blue-400 hover:text-blue-300">Islamic Finance Guru</a></li>
-                        <li><a href="https://t.me/Malik_Mumbai_Vip_free" target="_blank" class="text-blue-400 hover:text-blue-300">Sara Malik (Lady Tipper)</a></li>
-                        <li><a href="https://t.me/lcjghdgsfs" target="_blank" class="text-blue-400 hover:text-blue-300">Гетконтакт</a></li>
-                        <li><span class="text-gray-500">✖️</span> <a href="https://t.me/Jaringanpulsanusantara" target="_blank" class="text-blue-400 hover:text-blue-300">Jaringan Pulsa Nusantara</a> (left)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- RELATED DOMAINS -->
-        <div class="bg-gray-800/50 ring-1 ring-white/10 rounded-xl p-6 mb-8">
-            <h2 class="text-lg font-bold text-white mb-3">Related Domains (IOCs)</h2>
-            <div class="flex flex-wrap gap-2 text-sm">
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">trxdrop.live</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">trump-drop.world</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">qlabtrondemo.shop</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">testoviq.cfd</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">aml-scan-wallet.com</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">qqdemtron.lol</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">v1-4check.digital</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">photon-tiniyastro.icu</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">tronsscan.net</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">amltronchecker.com</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">gasrefund.pro</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">amlcleanscan.help</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">one-aml.com</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">amlscanner.help</span>
-                <span class="px-2 py-1 bg-red-500/10 text-red-400 rounded font-mono">stakeplus.icu</span>
-            </div>
-        </div>
-
-        <!-- EVIDENCE ARCHIVE -->
-        <h2 class="text-xl font-bold text-white mb-4">Evidence Archive</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-            <a href="https://github.com/phishdestroy/ScamIntelLogs/tree/main/TRXDrop/screen" target="_blank" class="flex items-center gap-4 bg-violet-500/10 ring-1 ring-violet-500/20 hover:bg-violet-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">&#127902;</span>
-                <div>
-                    <div class="font-semibold text-white">Panel Screenshots</div>
-                    <div class="text-sm text-gray-400">8 screenshots of admin panel interface</div>
-                </div>
-            </a>
-            <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/script_tron.js" target="_blank" class="flex items-center gap-4 bg-emerald-500/10 ring-1 ring-emerald-500/20 hover:bg-emerald-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">&#128187;</span>
-                <div>
-                    <div class="font-semibold text-white">Core TRX Drainer</div>
-                    <div class="text-sm text-gray-400">script_tron.js &mdash; 525 lines, wallet drain logic</div>
-                </div>
-            </a>
-            <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/script.js" target="_blank" class="flex items-center gap-4 bg-emerald-500/10 ring-1 ring-emerald-500/20 hover:bg-emerald-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">&#128187;</span>
-                <div>
-                    <div class="font-semibold text-white">Loader Script</div>
-                    <div class="text-sm text-gray-400">script.js &mdash; anti-debug, XOR decrypt, chain loading</div>
-                </div>
-            </a>
-            <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/wallet-modal.js" target="_blank" class="flex items-center gap-4 bg-emerald-500/10 ring-1 ring-emerald-500/20 hover:bg-emerald-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">&#128187;</span>
-                <div>
-                    <div class="font-semibold text-white">Fake Wallet Modal</div>
-                    <div class="text-sm text-gray-400">wallet-modal.js &mdash; 695 lines, spoofed wallet UI</div>
-                </div>
-            </a>
-            <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/iocs.json" target="_blank" class="flex items-center gap-4 bg-rose-500/10 ring-1 ring-rose-500/20 hover:bg-rose-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">&#9888;</span>
-                <div>
-                    <div class="font-semibold text-white">IOCs</div>
-                    <div class="text-sm text-gray-400">Domains, wallets, bots, API endpoints</div>
-                </div>
-            </a>
-            <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/configurations.json" target="_blank" class="flex items-center gap-4 bg-amber-500/10 ring-1 ring-amber-500/20 hover:bg-amber-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">&#9881;</span>
-                <div>
-                    <div class="font-semibold text-white">Drainer Configuration</div>
-                    <div class="text-sm text-gray-400">Full config with spoof &amp; auto-commission settings</div>
-                </div>
-            </a>
-            <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/statistics.json" target="_blank" class="flex items-center gap-4 bg-indigo-500/10 ring-1 ring-indigo-500/20 hover:bg-indigo-500/20 p-4 rounded-xl transition-colors">
-                <span class="text-2xl">&#128202;</span>
-                <div>
-                    <div class="font-semibold text-white">Statistics</div>
-                    <div class="text-sm text-gray-400">Worker stats: clicks, connects, approvals, drains</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="text-center text-sm text-gray-500 border-t border-gray-800 pt-6">
-            <p>Collected by <a href="https://www.phishdestroy.io/" class="text-blue-400 hover:text-blue-300">PhishDestroy</a> | <a href="https://github.com/phishdestroy/ScamIntelLogs" class="text-blue-400 hover:text-blue-300">GitHub</a></p>
+    <!-- Header -->
+    <div class="text-center mb-12 reveal">
+        <h1 class="text-5xl sm:text-7xl font-black tracking-tight grad-text mb-3" style="filter:drop-shadow(0 0 30px rgba(168,85,247,.4))">TRXDrop</h1>
+        <p class="text-xl text-gray-400 mb-1">TRON &amp; Solana Wallet Drainer Panel</p>
+        <p class="text-sm text-gray-500 mb-5">Angel Drainer Reseller &mdash; <span class="text-blue-400">trxdrop.live</span> &mdash; Backend: <span class="text-blue-400">trump-drop.world</span></p>
+        <div class="flex justify-center gap-2 flex-wrap">
+            <span class="tag bg-red-500/20 text-red-400">Wallet Drainer</span>
+            <span class="tag bg-orange-500/20 text-orange-400">TRON / Solana</span>
+            <span class="tag bg-purple-500/20 text-purple-400">AI-Generated Code</span>
+            <span class="tag bg-yellow-500/20 text-yellow-400">Scam-the-Scammer</span>
+            <span class="tag bg-blue-500/20 text-blue-400">Angel Drainer</span>
+            <span class="tag bg-pink-500/20 text-pink-400">XOR Encryption</span>
         </div>
     </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10 reveal">
+        <div class="card p-5 text-center glow"><div class="stat-num grad-text">15</div><div class="text-xs text-gray-500 mt-1">Scam Domains</div></div>
+        <div class="card p-5 text-center"><div class="stat-num text-orange-400">10</div><div class="text-xs text-gray-500 mt-1">Supported Wallets</div></div>
+        <div class="card p-5 text-center"><div class="stat-num text-pink-400">50x</div><div class="text-xs text-gray-500 mt-1">Forced Sign Retries</div></div>
+        <div class="card p-5 text-center"><div class="stat-num text-purple-400">3</div><div class="text-xs text-gray-500 mt-1">Drainer Scripts</div></div>
+    </div>
+
+    <!-- Scam-the-Scammer Warning -->
+    <div class="card p-6 mb-10 glow reveal" style="border-color:rgba(239,68,68,.3)">
+        <h2 class="text-lg font-bold text-red-400 mb-3">Scam-the-Scammer Assessment</h2>
+        <p class="text-sm text-gray-400 leading-relaxed mb-4">This panel has a <strong class="text-red-400">high probability of stealing funds from its own workers</strong>. Drainer reseller panels are notorious for this pattern &mdash; they recruit workers, let them drive victims, then silently redirect stolen funds to the operator.</p>
+        <div class="grid sm:grid-cols-2 gap-3 text-xs">
+            <div class="bg-red-500/10 rounded-lg p-3"><strong class="text-red-400">Auto-Commission Theft:</strong> 30 TRX forcibly deducted per drain before any worker payout. Operator's funding wallet private key stored in config &mdash; operator has full control.</div>
+            <div class="bg-red-500/10 rounded-lg p-3"><strong class="text-red-400">Server-Side Tx Building:</strong> All drain transactions built on operator's server (<code>/api/buildTransactions</code>). Operator controls what victims sign &mdash; can redirect funds to any wallet.</div>
+            <div class="bg-red-500/10 rounded-lg p-3"><strong class="text-red-400">No On-Chain Verification:</strong> Workers have no way to verify actual drain amounts on-chain. Statistics shown in panel are generated by operator's backend &mdash; easily faked.</div>
+            <div class="bg-red-500/10 rounded-lg p-3"><strong class="text-red-400">Trivial "Encryption":</strong> XOR cipher with hardcoded key <code class="text-orange-400">TRX_SECURE_2024_PANEL_KEY</code> &mdash; provides zero real security. All traffic is trivially interceptable.</div>
+        </div>
+        <div class="quote mt-4">"Verdict: Either will steal from workers after first significant drain, or is already doing so. The panel architecture is designed for the operator to have complete control over all funds."</div>
+    </div>
+
+    <!-- What is TRXDrop -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">What is TRXDrop?</h2>
+        <p class="text-sm text-gray-400 leading-relaxed mb-4"><strong class="text-white">TRXDrop</strong> is a wallet drainer affiliate panel at <strong class="text-white">trxdrop.live</strong> operating as a reseller for <strong class="text-purple-400">Angel Drainer</strong> infrastructure. The actual drainer scripts and backend API are hosted on <strong class="text-white">trump-drop.world</strong>. Workers register accounts, create drainer configurations, receive generated scripts, and deploy them on phishing pages disguised as TRX airdrops. Victims are tricked into signing malicious transactions through spoofed wallet interfaces.</p>
+        <div class="grid sm:grid-cols-3 gap-3 text-xs mb-4">
+            <div class="bg-purple-500/10 rounded-lg p-3"><strong class="text-purple-400">AI-Generated Code:</strong> Boilerplate React CRA structure, generic naming, 30+ debug logs left in production, placeholder-style comments like AI prompt instructions. Likely built with Claude or GPT-4.</div>
+            <div class="bg-orange-500/10 rounded-lg p-3"><strong class="text-orange-400">TRON Drainer:</strong> Forced signing loop (50 retries, 500ms interval). Auto-connects on mobile wallets. Deeplinks to 7 wallet apps. XOR-encrypted C2 communication.</div>
+            <div class="bg-blue-500/10 rounded-lg p-3"><strong class="text-blue-400">Solana Drainer:</strong> Crasher mode (closes browser after drain to destroy evidence). Spoof mode (fake token balances). Honeypot mode (mint fake tokens to wallet).</div>
+        </div>
+    </div>
+
+    <!-- Attack Flow -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">Attack Flow</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+            <div class="bg-gradient-to-b from-blue-500/10 to-transparent rounded-lg p-4 border border-blue-500/20">
+                <div class="text-blue-400 font-bold mb-2">1. Fake Airdrop Page</div>
+                <p class="text-gray-400">Victim lands on fake TRX airdrop page. Drainer scripts inject anti-debug traps and decrypt XOR config.</p>
+            </div>
+            <div class="bg-gradient-to-b from-purple-500/10 to-transparent rounded-lg p-4 border border-purple-500/20">
+                <div class="text-purple-400 font-bold mb-2">2. Wallet Connection</div>
+                <p class="text-gray-400">On mobile: auto-connect after 1.5s if wallet browser detected. On desktop: professional-looking fake wallet modal with 7 wallet options.</p>
+            </div>
+            <div class="bg-gradient-to-b from-orange-500/10 to-transparent rounded-lg p-4 border border-orange-500/20">
+                <div class="text-orange-400 font-bold mb-2">3. Forced Signing</div>
+                <p class="text-gray-400">Server builds malicious transactions. Victim sees "Receive 10,000 TRX ($2,200)" with "verified" badge. 50 retry attempts if rejected.</p>
+            </div>
+            <div class="bg-gradient-to-b from-red-500/10 to-transparent rounded-lg p-4 border border-red-500/20">
+                <div class="text-red-400 font-bold mb-2">4. Wallet Drained</div>
+                <p class="text-gray-400">Signed tx submitted to blockchain. TRX + USDT drained. 30 TRX auto-commission to operator. Telegram notification dispatched.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infrastructure -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">Infrastructure</h2>
+        <div class="grid sm:grid-cols-2 gap-6 text-xs">
+            <div class="space-y-1">
+                <div class="inf-row"><span class="text-gray-500">Panel</span><span class="text-blue-400">trxdrop.live</span></div>
+                <div class="inf-row"><span class="text-gray-500">Backend / C2</span><span class="text-blue-400">trump-drop.world</span></div>
+                <div class="inf-row"><span class="text-gray-500">Drainer base</span><span class="text-white">Angel Drainer (lvl 2 access)</span></div>
+                <div class="inf-row"><span class="text-gray-500">Frontend</span><span class="text-white">React SPA (Create React App)</span></div>
+                <div class="inf-row"><span class="text-gray-500">Backend</span><span class="text-white">Node.js / Express</span></div>
+                <div class="inf-row"><span class="text-gray-500">Auth</span><span class="text-white">JWT HS256</span></div>
+                <div class="inf-row"><span class="text-gray-500">Encryption</span><span class="text-orange-400 font-mono text-[10px]">XOR key: TRX_SECURE_2024_PANEL_KEY</span></div>
+            </div>
+            <div class="space-y-1">
+                <div class="inf-row"><span class="text-gray-500">WalletConnect ID</span><span class="text-white font-mono text-[10px]">fbf5b42d6feed07049dd9e59d888645a</span></div>
+                <div class="inf-row"><span class="text-gray-500">CIS blocking</span><span class="text-white">RU, UA, BY, KZ</span></div>
+                <div class="inf-row"><span class="text-gray-500">Min drain balance</span><span class="text-white">$10 / 5 TRX</span></div>
+                <div class="inf-row"><span class="text-gray-500">Auto-commission</span><span class="text-red-400">30 TRX per drain</span></div>
+                <div class="inf-row"><span class="text-gray-500">Force Approval</span><span class="text-white">$1,000+ triggers AutoDrain</span></div>
+                <div class="inf-row"><span class="text-gray-500">First seen</span><span class="text-white">2026-01-30</span></div>
+                <div class="inf-row"><span class="text-gray-500">Status at collection</span><span class="text-yellow-400">Newly deployed / zero drains</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel Operator -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Panel Operator</h2>
+    <div class="grid sm:grid-cols-2 gap-4 mb-10 reveal">
+        <div class="card p-5 glow">
+            <div class="flex items-start gap-3 mb-3">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-white font-black text-lg flex-shrink-0">S</div>
+                <div><h3 class="text-sm font-bold text-white">@STNlRAWbIaFLiH</h3><p class="text-xs text-gray-500">Telegram ID: 6823931109</p></div>
+                <span class="tag bg-red-500/20 text-red-400 ml-auto">OPERATOR</span>
+            </div>
+            <div class="text-xs space-y-1">
+                <div><span class="text-gray-500">Registered:</span> <span class="text-white">~December 2023</span></div>
+                <div><span class="text-gray-500">Role:</span> <span class="text-white">Panel support / operator</span></div>
+                <div><span class="text-gray-500">Location hints:</span> <span class="text-white">Nizhny Novgorod, Turkey crypto exchange groups</span></div>
+            </div>
+        </div>
+        <div class="card p-5">
+            <h3 class="text-sm font-bold text-white mb-3">Known Telegram Groups</h3>
+            <div class="text-xs space-y-1 scroll-box" style="max-height:180px">
+                <div class="inf-row"><a href="https://t.me/TrCryptEx" target="_blank" class="text-blue-400">Crypto Exchange Turkey</a><span class="text-gray-600">active</span></div>
+                <div class="inf-row"><a href="https://t.me/Nizniy_Novgorod_vse_zdes" target="_blank" class="text-blue-400">Nizhny Novgorod</a><span class="text-gray-600">active</span></div>
+                <div class="inf-row"><a href="https://t.me/c/2437038405" target="_blank" class="text-blue-400">Partyyy</a><span class="text-pink-500">private</span></div>
+                <div class="inf-row"><a href="https://t.me/XAIAgentAI" target="_blank" class="text-blue-400">XAIAgent</a><span class="text-gray-600">active</span></div>
+                <div class="inf-row"><a href="https://t.me/onfa_global" target="_blank" class="text-blue-400">ONFA Global</a><span class="text-gray-600">active</span></div>
+                <div class="inf-row"><a href="https://t.me/MonadGlobal" target="_blank" class="text-blue-400">Monad Community</a><span class="text-gray-600">active</span></div>
+                <div class="inf-row"><a href="https://t.me/digiflazzmarketplace" target="_blank" class="text-blue-400">DIGIFLAZZ Marketplace</a><span class="text-gray-600">active</span></div>
+                <div class="inf-row"><a href="https://t.me/expatsinvest" target="_blank" class="text-blue-400">Islamic Finance Guru</a><span class="text-gray-600">active</span></div>
+                <div class="inf-row"><a href="https://t.me/Malik_Mumbai_Vip_free" target="_blank" class="text-blue-400">Sara Malik (Lady Tipper)</a><span class="text-gray-600">active</span></div>
+                <div class="inf-row"><a href="https://t.me/lcjghdgsfs" target="_blank" class="text-blue-400">GetContact</a><span class="text-gray-600">active</span></div>
+                <div class="inf-row"><a href="https://t.me/kangerooofficial" target="_blank" class="text-blue-400">Kangeroo Official</a><span class="text-gray-500">left</span></div>
+                <div class="inf-row"><a href="https://t.me/gam3ssio" target="_blank" class="text-blue-400">GAM3S.IO</a><span class="text-gray-500">left</span></div>
+                <div class="inf-row"><a href="https://t.me/vipsignalsfreeee" target="_blank" class="text-blue-400">365 Alerts</a><span class="text-gray-500">left</span></div>
+                <div class="inf-row"><a href="https://t.me/Jaringanpulsanusantara" target="_blank" class="text-blue-400">Jaringan Pulsa Nusantara</a><span class="text-gray-500">left</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Decrypted Code Analysis -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">Decrypted Code Analysis</h2>
+
+        <h3 class="text-sm font-bold text-purple-400 mb-2">drainer-loader.js &mdash; Entry Point (68 lines)</h3>
+        <p class="text-xs text-gray-500 mb-3">Injected into victim phishing page. Activates anti-debug, decrypts config, chain-loads drainer scripts.</p>
+        <div class="space-y-2 mb-6">
+            <div class="fn-card"><span class="fn-name">Anti-Debug IIFE</span><div class="text-xs text-gray-400 mt-1">Recursive debugger statement via setInterval every 1000ms. Division trick alternates between constructor-based and direct debugger keyword.</div></div>
+            <div class="fn-card"><span class="fn-name">Console Hijacking</span><div class="text-xs text-gray-400 mt-1">Object.defineProperty replaces all 5 console methods (log, warn, error, info, debug) with empty functions.</div></div>
+            <div class="fn-card"><span class="fn-name">XOR Config Decrypt</span><div class="text-xs text-gray-400 mt-1">window.config = Base64-encoded XOR-encrypted JSON blob with all drainer settings (spoof text, wallet details, notifications).</div></div>
+            <div class="fn-card"><span class="fn-name">Script Chain Loading</span><div class="text-xs text-gray-400 mt-1">Sequentially loads: walletconnect-bundle.js (1.1MB SDK) &rarr; axios@1.6.7 &rarr; drainer-tron-core.js &rarr; drainer-wallet-modal.js</div></div>
+        </div>
+
+        <h3 class="text-sm font-bold text-purple-400 mb-2">drainer-tron-core.js &mdash; Core TRON Drainer (525 lines)</h3>
+        <p class="text-xs text-gray-500 mb-3">Main drainer engine. All communication with trump-drop.world is XOR-encrypted.</p>
+        <div class="space-y-2 mb-6">
+            <div class="fn-card"><span class="fn-name">xorConvert(data, key)</span><div class="text-xs text-gray-400 mt-1">Dual-mode XOR cipher. Detects Base64 input, XORs each char with cycling key. Used for ALL API request/response encryption.</div></div>
+            <div class="fn-card"><span class="fn-name">sendNotification(type, extras)</span><div class="text-xs text-gray-400 mt-1">XOR-encrypts payload and POSTs to /api/notification. Types: joined, selected_wallet, connection, approved, drain, error.</div></div>
+            <div class="fn-card"><span class="fn-name">connectWalletConnect()</span><div class="text-xs text-gray-400 mt-1">SSE connection to /api/fetchWalletConnect. Server generates WC pairing URI, client opens official WC modal. Project ID: fbf5b42d6feed07049dd9e59d888645a.</div></div>
+            <div class="fn-card"><span class="fn-name">connectTronLink()</span><div class="text-xs text-gray-400 mt-1">Multi-provider: checks window.bitkeep.tronWeb, window.tronWeb, window.tronLink. Mobile: tron_requestAccounts with delays. Fallback: TronLink deeplink.</div></div>
+            <div class="fn-card" style="border-color:rgba(239,68,68,.3)"><span class="fn-name" style="color:#f87171">processWalletConnection(address, walletName, adapter)</span><div class="text-xs text-gray-400 mt-1"><strong class="text-red-400">Core malicious function.</strong> XOR-encrypts wallet + config, POSTs to /api/buildTransactions. Server returns crafted malicious txs. Enters <strong class="text-red-400">forced signing loop: 50 attempts, 500ms delay</strong>. Rejected? Immediately retries.</div></div>
+            <div class="fn-card" style="border-color:rgba(239,68,68,.3)"><span class="fn-name" style="color:#f87171">init() + Mobile Auto-Connect</span><div class="text-xs text-gray-400 mt-1"><strong class="text-red-400">On mobile, after 1.5s, automatically drains without user interaction.</strong> Checks Bitget, imToken, TronLink. Victims opening in wallet browser get drained automatically.</div></div>
+            <div class="fn-card"><span class="fn-name">walletDeeplinks{}</span><div class="text-xs text-gray-400 mt-1">Deeplinks for 7 wallets: Trust, OKX, TokenPocket, SafePal, MathWallet, Bitget, imToken. Opens scam page inside wallet browser &rarr; triggers auto-connect.</div></div>
+        </div>
+
+        <h3 class="text-sm font-bold text-purple-400 mb-2">drainer-wallet-modal.js &mdash; Fake Wallet UI (695 lines)</h3>
+        <p class="text-xs text-gray-500 mb-3">Pixel-perfect imitation of legitimate Web3 wallet connection modal.</p>
+        <div class="space-y-2">
+            <div class="fn-card"><span class="fn-name">WALLET_MODAL_CONFIG.wallets[]</span><div class="text-xs text-gray-400 mt-1">7 wallet definitions: WalletConnect (QR), Trust Wallet, TronLink, TokenPocket, Bitget, imToken, Ledger. Icons loaded from trump-drop.world.</div></div>
+            <div class="fn-card"><span class="fn-name">injectWalletModalStyles()</span><div class="text-xs text-gray-400 mt-1">390 lines of CSS: z-index 999999999, backdrop blur, animations, dark/light themes, mobile bottom-sheet. Inter font.</div></div>
+            <div class="fn-card"><span class="fn-name">handleWalletConnection(wallet)</span><div class="text-xs text-gray-400 mt-1">Routes by type: walletconnect &rarr; TronDrainer.connectWalletConnect(), tronlink &rarr; connectTronLink(), deeplink &rarr; wallet app. Desktop falls back to WC.</div></div>
+        </div>
+    </div>
+
+    <!-- API Endpoints -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">Panel API Endpoints</h2>
+        <div class="grid sm:grid-cols-2 gap-4 text-xs">
+            <div>
+                <h4 class="font-semibold text-gray-300 mb-2">Auth &amp; Profile</h4>
+                <div class="space-y-1">
+                    <div class="inf-row"><code class="text-orange-400">POST /api/auth/login</code><span class="text-gray-600">JWT HS256</span></div>
+                    <div class="inf-row"><code class="text-orange-400">GET /api/user/profile</code><span class="text-gray-600">worker data</span></div>
+                    <div class="inf-row"><code class="text-orange-400">PUT /api/user/wallet</code><span class="text-gray-600">payout wallet</span></div>
+                    <div class="inf-row"><code class="text-orange-400">PUT /api/user/password</code><span class="text-gray-600">change pass</span></div>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-300 mb-2">Drainer Config</h4>
+                <div class="space-y-1">
+                    <div class="inf-row"><code class="text-orange-400">GET/POST /api/configurations</code><span class="text-gray-600">list/create</span></div>
+                    <div class="inf-row"><code class="text-orange-400">PUT/DEL /api/configurations/{id}</code><span class="text-gray-600">edit/delete</span></div>
+                    <div class="inf-row"><code class="text-orange-400">POST /api/generate-script</code><span class="text-gray-600">TRON drainer</span></div>
+                    <div class="inf-row"><code class="text-orange-400">POST /api/generate-solana-script</code><span class="text-gray-600">Solana drainer</span></div>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-300 mb-2">Drain Operations</h4>
+                <div class="space-y-1">
+                    <div class="inf-row"><code class="text-red-400">POST /api/buildTransactions</code><span class="text-gray-600">malicious txs</span></div>
+                    <div class="inf-row"><code class="text-red-400">POST /api/sendTransaction</code><span class="text-gray-600">submit signed</span></div>
+                    <div class="inf-row"><code class="text-orange-400">POST /api/notification</code><span class="text-gray-600">events</span></div>
+                    <div class="inf-row"><code class="text-orange-400">GET /api/fetchWalletConnect</code><span class="text-gray-600">SSE pairing</span></div>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-300 mb-2">Panel Data</h4>
+                <div class="space-y-1">
+                    <div class="inf-row"><code class="text-orange-400">GET /api/statistics</code><span class="text-gray-600">clicks/drains</span></div>
+                    <div class="inf-row"><code class="text-orange-400">GET /api/news</code><span class="text-gray-600">announcements</span></div>
+                    <div class="inf-row"><code class="text-orange-400">GET /api/admin/users</code><span class="text-gray-600">all workers</span></div>
+                    <div class="inf-row"><code class="text-orange-400">GET /api/admin/settings</code><span class="text-gray-600">global config</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel Screenshots -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Panel Screenshots</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10 reveal">
+        <div class="img-card"><img src="screenshots/panel-dashboard.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Dashboard &mdash; stats at zero</div></div>
+        <div class="img-card"><img src="screenshots/tron-config-settings.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">TRON config &mdash; transaction settings</div></div>
+        <div class="img-card"><img src="screenshots/tron-config-notifications.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">TRON config &mdash; notifications &amp; spoof</div></div>
+        <div class="img-card"><img src="screenshots/tron-config-spoof.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">TRON config &mdash; fake "Receive 10,000 TRX"</div></div>
+        <div class="img-card"><img src="screenshots/tron-auto-commission.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Auto-commission &mdash; private key stored!</div></div>
+        <div class="img-card"><img src="screenshots/solana-config.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Solana &mdash; script generation</div></div>
+        <div class="img-card"><img src="screenshots/solana-drainer-modes.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Solana &mdash; Crasher / Spoof / Honeypot</div></div>
+        <div class="img-card"><img src="screenshots/solana-spoof-settings.png" loading="lazy" onclick="document.getElementById('lb-img').src=this.src;document.getElementById('lightbox').classList.add('active')"><div class="bg-gray-900/80 p-2 text-xs text-gray-400">Solana &mdash; spoof mode settings</div></div>
+    </div>
+
+    <!-- IOCs -->
+    <div class="card p-6 mb-10 reveal">
+        <h2 class="text-lg font-bold text-white mb-4">Related Domains (IOCs)</h2>
+        <div class="flex flex-wrap gap-2 text-xs mb-4">
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">trxdrop.live</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">trump-drop.world</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">qlabtrondemo.shop</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">testoviq.cfd</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">aml-scan-wallet.com</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">qqdemtron.lol</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">v1-4check.digital</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">photon-tiniyastro.icu</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">tronsscan.net</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">amltronchecker.com</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">gasrefund.pro</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">amlcleanscan.help</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">one-aml.com</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">amlscanner.help</span>
+            <span class="px-3 py-1.5 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg font-mono">stakeplus.icu</span>
+        </div>
+        <div class="text-xs text-gray-500">
+            <strong class="text-gray-400">Wallet:</strong> <span class="font-mono text-orange-400">TRAGn9E6hbTiQrYG5V4sk1gNv3JaWHSxak</span>
+        </div>
+    </div>
+
+    <!-- Evidence Archive -->
+    <h2 class="text-xl font-bold text-white mb-4 reveal">Evidence Archive</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10 reveal">
+        <a href="https://github.com/phishdestroy/ScamIntelLogs/tree/main/TRXDrop/screenshots" target="_blank" class="card p-5 hover:border-purple-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold flex-shrink-0">8</div>
+            <div><div class="font-semibold text-white text-sm">Panel Screenshots</div><div class="text-xs text-gray-500">8 screenshots of admin panel interface</div></div>
+        </a>
+        <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/drainer-tron-core.js" target="_blank" class="card p-5 hover:border-red-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center text-red-400 font-bold flex-shrink-0">JS</div>
+            <div><div class="font-semibold text-white text-sm">Core TRX Drainer</div><div class="text-xs text-gray-500">drainer-tron-core.js &mdash; 525 lines</div></div>
+        </a>
+        <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/drainer-loader.js" target="_blank" class="card p-5 hover:border-orange-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center text-orange-400 font-bold flex-shrink-0">JS</div>
+            <div><div class="font-semibold text-white text-sm">Loader Script</div><div class="text-xs text-gray-500">drainer-loader.js &mdash; anti-debug, XOR decrypt</div></div>
+        </a>
+        <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/drainer-wallet-modal.js" target="_blank" class="card p-5 hover:border-blue-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold flex-shrink-0">JS</div>
+            <div><div class="font-semibold text-white text-sm">Fake Wallet Modal</div><div class="text-xs text-gray-500">drainer-wallet-modal.js &mdash; 695 lines</div></div>
+        </a>
+        <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/iocs.json" target="_blank" class="card p-5 hover:border-yellow-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-yellow-500/20 flex items-center justify-center text-yellow-400 font-bold flex-shrink-0">IOC</div>
+            <div><div class="font-semibold text-white text-sm">IOCs</div><div class="text-xs text-gray-500">Domains, wallets, bots, API endpoints</div></div>
+        </a>
+        <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/TRXDrop/panel-config.json" target="_blank" class="card p-5 hover:border-green-500/30 transition-colors flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center text-green-400 font-bold flex-shrink-0">CFG</div>
+            <div><div class="font-semibold text-white text-sm">Drainer Configuration</div><div class="text-xs text-gray-500">panel-config.json &mdash; spoof &amp; commission</div></div>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-xs text-gray-600 border-t border-gray-800/50 pt-6 mt-10">
+        <p>Intelligence collected by <a href="https://www.phishdestroy.io/" class="text-blue-400 hover:text-blue-300">PhishDestroy</a> | <a href="https://github.com/phishdestroy/ScamIntelLogs" class="text-blue-400 hover:text-blue-300">GitHub</a></p>
+        <p class="mt-1">This data is provided for law enforcement, security research, and anti-fraud purposes.</p>
+    </div>
+</div>
+
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');obs.unobserve(i.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>
