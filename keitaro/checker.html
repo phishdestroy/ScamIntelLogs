@@ -569,16 +569,26 @@ function urlHasParams(url, requiredKey, altKeys) {
 // ===================== PROXY =====================
 function getWorkerUrl() { return document.getElementById('cfWorker').value.trim(); }
 
+let _lastProxyFallback = false; // track if last call fell back to CORS
+
 async function proxyFetch(url) {
+    _lastProxyFallback = false;
     const w = getWorkerUrl();
-    if (w) return workerFetch(w, url);
+    if (w) {
+        try { return await workerFetch(w, url); }
+        catch (e) {
+            // Worker failed — fallback to public CORS proxy (loses cookies/redirects)
+            _lastProxyFallback = true;
+            return fallbackFetch(url);
+        }
+    }
     return fallbackFetch(url);
 }
 
 async function workerFetch(worker, url) {
     const sep = worker.includes('?') ? '&' : '?';
     const r = await fetch(`${worker}${sep}url=${encodeURIComponent(url)}`, { signal: AbortSignal.timeout(20000) });
-    if (!r.ok) throw new Error(`Worker HTTP ${r.status}`);
+    if (!r.ok) throw new Error(`Worker ${r.status}`);
     const j = await r.json();
     if (j.error) throw new Error(j.error);
     return j;
@@ -641,12 +651,12 @@ async function scanDomain(domain, onLog, onCheck) {
     onLog('MAIN: ' + mainUrl, 'dim');
     try {
         chains.MAIN = await proxyFetch(mainUrl);
-        onLog(`MAIN: ${chains.MAIN.status}, ${chains.MAIN.bodyLength}b, ct=${sCt(chains.MAIN.contentType)}`);
+        onLog(`MAIN: ${chains.MAIN.status}, ${chains.MAIN.bodyLength}b, ct=${sCt(chains.MAIN.contentType)}${_lastProxyFallback ? ' (worker failed, CORS fallback)' : ''}`);
     } catch (e) {
         const httpUrl = mainUrl.replace('https://', 'http://');
         try {
             chains.MAIN = await proxyFetch(httpUrl);
-            onLog(`MAIN (http): ${chains.MAIN.status}, ${chains.MAIN.bodyLength}b`);
+            onLog(`MAIN (http): ${chains.MAIN.status}, ${chains.MAIN.bodyLength}b${_lastProxyFallback ? ' (CORS fallback)' : ''}`);
         } catch (e2) {
             onLog(`MAIN: failed - ${e2.message}`, 'fail');
             return { score: 0, total: 0, results, details, error: e2.message };
@@ -656,19 +666,19 @@ async function scanDomain(domain, onLog, onCheck) {
     onLog('OFFER_TEST: ' + offerTestUrl, 'dim');
     try {
         chains.OFFER_TEST = await proxyFetch(offerTestUrl);
-        onLog(`OFFER_TEST: ${chains.OFFER_TEST.status}, ${chains.OFFER_TEST.bodyLength}b, ct=${sCt(chains.OFFER_TEST.contentType)}`);
+        onLog(`OFFER_TEST: ${chains.OFFER_TEST.status}, ${chains.OFFER_TEST.bodyLength}b, ct=${sCt(chains.OFFER_TEST.contentType)}${_lastProxyFallback ? ' (CORS fallback)' : ''}`);
     } catch (e) { chains.OFFER_TEST = null; onLog(`OFFER_TEST: failed - ${e.message}`, 'warn'); }
 
     onLog('CLICK_API: ' + clickApiUrl, 'dim');
     try {
         chains.CLICK_API = await proxyFetch(clickApiUrl);
-        onLog(`CLICK_API: ${chains.CLICK_API.status}, ${chains.CLICK_API.bodyLength}b, ct=${sCt(chains.CLICK_API.contentType)}`);
+        onLog(`CLICK_API: ${chains.CLICK_API.status}, ${chains.CLICK_API.bodyLength}b, ct=${sCt(chains.CLICK_API.contentType)}${_lastProxyFallback ? ' (CORS fallback)' : ''}`);
     } catch (e) { chains.CLICK_API = null; onLog(`CLICK_API: failed - ${e.message}`, 'warn'); }
 
     onLog('UPDATE_TOKENS: ' + updateTokensUrl, 'dim');
     try {
         chains.UPDATE_TOKENS = await proxyFetch(updateTokensUrl);
-        onLog(`UPDATE_TOKENS: ${chains.UPDATE_TOKENS.status}, ${chains.UPDATE_TOKENS.bodyLength}b, ct=${sCt(chains.UPDATE_TOKENS.contentType)}`);
+        onLog(`UPDATE_TOKENS: ${chains.UPDATE_TOKENS.status}, ${chains.UPDATE_TOKENS.bodyLength}b, ct=${sCt(chains.UPDATE_TOKENS.contentType)}${_lastProxyFallback ? ' (CORS fallback)' : ''}`);
     } catch (e) { chains.UPDATE_TOKENS = null; onLog(`UPDATE_TOKENS: failed - ${e.message}`, 'warn'); }
 
     onLog('--- 7 evidence checks ---', 'dim');
