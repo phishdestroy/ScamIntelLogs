@@ -1,0 +1,151 @@
+{
+  "team": "TRXDrop",
+  "type": "TRON/Solana Crypto Drainer Panel (Angel Drainer Reseller)",
+  "first_seen": "2026-01-30",
+  "last_activity": "2026-01-31",
+  "panel_url": "trxdrop.live",
+  "backend_domain": "trump-drop.world",
+  "quality_assessment": "Low-quality reseller attempting to resell Angel Drainer services at inflated commission rates. Likely steals worker funds or routes majority of drain proceeds to operator wallet automatically. Registered ~December 2023.",
+  "tech_stack": {
+    "frontend": "React SPA (Create React App)",
+    "backend": "Node.js / Express",
+    "auth": "JWT HS256",
+    "drainer_variant": "Angel Drainer (level 2 access claimed)",
+    "encryption": "XOR cipher with key 'TRX_SECURE_2024_PANEL_KEY'",
+    "walletconnect_project_id": "fbf5b42d6feed07049dd9e59d888645a",
+    "cis_country_blocking": ["RU", "UA", "BY", "KZ"]
+  },
+  "panel_sections": ["Dashboard", "TRON", "Configurations", "Solana", "News", "Profile", "Hosting", "Support"],
+  "telegram_actors": {
+    "panel_support": {
+      "handle": "@STNlRAWbIaFLiH",
+      "role": "Panel support / operator",
+      "registered": "~December 2023"
+    },
+    "worker_contact": {
+      "handle": "@coronasrobot",
+      "role": "Worker contact (Telegram bot)"
+    },
+    "bots_in_code": ["coronasrobot", "STNlRAWbIaFLiH", "rns92010010988887473617bot"]
+  },
+  "worker_profile": {
+    "worker_id": "WRK2A05FBB4",
+    "worker_name": "Worker1655",
+    "username": "spondulicselasmosaur",
+    "payout_wallet": "TRAGn9E6hbTiQrYG5V4sk1gNv3JaWHSxak",
+    "claimed_experience": "6 month angeldrainer have acces lvl 2 100k+ profit",
+    "forum_link": "https://t.me/coronasrobot",
+    "status": "approved",
+    "is_admin": false
+  },
+  "drainer_config": {
+    "config_id": 25,
+    "min_balance_usd": 10,
+    "force_approval": false,
+    "drain_trx": true,
+    "drain_trx_min_amount": 5,
+    "auto_commission_enabled": true,
+    "auto_commission_trx": 30,
+    "min_usdt_required": 10,
+    "wait_timeout_seconds": 15,
+    "max_funding_attempts": 3,
+    "cooldown_minutes": 5,
+    "exclusion_duration_hours": 24,
+    "max_exclusions": 9999
+  },
+  "wallet_spoof": {
+    "impersonates": "Trust Wallet",
+    "fake_offer": "Receive 10,000 TRX ($2,200)",
+    "source_name": "TRX Airdrop",
+    "source_status": "verified",
+    "source_description": "Certain TRX airdrop",
+    "low_balance_text": "Unable to process the request due to insufficient funds in your wallet. The minimum amount of $10 is required to proceed. Please top up your balance and try again!",
+    "theme": "dark",
+    "modal_style": "reown"
+  },
+  "solana_drainer": {
+    "mode": "crasher",
+    "crasher_desktop_only": true,
+    "spoof_sol": 1,
+    "spoof_usdt": 100,
+    "cis_blocking": true,
+    "note": "Crasher mode destroys evidence by closing browser after drain"
+  },
+  "supported_wallets": ["TronLink", "WalletConnect", "Trust Wallet", "TokenPocket", "Ledger", "OKX", "SafePal", "MathWallet", "Bitget", "imToken"],
+  "backend_scripts": {
+    "script_tron_js": "Core TRX drainer - wallet connection, transaction building, forced signing (50 retries)",
+    "wallet_modal_js": "Fake wallet selection UI mimicking legitimate wallet interfaces",
+    "walletconnect_bundle_js": "Official WalletConnect SDK intercepted for malicious use",
+    "script_js": "Loader with anti-debugging, console hijacking, XOR config decryption"
+  },
+  "anti_analysis": {
+    "debugger_traps": "Continuous debugger checks every 1s",
+    "console_hijacking": "window.console replaced with empty functions",
+    "devtools_detection": "window.outerWidth check",
+    "string_obfuscation": "Array-based string tables + XOR encryption + Base64",
+    "assessment": "Trivial to bypass - all checks defeated by simple overrides"
+  },
+  "api_endpoints": [
+    "POST /api/auth/login",
+    "GET /api/user/profile",
+    "PUT /api/user/wallet",
+    "PUT /api/user/password",
+    "GET /api/configurations",
+    "POST /api/configurations",
+    "PUT /api/configurations/{id}",
+    "DELETE /api/configurations/{id}",
+    "POST /api/generate-script",
+    "POST /api/generate-solana-script",
+    "POST /api/notification",
+    "POST /api/buildTransactions",
+    "POST /api/sendTransaction",
+    "GET /api/fetchWalletConnect",
+    "GET /api/statistics",
+    "GET /api/news",
+    "GET /api/admin/users",
+    "GET /api/admin/settings"
+  ],
+  "scam_flow": [
+    "1. Victim lands on fake TRX airdrop page",
+    "2. Page loads anti-debug protections + encrypted config",
+    "3. Victim clicks Connect Wallet - sees spoofed Trust Wallet modal",
+    "4. Wallet connection routed through WalletConnect or deeplinks",
+    "5. Backend builds malicious transactions via /api/buildTransactions",
+    "6. Victim sees fake 'Receive 10,000 TRX ($2,200)' message",
+    "7. Victim signs transaction (up to 50 forced retries)",
+    "8. Signed tx sent to backend via /api/sendTransaction",
+    "9. TRX + USDT drained from wallet (min $10 / 5 TRX)",
+    "10. 30 TRX auto-commission sent to operator",
+    "11. Telegram notification to operator"
+  ],
+  "statistics_at_collection": {
+    "date": "2026-01-30",
+    "clicks": 0,
+    "connects": 0,
+    "approvals": 0,
+    "usdt_drained": 0,
+    "trx_drained": 0,
+    "status": "Newly deployed or inactive"
+  },
+  "related_domains": [
+    "trxdrop.live",
+    "trump-drop.world",
+    "qlabtrondemo.shop",
+    "testoviq.cfd",
+    "aml-scan-wallet.com",
+    "qqdemtron.lol",
+    "v1-4check.digital",
+    "photon-tiniyastro.icu",
+    "tronsscan.net",
+    "amltronchecker.com",
+    "gasrefund.pro",
+    "amlcleanscan.help",
+    "one-aml.com",
+    "amlscanner.help",
+    "stakeplus.icu"
+  ],
+  "wallets": [
+    "TRAGn9E6hbTiQrYG5V4sk1gNv3JaWHSxak"
+  ],
+  "collected": "2026-01-31"
+}
