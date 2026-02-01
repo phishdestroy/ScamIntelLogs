@@ -1,13 +1,13 @@
 {
   "statistics": [
     {
-      "id": 1301,
-      "worker_id": "WRK2A05FBB4",
+      "id": 1488,
+      "worker_id": "RUSDAYN228",
       "date": "2026-01-30",
-      "clicks": 0,
+      "clicks": 77,
       "connects": 0,
       "approvals": 0,
-      "drains_usdt": 0,
+      "drains_usdt": -1337,
       "drains_trx": 0,
       "created_at": "2026-01-30 09:25:40"
     }

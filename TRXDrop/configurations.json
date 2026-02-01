@@ -1,8 +1,8 @@
 [
   {
     "id": 25,
-    "worker_id": "WRK2A05FBB4",
-    "name": "324",
+    "worker_id": "RUSDAYN228",
+    "name": "1488",
     "config": {
       "minBalance": 10,
       "forceApproval": false,
@@ -39,8 +39,8 @@
       },
       "autoCommission": {
         "enabled": true,
-        "fundingWalletAddress": "f374343878fbe03659735d0d045c66339387fade5b0681c7699891624d72aa33",
-        "fundingWalletPrivateKey": "f374343878fbe03659735d0d045c66339387fade5b0681c7699891624d72aa33",
+        "fundingWalletAddress": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "fundingWalletPrivateKey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         "trxAmountToSend": 30,
         "minUsdtBalanceRequired": 10,
         "waitTimeoutSeconds": 15,
