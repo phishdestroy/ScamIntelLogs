@@ -15,115 +15,119 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         *{box-sizing:border-box}
-        body{font-family:'Inter',sans-serif;background:#06080d;overflow-x:hidden}
+        body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#040610 0%,#06080d 40%,#080a14 70%,#03050c 100%);background-attachment:fixed;overflow-x:hidden}
         .mono{font-family:'JetBrains Mono',monospace}
-
-        /* Ambient background glow */
         body::before{content:'';position:fixed;top:-40%;left:-20%;width:80%;height:80%;background:radial-gradient(ellipse,rgba(6,182,212,.06) 0%,transparent 70%);pointer-events:none;z-index:0}
         body::after{content:'';position:fixed;bottom:-30%;right:-15%;width:70%;height:70%;background:radial-gradient(ellipse,rgba(139,92,246,.04) 0%,transparent 70%);pointer-events:none;z-index:0}
-
         .grad-text{background:linear-gradient(135deg,#06b6d4,#3b82f6,#8b5cf6);-webkit-background-clip:text;background-clip:text;color:transparent}
-
-        /* Glass panels */
-        .glass{background:rgba(255,255,255,.02);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.06)}
-        .glass-strong{background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08)}
-
-        /* Tabs */
-        .tab{padding:8px 22px;font-size:13px;font-weight:600;cursor:pointer;border-radius:10px;transition:all .25s;color:#6b7280;position:relative;overflow:hidden}
-        .tab:hover{color:#d1d5db;background:rgba(255,255,255,.03)}
-        .tab.active{background:linear-gradient(135deg,rgba(6,182,212,.12),rgba(59,130,246,.08));color:#06b6d4;box-shadow:0 0 20px rgba(6,182,212,.08)}
-
-        /* Evidence cards */
-        .ck{
-            position:relative;transition:all .4s cubic-bezier(.4,0,.2,1);
-            border:1px solid rgba(255,255,255,.05);border-radius:14px;padding:14px;
-            background:rgba(255,255,255,.015);overflow:hidden;
-        }
+        .glass{background:rgba(255,255,255,.02);backdrop-filter:blur(16px) saturate(1.3);border:1px solid rgba(255,255,255,.06);box-shadow:0 4px 20px rgba(0,0,0,.15),inset 0 1px 0 rgba(255,255,255,.03);transition:border-color .4s,box-shadow .4s,background .4s}
+        .glass:hover{border-color:rgba(255,255,255,.1);box-shadow:0 8px 32px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.05)}
+        .glass-strong{background:rgba(255,255,255,.035);backdrop-filter:blur(28px) saturate(1.6);border:1px solid rgba(255,255,255,.08);box-shadow:0 6px 24px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.06)}
+        .tab{padding:8px 22px;font-size:13px;font-weight:600;cursor:pointer;border-radius:10px;transition:all .3s;color:#6b7280;position:relative}
+        .tab:hover{color:#d1d5db;background:rgba(255,255,255,.04);transform:translateY(-1px)}
+        .tab.active{background:linear-gradient(135deg,rgba(6,182,212,.12),rgba(59,130,246,.08));color:#06b6d4;box-shadow:0 0 20px rgba(6,182,212,.1)}
+        .ck{position:relative;transition:all .4s;border:1px solid rgba(255,255,255,.05);border-radius:14px;padding:14px;background:rgba(255,255,255,.015);overflow:hidden;backdrop-filter:blur(8px)}
+        .ck:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.2)}
         .ck::before{content:'';position:absolute;inset:0;border-radius:14px;opacity:0;transition:opacity .4s}
         .ck.idle{border-color:rgba(255,255,255,.05)}
+        .ck.idle:hover{border-color:rgba(255,255,255,.1);background:rgba(255,255,255,.025)}
         .ck.run{border-color:rgba(59,130,246,.5);box-shadow:0 0 25px rgba(59,130,246,.12)}
         .ck.run::before{background:linear-gradient(180deg,rgba(59,130,246,.06) 0%,transparent 60%);opacity:1}
         .ck.pass{border-color:rgba(34,197,94,.5);box-shadow:0 0 25px rgba(34,197,94,.1)}
         .ck.pass::before{background:linear-gradient(180deg,rgba(34,197,94,.06) 0%,transparent 60%);opacity:1}
         .ck.fail{border-color:rgba(255,255,255,.06);opacity:.55}
-
-        /* Scanning shimmer on active card */
+        .ck.skip{border-color:rgba(251,191,36,.3);opacity:.7}
+        .ck.skip::before{background:linear-gradient(180deg,rgba(251,191,36,.04) 0%,transparent 60%);opacity:1}
         @keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
-        .ck.run::after{
-            content:'';position:absolute;inset:0;
-            background:linear-gradient(90deg,transparent,rgba(59,130,246,.08),transparent);
-            animation:shimmer 1.5s ease-in-out infinite;
-        }
-
-        /* Verdict styles */
-        .v-confirmed{background:linear-gradient(135deg,rgba(239,68,68,.08),rgba(239,68,68,.03));border:2px solid rgba(239,68,68,.4);box-shadow:0 0 60px rgba(239,68,68,.1),0 0 120px rgba(239,68,68,.04)}
-        .v-notconfirmed{background:linear-gradient(135deg,rgba(234,179,8,.06),rgba(234,179,8,.02));border:2px solid rgba(234,179,8,.3);box-shadow:0 0 40px rgba(234,179,8,.06)}
+        .ck.run::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(59,130,246,.08),transparent);animation:shimmer 1.5s ease-in-out infinite}
+        .v-confirmed{background:linear-gradient(135deg,rgba(239,68,68,.08),rgba(239,68,68,.03));border:2px solid rgba(239,68,68,.4);box-shadow:0 0 60px rgba(239,68,68,.1)}
         .v-clean{background:linear-gradient(135deg,rgba(34,197,94,.06),rgba(34,197,94,.02));border:2px solid rgba(34,197,94,.3);box-shadow:0 0 40px rgba(34,197,94,.06)}
-
-        /* Animations */
         @keyframes spin{to{transform:rotate(360deg)}}
         .anim-spin{animation:spin .8s linear infinite}
         @keyframes pulse2{0%,100%{opacity:.5}50%{opacity:1}}
         .anim-pulse{animation:pulse2 1.5s ease-in-out infinite}
         @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-        .anim-in{animation:fadeUp .35s cubic-bezier(.4,0,.2,1)}
-        @keyframes scaleIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
-        .anim-scale{animation:scaleIn .4s cubic-bezier(.4,0,.2,1)}
-        @keyframes glow{0%,100%{box-shadow:0 0 20px rgba(6,182,212,.15)}50%{box-shadow:0 0 40px rgba(6,182,212,.25)}}
-        .anim-glow{animation:glow 2s ease-in-out infinite}
+        .anim-in{animation:fadeUp .35s ease-out}
         @keyframes verdictPop{0%{opacity:0;transform:scale(.8)}60%{transform:scale(1.03)}100%{opacity:1;transform:scale(1)}}
-        .anim-verdict{animation:verdictPop .5s cubic-bezier(.4,0,.2,1)}
-        @keyframes slideRight{from{width:0}to{width:var(--target-w)}}
-
-        /* Scan progress bar */
+        .anim-verdict{animation:verdictPop .5s ease-out}
         .scan-progress{height:3px;border-radius:4px;background:rgba(255,255,255,.05);overflow:hidden;margin-bottom:20px}
         .scan-progress-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#06b6d4,#3b82f6,#8b5cf6);transition:width .3s;box-shadow:0 0 10px rgba(6,182,212,.4)}
-
-        /* Score ring */
         .score-ring{position:relative;width:70px;height:70px}
         .score-ring svg{transform:rotate(-90deg)}
         .score-ring circle{fill:none;stroke-width:3;stroke-linecap:round}
         .score-ring .bg{stroke:rgba(255,255,255,.06)}
-        .score-ring .fg{transition:stroke-dashoffset .6s cubic-bezier(.4,0,.2,1),stroke .4s}
-
-        /* Mass scan */
-        .mass-row{border-bottom:1px solid rgba(255,255,255,.04);transition:background .3s}
+        .score-ring .fg{transition:stroke-dashoffset .6s,stroke .4s}
+        .mass-row{border-bottom:1px solid rgba(255,255,255,.04);transition:background .3s;cursor:pointer}
         .mass-row:last-child{border-bottom:none}
-        .mass-row:hover{background:rgba(255,255,255,.02)}
-
-        /* Input glow on focus */
+        .mass-row:hover{background:rgba(255,255,255,.04)}
+        .mass-filters{display:flex;gap:6px;flex-wrap:wrap}
+        .mass-filter{padding:5px 14px;font-size:11px;font-weight:600;cursor:pointer;border-radius:8px;transition:all .25s;color:#6b7280;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);user-select:none}
+        .mass-filter:hover{color:#d1d5db;background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)}
+        .mass-filter.active{background:linear-gradient(135deg,rgba(6,182,212,.12),rgba(59,130,246,.08));color:#06b6d4;border-color:rgba(6,182,212,.25)}
+        .mass-summary{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;font-weight:600;color:#9ca3af}
+        .mass-summary span.val{color:#d1d5db;font-weight:700}
+        .mass-summary .s-keitaro{color:#f87171}
+        .mass-summary .s-clean{color:#4ade80}
+        .mass-summary .s-cloak{color:#fbbf24}
+        .mass-summary .s-error{color:#6b7280}
+        .mass-detail-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);z-index:60;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
+        .mass-detail-overlay.open{opacity:1;pointer-events:auto}
+        .mass-detail-box{background:#0d1117;border:1px solid rgba(255,255,255,.08);border-radius:20px;max-width:680px;width:95%;max-height:85vh;overflow-y:auto;transform:scale(.95);transition:transform .3s;padding:24px}
+        .mass-detail-overlay.open .mass-detail-box{transform:scale(1)}
+        .mass-table-header{position:sticky;top:0;z-index:5;background:rgba(13,17,23,.98);backdrop-filter:blur(8px)}
         .input-glow:focus{border-color:rgba(6,182,212,.5);box-shadow:0 0 20px rgba(6,182,212,.08)}
-
-        /* Abuse contacts panel */
-        .abuse-panel{animation:fadeUp .5s cubic-bezier(.4,0,.2,1)}
-        .abuse-copy{cursor:pointer;transition:all .2s}
-        .abuse-copy:hover{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.3)}
-        .abuse-copy.copied{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.3)}
-
-        /* Deploy modal */
+        .abuse-panel{animation:fadeUp .5s ease-out}
+        .abuse-copy{cursor:pointer;transition:all .3s}
+        .abuse-copy:hover{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.3);transform:translateY(-1px)}
         .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);z-index:50;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
         .modal-overlay.open{opacity:1;pointer-events:auto}
         .modal-box{background:#0d1117;border:1px solid rgba(255,255,255,.08);border-radius:20px;max-width:560px;width:90%;max-height:85vh;overflow-y:auto;transform:scale(.95);transition:transform .3s}
         .modal-overlay.open .modal-box{transform:scale(1)}
-
-        /* Deploy button glow */
         @keyframes deployGlow{0%,100%{box-shadow:0 0 15px rgba(245,158,11,.12)}50%{box-shadow:0 0 30px rgba(245,158,11,.2)}}
         .deploy-btn{animation:deployGlow 2.5s ease-in-out infinite}
-
-        /* Scrollbar */
         ::-webkit-scrollbar{width:5px}
         ::-webkit-scrollbar-track{background:transparent}
         ::-webkit-scrollbar-thumb{background:#1f2937;border-radius:3px}
-
-        /* Status dot */
         @keyframes statusPulse{0%,100%{box-shadow:0 0 0 0 rgba(6,182,212,.4)}50%{box-shadow:0 0 0 6px rgba(6,182,212,0)}}
         .status-dot{width:6px;height:6px;border-radius:50%;display:inline-block}
         .status-dot.active{background:#06b6d4;animation:statusPulse 1.5s infinite}
         .status-dot.done{background:#34d399}
         .status-dot.idle{background:#374151}
+        .checker-orb{position:fixed;border-radius:50%;filter:blur(80px);opacity:.08;z-index:0;pointer-events:none;animation:orbDrift 18s ease-in-out infinite,orbBreath 5s ease-in-out infinite}
+        .checker-orb-1{width:350px;height:350px;background:#06b6d4;top:-80px;left:-80px}
+        .checker-orb-2{width:280px;height:280px;background:#8b5cf6;bottom:-60px;right:-60px;animation-delay:-6s,-2s}
+        .checker-orb-3{width:220px;height:220px;background:#3b82f6;top:40%;left:60%;animation-delay:-12s,-4s}
+        @keyframes orbDrift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(25px,-25px) scale(1.04)}66%{transform:translate(-15px,15px) scale(.96)}}
+        @keyframes orbBreath{0%,100%{opacity:.06}50%{opacity:.12}}
+        .checker-grid{position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(6,182,212,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(6,182,212,.015) 1px,transparent 1px);background-size:50px 50px;animation:gridShift 25s linear infinite;pointer-events:none}
+        @keyframes gridShift{0%{transform:translate(0,0)}100%{transform:translate(50px,50px)}}
+        .drop-zone{border:2px dashed rgba(6,182,212,.3);border-radius:12px;transition:all .3s}
+        .drop-zone.dragover{border-color:rgba(6,182,212,.8);background:rgba(6,182,212,.05)}
+        .export-btn{padding:6px 14px;font-size:11px;font-weight:600;border-radius:8px;transition:all .25s;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02)}
+        .export-btn:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15)}
+        /* Redirect chain visual */
+        .rchain{position:relative;padding-left:22px}
+        .rchain::before{content:'';position:absolute;left:8px;top:4px;bottom:4px;width:2px;border-radius:1px;background:linear-gradient(180deg,rgba(6,182,212,.4),rgba(139,92,246,.25),rgba(34,197,94,.3))}
+        .rchain-step{position:relative;padding:8px 0 8px 16px}
+        .rchain-step:first-child{padding-top:0}
+        .rchain-step:last-child{padding-bottom:0}
+        .rchain-dot{position:absolute;left:-19px;top:11px;width:10px;height:10px;border-radius:50%;border:2px solid;background:#0d1117;z-index:1}
+        .rchain-step:first-child .rchain-dot{top:3px}
+        .rchain-domain{font-size:10px;font-weight:700;letter-spacing:.02em}
+        .rchain-path{font-size:9px;color:#4b5563;word-break:break-all;margin-top:1px}
+        .rchain-badge{display:inline-flex;align-items:center;gap:3px;font-size:9px;font-weight:700;padding:1px 6px;border-radius:4px;letter-spacing:.03em}
+        .rchain-newdomain{margin-top:2px;font-size:9px;font-weight:600;color:#fbbf24;opacity:.7}
+        .rchain-ext-warn{margin:6px 0 2px;padding:4px 10px;border-radius:8px;background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.15);display:flex;align-items:center;gap:6px;font-size:10px;color:#f87171;font-weight:600}
+        .rchain-ext-warn svg{width:12px;height:12px;flex-shrink:0}
+        .rchain-summary-warn{padding:6px 12px;border-radius:10px;background:rgba(239,68,68,.05);border:1px solid rgba(239,68,68,.12);font-size:10px;color:#f87171;font-weight:600;display:flex;align-items:start;gap:8px;margin-bottom:10px;line-height:1.5}
     </style>
 </head>
 <body class="text-gray-300 min-h-screen relative">
+
+<div class="checker-grid"></div>
+<div class="checker-orb checker-orb-1"></div>
+<div class="checker-orb checker-orb-2"></div>
+<div class="checker-orb checker-orb-3"></div>
 
 <div class="max-w-5xl mx-auto px-4 py-8 relative z-10">
 
@@ -133,7 +137,10 @@
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
             ScamIntelLogs
         </a>
-        <a href="https://www.phishdestroy.io/" target="_blank" class="text-[11px] text-gray-600 hover:text-gray-400 transition-colors">PhishDestroy</a>
+        <a href="https://github.com/phishdestroy/ScamIntelLogs" target="_blank" class="text-[11px] text-gray-600 hover:text-gray-400 transition-colors flex items-center gap-1">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+        </a>
     </div>
 
     <div class="text-center mb-8">
@@ -142,14 +149,14 @@
             <span class="text-[11px] mono text-cyan-400/80" id="headerStatus">Ready</span>
         </div>
         <h1 class="text-3xl sm:text-4xl font-black tracking-tight grad-text mb-2">Keitaro TDS Detector</h1>
-        <p class="text-sm text-gray-500 max-w-md mx-auto">7 evidence checks tied to <a href="https://docs.keitaro.io" target="_blank" class="text-cyan-400/70 hover:text-cyan-300 transition-colors">official Keitaro docs</a> &mdash; score &ge;2 = confirmed</p>
+        <p class="text-sm text-gray-500 max-w-md mx-auto">7 evidence checks tied to <a href="https://docs.keitaro.io" target="_blank" class="text-cyan-400/70 hover:text-cyan-300 transition-colors">official Keitaro docs</a> &mdash; weighted confidence scoring &nbsp;<button onclick="openInfoModal()" class="inline-flex items-center gap-1 text-gray-600 hover:text-cyan-400 transition-colors text-[11px]"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>info</button></p>
     </div>
 
-    <!-- Proxy config + Deploy -->
+    <!-- Proxy config -->
     <div class="mb-6 glass rounded-xl p-4">
-        <div class="flex items-center gap-3 mb-3">
+        <div class="flex items-start gap-3 mb-3">
             <div class="flex-1">
-                <input id="cfWorker" type="text" placeholder="https://your-worker.your-subdomain.workers.dev" class="w-full bg-black/40 border border-white/10 rounded-lg px-3 py-2.5 mono text-xs text-gray-300 input-glow focus:outline-none transition-all placeholder-gray-600">
+                <textarea id="cfWorker" rows="2" placeholder="Worker URLs (one per line, optional - improves detection):&#10;https://your-worker.workers.dev" class="w-full bg-black/40 border border-white/10 rounded-lg px-3 py-2 mono text-xs text-gray-300 input-glow focus:outline-none transition-all placeholder-gray-600 resize-y"></textarea>
             </div>
             <button onclick="openDeployModal()" class="deploy-btn shrink-0 px-4 py-2.5 bg-gradient-to-r from-amber-600/20 to-orange-600/20 border border-amber-500/30 hover:border-amber-500/50 text-amber-300 hover:text-amber-200 text-xs font-bold rounded-lg transition-all flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
@@ -159,72 +166,7 @@
         <div class="flex items-center gap-3 text-[11px]">
             <div class="flex items-center gap-1.5">
                 <span id="proxyStatus" class="inline-block w-1.5 h-1.5 rounded-full bg-gray-600"></span>
-                <span id="proxyLabel" class="text-gray-600">No worker &mdash; 6/7 checks via public CORS proxy</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Deploy Modal -->
-    <div class="modal-overlay" id="deployModal" onclick="if(event.target===this)closeDeployModal()">
-        <div class="modal-box p-6">
-            <div class="flex items-center justify-between mb-5">
-                <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
-                    Deploy CF Worker
-                </h3>
-                <button onclick="closeDeployModal()" class="text-gray-500 hover:text-white transition-colors p-1">&times;</button>
-            </div>
-
-            <div class="bg-amber-500/[.06] border border-amber-500/15 rounded-xl p-4 mb-5">
-                <div class="text-xs font-bold text-amber-400 mb-1">Why deploy a worker?</div>
-                <div class="text-[11px] text-gray-400 leading-relaxed">
-                    Without a worker, cookies and redirect chains can't be captured (CORS limitation). With your own CF Worker: <strong class="text-white">7/7 checks</strong>, full cookie analysis, complete redirect chain logging.
-                </div>
-                <div class="flex items-center gap-2 mt-2 text-[11px]">
-                    <span class="px-2 py-0.5 bg-green-500/10 text-green-400 rounded-md font-bold border border-green-500/15">FREE</span>
-                    <span class="text-gray-500">1 Cloudflare account = <strong class="text-gray-300">100,000 requests/day</strong> free tier</span>
-                </div>
-            </div>
-
-            <div class="space-y-4 mb-5">
-                <div class="flex items-start gap-3">
-                    <span class="shrink-0 w-6 h-6 rounded-full bg-cyan-500/15 border border-cyan-500/20 flex items-center justify-center text-xs font-bold text-cyan-400">1</span>
-                    <div>
-                        <div class="text-xs font-semibold text-white mb-1">Install Wrangler CLI</div>
-                        <div class="bg-black/40 rounded-lg px-3 py-2 mono text-[11px] text-gray-400 border border-white/[.04] select-all cursor-pointer" onclick="copyText(this,'npm install -g wrangler')">npm install -g wrangler</div>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3">
-                    <span class="shrink-0 w-6 h-6 rounded-full bg-cyan-500/15 border border-cyan-500/20 flex items-center justify-center text-xs font-bold text-cyan-400">2</span>
-                    <div>
-                        <div class="text-xs font-semibold text-white mb-1">Login to Cloudflare</div>
-                        <div class="bg-black/40 rounded-lg px-3 py-2 mono text-[11px] text-gray-400 border border-white/[.04] select-all cursor-pointer" onclick="copyText(this,'wrangler login')">wrangler login</div>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3">
-                    <span class="shrink-0 w-6 h-6 rounded-full bg-cyan-500/15 border border-cyan-500/20 flex items-center justify-center text-xs font-bold text-cyan-400">3</span>
-                    <div>
-                        <div class="text-xs font-semibold text-white mb-1">Download &amp; deploy worker.js</div>
-                        <div class="bg-black/40 rounded-lg px-3 py-2 mono text-[11px] text-gray-400 border border-white/[.04] space-y-1">
-                            <div class="select-all cursor-pointer" onclick="copyText(this,'curl -O https://raw.githubusercontent.com/phishdestroy/ScamIntelLogs/main/keitaro/worker.js')">curl -O https://raw.githubusercontent.com/phishdestroy/ScamIntelLogs/main/keitaro/worker.js</div>
-                            <div class="select-all cursor-pointer" onclick="copyText(this,'wrangler deploy worker.js --name keitaro-proxy')">wrangler deploy worker.js --name keitaro-proxy</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3">
-                    <span class="shrink-0 w-6 h-6 rounded-full bg-green-500/15 border border-green-500/20 flex items-center justify-center text-xs font-bold text-green-400">4</span>
-                    <div>
-                        <div class="text-xs font-semibold text-white mb-1">Paste your worker URL above</div>
-                        <div class="text-[11px] text-gray-500">Format: <span class="mono text-gray-400">https://keitaro-proxy.YOUR-SUBDOMAIN.workers.dev</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-black/30 border border-white/[.04] rounded-xl p-4 text-[11px] text-gray-500 space-y-1">
-                <div class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> <span class="text-gray-400">Free Cloudflare account: <strong class="text-gray-300">100,000 requests/day</strong></span></div>
-                <div class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> <span class="text-gray-400">Deploys in under 30 seconds</span></div>
-                <div class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> <span class="text-gray-400">No server needed &mdash; runs on Cloudflare edge</span></div>
-                <div class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> <span class="text-gray-400">Open-source: <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/keitaro/worker.js" target="_blank" class="text-cyan-400/70 hover:text-cyan-300">view source</a></span></div>
+                <span id="proxyLabel" class="text-gray-600">No worker — 6/7 checks via public CORS proxies</span>
             </div>
         </div>
     </div>
@@ -236,7 +178,7 @@
         <div class="tab" onclick="switchTab('method')" id="tabMethod">Methodology</div>
     </div>
 
-    <!-- ==================== SINGLE SCAN ==================== -->
+    <!-- SINGLE SCAN -->
     <div id="singlePane">
         <div class="flex gap-2.5 mb-6">
             <div class="flex-1 relative">
@@ -250,10 +192,20 @@
             </button>
         </div>
 
-        <!-- Scan progress -->
-        <div class="scan-progress hidden" id="scanBar">
-            <div class="scan-progress-fill" id="scanBarFill" style="width:0%"></div>
+        <!-- Domain Info panel -->
+        <div id="domainInfoPanel" class="hidden mb-5 glass rounded-2xl overflow-hidden anim-in">
+            <div class="flex items-center justify-between px-4 py-2.5 border-b border-white/[.04]">
+                <div class="flex items-center gap-2">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg>
+                    <span class="text-[11px] font-semibold text-gray-500 uppercase tracking-widest">Domain Info</span>
+                </div>
+                <span id="domainInfoStatus" class="text-[11px] mono text-gray-600"></span>
+            </div>
+            <div id="diContent" class="px-4 py-3 space-y-3"></div>
         </div>
+
+        <!-- Scan progress -->
+        <div class="scan-progress hidden" id="scanBar"><div class="scan-progress-fill" id="scanBarFill" style="width:0%"></div></div>
 
         <!-- Evidence grid -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5" id="grid"></div>
@@ -264,66 +216,62 @@
             <div id="vLabel" class="text-sm font-semibold text-gray-500 mt-1.5 tracking-wider uppercase">Waiting</div>
         </div>
 
-        <!-- Abuse Contacts (shown when Keitaro confirmed) -->
+        <!-- Abuse Panel -->
         <div id="abusePanel" class="hidden mb-5">
             <div class="abuse-panel rounded-2xl p-5 bg-gradient-to-r from-red-500/[.06] to-red-500/[.02] border border-red-500/20">
                 <div class="flex items-center gap-2 mb-3">
                     <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.072 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
-                    <span class="text-xs font-bold text-red-400 uppercase tracking-wider">Keitaro Detected &mdash; Report Abuse</span>
+                    <span class="text-xs font-bold text-gray-300 uppercase tracking-wider">Keitaro TDS Detected</span>
                 </div>
-                <p class="text-[11px] text-gray-500 mb-3">This domain uses Keitaro TDS cloaking infrastructure. Report to all relevant parties:</p>
+                <p class="text-[11px] text-gray-400 mb-3">If you believe this site contains malicious, phishing, or scam content — you can report it:</p>
                 <div class="grid sm:grid-cols-2 gap-2">
                     <div class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5" onclick="copyAbuse(this,'report-abuse@keitaro.io')">
                         <div class="shrink-0 w-7 h-7 rounded-md bg-red-500/10 border border-red-500/15 flex items-center justify-center text-[10px] font-bold text-red-400">K</div>
-                        <div class="min-w-0">
-                            <div class="text-[10px] text-gray-500">Keitaro (Apliteni OU)</div>
-                            <div class="mono text-[11px] text-gray-300 truncate">report-abuse@keitaro.io</div>
-                        </div>
+                        <div class="min-w-0"><div class="text-[10px] text-gray-500">Keitaro (Apliteni OU)</div><div class="mono text-[11px] text-gray-300 truncate">report-abuse@keitaro.io</div></div>
                         <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                     </div>
-                    <div class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5" onclick="copyAbuse(this,'abuse@clickup.com')">
-                        <div class="shrink-0 w-7 h-7 rounded-md bg-violet-500/10 border border-violet-500/15 flex items-center justify-center text-[10px] font-bold text-violet-400">CU</div>
-                        <div class="min-w-0">
-                            <div class="text-[10px] text-gray-500">ClickUp (data storage)</div>
-                            <div class="mono text-[11px] text-gray-300 truncate">abuse@clickup.com</div>
-                        </div>
-                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                    </div>
-                    <div class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5" onclick="copyAbuse(this,'abuse@amazonaws.com')">
-                        <div class="shrink-0 w-7 h-7 rounded-md bg-amber-500/10 border border-amber-500/15 flex items-center justify-center text-[10px] font-bold text-amber-400">AWS</div>
-                        <div class="min-w-0">
-                            <div class="text-[10px] text-gray-500">Amazon AWS (infrastructure)</div>
-                            <div class="mono text-[11px] text-gray-300 truncate">abuse@amazonaws.com</div>
-                        </div>
-                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                    </div>
-                    <div class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5" onclick="copyAbuse(this,'abuse-reports@stripe.com')">
-                        <div class="shrink-0 w-7 h-7 rounded-md bg-blue-500/10 border border-blue-500/15 flex items-center justify-center text-[10px] font-bold text-blue-400">S</div>
-                        <div class="min-w-0">
-                            <div class="text-[10px] text-gray-500">Stripe (payment processor)</div>
-                            <div class="mono text-[11px] text-gray-300 truncate">abuse-reports@stripe.com</div>
-                        </div>
-                        <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                    </div>
-                    <a href="https://safebrowsing.google.com/safebrowsing/report_phish/" target="_blank" class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5">
-                        <div class="shrink-0 w-7 h-7 rounded-md bg-green-500/10 border border-green-500/15 flex items-center justify-center text-[10px] font-bold text-green-400">G</div>
-                        <div class="min-w-0">
-                            <div class="text-[10px] text-gray-500">Google Safe Browsing</div>
-                            <div class="text-[11px] text-gray-300">Report phishing page</div>
-                        </div>
+                    <a href="https://t.me/PhishDestroy_bot" target="_blank" class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5">
+                        <div class="shrink-0 w-7 h-7 rounded-md bg-cyan-500/10 border border-cyan-500/15 flex items-center justify-center text-[10px] font-bold text-cyan-400">PD</div>
+                        <div class="min-w-0"><div class="text-[10px] text-gray-500">PhishDestroy Bot</div><div class="text-[11px] text-gray-300">Report phishing / scam</div></div>
                         <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
-                    <a href="https://www.phishing.org/report" target="_blank" class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5">
-                        <div class="shrink-0 w-7 h-7 rounded-md bg-cyan-500/10 border border-cyan-500/15 flex items-center justify-center text-[10px] font-bold text-cyan-400">AP</div>
-                        <div class="min-w-0">
-                            <div class="text-[10px] text-gray-500">Anti-Phishing Working Group</div>
-                            <div class="text-[11px] text-gray-300">APWG Report</div>
-                        </div>
+                    <a href="https://safebrowsing.google.com/safebrowsing/report_phish/" target="_blank" class="abuse-copy flex items-center gap-2.5 bg-black/30 border border-white/[.06] rounded-lg px-3 py-2.5">
+                        <div class="shrink-0 w-7 h-7 rounded-md bg-green-500/10 border border-green-500/15 flex items-center justify-center text-[10px] font-bold text-green-400">G</div>
+                        <div class="min-w-0"><div class="text-[10px] text-gray-500">Google Safe Browsing</div><div class="text-[11px] text-gray-300">Report phishing page</div></div>
                         <svg class="w-3.5 h-3.5 text-gray-600 shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
                 </div>
-                <p class="text-[10px] text-gray-600 mt-3 italic">Click any email to copy. For faster takedowns, report directly to the domain's hosting provider and registrar.</p>
+                <p class="text-[10px] text-gray-600 mt-3 italic">You can also report to the domain registrar and hosting provider <span id="abuseHostingHint"></span></p>
             </div>
+        </div>
+
+        <!-- Cloaking Analysis -->
+        <div id="cloakPanel" class="hidden mb-5 glass rounded-2xl overflow-hidden anim-in">
+            <div class="flex items-center justify-between px-4 py-2.5 border-b border-white/[.04]">
+                <div class="flex items-center gap-2">
+                    <svg class="w-3.5 h-3.5 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                    <span class="text-[11px] font-semibold text-gray-500 uppercase tracking-widest">Cloaking Analysis</span>
+                </div>
+                <span id="cloakStatus" class="text-[11px] mono text-gray-600"></span>
+            </div>
+            <div class="px-4 py-2 text-[10px] text-gray-600 border-b border-white/[.03]">Requests same URL with 10 different User-Agent / Referer profiles (bots + browsers) — differences indicate cloaking or conditional content delivery</div>
+            <div class="grid grid-cols-[1fr_50px_70px_60px_60px] gap-2 px-4 py-2 text-[10px] text-gray-600 uppercase tracking-wider border-b border-white/[.03]">
+                <div>Profile</div><div class="text-center">Status</div><div class="text-center">Size</div><div class="text-center">Redirects</div><div class="text-center">Match</div>
+            </div>
+            <div id="cloakBody" class="divide-y divide-white/[.03]"></div>
+            <div id="cloakVerdict" class="hidden border-t border-white/[.06] px-4 py-2.5 text-[11px]"></div>
+        </div>
+
+        <!-- Redirect Chain Panel (single scan) -->
+        <div id="redirectPanel" class="hidden mb-5 glass rounded-2xl overflow-hidden anim-in">
+            <div class="flex items-center justify-between px-4 py-2.5 border-b border-white/[.04]">
+                <div class="flex items-center gap-2">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                    <span class="text-[11px] font-semibold text-gray-500 uppercase tracking-widest">Redirect Chain</span>
+                </div>
+                <span id="redirectCount" class="text-[11px] mono text-gray-600"></span>
+            </div>
+            <div id="redirectBody" class="px-4 py-3"></div>
         </div>
 
         <!-- Log -->
@@ -341,214 +289,337 @@
         </div>
     </div>
 
-    <!-- ==================== MASS SCAN ==================== -->
+    <!-- MASS SCAN -->
     <div id="massPane" class="hidden">
         <div class="mb-4">
-            <textarea id="massInput" rows="6" placeholder="Paste domains, one per line:&#10;example1.com&#10;example2.com/path&#10;example3.com" class="w-full bg-white/[.03] border border-white/10 rounded-xl px-4 py-3 text-white mono text-sm input-glow focus:outline-none transition-all placeholder-gray-600 resize-y"></textarea>
+            <div class="drop-zone relative" id="dropZone">
+                <textarea id="massInput" rows="6" placeholder="Paste domains, one per line (or drag & drop .txt file):&#10;example1.com&#10;example2.com/path&#10;example3.com" class="w-full bg-white/[.03] border-0 rounded-xl px-4 py-3 text-white mono text-sm focus:outline-none placeholder-gray-600 resize-y"></textarea>
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 transition-opacity" id="dropOverlay">
+                    <div class="text-cyan-400 font-semibold">Drop file here</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+                <label class="text-[11px] text-gray-600 hover:text-cyan-400 cursor-pointer transition-colors flex items-center gap-1">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                    <span>Load from file</span>
+                    <input type="file" accept=".txt,.csv" class="hidden" onchange="loadDomainsFile(event)">
+                </label>
+                <span class="text-gray-700">|</span>
+                <button onclick="clearMassInput()" class="text-[11px] text-gray-600 hover:text-gray-400 transition-colors">Clear</button>
+            </div>
         </div>
-        <div class="flex items-center gap-3 mb-5">
-            <button id="massBtn" onclick="runMass()" class="px-5 py-2.5 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold rounded-xl transition-all text-sm disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-cyan-500/20">Scan All</button>
+
+        <!-- Controls -->
+        <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <button id="massBtn" onclick="runMass()" class="px-5 py-2.5 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold rounded-xl transition-all text-sm disabled:opacity-40 shadow-lg shadow-cyan-500/20">Scan All</button>
             <button id="massStop" onclick="stopMass()" class="px-5 py-2.5 bg-gray-800/80 hover:bg-gray-700 text-gray-300 font-semibold rounded-xl transition-all text-sm hidden border border-white/[.06]">Stop</button>
-            <span id="massProgress" class="text-xs mono text-gray-500"></span>
-            <button id="exportBtn" onclick="exportCSV()" class="ml-auto px-4 py-2 bg-gray-800/80 hover:bg-gray-700 text-gray-400 text-xs font-semibold rounded-xl transition-all hidden border border-white/[.06]">Export CSV</button>
+            <label id="massCloakLabel" class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer select-none">
+                <input type="checkbox" id="massCloakCb" class="accent-violet-500" onchange="massCloakEnabled=this.checked">
+                <span>Cloaking Analysis</span>
+                <span class="text-[10px] text-gray-600">(requires Worker)</span>
+            </label>
+            <span id="massProgress" class="text-xs mono text-gray-500 ml-auto"></span>
         </div>
-        <div id="massBar" class="w-full h-1.5 bg-gray-800/50 rounded-full mb-5 overflow-hidden hidden">
-            <div id="massBarFill" class="h-full bg-gradient-to-r from-cyan-500 via-blue-500 to-violet-500 rounded-full transition-all duration-300 shadow-[0_0_10px_rgba(6,182,212,.4)]" style="width:0%"></div>
+
+        <!-- Progress bar -->
+        <div id="massBar" class="w-full h-1.5 bg-gray-800/50 rounded-full mb-4 overflow-hidden hidden">
+            <div id="massBarFill" class="h-full bg-gradient-to-r from-cyan-500 via-blue-500 to-violet-500 rounded-full transition-all duration-300" style="width:0%"></div>
         </div>
+
+        <!-- Summary -->
+        <div id="massSummary" class="hidden mb-4 glass rounded-xl px-4 py-2.5">
+            <div class="mass-summary">
+                <span>Total: <span class="val" id="msTotal">0</span></span>
+                <span>Keitaro: <span class="val s-keitaro" id="msKeitaro">0</span></span>
+                <span>Clean: <span class="val s-clean" id="msClean">0</span></span>
+                <span id="msCloakWrap" class="hidden">Cloaking: <span class="val s-cloak" id="msCloak">0</span></span>
+                <span>Errors: <span class="val s-error" id="msErrors">0</span></span>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div id="massFilters" class="hidden mb-4">
+            <div class="mass-filters">
+                <div class="mass-filter active" onclick="setMassFilter('all')">All <span class="mass-filter-count" id="mfAll">0</span></div>
+                <div class="mass-filter" onclick="setMassFilter('keitaro')">Keitaro <span class="mass-filter-count" id="mfKeitaro">0</span></div>
+                <div class="mass-filter" onclick="setMassFilter('clean')">Clean <span class="mass-filter-count" id="mfClean">0</span></div>
+                <div class="mass-filter" id="mfCloakTab" onclick="setMassFilter('cloaking')" style="display:none">Cloaking <span class="mass-filter-count" id="mfCloak">0</span></div>
+                <div class="mass-filter" onclick="setMassFilter('errors')">Errors <span class="mass-filter-count" id="mfErrors">0</span></div>
+            </div>
+        </div>
+
+        <!-- Export buttons -->
+        <div id="massExportRow" class="hidden flex items-center gap-2 mb-4 flex-wrap">
+            <button onclick="copyKeitaroDomains()" class="export-btn text-red-400 border-red-500/20 hover:border-red-500/40" id="copyKeitaroBtn">Copy Keitaro</button>
+            <button onclick="copyCleanDomains()" class="export-btn text-green-400 border-green-500/20 hover:border-green-500/40">Copy Clean</button>
+            <button onclick="copyAllDomains()" class="export-btn text-gray-400">Copy All</button>
+            <span class="text-gray-700">|</span>
+            <button onclick="exportJSON()" class="export-btn text-cyan-400 border-cyan-500/20 hover:border-cyan-500/40">Export JSON</button>
+            <button onclick="exportCSV()" class="export-btn text-cyan-400 border-cyan-500/20 hover:border-cyan-500/40">Export CSV</button>
+        </div>
+
+        <!-- Results table -->
         <div id="massResults" class="glass rounded-2xl overflow-hidden hidden">
-            <div class="grid grid-cols-[1fr_60px_100px] sm:grid-cols-[1fr_60px_60px_60px_60px_60px_60px_60px_100px] gap-0 px-4 py-2.5 border-b border-white/[.06] text-[11px] font-semibold text-gray-500 uppercase tracking-wider">
-                <div>Domain</div>
+            <div id="massTableHeader" class="mass-table-header grid gap-0 px-4 py-2.5 border-b border-white/[.06] text-[11px] font-semibold text-gray-500 uppercase tracking-wider" style="grid-template-columns:30px 1fr repeat(7,60px) 60px 100px">
+                <div>#</div><div>Domain</div>
                 <div class="text-center hidden sm:block">E1</div><div class="text-center hidden sm:block">E2</div><div class="text-center hidden sm:block">E3</div><div class="text-center hidden sm:block">E4</div><div class="text-center hidden sm:block">E5</div><div class="text-center hidden sm:block">E6</div><div class="text-center hidden sm:block">E7</div>
-                <div class="text-center">Score</div>
-                <div class="text-center">Verdict</div>
+                <div class="text-center">Score</div><div class="text-center">Verdict</div>
             </div>
             <div id="massTable"></div>
         </div>
     </div>
 
-    <!-- ==================== METHODOLOGY ==================== -->
+    <!-- Mass Detail Modal -->
+    <div class="mass-detail-overlay" id="massDetailModal" onclick="if(event.target===this)closeMassDetail()">
+        <div class="mass-detail-box" id="massDetailContent"></div>
+    </div>
+
+    <!-- METHODOLOGY -->
     <div id="methodPane" class="hidden">
-
         <div class="glass rounded-2xl overflow-hidden mb-5">
-            <div class="px-5 py-3.5 border-b border-white/[.06]">
-                <h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9432;</span> How detection works</h2>
-            </div>
+            <div class="px-5 py-3.5 border-b border-white/[.06]"><h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9432;</span> How detection works</h2></div>
             <div class="px-5 py-4 text-[13px] text-gray-400 leading-relaxed space-y-2">
-                <p>The scanner sends <strong class="text-gray-200">4 HTTP request chains</strong> to the target and compares responses:</p>
+                <p>The scanner sends <strong class="text-gray-200">4 HTTP request chains</strong> to the target and compares responses. Each chain targets a specific Keitaro behavior documented in <a href="https://docs.keitaro.io" target="_blank" class="text-cyan-400/70 hover:text-cyan-300">official docs</a>:</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 my-3">
-                    <div class="bg-black/30 rounded-xl px-4 py-3 mono text-[11px] border border-white/[.04]">
-                        <span class="text-cyan-400 font-bold">MAIN</span> <span class="text-gray-600">&mdash; baseline GET {url}</span>
-                    </div>
-                    <div class="bg-black/30 rounded-xl px-4 py-3 mono text-[11px] border border-white/[.04]">
-                        <span class="text-cyan-400 font-bold">OFFER_TEST</span> <span class="text-gray-600">&mdash; GET {url}?_lp=1&_token=invalid</span>
-                    </div>
-                    <div class="bg-black/30 rounded-xl px-4 py-3 mono text-[11px] border border-white/[.04]">
-                        <span class="text-cyan-400 font-bold">CLICK_API</span> <span class="text-gray-600">&mdash; GET {origin}/click_api/v3</span>
-                    </div>
-                    <div class="bg-black/30 rounded-xl px-4 py-3 mono text-[11px] border border-white/[.04]">
-                        <span class="text-cyan-400 font-bold">UPDATE_TOKENS</span> <span class="text-gray-600">&mdash; GET {origin}/?_update_tokens=1</span>
-                    </div>
+                    <div class="bg-black/30 rounded-xl px-4 py-3 border border-white/[.04]"><div class="mono text-[11px]"><span class="text-cyan-400 font-bold">MAIN</span> <span class="text-gray-600">&mdash; GET {url}</span></div><div class="text-[10px] text-gray-600 mt-1">Baseline response for comparison</div></div>
+                    <div class="bg-black/30 rounded-xl px-4 py-3 border border-white/[.04]"><div class="mono text-[11px]"><span class="text-cyan-400 font-bold">OFFER_TEST</span> <span class="text-gray-600">&mdash; GET {url}?_lp=1&_token=invalid</span></div><div class="text-[10px] text-gray-600 mt-1">Triggers offer redirect if Keitaro is present</div></div>
+                    <div class="bg-black/30 rounded-xl px-4 py-3 border border-white/[.04]"><div class="mono text-[11px]"><span class="text-cyan-400 font-bold">CLICK_API</span> <span class="text-gray-600">&mdash; GET {origin}/click_api/v3</span></div><div class="text-[10px] text-gray-600 mt-1">Keitaro's documented click tracking endpoint</div></div>
+                    <div class="bg-black/30 rounded-xl px-4 py-3 border border-white/[.04]"><div class="mono text-[11px]"><span class="text-cyan-400 font-bold">UPDATE_TOKENS</span> <span class="text-gray-600">&mdash; GET {origin}/?_update_tokens=1</span></div><div class="text-[10px] text-gray-600 mt-1">Keitaro's parameter update mechanism</div></div>
                 </div>
-                <p>Each response is analyzed through <strong class="text-gray-200">7 independent evidence checks</strong>, each tied to official Keitaro documentation.</p>
+                <p>Each response is analyzed through <strong class="text-gray-200">7 independent evidence checks</strong>, each with its own weight. The total confidence score determines the verdict.</p>
             </div>
         </div>
 
         <div class="glass rounded-2xl overflow-hidden mb-5">
-            <div class="px-5 py-3.5 border-b border-white/[.06]">
-                <h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9733;</span> 7 Evidence Checks</h2>
-            </div>
-            <div class="divide-y divide-white/[.04]">
-
-                <div class="px-5 py-4">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E1</span>
-                        <span class="text-[13px] font-semibold text-gray-200">Offer URL params: _lp + _token/token</span>
-                        <a href="https://docs.keitaro.io/en/landing-pages-and-offers/offer-url.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
-                    </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Searches all URLs and Location headers across all chains for query params <span class="mono text-gray-400">_lp</span> + <span class="mono text-gray-400">_token</span>/<span class="mono text-gray-400">token</span>. Keitaro Offer URL (LP&rarr;Offer) uses these as documented.</p>
-                </div>
-
-                <div class="px-5 py-4">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E2</span>
-                        <span class="text-[13px] font-semibold text-gray-200">Landing redirect params: _subid + _token/token</span>
-                        <a href="https://docs.keitaro.io/en/landing-pages-and-offers/landing-page-redirect.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
-                    </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Searches all URLs and Location headers for <span class="mono text-gray-400">_subid</span> + <span class="mono text-gray-400">_token</span>/<span class="mono text-gray-400">token</span>. Keitaro landing redirect adds these before redirecting to landing page.</p>
-                </div>
-
-                <div class="px-5 py-4">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E3</span>
-                        <span class="text-[13px] font-semibold text-gray-200">Cookie: Set-Cookie contains "subid="</span>
-                        <a href="https://docs.keitaro.io/en/campaign-integrations/tracking-script.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
-                    </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Keitaro Tracking Script stores click id in cookie <span class="mono text-gray-400">subid</span>. Scanner checks all Set-Cookie headers across all chains. <span class="text-yellow-500/80 text-[11px]">Requires CF Worker &mdash; CORS proxies cannot forward cookies.</span></p>
-                </div>
-
-                <div class="px-5 py-4">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E4</span>
-                        <span class="text-[13px] font-semibold text-gray-200">HTML markers: KTracking / {subid} / {offer}</span>
-                        <a href="https://docs.keitaro.io/en/campaign-integrations/tracking-script.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
-                    </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Official Keitaro tracking script uses <span class="mono text-gray-400">KTracking</span> API and placeholders <span class="mono text-gray-400">{subid}</span> / <span class="mono text-gray-400">{offer}</span>. Also matches <span class="mono text-gray-400">keitaro</span> string. Scanner searches HTML bodies of all chain responses.</p>
-                </div>
-
-                <div class="px-5 py-4">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E5</span>
-                        <span class="text-[13px] font-semibold text-gray-200">API: /click_api/v3 exists (non-404 + JSON)</span>
-                        <a href="https://docs.keitaro.io/en/development/click-api.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
-                    </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Keitaro has a documented public Click API at <span class="mono text-gray-400">/click_api/v3</span>. Scanner sends request with invalid token. Non-404 + JSON-like response indicates the endpoint exists.</p>
-                </div>
-
-                <div class="px-5 py-4">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E6</span>
-                        <span class="text-[13px] font-semibold text-gray-200">Behavior: reacts to Offer URL params (_lp + _token)</span>
-                        <a href="https://docs.keitaro.io/en/landing-pages-and-offers/offer-url.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
-                    </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Compares MAIN vs OFFER_TEST final response: <strong class="text-gray-300">status</strong>, <strong class="text-gray-300">content-type</strong>, <strong class="text-gray-300">body length</strong> (diff &gt;100 bytes). Any difference means the server understands Keitaro-specific params.</p>
-                </div>
-
-                <div class="px-5 py-4">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E7</span>
-                        <span class="text-[13px] font-semibold text-gray-200">Behavior: reacts to _update_tokens=1</span>
-                        <a href="https://docs.keitaro.io/en/landing-pages-and-offers/update-params.html" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
-                    </div>
-                    <p class="text-[12px] text-gray-500 leading-relaxed">Compares MAIN vs UPDATE_TOKENS final response: <strong class="text-gray-300">status</strong>, <strong class="text-gray-300">content-type</strong>, <strong class="text-gray-300">body length</strong> (diff &gt;100 bytes). _update_tokens=1 is a documented mechanism for updating click params (can return empty response).</p>
-                </div>
-
-            </div>
+            <div class="px-5 py-3.5 border-b border-white/[.06]"><h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9733;</span> 7 Evidence Checks</h2></div>
+            <div class="divide-y divide-white/[.04]" id="methodChecks"></div>
         </div>
 
         <div class="glass rounded-2xl overflow-hidden mb-5">
-            <div class="px-5 py-3.5 border-b border-white/[.06]">
-                <h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9878;</span> Verdict</h2>
-            </div>
+            <div class="px-5 py-3.5 border-b border-white/[.06]"><h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9878;</span> Verdict</h2></div>
             <div class="px-5 py-4 space-y-3">
-                <div class="flex items-start gap-3">
-                    <span class="text-red-400 font-bold mono text-sm w-12 text-right shrink-0">&ge;2</span>
-                    <span class="text-[13px]"><span class="text-red-400 font-semibold">KEITARO CONFIRMED</span> <span class="text-gray-600">&mdash; multiple independent documented evidences</span></span>
-                </div>
-                <div class="flex items-start gap-3">
-                    <span class="text-yellow-400 font-bold mono text-sm w-12 text-right shrink-0">1</span>
-                    <span class="text-[13px]"><span class="text-yellow-400 font-semibold">NOT CONFIRMED</span> <span class="text-gray-600">&mdash; only 1 evidence, need &ge;2 (can be coincidental)</span></span>
-                </div>
-                <div class="flex items-start gap-3">
-                    <span class="text-green-400 font-bold mono text-sm w-12 text-right shrink-0">0</span>
-                    <span class="text-[13px]"><span class="text-green-400 font-semibold">NOT DETECTED</span> <span class="text-gray-600">&mdash; no documented evidences found</span></span>
-                </div>
+                <p class="text-[12px] text-gray-500 mb-2">Each evidence has a weight (total = 100%). Confidence = sum of passed evidence weights.</p>
+                <div class="flex items-start gap-3"><span class="text-red-400 font-bold mono text-sm w-16 text-right shrink-0">&ge;30%</span><span class="text-[13px]"><span class="text-red-400 font-semibold">Keitaro</span> <span class="text-gray-600">&mdash; Keitaro TDS detected with sufficient evidence</span></span></div>
+                <div class="flex items-start gap-3"><span class="text-green-400 font-bold mono text-sm w-16 text-right shrink-0">&lt;30%</span><span class="text-[13px]"><span class="text-green-400 font-semibold">Clean</span> <span class="text-gray-600">&mdash; insufficient evidence for Keitaro TDS</span></span></div>
+                <p class="text-[11px] text-gray-600 italic mt-2">Threshold of 30% means at least one major evidence (Click API, HTML Markers, or Offer Reaction) must pass, or multiple minor ones must combine.</p>
             </div>
         </div>
 
         <div class="glass rounded-2xl overflow-hidden mb-5">
-            <div class="px-5 py-3.5 border-b border-white/[.06]">
-                <h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><span class="text-cyan-400">&#9881;</span> What is Keitaro TDS?</h2>
-            </div>
-            <div class="px-5 py-4 text-[13px] text-gray-400 leading-relaxed space-y-2">
-                <p><strong class="text-gray-200">Keitaro</strong> is a commercial Traffic Distribution System (TDS) that routes visitors by geo, device, OS, referrer, etc. Legitimate product, but widely abused to <strong class="text-gray-300">cloak</strong> phishing, malware, and scam pages &mdash; showing clean content to bots and malicious content to real victims.</p>
-                <div class="flex flex-wrap gap-2 mt-3">
-                    <a href="https://keitaro.io" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 bg-cyan-500/5 px-3 py-1.5 rounded-lg border border-cyan-500/10 transition-colors">keitaro.io</a>
-                    <a href="https://docs.keitaro.io" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 bg-cyan-500/5 px-3 py-1.5 rounded-lg border border-cyan-500/10 transition-colors">Official Docs</a>
-                    <a href="https://github.com/phishdestroy/ScamIntelLogs/tree/main/keitaro/script" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 bg-cyan-500/5 px-3 py-1.5 rounded-lg border border-cyan-500/10 transition-colors">Python Scanner</a>
-                    <a href="https://github.com/phishdestroy/ScamIntelLogs/blob/main/keitaro/panels.csv" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 bg-cyan-500/5 px-3 py-1.5 rounded-lg border border-cyan-500/10 transition-colors">Known Panels (1,565+)</a>
+            <div class="px-5 py-3.5 border-b border-white/[.06]"><h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><svg class="w-4 h-4 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Cloaking Analysis</h2></div>
+            <div class="px-5 py-4 text-[13px] text-gray-400 leading-relaxed space-y-3">
+                <p><strong class="text-gray-200">Cloaking</strong> (content masking) is a technique where the server delivers different content based on the visitor type. TDS systems like Keitaro use this to show a clean page to search engine bots, moderators, and security scanners, while redirecting real users to a phishing page, scam offer, or malware download.</p>
+                <p>The scanner requests the same URL using <strong class="text-gray-200">10 different profiles</strong>, divided into two groups:</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 my-3">
+                    <div class="bg-black/30 rounded-xl px-4 py-3 border border-white/[.04]">
+                        <div class="text-[11px] font-bold text-violet-400 mb-1.5">Bots (5 profiles)</div>
+                        <div class="text-[10px] text-gray-500 space-y-0.5">
+                            <div>Googlebot &mdash; Google search crawler</div>
+                            <div>AdsBot-Google &mdash; Google Ads landing page scanner</div>
+                            <div>Bingbot &mdash; Microsoft Bing crawler</div>
+                            <div>Facebook Bot &mdash; Meta link preview crawler</div>
+                            <div>curl &mdash; minimal HTTP client (often blocked)</div>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 rounded-xl px-4 py-3 border border-white/[.04]">
+                        <div class="text-[11px] font-bold text-violet-400 mb-1.5">Browsers (5 profiles)</div>
+                        <div class="text-[10px] text-gray-500 space-y-0.5">
+                            <div>Chrome + Google referrer &mdash; organic search visitor</div>
+                            <div>iPhone Safari &mdash; mobile iOS user</div>
+                            <div>Android Chrome &mdash; mobile Android user</div>
+                            <div>macOS Safari &mdash; desktop Mac user</div>
+                            <div>Firefox Windows &mdash; desktop Windows user</div>
+                        </div>
+                    </div>
                 </div>
+                <p>For each profile, the response is compared against the <strong class="text-gray-200">baseline</strong> (standard Chrome request) by checking HTTP status code, response body size, final URL, Content-Type, and number of redirects. If any of these differ &mdash; the profile is marked as <span class="text-amber-400 font-semibold">DIFF</span>.</p>
+                <div class="bg-amber-500/[.04] border border-amber-500/10 rounded-xl p-3 text-[11px]">
+                    <span class="text-amber-400 font-bold">Typical cloaking pattern:</span> <span class="text-gray-500">Bots get HTTP 200 with a clean page, while browsers get HTTP 302 redirect to a different domain with scam content. If bots see the same content and browsers differ &mdash; this is a strong indicator of TDS filtering.</span>
+                </div>
+                <p class="text-[11px] text-gray-600">Requires Cloudflare Worker to function &mdash; CORS proxy cannot set custom User-Agent and Referer headers.</p>
+            </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden mb-5">
+            <div class="px-5 py-3.5 border-b border-white/[.06]"><h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg> Redirect Chain & External Domain Detection</h2></div>
+            <div class="px-5 py-4 text-[13px] text-gray-400 leading-relaxed space-y-3">
+                <p>The scanner traces the full HTTP redirect chain from the initial request to the final destination and visualizes each hop as a timeline. Each step shows the HTTP status code, domain, and URL path.</p>
+                <p><strong class="text-gray-200">External domain detection:</strong> if a redirect leads to a domain with a different root (e.g. <span class="mono text-[11px] text-gray-500">example.com</span> &rarr; <span class="mono text-[11px] text-gray-500">scam-site.net</span>), it is flagged with an <span class="text-red-400 font-semibold">EXTERNAL</span> badge. External redirects are a common indicator of:</p>
+                <ul class="text-[12px] text-gray-500 space-y-1 list-disc list-inside ml-2">
+                    <li><strong class="text-gray-300">TDS routing</strong> &mdash; Keitaro redirects user to an offer page on a different domain</li>
+                    <li><strong class="text-gray-300">Cloaking</strong> &mdash; clean domain redirects to malicious content after bot filtering</li>
+                    <li><strong class="text-gray-300">Affiliate redirect chains</strong> &mdash; passing through tracking domains before the final offer</li>
+                </ul>
+                <p class="text-[11px] text-gray-600">Note: not all external redirects are malicious. Legitimate CDN redirects, login flows, and domain migrations also produce external hops. Always correlate with other evidence.</p>
+            </div>
+        </div>
+
+        <div class="glass rounded-2xl overflow-hidden mb-5">
+            <div class="px-5 py-3.5 border-b border-white/[.06]"><h2 class="text-sm font-bold text-gray-200 flex items-center gap-2"><svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg> Domain Intelligence</h2></div>
+            <div class="px-5 py-4 text-[13px] text-gray-400 leading-relaxed space-y-3">
+                <p>For each scanned domain, the tool collects background information from public sources:</p>
+                <div class="space-y-2 text-[12px]">
+                    <div class="flex gap-2"><span class="text-cyan-400 font-bold shrink-0 w-24">IP & Geo</span><span class="text-gray-500">Resolves the domain's IP address, hosting provider (ISP), ASN, and geographic location via <span class="mono text-[10px]">ipwho.is</span></span></div>
+                    <div class="flex gap-2"><span class="text-cyan-400 font-bold shrink-0 w-24">DNS (NS)</span><span class="text-gray-500">Queries authoritative nameservers via <span class="mono text-[10px]">dns.google</span> &mdash; reveals the DNS provider (e.g. Cloudflare, Namecheap, GoDaddy)</span></div>
+                    <div class="flex gap-2"><span class="text-cyan-400 font-bold shrink-0 w-24">Registrar</span><span class="text-gray-500">Queries RDAP (successor to WHOIS) to determine the domain registrar &mdash; useful for abuse reports</span></div>
+                    <div class="flex gap-2"><span class="text-cyan-400 font-bold shrink-0 w-24">Standard Files</span><span class="text-gray-500">Checks for <span class="mono text-[10px]">robots.txt</span>, <span class="mono text-[10px]">sitemap.xml</span>, <span class="mono text-[10px]">security.txt</span> &mdash; their absence is common on throwaway phishing domains</span></div>
+                </div>
+                <p class="text-[11px] text-gray-600">Only fields with resolved data are displayed. If a lookup fails or returns nothing, the field is omitted.</p>
             </div>
         </div>
     </div>
 
+    <!-- Deploy Modal -->
+    <div class="modal-overlay" id="deployModal" onclick="if(event.target===this)closeDeployModal()">
+        <div class="modal-box p-6">
+            <div class="flex items-center justify-between mb-5">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2"><svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>Deploy CF Worker</h3>
+                <button onclick="closeDeployModal()" class="text-gray-500 hover:text-white transition-colors p-1">&times;</button>
+            </div>
+            <div class="bg-amber-500/[.06] border border-amber-500/15 rounded-xl p-4 mb-5">
+                <div class="text-xs font-bold text-amber-400 mb-1">Why deploy a worker?</div>
+                <div class="text-[11px] text-gray-400 leading-relaxed">Without a worker, cookies and redirect chains can't be captured (CORS limitation). With your own CF Worker: <strong class="text-white">7/7 checks</strong>, full cookie analysis, cloaking detection.</div>
+                <div class="flex items-center gap-2 mt-2 text-[11px]"><span class="px-2 py-0.5 bg-green-500/10 text-green-400 rounded-md font-bold border border-green-500/15">FREE</span><span class="text-gray-500">100,000 requests/day free tier</span></div>
+            </div>
+            <div class="space-y-3 mb-5">
+                <div><label class="text-[11px] font-semibold text-gray-400 mb-1 block">Account ID</label><input id="deployAccountId" type="text" placeholder="e.g. 1a2b3c4d5e6f..." class="w-full bg-black/40 border border-white/10 rounded-lg px-3 py-2 mono text-xs text-gray-300 input-glow focus:outline-none"></div>
+                <div><label class="text-[11px] font-semibold text-gray-400 mb-1 block">API Token</label><input id="deployApiToken" type="password" placeholder="Bearer token..." class="w-full bg-black/40 border border-white/10 rounded-lg px-3 py-2 mono text-xs text-gray-300 input-glow focus:outline-none"></div>
+                <div><label class="text-[11px] font-semibold text-gray-400 mb-1.5 flex items-center justify-between"><span>Workers to deploy</span><span class="flex gap-1.5"><button onclick="deployToggleAll(true)" class="text-[10px] text-cyan-400/70 hover:text-cyan-300">all</button><span class="text-gray-700">|</span><button onclick="deployToggleAll(false)" class="text-[10px] text-gray-500 hover:text-gray-300">none</button></span></label><div id="deployWorkerList" class="grid grid-cols-2 gap-1.5 max-h-40 overflow-y-auto pr-1"></div></div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 mb-3">
+                <button onclick="deployCopyCurl()" class="px-4 py-3 bg-gradient-to-r from-amber-600/30 to-orange-600/30 border border-amber-500/30 hover:border-amber-500/50 text-amber-300 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg><span id="curlBtnTxt">Copy curl</span></button>
+                <button onclick="deployDownloadBat()" class="px-4 py-3 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 border border-cyan-500/20 hover:border-cyan-500/40 text-cyan-300 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>Download script</button>
+            </div>
+            <div id="deployStatus" class="hidden mt-3 text-[11px] text-center"></div>
+            <div id="deployCurlPreview" class="hidden mt-3 bg-black/40 rounded-lg px-3 py-2 mono text-[10px] text-gray-400 border border-white/[.04] max-h-40 overflow-y-auto break-all select-all whitespace-pre-wrap"></div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div class="modal-overlay" id="infoModal" onclick="if(event.target===this)closeInfoModal()">
+        <div class="modal-box p-6">
+            <div class="flex items-center justify-between mb-5">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2"><svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>About this tool</h3>
+                <button onclick="closeInfoModal()" class="text-gray-500 hover:text-white transition-colors p-1">&times;</button>
+            </div>
+            <div class="bg-cyan-500/[.06] border border-cyan-500/15 rounded-xl p-4 mb-4">
+                <div class="text-xs font-bold text-cyan-400 mb-1.5">Detection method</div>
+                <div class="text-[11px] text-gray-400 leading-relaxed space-y-1.5">
+                    <p>The scanner sends <strong class="text-white">4 HTTP request chains</strong> targeting specific Keitaro TDS behaviors (offer redirect, click API, update tokens) and analyzes responses through <strong class="text-white">7 independent evidence checks</strong>, each mapped to <a href="https://docs.keitaro.io" target="_blank" class="text-cyan-400/70 hover:text-cyan-300">official Keitaro documentation</a>.</p>
+                    <p><strong class="text-white">Cloaking detection</strong> sends the same URL to <strong class="text-white">10 different User-Agent profiles</strong> (5 search engine bots + 5 real browsers) and compares response codes, body sizes, redirects, and final URLs to the baseline.</p>
+                    <p><strong class="text-white">Redirect chain analysis</strong> traces all HTTP hops and flags redirects to external root domains as potential TDS routing or cloaking.</p>
+                </div>
+            </div>
+            <div class="bg-black/30 border border-white/[.04] rounded-xl p-4 text-[11px] mb-4">
+                <div class="text-gray-400 font-semibold mb-2">Evidence weights (sorted by importance)</div>
+                <div class="space-y-1 text-gray-500" id="infoWeights"></div>
+                <div class="text-[10px] text-gray-600 mt-2 italic">Confidence = sum of passed evidence weights. Verdict threshold: 30%.</div>
+            </div>
+            <div class="bg-black/30 border border-white/[.04] rounded-xl p-4 text-[11px] mb-4">
+                <div class="text-gray-400 font-semibold mb-2">Operating modes</div>
+                <div class="space-y-1.5 text-gray-500">
+                    <div class="flex gap-2"><span class="text-gray-400 font-semibold shrink-0 w-28">Without Worker</span><span>6/7 checks via public CORS proxies. No cookie analysis, no cloaking detection, limited redirect chain info.</span></div>
+                    <div class="flex gap-2"><span class="text-green-400 font-semibold shrink-0 w-28">With CF Worker</span><span>7/7 checks. Full cookie inspection, complete redirect chains, cloaking analysis with 10 UA profiles.</span></div>
+                </div>
+            </div>
+            <div class="bg-amber-500/[.06] border border-amber-500/15 rounded-xl p-4">
+                <div class="text-xs font-bold text-amber-400 mb-2">Disclaimer</div>
+                <ul class="text-[11px] text-gray-400 leading-relaxed space-y-1 list-disc list-inside">
+                    <li>This is an <strong class="text-gray-300">open-source research tool</strong> for anti-phishing investigators</li>
+                    <li>False positives and false negatives are possible &mdash; always verify manually</li>
+                    <li>This tool only sends standard HTTP GET requests &mdash; it does not exploit or modify anything</li>
+                    <li>Not affiliated with Keitaro (Apliteni OU) &mdash; detection is based on publicly documented behaviors</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div class="mt-8 text-center text-[11px] text-gray-700">
-        Based on <a href="https://github.com/phishdestroy/ScamIntelLogs/tree/main/keitaro/script" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">keitaro_hunter</a> &middot; <a href="https://www.phishdestroy.io/" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">PhishDestroy</a>
+        <span class="text-gray-600">v1.3.0</span> &middot;
+        <a href="https://github.com/phishdestroy/ScamIntelLogs/tree/main/keitaro" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">Source</a> &middot;
+        <a href="https://www.phishdestroy.io/" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">PhishDestroy</a>
+        <div class="mt-2 text-[10px] text-gray-700/60 max-w-lg mx-auto leading-relaxed">Research tool by PhishDestroy. Results may be inaccurate. This tool sends only standard HTTP requests.</div>
     </div>
 </div>
 
 <script>
-// ===================== CONFIG =====================
+// ==================== CONFIG ====================
+const VERSION = '1.3.0';
+
 const DOCS = {
-    click_api:      'https://docs.keitaro.io/en/development/click-api.html',
-    offer_url:      'https://docs.keitaro.io/en/landing-pages-and-offers/offer-url.html',
-    lp_redirect:    'https://docs.keitaro.io/en/landing-pages-and-offers/landing-page-redirect.html',
-    tracking:       'https://docs.keitaro.io/en/campaign-integrations/tracking-script.html',
-    update_params:  'https://docs.keitaro.io/en/landing-pages-and-offers/update-params.html',
+    click_api: 'https://docs.keitaro.io/en/development/click-api.html',
+    offer_url: 'https://docs.keitaro.io/en/landing-pages-and-offers/offer-url.html',
+    lp_redirect: 'https://docs.keitaro.io/en/landing-pages-and-offers/landing-page-redirect.html',
+    tracking: 'https://docs.keitaro.io/en/campaign-integrations/tracking-script.html',
+    update_params: 'https://docs.keitaro.io/en/landing-pages-and-offers/update-params.html',
 };
 
-// Evidence order matches Python: offer_params, landing_params, subid_cookie, html_markers, click_api, offer_reaction, update_tokens
 const EVIDENCES = [
-    { id: 1, name: 'Offer Params',     hint: '_lp + _token',       doc: DOCS.offer_url },
-    { id: 2, name: 'Landing Params',   hint: '_subid + _token',    doc: DOCS.lp_redirect },
-    { id: 3, name: 'Subid Cookie',     hint: 'subid=',             doc: DOCS.tracking },
-    { id: 4, name: 'HTML Markers',     hint: 'KTracking keitaro',  doc: DOCS.tracking },
-    { id: 5, name: 'Click API',        hint: '/click_api/v3',      doc: DOCS.click_api },
-    { id: 6, name: 'Offer Reaction',   hint: 'MAIN vs OFFER',     doc: DOCS.offer_url },
-    { id: 7, name: 'Update Tokens',    hint: 'MAIN vs UPDATE',    doc: DOCS.update_params },
+    { id: 1, name: 'Offer Params', hint: '_lp + _token', doc: DOCS.offer_url, weight: 5, desc: 'Scans all redirect chain URLs for _lp and _token query parameters — standard Keitaro offer URL structure per official docs.' },
+    { id: 2, name: 'Landing Params', hint: '_subid + _token', doc: DOCS.lp_redirect, weight: 5, desc: 'Scans redirect chain for _subid and _token parameters used in Keitaro landing page redirects to track visitor sessions.' },
+    { id: 3, name: 'Subid Cookie', hint: 'subid=', doc: DOCS.tracking, weight: 10, desc: 'Inspects Set-Cookie headers for "subid" cookie — Keitaro sets this to track clicks across redirects. Requires CF Worker (CORS cannot read cookies).', needsWorker: true },
+    { id: 4, name: 'HTML Markers', hint: 'KTracking {subid}', doc: DOCS.tracking, weight: 20, desc: 'Searches page source for KTracking JavaScript API calls and Keitaro template placeholders like {subid} and {offer} in HTML/JS.' },
+    { id: 5, name: 'Click API', hint: '/click_api/v3', doc: DOCS.click_api, weight: 25, desc: 'Probes /click_api/v3 endpoint — Keitaro\'s documented API for registering clicks. If it returns JSON instead of 404, Keitaro is installed.' },
+    { id: 6, name: 'Offer Reaction', hint: 'MAIN vs OFFER', doc: DOCS.offer_url, weight: 20, desc: 'Sends request with _lp=1&_token=invalid and compares response (status, size, redirect) to baseline — Keitaro reacts differently to offer params.' },
+    { id: 7, name: 'Update Tokens', hint: 'MAIN vs UPDATE', doc: DOCS.update_params, weight: 15, desc: 'Sends _update_tokens=1 param and compares response to baseline — Keitaro\'s built-in parameter update mechanism will alter the response.' },
 ];
 
-let massAbort = false, massResults = [];
+const CLOAK_PROFILES = [
+    { name: 'Googlebot', short: 'Gbot', group: 'bot', ua: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)', referer: '' },
+    { name: 'AdsBot-Google', short: 'AdsBot', group: 'bot', ua: 'AdsBot-Google (+http://www.google.com/adsbot.html)', referer: '' },
+    { name: 'Bingbot', short: 'Bing', group: 'bot', ua: 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)', referer: '' },
+    { name: 'Facebook Bot', short: 'FB', group: 'bot', ua: 'facebookexternalhit/1.1', referer: '' },
+    { name: 'curl', short: 'curl', group: 'bot', ua: 'curl/8.5.0', referer: '' },
+    { name: 'Chrome + Google', short: 'GRef', group: 'browser', ua: '', referer: 'https://www.google.com/' },
+    { name: 'iPhone Safari', short: 'iOS', group: 'browser', ua: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15', referer: '' },
+    { name: 'Android Chrome', short: 'Andr', group: 'browser', ua: 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/136.0.0.0 Mobile', referer: '' },
+    { name: 'macOS Safari', short: 'macOS', group: 'browser', ua: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15', referer: '' },
+    { name: 'Firefox', short: 'FF', group: 'browser', ua: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0', referer: '' },
+];
 
-// ===================== URL HELPERS (match Python) =====================
+// CORS proxy fallbacks (used when no Worker configured)
+const CORS_PROXIES = [
+    { fn: u => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`, parse: 'allorigins' },
+    { fn: u => `https://corsproxy.io/?${encodeURIComponent(u)}`, parse: 'raw' },
+    { fn: u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`, parse: 'raw' },
+];
+
+// ==================== STATE ====================
+let massAbort = false, massResults = [], massCloakEnabled = false, massCurrentFilter = 'all', massScanCloakEnabled = false;
+
+// ==================== HELPERS ====================
+function getRootDomain(hostname) {
+    if (!hostname) return '';
+    const parts = hostname.toLowerCase().split('.');
+    if (parts.length <= 2) return hostname.toLowerCase();
+    // Handle co.uk, com.ua, etc.
+    const sld = ['co','com','org','net','gov','edu','ac'];
+    if (parts.length >= 3 && sld.includes(parts[parts.length-2]) && parts[parts.length-1].length <= 3) return parts.slice(-3).join('.');
+    return parts.slice(-2).join('.');
+}
+function isExternalDomain(domain1, domain2) {
+    if (!domain1 || !domain2) return false;
+    return getRootDomain(domain1) !== getRootDomain(domain2);
+}
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const escHtml = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const fmtSize = b => !b ? '0B' : b < 1024 ? b + 'B' : b < 1048576 ? (b/1024).toFixed(1) + 'K' : (b/1048576).toFixed(1) + 'M';
+const sCt = ct => (ct || '-').split(';')[0].trim() || '-';
+const normCt = ct => (ct || '').trim().toLowerCase();
+
 function normalizeUrl(d) {
     d = d.trim().replace(/\/+$/, '');
     if (!/^https?:\/\//i.test(d)) d = 'https://' + d;
     return d;
 }
 
-// Python: origin_of() -> scheme://netloc
 function originOf(url) {
-    try { const u = new URL(url); return u.origin; }
+    try { return new URL(url).origin; }
     catch { return url; }
 }
 
-// Python: strip_query_fragment() -> remove query and fragment
-function stripQF(url) {
-    try { const u = new URL(url); u.search = ''; u.hash = ''; return u.href; }
-    catch { return url.split('?')[0].split('#')[0]; }
-}
-
-// Python: build_url_with_query() -> add params to URL
 function buildUrl(base, params) {
     try {
         const u = new URL(base);
@@ -557,7 +628,6 @@ function buildUrl(base, params) {
     } catch { return base + '?' + new URLSearchParams(params).toString(); }
 }
 
-// Python: parse_qs check on url or location
 function urlHasParams(url, requiredKey, altKeys) {
     try {
         const p = new URL(url).searchParams;
@@ -566,145 +636,170 @@ function urlHasParams(url, requiredKey, altKeys) {
     } catch { return false; }
 }
 
-// ===================== PROXY =====================
-function getWorkerUrl() { return document.getElementById('cfWorker').value.trim(); }
+function calcConfidence(results) {
+    let conf = 0;
+    for (let i = 0; i < results.length; i++) {
+        if (results[i] === true) conf += EVIDENCES[i].weight;
+    }
+    return conf;
+}
 
-let _lastProxyFallback = false; // track if last call fell back to CORS
-
-async function proxyFetch(url) {
-    _lastProxyFallback = false;
-    const w = getWorkerUrl();
-    if (w) {
-        try { return await workerFetch(w, url); }
-        catch (e) {
-            // Worker failed — fallback to public CORS proxy (loses cookies/redirects)
-            _lastProxyFallback = true;
-            return fallbackFetch(url);
+function collectChainUrls(chain) {
+    const urls = [];
+    if (!chain) return urls;
+    if (chain.finalUrl) urls.push(chain.finalUrl);
+    if (chain.redirects) {
+        for (const r of chain.redirects) {
+            if (r.url) urls.push(r.url);
+            if (r.headers && r.headers['location']) urls.push(r.headers['location']);
         }
     }
-    return fallbackFetch(url);
+    return urls;
+}
+
+// ==================== PROXY ====================
+function getWorkerUrls() {
+    return document.getElementById('cfWorker').value.split(/[\n,]+/).map(u => u.trim()).filter(u => u && u.startsWith('http'));
+}
+
+function getWorkerUrl() {
+    const urls = getWorkerUrls();
+    return urls.length > 0 ? urls[0] : '';
+}
+
+async function proxyFetch(url, workerOverride) {
+    const w = workerOverride !== undefined ? workerOverride : getWorkerUrl();
+    if (w) {
+        for (let attempt = 0; attempt < 2; attempt++) {
+            try {
+                const res = await workerFetch(w, url);
+                res._proxyFallback = false;
+                return res;
+            } catch (e) {
+                if (attempt === 0) { await sleep(1000); continue; }
+                const res = await fallbackFetch(url);
+                res._proxyFallback = true;
+                return res;
+            }
+        }
+    }
+    const res = await fallbackFetch(url);
+    res._proxyFallback = false;
+    return res;
 }
 
 async function workerFetch(worker, url) {
     const sep = worker.includes('?') ? '&' : '?';
-    const r = await fetch(`${worker}${sep}url=${encodeURIComponent(url)}`, { signal: AbortSignal.timeout(20000) });
-    if (!r.ok) throw new Error(`Worker ${r.status}`);
-    const j = await r.json();
-    if (j.error) throw new Error(j.error);
-    return j;
+    for (let attempt = 0; attempt < 2; attempt++) {
+        const r = await fetch(`${worker}${sep}url=${encodeURIComponent(url)}`, { signal: AbortSignal.timeout(20000) });
+        if (r.status === 429) {
+            if (attempt === 0) { await sleep(2000); continue; }
+            throw new Error('Worker rate limited');
+        }
+        if (r.status >= 500 && attempt === 0) { await sleep(1000); continue; }
+        if (!r.ok) throw new Error(`Worker ${r.status}`);
+        const j = await r.json();
+        if (j.error) throw new Error(j.error);
+        return j;
+    }
 }
 
 async function fallbackFetch(url) {
-    const apis = [
-        { fn: u => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`, parse: 'allorigins' },
-        { fn: u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`, parse: 'raw' },
-    ];
-    for (const api of apis) {
-        try {
-            const r = await fetch(api.fn(url), { signal: AbortSignal.timeout(15000) });
-            if (api.parse === 'allorigins') {
-                const j = await r.json();
-                const body = j.contents || '';
-                return {
-                    finalUrl: (j.status && j.status.url) || url,
-                    status: (j.status && j.status.http_code) || 0,
-                    contentType: (j.status && j.status.content_type) || '',
-                    body, bodyLength: (j.status && j.status.content_length) || body.length,
-                    cookies: [], redirects: [], error: null,
-                };
-            } else {
-                const body = await r.text();
-                return { finalUrl: url, status: r.status, contentType: r.headers.get('content-type') || '', body, bodyLength: body.length, cookies: [], redirects: [], error: null };
+    for (const api of CORS_PROXIES) {
+        for (let attempt = 0; attempt < 2; attempt++) {
+            try {
+                const r = await fetch(api.fn(url), { signal: AbortSignal.timeout(15000) });
+                if (r.status === 429 || r.status >= 500) {
+                    if (attempt === 0) { await sleep(1000); continue; }
+                    throw new Error(`Proxy ${r.status}`);
+                }
+                if (api.parse === 'allorigins') {
+                    const j = await r.json();
+                    const body = j.contents || '';
+                    return { finalUrl: (j.status?.url) || url, status: (j.status?.http_code) || 0, contentType: (j.status?.content_type) || '', body, bodyLength: body.length, cookies: [], redirects: [], error: null };
+                } else {
+                    const body = await r.text();
+                    return { finalUrl: url, status: r.status, contentType: r.headers.get('content-type') || '', body, bodyLength: body.length, cookies: [], redirects: [], error: null };
+                }
+            } catch (e) {
+                if (attempt === 0) { await sleep(1000); continue; }
+                break;
             }
-        } catch { continue; }
+        }
     }
     throw new Error('All proxies failed');
 }
 
-// Extract first hop info from worker response (matches Python first_http_hop)
-function firstHop(chain) {
-    if (!chain) return null;
-    const r0 = chain.redirects && chain.redirects[0];
-    return {
-        status: r0 ? r0.status : chain.status,
-        content_type: r0 ? (r0.headers && (r0.headers['content-type'] || '')) : (chain.contentType || ''),
-        location: r0 ? (r0.headers && (r0.headers['location'] || '')) : '',
-        body_len: chain.bodyLength || 0,
-    };
-}
-
-// ===================== DETECTION (matches Python exactly) =====================
-
-async function scanDomain(domain, onLog, onCheck) {
+// ==================== SCANNER ====================
+async function scanDomain(domain, onLog, onCheck, workerUrl) {
     const mainUrl = normalizeUrl(domain);
     const mainOrigin = originOf(mainUrl);
     const results = Array(7).fill(null);
     const details = Array(7).fill('');
     let chains = {};
+    const wk = workerUrl !== undefined ? workerUrl : undefined;
+    const hasWorker = !!wk || !!getWorkerUrl();
 
-    // Build URLs exactly like Python: all from origin, not full URL
-    const offerTestUrl = buildUrl(mainOrigin, { _lp: '1', _token: 'invalid' });
-    const clickApiUrl = mainOrigin + '/click_api/v3?token=invalid&info=1&log=1';
-    const updateTokensUrl = mainOrigin + '/?_update_tokens=1&sub_id=invalid&sub_id_1=TEST';
+    const mainUrlClean = mainUrl.split('?')[0].split('#')[0];
+    const offerTestUrl = buildUrl(mainUrlClean, { _lp: '1', _token: 'invalid' });
+    const clickApiUrl = mainOrigin + '/click_api/v3?token=invalid&info=1';
+    const updateTokensUrl = mainOrigin + '/?_update_tokens=1&sub_id=invalid';
 
-    // FETCH 4 CHAINS
-    onLog('MAIN: ' + mainUrl, 'dim');
-    try {
-        chains.MAIN = await proxyFetch(mainUrl);
-        onLog(`MAIN: ${chains.MAIN.status}, ${chains.MAIN.bodyLength}b, ct=${sCt(chains.MAIN.contentType)}${_lastProxyFallback ? ' (worker failed, CORS fallback)' : ''}`);
-    } catch (e) {
-        const httpUrl = mainUrl.replace('https://', 'http://');
-        try {
-            chains.MAIN = await proxyFetch(httpUrl);
-            onLog(`MAIN (http): ${chains.MAIN.status}, ${chains.MAIN.bodyLength}b${_lastProxyFallback ? ' (CORS fallback)' : ''}`);
-        } catch (e2) {
-            onLog(`MAIN: failed - ${e2.message}`, 'fail');
-            return { score: 0, total: 0, results, details, error: e2.message };
+    async function fetchChain(name, url) {
+        onLog(`${name}: ${url}`, 'dim');
+        const res = await proxyFetch(url, wk);
+        onLog(`${name}: ${res.status}, ${res.bodyLength}b${res._proxyFallback ? ' (fallback)' : ''}`);
+        return res;
+    }
+
+    function classifyError(msg) {
+        const m = (msg || '').toLowerCase();
+        if (m.includes('timeout')) return 'Connection timed out';
+        if (m.includes('dns') || m.includes('notfound')) return 'DNS resolution failed';
+        if (m.includes('ssl') || m.includes('cert')) return 'SSL/TLS error';
+        if (m.includes('refused')) return 'Connection refused';
+        if (m.includes('all proxies failed')) return 'All proxies failed - site may be down';
+        return msg;
+    }
+
+    try { chains.MAIN = await fetchChain('MAIN', mainUrl); }
+    catch (e) {
+        try { chains.MAIN = await fetchChain('MAIN (http)', mainUrl.replace('https://', 'http://')); }
+        catch (e2) {
+            const friendly = classifyError(e2.message);
+            onLog(`MAIN: ${friendly}`, 'fail');
+            return { score: 0, total: 0, confidence: 0, results, details, error: friendly };
         }
     }
 
-    onLog('OFFER_TEST: ' + offerTestUrl, 'dim');
-    try {
-        chains.OFFER_TEST = await proxyFetch(offerTestUrl);
-        onLog(`OFFER_TEST: ${chains.OFFER_TEST.status}, ${chains.OFFER_TEST.bodyLength}b, ct=${sCt(chains.OFFER_TEST.contentType)}${_lastProxyFallback ? ' (CORS fallback)' : ''}`);
-    } catch (e) { chains.OFFER_TEST = null; onLog(`OFFER_TEST: failed - ${e.message}`, 'warn'); }
-
-    onLog('CLICK_API: ' + clickApiUrl, 'dim');
-    try {
-        chains.CLICK_API = await proxyFetch(clickApiUrl);
-        onLog(`CLICK_API: ${chains.CLICK_API.status}, ${chains.CLICK_API.bodyLength}b, ct=${sCt(chains.CLICK_API.contentType)}${_lastProxyFallback ? ' (CORS fallback)' : ''}`);
-    } catch (e) { chains.CLICK_API = null; onLog(`CLICK_API: failed - ${e.message}`, 'warn'); }
-
-    onLog('UPDATE_TOKENS: ' + updateTokensUrl, 'dim');
-    try {
-        chains.UPDATE_TOKENS = await proxyFetch(updateTokensUrl);
-        onLog(`UPDATE_TOKENS: ${chains.UPDATE_TOKENS.status}, ${chains.UPDATE_TOKENS.bodyLength}b, ct=${sCt(chains.UPDATE_TOKENS.contentType)}${_lastProxyFallback ? ' (CORS fallback)' : ''}`);
-    } catch (e) { chains.UPDATE_TOKENS = null; onLog(`UPDATE_TOKENS: failed - ${e.message}`, 'warn'); }
-
-    onLog('--- 7 evidence checks ---', 'dim');
-
-    // Python checks final_url of each chain (not intermediate redirects)
-    const chainFinalUrls = [];
-    for (const c of Object.values(chains)) {
-        if (!c) continue;
-        if (c.finalUrl) chainFinalUrls.push(c.finalUrl);
+    if (chains.MAIN?.status === 0 && !chains.MAIN?.body) {
+        return { score: 0, total: 0, confidence: 0, results, details, error: 'Empty response - site may be down' };
     }
 
-    // E1: Offer URL params (_lp + _token/token) — Python: check final_url of each chain
-    onCheck(1, 'run');
-    const e1hit = chainFinalUrls.find(u => urlHasParams(u, '_lp', ['_token', 'token']));
-    results[0] = !!e1hit;
-    details[0] = e1hit ? `Found: ${e1hit}` : 'Not found in final URLs across all chains';
-    onCheck(1, results[0] ? 'pass' : 'fail', results[0] ? 'found' : 'not found');
-    onLog(`E1 Offer Params: ${F(results[0])} ${details[0]}`, results[0] ? 'ok' : 'dim');
+    try { chains.OFFER_TEST = await fetchChain('OFFER_TEST', offerTestUrl); } catch { chains.OFFER_TEST = null; }
+    try { chains.CLICK_API = await fetchChain('CLICK_API', clickApiUrl); } catch { chains.CLICK_API = null; }
+    try { chains.UPDATE_TOKENS = await fetchChain('UPDATE_TOKENS', updateTokensUrl); } catch { chains.UPDATE_TOKENS = null; }
 
-    // E2: Landing params (_subid + _token/token) — Python: check final_url of each chain
+    onLog('--- Evidence checks ---', 'dim');
+
+    const allChainUrls = [];
+    for (const c of Object.values(chains)) for (const u of collectChainUrls(c)) allChainUrls.push(u);
+
+    // E1: Offer Params
+    onCheck(1, 'run');
+    const e1hit = allChainUrls.find(u => urlHasParams(u, '_lp', ['_token', 'token']));
+    results[0] = !!e1hit;
+    details[0] = e1hit ? `Found: ${e1hit}` : 'Not found';
+    onCheck(1, results[0] ? 'pass' : 'fail', results[0] ? 'found' : 'no');
+    onLog(`E1: ${results[0] ? 'PASS' : 'FAIL'} ${details[0]}`, results[0] ? 'ok' : 'dim');
+
+    // E2: Landing Params
     onCheck(2, 'run');
-    const e2hit = chainFinalUrls.find(u => urlHasParams(u, '_subid', ['_token', 'token']));
+    const e2hit = allChainUrls.find(u => urlHasParams(u, '_subid', ['_token', 'token']));
     results[1] = !!e2hit;
-    details[1] = e2hit ? `Found: ${e2hit}` : 'Not found in final URLs across all chains';
-    onCheck(2, results[1] ? 'pass' : 'fail', results[1] ? 'found' : 'not found');
-    onLog(`E2 Landing Params: ${F(results[1])} ${details[1]}`, results[1] ? 'ok' : 'dim');
+    details[1] = e2hit ? `Found: ${e2hit}` : 'Not found';
+    onCheck(2, results[1] ? 'pass' : 'fail', results[1] ? 'found' : 'no');
+    onLog(`E2: ${results[1] ? 'PASS' : 'FAIL'} ${details[1]}`, results[1] ? 'ok' : 'dim');
 
     // E3: Subid Cookie
     onCheck(3, 'run');
@@ -712,98 +807,163 @@ async function scanDomain(domain, onLog, onCheck) {
     for (const c of Object.values(chains)) {
         if (!c) continue;
         if (c.cookies) c.cookies.forEach(ck => allCookies.push(ck));
-        if (c.redirects) c.redirects.forEach(r => { if (r.headers && r.headers['set-cookie']) allCookies.push(r.headers['set-cookie']); });
     }
-    if (allCookies.length > 0 || getWorkerUrl()) {
+    if (allCookies.length > 0 || hasWorker) {
         const hit = allCookies.find(c => /\bsubid=/i.test(c));
         results[2] = !!hit;
-        details[2] = hit ? `Found: ${hit}` : 'No "subid" cookie in Set-Cookie across all chains';
-    } else { results[2] = false; details[2] = 'No cookies available (need CF Worker)'; }
-    onCheck(3, results[2] ? 'pass' : 'fail', results[2] ? 'Cookie' : 'not found');
-    onLog(`E3 Subid Cookie: ${F(results[2])} ${details[2]}`, results[2] ? 'ok' : 'dim');
-
-    // E4: HTML Markers (KTracking, {subid}, {offer}, keitaro — exactly 4 like Python)
-    onCheck(4, 'run');
-    const markers = [[/\bKTracking\b/i, 'KTracking'], [/\{subid\}/i, '{subid}'], [/\{offer\}/i, '{offer}'], [/keitaro/i, 'keitaro']];
-    const e4found = [];
-    for (const c of Object.values(chains)) {
-        if (!c || !c.body) continue;
-        for (const [rx, name] of markers) {
-            if (rx.test(c.body)) e4found.push(name);
-        }
+        details[2] = hit ? `Found: ${hit}` : 'No subid cookie';
+    } else {
+        results[2] = false;
+        details[2] = 'Requires Worker (CORS cannot read cookies)';
     }
-    results[3] = e4found.length > 0;
-    details[3] = e4found.length > 0 ? e4found.join('; ') : 'Markers not found in HTML across all chains';
-    onCheck(4, results[3] ? 'pass' : 'fail', results[3] ? e4found.join(', ') : 'not found');
-    onLog(`E4 HTML Markers: ${F(results[3])} ${details[3]}`, results[3] ? 'ok' : 'dim');
+    onCheck(3, results[2] ? 'pass' : (hasWorker ? 'fail' : 'skip'), results[2] ? 'Cookie' : (hasWorker ? 'no' : 'needs Worker'));
+    onLog(`E3: ${results[2] ? 'PASS' : 'SKIP'} ${details[2]}`, results[2] ? 'ok' : 'dim');
 
-    // E5: Click API (/click_api/v3 exists, non-404 + JSON)
+    // E4: HTML Markers
+    onCheck(4, 'run');
+    const markers = [[/\bKTracking\b/i, 'KTracking'], [/\{subid\}/i, '{subid}'], [/\{offer\}/i, '{offer}']];
+    const e4set = new Set();
+    for (const c of Object.values(chains)) {
+        if (!c?.body) continue;
+        for (const [rx, name] of markers) if (rx.test(c.body)) e4set.add(name);
+    }
+    const e4found = [...e4set];
+    results[3] = e4found.length > 0;
+    details[3] = e4found.length > 0 ? e4found.join('; ') : 'No markers found';
+    onCheck(4, results[3] ? 'pass' : 'fail', results[3] ? e4found.join(', ') : 'no');
+    onLog(`E4: ${results[3] ? 'PASS' : 'FAIL'} ${details[3]}`, results[3] ? 'ok' : 'dim');
+
+    // E5: Click API
     onCheck(5, 'run');
     const ca = chains.CLICK_API;
     if (ca) {
         const ct = (ca.contentType || '').toLowerCase();
-        const body = (ca.body || '').trim().substring(0, 220);
+        const body = (ca.body || '').trim().substring(0, 200);
         const jsonish = ct.includes('json') || body.startsWith('{') || body.startsWith('[');
         const ok = ca.status !== 404 && ca.status !== 0 && jsonish;
         results[4] = ok;
-        details[4] = `[CLICK_API] HTTP ${ca.status}, content-type=${ct || '<none>'}, body sample: ${body || '<no body>'}`;
-    } else { results[4] = false; details[4] = 'CLICK_API chain has no HTTP response'; }
-    onCheck(5, results[4] ? 'pass' : 'fail', results[4] ? `HTTP ${ca ? ca.status : '-'} JSON` : 'no');
-    onLog(`E5 Click API: ${F(results[4])} ${details[4]}`, results[4] ? 'ok' : 'dim');
+        details[4] = `HTTP ${ca.status}, ${ct || 'no ct'}${ok ? ', JSON response' : ''}`;
+    } else {
+        results[4] = false;
+        details[4] = 'Endpoint not accessible';
+    }
+    onCheck(5, results[4] ? 'pass' : 'fail', results[4] ? `${ca?.status} JSON` : 'no');
+    onLog(`E5: ${results[4] ? 'PASS' : 'FAIL'} ${details[4]}`, results[4] ? 'ok' : 'dim');
 
-    // E6: Offer Reaction — Python: compare FINAL response (status, content_type, abs(body_len) > 100)
+    function firstHop(c) {
+        if (!c) return null;
+        const r0 = c.redirects?.[0];
+        if (r0) return { status: r0.status, ct: r0.headers?.['content-type'] || '', loc: r0.headers?.['location'] || '', len: c.redirects.length <= 1 ? (c.bodyLength || 0) : 0 };
+        return { status: c.status, ct: c.contentType || '', loc: '', len: c.bodyLength || 0 };
+    }
+
+    // E6: Offer Reaction
     onCheck(6, 'run');
-    const baseR = chains.MAIN, testR = chains.OFFER_TEST;
-    if (baseR && testR && baseR.status) {
-        const reacted = (testR.status !== baseR.status)
-            || ((testR.contentType || '') !== (baseR.contentType || ''))
-            || (Math.abs((testR.bodyLength || 0) - (baseR.bodyLength || 0)) > 100);
+    const baseH = firstHop(chains.MAIN), testH = firstHop(chains.OFFER_TEST);
+    if (baseH && testH && baseH.status) {
+        const reacted = (testH.status !== baseH.status) || (normCt(testH.ct) !== normCt(baseH.ct)) || (testH.loc !== baseH.loc) || (Math.abs(testH.len - baseH.len) > 100);
         results[5] = reacted;
-        details[5] = `Base [MAIN] -> status=${baseR.status}, ct=${sCt(baseR.contentType)}, len=${baseR.bodyLength || 0}; `
-            + `Test [OFFER_TEST] -> status=${testR.status}, ct=${sCt(testR.contentType)}, len=${testR.bodyLength || 0}`;
-    } else { results[5] = false; details[5] = 'Missing MAIN or OFFER_TEST response'; }
-    onCheck(6, results[5] ? 'pass' : 'fail', results[5] ? `${baseR?.status}\u2192${testR?.status}` : 'no change');
-    onLog(`E6 Offer Reaction: ${F(results[5])} ${details[5]}`, results[5] ? 'ok' : 'dim');
+        details[5] = `Base: ${baseH.status}/${baseH.len}b → Test: ${testH.status}/${testH.len}b`;
+    } else { results[5] = false; details[5] = 'Missing response data'; }
+    onCheck(6, results[5] ? 'pass' : 'fail', results[5] ? `${baseH?.status}→${testH?.status}` : 'same');
+    onLog(`E6: ${results[5] ? 'PASS' : 'FAIL'} ${details[5]}`, results[5] ? 'ok' : 'dim');
 
-    // E7: Update Tokens — Python: compare FINAL response (status, content_type, abs(body_len) > 100)
+    // E7: Update Tokens
     onCheck(7, 'run');
-    const utR = chains.UPDATE_TOKENS;
-    if (baseR && utR && baseR.status) {
-        const reacted = (utR.status !== baseR.status)
-            || ((utR.contentType || '') !== (baseR.contentType || ''))
-            || (Math.abs((utR.bodyLength || 0) - (baseR.bodyLength || 0)) > 100);
+    const utH = firstHop(chains.UPDATE_TOKENS);
+    if (baseH && utH && baseH.status) {
+        const reacted = (utH.status !== baseH.status) || (normCt(utH.ct) !== normCt(baseH.ct)) || (utH.loc !== baseH.loc) || (Math.abs(utH.len - baseH.len) > 100);
         results[6] = reacted;
-        details[6] = `Base [MAIN] -> status=${baseR.status}, ct=${sCt(baseR.contentType)}, len=${baseR.bodyLength || 0}; `
-            + `Test [UPDATE_TOKENS] -> status=${utR.status}, ct=${sCt(utR.contentType)}, len=${utR.bodyLength || 0}`;
-    } else { results[6] = false; details[6] = 'Missing MAIN or UPDATE_TOKENS response'; }
-    onCheck(7, results[6] ? 'pass' : 'fail', results[6] ? `${baseR?.status}\u2192${utR?.status}` : 'no change');
-    onLog(`E7 Update Tokens: ${F(results[6])} ${details[6]}`, results[6] ? 'ok' : 'dim');
+        details[6] = `Base: ${baseH.status}/${baseH.len}b → Test: ${utH.status}/${utH.len}b`;
+    } else { results[6] = false; details[6] = 'Missing response data'; }
+    onCheck(7, results[6] ? 'pass' : 'fail', results[6] ? `${baseH?.status}→${utH?.status}` : 'same');
+    onLog(`E7: ${results[6] ? 'PASS' : 'FAIL'} ${details[6]}`, results[6] ? 'ok' : 'dim');
 
-    const total = results.length;
+    const confidence = calcConfidence(results);
     const score = results.filter(r => r === true).length;
-    return { score, total, results, details, error: null };
+    return { score, total: 7, confidence, results, details, error: null, mainChain: chains.MAIN };
 }
 
-function F(v) { return v ? 'PASS' : 'FAIL'; }
-function sCt(ct) { return (ct || '-').split(';')[0].trim() || '-'; }
+// ==================== CLOAKING ====================
+async function checkCloaking(url, mainChain, workerUrl) {
+    if (!workerUrl) return null;
+    const baseline = { status: mainChain.status, finalUrl: mainChain.finalUrl, ct: mainChain.contentType || '', len: mainChain.bodyLength || 0, redirectCount: (mainChain.redirects || []).length };
+    const sep = workerUrl.includes('?') ? '&' : '?';
+    const results = [];
 
-// ===================== SINGLE SCAN UI =====================
+    for (const p of CLOAK_PROFILES) {
+        try {
+            let fetchUrl = `${workerUrl}${sep}url=${encodeURIComponent(url)}`;
+            if (p.ua) fetchUrl += `&ua=${encodeURIComponent(p.ua)}`;
+            if (p.referer) fetchUrl += `&referer=${encodeURIComponent(p.referer)}`;
+
+            const r = await fetch(fetchUrl, { signal: AbortSignal.timeout(20000) });
+            if (!r.ok) throw new Error(`${r.status}`);
+            const j = await r.json();
+            if (j.error) throw new Error(j.error);
+
+            const rCount = (j.redirects || []).length;
+            const diff = {
+                status: j.status !== baseline.status,
+                url: j.finalUrl !== baseline.finalUrl,
+                ct: normCt(j.contentType || '') !== normCt(baseline.ct),
+                len: Math.abs((j.bodyLength || 0) - baseline.len) > 100,
+                redirects: rCount !== baseline.redirectCount,
+            };
+            const isDiff = diff.status || diff.url || diff.ct || diff.len || diff.redirects;
+            results.push({ name: p.name, status: j.status, finalUrl: j.finalUrl, len: j.bodyLength || 0, redirectCount: rCount, diff, isDiff });
+        } catch (e) {
+            results.push({ name: p.name, error: e.message || 'Failed' });
+        }
+        await sleep(300);
+    }
+    return results;
+}
+
+async function checkCloakingLite(url, mainChain, workerUrl) {
+    if (!workerUrl) return null;
+    const baseline = { status: mainChain.status, finalUrl: mainChain.finalUrl, ct: mainChain.contentType || '', len: mainChain.bodyLength || 0, redirectCount: (mainChain.redirects || []).length };
+    const sep = workerUrl.includes('?') ? '&' : '?';
+    const liteIndices = [0, 3, 5];
+    const results = [];
+    for (const pi of liteIndices) {
+        const p = CLOAK_PROFILES[pi];
+        try {
+            let fetchUrl = `${workerUrl}${sep}url=${encodeURIComponent(url)}`;
+            if (p.ua) fetchUrl += `&ua=${encodeURIComponent(p.ua)}`;
+            if (p.referer) fetchUrl += `&referer=${encodeURIComponent(p.referer)}`;
+            const r = await fetch(fetchUrl, { signal: AbortSignal.timeout(20000) });
+            if (!r.ok) throw new Error(`${r.status}`);
+            const j = await r.json();
+            if (j.error) throw new Error(j.error);
+            const rCount = (j.redirects || []).length;
+            const diff = { status: j.status !== baseline.status, url: j.finalUrl !== baseline.finalUrl, ct: normCt(j.contentType || '') !== normCt(baseline.ct), len: Math.abs((j.bodyLength || 0) - baseline.len) > 100, redirects: rCount !== baseline.redirectCount };
+            results.push({ name: p.name, short: p.short, status: j.status, finalUrl: j.finalUrl, len: j.bodyLength || 0, redirectCount: rCount, diff, isDiff: diff.status || diff.url || diff.ct || diff.len || diff.redirects });
+        } catch (e) {
+            results.push({ name: p.name, short: p.short, error: e.message });
+        }
+        await sleep(300);
+    }
+    return results;
+}
+
+// ==================== UI - SINGLE SCAN ====================
 let currentScore = 0;
 
 function buildGrid() {
     const g = document.getElementById('grid');
     currentScore = 0;
     g.innerHTML = EVIDENCES.map(c => `
-        <div class="ck idle" id="ck${c.id}" style="animation-delay:${(c.id-1)*40}ms">
+        <div class="ck idle" id="ck${c.id}">
             <div class="flex items-center justify-between mb-1">
                 <div class="flex items-center gap-1.5">
-                    <span id="ico${c.id}" class="text-gray-700 text-sm transition-all duration-300">&#9679;</span>
-                    <a href="${c.doc}" target="_blank" class="text-[10px] font-bold text-gray-600 hover:text-cyan-400 transition-colors" title="Docs">E${c.id}</a>
+                    <span id="ico${c.id}" class="text-gray-700 text-sm">&#9679;</span>
+                    <a href="${c.doc}" target="_blank" class="text-[10px] font-bold text-gray-600 hover:text-cyan-400">E${c.id}</a>
                 </div>
-                <div id="badge${c.id}" class="text-[9px] mono px-1.5 py-0.5 rounded-md opacity-0 transition-all duration-300"></div>
+                <div id="badge${c.id}" class="text-[9px] mono px-1.5 py-0.5 rounded-md opacity-0"></div>
             </div>
             <div class="text-[13px] font-semibold text-gray-300 leading-tight">${c.name}</div>
-            <div class="text-[11px] text-gray-600 mono mt-0.5">${c.hint}</div>
+            <div class="text-[11px] text-gray-600 mono mt-0.5">${c.hint}${c.needsWorker ? ' *' : ''}</div>
             <div id="det${c.id}" class="text-[10px] text-gray-600 mono mt-1.5 hidden truncate"></div>
         </div>
     `).join('') + `
@@ -815,10 +975,10 @@ function buildGrid() {
                         <circle class="fg" id="scoreRing" cx="35" cy="35" r="30" stroke="#374151" stroke-dasharray="188.5" stroke-dashoffset="188.5"/>
                     </svg>
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <span id="vsMini" class="text-lg font-black mono text-gray-600">0/7</span>
+                        <span id="vsMini" class="text-lg font-black mono text-gray-600">0%</span>
                     </div>
                 </div>
-                <div id="vlMini" class="text-[10px] text-gray-600 font-semibold mt-0.5 transition-all duration-300">Waiting</div>
+                <div id="vlMini" class="text-[10px] text-gray-600 font-semibold mt-0.5">Waiting</div>
             </div>
         </div>`;
 }
@@ -829,34 +989,34 @@ function setCheckUI(n, state, detail) {
     const det = document.getElementById(`det${n}`);
     const badge = document.getElementById(`badge${n}`);
 
-    card.className = 'ck ' + ({ run: 'run', pass: 'pass', fail: 'fail' }[state] || 'idle');
+    card.className = 'ck ' + ({ run: 'run', pass: 'pass', fail: 'fail', skip: 'skip' }[state] || 'idle');
 
     if (state === 'run') {
         ico.innerHTML = '<span class="inline-block anim-spin">&#9881;</span>';
-        ico.className = 'text-blue-400 text-sm transition-all duration-300';
+        ico.className = 'text-blue-400 text-sm';
         badge.textContent = 'checking';
-        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-blue-500/10 text-blue-400 opacity-100 transition-all duration-300';
+        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-blue-500/10 text-blue-400 opacity-100';
     } else if (state === 'pass') {
         ico.innerHTML = '&#10003;';
-        ico.className = 'text-green-400 text-sm transition-all duration-300';
+        ico.className = 'text-green-400 text-sm';
         badge.textContent = 'PASS';
-        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-green-500/15 text-green-400 font-bold opacity-100 transition-all duration-300';
+        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-green-500/15 text-green-400 font-bold opacity-100';
         currentScore++;
         updateScoreRing();
-        // Update progress bar
-        const fill = document.getElementById('scanBarFill');
-        fill.style.width = ((currentScore + (7 - currentScore) * 0) / 7 * 100) + '%'; // we update on each check below
     } else if (state === 'fail') {
         ico.innerHTML = '&#10007;';
-        ico.className = 'text-gray-600 text-sm transition-all duration-300';
+        ico.className = 'text-gray-600 text-sm';
         badge.textContent = 'FAIL';
-        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-white/[.04] text-gray-600 opacity-100 transition-all duration-300';
+        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-white/[.04] text-gray-600 opacity-100';
+    } else if (state === 'skip') {
+        ico.innerHTML = '&#8211;';
+        ico.className = 'text-amber-400/60 text-sm';
+        badge.textContent = 'SKIP';
+        badge.className = 'text-[9px] mono px-1.5 py-0.5 rounded-md bg-amber-500/10 text-amber-400/60 opacity-100';
     }
 
     if (detail) { det.textContent = detail; det.classList.remove('hidden'); }
-
-    // Update progress bar based on completed checks
-    const completedChecks = document.querySelectorAll('.ck.pass, .ck.fail').length;
+    const completedChecks = document.querySelectorAll('.ck.pass, .ck.fail, .ck.skip').length;
     const scanFill = document.getElementById('scanBarFill');
     if (scanFill) scanFill.style.width = (completedChecks / 7 * 100) + '%';
 }
@@ -865,70 +1025,59 @@ function updateScoreRing() {
     const ring = document.getElementById('scoreRing');
     const sm = document.getElementById('vsMini');
     const circumference = 188.5;
-    const offset = circumference - (currentScore / 7) * circumference;
+    const cards = document.querySelectorAll('.ck.pass');
+    let liveConf = 0;
+    cards.forEach(c => {
+        const id = parseInt(c.id.replace('ck',''));
+        if (id >= 1 && id <= 7) liveConf += EVIDENCES[id-1].weight;
+    });
+    const offset = circumference - (liveConf / 100) * circumference;
     ring.style.strokeDashoffset = offset;
-
-    // Color based on score
-    if (currentScore >= 2) {
-        ring.style.stroke = '#ef4444';
-        sm.className = 'text-lg font-black mono text-red-400';
-    } else if (currentScore === 1) {
-        ring.style.stroke = '#eab308';
-        sm.className = 'text-lg font-black mono text-yellow-400';
-    } else {
-        ring.style.stroke = '#06b6d4';
-        sm.className = 'text-lg font-black mono text-cyan-400';
-    }
-    sm.textContent = `${currentScore}/7`;
+    ring.style.stroke = liveConf >= 30 ? '#ef4444' : '#06b6d4';
+    sm.className = `text-lg font-black mono ${liveConf >= 30 ? 'text-red-400' : 'text-cyan-400'}`;
+    sm.textContent = `${liveConf}%`;
 }
 
-function setVerdictUI(score, total) {
+function setVerdictUI(score, total, confidence) {
     const v = document.getElementById('verdict');
     v.classList.remove('hidden');
     const s = document.getElementById('vScore'), l = document.getElementById('vLabel');
     const lm = document.getElementById('vlMini');
-
-    // Final score ring update
     const ring = document.getElementById('scoreRing');
     const circumference = 188.5;
-    ring.style.strokeDashoffset = circumference - (score / 7) * circumference;
+    ring.style.strokeDashoffset = circumference - (confidence / 100) * circumference;
+    s.textContent = `${confidence}%`;
 
-    s.textContent = `${score}/${total}`;
-
-    if (score >= 2) {
+    if (confidence >= 30) {
         v.className = 'rounded-2xl p-6 text-center mb-6 v-confirmed anim-verdict';
         s.className = 'text-4xl font-black mono text-red-400';
-        l.textContent = 'KEITARO CONFIRMED'; l.className = 'text-sm font-bold text-red-400 uppercase tracking-wider mt-1.5';
+        l.textContent = 'Keitaro'; l.className = 'text-sm font-bold text-red-400 uppercase tracking-wider mt-1.5';
         ring.style.stroke = '#ef4444';
         document.getElementById('vsMini').className = 'text-lg font-black mono text-red-400';
-        lm.textContent = 'CONFIRMED'; lm.className = 'text-[10px] text-red-400 font-bold mt-0.5 transition-all duration-300';
-        document.getElementById('ckV').className = 'ck flex items-center justify-center';
+        lm.textContent = `${confidence}%`; lm.className = 'text-[10px] text-red-400 font-bold mt-0.5';
         document.getElementById('ckV').style.borderColor = 'rgba(239,68,68,.4)';
-        document.getElementById('ckV').style.boxShadow = '0 0 30px rgba(239,68,68,.1)';
-    } else if (score === 1) {
-        v.className = 'rounded-2xl p-6 text-center mb-6 v-notconfirmed anim-verdict';
-        s.className = 'text-4xl font-black mono text-yellow-400';
-        l.textContent = 'NOT CONFIRMED (need \u22652)'; l.className = 'text-sm font-bold text-yellow-400 uppercase tracking-wider mt-1.5';
-        ring.style.stroke = '#eab308';
-        document.getElementById('vsMini').className = 'text-lg font-black mono text-yellow-400';
-        lm.textContent = '1 EVIDENCE'; lm.className = 'text-[10px] text-yellow-400 font-bold mt-0.5 transition-all duration-300';
-        document.getElementById('ckV').className = 'ck flex items-center justify-center';
-        document.getElementById('ckV').style.borderColor = 'rgba(234,179,8,.3)';
-        document.getElementById('ckV').style.boxShadow = '0 0 20px rgba(234,179,8,.06)';
     } else {
         v.className = 'rounded-2xl p-6 text-center mb-6 v-clean anim-verdict';
         s.className = 'text-4xl font-black mono text-green-400';
-        l.textContent = 'NOT DETECTED'; l.className = 'text-sm font-bold text-green-400 uppercase tracking-wider mt-1.5';
+        l.textContent = 'Not Keitaro'; l.className = 'text-sm font-bold text-green-400 uppercase tracking-wider mt-1.5';
         ring.style.stroke = '#22c55e';
         document.getElementById('vsMini').className = 'text-lg font-black mono text-green-400';
-        lm.textContent = 'CLEAN'; lm.className = 'text-[10px] text-green-400 font-bold mt-0.5 transition-all duration-300';
-        document.getElementById('ckV').className = 'ck flex items-center justify-center';
+        lm.textContent = `${confidence}%`; lm.className = 'text-[10px] text-green-400 font-bold mt-0.5';
         document.getElementById('ckV').style.borderColor = 'rgba(34,197,94,.3)';
-        document.getElementById('ckV').style.boxShadow = '0 0 20px rgba(34,197,94,.06)';
     }
 }
 
 function sLog(msg, type) {
+    const el = document.getElementById('log');
+    const colors = { ok: 'text-green-400', fail: 'text-red-400', warn: 'text-yellow-400', dim: 'text-gray-600', info: 'text-gray-400' };
+    const d = document.createElement('div');
+    d.className = `anim-in ${colors[type] || colors.info}`;
+    const t = new Date().toLocaleTimeString('en-GB', { hour12: false });
+    d.innerHTML = `<span class="text-gray-700 select-none">${t}</span> ${escHtml(msg)}`;
+    el.appendChild(d); el.scrollTop = el.scrollHeight;
+}
+
+function sLogHtml(msg, type) {
     const el = document.getElementById('log');
     const colors = { ok: 'text-green-400', fail: 'text-red-400', warn: 'text-yellow-400', dim: 'text-gray-600', info: 'text-gray-400' };
     const d = document.createElement('div');
@@ -959,171 +1108,892 @@ async function runSingle() {
 
     resetSingle();
     showAbusePanel(false);
+    hideCloakPanel();
+    hideRedirectPanel();
+    hideDomainInfoPanel();
     document.getElementById('scanBar').classList.remove('hidden');
     document.getElementById('headerDot').className = 'status-dot active';
     document.getElementById('headerStatus').textContent = 'Scanning...';
     document.getElementById('logDot').className = 'status-dot active';
 
-    sLog(`Target: <span class="text-white font-semibold">${inp}</span>`);
-    sLog(getWorkerUrl() ? 'Proxy: CF Worker (7/7)' : 'Proxy: allorigins (6/7, no cookies)', 'dim');
+    // Fetch domain info in parallel (non-blocking)
+    fetchDomainInfo(inp);
 
-    const { score, total, error } = await scanDomain(inp, sLog, setCheckUI);
+    sLogHtml(`Target: <span class="text-white font-semibold">${escHtml(inp)}</span>`);
+    sLog(getWorkerUrl() ? 'Mode: CF Worker (7/7 checks)' : 'Mode: CORS proxies (6/7 checks)', 'dim');
+
+    const scanResult = await scanDomain(inp, sLog, setCheckUI);
+    const { score, total, confidence, error, mainChain } = scanResult;
 
     document.getElementById('headerDot').className = 'status-dot done';
     document.getElementById('logDot').className = 'status-dot done';
     document.getElementById('scanBarFill').style.width = '100%';
 
     if (error) {
-        sLog(`Error: ${error}`, 'fail');
+        sLogHtml(`<span class="text-red-400 font-semibold">${escHtml(error)}</span>`, 'fail');
         document.getElementById('logStatus').textContent = 'Failed';
         document.getElementById('headerStatus').textContent = 'Error';
+        const vEl = document.getElementById('verdict');
+        vEl.classList.remove('hidden');
+        vEl.className = 'rounded-2xl p-6 text-center mb-6 border-2 border-gray-700/50 bg-gray-800/20 anim-verdict';
+        document.getElementById('vScore').textContent = '—';
+        document.getElementById('vScore').className = 'text-4xl font-black mono text-gray-600';
+        document.getElementById('vLabel').textContent = error;
+        document.getElementById('vLabel').className = 'text-xs font-semibold text-gray-500 mt-1.5';
     } else {
-        setVerdictUI(score, total);
-        if (score >= 2) showAbusePanel(true);
-        let vt, vc;
-        if (score >= 2) { vt = `Keitaro CONFIRMED (passed ${score}/${total} evidences)`; vc = 'text-red-400'; }
-        else if (score === 1) { vt = `Keitaro NOT CONFIRMED (only 1 evidence, need \u22652)`; vc = 'text-yellow-400'; }
-        else { vt = 'Keitaro NOT DETECTED (no documented evidences found)'; vc = 'text-green-400'; }
-        sLog(`<span class="font-bold ${vc}">${vt}</span>`, score >= 2 ? 'fail' : score === 1 ? 'warn' : 'ok');
-        document.getElementById('logStatus').textContent = `${score}/${total}`;
-        document.getElementById('headerStatus').textContent = score >= 2 ? 'CONFIRMED' : score === 1 ? 'Not confirmed' : 'Clean';
+        setVerdictUI(score, total, confidence);
+        if (confidence >= 30) showAbusePanel(true);
+        sLogHtml(`<span class="font-bold ${confidence >= 30 ? 'text-red-400' : 'text-green-400'}">${confidence >= 30 ? 'Keitaro' : 'Not Keitaro'} — ${confidence}%</span>`, confidence >= 30 ? 'fail' : 'ok');
+        document.getElementById('logStatus').textContent = `${confidence}%`;
+        document.getElementById('headerStatus').textContent = confidence >= 30 ? `Keitaro ${confidence}%` : 'Clean';
+
+        // Show redirect chain if present
+        if (mainChain?.redirects?.length > 0) showRedirectPanel(mainChain);
+
+        const workerUrl = getWorkerUrl();
+        if (workerUrl && mainChain) {
+            sLog('Cloaking analysis: testing 10 profiles...', 'dim');
+            checkCloaking(normalizeUrl(inp), mainChain, workerUrl).then(results => {
+                if (results?.length) {
+                    const baseline = { status: mainChain.status, len: mainChain.bodyLength || 0, redirectCount: (mainChain.redirects || []).length };
+                    showCloaking(baseline, results);
+                    const diffs = results.filter(r => !r.error && r.isDiff).length;
+                    sLog(diffs > 0 ? `Cloaking: ${diffs} profile(s) got different responses` : 'Cloaking: all profiles consistent', diffs > 0 ? 'warn' : 'dim');
+                }
+            }).catch(e => sLog(`Cloaking error: ${e.message}`, 'fail'));
+        }
     }
+
     btn.disabled = false;
     document.getElementById('scanTxt').textContent = 'Scan';
     document.getElementById('scanIco').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>';
 }
 
-// ===================== MASS SCAN =====================
+function showCloaking(baseline, profileResults) {
+    const panel = document.getElementById('cloakPanel');
+    const body = document.getElementById('cloakBody');
+    const verdictEl = document.getElementById('cloakVerdict');
+
+    const diffRows = [], sameRows = [], errorRows = [];
+    for (let i = 0; i < profileResults.length; i++) {
+        const r = profileResults[i];
+        if (r.error) errorRows.push({ r });
+        else if (r.isDiff) diffRows.push({ r });
+        else sameRows.push({ r });
+    }
+    const diffCount = diffRows.length;
+    const totalValid = diffRows.length + sameRows.length;
+    const hasDiffs = diffCount > 0;
+
+    function renderRow(r, bg) {
+        const badge = r.isDiff ? '<span class="px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-400 font-bold text-[9px]">DIFF</span>' : '<span class="px-1.5 py-0.5 rounded bg-green-500/10 text-green-400/60 text-[9px]">SAME</span>';
+        return `<div class="grid grid-cols-[1fr_50px_70px_60px_60px] gap-2 px-4 py-2 items-center text-[11px] ${bg||''}">
+            <div class="${r.isDiff?'text-amber-300':'text-gray-400'} font-medium">${escHtml(r.name)}</div>
+            <div class="text-center mono ${r.diff?.status?'text-amber-400':'text-gray-500'}">${r.status}</div>
+            <div class="text-center mono ${r.diff?.len?'text-amber-400':'text-gray-500'}">${fmtSize(r.len)}</div>
+            <div class="text-center mono ${r.diff?.redirects?'text-amber-400':'text-gray-500'}">${r.redirectCount}</div>
+            <div class="text-center">${badge}</div>
+        </div>`;
+    }
+
+    // Baseline row
+    let html = `<div class="grid grid-cols-[1fr_50px_70px_60px_60px] gap-2 px-4 py-2 items-center text-[11px] bg-cyan-500/[.03]">
+        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span><span class="text-cyan-400 font-semibold">Chrome (baseline)</span></div>
+        <div class="text-center mono text-gray-400">${baseline.status}</div>
+        <div class="text-center mono text-gray-400">${fmtSize(baseline.len)}</div>
+        <div class="text-center mono text-gray-400">${baseline.redirectCount}</div>
+        <div class="text-center text-gray-600">--</div>
+    </div>`;
+
+    // DIFF profiles — always expanded
+    if (diffRows.length) {
+        html += `<div class="px-4 py-1.5 text-[9px] font-bold text-amber-400/80 uppercase tracking-widest bg-amber-500/[.03]">Different responses (${diffRows.length})</div>`;
+        for (const { r } of diffRows) html += renderRow(r, 'bg-amber-500/[.04]');
+    }
+
+    // SAME profiles — collapsed toggle
+    if (sameRows.length) {
+        const collapsedDefault = hasDiffs || sameRows.length > 3;
+        const sameId = 'cloakSameGroup';
+        html += `<div class="px-4 py-1.5 text-[9px] font-bold text-green-400/60 uppercase tracking-widest bg-white/[.01] flex items-center justify-between cursor-pointer select-none" onclick="const g=document.getElementById('${sameId}');g.classList.toggle('hidden');this.querySelector('.caret').classList.toggle('rotate-90')">
+            <span>Identical responses (${sameRows.length})</span>
+            <svg class="caret w-3 h-3 text-gray-600 transition-transform ${collapsedDefault?'':'rotate-90'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </div>`;
+        html += `<div id="${sameId}" class="${collapsedDefault ? 'hidden' : ''}">`;
+        for (const { r } of sameRows) html += renderRow(r, '');
+        html += '</div>';
+    }
+
+    // Error profiles — collapsed
+    if (errorRows.length) {
+        const errId = 'cloakErrGroup';
+        html += `<div class="px-4 py-1.5 text-[9px] font-bold text-gray-600 uppercase tracking-widest bg-white/[.01] flex items-center justify-between cursor-pointer select-none" onclick="const g=document.getElementById('${errId}');g.classList.toggle('hidden');this.querySelector('.caret').classList.toggle('rotate-90')">
+            <span>Errors (${errorRows.length})</span>
+            <svg class="caret w-3 h-3 text-gray-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </div>`;
+        html += `<div id="${errId}" class="hidden">`;
+        for (const { r } of errorRows) html += `<div class="grid grid-cols-[1fr_50px_70px_60px_60px] gap-2 px-4 py-2 items-center text-[11px]"><div class="text-gray-500">${escHtml(r.name)}</div><div class="text-center text-gray-700 col-span-3">error</div><div class="text-center text-gray-700">--</div></div>`;
+        html += '</div>';
+    }
+
+    body.innerHTML = html;
+
+    if (diffCount > 0) {
+        verdictEl.innerHTML = `<span class="text-amber-400 font-bold">${diffCount}/${totalValid}</span> <span class="text-gray-400">profiles received different responses — cloaking / conditional routing detected</span>`;
+        verdictEl.classList.remove('hidden');
+        document.getElementById('cloakStatus').textContent = `${diffCount} diff`;
+        document.getElementById('cloakStatus').className = 'text-[11px] mono text-amber-400 font-semibold';
+    } else if (totalValid > 0) {
+        verdictEl.innerHTML = '<span class="text-green-400/80">All profiles received identical responses — no cloaking detected</span>';
+        verdictEl.classList.remove('hidden');
+        document.getElementById('cloakStatus').textContent = 'consistent';
+        document.getElementById('cloakStatus').className = 'text-[11px] mono text-green-400/60';
+    }
+    panel.classList.remove('hidden');
+}
+
+function hideCloakPanel() {
+    document.getElementById('cloakPanel').classList.add('hidden');
+    document.getElementById('cloakBody').innerHTML = '';
+    document.getElementById('cloakVerdict').classList.add('hidden');
+    document.getElementById('cloakStatus').textContent = '';
+}
+
+function showRedirectPanel(mainChain) {
+    const panel = document.getElementById('redirectPanel');
+    const body = document.getElementById('redirectBody');
+    if (!mainChain?.redirects?.length) { panel.classList.add('hidden'); return; }
+    document.getElementById('redirectCount').textContent = `${mainChain.redirects.length} hop${mainChain.redirects.length>1?'s':''}`;
+    body.innerHTML = buildRedirectChainHtml(mainChain);
+    panel.classList.remove('hidden');
+}
+
+function buildRedirectChainHtml(mainChain) {
+    const steps = mainChain.redirects.map(r => ({ url: r.url || r.headers?.location || '', status: r.status, type: 'redirect' }));
+    if (mainChain.finalUrl) steps.push({ url: mainChain.finalUrl, status: mainChain.status || 200, type: 'final' });
+
+    // Detect first domain (entry point) and find external redirects
+    let entryDomain = '';
+    try { entryDomain = new URL(steps[0]?.url || '').hostname; } catch {}
+    const extRedirects = [];
+    let prevDomain = entryDomain;
+    for (const s of steps) {
+        let d = '';
+        try { d = new URL(s.url).hostname; } catch {}
+        if (prevDomain && d && isExternalDomain(entryDomain, d) && s.type !== 'final') {
+            extRedirects.push({ from: prevDomain, to: d });
+        }
+        prevDomain = d;
+    }
+    // Check if final destination is also external
+    let finalDomain = '';
+    try { finalDomain = new URL(steps[steps.length-1]?.url || '').hostname; } catch {}
+    const finalIsExternal = entryDomain && finalDomain && isExternalDomain(entryDomain, finalDomain);
+
+    let html = '';
+    // Warning banner if external redirect detected
+    if (extRedirects.length > 0 || finalIsExternal) {
+        const warnIcon = '<svg style="width:14px;height:14px;flex-shrink:0;margin-top:2px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>';
+        html += `<div class="rchain-summary-warn">${warnIcon}<div>External redirect detected — traffic routed from <span class="text-white">${escHtml(entryDomain)}</span> to <span class="text-white">${escHtml(finalDomain)}</span><br><span class="text-red-400/70 font-normal">Typical for TDS cloaking: filter bots → show clean page, redirect real users → scam/offer</span></div></div>`;
+    }
+
+    html += '<div class="rchain">';
+    prevDomain = '';
+    for (let si = 0; si < steps.length; si++) {
+        const s = steps[si];
+        let sDomain = '', sPath = '';
+        try { const u = new URL(s.url); sDomain = u.hostname; sPath = u.pathname + u.search; } catch { sDomain = s.url; sPath = ''; }
+        const isFinal = s.type === 'final';
+        const domainChanged = prevDomain && sDomain !== prevDomain;
+        const isExternal = prevDomain && isExternalDomain(prevDomain, sDomain);
+
+        let dotColor, badgeBg, badgeColor;
+        if (isFinal && isExternal) { dotColor = 'border-red-400'; badgeBg = 'bg-red-500/15'; badgeColor = 'text-red-400'; }
+        else if (isFinal) { dotColor = 'border-green-400'; badgeBg = 'bg-green-500/15'; badgeColor = 'text-green-400'; }
+        else if (isExternal) { dotColor = 'border-red-400'; badgeBg = 'bg-red-500/10'; badgeColor = 'text-red-400'; }
+        else if (s.status >= 300 && s.status < 400) { dotColor = 'border-yellow-400'; badgeBg = 'bg-yellow-500/10'; badgeColor = 'text-yellow-400'; }
+        else if (s.status >= 200 && s.status < 300) { dotColor = 'border-cyan-400'; badgeBg = 'bg-cyan-500/10'; badgeColor = 'text-cyan-400'; }
+        else { dotColor = 'border-gray-500'; badgeBg = 'bg-white/[.04]'; badgeColor = 'text-gray-500'; }
+
+        const domainColor = isExternal ? 'text-red-300' : isFinal ? 'text-green-300' : domainChanged ? 'text-amber-300' : 'text-gray-300';
+
+        html += `<div class="rchain-step"><span class="rchain-dot ${dotColor}"></span>`;
+        html += `<div class="flex items-center gap-2 flex-wrap">`;
+        html += `<span class="rchain-badge ${badgeBg} ${badgeColor}">${isFinal ? 'FINAL' : s.status}</span>`;
+        html += `<span class="rchain-domain ${domainColor}">${escHtml(sDomain)}</span>`;
+        if (isExternal) html += `<span class="text-[9px] font-bold text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded">EXTERNAL</span>`;
+        else if (domainChanged && !isFinal) html += `<span class="rchain-newdomain">&#8592; subdomain</span>`;
+        html += '</div>';
+        if (sPath && sPath !== '/') html += `<div class="rchain-path mono">${escHtml(sPath)}</div>`;
+        if (isExternal) html += `<div class="rchain-ext-warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01M5 19h14a2 2 0 001.73-3L13.73 4a2 2 0 00-3.46 0L3.27 16a2 2 0 001.73 3z"/></svg><span>Redirect to external domain — possible cloaking / TDS routing</span></div>`;
+        html += '</div>';
+        prevDomain = sDomain;
+    }
+    html += '</div>';
+    return html;
+}
+
+function hideRedirectPanel() {
+    document.getElementById('redirectPanel').classList.add('hidden');
+    document.getElementById('redirectBody').innerHTML = '';
+}
+
+function showAbusePanel(show) { document.getElementById('abusePanel').classList.toggle('hidden', !show); }
+
+function copyAbuse(el, text) {
+    navigator.clipboard.writeText(text).then(() => {
+        const orig = el.querySelector('.mono');
+        if (orig) { const t = orig.textContent; orig.textContent = 'Copied!'; setTimeout(() => orig.textContent = t, 1200); }
+    });
+}
+
+// ==================== DOMAIN INFO ====================
+function diRender(content, fields, files) {
+    let html = '';
+    // Main fields grid
+    const filled = fields.filter(f => f.val);
+    if (filled.length) {
+        html += '<div class="grid grid-cols-2 sm:grid-cols-3 gap-2">';
+        for (const f of filled) {
+            const icon = f.icon || '';
+            const valCls = f.mono ? 'mono text-[11px] text-gray-200 truncate' : 'text-[11px] text-gray-200 truncate';
+            html += `<div class="flex items-start gap-2 bg-white/[.02] rounded-lg px-3 py-2 border border-white/[.04]">
+                <span class="text-gray-600 mt-px shrink-0">${icon}</span>
+                <div class="min-w-0"><div class="text-[9px] text-gray-600 uppercase font-semibold tracking-wider">${escHtml(f.label)}</div><div class="${valCls}" title="${escHtml(f.val)}">${escHtml(f.val)}</div></div>
+            </div>`;
+        }
+        html += '</div>';
+    }
+    // Standard files row
+    const foundFiles = files.filter(f => f.found);
+    const missingFiles = files.filter(f => f.checked && !f.found);
+    if (foundFiles.length || missingFiles.length) {
+        html += '<div class="flex items-center gap-2 flex-wrap">';
+        html += '<span class="text-[9px] text-gray-600 uppercase font-semibold tracking-wider shrink-0">Files</span>';
+        for (const f of foundFiles) {
+            html += `<a href="${escHtml(f.url)}" target="_blank" class="inline-flex items-center gap-1 text-[10px] mono text-green-400/80 hover:text-green-300 bg-green-500/[.06] border border-green-500/15 px-2 py-0.5 rounded-md transition-colors"><svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>${escHtml(f.name)}</a>`;
+        }
+        for (const f of missingFiles) {
+            html += `<span class="inline-flex items-center gap-1 text-[10px] mono text-gray-600 bg-white/[.02] border border-white/[.03] px-2 py-0.5 rounded-md"><svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>${escHtml(f.name)}</span>`;
+        }
+        html += '</div>';
+    }
+    content.innerHTML = html || '<div class="text-[11px] text-gray-600 text-center py-1">No data available</div>';
+}
+
+const DI_ICONS = {
+    ip: '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>',
+    hosting: '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>',
+    asn: '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>',
+    country: '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>',
+    ns: '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>',
+    registrar: '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>',
+    created: '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
+};
+
+async function fetchDomainInfo(domain) {
+    const panel = document.getElementById('domainInfoPanel');
+    const status = document.getElementById('domainInfoStatus');
+    const content = document.getElementById('diContent');
+    panel.classList.remove('hidden');
+    status.textContent = 'resolving...';
+    content.innerHTML = '<div class="text-[11px] text-gray-600 text-center py-1 anim-pulse">Loading domain data...</div>';
+
+    const hostname = domain.replace(/^https?:\/\//, '').split('/')[0].split(':')[0];
+    const origin = `https://${hostname}`;
+    const fields = [
+        { key: 'ip', label: 'IP Address', val: '', mono: true, icon: DI_ICONS.ip },
+        { key: 'hosting', label: 'Hosting', val: '', icon: DI_ICONS.hosting },
+        { key: 'asn', label: 'ASN', val: '', mono: true, icon: DI_ICONS.asn },
+        { key: 'country', label: 'Country', val: '', icon: DI_ICONS.country },
+        { key: 'ns', label: 'Nameservers', val: '', mono: true, icon: DI_ICONS.ns },
+        { key: 'registrar', label: 'Registrar', val: '', icon: DI_ICONS.registrar },
+        { key: 'created', label: 'Created', val: '', mono: true, icon: DI_ICONS.created },
+    ];
+    const stdFiles = [
+        { name: 'robots.txt', path: '/robots.txt', url: '', found: false, checked: false },
+        { name: 'sitemap.xml', path: '/sitemap.xml', url: '', found: false, checked: false },
+        { name: 'security.txt', path: '/.well-known/security.txt', url: '', found: false, checked: false },
+    ];
+    const setField = (key, val) => { const f = fields.find(f => f.key === key); if (f && val) f.val = val; };
+
+    // Phase 1: DNS A + NS (most reliable, via dns.google)
+    status.textContent = 'DNS...';
+    const [aResult, nsResult] = await Promise.allSettled([
+        fetch(`https://dns.google/resolve?name=${hostname}&type=A`, { signal: AbortSignal.timeout(6000) }).then(r => r.json()),
+        fetch(`https://dns.google/resolve?name=${hostname}&type=NS`, { signal: AbortSignal.timeout(6000) }).then(r => r.json()),
+    ]);
+    let resolvedIP = '';
+    if (aResult.status === 'fulfilled' && aResult.value.Answer) {
+        const a = aResult.value.Answer.find(a => a.type === 1);
+        if (a) { resolvedIP = a.data; setField('ip', resolvedIP); }
+    }
+    if (nsResult.status === 'fulfilled' && nsResult.value.Answer) {
+        const ns = nsResult.value.Answer.filter(a => a.type === 2).map(a => a.data.replace(/\.$/, '')).slice(0, 3);
+        if (ns.length) setField('ns', ns.join(', '));
+    }
+    diRender(content, fields, stdFiles);
+
+    // Phase 2: Geo (by IP) + RDAP + Standard Files — all parallel
+    status.textContent = 'details...';
+    const geoTarget = resolvedIP || hostname;
+    const [geoResult, rdapResult, ...fileResults] = await Promise.allSettled([
+        fetch(`https://ipwho.is/${geoTarget}`, { signal: AbortSignal.timeout(8000) }).then(r => r.json()),
+        fetch(`https://rdap.org/domain/${hostname}`, { signal: AbortSignal.timeout(10000) }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+        ...stdFiles.map(f => fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(origin + f.path)}`, { signal: AbortSignal.timeout(8000) }).then(r => r.json())),
+    ]);
+
+    // Geo
+    if (geoResult.status === 'fulfilled' && geoResult.value.success !== false) {
+        const d = geoResult.value;
+        if (!resolvedIP && d.ip) setField('ip', d.ip);
+        const isp = d.connection?.isp || d.connection?.org || '';
+        if (isp) {
+            setField('hosting', isp);
+            const hint = document.getElementById('abuseHostingHint');
+            if (hint) hint.textContent = `(${isp})`;
+        }
+        if (d.connection?.asn) setField('asn', `AS${d.connection.asn}`);
+        if (d.country) {
+            const flag = d.flag?.emoji || '';
+            setField('country', flag ? `${flag} ${d.country}` : `${d.country} (${d.country_code})`);
+        }
+    }
+
+    // RDAP — registrar + creation date
+    if (rdapResult.status === 'fulfilled') {
+        const rdap = rdapResult.value;
+        // Registrar
+        const regEntity = rdap.entities?.find(e => e.roles?.includes('registrar'));
+        if (regEntity) {
+            const fn = regEntity.vcardArray?.[1]?.find(v => v[0] === 'fn');
+            if (fn?.[3]) setField('registrar', fn[3]);
+            else if (regEntity.handle) setField('registrar', regEntity.handle);
+        }
+        // Creation date
+        const regEvent = rdap.events?.find(e => e.eventAction === 'registration');
+        if (regEvent?.eventDate) {
+            const d = new Date(regEvent.eventDate);
+            if (!isNaN(d)) setField('created', d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }));
+        }
+    }
+
+    // Standard files
+    fileResults.forEach((res, i) => {
+        stdFiles[i].checked = true;
+        if (res.status === 'fulfilled') {
+            const j = res.value;
+            const code = j.status?.http_code;
+            if (code >= 200 && code < 300 && j.contents?.length > 10) {
+                stdFiles[i].found = true;
+                stdFiles[i].url = origin + stdFiles[i].path;
+            }
+        }
+    });
+
+    diRender(content, fields, stdFiles);
+    status.textContent = '';
+}
+
+function hideDomainInfoPanel() {
+    document.getElementById('domainInfoPanel').classList.add('hidden');
+    document.getElementById('diContent').innerHTML = '';
+}
+
+// ==================== UI - MASS SCAN ====================
+function getMassGridCols() {
+    return massScanCloakEnabled ? '30px 1fr repeat(7,60px) 60px 60px 100px' : '30px 1fr repeat(7,60px) 60px 100px';
+}
+
+function updateMassTableHeader() {
+    const hdr = document.getElementById('massTableHeader');
+    hdr.style.gridTemplateColumns = getMassGridCols();
+    const cloakCol = document.getElementById('massHdrCloak');
+    if (massScanCloakEnabled && !cloakCol) {
+        const el = document.createElement('div'); el.id = 'massHdrCloak'; el.className = 'text-center'; el.textContent = 'Cloak';
+        hdr.insertBefore(el, hdr.lastElementChild);
+    } else if (!massScanCloakEnabled && cloakCol) cloakCol.remove();
+}
+
 async function runMass() {
     const raw = document.getElementById('massInput').value.trim();
     if (!raw) return;
     const domains = [...new Set(raw.split('\n').map(d => d.trim()).filter(d => d && !d.startsWith('#')))];
     if (!domains.length) return;
-    massAbort = false; massResults = [];
+
+    massScanCloakEnabled = massCloakEnabled && getWorkerUrls().length > 0;
+    massAbort = false;
+    massResults = new Array(domains.length);
+    massCurrentFilter = 'all';
+
     const btn = document.getElementById('massBtn'); btn.disabled = true;
     document.getElementById('massStop').classList.remove('hidden');
     document.getElementById('massBar').classList.remove('hidden');
     document.getElementById('massResults').classList.remove('hidden');
-    document.getElementById('exportBtn').classList.add('hidden');
+    document.getElementById('massExportRow').classList.add('hidden');
     document.getElementById('massTable').innerHTML = '';
     document.getElementById('headerDot').className = 'status-dot active';
-    document.getElementById('headerStatus').textContent = 'Mass scan...';
-    for (let i = 0; i < domains.length; i++) {
-        if (massAbort) break;
-        document.getElementById('massProgress').textContent = `${i+1} / ${domains.length}`;
-        document.getElementById('massBarFill').style.width = `${((i+1)/domains.length*100).toFixed(1)}%`;
-        addMassRow(domains[i], i);
-        const { score, total, results, error } = await scanDomain(domains[i], ()=>{}, ()=>{});
-        const entry = { domain: domains[i], score, total, results, error };
-        massResults.push(entry);
-        updateMassRow(i, entry);
+    document.getElementById('massSummary').classList.remove('hidden');
+    document.getElementById('massFilters').classList.remove('hidden');
+    document.getElementById('mfCloakTab').style.display = massScanCloakEnabled ? '' : 'none';
+    document.getElementById('msCloakWrap').classList.toggle('hidden', !massScanCloakEnabled);
+    updateMassTableHeader();
+    resetMassFilterUI();
+    updateMassSummary();
+    updateMassFilterCounts();
+
+    const workers = getWorkerUrls();
+    const threads = Math.max(workers.length, 1);
+    document.getElementById('headerStatus').textContent = `Mass scan (${threads} threads)...`;
+
+    for (let i = 0; i < domains.length; i++) addMassRow(domains[i], i);
+
+    let nextIdx = 0, done = 0;
+    async function workerThread() {
+        while (!massAbort) {
+            const idx = nextIdx++;
+            if (idx >= domains.length) break;
+            const workerUrl = workers.length ? workers[idx % workers.length] : '';
+            const scanResult = await scanDomain(domains[idx], ()=>{}, ()=>{}, workerUrl);
+            const { confidence, results, details, error, mainChain } = scanResult;
+
+            let chainMeta = null;
+            if (mainChain) chainMeta = { status: mainChain.status, finalUrl: mainChain.finalUrl, bodyLength: mainChain.bodyLength, contentType: mainChain.contentType, redirects: (mainChain.redirects || []).map(r => ({ url: r.url, status: r.status, headers: r.headers })) };
+
+            let cloakResult = null;
+            if (massScanCloakEnabled && !error && mainChain && workerUrl) {
+                try { cloakResult = await checkCloakingLite(normalizeUrl(domains[idx]), mainChain, workerUrl); } catch {}
+            }
+
+            massResults[idx] = { domain: domains[idx], confidence, results, details, error, mainChain: chainMeta, cloaking: cloakResult };
+            done++;
+            updateMassRow(idx, massResults[idx]);
+            updateMassSummary();
+            updateMassFilterCounts();
+            document.getElementById('massProgress').textContent = `${done} / ${domains.length}`;
+            document.getElementById('massBarFill').style.width = `${(done/domains.length*100).toFixed(1)}%`;
+        }
     }
+
+    const threadPromises = [];
+    for (let t = 0; t < threads; t++) threadPromises.push(workerThread());
+    await Promise.all(threadPromises);
+
     document.getElementById('massProgress').textContent = massAbort ? 'Stopped' : `Done: ${domains.length}`;
     btn.disabled = false;
     document.getElementById('massStop').classList.add('hidden');
-    document.getElementById('exportBtn').classList.remove('hidden');
+    document.getElementById('massExportRow').classList.remove('hidden');
     document.getElementById('headerDot').className = 'status-dot done';
     document.getElementById('headerStatus').textContent = 'Done';
+    sortAndRenderMassTable();
 }
+
 function stopMass() { massAbort = true; }
 
 function addMassRow(domain, idx) {
-    const t = document.getElementById('massTable'), row = document.createElement('div');
-    row.id = `mr${idx}`;
-    row.className = 'mass-row grid grid-cols-[1fr_60px_100px] sm:grid-cols-[1fr_60px_60px_60px_60px_60px_60px_60px_100px] gap-0 px-4 py-2.5 items-center text-xs';
-    row.innerHTML = `<div class="mono text-gray-300 truncate">${domain}</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center hidden sm:block text-gray-700">-</div><div class="text-center mono text-gray-600">...</div><div class="text-center"><span class="anim-pulse text-cyan-400">scanning</span></div>`;
+    const t = document.getElementById('massTable');
+    const row = document.createElement('div');
+    row.id = `mr${idx}`; row.dataset.idx = idx;
+    row.className = `mass-row grid gap-0 px-4 py-2.5 items-center text-xs`;
+    row.style.gridTemplateColumns = getMassGridCols();
+    row.onclick = function(e) { if (!e.target.closest('a')) openMassDetail(idx); };
+    let html = `<div class="text-gray-600 text-[10px]">${idx+1}</div>`;
+    html += `<div class="mono text-gray-300 truncate"><a href="${escHtml(normalizeUrl(domain))}" target="_blank" class="hover:text-cyan-400" onclick="event.stopPropagation()">${escHtml(domain)}</a></div>`;
+    html += '<div class="text-center hidden sm:block text-gray-700">-</div>'.repeat(7);
+    html += '<div class="text-center mono text-gray-600">...</div>';
+    if (massScanCloakEnabled) html += '<div class="text-center text-gray-700">-</div>';
+    html += '<div class="text-center"><span class="anim-pulse text-cyan-400">scanning</span></div>';
+    row.innerHTML = html;
     t.appendChild(row);
 }
 
 function updateMassRow(idx, entry) {
     const row = document.getElementById(`mr${idx}`);
     if (!row) return;
-    const { domain, score, total, results, error } = entry;
+    const { domain, confidence, results, error, cloaking } = entry;
+    const conf = confidence || 0;
     const cells = results.map(r => `<div class="text-center hidden sm:block">${r===true?'<span class="text-green-400">&#10003;</span>':'<span class="text-gray-600">&#10007;</span>'}</div>`).join('');
     let vc, vt;
-    if (error) { vc='text-gray-500'; vt='error'; }
-    else if (score>=2) { vc='text-red-400 font-bold'; vt='KEITARO'; }
-    else if (score===1) { vc='text-yellow-400'; vt='1 evid.'; }
-    else { vc='text-green-400'; vt='clean'; }
-    const sc = score>=2?'text-red-400':score===1?'text-yellow-400':'text-green-400';
-    row.innerHTML = `<div class="mono text-gray-300 truncate">${domain}</div>${cells}<div class="text-center mono ${sc} font-semibold">${error?'-':score+'/'+total}</div><div class="text-center"><span class="${vc}">${vt}</span></div>`;
-    row.className = `mass-row grid grid-cols-[1fr_60px_100px] sm:grid-cols-[1fr_60px_60px_60px_60px_60px_60px_60px_100px] gap-0 px-4 py-2.5 items-center text-xs anim-in ${score>=2?'bg-red-500/[.03]':''}`;
+    if (error) { vc='text-gray-500'; vt='Error'; }
+    else if (conf>=30) { vc='text-red-400 font-bold'; vt='Keitaro'; }
+    else { vc='text-green-400'; vt='Clean'; }
+    const sc = conf>=30?'text-red-400':'text-green-400';
+    let cloakCell = '';
+    if (massScanCloakEnabled) {
+        if (cloaking?.length) {
+            const hasDiff = cloaking.some(r => !r.error && r.isDiff);
+            const allErr = cloaking.every(r => r.error);
+            cloakCell = allErr ? '<div class="text-center text-gray-600 text-[10px]">err</div>' : hasDiff ? '<div class="text-center"><span class="px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-400 font-bold text-[9px]">DIFF</span></div>' : '<div class="text-center"><span class="px-1.5 py-0.5 rounded bg-green-500/10 text-green-400/60 text-[9px]">OK</span></div>';
+        } else cloakCell = '<div class="text-center text-gray-700">-</div>';
+    }
+    let bg = error ? 'bg-white/[.01]' : (conf >= 30 ? 'bg-red-500/[.04]' : '');
+    row.innerHTML = `<div class="text-gray-600 text-[10px]">${idx+1}</div><div class="mono text-gray-300 truncate"><a href="${escHtml(normalizeUrl(domain))}" target="_blank" class="hover:text-cyan-400" onclick="event.stopPropagation()">${escHtml(domain)}</a></div>${cells}<div class="text-center mono ${sc} font-semibold">${error?'-':conf+'%'}</div>${cloakCell}<div class="text-center"><span class="${vc}">${vt}</span></div>`;
+    row.className = `mass-row grid gap-0 px-4 py-2.5 items-center text-xs anim-in ${bg}`;
+    row.style.gridTemplateColumns = getMassGridCols();
+    row.dataset.category = error ? 'errors' : (conf >= 30 ? 'keitaro' : 'clean');
+    if (cloaking?.some(r => !r.error && r.isDiff)) row.dataset.cloaking = 'diff';
+    applyFilterToRow(row);
+}
+
+function sortAndRenderMassTable() {
+    const table = document.getElementById('massTable');
+    const rows = Array.from(table.children);
+    rows.sort((a, b) => {
+        const ea = massResults[a.dataset.idx], eb = massResults[b.dataset.idx];
+        if (!ea && !eb) return 0; if (!ea) return 1; if (!eb) return -1;
+        const catOrder = r => r.error ? 2 : ((r.confidence||0) >= 30 ? 0 : 1);
+        const ca = catOrder(ea), cb = catOrder(eb);
+        if (ca !== cb) return ca - cb;
+        return (eb.confidence||0) - (ea.confidence||0);
+    });
+    rows.forEach(r => table.appendChild(r));
+}
+
+function getCategory(entry) { return !entry ? null : entry.error ? 'errors' : (entry.confidence || 0) >= 30 ? 'keitaro' : 'clean'; }
+
+function setMassFilter(filter) {
+    massCurrentFilter = filter;
+    document.querySelectorAll('.mass-filter').forEach(el => { const f = el.getAttribute('onclick')?.match(/'(\w+)'/); if (f) el.classList.toggle('active', f[1] === filter); });
+    document.querySelectorAll('#massTable .mass-row').forEach(applyFilterToRow);
+}
+
+function applyFilterToRow(row) {
+    if (massCurrentFilter === 'all') { row.style.display = ''; return; }
+    if (massCurrentFilter === 'cloaking') { row.style.display = row.dataset.cloaking === 'diff' ? '' : 'none'; return; }
+    row.style.display = row.dataset.category === massCurrentFilter ? '' : 'none';
+}
+
+function resetMassFilterUI() { massCurrentFilter = 'all'; document.querySelectorAll('.mass-filter').forEach((el, i) => el.classList.toggle('active', i === 0)); }
+
+function getMassCounts() {
+    let total = 0, keitaro = 0, clean = 0, errors = 0, cloak = 0;
+    for (const r of massResults) {
+        if (!r) continue; total++;
+        const cat = getCategory(r);
+        if (cat === 'keitaro') keitaro++; else if (cat === 'clean') clean++; else if (cat === 'errors') errors++;
+        if (r.cloaking?.some(c => !c.error && c.isDiff)) cloak++;
+    }
+    return { total, keitaro, clean, errors, cloak };
+}
+
+function updateMassFilterCounts() {
+    const c = getMassCounts();
+    document.getElementById('mfAll').textContent = c.total;
+    document.getElementById('mfKeitaro').textContent = c.keitaro;
+    document.getElementById('mfClean').textContent = c.clean;
+    document.getElementById('mfCloak').textContent = c.cloak;
+    document.getElementById('mfErrors').textContent = c.errors;
+}
+
+function updateMassSummary() {
+    const c = getMassCounts();
+    document.getElementById('msTotal').textContent = c.total;
+    document.getElementById('msKeitaro').textContent = c.keitaro;
+    document.getElementById('msClean').textContent = c.clean;
+    document.getElementById('msCloak').textContent = c.cloak;
+    document.getElementById('msErrors').textContent = c.errors;
+}
+
+function openMassDetail(idx) {
+    const entry = massResults[idx];
+    if (!entry) return;
+    const modal = document.getElementById('massDetailModal');
+    const content = document.getElementById('massDetailContent');
+    const { domain, confidence, results, details, error, mainChain, cloaking } = entry;
+    const conf = confidence || 0;
+    let vc, vcClass;
+    if (error) { vc = 'Error'; vcClass = 'text-gray-400'; }
+    else if (conf >= 30) { vc = 'Keitaro'; vcClass = 'text-red-400'; }
+    else { vc = 'Clean'; vcClass = 'text-green-400'; }
+
+    let html = `<div class="flex items-center justify-between mb-5"><div><div class="text-sm font-bold text-white">${escHtml(domain)}</div><div class="flex items-center gap-3 mt-1"><span class="text-2xl font-black mono ${vcClass}">${error ? '—' : conf + '%'}</span><span class="text-xs font-bold ${vcClass} uppercase">${vc}</span></div></div><button onclick="closeMassDetail()" class="text-gray-500 hover:text-white text-xl p-1">&times;</button></div>`;
+    if (error) html += `<div class="bg-red-500/[.06] border border-red-500/15 rounded-xl p-3 mb-4 text-xs text-red-400">${escHtml(error)}</div>`;
+
+    html += `<div class="mb-5"><div class="text-[11px] font-semibold text-gray-500 uppercase tracking-wider mb-2">Evidence (7 checks)</div><div class="space-y-1.5">`;
+    for (let i = 0; i < EVIDENCES.length; i++) {
+        const e = EVIDENCES[i], passed = results[i] === true, detail = details?.[i] || '';
+        const icon = passed ? '<span class="text-green-400">&#10003;</span>' : '<span class="text-gray-600">&#10007;</span>';
+        const bgClass = passed ? 'bg-green-500/[.04] border-green-500/10' : 'bg-white/[.01] border-white/[.04]';
+        const nameColor = passed ? 'text-green-300' : 'text-gray-500';
+        html += `<div class="flex items-start gap-2.5 rounded-lg border ${bgClass} px-3 py-2"><span class="text-xs mt-0.5 shrink-0">${icon}</span><div class="min-w-0 flex-1"><div class="flex items-center gap-2"><span class="text-[11px] font-bold ${nameColor}">E${e.id} — ${escHtml(e.name)}</span><span class="text-[9px] text-gray-600 mono">${e.weight}%</span></div>${detail ? `<div class="text-[10px] text-gray-600 mono mt-0.5 break-all">${escHtml(detail)}</div>` : ''}</div></div>`;
+    }
+    html += '</div></div>';
+
+    if (cloaking?.length) {
+        const hasDiff = cloaking.some(r => !r.error && r.isDiff);
+        html += `<div class="mb-5"><div class="flex items-center gap-2 mb-2"><span class="text-[11px] font-semibold text-gray-500 uppercase tracking-wider">Cloaking</span><span class="text-[10px]">${hasDiff ? '<span class="text-amber-400 font-bold">DIFF detected</span>' : '<span class="text-green-400/70">Consistent</span>'}</span></div><div class="space-y-1">`;
+        for (const r of cloaking) {
+            if (r.error) html += `<div class="text-[11px] text-gray-600 px-3 py-1.5 bg-white/[.01] rounded-lg border border-white/[.04]">${escHtml(r.name)}: error</div>`;
+            else {
+                const bg = r.isDiff ? 'bg-amber-500/[.04] border-amber-500/10' : 'bg-white/[.01] border-white/[.04]';
+                const badge = r.isDiff ? '<span class="px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-400 font-bold text-[9px]">DIFF</span>' : '<span class="px-1.5 py-0.5 rounded bg-green-500/10 text-green-400/60 text-[9px]">SAME</span>';
+                html += `<div class="flex items-center gap-3 text-[11px] px-3 py-1.5 rounded-lg border ${bg}"><span class="${r.isDiff?'text-amber-300':'text-gray-400'} font-medium w-28">${escHtml(r.name)}</span><span class="mono text-gray-500">${r.status}</span><span class="mono text-gray-500">${fmtSize(r.len)}</span><span class="ml-auto">${badge}</span></div>`;
+            }
+        }
+        html += '</div></div>';
+    }
+
+    if (mainChain?.redirects?.length > 0) {
+        html += `<div><div class="flex items-center gap-2 mb-3"><span class="text-[11px] font-semibold text-gray-500 uppercase tracking-wider">Redirect Chain</span><span class="text-[10px] text-gray-600">${mainChain.redirects.length} hop${mainChain.redirects.length>1?'s':''}</span></div>`;
+        html += buildRedirectChainHtml(mainChain);
+        html += '</div>';
+    }
+
+    content.innerHTML = html;
+    modal.classList.add('open');
+}
+
+function closeMassDetail() { document.getElementById('massDetailModal').classList.remove('open'); }
+
+// ==================== EXPORT / IMPORT ====================
+function copyKeitaroDomains() {
+    const kDomains = massResults.filter(r => r && !r.error && (r.confidence || 0) >= 30).map(r => r.domain);
+    if (!kDomains.length) return;
+    navigator.clipboard.writeText(kDomains.join('\n')).then(() => {
+        const btn = document.getElementById('copyKeitaroBtn');
+        const orig = btn.textContent; btn.textContent = `Copied ${kDomains.length}!`; setTimeout(() => btn.textContent = orig, 1500);
+    });
+}
+
+function copyCleanDomains() {
+    const domains = massResults.filter(r => r && !r.error && (r.confidence || 0) < 30).map(r => r.domain);
+    if (!domains.length) return;
+    navigator.clipboard.writeText(domains.join('\n')).then(() => alert(`Copied ${domains.length} clean domains`));
+}
+
+function copyAllDomains() {
+    const domains = massResults.filter(r => r).map(r => `${r.domain}\t${r.error ? 'error' : r.confidence + '%'}\t${r.error ? r.error : (r.confidence >= 30 ? 'Keitaro' : 'Clean')}`);
+    if (!domains.length) return;
+    navigator.clipboard.writeText(domains.join('\n')).then(() => alert(`Copied ${domains.length} results`));
+}
+
+function exportJSON() {
+    const data = { version: VERSION, timestamp: new Date().toISOString(), results: massResults.filter(r => r).map(r => ({ domain: r.domain, confidence: r.confidence, verdict: r.error ? 'error' : (r.confidence >= 30 ? 'keitaro' : 'clean'), error: r.error || null, evidence: EVIDENCES.map((e, i) => ({ id: e.id, name: e.name, passed: r.results[i] === true, detail: r.details?.[i] || '' })), cloaking: r.cloaking ? { hasDiff: r.cloaking.some(c => !c.error && c.isDiff), profiles: r.cloaking } : null })) };
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = `keitaro-scan-${Date.now()}.json`; a.click();
+    URL.revokeObjectURL(url);
 }
 
 function exportCSV() {
-    const header = 'domain,score,total,E1,E2,E3,E4,E5,E6,E7,verdict\n';
-    const rows = massResults.map(r => {
-        const v = r.error?'error':r.score>=2?'keitaro':r.score===1?'not_confirmed':'clean';
-        return `${r.domain},${r.score},${r.total},${r.results.map(c=>c?'1':'0').join(',')},${v}`;
-    }).join('\n');
-    const blob = new Blob([header+rows], { type: 'text/csv' });
-    const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
-    a.download = `keitaro_scan_${new Date().toISOString().slice(0,10)}.csv`; a.click();
+    const headers = ['domain', 'confidence', 'verdict', 'E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'cloaking', 'error'];
+    const rows = massResults.filter(r => r).map(r => [
+        r.domain, r.confidence || 0, r.error ? 'error' : (r.confidence >= 30 ? 'keitaro' : 'clean'),
+        ...r.results.map(v => v === true ? 1 : 0),
+        r.cloaking?.some(c => !c.error && c.isDiff) ? 'diff' : 'ok',
+        r.error || ''
+    ]);
+    const csv = [headers.join(','), ...rows.map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(','))].join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = `keitaro-scan-${Date.now()}.csv`; a.click();
+    URL.revokeObjectURL(url);
 }
 
-// ===================== TABS =====================
-function switchTab(tab) {
-    ['single','mass','method'].forEach(t => {
-        const pane = document.getElementById(t+'Pane');
-        const tabEl = document.getElementById('tab'+t[0].toUpperCase()+t.slice(1));
-        pane.classList.toggle('hidden', tab!==t);
-        tabEl.classList.toggle('active', tab===t);
+function loadDomainsFile(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => { document.getElementById('massInput').value = e.target.result; };
+    reader.readAsText(file);
+    event.target.value = '';
+}
+
+function clearMassInput() { document.getElementById('massInput').value = ''; }
+
+// Drag & drop
+function setupDragDrop() {
+    const zone = document.getElementById('dropZone');
+    const overlay = document.getElementById('dropOverlay');
+    ['dragenter', 'dragover'].forEach(e => zone.addEventListener(e, ev => { ev.preventDefault(); zone.classList.add('dragover'); overlay.style.opacity = '1'; }));
+    ['dragleave', 'drop'].forEach(e => zone.addEventListener(e, ev => { ev.preventDefault(); zone.classList.remove('dragover'); overlay.style.opacity = '0'; }));
+    zone.addEventListener('drop', ev => {
+        const file = ev.dataTransfer.files[0];
+        if (file && (file.name.endsWith('.txt') || file.name.endsWith('.csv'))) {
+            const reader = new FileReader();
+            reader.onload = e => { document.getElementById('massInput').value = e.target.result; };
+            reader.readAsText(file);
+        }
     });
 }
 
-// ===================== ABUSE PANEL =====================
-function showAbusePanel(show) {
-    const panel = document.getElementById('abusePanel');
-    if (show) panel.classList.remove('hidden');
-    else panel.classList.add('hidden');
+// ==================== DEPLOY MODAL ====================
+const WORKER_JS_URL = 'https://raw.githubusercontent.com/phishdestroy/ScamIntelLogs/main/keitaro/worker.js';
+const DEPLOY_WORKER_PRESETS = [
+    { name: 'gbot-verify', label: 'Google Bot Verify', checked: true },
+    { name: 'fb-crawl-check', label: 'Facebook Crawl', checked: true },
+    { name: 'bing-index-check', label: 'Bing Index Check', checked: true },
+    { name: 'oai-content-scan', label: 'OpenAI Content Scan', checked: false },
+    { name: 'vt-url-lookup', label: 'VirusTotal Lookup', checked: false },
+    { name: 'dns-resolve-api', label: 'DNS Resolve API', checked: false },
+];
+
+function openDeployModal() {
+    document.getElementById('deployModal').classList.add('open');
+    const savedAccId = localStorage.getItem('keitaro_cf_account_id');
+    if (savedAccId) document.getElementById('deployAccountId').value = savedAccId;
 }
 
-function copyAbuse(el, text) {
-    navigator.clipboard.writeText(text).then(() => {
-        el.classList.add('copied');
-        const orig = el.querySelector('.mono');
-        if (orig) { const t = orig.textContent; orig.textContent = 'Copied!'; setTimeout(() => { orig.textContent = t; el.classList.remove('copied'); }, 1200); }
-    });
-}
-
-// ===================== DEPLOY MODAL =====================
-function openDeployModal() { document.getElementById('deployModal').classList.add('open'); }
 function closeDeployModal() { document.getElementById('deployModal').classList.remove('open'); }
 
-function copyText(el, text) {
-    navigator.clipboard.writeText(text).then(() => {
-        const orig = el.textContent;
-        el.textContent = 'Copied!';
-        el.style.color = '#34d399';
-        setTimeout(() => { el.textContent = orig; el.style.color = ''; }, 1000);
+function buildWorkerList() {
+    const container = document.getElementById('deployWorkerList');
+    container.innerHTML = DEPLOY_WORKER_PRESETS.map((w, i) =>
+        `<label class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-black/20 border border-white/[.04] hover:border-white/10 cursor-pointer text-[11px]">
+            <input type="checkbox" class="deploy-worker-cb accent-cyan-500" data-idx="${i}" ${w.checked ? 'checked' : ''}>
+            <span class="text-gray-400">${escHtml(w.label)}</span>
+        </label>`
+    ).join('');
+}
+
+function deployToggleAll(state) { document.querySelectorAll('.deploy-worker-cb').forEach(cb => cb.checked = state); }
+
+function getSelectedWorkers() {
+    const selected = [];
+    document.querySelectorAll('.deploy-worker-cb:checked').forEach(cb => selected.push(DEPLOY_WORKER_PRESETS[parseInt(cb.dataset.idx)].name));
+    return selected;
+}
+
+function getDeployFields() {
+    const accountId = document.getElementById('deployAccountId').value.trim();
+    const apiToken = document.getElementById('deployApiToken').value.trim();
+    const workers = getSelectedWorkers();
+    if (!accountId || !apiToken) { showDeployStatus('Please fill in Account ID and API Token', 'error'); return null; }
+    if (workers.length === 0) { showDeployStatus('Select at least one worker', 'error'); return null; }
+    localStorage.setItem('keitaro_cf_account_id', accountId);
+    return { accountId, apiToken, workers };
+}
+
+function buildCurlCommand(accountId, apiToken, workers) {
+    const lines = [`#!/bin/bash`, `ACCOUNT="${accountId}"`, `TOKEN="${apiToken}"`, `curl -sL "${WORKER_JS_URL}" -o worker.js`, `echo '{"main_module":"worker.js","compatibility_date":"2024-01-01"}' > metadata.json`, ``];
+    for (const name of workers) {
+        lines.push(`echo "Deploying ${name}..."`);
+        lines.push(`curl -s -X PUT "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT/workers/scripts/${name}" -H "Authorization: Bearer $TOKEN" -F "metadata=@metadata.json;type=application/json" -F "worker.js=@worker.js;type=application/javascript+module"`);
+        lines.push(`curl -s -X POST "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT/workers/scripts/${name}/subdomain" -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" -d '{"enabled":true}'`);
+    }
+    lines.push(``, `SUBDOMAIN=$(curl -s "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT/workers/subdomain" -H "Authorization: Bearer $TOKEN" | grep -o '"subdomain":"[^"]*"' | cut -d'"' -f4)`);
+    lines.push(`echo "Worker URLs:"`);
+    for (const name of workers) lines.push(`echo "https://${name}.$SUBDOMAIN.workers.dev"`);
+    lines.push(`rm -f worker.js metadata.json`);
+    return lines.join('\n');
+}
+
+function deployCopyCurl() {
+    const f = getDeployFields(); if (!f) return;
+    const cmd = buildCurlCommand(f.accountId, f.apiToken, f.workers);
+    navigator.clipboard.writeText(cmd).then(() => {
+        document.getElementById('curlBtnTxt').textContent = 'Copied!';
+        setTimeout(() => document.getElementById('curlBtnTxt').textContent = 'Copy curl', 2000);
+        showDeployStatus(`Copied! Paste into terminal (Git Bash / WSL / macOS / Linux)`, 'success');
+    });
+    document.getElementById('deployCurlPreview').textContent = cmd;
+    document.getElementById('deployCurlPreview').classList.remove('hidden');
+}
+
+function deployDownloadBat() {
+    const f = getDeployFields(); if (!f) return;
+    const workersList = f.workers.map(n => `"${n}"`).join(', ');
+    const ps1 = `$AccountId = "${f.accountId}"\n$ApiToken = "${f.apiToken}"\n$Workers = @(${workersList})\nInvoke-WebRequest -Uri "${WORKER_JS_URL}" -OutFile "worker.js"\n[System.IO.File]::WriteAllText("$PWD\\metadata.json", '{"main_module":"worker.js","compatibility_date":"2024-01-01"}')\nforeach ($name in $Workers) {\n  Write-Host "Deploying $name..."\n  & curl.exe -s -X PUT "https://api.cloudflare.com/client/v4/accounts/$AccountId/workers/scripts/$name" -H "Authorization: Bearer $ApiToken" -F "metadata=@metadata.json;type=application/json" -F "worker.js=@worker.js;type=application/javascript+module"\n  & curl.exe -s -X POST "https://api.cloudflare.com/client/v4/accounts/$AccountId/workers/scripts/$name/subdomain" -H "Authorization: Bearer $ApiToken" -H "Content-Type: application/json" -d '{"enabled":true}'\n}\n$subResult = & curl.exe -s "https://api.cloudflare.com/client/v4/accounts/$AccountId/workers/subdomain" -H "Authorization: Bearer $ApiToken"\n$subJson = $subResult | ConvertFrom-Json\n$subdomain = $subJson.result.subdomain\nWrite-Host "Worker URLs:"\nforeach ($name in $Workers) { Write-Host "https://$name.$subdomain.workers.dev" }\nRemove-Item "metadata.json","worker.js" -ErrorAction SilentlyContinue\nRead-Host "Press Enter"`;
+    const blob = new Blob([ps1], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = 'deploy-workers.ps1'; a.click();
+    URL.revokeObjectURL(url);
+    showDeployStatus('Downloaded deploy-workers.ps1 — run with PowerShell', 'success');
+}
+
+function showDeployStatus(html, type) {
+    const el = document.getElementById('deployStatus');
+    el.classList.remove('hidden');
+    el.className = `mt-3 text-[11px] text-center ${type === 'error' ? 'text-red-400' : type === 'success' ? 'text-green-400' : 'text-gray-400'}`;
+    el.innerHTML = html;
+}
+
+// ==================== TABS & MODALS ====================
+function switchTab(tab) {
+    ['single', 'mass', 'method'].forEach(t => {
+        document.getElementById(t + 'Pane')?.classList.toggle('hidden', tab !== t);
+        document.getElementById('tab' + t[0].toUpperCase() + t.slice(1))?.classList.toggle('active', tab === t);
     });
 }
 
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDeployModal(); });
+function openInfoModal() { document.getElementById('infoModal').classList.add('open'); }
+function closeInfoModal() { document.getElementById('infoModal').classList.remove('open'); }
 
-// ===================== PROXY STATUS =====================
+// ==================== PROXY STATUS ====================
 function updateProxyStatus() {
-    const w = getWorkerUrl();
+    const urls = getWorkerUrls();
     const dot = document.getElementById('proxyStatus');
     const label = document.getElementById('proxyLabel');
-    if (w) {
+    if (urls.length > 1) {
         dot.className = 'inline-block w-1.5 h-1.5 rounded-full bg-green-400';
-        label.className = 'text-green-400/80';
-        label.textContent = 'CF Worker connected — 7/7 checks';
+        label.className = 'text-green-400/80'; label.textContent = `${urls.length} workers — 7/7 checks, ${urls.length} threads`;
+    } else if (urls.length === 1) {
+        dot.className = 'inline-block w-1.5 h-1.5 rounded-full bg-green-400';
+        label.className = 'text-green-400/80'; label.textContent = '1 worker — 7/7 checks';
     } else {
         dot.className = 'inline-block w-1.5 h-1.5 rounded-full bg-gray-600';
-        label.className = 'text-gray-600';
-        label.textContent = 'No worker — 6/7 checks via public CORS proxy';
+        label.className = 'text-gray-600'; label.textContent = 'No worker — 6/7 checks via public CORS proxies';
     }
 }
 
-// ===================== INIT =====================
+function updateMassCloakWarning() {
+    const cb = document.getElementById('massCloakCb');
+    const hasWorker = getWorkerUrls().length > 0;
+    cb.disabled = !hasWorker;
+    if (!hasWorker) { cb.checked = false; massCloakEnabled = false; }
+    document.getElementById('massCloakLabel').style.opacity = hasWorker ? '1' : '.4';
+}
+
+// ==================== BUILD INFO & METHODOLOGY ====================
+function buildInfoWeights() {
+    const sorted = [...EVIDENCES].sort((a, b) => b.weight - a.weight);
+    document.getElementById('infoWeights').innerHTML = sorted.map(e =>
+        `<div class="flex justify-between"><span>E${e.id} — ${escHtml(e.name)}</span><span class="text-cyan-400 font-bold">${e.weight}%</span></div>`
+    ).join('');
+}
+
+function buildMethodology() {
+    const container = document.getElementById('methodChecks');
+    container.innerHTML = EVIDENCES.map(e => `
+        <div class="px-5 py-4">
+            <div class="flex items-center gap-3 mb-2">
+                <span class="mono text-[11px] font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-md border border-cyan-500/20">E${e.id}</span>
+                <span class="text-[13px] font-semibold text-gray-200">${escHtml(e.name)}</span>
+                <span class="text-[10px] text-gray-600 mono">${e.weight}%</span>
+                ${e.needsWorker ? '<span class="text-[9px] text-amber-400/60 bg-amber-500/10 px-1.5 py-0.5 rounded">Worker</span>' : ''}
+                <a href="${e.doc}" target="_blank" class="text-[11px] text-cyan-400/70 hover:text-cyan-300 ml-auto">docs &rarr;</a>
+            </div>
+            <p class="text-[12px] text-gray-500 leading-relaxed">${escHtml(e.desc)}</p>
+        </div>
+    `).join('');
+}
+
+// ==================== INIT ====================
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { closeDeployModal(); closeInfoModal(); closeMassDetail(); }
+    if (e.key === 'Enter' && e.ctrlKey) {
+        if (!document.getElementById('singlePane').classList.contains('hidden')) runSingle();
+        else if (!document.getElementById('massPane').classList.contains('hidden')) runMass();
+    }
+});
+
+document.getElementById('domainInput').addEventListener('keydown', e => { if (e.key === 'Enter') runSingle(); });
+
+const savedWorker = localStorage.getItem('keitaro_worker');
+if (savedWorker) document.getElementById('cfWorker').value = savedWorker;
+document.getElementById('cfWorker').addEventListener('input', function() {
+    localStorage.setItem('keitaro_worker', this.value);
+    updateProxyStatus();
+    updateMassCloakWarning();
+});
+
 buildGrid();
-document.getElementById('domainInput').addEventListener('keydown', e => { if (e.key==='Enter') runSingle(); });
-const saved = localStorage.getItem('keitaro_worker');
-if (saved) document.getElementById('cfWorker').value = saved;
-document.getElementById('cfWorker').addEventListener('input', function(){ localStorage.setItem('keitaro_worker', this.value); updateProxyStatus(); });
+buildWorkerList();
+buildInfoWeights();
+buildMethodology();
+setupDragDrop();
 updateProxyStatus();
+updateMassCloakWarning();
 </script>
 </body>
 </html>
