@@ -1091,6 +1091,42 @@
                     { name: "panel_screenshots", link: "https://github.com/phishdestroy/ScamIntelLogs/tree/main/gambler/Gambler%20Panel_%20Organized%20Crime%20Network%20Analysis%20_%20PhishDestroy%20Abuse%20Report_files" },
                     { name: "video_evidence", link: "https://github.com/phishdestroy/ScamIntelLogs/tree/main/gambler/GAMBLER%20Scam%20Investigation%20-%20Verified%20Report_files" }
                 ]
+            },
+            {
+                name: "TrustWalletPanel",
+                path: "TrustWalletPanel",
+                image: "TrustWalletPanel/TrustWalletPanel.png",
+                description: `
+                    <p><strong>🔐 Trust Wallet Phishing Panel</strong> — Fake Trust Wallet support panel with integrated live chat, staking simulation, and multi-operator support. Russian-speaking team running for 14+ months. 1,900 victim sessions, $239K+ confirmed stolen in USDT/ETH/BTC.</p>
+                    <p class="font-semibold mt-4">📊 Key Findings:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>💬 1,900 victim chats dumped via IDOR (679 with responses, 175 deeply engaged)</li>
+                        <li>💰 $197K largest single victim loss (USDT), $100K+ total confirmed</li>
+                        <li>👤 6 named operators: Lyokha/Alexey, Dima, Maksim, Andrey, Aleksander, Sofia</li>
+                        <li>📱 Telegram actor identified: @Addmeks (Vasiliy Navrotsky)</li>
+                        <li>🏗️ Full admin panel source code (339 files) extracted via exposed source maps</li>
+                        <li>🌐 21 scammer wallets (8 ETH, 8 TRON, 5 BTC)</li>
+                    </ul>
+                    <p class="font-semibold mt-4">👤 Operators:</p>
+                    <p><strong>Primary:</strong> Lyokha/Alexey | <strong>Team:</strong> Dima, Maksim, Andrey | <strong>Recruiters:</strong> Aleksander, Sofia</p>
+                    <p class="font-semibold mt-4">🌐 Infrastructure:</p>
+                    <p><strong>Panel:</strong> tttadmin.com | <strong>Admin API:</strong> app.tttadmin.com | <strong>Victim API:</strong> appp.tttadmin.com</p>
+                    <p><strong>Tech:</strong> React + Spring Boot, JWT Bearer, PostgreSQL, nginx/1.18.0</p>
+                    <p><strong>IPs:</strong> 3x Moscow RU (UFO Hosting) + 4x Vilnius LT + 3x US + 1x Madrid ES</p>
+                    <p class="font-semibold mt-4">🔓 Vulnerabilities:</p>
+                    <p>IDOR on /chat/get, unauthenticated /session/get leaks latest session, source maps exposed, no rate limiting on admin login, 11 unauthenticated API endpoints</p>
+                    <p class="font-semibold mt-4">⚠️ Status: <span class="text-red-400">ACTIVE as of 2026-03-01</span> — support enabled, new sessions being created</p>
+                `,
+                folders: [
+                    { name: "investigation", link: "https://phishdestroy.github.io/ScamIntelLogs/TrustWalletPanel/index.html" },
+                    { name: "chats (679)", link: "https://phishdestroy.github.io/ScamIntelLogs/TrustWalletPanel/chats.html" },
+                    { name: "analytics", link: "https://phishdestroy.github.io/ScamIntelLogs/TrustWalletPanel/analytics.html" },
+                    { name: "wallets", link: "https://phishdestroy.github.io/ScamIntelLogs/TrustWalletPanel/wallets_full.html" },
+                    { name: "iocs", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TrustWalletPanel/iocs.json" },
+                    { name: "domains", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TrustWalletPanel/domains.txt" },
+                    { name: "wallets_txt", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TrustWalletPanel/wallets.txt" },
+                    { name: "ips", link: "https://github.com/phishdestroy/ScamIntelLogs/blob/main/TrustWalletPanel/ips.txt" }
+                ]
             }
         ];
 
