@@ -1,0 +1,26 @@
+# TrustWalletPanel — Associated Domains
+# Collected: 2026-03-01 by PhishDestroy
+
+# Core infrastructure
+tttadmin.com
+app.tttadmin.com          # NEW — Admin API backend (discovered from source maps)
+appp.tttadmin.com
+core.tttadmin.com
+static.tttadmin.com
+
+# Phishing domains (victim-facing, rotated)
+trust-multi-chain.com
+trust-multichain.com
+trust-multi.online
+trustarter.io
+premium-trust.com
+wallet-premium.com
+trust-wallet-premium
+coinbridge.online
+coinbridgee.online
+
+# Feeder domain (pig-butchering / task scam)
+rynova-qw.shop
+
+# Scammer email domain
+support@trust-multi.online
