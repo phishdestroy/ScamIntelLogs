@@ -1,0 +1,24 @@
+# TrustWalletPanel — Infrastructure IP Addresses
+# Collected: 2026-03-01 by PhishDestroy
+
+# Victim-facing phishing servers (given to victims as "access points")
+2.56.178.117        # Moscow, RU — UFO Hosting LLC (AS33993)
+185.170.198.121     # Vilnius, LT — Hostinger (AS47583)
+69.10.62.71         # New York, US — Interserver (AS19318)
+45.144.30.6         # Moscow, RU — UFO Hosting LLC (AS33993) — most heavily used
+185.230.64.133      # Vilnius, LT — Hostinger (AS47583)
+45.12.129.131       # Vilnius, LT — WorkTitans B.V. (AS209847)
+45.12.129.101       # Vilnius, LT — WorkTitans B.V. (AS209847)
+94.131.121.154      # Moscow, RU — UFO Hosting LLC (AS33993)
+
+# Current primary server (ALL subdomains consolidated here as of 2026-03-01)
+69.49.231.166       # Atlanta, GA, US — Network Solutions (AS19871) — *.tttadmin.com
+
+# Former admin panel IP
+142.4.0.246         # Provo, UT, US — Unified Layer (AS46606) — no longer used
+
+# Secondary infrastructure
+146.185.239.62      # Madrid, ES — GTHost (AS63023) — Goodinspin crypto casino + Next.js
+
+# Phishing domain IPs
+209.196.146.115     # Kansas City, MO — Epik LLC (AS394456) — trustarter.io (parked)
