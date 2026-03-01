@@ -1,0 +1,30 @@
+# TrustWalletPanel — Scammer Wallet Addresses
+# Extracted from admin messages in victim chats
+# Collected: 2026-02-28 by PhishDestroy
+
+# === Ethereum ===
+0xf1b0282fd71921cee6d912575d1f56e6b12f7673
+0x3ae4eC3166Ac6f3507E4B7BbC251A266e0f28DbA
+0xfdF5ce1865bf1C4862592aaE83DC38EcaB726308
+0xd46bbd5dfc14105d22b787b29017358ae4b244a5
+0xa53f8ddc3c3c53f83261def736bb538b18211cc5
+0xcd46f01553e75b6c800bf053fcd91055414f781d
+0x91c44cdad8da8c4f39e9ecb9ab197815439f8c92
+0xD9D0c2B5e8e66FBd3D7F0149A77AA97E9b1BF1f8
+
+# === TRON ===
+TRamkKfTq1qRLq6Niffq7vSh4aYj1jyiNn
+TPdJKRHDaJsH1KdJSYmDg8PVR2h2aoV61w
+TFVqTYtDPT6pRTc2b6YGsJD9vRBCKSYkTD
+TQ66T6YjQZmyzS6Lgki3bPYhXXZE5Fwhqt
+TUaS3mw9Bg1qDBkUdRU5waAgem4AQDB4gJ
+TPsAKyrCZVoFvehFCBPLqm4eanUibedKL7
+TS1ZS1FWzjJ9vTa6zhFSkgrbPpgRMRubmm
+TRF7tHkFodaoYARtaBAnhFaPwQtCXVeMT1
+
+# === Bitcoin ===
+bc1qqgn5u08qejjwyycsanac3gatgkkaf8hrc08dll
+bc1qwqtmur3dj824zvny2zj8yf8hjjkjhrp2nml9w3
+1Pf4G9Sb5sBps4u17qMtSxicKs4yxEqgMt
+1Hgk43SSpc8Z7L4sdtyQmzRW78LQVbbPxs
+bc1qv32gkda3930j7mad28grmz9uqeulrynmd64wy2
