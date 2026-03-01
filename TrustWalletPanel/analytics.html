@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrustWalletPanel — Analytics &amp; Scammer Psychotype | ScamIntelLogs</title>
+<meta name="description" content="Statistical analysis of TrustWalletPanel phishing operation: message patterns, response times, manipulation tactics, and psychological profile of the scam operator.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://phishdestroy.github.io/ScamIntelLogs/TrustWalletPanel/analytics.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TrustWalletPanel Analytics &amp; Scammer Psychotype">
+<meta property="og:description" content="Deep analysis: message patterns, manipulation tactics, psychological profile of phishing operator. 679 victim chats analyzed.">
+<meta property="og:image" content="https://destroyico.pages.dev/assets/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Phish_Destroy">
+<link rel="icon" type="image/x-icon" href="https://destroyico.pages.dev/assets/favicon.ico">
+<meta name="theme-color" content="#0a0a1a">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#0c0c1e 0%,#1a1a3e 50%,#0a0a1a 100%);background-attachment:fixed}
+.grad-text{background:linear-gradient(135deg,#ef4444,#f97316,#eab308);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mono{font-family:'JetBrains Mono',monospace}
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px}
+.card:hover{border-color:rgba(255,255,255,0.15)}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.3px}
+.chart-box{background:rgba(0,0,0,0.3);border-radius:12px;padding:16px}
+.inf-row{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.05);padding:6px 0;font-size:.75rem}
+.bar{height:18px;border-radius:4px;transition:width 1.2s cubic-bezier(.16,1,.3,1)}
+.quote{border-left:3px solid #ef4444;padding-left:12px;margin:8px 0;color:rgba(255,255,255,.5);font-style:italic;font-size:.7rem}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 20px rgba(239,68,68,.1)}50%{box-shadow:0 0 40px rgba(239,68,68,.25)}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.card{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.3)}
+</style>
+</head>
+<body class="text-gray-300 min-h-screen">
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+<div class="flex items-center gap-4 mb-6">
+    <a href="./index.html" class="text-blue-400 hover:text-blue-300 text-sm">&larr; Investigation</a>
+    <a href="./chats.html" class="text-blue-400 hover:text-blue-300 text-sm">Chat Transcripts</a>
+    <a href="./wallets_full.html" class="text-blue-400 hover:text-blue-300 text-sm">Wallets</a>
+</div>
+
+<div class="text-center mb-10">
+    <h1 class="text-4xl sm:text-5xl font-black tracking-tight grad-text mb-3">Analytics &amp; Scammer Profile</h1>
+    <p class="text-sm text-gray-400">Statistical analysis of 679 victim conversations &bull; Psychological profile of the operator</p>
+</div>
+
+<!-- Stats Row -->
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-10 reveal">
+    <div class="card p-4 text-center"><div class="text-2xl font-black text-blue-400">1,900</div><div class="text-xs text-gray-500">Total Chats</div></div>
+    <div class="card p-4 text-center"><div class="text-2xl font-black text-green-400">679</div><div class="text-xs text-gray-500">Active (w/ victim)</div></div>
+    <div class="card p-4 text-center"><div class="text-2xl font-black text-yellow-400">175</div><div class="text-xs text-gray-500">Engaged (10+ msg)</div></div>
+    <div class="card p-4 text-center"><div class="text-2xl font-black text-orange-400">156</div><div class="text-xs text-gray-500">With Demands</div></div>
+    <div class="card p-4 text-center"><div class="text-2xl font-black text-red-400">39</div><div class="text-xs text-gray-500">Victim Paid</div></div>
+</div>
+
+<!-- Engagement Funnel -->
+<div class="card p-6 mb-8 reveal">
+    <h2 class="text-lg font-bold text-white mb-4">Victim Engagement Funnel</h2>
+    <div class="space-y-3">
+        <div>
+            <div class="flex justify-between text-xs mb-1"><span class="text-gray-400">Total chat sessions</span><span class="text-white font-bold">1,900</span></div>
+            <div class="bg-white/5 rounded-full h-5 overflow-hidden"><div class="bar bg-blue-500/60 h-full" style="width:100.0%"></div></div>
+        </div>
+        <div>
+            <div class="flex justify-between text-xs mb-1"><span class="text-gray-400">Active (victim replied)</span><span class="text-white font-bold">679</span></div>
+            <div class="bg-white/5 rounded-full h-5 overflow-hidden"><div class="bar bg-green-500/60 h-full" style="width:35.7%"></div></div>
+        </div>
+        <div>
+            <div class="flex justify-between text-xs mb-1"><span class="text-gray-400">Engaged (10+ messages)</span><span class="text-white font-bold">175 (25.8% of active)</span></div>
+            <div class="bg-white/5 rounded-full h-5 overflow-hidden"><div class="bar bg-yellow-500/60 h-full" style="width:9.2%"></div></div>
+        </div>
+        <div>
+            <div class="flex justify-between text-xs mb-1"><span class="text-gray-400">Admin demanded payment</span><span class="text-white font-bold">156 (23.0% of active)</span></div>
+            <div class="bg-white/5 rounded-full h-5 overflow-hidden"><div class="bar bg-orange-500/60 h-full" style="width:8.2%"></div></div>
+        </div>
+        <div>
+            <div class="flex justify-between text-xs mb-1"><span class="text-gray-400">Victim claims they paid</span><span class="text-white font-bold">39 (5.7% of active)</span></div>
+            <div class="bg-white/5 rounded-full h-5 overflow-hidden"><div class="bar bg-red-500/60 h-full" style="width:2.1%"></div></div>
+        </div>
+    </div>
+</div>
+
+<!-- Charts Row 1: Monthly Activity + Hourly -->
+<div class="grid sm:grid-cols-2 gap-6 mb-8 reveal">
+    <div class="card p-6">
+        <h2 class="text-sm font-bold text-white mb-3">Monthly Message Volume</h2>
+        <div class="chart-box"><canvas id="monthlyChart" height="200"></canvas></div>
+    </div>
+    <div class="card p-6">
+        <h2 class="text-sm font-bold text-white mb-3">Hourly Activity (Admin Work Schedule)</h2>
+        <div class="chart-box"><canvas id="hourlyChart" height="200"></canvas></div>
+    </div>
+</div>
+
+<!-- Charts Row 2: Weekday + Message Distribution -->
+<div class="grid sm:grid-cols-2 gap-6 mb-8 reveal">
+    <div class="card p-6">
+        <h2 class="text-sm font-bold text-white mb-3">Activity by Day of Week</h2>
+        <div class="chart-box"><canvas id="weekdayChart" height="200"></canvas></div>
+    </div>
+    <div class="card p-6">
+        <h2 class="text-sm font-bold text-white mb-3">Chat Engagement Distribution</h2>
+        <div class="chart-box"><canvas id="distChart" height="200"></canvas></div>
+    </div>
+</div>
+
+<!-- Charts Row 3: Tactics + Victim Emotions -->
+<div class="grid sm:grid-cols-2 gap-6 mb-8 reveal">
+    <div class="card p-6">
+        <h2 class="text-sm font-bold text-white mb-3">Scam Tactics Used (Admin Messages)</h2>
+        <div class="chart-box"><canvas id="tacticsChart" height="250"></canvas></div>
+    </div>
+    <div class="card p-6">
+        <h2 class="text-sm font-bold text-white mb-3">Victim Emotional Responses</h2>
+        <div class="chart-box"><canvas id="emotionsChart" height="250"></canvas></div>
+    </div>
+</div>
+
+<!-- Language Pie -->
+<div class="grid sm:grid-cols-2 gap-6 mb-8 reveal">
+    <div class="card p-6">
+        <h2 class="text-sm font-bold text-white mb-3">Victim Language Distribution</h2>
+        <div class="chart-box"><canvas id="langChart" height="200"></canvas></div>
+    </div>
+    <div class="card p-6">
+        <h2 class="text-sm font-bold text-white mb-3">Response Time Analysis</h2>
+        <div class="space-y-3 mt-4">
+            <div class="inf-row"><span class="text-gray-500">Average response time</span><span class="text-white font-bold">94.3 min</span></div>
+            <div class="inf-row"><span class="text-gray-500">Median response time</span><span class="text-white font-bold">9.1 min</span></div>
+            <div class="inf-row"><span class="text-gray-500">Fast responses (&lt;5 min)</span><span class="text-green-400 font-bold">668 (37%)</span></div>
+            <div class="inf-row"><span class="text-gray-500">Slow responses (&gt;1 hour)</span><span class="text-red-400 font-bold">384 (21%)</span></div>
+            <div class="inf-row"><span class="text-gray-500">Total measured exchanges</span><span class="text-white">1812</span></div>
+            <div class="inf-row"><span class="text-gray-500">Avg admin message length</span><span class="text-white">132 chars</span></div>
+            <div class="inf-row"><span class="text-gray-500">Avg victim message length</span><span class="text-white">74 chars</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SCAMMER PSYCHOTYPE -->
+<!-- ============================================================ -->
+
+<div class="card p-6 mb-8 reveal" style="border-color:rgba(239,68,68,.3)">
+    <h2 class="text-2xl font-black text-red-400 mb-2">Scammer Psychotype &mdash; Operator Profile</h2>
+    <p class="text-xs text-gray-500 mb-6">Behavioral analysis based on 4367 admin messages across 679 conversations. This is NOT a clinical diagnosis &mdash; it is a behavioral profile based on observable patterns in the chat data.</p>
+
+    <div class="grid sm:grid-cols-2 gap-6">
+        <!-- Work Pattern -->
+        <div>
+            <h3 class="text-sm font-bold text-orange-400 mb-3">&#128337; Work Pattern</h3>
+            <div class="text-xs text-gray-400 space-y-2">
+                <p>The operator works as a <strong class="text-white">professional shift worker</strong>, not a casual scammer. Peak activity is <strong class="text-white">14:00&ndash;17:00 UTC</strong> (afternoon-evening Moscow time), consistent with a <strong class="text-white">full-time job schedule</strong>.</p>
+                <p>Activity is highest on <strong class="text-white">Tue</strong> and drops on weekends &mdash; treating scamming as a 5-day work week. Average response time of <strong class="text-white">94 minutes</strong> indicates the operator monitors multiple chats simultaneously (multi-tab support agent model).</p>
+                <p>The <strong class="text-white">14-month operation span</strong> (Jan 2025 &mdash; Feb 2026) shows long-term commitment and organizational structure, not an impulsive scheme.</p>
+            </div>
+        </div>
+
+        <!-- Communication Style -->
+        <div>
+            <h3 class="text-sm font-bold text-blue-400 mb-3">&#128172; Communication Style</h3>
+            <div class="text-xs text-gray-400 space-y-2">
+                <p><strong class="text-white">Template-heavy:</strong> The top 16 admin messages are repeated 5+ times each, indicating <strong class="text-white">pre-written scripts</strong> rather than spontaneous conversation. The operator copy-pastes from a playbook.</p>
+                <p><strong class="text-white">Bilingual switch:</strong> Seamlessly switches between Russian and English depending on the victim. Writes fluent Russian (native) but uses stilted, formal English with support-speak (&ldquo;Dear user&rdquo;, &ldquo;Our team&rdquo;).</p>
+                <p><strong class="text-white">Average message: 132 characters</strong> &mdash; significantly longer than victim messages (74 chars). The operator writes long, authoritative-sounding explanations to overwhelm with fake detail.</p>
+            </div>
+        </div>
+
+        <!-- Manipulation Tactics -->
+        <div>
+            <h3 class="text-sm font-bold text-red-400 mb-3">&#127917; Manipulation Playbook</h3>
+            <div class="text-xs text-gray-400 space-y-2">
+                <p>The operator follows a <strong class="text-white">consistent escalation pattern</strong> visible across hundreds of conversations:</p>
+                <div class="pl-3 border-l-2 border-red-500/30 space-y-1.5 mt-2">
+                    <p><strong class="text-yellow-400">Stage 1 &mdash; Authority:</strong> Impersonate Trust Wallet support (2153 messages). Establish trust through corporate language.</p>
+                    <p><strong class="text-orange-400">Stage 2 &mdash; Fear:</strong> Claim wallet frozen/blocked (306 messages). Invoke OFAC sanctions (214 messages). Create panic.</p>
+                    <p><strong class="text-red-400">Stage 3 &mdash; Solution:</strong> Offer &ldquo;asset replacement&rdquo; as the only way out (253 messages). Demand deposits (215 messages).</p>
+                    <p><strong class="text-red-500">Stage 4 &mdash; Escalation:</strong> Tight deadlines (82 messages). If victim pays once, demand more. If they resist &mdash; threaten jurisdiction transfer.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Psychological Traits -->
+        <div>
+            <h3 class="text-sm font-bold text-purple-400 mb-3">&#129504; Psychological Traits</h3>
+            <div class="text-xs text-gray-400 space-y-2">
+                <p><strong class="text-white">Low empathy, high patience:</strong> Maintains professional tone even when victims beg, cry, or threaten. Never breaks character. When a single mother (#1090) describes being unable to feed her children, the operator responds with another deposit demand.</p>
+                <p><strong class="text-white">Calculated, not impulsive:</strong> Uses 16 pre-written templates. Adjusts amounts based on perceived victim wealth. Demands more from victims who already paid (sunk cost exploitation).</p>
+                <p><strong class="text-white">Compartmentalized morality:</strong> Treats this as &ldquo;work&rdquo; &mdash; works shifts, follows scripts, has teammates (Dima, Andrey, Maksim). Likely rationalizes it as &ldquo;victims are greedy/stupid.&rdquo;</p>
+                <p><strong class="text-white">Risk-tolerant:</strong> Gives real Telegram handle (@Addmeks) to victims. Uses personal names in chats. Does not fear law enforcement &mdash; likely operates from a jurisdiction with low crypto fraud prosecution.</p>
+            </div>
+        </div>
+
+        <!-- Victim Selection -->
+        <div>
+            <h3 class="text-sm font-bold text-green-400 mb-3">&#127919; Victim Profiling</h3>
+            <div class="text-xs text-gray-400 space-y-2">
+                <p>The funnel shows <strong class="text-white">679 victims engaged, 156 received demands, 39 claim they paid</strong> &mdash; a conversion rate of <strong class="text-red-400">5.7%</strong> from active to payment.</p>
+                <p><strong class="text-white">Target profile:</strong> Russian-speaking (3041/6008 messages = 51%), crypto-naive (ask basic questions about wallets/staking), emotionally invested (savings, pensions, borrowed money).</p>
+                <p><strong class="text-white">Repeat extraction:</strong> Once a victim pays, the operator ALWAYS demands more. The pattern is visible in top chats (446: 201 msgs, 1471: 141 msgs) &mdash; extended conversations mean repeated demands.</p>
+            </div>
+        </div>
+
+        <!-- Emotional Manipulation -->
+        <div>
+            <h3 class="text-sm font-bold text-pink-400 mb-3">&#127917; Emotional Manipulation Map</h3>
+            <div class="text-xs text-gray-400 space-y-2">
+                <p>Admin messages use systematic emotional levers:</p>
+                <div class="space-y-1.5 mt-2">
+                    <div class="inf-row"><span class="text-gray-400">Pressure / obligation</span><span class="text-white font-bold">238 messages</span></div>
+                    <div class="inf-row"><span class="text-gray-400">False empathy</span><span class="text-white font-bold">39 messages</span></div>
+                    <div class="inf-row"><span class="text-gray-400">Authority / titles</span><span class="text-white font-bold">45 messages</span></div>
+                    <div class="inf-row"><span class="text-gray-400">Scarcity / last chance</span><span class="text-white font-bold">8 messages</span></div>
+                    <div class="inf-row"><span class="text-gray-400">Social proof / standard procedure</span><span class="text-white font-bold">8 messages</span></div>
+                </div>
+                <p class="mt-2">Victim responses reveal the manipulation is working:</p>
+                <div class="space-y-1.5 mt-2">
+                    <div class="inf-row"><span class="text-gray-400">Confusion (&ldquo;I don&rsquo;t understand&rdquo;)</span><span class="text-white font-bold">554 messages</span></div>
+                    <div class="inf-row"><span class="text-gray-400">Trust (&ldquo;I believe you&rdquo;)</span><span class="text-green-400 font-bold">79 messages</span></div>
+                    <div class="inf-row"><span class="text-gray-400">Compliance (&ldquo;I&rsquo;ll send&rdquo;)</span><span class="text-yellow-400 font-bold">33 messages</span></div>
+                    <div class="inf-row"><span class="text-gray-400">Anger (&ldquo;scammer!&rdquo;)</span><span class="text-red-400 font-bold">131 messages</span></div>
+                    <div class="inf-row"><span class="text-gray-400">Threats (&ldquo;police&rdquo;)</span><span class="text-orange-400 font-bold">27 messages</span></div>
+                    <div class="inf-row"><span class="text-gray-400">Desperation (debt, children)</span><span class="text-pink-400 font-bold">30 messages</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Top Admin Templates -->
+<div class="card p-6 mb-8 reveal">
+    <h2 class="text-lg font-bold text-white mb-4">Top Admin Message Templates (copy-paste scripts)</h2>
+    <p class="text-xs text-gray-500 mb-3">Messages sent by the admin that appear 5+ times verbatim &mdash; evidence of a scripted playbook.</p>
+    <div class="space-y-2">
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-red-500/10 text-red-400 flex-shrink-0">1905x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Hi, I am Trust Wallet Support. How can I help you?&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-orange-500/10 text-orange-400 flex-shrink-0">16x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Hello&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-orange-500/10 text-orange-400 flex-shrink-0">15x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;To make the funds available you need to replace them in the common pool. To do this you need to make a re-deposit for the amount of frozen assets. This way we will be able to replace your assets and a&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-orange-500/10 text-orange-400 flex-shrink-0">14x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Dear user, we will try to cancel the transaction, but unfortunately we cannot guarantee the success of this procedure, as the funds are already in the blockchain. Please wait.&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-orange-500/10 text-orange-400 flex-shrink-0">14x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Dear user, I managed to cancel the transaction, you are very lucky. But your funds have been moved to the common pool and have been frozen, as it is only your mistake.&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">10x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Unfortunately all managers are busy, you&#x27;re on a waiting list :-0&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">9x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;***Employee connection***&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">9x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Dear user, please give us a little time to verify your wallet details.&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">7x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Hi there 👋&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">7x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Dear user, your ip address may be in a region with blocked access. Restrictions may affect users in certain countries, or restrict your ISP specifically. You can use the following IP address for unres&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">6x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Hello, dear user! The first available operator will answer your question! Now there is a workload!&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">6x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Генвркра&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">6x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Do you have any more questions?&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">6x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Dear user, it is only your mistake, we in turn only fulfill the requirements provided by OFAC. This is the only solution to the problem, as we are subject to the U.S. Digital Asset Protection Act as w&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">6x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Yes&rdquo;</span>
+        </div>
+        <div class="flex gap-3 items-start border-b border-white/5 pb-2">
+            <span class="tag bg-yellow-500/10 text-yellow-400 flex-shrink-0">5x</span>
+            <span class="text-xs text-gray-400 italic">&ldquo;Dear user, it is possible that your region is in the restricted area. Sanctions apply to some regions and can be increased by your Internet provider. You can use the following IP address for individua&rdquo;</span>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center text-xs text-gray-600 border-t border-gray-800/50 pt-6 mt-10 mb-8">
+    <p>Analysis generated from 1,900 chat sessions, 10,375 messages</p>
+    <p class="mt-1">Collected: 2026-02-28 &bull; <a href="https://github.com/phishdestroy" class="text-blue-500 hover:text-blue-400">PhishDestroy</a> Threat Intelligence</p>
+</footer>
+</main>
+
+<script>
+const chartDefaults = {
+    color: '#6b7280',
+    borderColor: 'rgba(255,255,255,0.05)',
+};
+Chart.defaults.color = '#6b7280';
+Chart.defaults.borderColor = 'rgba(255,255,255,0.05)';
+
+// Monthly Activity
+new Chart(document.getElementById('monthlyChart'), {
+    type: 'bar',
+    data: {
+        labels: ["2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03"],
+        datasets: [
+            {label:'Admin',data:[381, 334, 305, 330, 311, 236, 267, 281, 354, 308, 379, 375, 282, 204, 20],backgroundColor:'rgba(59,130,246,0.5)',borderColor:'rgba(59,130,246,0.8)',borderWidth:1},
+            {label:'Victim',data:[464, 363, 417, 439, 470, 293, 344, 406, 487, 414, 580, 537, 476, 315, 3],backgroundColor:'rgba(239,68,68,0.4)',borderColor:'rgba(239,68,68,0.7)',borderWidth:1}
+        ]
+    },
+    options:{responsive:true,plugins:{legend:{position:'top',labels:{font:{size:10}}}},scales:{y:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.03)'}},x:{grid:{display:false},ticks:{maxRotation:45,font:{size:8}}}}}
+});
+
+// Hourly Activity
+new Chart(document.getElementById('hourlyChart'), {
+    type: 'line',
+    data: {
+        labels: ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"],
+        datasets: [
+            {label:'Admin',data:[30, 2, 5, 4, 12, 34, 92, 168, 242, 264, 381, 403, 386, 367, 407, 318, 264, 243, 190, 181, 139, 111, 71, 53],borderColor:'rgba(59,130,246,0.8)',backgroundColor:'rgba(59,130,246,0.1)',fill:true,tension:0.3},
+            {label:'Victim',data:[74, 26, 50, 39, 72, 113, 163, 238, 326, 342, 366, 419, 558, 360, 447, 478, 417, 308, 263, 316, 244, 197, 118, 74],borderColor:'rgba(239,68,68,0.7)',backgroundColor:'rgba(239,68,68,0.05)',fill:true,tension:0.3}
+        ]
+    },
+    options:{responsive:true,plugins:{legend:{position:'top',labels:{font:{size:10}}}},scales:{y:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.03)'}},x:{grid:{display:false},ticks:{font:{size:8}}}}}
+});
+
+// Weekday Activity
+new Chart(document.getElementById('weekdayChart'), {
+    type: 'bar',
+    data: {
+        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        datasets: [
+            {label:'Admin',data:[741, 827, 696, 781, 717, 321, 284],backgroundColor:'rgba(59,130,246,0.5)',borderColor:'rgba(59,130,246,0.8)',borderWidth:1},
+            {label:'Victim',data:[964, 1106, 907, 984, 922, 647, 478],backgroundColor:'rgba(239,68,68,0.4)',borderColor:'rgba(239,68,68,0.7)',borderWidth:1}
+        ]
+    },
+    options:{responsive:true,plugins:{legend:{position:'top',labels:{font:{size:10}}}},scales:{y:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.03)'}},x:{grid:{display:false}}}}
+});
+
+// Message Distribution
+new Chart(document.getElementById('distChart'), {
+    type: 'doughnut',
+    data: {
+        labels: ["1-2", "3-5", "6-10", "11-20", "21-50", "51-100", "100+"],
+        datasets: [{
+            data: [130, 212, 106, 104, 94, 24, 9],
+            backgroundColor: ['rgba(59,130,246,0.6)','rgba(34,197,94,0.6)','rgba(234,179,8,0.6)','rgba(249,115,22,0.6)','rgba(239,68,68,0.6)','rgba(168,85,247,0.6)','rgba(236,72,153,0.6)'],
+            borderWidth: 0
+        }]
+    },
+    options:{responsive:true,plugins:{legend:{position:'bottom',labels:{font:{size:9}}}}}
+});
+
+// Tactics Chart
+new Chart(document.getElementById('tacticsChart'), {
+    type: 'bar',
+    data: {
+        labels: ["trust_wallet_impersonation", "wallet_freeze", "asset_replacement", "deposit_demand", "OFAC/sanctions", "staking_offer", "fake_reassurance", "AML/KYC", "urgency_deadline", "threat_legal"],
+        datasets: [{
+            label: 'Messages',
+            data: [2153, 306, 253, 215, 214, 149, 136, 93, 82, 41],
+            backgroundColor: ['rgba(239,68,68,0.6)','rgba(249,115,22,0.6)','rgba(234,179,8,0.6)','rgba(59,130,246,0.6)','rgba(168,85,247,0.6)','rgba(34,197,94,0.5)','rgba(236,72,153,0.5)','rgba(107,114,128,0.5)','rgba(239,68,68,0.4)','rgba(59,130,246,0.4)'],
+            borderWidth: 0
+        }]
+    },
+    options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.03)'}},y:{grid:{display:false},ticks:{font:{size:9}}}}}
+});
+
+// Victim Emotions Chart
+const emotionLabels = ["anger", "desperation", "trust", "threats", "confusion", "compliance"];
+const emotionData = [131, 30, 79, 27, 554, 33];
+new Chart(document.getElementById('emotionsChart'), {
+    type: 'bar',
+    data: {
+        labels: emotionLabels,
+        datasets: [{
+            label: 'Messages',
+            data: emotionData,
+            backgroundColor: ['rgba(239,68,68,0.6)','rgba(236,72,153,0.6)','rgba(34,197,94,0.6)','rgba(249,115,22,0.6)','rgba(59,130,246,0.6)','rgba(234,179,8,0.6)'],
+            borderWidth: 0
+        }]
+    },
+    options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.03)'}},y:{grid:{display:false},ticks:{font:{size:9}}}}}
+});
+
+// Language Pie
+new Chart(document.getElementById('langChart'), {
+    type: 'pie',
+    data: {
+        labels: ['Russian','English','Other'],
+        datasets: [{
+            data: [3041,2626,341],
+            backgroundColor: ['rgba(239,68,68,0.6)','rgba(59,130,246,0.6)','rgba(107,114,128,0.4)'],
+            borderWidth: 0
+        }]
+    },
+    options:{responsive:true,plugins:{legend:{position:'bottom',labels:{font:{size:10}}}}}
+});
+
+// Scroll-triggered reveal animations
+const obs=new IntersectionObserver(entries=>{
+    entries.forEach((entry,i)=>{
+        if(entry.isIntersecting){
+            setTimeout(()=>{
+                entry.target.classList.add('visible');
+                entry.target.querySelectorAll('.card').forEach((card,j)=>{
+                    card.style.opacity='0';card.style.transform='translateY(20px)';
+                    setTimeout(()=>{card.style.transition='opacity .5s ease, transform .5s ease';card.style.opacity='1';card.style.transform='translateY(0)';},j*80);
+                });
+            },i*50);
+            obs.unobserve(entry.target);
+        }
+    });
+},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Animate bars in funnel on scroll
+const barObs=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.querySelectorAll('.bar').forEach(bar=>{
+                const w=bar.style.width;bar.style.width='0';
+                setTimeout(()=>{bar.style.width=w;},200);
+            });
+            barObs.unobserve(entry.target);
+        }
+    });
+},{threshold:.3});
+document.querySelectorAll('.card').forEach(el=>{if(el.querySelector('.bar'))barObs.observe(el)});
+</script>
+</body>
+</html>
