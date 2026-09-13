@@ -108,7 +108,7 @@ This archive is part of the **PhishDestroy** threat intelligence ecosystem:
 
 | Project | Description |
 |---------|-------------|
-| [**destroylist**](https://github.com/phishdestroy/destroylist) | 70,000+ malicious domains blocklist |
+| [**destroylist**](https://github.com/phishdestroy/destroylist) | [![destroylist](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/destroylist/main/count.json)](https://github.com/phishdestroy/destroylist) |
 | [**PhishDestroy Bot**](https://t.me/PhishDestroy_bot) | Telegram bot for scam reporting |
 | [**phishdestroy.io**](https://www.phishdestroy.io/) | Main project website |
 
