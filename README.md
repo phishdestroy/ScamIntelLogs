@@ -7,7 +7,7 @@ ScamIntelLogs is an open-source intelligence archive from PhishDestroy. Explore 
 [**Browse the archive →**](https://phishdestroy.github.io/ScamIntelLogs/) · [Investigation wiki](https://phishdestroy.github.io/ScamIntelLogs/wiki.html) · [Submit evidence](https://t.me/PhishDestroy_bot)
 
 <p align="center">
-  <img src="baner.png" alt="ScamIntelLogs — the PhishDestroy scam intelligence archive" width="800">
+  <img src="baner.webp" alt="ScamIntelLogs — the PhishDestroy scam intelligence archive" width="800">
 </p>
 
 ## Start here
