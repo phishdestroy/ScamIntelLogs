@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="24" viewBox="0 0 960 24" role="img" aria-label="">
+<defs><linearGradient id="line" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="960" y2="0"><stop stop-color="#ae90e0" stop-opacity="0"/><stop offset=".4" stop-color="#ae90e0" stop-opacity=".55"/><stop offset=".6" stop-color="#ae90e0" stop-opacity=".55"/><stop offset="1" stop-color="#ae90e0" stop-opacity="0"/></linearGradient></defs>
+<style>.pulse{animation:pulse 4s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.pulse{animation:none;opacity:.75}}</style>
+<path d="M0 12H432M528 12H960" stroke="url(#line)"/>
+<g fill="#ae90e0"><circle cx="450" cy="12" r="1.5" opacity=".3"/><circle cx="460" cy="12" r="1.5" opacity=".5"/><circle cx="470" cy="12" r="1.5" opacity=".7"/><path class="pulse" d="M480 8l4 4-4 4-4-4z"/><circle cx="490" cy="12" r="1.5" opacity=".7"/><circle cx="500" cy="12" r="1.5" opacity=".5"/><circle cx="510" cy="12" r="1.5" opacity=".3"/></g></svg>

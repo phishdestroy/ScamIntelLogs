@@ -1,14 +1,26 @@
+<p align="center"><picture><source media="(max-width: 600px) and (prefers-reduced-motion: reduce)" srcset="assets/readme-polish/hero-mobile-poster.webp" /><source media="(prefers-reduced-motion: reduce)" srcset="assets/readme-polish/hero-poster.webp" /><source media="(max-width: 600px)" srcset="assets/readme-polish/hero-mobile.webp" /><img src="assets/readme-polish/hero.webp" width="100%" alt="ScamIntelLogs — animated evidence and infrastructure graph" /></picture></p>
+
 # ScamIntelLogs
 
 **Crypto scam evidence, preserved for investigation.**
 
 ScamIntelLogs is an open-source intelligence archive from PhishDestroy. Explore Telegram chat logs, phishing infrastructure, admin panel artifacts, transaction records and indicators of compromise from documented crypto scam operations.
 
-[**Browse the archive →**](https://phishdestroy.github.io/ScamIntelLogs/) · [Investigation wiki](https://phishdestroy.github.io/ScamIntelLogs/wiki.html) · [Submit evidence](https://t.me/PhishDestroy_bot)
+<p align="center">
+<a href="https://phishdestroy.github.io/ScamIntelLogs/"><img src="assets/readme-polish/archive.svg" width="248" height="56" alt="BROWSE ARCHIVE: Operations &amp; evidence" /></a>
+<a href="https://phishdestroy.github.io/ScamIntelLogs/wiki.html"><img src="assets/readme-polish/wiki.svg" width="248" height="56" alt="INVESTIGATION WIKI: Methods &amp; resources" /></a>
+<a href="https://t.me/PhishDestroy_bot"><img src="assets/readme-polish/submit.svg" width="248" height="56" alt="SUBMIT EVIDENCE: Contact PhishDestroy" /></a>
+</p>
 
 <p align="center">
-  <img src="baner.webp" alt="ScamIntelLogs — the PhishDestroy scam intelligence archive" width="800">
+<a href="https://github.com/phishdestroy/ScamIntelLogs/stargazers"><img src="https://img.shields.io/github/stars/phishdestroy/ScamIntelLogs?style=flat-square&amp;label=Stars&amp;color=525d73&amp;labelColor=202832" alt="GitHub stars" /></a>
+<a href="https://github.com/phishdestroy/ScamIntelLogs/network/members"><img src="https://img.shields.io/github/forks/phishdestroy/ScamIntelLogs?style=flat-square&amp;label=Forks&amp;color=525d73&amp;labelColor=202832" alt="GitHub forks" /></a>
+<a href="https://github.com/phishdestroy/ScamIntelLogs/commits/main"><img src="https://img.shields.io/github/last-commit/phishdestroy/ScamIntelLogs?style=flat-square&amp;label=Updated&amp;color=525d73&amp;labelColor=202832" alt="Last commit" /></a>
 </p>
+
+
+
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
 
 ## Start here
 
@@ -19,24 +31,30 @@ ScamIntelLogs is an open-source intelligence archive from PhishDestroy. Explore 
 | Research traffic cloaking infrastructure | [Keitaro TDS checker](https://phishdestroy.github.io/ScamIntelLogs/keitaro/checker.html). |
 | Find a domain blocklist | [destroylist](https://github.com/phishdestroy/destroylist) — the separate domain dataset. |
 
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
+
 ## Explore the collections
 
 Each collection keeps the context of an operation alongside its available artifacts. Contents vary: some include chats and payment records; others focus on panels, domains or machine-readable indicators.
 
-- [717Team](717Team/)
-- [BitXLucky](BitXLucky/)
-- [LuxardGambling](LuxardGambling/)
-- [MercuryTeam](MercuryTeam/)
-- [RublevkaTeam](RublevkaTeam/)
-- [TRXDrop](TRXDrop/)
-- [TheProject Casino](TheProject%20Casino/)
-- [TheProject](TheProject/)
-- [TrustWalletPanel](TrustWalletPanel/)
-- [WasabiSquad](WasabiSquad/)
-- [gambler](gambler/)
-- [keitaro](keitaro/)
-- [nicecrypto](nicecrypto/)
-- [olympus-panel](olympus-panel/)
+<p align="center">
+<a href="717Team/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-00-mobile.svg" /><img src="assets/readme-polish/collection-00-desktop.svg" alt="717Team" /></picture></a>
+<a href="BitXLucky/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-01-mobile.svg" /><img src="assets/readme-polish/collection-01-desktop.svg" alt="BitXLucky" /></picture></a>
+<a href="LuxardGambling/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-02-mobile.svg" /><img src="assets/readme-polish/collection-02-desktop.svg" alt="LuxardGambling" /></picture></a>
+<a href="MercuryTeam/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-03-mobile.svg" /><img src="assets/readme-polish/collection-03-desktop.svg" alt="MercuryTeam" /></picture></a>
+<a href="RublevkaTeam/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-04-mobile.svg" /><img src="assets/readme-polish/collection-04-desktop.svg" alt="RublevkaTeam" /></picture></a>
+<a href="TRXDrop/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-05-mobile.svg" /><img src="assets/readme-polish/collection-05-desktop.svg" alt="TRXDrop" /></picture></a>
+<a href="TheProject%20Casino/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-06-mobile.svg" /><img src="assets/readme-polish/collection-06-desktop.svg" alt="TheProject Casino" /></picture></a>
+<a href="TheProject/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-07-mobile.svg" /><img src="assets/readme-polish/collection-07-desktop.svg" alt="TheProject" /></picture></a>
+<a href="TrustWalletPanel/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-08-mobile.svg" /><img src="assets/readme-polish/collection-08-desktop.svg" alt="TrustWalletPanel" /></picture></a>
+<a href="WasabiSquad/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-09-mobile.svg" /><img src="assets/readme-polish/collection-09-desktop.svg" alt="WasabiSquad" /></picture></a>
+<a href="gambler/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-10-mobile.svg" /><img src="assets/readme-polish/collection-10-desktop.svg" alt="gambler" /></picture></a>
+<a href="keitaro/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-11-mobile.svg" /><img src="assets/readme-polish/collection-11-desktop.svg" alt="keitaro" /></picture></a>
+<a href="nicecrypto/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-12-mobile.svg" /><img src="assets/readme-polish/collection-12-desktop.svg" alt="nicecrypto" /></picture></a>
+<a href="olympus-panel/"><picture><source media="(max-width: 600px)" srcset="assets/readme-polish/collection-13-mobile.svg" /><img src="assets/readme-polish/collection-13-desktop.svg" alt="olympus-panel" /></picture></a>
+</p>
+
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
 
 ## Use the evidence
 
@@ -48,7 +66,7 @@ Each collection keeps the context of an operation alongside its available artifa
 For a GitHub file, press **Y** to turn its URL into a permalink to that exact revision. This makes references useful even when the archive changes.
 
 <details>
-<summary><strong>Evidence types and directory guide</strong></summary>
+<summary><img src="assets/readme-polish/section-01.svg" width="26" height="24" alt="" />&nbsp; <strong>Evidence types and directory guide</strong></summary>
 
 ### What's Inside
 
@@ -84,7 +102,7 @@ Not every team has all folders — it depends on what evidence was collected. Th
 </details>
 
 <details>
-<summary><strong>Collection methodology</strong></summary>
+<summary><img src="assets/readme-polish/section-02.svg" width="26" height="24" alt="" />&nbsp; <strong>Collection methodology</strong></summary>
 
 > **We do NOT hack, attack, bruteforce, or compromise any systems.**
 
@@ -100,6 +118,8 @@ When admin panel access is obtained (through leaks or misconfiguration), we cond
 
 </details>
 
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
+
 ## Contribute evidence
 
 Open a pull request from your fork, or contact [@PhishDestroy_bot](https://t.me/PhishDestroy_bot). Use an existing collection where appropriate; otherwise, propose a clearly named directory for the operation.
@@ -114,7 +134,7 @@ Include:
 Redact personal victim data before submitting public files. See [SECURITY.md](SECURITY.md) for the project's security reporting process.
 
 <details>
-<summary><strong>Purpose, use conditions and license</strong></summary>
+<summary><img src="assets/readme-polish/section-03.svg" width="26" height="24" alt="" />&nbsp; <strong>Purpose, use conditions and license</strong></summary>
 
 ### Who Benefits
 
@@ -148,6 +168,8 @@ Scammers systematically destroy evidence — deleting Telegram chats, burning wa
 The [LICENSE](LICENSE) contains the MIT software license and additional terms for intelligence data, including research, journalism, anti-fraud work and law enforcement use. Refer to that file for the full terms.
 
 </details>
+
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
 
 ## More from PhishDestroy
 

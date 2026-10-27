@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196" height="44" viewBox="0 0 196 44" role="img" aria-label="olympus-panel">
+<title>olympus-panel — open collection</title>
+<rect x=".5" y=".5" width="195" height="43" rx="5" fill="#14151f" stroke="#353342"/>
+<path d="M12 17h7l2 3h8v10H12z" fill="none" stroke="#b59be8" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="37" y="26" fill="#edf0f5" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600">olympus-panel</text>
+</svg>
