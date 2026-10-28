@@ -42,7 +42,7 @@ We welcome contributions! If you have more information about RublevkaTeam or oth
 ---
 
 ## ⚖️ License
-This repository is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). You are free to use, share, and adapt the data, as long as you give appropriate credit.
+This repository is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](../LICENSE). You are free to use, share, and adapt the data, as long as you give appropriate credit.
 
 ---
 
